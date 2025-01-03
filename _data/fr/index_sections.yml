@@ -4,18 +4,18 @@
         <li>Release simplifiée : Planifiez vos mises en production sans effort.</li>
         <li>Cycle de développement : Visualisez la charge de travail des développeurs sur chaque cycle.</li>
       </ul>"
-  image: assets/images/methodology-hybrid.png
+  image: /assets/images/methodology-hybrid.png
   alt: Méthologie hybride
 - title: Éliminez les <strong>réunions inutiles</strong>
   body: Réduisez le temps perdu en réunions et planifications. Sinra <strong>optimise la collaboration</strong> entre produits et développeurs, minimisant le besoin de discussions répétitives.
-  image: assets/images/reduce-meetings.png
+  image: /assets/images/reduce-meetings.png
   alt: Réduire les réunions inutiles
 - title: Gestion des <strong>tests</strong> et des <strong>issues</strong>
   body: "<ul>
         <li>Associez des tests à chaque user story et visualisez leur avancement.</li>
         <li>Différenciation technique / produit : Planifiez efficacement avec la possibilité d’allouer des tickets techniques.</li>
       </ul>"
-  image: assets/images/test-management.png
+  image: /assets/images/test-management.png
   alt: Gestion des tests Sinra
 - title: Votre projet, <strong>vos règles</strong>
   body: "Personnalisez chaque aspect de votre projet avec des statuts, rôles d’équipe, et plus encore.</p>
@@ -23,13 +23,13 @@
         <li>Système de backlog : Planifiez en amont et gardez une vue claire sur vos tâches à venir.</li>
         <li>Rôles personnalisables : Product owner, développeur, reporter, chaque rôle peut être ajusté à votre projet.</li>
       </ul>"
-  image: assets/images/customization.png
+  image: /assets/images/customization.png
   alt: Personnalisation Sinra
 - title: Visualisation <strong>dynamique</strong>
   body: Alternez entre la <strong>vue Kanban</strong> et la <strong>vue Liste</strong> pour organiser vos tâches de la manière la plus productive.
-  image: assets/images/kanban-list-view.png
+  image: /assets/images/kanban-list-view.png
   alt: Vue Kanban et Liste Sinra
 - title: Besoin de partager vos <strong>feedbacks</strong> ?
   body: Les cérémonie comme la "Retro" synchronisée avec la release courante est inclue dans Sinra.
-  image: assets/images/collaboration.png
+  image: /assets/images/collaboration.png
   alt: Collaborer efficacement avec Sinra

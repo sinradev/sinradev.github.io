@@ -1,17 +1,17 @@
 - name: Tarifs
-  link: /fr/pricing.html
+  link: /pricing
   target: _top
   klass:
 - name: Blog
-  link: /fr/blog.html
+  link: /blog
   target: _top
   klass:
 - name: À propos
-  link: /fr/about.html
+  link: /about
   target: _top
   klass:
 - name: Contact
-  link: /fr/contact.html
+  link: /contact
   target: _top
   klass:
 - name: Se connecter

@@ -1,6 +1,6 @@
 ---
 page_id: about
-permalink: fr/about/
+permalink: about/
 layout: page
 lang: fr
 ---

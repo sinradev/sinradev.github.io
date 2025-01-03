@@ -1,0 +1,35 @@
+- title: Methodology <strong>Hybrid</strong> - V-Model and Agile Cycle
+  body: "Combine the rigorous planning of Waterfall with the adaptability of Agile. Plan, execute, and iterate seamlessly.
+      <ul>
+        <li>Simplified release: Plan your deployments effortlessly.</li>
+        <li>Development cycle: Visualize developers' workloads for each cycle.</li>
+      </ul>"
+  image: /assets/images/methodology-hybrid.png
+  alt: Hybrid Methodology
+- title: Eliminate <strong>unnecessary meetings</strong>
+  body: Reduce time wasted in meetings and planning. Sinra <strong>optimizes collaboration</strong> between product teams and developers, minimizing the need for repetitive discussions.
+  image: /assets/images/reduce-meetings.png
+  alt: Reduce unnecessary meetings
+- title: Management of <strong>tests</strong> and <strong>issues</strong>
+  body: "<ul>
+        <li>Associate tests with each user story and visualize their progress.</li>
+        <li>Technical/product differentiation: Plan efficiently with the ability to allocate technical tickets.</li>
+      </ul>"
+  image: /assets/images/test-management.png
+  alt: Sinra Test Management
+- title: Your project, <strong>your rules</strong>
+  body: "Customize every aspect of your project with statuses, team roles, and more.</p>
+      <ul>
+        <li>Backlog system: Plan ahead and maintain a clear view of upcoming tasks.</li>
+        <li>Customizable roles: Product owner, developer, reporter—each role can be adjusted to fit your project.</li>
+      </ul>"
+  image: /assets/images/customization.png
+  alt: Sinra Customization
+- title: <strong>Dynamic</strong> visualization
+  body: Switch between <strong>Kanban view</strong> and <strong>List view</strong> to organize your tasks in the most productive way.
+  image: /assets/images/kanban-list-view.png
+  alt: Sinra Kanban and List View
+- title: Need to share your <strong>feedback</strong>?
+  body: Ceremonies like the "Retro" synchronized with the current release are included in Sinra.
+  image: /assets/images/collaboration.png
+  alt: Collaborate efficiently with Sinra

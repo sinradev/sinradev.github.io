@@ -129,12 +129,14 @@ header {
     header a:hover {
       text-decoration: none; }
   header .company-name {
-    font-size: 1.7em;
-    line-height: 0; }
+    font-size: 1.2em;
+    line-height: normal;
+    }
     header .company-name a {
       display: inline-block; }
     header .company-name img {
-      display: block;
+      float: left;
+      margin-right: 10px;
       width: auto; }
 
 .content {
@@ -554,7 +556,7 @@ nav {
       border-radius: 5px; }
       nav a.highlight:hover {
         background: #fff;
-        color: #4182e4; } }
+        color: black; } }
   nav a.active {
     color: #fff; }
 

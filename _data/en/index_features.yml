@@ -1,0 +1,11 @@
+- title: Block-based text editor
+  body: Simplify your descriptions and documentation with a Notion-like editor.
+  image: /assets/images/text-editor.png
+  alt: Text editor
+- title: Figma and Whimsical integration
+  body: Preview your layouts directly in the interface.
+  image: /assets/images/figma-integration.png
+  alt: Figma Sinra integration
+- title: Ultra-simplified interface
+  body: 2 editable fields only in each issue for maximum concentration.
+  image: /assets/images/simple-interface.png
