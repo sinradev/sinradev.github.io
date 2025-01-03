@@ -1,0 +1,13 @@
+<nav>
+  {% for item in site.data[page.lang].navigation %}
+  <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ site.active_lang }}{{ item.link }}{% endif %}" class="{{ item.klass }} {% if page.url == item.link %}active{% endif %}" target="{{ item.target }}">
+    {{ item.name }}
+  </a>
+  {% endfor %}
+  {% if site.active_lang == "en" %}
+  {% assign new_lang = "fr" %}
+  {% else %}
+  {% assign new_lang = "en" %}
+  {% endif %}
+  <a href="{{ site.baseurl }}/{{ new_lang }}{{ page.url | replace: site.active_lang, '' | replace: '//', '/' }}" class="lang">{{ new_lang }}</a>
+</nav>

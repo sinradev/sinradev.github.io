@@ -1,0 +1,24 @@
+- name: Tarifs
+  link: /fr/pricing.html
+  target: _top
+  klass:
+- name: Blog
+  link: /fr/blog.html
+  target: _top
+  klass:
+- name: À propos
+  link: /fr/about.html
+  target: _top
+  klass:
+- name: Contact
+  link: /fr/contact.html
+  target: _top
+  klass:
+- name: Se connecter
+  link: https://app.sinra.dev/users/sign_in
+  target: _blank
+  klass:
+- name: S’enregistrer
+  link: https://app.sinra.dev/users/sign_up
+  target: _blank
+  klass: highlight

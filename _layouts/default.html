@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head lang="{{ page.lang }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    {% for lang in site.languages %}
+      {% capture lang_href %}{{site.baseurl}}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if page.permalink_lang[lang] != '/' %}{{page.permalink_lang[lang]}}{% endif %}{% endcapture %}
+      <link rel="alternate" hreflang="{{ lang }}" {% static_href %}href="{{ lang_href }}"{% endstatic_href %} />
+    {% endfor %}
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

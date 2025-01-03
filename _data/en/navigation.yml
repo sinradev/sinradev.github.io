@@ -1,0 +1,24 @@
+- name: Pricing
+  link: /pricing
+  target: _top
+  klass:
+- name: Blog
+  link: /blog
+  target: _top
+  klass:
+- name: About
+  link: /about
+  target: _top
+  klass:
+- name: Contact
+  link: /contact
+  target: _top
+  klass:
+- name: Login
+  link: https://app.sinra.dev/users/sign_in
+  target: _blank
+  klass:
+- name: Sign up
+  link: https://app.sinra.dev/users/sign_up
+  target: _blank
+  klass: highlight
