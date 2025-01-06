@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
   </head>
   <body>
-    {{ content }}
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,26 @@
+<div class="contact-box">
+	<form action="https://app.sinra.contact/form" method="post" class="contact-form">
+		<input type="hidden" name="_to" value="support@example.com" />
+		<input type="text" name="_gotcha" style="display: none;">
+
+    <label for="name">{{ site.data[site.active_lang].strings.contact.full_name }}</label>
+		<input type="text" name="name" id="name" placeholder="Enter your name..." />
+
+		<label for="email">{{ site.data[site.active_lang].strings.contact.email }}</label>
+		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
+
+		<label for="message">{{ site.data[site.active_lang].strings.contact.message }}</label>
+		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+
+		<input type="submit" value="Send Message" />
+	</form>
+  <div class="contact-details">
+		<h3 class="editable">{{ site.data[site.active_lang].strings.contact.address }}</h3>
+		<address>
+      Société HUMMEL<br/>
+      rue des invalides<br/>
+      3800 GRENOBLE<br/>
+      FRANCE<br/>
+      </address>
+	</div>
+</div>

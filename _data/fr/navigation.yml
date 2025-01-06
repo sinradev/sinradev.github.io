@@ -1,13 +1,13 @@
+- name: À propos
+  link: /about
+  target: _top
+  klass:
 - name: Tarifs
   link: /pricing
   target: _top
   klass:
 - name: Blog
   link: /blog
-  target: _top
-  klass:
-- name: À propos
-  link: /about
   target: _top
   klass:
 - name: Contact

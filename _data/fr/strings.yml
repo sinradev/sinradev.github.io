@@ -6,3 +6,12 @@ hero:
 features: Fonctionnalités
 reduce_complexity: <strong>Réduisez</strong> la complexité, <strong>optimisez</strong> vos projets<strong>
 try_sinra: Essayer Sinra gratuitement
+pricing:
+  title: Tarifs
+  heading: Find the perfect plan for your business
+  description: All plans include our award winning sales optimization solution to track your sales in real time.
+contact:
+  full_name: Nom et Prénom
+  email: Email
+  message: Message
+  address: Adresse

@@ -1,5 +1,5 @@
 <nav>
-  {% for item in site.data[page.lang].navigation %}
+  {% for item in site.data[site.active_lang].navigation %}
   <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ site.active_lang }}{{ item.link }}{% endif %}" class="{{ item.klass }} {% if page.url == item.link %}active{% endif %}" target="{{ item.target }}">
     {{ item.name }}
   </a>
