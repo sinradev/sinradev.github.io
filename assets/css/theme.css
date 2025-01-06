@@ -17,7 +17,7 @@ body {
   font-family: 'Nunito Sans', Arial, sans-serif;
 
 a {
-  color: #00a4ca;
+  color: black;
   text-decoration: none; }
 
 a:hover {
@@ -183,7 +183,7 @@ blockquote {
     margin: 10px 0 0 0;
     font-size: .85em;
     font-style: normal; }
-  blockquote p {
+  blockquote p:first-child {
     display: inline; }
 
 blockquote:before {

@@ -1,17 +1,17 @@
 - name: By Month
   color: "#8e8e8e"
   features:
-    - text: $25 per month
+    - text: 10€ per month
       highlight: true
-    - text: Up to 5 users
+    - text: Up to 1 user
       highlight: false
-    - text: Basic lead scoring
+    - text: Mordern WYSIWYG (Notion like)
       highlight: false
-    - text: CRM
+    - text: Comment system
       highlight: false
-    - text: Basic reporting
+    - text: Cerenomies reporting
       highlight: false
-    - text: Sales map
+    - text: A Simplified interface by user type
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
@@ -19,17 +19,17 @@
 - name: By Year
   color: "#4a4a4a"
   features:
-    - text: $99 per month
+    - text: 96€ per year (20% discount)
       highlight: true
-    - text: Everything in Basic
+    - text: Up to 1 user
       highlight: false
-    - text: Up to 25 users
+    - text: Mordern WYSIWYG (Notion like)
       highlight: false
-    - text: Advanced lead scoring
+    - text: Comment system
       highlight: false
-    - text: Pipeline management
+    - text: Cerenomies reporting
       highlight: false
-    - text: Advanced reporting
+    - text: A Simplified interface by user type
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up

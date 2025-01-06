@@ -11,7 +11,7 @@
 
 <div class="content">
 
-  {% for section in site.data.index_sections %}
+  {% for section in site.data[site.active_lang].index_sections %}
     <section>
       <div class="container flex">
         <div class="text">
@@ -28,7 +28,7 @@
 <section class="features">
     <h2>{{ site.data[page.lang].strings.features }}</h2>
   <div class="container grid">
-     {% for feature in site.data[page.lang].index_features %}
+     {% for feature in site.data[site.active_lang].index_features %}
       <div class="feature">
         <h3>{{ feature.title }}</h3>
           <img src="{{ feature.image }}" alt="{{ feature.alt }}">
@@ -41,8 +41,8 @@
   <section class="testimonial">
     <div class="container flex">
       <div class="testimonial-block">
-        <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable" /></div>
-        {% for testimonial in site.data[page.lang].testimonials %}
+        <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" /></div>
+        {% for testimonial in site.data[site.active_lang].testimonials %}
           <blockquote>
             {{ testimonial.body }}
             <p class="editable author">{{ testimonial.author }}</p>
@@ -53,9 +53,9 @@
   </section>
 
   <section class="bottom-cta">
-    <h2 class="editable">{{ site.data[page.lang].strings.reduce_complexity }}
+    <h2>{{ site.data[site.active_lang].strings.reduce_complexity }}
     </h2>
-    <div class="button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[page.lang].strings.try_sinra }}</a></div>
+    <div class="button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.try_sinra }}</a></div>
   </section>
 </div>
 
