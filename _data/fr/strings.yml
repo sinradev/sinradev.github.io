@@ -15,3 +15,8 @@ contact:
   email: Email
   message: Message
   address: Adresse
+blog:
+  older_posts: Anciens articles
+  newer_posts: Nouveaux articles
+  date_format: "%d/%M/%Y"
+

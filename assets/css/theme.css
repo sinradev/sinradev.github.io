@@ -560,7 +560,9 @@ nav {
         background: #fff;
         color: black; } }
   nav a.active {
-    color: #fff; }
+    color: #fff;
+    font-weight: bold; }
+  }
 
 .footer-links {
   width: 100%;
