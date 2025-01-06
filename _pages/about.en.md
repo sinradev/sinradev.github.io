@@ -1,6 +1,6 @@
 ---
 page_id: about
-permalink: en/about/
+permalink: about/
 layout: page
 lang: en
 title: About Sinra

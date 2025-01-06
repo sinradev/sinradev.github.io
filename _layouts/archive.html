@@ -1,0 +1,41 @@
+---
+layout: page
+blog:
+  description: Find what you're looking for in our blog archive.
+---
+
+<div class="text-container">
+	{% assign blog = site.pages | where: "path", "blog/index.html" | first %}
+
+	{% if blog.title %}
+		<h2>{{ blog.title }}</h2>
+	{% endif %}
+
+	{% if blog.description %}
+		<p class="subtext">{{ blog.description }}</p>
+	{% endif %}
+
+	<div class="center-text">
+		<span class="blog-filter cross"><a href="{{ site.baseurl }}/blog/">{{ page.title | capitalize }}</a></span>
+	</div>
+
+	<ul class="blog-posts">
+		{% for post in page.posts %}
+	<li class="blog-post">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="post-details">
+	{% for category in post.categories %}
+		<span class="blog-filter">
+			<a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category | capitalize }}</a>
+		</span>
+	{% endfor %}
+	<span class="post-date">{{ include.post.date | date: "%B %d, %Y" }}</span>
+</p>
+		<div class="post-content">
+			{{ post.excerpt }}
+        <div class="button"><a href="{{ post.url }}">Read More</a></div>
+		</div>
+	</li>
+{% endfor %}
+    </ul>
+</div>

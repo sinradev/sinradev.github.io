@@ -1,13 +1,10 @@
 <nav>
   {% for item in site.data[site.active_lang].navigation %}
-  <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ site.active_lang }}{{ item.link }}{% endif %}" class="{{ item.klass }} {% if page.url == item.link %}active{% endif %}" target="{{ item.target }}">
+  <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}" class="{{ item.klass }} {% if page.url == item.link %}active{% endif %}" target="{{ item.target }}">
     {{ item.name }}
   </a>
   {% endfor %}
-  {% if site.active_lang == "en" %}
-  {% assign new_lang = "fr" %}
-  {% else %}
-  {% assign new_lang = "en" %}
-  {% endif %}
-  <a href="{{ site.baseurl }}/{{ new_lang }}{{ page.url | replace: site.active_lang, '' | replace: '//', '/' }}" class="lang">{{ new_lang }}</a>
+  {% for tongue in site.languages %}
+    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}{% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}{{" | "}}{{ site.langsep }}{%- endif -%}
+  {% endfor %}
 </nav>
