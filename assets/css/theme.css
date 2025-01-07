@@ -446,14 +446,14 @@ blockquote:before {
   color: #fff;
   text-decoration: none;
   padding: 10px 30px;
-  background: #4182e4;
+  background: rgb(47, 50, 55);
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition: .2s ease-in-out; }
 
 .button a:hover, input[type=submit]:hover {
   border: 1px solid #fff;
-  background: #4182e4;
+  background: black;
   cursor: pointer; }
 
 .button.alt a {
@@ -700,3 +700,8 @@ footer {
   gap: 20px;
 }
 
+ul{
+  li{
+    font-size: 1.38em
+  }
+}
