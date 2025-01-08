@@ -1,5 +1,6 @@
 <div class="contact-box">
-	<form action="https://app.sinra.contact/form" method="post" class="contact-form">
+	<!-- <form action="https://app.sinra.dev/contact/form" method="post" class="contact-form"> -->
+	<form action="http://localhost:3000/contact/form" method="post" class="contact-form">
 		<input type="hidden" name="_to" value="support@example.com" />
 		<input type="text" name="_gotcha" style="display: none;">
 
@@ -12,10 +13,11 @@
 		<label for="message">{{ site.data[site.active_lang].strings.contact.message }}</label>
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
+    <input type="hidden" name="return_url" value="{{ site.url }}/{% if site.active_lang != site.default_lang %}fr/{% endif %}contact-success/" />
 		<input type="submit" value="Send Message" />
 	</form>
   <div class="contact-details">
-		<h3 class="editable">{{ site.data[site.active_lang].strings.contact.address }}</h3>
+		<h3>{{ site.data[site.active_lang].strings.contact.address }}</h3>
 		<address>
       Société HUMMEL<br/>
       rue des invalides<br/>

@@ -699,9 +699,3 @@ footer {
   justify-content: space-between;
   gap: 20px;
 }
-
-ul{
-  li{
-    font-size: 1.38em
-  }
-}

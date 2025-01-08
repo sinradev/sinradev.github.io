@@ -15,6 +15,9 @@ contact:
   email: Email
   message: Message
   address: Address
+contact_success:
+  success: Success
+  message: Your message is sent. We'll be in touch soon.
 blog:
   older_posts: Older posts
   newer_posts: Newer posts
