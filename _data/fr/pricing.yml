@@ -1,0 +1,37 @@
+- name: By Month
+  color: "#8e8e8e"
+  features:
+    - text: 10€ par mois
+      highlight: true
+    - text: Utilisable pour 1 utilisateur
+      highlight: false
+    - text: Éditeur de text modern (WYSIWYG - Notion like)
+      highlight: false
+    - text: Système de commentaire avancé
+      highlight: false
+    - text: Compte rendu à travers les cérénomies
+      highlight: false
+    - text: Une interface simple par type d’utilisateur
+      highlight: false
+  call_to_action:
+    link: https://app.sinra.dev/users/sign_up
+    text: Get started
+- name: By Year
+  color: "#4a4a4a"
+  features:
+    - text: 96€ par an (20% de remise)
+      highlight: true
+    - text: Utilisable pour 1 utilisateur
+      highlight: false
+    - text: Éditeur de text modern (WYSIWYG - Notion like)
+      highlight: false
+    - text: Système de commentaire avancé
+      highlight: false
+    - text: Compte rendu à travers les cérénomies
+      highlight: false
+    - text: Une interface simple par type d’utilisateur
+      highlight: false
+  call_to_action:
+    link: https://app.sinra.dev/users/sign_up
+    text: Get started
+

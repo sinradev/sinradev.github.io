@@ -18,10 +18,10 @@
   - name: Sign Up
     link: https://app.sinra.dev/users/sign_up
 - links:
-  - name: Docs
-    link: /
-  - name: Status
-    link: /
-    target: _blank
+  # - name: Docs
+  #   link:
+  # - name: Status
+  #   link:
+  #   target: _blank
   - name: RSS
     link: /feed.xml
