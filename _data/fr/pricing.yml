@@ -1,4 +1,4 @@
-- name: By Month
+- name: Par Mois
   color: "#8e8e8e"
   features:
     - text: 10€ par mois
@@ -15,8 +15,8 @@
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
-    text: Get started
-- name: By Year
+    text: Commencer
+- name: Par An
   color: "#4a4a4a"
   features:
     - text: 96€ par an (20% de remise)
@@ -33,5 +33,5 @@
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
-    text: Get started
+    text: Commencer
 
