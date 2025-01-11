@@ -15,6 +15,10 @@ contact:
   email: Email
   message: Message
   address: Adresse
+  placeholders:
+    full_name: Inscrivez votre nom complet...
+    email: Inscrivez votre email...
+    message: Écrivez votre message...
 contact_success:
   success: Succès
   message: Votre message a été envoyé. Nous vous contacterons dès que possible.

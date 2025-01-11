@@ -5,13 +5,13 @@
 		<input type="text" name="_gotcha" style="display: none;">
 
     <label for="name">{{ site.data[site.active_lang].strings.contact.full_name }}</label>
-		<input type="text" name="name" id="name" placeholder="Enter your name..." />
+		<input type="text" name="name" id="name" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.full_name }}" />
 
 		<label for="email">{{ site.data[site.active_lang].strings.contact.email }}</label>
-		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
+		<input type="email" name="email" id="email" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.email }}" required />
 
 		<label for="message">{{ site.data[site.active_lang].strings.contact.message }}</label>
-		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+		<textarea name="message" id="message" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.message }}"></textarea>
 
     <input type="hidden" name="return_url" value="{{ site.url }}/{% if site.active_lang != site.default_lang %}fr/{% endif %}contact-success/" />
 		<input type="submit" value="Send Message" />
