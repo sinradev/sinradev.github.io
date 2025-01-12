@@ -12,41 +12,43 @@
 <div class="content">
 
   {% for section in site.data[site.active_lang].index_sections %}
-    <section>
-      <div class="container flex">
-        <div class="text">
+  <section class="index-section">
+    <div class="container flex">
+      <div class="category-section">{{ section.category }}</div>
+      <div class="text">
         <h2>{{ section.title }}</h2>
         <p></p>{{ section.body }}</p>
-        </div>
-        <div class="image">
-          <img src="{{ section.image }}" alt="{{ section.alt }}" class="screenshot"  />
-        </div>
       </div>
-    </section>
+      <div class="image">
+        <img src="{{ section.image }}" alt="{{ section.alt }}" class="screenshot"  />
+      </div>
+    </div>
+  </section>
   {% endfor %}
 
-<section class="features">
-    <h2>{{ site.data[page.lang].strings.features }}</h2>
-  <div class="container grid">
-     {% for feature in site.data[site.active_lang].index_features %}
+  <section class="features">
+    <h2>{{ site.data[site.active_lang].strings.features }}</h2>
+    <p>Last features implemented in Sinra, check the blog to see news features</p>
+    <div class="container grid">
+      {% for feature in site.data[site.active_lang].index_features %}
       <div class="feature">
+        <img src="{{ feature.image }}" alt="{{ feature.alt }}">
         <h3>{{ feature.title }}</h3>
-          <img src="{{ feature.image }}" alt="{{ feature.alt }}">
         <p>{{ feature.body }}</p>
       </div>
-     {% endfor %}
-  </div>
-</section>
+      {% endfor %}
+    </div>
+    <div class="button alt mt-5"><a href="blog/">{{ site.data[site.active_lang].strings.got_to_blog }}</a></div>
+  </section>
 
   <section class="testimonial">
     <div class="container flex">
       <div class="testimonial-block">
-        <div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" /></div>
         {% for testimonial in site.data[site.active_lang].testimonials %}
-          <blockquote>
-            {{ testimonial.body }}
-            <p class="editable author">{{ testimonial.author }}</p>
-          </blockquote>
+        <blockquote>
+          {{ testimonial.body }}
+          <p class="editable author">{{ testimonial.author }}</p>
+        </blockquote>
         {% endfor %}
       </div>
     </div>
