@@ -14,8 +14,8 @@
   {% for section in site.data[site.active_lang].index_sections %}
   <section class="index-section">
     <div class="container flex">
-      <div class="category-section">{{ section.category }}</div>
       <div class="text">
+        <div class="category-section">{{ section.category }}</div>
         <h2>{{ section.title }}</h2>
         <p></p>{{ section.body }}</p>
       </div>
@@ -41,15 +41,10 @@
     <div class="button alt mt-5"><a href="blog/">{{ site.data[site.active_lang].strings.got_to_blog }}</a></div>
   </section>
 
-  <section class="testimonial">
+  <section class="testimonial-section">
     <div class="container flex">
       <div class="testimonial-block">
-        {% for testimonial in site.data[site.active_lang].testimonials %}
-        <blockquote>
-          {{ testimonial.body }}
-          <p class="editable author">{{ testimonial.author }}</p>
-        </blockquote>
-        {% endfor %}
+        {% include testimonial.html %}
       </div>
     </div>
   </section>
@@ -62,8 +57,8 @@
 </div>
 
 <script>
-document.getElementById("open-nav").onclick = function () {
-  document.body.classList.toggle("nav-open");
-  return false;
-};
+  document.getElementById("open-nav").onclick = function () {
+    document.body.classList.toggle("nav-open");
+    return false;
+  };
 </script>

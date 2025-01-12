@@ -4,7 +4,7 @@ permalink: about/
 layout: page
 lang: en
 ---
-# The Sinra Project: An Innovative Solution Born from Experience and Challenges in Software Development
+# An Innovative Solution Born from Experience and Challenges in Software Development
 
 Sinra is the result of a deep reflection on the limitations of traditional project management methodologies, whether Agile or Waterfall. Two major observations guided its creation:
 

@@ -1,0 +1,21 @@
+<section class="container">
+  <div class="testimonial mySwiper">
+    <div class="testi-content swiper-wrapper">
+        {% for testimonial in site.data[site.active_lang].testimonials %}
+      <div class="slide swiper-slide">
+        <blockquote>
+          {{ testimonial.body }}
+          <p class="editable author">{{ testimonial.author }}</p>
+        </blockquote>
+      </div>
+        {% endfor %}
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<!-- Swiper JS -->
+<script src="/assets/js/swiper-bundle.min.js"></script>
+<!-- JavaScript -->
+<script src="/assets/js/script.js"></script>
