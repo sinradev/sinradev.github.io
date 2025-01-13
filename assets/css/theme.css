@@ -962,9 +962,8 @@ nav .nav-open nav .editor-link:hover,
 .mt-5 {
   margin-top: 5rem;
 }
-
-section:nth-child(3),
-section:nth-child(4) {
+.index-section:nth-child(3),
+.index-section:nth-child(4) {
   background-color: #f5f5f5;
   padding: 30px;
   .container {
@@ -977,7 +976,7 @@ section:nth-child(4) {
     }
   }
 }
-section:nth-child(4) {
+.index-section:nth-child(4) {
   margin-bottom: var(--section-margin);
 }
 .parent {
@@ -1000,4 +999,33 @@ footer::before {
   margin-bottom: 20px;
   color: #717171;
   font-weight: bold;
+}
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.about {
+  .index-section {
+    h2 {
+      text-align: left;
+    }
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    .container {
+      border-radius: var(--border-radius);
+      border: 1px solid var(--border-color);
+      background-color: #fff;
+      .image {
+        border: none;
+        background-color: white;
+      }
+    }
+  }
+  .index-section {
+    margin-bottom: var(--section-margin);
+  }
+}
+.both {
+  display: flex;
 }
