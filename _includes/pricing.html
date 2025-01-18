@@ -1,7 +1,7 @@
 <div class="plans">
 	{% for plan in site.data[site.active_lang].pricing %}
-		<ul class="plan">
-			<li style="background: {{ plan.color }}">
+		<ul class="plan bg-black">
+			<li>
 				<h3>{{ plan.name }}</h3>
 			</li>
 			{% for feature in plan.features %}
@@ -9,14 +9,14 @@
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+				<li class="pricing-cta"><div class="button"><a href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
 </div>
 
 {% if site.data[site.active_lang].pricing_faq %}
-	<h2>Pricing FAQ</h2>
+<h2>{{ site.data[site.active_lang].strings.pricing.pricing_faq }}</h2>
 	<dl class="faq">
 		{% for item in site.data[site.active_lang].pricing_faq %}
 			<div>

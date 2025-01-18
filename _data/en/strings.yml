@@ -1,16 +1,20 @@
-hero:
-  title: Sinra - <strong>Project management</strong> reinvented.
-  body: A simple and powerful project management tool,<br/> merging <strong>V-Model methodology</strong> and <strong>Agile</strong> for optimal performance.
-  button: Try for free
-  alt_image: Sinra Overview
-features: Features
-got_to_blog: Go to the Blog
-reduce_complexity: <strong>Reduce</strong> complexity, <strong>optimize</strong> your projects.
-try_sinra: Try Sinra for free
-pricing:
-  title: Pricing
-  heading: Find the perfect plan for your business
-  description: All plans include our award winning sales optimization solution to track your sales in real time.
+about:
+  innovative_solution: An Innovative Solution Born from Experience and Challenges in Software Development
+  result_deep_reflexion: Sinra is the result of a deep reflection on the limitations of traditional project management methodologies, whether Agile or Waterfall. Two major observations guided its creation.</p>
+  agile_pitfalls: Agile pitfalls
+  time_consuming: The time-consuming nature of meetings and adjustments in Agile
+  agile_environment: "<p> In an Agile environment, meetings pile up: sprint planning, reprioritization, endless discussions about which features to develop or not, and prioritizing bugs.</p><p> While these exchanges are essential, they often lead to a significant loss of time, reducing the team's overall efficiency.</p>"
+  waterfall_pitfalls: Waterfall pitfalls
+  loss_of_control: The loss of control in Waterfall development
+  waterfall_methodology: "<p> Conversely, the Waterfall methodology faces another challenge: deadlines. Projects frequently exceed their allotted time, and late adjustments are difficult to integrate into a rigid schedule.</p><p> This leads to a loss of control over timelines and deliverables, often at the expense of quality or stakeholder satisfaction.</p>"
+  design_to: Designed to address the challenges of these two approaches
+  sinra_combines: Sinra combines the best of Agile and Waterfall methodologies.
+  groundbreaking_project: "This groundbreaking project provides a harmonious solution that:"
+  conversely_waterfall_methodology: "<p> Conversely, the Waterfall methodology faces another challenge: deadlines. Projects frequently exceed their allotted time, and late adjustments are difficult to integrate into a rigid schedule.</p><p>This leads to a loss of control over timelines and deliverables, often at the expense of quality or stakeholder satisfaction.</p><ul><li>Reduces the burden of unnecessary meetings by promoting clear and structured planning.</li><ul><li>Maintains a global vision of deadlines and objectives while allowing flexibility to adapt to unforeseen events.</li><li>Ensures enhanced control over developments with balanced and optimized cycles to prevent scope creep.</li><p>With Sinra, development teams regain sustainable efficiency, increased control, and a working method truly tailored to the realities of modern software development.</p>"
+blog:
+  older_posts: Older posts
+  newer_posts: Newer posts
+  date_format: "%B %d, %Y"
 contact:
   full_name: Full Name
   email: Email
@@ -23,8 +27,18 @@ contact:
 contact_success:
   success: Success
   message: Your message is sent. We'll be in touch soon.
-blog:
-  older_posts: Older posts
-  newer_posts: Newer posts
-  date_format: "%B %d, %Y"
+features: Features
+got_to_blog: Go to the Blog
+hero:
+  title: Sinra - <strong>Project management</strong> reinvented.
+  body: A simple and powerful project management tool,<br/> merging <strong>V-Model methodology</strong> and <strong>Agile</strong> for optimal performance.
+  button: Try for free
+  alt_image: Sinra Overview
+pricing:
+  title: Pricing
+  heading: Find the perfect plan for your business
+  description: All plans include our award winning sales optimization solution to track your sales in real time.
+  pricing_faq: Pricing FAQ
+reduce_complexity: <strong>Reduce</strong> complexity, <strong>optimize</strong> your projects.
 testimonial: Testimonial
+try_sinra: Try Sinra for free

@@ -518,6 +518,7 @@ nav .nav-open nav .editor-link:hover,
       text-align: left;
     }
     padding: 30px;
+    padding-top: 0px;
     border-radius: var(--border-radius);
     .category-section {
       margin-top: 20px;
