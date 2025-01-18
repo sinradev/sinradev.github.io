@@ -1,0 +1,119 @@
+.plans {
+  -webkit-flex-flow: wrap;
+  -moz-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  padding: 50px 0 30px 0;
+}
+.plans .plan {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px 50px 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 10px #eee;
+  width: 100%;
+}
+.plans .plan .highlighted {
+  font-size: 1.2em;
+}
+.plans .plan .pricing-cta {
+  padding: 0;
+}
+.plans .plan .pricing-cta a {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 0;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border: 0;
+}
+@media (min-width: 768px) {
+  .plans .plan {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+}
+.plans .plan li {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  padding: 20px 0;
+}
+.plans .plan li h3 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+
+.faq {
+  color: #666;
+}
+@media (min-width: 768px) {
+  .faq {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+.faq div {
+  break-inside: avoid;
+  padding: 25px 0;
+}
+.faq dt {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+.faq dd {
+  padding: 0;
+  margin: 0;
+}
+
+.staff {
+  padding: 0;
+  list-style: none;
+  -webkit-flex-flow: wrap;
+  -moz-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  text-align: center;
+}
+.staff li {
+  padding: 30px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (min-width: 450px) {
+  .staff li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+  }
+}
+@media (min-width: 768px) {
+  .staff li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 29%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 29%;
+    -ms-flex: 1 1 29%;
+    flex: 1 1 29%;
+  }
+}
+.staff .square-image {
+  width: 200px;
+  height: 200px;
+}
+.staff .square-image img {
+  border-radius: 200px;
+}
+.staff .name {
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+.staff .position {
+  color: #666;
+}

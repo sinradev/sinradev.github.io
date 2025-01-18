@@ -1,0 +1,28 @@
+.contact-box {
+  -webkit-flex-flow: wrap;
+  -moz-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.contact-box form {
+  width: 100%;
+}
+.contact-box p {
+  margin: 0;
+}
+.contact-box .contact-form,
+.contact-box .contact-details {
+  margin: 0 30px;
+}
+@media (min-width: 768px) {
+  .contact-box .contact-form,
+  .contact-box .contact-details {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+}
+.contact-box .contact-details {
+  font-size: 0.9em;
+}

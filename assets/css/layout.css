@@ -1,0 +1,207 @@
+html {
+  background: white;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+h1 strong,
+h2 strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.3em;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.2em;
+  margin: 0 0 30px 0;
+}
+
+h3 {
+  margin: 20px 0 10px 0;
+}
+
+p,
+address {
+  font-size: 1.38em;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+header {
+  color: #fff;
+  padding: 20px 0;
+  background: #2f3237;
+  background: linear-gradient(to bottom, #2f3237 0%, #2f3237 100%) no-repeat
+    #2f3237;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+}
+header a:hover {
+  text-decoration: none;
+}
+header .company-name {
+  font-size: 1.2em;
+  line-height: normal;
+}
+header .company-name a {
+  display: inline-block;
+}
+header .company-name img {
+  float: left;
+  margin-right: 10px;
+  width: auto;
+}
+
+.content {
+  background: #fff;
+  padding: 1px 0 0 0;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 96%;
+  opacity: 0.1;
+  background: url(/assets/images/sinra-square.png);
+  background-repeat: no-repeat;
+}
+
+.footer-links {
+  width: 100%;
+  margin: 10px;
+  padding: 0;
+}
+@media (min-width: 450px) {
+  .footer-links {
+    -webkit-flex: 1 0 180px;
+    flex: 1 0 180px;
+  }
+}
+.footer-links li {
+  list-style: none;
+  margin: 15px auto;
+}
+@media (min-width: 450px) {
+  .footer-links li {
+    max-width: 150px;
+  }
+}
+.footer-links li a:hover {
+  text-decoration: none;
+}
+.footer-links li a svg {
+  fill: #999;
+  margin-right: 10px;
+  transition: fill 0.2s ease;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+}
+.footer-links li a:hover svg {
+  fill: #fff;
+}
+.footer-links li a.twitter-icon:hover svg {
+  fill: #55acee;
+}
+.footer-links li a.google-plus-icon:hover svg {
+  fill: #db4437;
+}
+.footer-links li a.youtube-icon:hover svg {
+  fill: #cd201f;
+}
+.footer-links li a.instagram-icon:hover svg {
+  fill: #f167f5;
+}
+.footer-links li a.linkedin-icon:hover svg {
+  fill: #0077b5;
+}
+.footer-links li a.pinterest-icon:hover svg {
+  fill: #bd081c;
+}
+.footer-links li a.rss-icon:hover svg {
+  fill: #f26522;
+}
+
+footer {
+  position: relative;
+  padding: 50px 0 50px 0;
+  font-size: 1.1em;
+  position: relative;
+  background: black;
+  color: #fff;
+}
+footer .copyright {
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+@media (min-width: 450px) {
+  footer .copyright {
+    text-align: center;
+  }
+}
+footer,
+footer a {
+  color: #999;
+}
+footer h2 {
+  font-size: 1.4em;
+  margin: 30px 0;
+  color: #ccc;
+}
+footer .footer-columns {
+  -webkit-flex-flow: wrap;
+  -moz-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  margin: -10px -10px 10px -10px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff;
+}
+footer .legal-line {
+  width: 100%;
+  padding: 30px 0;
+  margin: 0;
+  background-color: #222527;
+}
+footer .legal-line a {
+  font-weight: 600;
+}
