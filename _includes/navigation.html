@@ -1,4 +1,5 @@
 <nav>
+  <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
   {% for item in site.data[site.active_lang].navigation %}
   {% assign page_url = "/" | append: item.link %}
   <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}" class="{{ item.klass }} {% if page.url == page_url %}active{% endif %}" target="{{ item.target }}">
@@ -6,6 +7,6 @@
   </a>
   {% endfor %}
   {% for tongue in site.languages %}
-    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}{% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}{{" | "}}{{ site.langsep }}{%- endif -%}
+    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}{% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}<span>{{" | "}}</span>{{ site.langsep }}{%- endif -%}
   {% endfor %}
 </nav>

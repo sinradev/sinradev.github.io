@@ -21,5 +21,11 @@
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
+  <script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
   </body>
 </html>
