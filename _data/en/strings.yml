@@ -20,6 +20,7 @@ contact:
   email: Email
   message: Message
   address: Address
+  send_message: Send Message
   placeholders:
     full_name: Enter your full name...
     email: Enter your email...

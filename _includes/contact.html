@@ -14,6 +14,6 @@
 		<textarea name="message" id="message" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.message }}"></textarea>
 
     <input type="hidden" name="return_url" value="{{ site.url }}/{% if site.active_lang != site.default_lang %}fr/{% endif %}contact-success/" />
-		<input type="submit" value="Send Message" />
+		<input type="submit" value="{{ site.data[site.active_lang].strings.contact.send_message }}" />
 	</form>
 </div>

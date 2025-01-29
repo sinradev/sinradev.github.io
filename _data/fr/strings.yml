@@ -30,6 +30,7 @@ contact:
   email: Email
   message: Message
   address: Adresse
+  send_message: Envoyer Message
   placeholders:
     full_name: Inscrivez votre nom complet...
     email: Inscrivez votre email...
