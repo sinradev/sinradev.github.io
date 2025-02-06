@@ -52,6 +52,10 @@ address {
   line-height: 1.4em;
 }
 
+#index header {
+  background: #111213;
+}
+
 header {
   color: #fff;
   padding: 20px 0;
