@@ -6,7 +6,9 @@
     <meta http-equiv="Content-Language" content="{ {site.active_lang }}">
     <meta name="description" content="{{ page.description }}">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
     <link rel="stylesheet" href="/assets/css/theme.css">
     <link rel="stylesheet" href="/assets/css/layout.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
@@ -22,11 +24,8 @@
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
-  <script>
-			document.getElementById("open-nav").onclick = function () {
-				document.body.classList.toggle("nav-open");
-				return false;
-			};
-		</script>
+  
+  <!-- Modern JavaScript -->
+  <script src="/assets/js/script.js"></script>
   </body>
 </html>
