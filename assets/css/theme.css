@@ -495,25 +495,7 @@ nav a.highlight:hover {
   animation: glowPulse 3s ease-in-out infinite;
 }
 
-.screenshot::after {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  right: -30px;
-  bottom: -30px;
-  background: radial-gradient(
-    ellipse at center,
-    oklch(86.133% 0.141 139.549 / 0.4) 0%,
-    oklch(74.229% 0.133 311.379 / 0.3) 25%,
-    oklch(82.901% 0.031 222.959 / 0.1) 50%,
-    transparent 70%
-  );
-  border-radius: var(--border-radius-lg);
-  z-index: -2;
-  filter: blur(20px);
-  animation: haloGlow 4s ease-in-out infinite;
-}
+/* Removed halo effect - keeping clean edges like in the reference image */
 
 @keyframes glowPulse {
   0%,
@@ -525,17 +507,7 @@ nav a.highlight:hover {
   }
 }
 
-@keyframes haloGlow {
-  0%,
-  100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.05);
-  }
-}
+/* Removed haloGlow animation - no halo effects */
 
 .screenshot:hover {
   transform: translateY(-3px);
@@ -545,8 +517,12 @@ nav a.highlight:hover {
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.screenshot:hover::after {
-  animation: haloGlow 2s ease-in-out infinite;
+.screenshot:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 /* GitHub-style Buttons */
@@ -1568,7 +1544,10 @@ img.loaded {
   transition:
     box-shadow 0.3s ease,
     border-color 0.3s ease;
+  position: relative;
 }
+
+/* Removed halo effects from feature images - keeping clean design */
 
 .feature img:hover,
 .index-section img:hover {
@@ -1577,6 +1556,8 @@ img.loaded {
     0 0 0 1px rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.2);
 }
+
+/* Removed hover halo effects */
 
 /* Ensure all images have consistent border-radius */
 img {
