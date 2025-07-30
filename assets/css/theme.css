@@ -31,8 +31,16 @@
   --gray-900: oklch(7% 0.02 264.094);
 
   /* Space Gradients */
-  --gradient-primary: linear-gradient(135deg, oklch(86.133% 0.141 139.549) 0%, oklch(80% 0.141 139.549) 100%);
-  --gradient-secondary: linear-gradient(135deg, oklch(73.375% 0.165 35.353) 0%, oklch(68% 0.165 35.353) 100%);
+  --gradient-primary: linear-gradient(
+    135deg,
+    oklch(86.133% 0.141 139.549) 0%,
+    oklch(80% 0.141 139.549) 100%
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    oklch(73.375% 0.165 35.353) 0%,
+    oklch(68% 0.165 35.353) 100%
+  );
   --gradient-space: linear-gradient(
     135deg,
     oklch(30.857% 0.023 264.149) 0%,
@@ -78,6 +86,8 @@
   --transition-fast: 0.15s ease-in-out;
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
+
+  --color-base-content: oklch(17.226% 0.028 139.549);
 }
 
 /* Reset & Base Styles */
@@ -175,7 +185,7 @@ nav a {
   padding: 8px 0;
 }
 
-nav a::before {
+nav a:not(.highlight)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -186,17 +196,17 @@ nav a::before {
   transition: var(--transition-normal);
 }
 
-nav a:hover::before {
+nav a:not(.highlight):hover::before {
   width: 100%;
 }
 
-nav a:hover {
+nav a:not(.highlight):hover {
   color: var(--primary);
 }
 
 nav a.highlight {
   background: var(--primary);
-  color: white;
+  color: var(--color-base-content);
   padding: 8px 16px;
   border-radius: var(--btn-border-radius);
   font-weight: 600;
@@ -536,7 +546,7 @@ nav a.highlight:hover {
   justify-content: center;
   padding: 12px 24px;
   background: var(--primary);
-  color: white;
+  color: oklch(17.226% 0.028 139.549);
   text-decoration: none;
   border: none;
   border-radius: var(--btn-border-radius);
@@ -578,13 +588,14 @@ nav a.highlight:hover {
 
 .button.alt a {
   background: transparent;
-  color: var(--gray-800);
+  color: oklch(82.901% 0.031 222.959);
   border: 1px solid var(--gray-300);
 }
 
 .button.alt a:hover {
   background: var(--gray-200);
   border-color: var(--gray-400);
+  color: oklch(82.901% 0.031 222.959);
 }
 
 /* GitHub-style Content Sections */
@@ -1249,7 +1260,7 @@ footer {
 
 .nav-btn:hover {
   background: var(--primary);
-  color: white;
+  color: oklch(17.226% 0.028 139.549);
   transform: scale(1.1);
 }
 
@@ -1510,7 +1521,7 @@ img.loaded {
 
   .button a {
     background: black !important;
-    color: white !important;
+    color: oklch(17.226% 0.028 139.549) !important;
   }
 
   .screenshot {
