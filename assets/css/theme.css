@@ -123,14 +123,24 @@ body {
   padding: 0 var(--container-padding);
 }
 
-/* GitHub-style Header - Always Dark */
+/* GitHub-style Header - Transparent to Dark */
 header {
-  background: var(--gray-50);
-  border-bottom: 1px solid var(--gray-300);
+  background: transparent;
+  border-bottom: 1px solid transparent;
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  box-shadow: none;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+header.scrolled {
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-300);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -221,6 +231,7 @@ nav a.highlight:hover {
 
 /* GitHub-style Hero Section */
 .hero {
+  margin-top: -70px;
   background: var(--gradient-hero);
   padding: 120px 0 80px;
   position: relative;

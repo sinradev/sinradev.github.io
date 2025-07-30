@@ -150,32 +150,29 @@ const initScrollReveal = () => {
   });
 };
 
-// Enhanced header effects
+// Enhanced header effects - GitHub style
 const initHeaderEffects = () => {
   const header = document.querySelector('header');
-  let lastScroll = 0;
-
+  
   const handleScroll = () => {
-    const currentScroll = window.pageYOffset;
+    const scrollTop = window.pageYOffset;
     
-    // Add/remove scrolled class
-    if (currentScroll > 100) {
+    // Add scrolled class when scrolling down
+    if (scrollTop > 0) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
-
-    // Hide/show header on scroll
-    if (currentScroll > lastScroll && currentScroll > 200) {
-      header.style.transform = 'translateY(-100%)';
-    } else {
-      header.style.transform = 'translateY(0)';
-    }
-
-    lastScroll = currentScroll;
   };
 
+  // Ensure header starts transparent
+  header.classList.remove('scrolled');
+  
+  // Add scroll listener
   window.addEventListener('scroll', throttle(handleScroll, 16));
+  
+  // Initial check
+  handleScroll();
 };
 
 // Enhanced button interactions
