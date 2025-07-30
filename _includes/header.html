@@ -2,19 +2,17 @@
   <div class="container">
     <div class="company-name">
       <a href="/">
-        <img src="/assets/images/sinra-square.png" alt="Sinra Logo" width="40" height="40" />
-        <span>SINRA</span>
+        <img src="/assets/images/sinra-logo.svg" style="path: #fff" alt="Sinra Logo" width="40" height="40" />
+        <span>Sinra</span>
       </a>
     </div>
     <nav>
-      {% include navigation.html %}
+      <a href="/">Accueil</a>
+      <a href="/about">À propos</a>
+      <a href="/pricing">Tarifs</a>
+      <a href="/contact">Contact</a>
+      <a href="https://app.sinra.dev/users/sign_up" class="highlight">Commencer</a>
     </nav>
-    <button class="nav-toggle" id="open-nav" aria-label="Toggle navigation">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </button>
+    <button class="nav-toggle" id="open-nav">☰</button>
   </div>
 </header>

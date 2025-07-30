@@ -1,11 +1,11 @@
-- title: Éditeur de texte sous forme de blocs
-  body: Simplifiez vos descriptions et documentations avec un éditeur semblable à Notion.
+- title: Éditeur de texte par blocs
+  body: Simplifiez vos descriptions et votre documentation avec un éditeur style Notion.
   image: /assets/images/text-editor.png
   alt: Éditeur de texte
 - title: Intégration Figma et Whimsical
-  body: Prévisualisez directement vos maquettes dans l’interface.
+  body: Prévisualisez vos maquettes directement dans l'interface.
   image: /assets/images/figma-integration.png
   alt: Intégration Figma Sinra
-- title: Interface ultra simplifiée
-  body: 2 champs modifiables seulement dans chaque issue pour une concentration maximale.
+- title: Interface ultra-simplifiée
+  body: Seulement 2 champs éditables dans chaque issue pour une concentration maximale.
   image: /assets/images/simple-interface.png

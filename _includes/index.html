@@ -1,16 +1,22 @@
 <section class="hero">
   <div class="text-container">
-    <h1>{{ site.data[site.active_lang].strings.hero.title }}</h1>
-    <p class="subtext">{{ site.data[site.active_lang].strings.hero.body }}</p>
-    <div class="cta button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.hero.button }}</a></div>
-    <div>
-      <img src="/assets/images/sinra-overview.png" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" />
+    <h1>Sinra</h1>
+    <p class="subtext">La plateforme de gestion de projet qui combine la puissance du V-Model et l'agilité d'Agile. Explorez l'espace de la productivité.</p>
+    <div class="cta button alt"><a href="https://app.sinra.dev/users/sign_up">Découvrir Sinra</a></div>
+    <div class="hero-visual">
+      <div class="solar-system">
+        <div class="planet planet-1"></div>
+        <div class="planet planet-2"></div>
+        <div class="planet planet-3"></div>
+        <div class="planet planet-4"></div>
+        <div class="planet planet-5"></div>
+      </div>
+      <img src="{{ '/assets/images/sinra-overview.png' | relative_url }}" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" />
     </div>
   </div>
 </section>
 
 <div class="content">
-
   {% for section in site.data[site.active_lang].index_sections %}
   <section class="index-section">
     <div class="container flex">
@@ -20,7 +26,7 @@
         <p>{{ section.body }}</p>
       </div>
       <div class="image">
-        <img src="{{ section.image }}" alt="{{ section.alt }}" class="screenshot"  />
+        <img src="{{ section.image | relative_url }}" alt="{{ section.alt }}" class="screenshot"  />
       </div>
     </div>
   </section>
@@ -28,11 +34,13 @@
 
   <section class="features">
     <h2>{{ site.data[site.active_lang].strings.features }}</h2>
-    <p>Last features implemented in Sinra, check the blog to see news features</p>
+    <p>Dernières fonctionnalités implémentées dans Sinra, consultez le blog pour voir les nouveautés</p>
     <div class="container grid">
       {% for feature in site.data[site.active_lang].index_features %}
       <div class="feature">
-        <img src="{{ feature.image }}" alt="{{ feature.alt }}">
+        <div class="feature-icon">
+          <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}">
+        </div>
         <div>
           <h3>{{ feature.title }}</h3>
           <p>{{ feature.body }}</p>
@@ -52,8 +60,7 @@
   </section>
 
   <section class="bottom-cta">
-    <h2>{{ site.data[site.active_lang].strings.reduce_complexity }}
-    </h2>
+    <h2>{{ site.data[site.active_lang].strings.reduce_complexity }}</h2>
     <div class="button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.try_sinra }}</a></div>
   </section>
 </div>

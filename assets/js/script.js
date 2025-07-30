@@ -26,6 +26,67 @@ const throttle = (func, limit) => {
   };
 };
 
+// Animate statistics
+const animateStats = () => {
+  const statNumbers = document.querySelectorAll('.stat-number');
+  
+  statNumbers.forEach(stat => {
+    const target = parseInt(stat.getAttribute('data-target'));
+    const duration = 2000;
+    const increment = target / (duration / 16);
+    let current = 0;
+    
+    const updateStat = () => {
+      current += increment;
+      if (current < target) {
+        stat.textContent = Math.floor(current);
+        requestAnimationFrame(updateStat);
+      } else {
+        stat.textContent = target;
+      }
+    };
+    
+    // Start animation when element is visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          updateStat();
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    
+    observer.observe(stat);
+  });
+};
+
+// Create floating particles
+const createParticles = () => {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+  
+  const particlesContainer = document.querySelector('.hero-particles');
+  if (!particlesContainer) return;
+  
+  for (let i = 0; i < 20; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.cssText = `
+      position: absolute;
+      width: ${Math.random() * 4 + 2}px;
+      height: ${Math.random() * 4 + 2}px;
+      background: ${['var(--neon-pink)', 'var(--neon-blue)', 'var(--neon-green)'][Math.floor(Math.random() * 3)]};
+      border-radius: 50%;
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 100}%;
+      animation: particleFloat ${Math.random() * 8 + 4}s linear infinite;
+      animation-delay: ${Math.random() * 4}s;
+      opacity: 0;
+    `;
+    particlesContainer.appendChild(particle);
+  }
+};
+
 // Scroll progress indicator
 const createScrollIndicator = () => {
   const indicator = document.createElement('div');
@@ -309,6 +370,20 @@ const initCursorEffects = () => {
   });
 };
 
+// Create floating elements animation
+const initFloatingElements = () => {
+  const floatingIcons = document.querySelectorAll('.floating-icon');
+  
+  floatingIcons.forEach((icon, index) => {
+    // Add random movement
+    setInterval(() => {
+      const x = Math.random() * 20 - 10;
+      const y = Math.random() * 20 - 10;
+      icon.style.transform = `translate(${x}px, ${y}px) rotate(${Math.random() * 360}deg)`;
+    }, 3000 + index * 500);
+  });
+};
+
 // Performance monitoring
 const initPerformanceMonitoring = () => {
   if ('performance' in window) {
@@ -323,7 +398,7 @@ const initPerformanceMonitoring = () => {
 
 // Initialize all effects when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  initScrollIndicator();
+  createScrollIndicator();
   initParallax();
   initScrollReveal();
   initHeaderEffects();
@@ -331,6 +406,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initFormEffects();
   initImageEffects();
+  animateStats();
+  createParticles();
+  initFloatingElements();
   initPerformanceMonitoring();
   
   // Initialize cursor effects only on desktop
@@ -356,5 +434,8 @@ window.SinraWebsite = {
   initNavigation,
   initFormEffects,
   initImageEffects,
-  initCursorEffects
+  initCursorEffects,
+  animateStats,
+  createParticles,
+  initFloatingElements
 };

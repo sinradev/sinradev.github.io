@@ -1,35 +1,41 @@
-- title: Méthodologie <strong>hybride</strong> - Cycle en V et Agile
-  body: "Combinez la planification rigoureuse du Waterfall avec l’adaptabilité de l’Agile. Planifiez, exécutez, et itérez sans friction
+- title: Méthodologie <strong>Hybride</strong> - Cycle V-Model et Agile
+  body: "Combinez la planification rigoureuse du Waterfall avec l'adaptabilité d'Agile. Planifiez, exécutez et itérez en toute simplicité.
       <ul>
-        <li>Release simplifiée : Planifiez vos mises en production sans effort.</li>
-        <li>Cycle de développement : Visualisez la charge de travail des développeurs sur chaque cycle.</li>
+        <li>Release simplifiée : Planifiez vos déploiements sans effort.</li>
+        <li>Cycle de développement : Visualisez la charge de travail des développeurs pour chaque cycle.</li>
       </ul>"
   image: /assets/images/methodology-hybrid.png
-  alt: Méthologie hybride
+  alt: Méthodologie Hybride
+  category: "Mélange de Méthodologies"
 - title: Éliminez les <strong>réunions inutiles</strong>
-  body: Réduisez le temps perdu en réunions et planifications. Sinra <strong>optimise la collaboration</strong> entre produits et développeurs, minimisant le besoin de discussions répétitives.
+  body: Réduisez le temps perdu en réunions et en planification. Sinra <strong>optimise la collaboration</strong> entre les équipes produit et les développeurs, minimisant le besoin de discussions répétitives.
   image: /assets/images/reduce-meetings.png
   alt: Réduire les réunions inutiles
-- title: Gestion des <strong>tests</strong> et des <strong>issues</strong>
+  category: Optimisation du temps
+- title: Gestion des <strong>tests</strong> et des <strong>problèmes</strong>
   body: "<ul>
-        <li>Associez des tests à chaque user story et visualisez leur avancement.</li>
-        <li>Différenciation technique / produit : Planifiez efficacement avec la possibilité d’allouer des tickets techniques.</li>
+        <li>Associez des tests à chaque user story et visualisez leur progression.</li>
+        <li>Différenciation technique/produit : Planifiez efficacement avec la possibilité d'allouer des tickets techniques.</li>
       </ul>"
+  category: Tests
   image: /assets/images/test-management.png
-  alt: Gestion des tests Sinra
+  alt: Gestion des Tests Sinra
 - title: Votre projet, <strong>vos règles</strong>
-  body: "Personnalisez chaque aspect de votre projet avec des statuts, rôles d’équipe, et plus encore.</p>
+  body: "Personnalisez chaque aspect de votre projet avec des statuts, des rôles d'équipe et plus encore.</p>
       <ul>
-        <li>Système de backlog : Planifiez en amont et gardez une vue claire sur vos tâches à venir.</li>
-        <li>Rôles personnalisables : Product owner, développeur, reporter, chaque rôle peut être ajusté à votre projet.</li>
+        <li>Système de backlog : Planifiez à l'avance et maintenez une vue claire des tâches à venir.</li>
+        <li>Rôles personnalisables : Product owner, développeur, rapporteur—chaque rôle peut être ajusté pour s'adapter à votre projet.</li>
       </ul>"
   image: /assets/images/customization.png
   alt: Personnalisation Sinra
+  category: Votre Statut
 - title: Visualisation <strong>dynamique</strong>
-  body: Alternez entre la <strong>vue Kanban</strong> et la <strong>vue Liste</strong> pour organiser vos tâches de la manière la plus productive.
+  body: Basculez entre la <strong>vue Kanban</strong> et la <strong>vue Liste</strong> pour organiser vos tâches de la manière la plus productive.
   image: /assets/images/kanban-list-view.png
   alt: Vue Kanban et Liste Sinra
-- title: Besoin de partager vos <strong>feedbacks</strong> ?
-  body: Les cérémonie comme la "Retro" synchronisée avec la release courante est inclue dans Sinra.
+  category: "Kanban & Liste"
+- title: Besoin de partager votre <strong>feedback</strong> ?
+  body: Les cérémonies comme la "Retro" synchronisées avec la release actuelle sont incluses dans Sinra.
   image: /assets/images/collaboration.png
-  alt: Collaborer efficacement avec Sinra
+  alt: Collaborez efficacement avec Sinra
+  category: "Cérémonies"
