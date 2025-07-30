@@ -209,3 +209,6 @@ footer .legal-line {
 footer .legal-line a {
   font-weight: 600;
 }
+*::selection{
+  @apply bg-base-300 text-base-content;
+}
