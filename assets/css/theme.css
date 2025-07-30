@@ -277,6 +277,9 @@ nav a.highlight:hover {
   }
 }
 
+.hero .hero-visual {
+  margin-top: 5rem;
+}
 .hero .text-container {
   text-align: center;
   position: relative;
@@ -495,7 +498,7 @@ nav a.highlight:hover {
   animation: glowPulse 3s ease-in-out infinite;
 }
 
-/* Removed halo effect - keeping clean edges like in the reference image */
+/* No halo effect - clean design */
 
 @keyframes glowPulse {
   0%,
@@ -507,7 +510,7 @@ nav a.highlight:hover {
   }
 }
 
-/* Removed haloGlow animation - no halo effects */
+/* Removed animation - static halo like GitHub */
 
 .screenshot:hover {
   transform: translateY(-3px);
@@ -517,13 +520,7 @@ nav a.highlight:hover {
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.screenshot:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(255, 255, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
+/* Removed hover effects - halo always visible like GitHub */
 
 /* GitHub-style Buttons */
 .button a,
