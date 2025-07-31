@@ -398,6 +398,7 @@ nav a.highlight:hover {
   opacity: 1;
   visibility: visible;
   transform-style: preserve-3d;
+  animation-fill-mode: both;
 }
 
 .planet-1 {
@@ -486,47 +487,47 @@ nav a.highlight:hover {
   pointer-events: none;
 }
 
-/* Realistic elliptical orbit animation with cinematic angle */
+/* Realistic elliptical orbit animation with cinematic angle - Planets stay round */
 @keyframes orbit {
   0% {
     transform: 
       rotateX(15deg) rotateY(-25deg) 
       rotate(0deg) 
       translateX(calc(var(--orbit-radius) * (1 + var(--orbit-eccentricity)))) 
-      rotate(0deg) 
-      scale(1);
+      rotate(0deg)
+      scale(1.2);
   }
   25% {
     transform: 
       rotateX(15deg) rotateY(-25deg) 
       rotate(90deg) 
       translateX(calc(var(--orbit-radius) * (1 + var(--orbit-eccentricity) * 0.5))) 
-      rotate(-90deg) 
-      scale(1.05);
+      rotate(-90deg)
+      scale(1.1);
   }
   50% {
     transform: 
       rotateX(15deg) rotateY(-25deg) 
       rotate(180deg) 
       translateX(calc(var(--orbit-radius) * (1 - var(--orbit-eccentricity)))) 
-      rotate(-180deg) 
-      scale(1);
+      rotate(-180deg)
+      scale(0.9);
   }
   75% {
     transform: 
       rotateX(15deg) rotateY(-25deg) 
       rotate(270deg) 
       translateX(calc(var(--orbit-radius) * (1 + var(--orbit-eccentricity) * 0.5))) 
-      rotate(-270deg) 
-      scale(0.95);
+      rotate(-270deg)
+      scale(1.1);
   }
   100% {
     transform: 
       rotateX(15deg) rotateY(-25deg) 
       rotate(360deg) 
       translateX(calc(var(--orbit-radius) * (1 + var(--orbit-eccentricity)))) 
-      rotate(-360deg) 
-      scale(1);
+      rotate(-360deg)
+      scale(1.2);
   }
 }
 
