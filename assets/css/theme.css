@@ -144,6 +144,11 @@ header.scrolled {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo SVG en blanc */
+header img[src*="sinra-logo.svg"] {
+  filter: brightness(0) invert(1);
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -666,10 +671,11 @@ nav a.highlight:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: stretch;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  min-height: 400px;
 }
 
 .index-section .text {
@@ -681,6 +687,31 @@ nav a.highlight:hover {
   order: 2;
   text-align: center;
   position: relative;
+  padding: 30px;
+  background:
+    radial-gradient(
+      ellipse 300px 200px at 50% 35%,
+      oklch(74.229% 0.133 311.379 / 0.4) 0%,
+      oklch(74.229% 0.133 311.379 / 0.2) 40%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 300px 200px at 40% 65%,
+      oklch(86.133% 0.141 139.549 / 0.3) 0%,
+      oklch(86.133% 0.141 139.549 / 0.15) 50%,
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 300px 200px at 60% 65%,
+      oklch(74.229% 0.133 311.379 / 0.3) 0%,
+      oklch(74.229% 0.133 311.379 / 0.15) 50%,
+      transparent 65%
+    );
+  border-radius: var(--border-radius-lg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .index-section:nth-child(even) .text {
@@ -691,6 +722,32 @@ nav a.highlight:hover {
 
 .index-section:nth-child(even) .image {
   order: 1;
+  padding: 60px;
+  background:
+    radial-gradient(
+      ellipse 300px 200px at 50% 35%,
+      oklch(74.229% 0.133 311.379 / 0.4) 0%,
+      oklch(74.229% 0.133 311.379 / 0.2) 40%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 300px 200px at 40% 65%,
+      oklch(86.133% 0.141 139.549 / 0.3) 0%,
+      oklch(86.133% 0.141 139.549 / 0.15) 50%,
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 300px 200px at 60% 65%,
+      oklch(74.229% 0.133 311.379 / 0.3) 0%,
+      oklch(74.229% 0.133 311.379 / 0.15) 50%,
+      transparent 65%
+    );
+  border-radius: var(--border-radius-lg);
+  margin: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive adjustments */
@@ -709,6 +766,31 @@ nav a.highlight:hover {
   .index-section .image,
   .index-section:nth-child(even) .image {
     order: 2;
+    padding: 30px;
+    margin: 15px;
+    background:
+      radial-gradient(
+        ellipse 200px 150px at 50% 40%,
+        oklch(74.229% 0.133 311.379 / 0.3) 0%,
+        oklch(74.229% 0.133 311.379 / 0.15) 50%,
+        transparent 65%
+      ),
+      radial-gradient(
+        ellipse 200px 150px at 35% 70%,
+        oklch(86.133% 0.141 139.549 / 0.25) 0%,
+        oklch(86.133% 0.141 139.549 / 0.1) 60%,
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 200px 150px at 65% 70%,
+        oklch(74.229% 0.133 311.379 / 0.25) 0%,
+        oklch(74.229% 0.133 311.379 / 0.1) 60%,
+        transparent 70%
+      );
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Smaller planets on mobile */
