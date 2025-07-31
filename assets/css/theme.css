@@ -828,6 +828,7 @@ nav a.highlight:hover {
   font-weight: 700;
   margin-bottom: 16px;
   color: oklch(82.901% 0.031 222.959);
+  text-align: center;
 }
 
 .features > p {
@@ -837,6 +838,7 @@ nav a.highlight:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 /* GitHub-style Grid */
@@ -1016,6 +1018,7 @@ textarea {
 /* Utility Classes */
 .mt-5 {
   margin-top: 3rem;
+  text-align: center;
 }
 .mb-5 {
   margin-bottom: 3rem;
