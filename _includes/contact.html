@@ -1,19 +1,198 @@
-<div class="contact-box">
-	<!-- <form action="https://app.sinra.dev/contact/form" method="post" class="contact-form"> -->
-	<form action="http://localhost:3000/contact/form" method="post" class="contact-form">
-		<input type="hidden" name="_to" value="support@example.com" />
-		<input type="text" name="_gotcha" style="display: none;">
+<div class="contact-page">
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>{{ site.data[site.active_lang].strings.contact.title }}</h1>
+        <p class="hero-subtitle">{{ site.data[site.active_lang].strings.contact.heading }}</p>
+        <p class="hero-description">{{ site.data[site.active_lang].strings.contact.description }}</p>
+      </div>
+    </div>
+  </section>
 
-    <label for="name">{{ site.data[site.active_lang].strings.contact.full_name }}</label>
-		<input type="text" name="name" id="name" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.full_name }}" />
+  <!-- Contact Content -->
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h2>{{ site.data[site.active_lang].strings.contact.get_in_touch }}</h2>
+          <p>{{ site.data[site.active_lang].strings.contact.get_in_touch_desc }}</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="method-content">
+                <h3>{{ site.data[site.active_lang].strings.contact.email_title }}</h3>
+                <p>{{ site.data[site.active_lang].strings.contact.email_desc }}</p>
+                <a href="mailto:{{ site.data[site.active_lang].strings.contact.email_address }}" class="contact-link">
+                  {{ site.data[site.active_lang].strings.contact.email_address }}
+                </a>
+              </div>
+            </div>
 
-		<label for="email">{{ site.data[site.active_lang].strings.contact.email }}</label>
-		<input type="email" name="email" id="email" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.email }}" required />
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="method-content">
+                <h3>{{ site.data[site.active_lang].strings.contact.phone_title }}</h3>
+                <p>{{ site.data[site.active_lang].strings.contact.phone_desc }}</p>
+                <a href="tel:{{ site.data[site.active_lang].strings.contact.phone_number }}" class="contact-link">
+                  {{ site.data[site.active_lang].strings.contact.phone_number }}
+                </a>
+              </div>
+            </div>
 
-		<label for="message">{{ site.data[site.active_lang].strings.contact.message }}</label>
-		<textarea name="message" id="message" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.message }}"></textarea>
+            <div class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="method-content">
+                <h3>{{ site.data[site.active_lang].strings.contact.address_title }}</h3>
+                <p>{{ site.data[site.active_lang].strings.contact.address_desc }}</p>
+                <span class="contact-link">{{ site.data[site.active_lang].strings.contact.address }}</span>
+              </div>
+            </div>
+          </div>
 
-    <input type="hidden" name="return_url" value="{{ site.url }}/{% if site.active_lang != site.default_lang %}fr/{% endif %}contact-success/" />
-		<input type="submit" value="{{ site.data[site.active_lang].strings.contact.send_message }}" />
-	</form>
+          <div class="contact-hours">
+            <h3>{{ site.data[site.active_lang].strings.contact.hours_title }}</h3>
+            <p>{{ site.data[site.active_lang].strings.contact.hours_desc }}</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div class="form-card">
+            <h2>{{ site.data[site.active_lang].strings.contact.send_message_title }}</h2>
+            <p>{{ site.data[site.active_lang].strings.contact.send_message_desc }}</p>
+            
+            <form action="http://localhost:3000/contact/form" method="post" class="contact-form">
+              <input type="hidden" name="_to" value="support@example.com" />
+              <input type="text" name="_gotcha" style="display: none;">
+
+              <div class="form-group">
+                <label for="name">{{ site.data[site.active_lang].strings.contact.full_name }}</label>
+                <input type="text" name="name" id="name" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.full_name }}" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">{{ site.data[site.active_lang].strings.contact.email }}</label>
+                <input type="email" name="email" id="email" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.email }}" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">{{ site.data[site.active_lang].strings.contact.subject }}</label>
+                <select name="subject" id="subject" required>
+                  <option value="">{{ site.data[site.active_lang].strings.contact.placeholders.subject }}</option>
+                  <option value="general">{{ site.data[site.active_lang].strings.contact.subject_general }}</option>
+                  <option value="support">{{ site.data[site.active_lang].strings.contact.subject_support }}</option>
+                  <option value="sales">{{ site.data[site.active_lang].strings.contact.subject_sales }}</option>
+                  <option value="partnership">{{ site.data[site.active_lang].strings.contact.subject_partnership }}</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">{{ site.data[site.active_lang].strings.contact.message }}</label>
+                <textarea name="message" id="message" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.message }}" rows="6" required></textarea>
+              </div>
+
+              <input type="hidden" name="return_url" value="{{ site.url }}/{% if site.active_lang != site.default_lang %}fr/{% endif %}contact-success/" />
+              
+              <button type="submit" class="submit-button">
+                <span>{{ site.data[site.active_lang].strings.contact.send_message }}</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="contact-faq">
+    <div class="container">
+      <h2>{{ site.data[site.active_lang].strings.contact.faq_title }}</h2>
+      <div class="faq-grid">
+        {% for item in site.data[site.active_lang].contact_faq %}
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>{{ item.question }}</h3>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>{{ item.answer }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // FAQ Toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('open');
+        });
+        
+        // Toggle current item
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+
+    // Form validation and enhancement
+    const form = document.querySelector('.contact-form');
+    const submitButton = form.querySelector('.submit-button');
+    
+    form.addEventListener('submit', function(e) {
+      const requiredFields = form.querySelectorAll('[required]');
+      let isValid = true;
+      
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          isValid = false;
+          field.classList.add('error');
+        } else {
+          field.classList.remove('error');
+        }
+      });
+      
+      if (!isValid) {
+        e.preventDefault();
+        alert('{{ site.data[site.active_lang].strings.contact.validation_error }}');
+      } else {
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<span>{{ site.data[site.active_lang].strings.contact.sending }}</span>';
+      }
+    });
+  });
+</script>

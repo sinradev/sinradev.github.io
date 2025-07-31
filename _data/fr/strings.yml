@@ -48,15 +48,41 @@ pricing:
   start_free_trial: "Essai Gratuit"
   contact_sales: "Contacter les Ventes"
 contact:
+  title: Contact
+  heading: Restons en contact
+  description: Nous sommes là pour vous aider et répondre à vos questions.
+  get_in_touch: Entrons en Contact
+  get_in_touch_desc: Nous sommes là pour vous aider et répondre à vos questions. N'hésitez pas à nous contacter par l'une des méthodes ci-dessous.
+  email_title: Email
+  email_desc: Envoyez-nous un email et nous vous répondrons sous 24 heures.
+  email_address: contact@sinra.dev
+  phone_title: Téléphone
+  phone_desc: Appelez-nous pendant les heures de bureau pour une assistance immédiate.
+  phone_number: "+33 1 23 45 67 89"
+  address_title: Adresse
+  address_desc: Visitez notre bureau pour des réunions et consultations en personne.
+  address: "123 Rue de l'Innovation, Ville Tech, VT 12345"
+  hours_title: Heures d'Ouverture
+  hours_desc: Lundi à vendredi, 9h00 - 18h00 (CET)
+  send_message_title: Envoyez-nous un Message
+  send_message_desc: Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.
   full_name: Nom et Prénom
   email: Email
+  subject: Sujet
   message: Message
-  address: Adresse
   send_message: Envoyer Message
   placeholders:
     full_name: Inscrivez votre nom complet...
     email: Inscrivez votre email...
+    subject: Sélectionnez un sujet...
     message: Écrivez votre message...
+  subject_general: Demande Générale
+  subject_support: Support Technique
+  subject_sales: Question Commerciale
+  subject_partnership: Partenariat
+  validation_error: Veuillez remplir tous les champs obligatoires.
+  sending: Envoi en cours...
+  faq_title: Questions Fréquemment Posées
 contact_success:
   success: Succès
   message: Votre message a été envoyé. Nous vous contacterons dès que possible.

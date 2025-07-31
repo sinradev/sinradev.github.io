@@ -31,15 +31,41 @@ blog:
   newer_posts: Newer posts
   date_format: "%B %d, %Y"
 contact:
+  title: Contact
+  heading: Get in touch today
+  description: We are here to help and answer any questions you might have.
+  get_in_touch: Get in Touch
+  get_in_touch_desc: We're here to help and answer any questions you might have. Feel free to reach out to us through any of the methods below.
+  email_title: Email
+  email_desc: Send us an email and we'll get back to you within 24 hours.
+  email_address: contact@sinra.dev
+  phone_title: Phone
+  phone_desc: Call us during business hours for immediate assistance.
+  phone_number: "+1 (555) 123-4567"
+  address_title: Address
+  address_desc: Visit our office for in-person meetings and consultations.
+  address: "123 Innovation Street, Tech City, TC 12345"
+  hours_title: Business Hours
+  hours_desc: Monday to Friday, 9:00 AM - 6:00 PM (EST)
+  send_message_title: Send us a Message
+  send_message_desc: Fill out the form below and we'll get back to you as soon as possible.
   full_name: Full Name
   email: Email
+  subject: Subject
   message: Message
-  address: Address
   send_message: Send Message
   placeholders:
     full_name: Enter your full name...
     email: Enter your email...
+    subject: Select a subject...
     message: Enter your message...
+  subject_general: General Inquiry
+  subject_support: Technical Support
+  subject_sales: Sales Question
+  subject_partnership: Partnership
+  validation_error: Please fill in all required fields.
+  sending: Sending...
+  faq_title: Frequently Asked Questions
 contact_success:
   success: Success
   message: Your message is sent. We'll be in touch soon.
