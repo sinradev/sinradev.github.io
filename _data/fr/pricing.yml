@@ -1,36 +1,50 @@
-- name: Par Mois
+- name: Plan Mensuel
   color: "#8e8e8e"
+  price: "10"
+  currency: "€"
+  period: "/mois"
   features:
-    - text: 10€ par mois
-      highlight: true
     - text: Utilisable pour 1 utilisateur
       highlight: false
-    - text: Éditeur de text modern (WYSIWYG - Notion like)
+    - text: Éditeur de texte moderne (WYSIWYG - Notion-like)
+      highlight: true
+    - text: Système de commentaires avancé
+      highlight: true
+    - text: Compte rendu à travers les cérémonies
+      highlight: true
+    - text: Interface simplifiée par type d'utilisateur
+      highlight: true
+    - text: Collaboration en temps réel
       highlight: false
-    - text: Système de commentaire avancé
-      highlight: false
-    - text: Compte rendu à travers les cérénomies
-      highlight: false
-    - text: Une interface simple par type d’utilisateur
+    - text: Support prioritaire
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Commencer
-- name: Par An
+- name: Plan Annuel
   color: "#4a4a4a"
+  price: "96"
+  currency: "€"
+  period: "/an"
+  original_price: "120€"
+  recommended: true
   features:
-    - text: 96€ par an (20% de remise)
-      highlight: true
     - text: Utilisable pour 1 utilisateur
       highlight: false
-    - text: Éditeur de text modern (WYSIWYG - Notion like)
-      highlight: false
-    - text: Système de commentaire avancé
-      highlight: false
-    - text: Compte rendu à travers les cérénomies
-      highlight: false
-    - text: Une interface simple par type d’utilisateur
-      highlight: false
+    - text: Éditeur de texte moderne (WYSIWYG - Notion-like)
+      highlight: true
+    - text: Système de commentaires avancé
+      highlight: true
+    - text: Compte rendu à travers les cérémonies
+      highlight: true
+    - text: Interface simplifiée par type d'utilisateur
+      highlight: true
+    - text: Collaboration en temps réel
+      highlight: true
+    - text: Support prioritaire
+      highlight: true
+    - text: 20% de remise
+      highlight: true
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Commencer

@@ -1,47 +1,152 @@
-<div class="plans">
-	{% for plan in site.data[site.active_lang].pricing %}
-		<ul class="plan bg-black">
-			<li>
-				<h3>{{ plan.name }}</h3>
-			</li>
-			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
-			{% endfor %}
+<div class="pricing-page">
+  <!-- Hero Section -->
+  <section class="pricing-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>{{ site.data[site.active_lang].strings.pricing.title }}</h1>
+        <p class="hero-subtitle">{{ site.data[site.active_lang].strings.pricing.heading }}</p>
+        <div class="discount-badge">
+          <span>{{ site.data[site.active_lang].strings.pricing.discount_badge }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
+  <!-- Pricing Plans -->
+  <section class="pricing-plans">
+    <div class="container">
+      <div class="plans-grid">
+        {% for plan in site.data[site.active_lang].pricing %}
+          <div class="plan-card {% if plan.recommended %}recommended{% endif %}">
+            {% if plan.recommended %}
+              <div class="recommended-badge">
+                <span>{{ site.data[site.active_lang].strings.pricing.recommended }}</span>
+              </div>
+            {% endif %}
+
+            <div class="plan-header">
+              <h3 class="plan-name">{{ plan.name }}</h3>
+              {% if plan.price %}
+                <div class="plan-price">
+                  <span class="currency">{{ plan.currency }}</span>
+                  <span class="amount">{{ plan.price }}</span>
+                  <span class="period">{{ plan.period }}</span>
+                </div>
+                {% if plan.original_price %}
+                  <div class="original-price">
+                    <span>{{ site.data[site.active_lang].strings.pricing.original_price }} {{ plan.original_price }}</span>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+
+            <div class="plan-features">
+              {% for feature in plan.features %}
+                <div class="feature-item {% if feature.highlight %}highlighted{% endif %}">
+                  <div class="feature-icon">
+                    {% if feature.highlight %}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                      </svg>
+                    {% else %}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="2" fill="currentColor"/>
+                      </svg>
+                    {% endif %}
+                  </div>
+                  <span class="feature-text">{{ feature.text }}</span>
+                </div>
+              {% endfor %}
+            </div>
+
+            {% if plan.call_to_action %}
+              <div class="plan-cta">
+                <a href="{{ plan.call_to_action.link }}" class="cta-button {% if plan.recommended %}primary{% else %}secondary{% endif %}">
+                  {{ plan.call_to_action.text }}
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  {% if site.data[site.active_lang].pricing_faq %}
+    <section class="pricing-faq">
+      <div class="container">
+        <h2>{{ site.data[site.active_lang].strings.pricing.pricing_faq }}</h2>
+        <div class="faq-grid">
+          {% for item in site.data[site.active_lang].pricing_faq %}
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>{{ item.question }}</h3>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>{{ item.answer }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- CTA Section -->
+  <section class="pricing-cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>{{ site.data[site.active_lang].strings.pricing.ready_to_start }}</h2>
+        <p>{{ site.data[site.active_lang].strings.pricing.ready_to_start_desc }}</p>
+        <div class="cta-buttons">
+          <a href="https://app.sinra.dev/users/sign_up" class="cta-button primary">
+            {{ site.data[site.active_lang].strings.pricing.start_free_trial }}
+          </a>
+          <a href="/contact" class="cta-button secondary">
+            {{ site.data[site.active_lang].strings.pricing.contact_sales }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
-{% if site.data[site.active_lang].pricing_faq %}
-<h2>{{ site.data[site.active_lang].strings.pricing.pricing_faq }}</h2>
-	<dl class="faq">
-		{% for item in site.data[site.active_lang].pricing_faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
-{% endif %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-  // Boucle toute les classes .courriel
-  var oC = document.getElementsByClassName("courriel");
-  var i;
-  for (i = 0; i < oC.length; i++) {
-    // récupère l'adresse codée
-    var sC = oC[i].getAttribute("data-courriel");
-    // Remplace le mot « point » par un point
-    sC = sC.replace("point", ".");
-    // Remplacer le mot « arobas » par @
-    sC = sC.replace("arobas", "@");
-    // Ajouter l'attribut « href » avec l'adresse
-    oC[i].setAttribute("href", "mailto:" + sC);
-    // Ajouter l'adresse comme texte du lien
-    oC[i].innerHTML = sC;
-  }
-})
+    // FAQ Toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('open');
+        });
+
+        // Toggle current item
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+
+    // Email decoding
+    var oC = document.getElementsByClassName("courriel");
+    var i;
+    for (i = 0; i < oC.length; i++) {
+      var sC = oC[i].getAttribute("data-courriel");
+      sC = sC.replace("point", ".");
+      sC = sC.replace("arobas", "@");
+      oC[i].setAttribute("href", "mailto:" + sC);
+      oC[i].innerHTML = sC;
+    }
+  });
 </script>

@@ -40,6 +40,13 @@ pricing:
   heading: Find the perfect plan for your business
   description: All plans include our award winning sales optimization solution to track your sales in real time.
   pricing_faq: Tarifs FAQ
+  discount_badge: "20% DE RÉDUCTION - Plan Annuel"
+  recommended: "Le Plus Populaire"
+  original_price: "Prix original :"
+  ready_to_start: "Prêt à commencer ?"
+  ready_to_start_desc: "Choisissez le plan qui correspond le mieux à vos besoins et commencez à gérer vos projets plus efficacement dès aujourd'hui."
+  start_free_trial: "Essai Gratuit"
+  contact_sales: "Contacter les Ventes"
 contact:
   full_name: Nom et Prénom
   email: Email

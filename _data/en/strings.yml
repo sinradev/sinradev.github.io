@@ -55,6 +55,13 @@ pricing:
   heading: Find the perfect plan for your business
   description: All plans include our award winning sales optimization solution to track your sales in real time.
   pricing_faq: Pricing FAQ
+  discount_badge: "20% OFF - Annual Plan"
+  recommended: "Most Popular"
+  original_price: "Original price:"
+  ready_to_start: "Ready to get started?"
+  ready_to_start_desc: "Choose the plan that best fits your needs and start managing your projects more efficiently today."
+  start_free_trial: "Start Free Trial"
+  contact_sales: "Contact Sales"
 reduce_complexity: <strong>Reduce</strong> complexity, <strong>optimize</strong> your projects.
 testimonial: Testimonial
 try_sinra: Try Sinra for free

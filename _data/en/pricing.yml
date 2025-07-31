@@ -1,36 +1,50 @@
-- name: By Month
+- name: Monthly Plan
   color: "#8e8e8e"
+  price: "10"
+  currency: "€"
+  period: "/month"
   features:
-    - text: 10€ per month
-      highlight: true
     - text: Up to 1 user
       highlight: false
-    - text: Mordern WYSIWYG (Notion like)
+    - text: Modern WYSIWYG editor (Notion-like)
+      highlight: true
+    - text: Advanced comment system
+      highlight: true
+    - text: Ceremonies reporting
+      highlight: true
+    - text: Simplified interface by user type
+      highlight: true
+    - text: Real-time collaboration
       highlight: false
-    - text: Advanced Comment System
-      highlight: false
-    - text: Cerenomies reporting
-      highlight: false
-    - text: A Simplified interface by user type
+    - text: Priority support
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Get started
-- name: By Year
+- name: Yearly Plan
   color: "#4a4a4a"
+  price: "96"
+  currency: "€"
+  period: "/year"
+  original_price: "120€"
+  recommended: true
   features:
-    - text: 96€ per year (20% discount)
-      highlight: true
     - text: Up to 1 user
       highlight: false
-    - text: Mordern WYSIWYG (Notion like)
-      highlight: false
-    - text: Advanced Comment System
-      highlight: false
-    - text: Cerenomies reporting
-      highlight: false
-    - text: A Simplified interface by user type
-      highlight: false
+    - text: Modern WYSIWYG editor (Notion-like)
+      highlight: true
+    - text: Advanced comment system
+      highlight: true
+    - text: Ceremonies reporting
+      highlight: true
+    - text: Simplified interface by user type
+      highlight: true
+    - text: Real-time collaboration
+      highlight: true
+    - text: Priority support
+      highlight: true
+    - text: 20% discount
+      highlight: true
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Get started
