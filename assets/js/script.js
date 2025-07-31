@@ -105,7 +105,7 @@ const createScrollIndicator = () => {
 
 // Parallax effects
 const initParallax = () => {
-  const parallaxElements = document.querySelectorAll('.hero, .screenshot');
+  const parallaxElements = document.querySelectorAll('.screenshot');
   
   const handleParallax = () => {
     const scrolled = window.pageYOffset;
