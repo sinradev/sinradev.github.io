@@ -12,6 +12,11 @@
       <a href="/pricing">Tarifs</a>
       <a href="/contact">Contact</a>
       <a href="https://app.sinra.dev/users/sign_up" class="highlight">Commencer</a>
+      <div class="language-switcher">
+        <a href="/" class="lang-link {% if site.active_lang == 'en' %}active{% endif %}">EN</a>
+        <span class="lang-separator">|</span>
+        <a href="/fr/" class="lang-link {% if site.active_lang == 'fr' %}active{% endif %}">FR</a>
+      </div>
     </nav>
     <button class="nav-toggle" id="open-nav">☰</button>
   </div>

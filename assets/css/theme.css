@@ -235,6 +235,42 @@ nav a.highlight:hover {
   box-shadow: var(--shadow-md);
 }
 
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 24px;
+  padding-left: 24px;
+  border-left: 1px solid var(--gray-300);
+}
+
+.lang-link {
+  color: oklch(82.901% 0.031 222.959);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+  opacity: 0.7;
+}
+
+.lang-link:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.lang-link.active {
+  color: var(--primary);
+  opacity: 1;
+  font-weight: 600;
+}
+
+.lang-separator {
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
 /* GitHub-style Hero Section */
 .hero {
   margin-top: -70px;
@@ -1471,6 +1507,17 @@ footer {
   nav {
     display: none;
   }
+
+  .language-switcher {
+    margin-left: 16px;
+    padding-left: 16px;
+    gap: 6px;
+  }
+
+  .lang-link {
+    font-size: 0.8rem;
+  }
+}
 
   .testimonial {
     padding: 40px 20px;
