@@ -594,11 +594,12 @@ nav a.highlight:hover {
   border-radius: var(--btn-border-radius);
   font-weight: 600;
   font-size: 14px;
-  cursor: pointer;
-  transition: var(--transition-normal);
+  cursor: pointer !important;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  user-select: none;
 }
 
 .button a::before,
@@ -624,20 +625,26 @@ nav a.highlight:hover {
 .button a:hover,
 .button button:hover {
   background: var(--primary-dark);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-lg);
+  cursor: pointer !important;
 }
 
 .button.alt a {
   background: transparent;
   color: oklch(82.901% 0.031 222.959);
   border: 1px solid var(--gray-300);
+  cursor: pointer !important;
+  transition: all 0.3s ease;
 }
 
 .button.alt a:hover {
   background: var(--gray-200);
   border-color: var(--gray-400);
   color: oklch(82.901% 0.031 222.959);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: var(--shadow-md);
+  cursor: pointer !important;
 }
 
 /* GitHub-style Content Sections */
@@ -1550,13 +1557,28 @@ img.loaded {
 }
 
 /* Button States */
-.button a:active {
-  transform: translateY(0);
+.button a:active,
+.button button:active {
+  transform: translateY(0) scale(0.98);
+  cursor: pointer !important;
 }
 
-.button a:focus {
+.button a:focus,
+.button button:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
+  cursor: pointer !important;
+}
+
+.button.alt a:active {
+  transform: translateY(0) scale(0.98);
+  cursor: pointer !important;
+}
+
+.button.alt a:focus {
+  outline: 2px solid var(--gray-400);
+  outline-offset: 2px;
+  cursor: pointer !important;
 }
 
 /* Reduced Motion */
