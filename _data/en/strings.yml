@@ -1,16 +1,31 @@
 about:
   innovative_solution: An Innovative Solution Born from Experience and Challenges in Software Development
-  result_deep_reflexion: Sinra is the result of a deep reflection on the limitations of traditional project management methodologies, whether Agile or Waterfall. Two major observations guided its creation.</p>
-  agile_pitfalls: Agile pitfalls
-  time_consuming: The time-consuming nature of meetings and adjustments in Agile
-  agile_environment: "<p> In an Agile environment, meetings pile up: sprint planning, reprioritization, endless discussions about which features to develop or not, and prioritizing bugs.</p><p> While these exchanges are essential, they often lead to a significant loss of time, reducing the team's overall efficiency.</p>"
-  waterfall_pitfalls: Waterfall pitfalls
-  loss_of_control: The loss of control in Waterfall development
-  waterfall_methodology: "<p> Conversely, the Waterfall methodology faces another challenge: deadlines. Projects frequently exceed their allotted time, and late adjustments are difficult to integrate into a rigid schedule.</p><p> This leads to a loss of control over timelines and deliverables, often at the expense of quality or stakeholder satisfaction.</p>"
-  design_to: Designed to address the challenges of these two approaches
-  sinra_combines: Sinra combines the best of Agile and Waterfall methodologies.
-  groundbreaking_project: "This groundbreaking project provides a harmonious solution that:"
-  conversely_waterfall_methodology: "<p> Conversely, the Waterfall methodology faces another challenge: deadlines. Projects frequently exceed their allotted time, and late adjustments are difficult to integrate into a rigid schedule.</p><p>This leads to a loss of control over timelines and deliverables, often at the expense of quality or stakeholder satisfaction.</p><ul><li>Reduces the burden of unnecessary meetings by promoting clear and structured planning.</li><ul><li>Maintains a global vision of deadlines and objectives while allowing flexibility to adapt to unforeseen events.</li><li>Ensures enhanced control over developments with balanced and optimized cycles to prevent scope creep.</li><p>With Sinra, development teams regain sustainable efficiency, increased control, and a working method truly tailored to the realities of modern software development.</p>"
+  result_deep_reflexion: Sinra is the result of a deep reflection on the limitations of traditional project management methodologies, whether Agile or Waterfall. Two major observations guided its creation.
+  problem_title: The Challenge of Modern Project Management
+  problem_description: Both Agile and Waterfall methodologies have their strengths, but they also come with significant limitations that can hinder project success and team efficiency.
+  agile_pitfalls: Agile Pitfalls
+  time_consuming: The Time-Consuming Nature of Meetings and Adjustments
+  agile_environment: "In an Agile environment, meetings pile up: sprint planning, reprioritization, endless discussions about which features to develop or not, and prioritizing bugs. While these exchanges are essential, they often lead to a significant loss of time, reducing the team's overall efficiency."
+  meeting_overload: Meeting overload and time waste
+  constant_reprioritization: Constant reprioritization and scope changes
+  efficiency_loss: Loss of team efficiency and productivity
+  waterfall_pitfalls: Waterfall Pitfalls
+  loss_of_control: The Loss of Control in Development
+  waterfall_methodology: "Conversely, the Waterfall methodology faces another challenge: deadlines. Projects frequently exceed their allotted time, and late adjustments are difficult to integrate into a rigid schedule. This leads to a loss of control over timelines and deliverables, often at the expense of quality or stakeholder satisfaction."
+  deadline_pressure: Intense deadline pressure and stress
+  rigid_schedule: Rigid schedule with no flexibility
+  quality_compromise: Compromise between quality and deadlines
+  design_to: Designed to Address the Challenges of Both Approaches
+  sinra_combines: Sinra combines the best of Agile and Waterfall methodologies to create a harmonious solution.
+  clear_planning: Clear and Structured Planning
+  clear_planning_desc: Reduces the burden of unnecessary meetings by promoting clear and structured planning processes.
+  global_vision: Global Vision with Flexibility
+  global_vision_desc: Maintains a global vision of deadlines and objectives while allowing flexibility to adapt to unforeseen events.
+  enhanced_control: Enhanced Control and Optimization
+  enhanced_control_desc: Ensures enhanced control over developments with balanced and optimized cycles to prevent scope creep.
+  ready_to_transform: Ready to Transform Your Project Management?
+  ready_to_transform_desc: Join thousands of teams who have already discovered the power of Sinra's innovative approach.
+  learn_more: Learn More
 blog:
   older_posts: Older posts
   newer_posts: Newer posts

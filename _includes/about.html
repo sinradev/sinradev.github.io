@@ -1,42 +1,116 @@
 
 <div class="content about">
-
-  <section class="features">
-    <h2>{{ site.data[site.active_lang].strings.about.innovative_solution }}</h2>
-    <p>{{ site.data[site.active_lang].strings.about.result_deep_reflexion}}</p>
-  </section>
-
-  <div class="both">
-    <section class="about-section bg-white">
-        <div class="text">
-          <img src="/assets/images/agility-black.png" alt="Agility" class="rounded"  />
-          <div class="category-section">{{ site.data[site.active_lang].strings.about.agile_pitfalls }}</div>
-          <h2>{{ site.data[site.active_lang].strings.about.time_consuming }}</h2>
-          {{ site.data[site.active_lang].strings.about.agile_environment }}
-        </div>
-    </section>
-    <section class="about-section bg-black">
-        <div class="text">
-        <img src="/assets/images/waterfall.webp" alt="Waterfall" class="rounded"  />
-        <div class="category-section">{{ site.data[site.active_lang].strings.about.waterfall_pitfalls }}</div>
-        <h2>{{ site.data[site.active_lang].strings.about.loss_of_control }}</h2>
-        {{ site.data[site.active_lang].strings.about.waterfall_methodology }}
-      </div>
-    </section>
-  </div>
-
-  <section class="features">
-    <h2>{{ site.data[site.active_lang].strings.about.design_to }}</h2>
-    <p>{{ site.data[site.active_lang].strings.about.sinra_combines }}</p>
-  </section>
-
-  <section class="about-section">
-    <div class="container flex">
-      <div class="text">
-        <h2>{{ site.data[site.active_lang].strings.about.groundbreaking_project }}</h2>
-        <p>{{ site.data[site.active_lang].strings.about.conversely_waterfall_methodology }}</p>
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>{{ site.data[site.active_lang].strings.about.innovative_solution }}</h1>
+        <p class="hero-subtitle">{{ site.data[site.active_lang].strings.about.result_deep_reflexion }}</p>
       </div>
     </div>
   </section>
 
+  <!-- Problem Statement Section -->
+  <section class="problem-statement">
+    <div class="container">
+      <h2>{{ site.data[site.active_lang].strings.about.problem_title }}</h2>
+      <p>{{ site.data[site.active_lang].strings.about.problem_description }}</p>
+    </div>
+  </section>
+
+  <!-- Challenges Grid -->
+  <section class="challenges-grid">
+    <div class="container">
+      <div class="challenge-card agile">
+        <div class="card-icon">
+          <img src="/assets/images/agility-black.png" alt="Agile Methodology" />
+        </div>
+        <div class="card-content">
+          <h3>{{ site.data[site.active_lang].strings.about.agile_pitfalls }}</h3>
+          <h4>{{ site.data[site.active_lang].strings.about.time_consuming }}</h4>
+          <div class="challenge-description">
+            {{ site.data[site.active_lang].strings.about.agile_environment }}
+          </div>
+          <div class="challenge-points">
+            <div class="point">
+              <span>{{ site.data[site.active_lang].strings.about.meeting_overload }}</span>
+            </div>
+            <div class="point">
+              <span>{{ site.data[site.active_lang].strings.about.constant_reprioritization }}</span>
+            </div>
+            <div class="point">
+              <span>{{ site.data[site.active_lang].strings.about.efficiency_loss }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="challenge-card waterfall">
+        <div class="card-icon">
+          <img src="/assets/images/waterfall.webp" alt="Waterfall Methodology" />
+        </div>
+        <div class="card-content">
+          <h3>{{ site.data[site.active_lang].strings.about.waterfall_pitfalls }}</h3>
+          <h4>{{ site.data[site.active_lang].strings.about.loss_of_control }}</h4>
+          <div class="challenge-description">
+            {{ site.data[site.active_lang].strings.about.waterfall_methodology }}
+          </div>
+          <div class="challenge-points">
+            <div class="point">
+              <span>{{ site.data[site.active_lang].strings.about.deadline_pressure }}</span>
+            </div>
+            <div class="point">
+              <span>{{ site.data[site.active_lang].strings.about.rigid_schedule }}</span>
+            </div>
+            <div class="point">
+              <span>{{ site.data[site.active_lang].strings.about.quality_compromise }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="solution-section">
+    <div class="container">
+      <div class="solution-content">
+        <h2>{{ site.data[site.active_lang].strings.about.design_to }}</h2>
+        <p class="solution-description">{{ site.data[site.active_lang].strings.about.sinra_combines }}</p>
+        
+                 <div class="solution-benefits">
+           <div class="benefit">
+             <h3>{{ site.data[site.active_lang].strings.about.clear_planning }}</h3>
+             <p>{{ site.data[site.active_lang].strings.about.clear_planning_desc }}</p>
+           </div>
+           
+           <div class="benefit">
+             <h3>{{ site.data[site.active_lang].strings.about.global_vision }}</h3>
+             <p>{{ site.data[site.active_lang].strings.about.global_vision_desc }}</p>
+           </div>
+           
+           <div class="benefit">
+             <h3>{{ site.data[site.active_lang].strings.about.enhanced_control }}</h3>
+             <p>{{ site.data[site.active_lang].strings.about.enhanced_control_desc }}</p>
+           </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="about-cta">
+    <div class="container">
+      <h2>{{ site.data[site.active_lang].strings.about.ready_to_transform }}</h2>
+      <p>{{ site.data[site.active_lang].strings.about.ready_to_transform_desc }}</p>
+      <div class="cta-buttons">
+        <a href="https://app.sinra.dev/users/sign_up" class="button primary">
+          {{ site.data[site.active_lang].strings.hero.button }}
+        </a>
+        <a href="/contact" class="button secondary">
+          {{ site.data[site.active_lang].strings.about.learn_more }}
+        </a>
+      </div>
+    </div>
+  </section>
 </div>

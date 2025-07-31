@@ -1,16 +1,31 @@
 about:
   innovative_solution: Une solution innovante née de l'expérience et des défis du développement logiciel
-  result_deep_reflexion: Sinra est le résultat d'une profonde réflexion sur les limites des méthodologies traditionnelles de gestion de projet, qu'elles soient Agile ou en V. Deux constats majeurs ont guidé sa création.</p>
-  agile_pitfalls: Les écueils d'Agile
-  time_consuming: La nature chronophage des réunions et des ajustements en Agile
-  agile_environment: "<p> Dans un environnement Agile, les réunions s'accumulent : planification des sprints, re-priorisation, discussions interminables sur les fonctionnalités à développer ou non, et priorisation des bugs.</p><p> Bien que ces échanges soient essentiels, ils entraînent souvent une perte de temps significative, réduisant l'efficacité globale de l'équipe.</p>"
-  waterfall_pitfalls: Les écueils du modèle en V
-  loss_of_control: La perte de contrôle dans le développement en V
-  waterfall_methodology: "<p> À l'inverse, la méthodologie en V fait face à un autre défi : les délais. Les projets dépassent fréquemment le temps alloué, et les ajustements tardifs sont difficiles à intégrer dans un calendrier rigide.</p><p> Cela entraîne une perte de contrôle sur les échéances et les livrables, souvent au détriment de la qualité ou de la satisfaction des parties prenantes.</p>"
-  design_to: Conçu pour répondre aux défis de ces deux approches
-  sinra_combines: Sinra combine le meilleur des méthodologies Agile et en V.
-  groundbreaking_project: "Ce projet révolutionnaire offre une solution harmonieuse qui :"
-  conversely_waterfall_methodology: "<p> À l'inverse, la méthodologie en V fait face à un autre défi : les délais. Les projets dépassent fréquemment le temps alloué, et les ajustements tardifs sont difficiles à intégrer dans un calendrier rigide.</p><p>Cela entraîne une perte de contrôle sur les échéances et les livrables, souvent au détriment de la qualité ou de la satisfaction des parties prenantes.</p><ul><li>Réduit la charge des réunions inutiles en favorisant une planification claire et structurée.</li><ul><li>Maintient une vision globale des délais et des objectifs tout en permettant une flexibilité pour s'adapter aux imprévus.</li><li>Assure un meilleur contrôle des développements grâce à des cycles équilibrés et optimisés pour éviter les dérives de périmètre.</li><p>Avec Sinra, les équipes de développement retrouvent une efficacité durable, un contrôle accru et une méthode de travail véritablement adaptée aux réalités du développement logiciel moderne.</p>"
+  result_deep_reflexion: Sinra est le résultat d'une profonde réflexion sur les limites des méthodologies traditionnelles de gestion de projet, qu'elles soient Agile ou en V. Deux constats majeurs ont guidé sa création.
+  problem_title: Le Défi de la Gestion de Projet Moderne
+  problem_description: Les méthodologies Agile et en V ont leurs forces, mais elles présentent aussi des limitations importantes qui peuvent entraver le succès des projets et l'efficacité des équipes.
+  agile_pitfalls: Les Écueils d'Agile
+  time_consuming: La Nature Chronophage des Réunions et Ajustements
+  agile_environment: "Dans un environnement Agile, les réunions s'accumulent : planification des sprints, re-priorisation, discussions interminables sur les fonctionnalités à développer ou non, et priorisation des bugs. Bien que ces échanges soient essentiels, ils entraînent souvent une perte de temps significative, réduisant l'efficacité globale de l'équipe."
+  meeting_overload: Surcharge de réunions et perte de temps
+  constant_reprioritization: Repriorisation constante et changements de périmètre
+  efficiency_loss: Perte d'efficacité et de productivité de l'équipe
+  waterfall_pitfalls: Les Écueils du Modèle en V
+  loss_of_control: La Perte de Contrôle dans le Développement
+  waterfall_methodology: "À l'inverse, la méthodologie en V fait face à un autre défi : les délais. Les projets dépassent fréquemment le temps alloué, et les ajustements tardifs sont difficiles à intégrer dans un calendrier rigide. Cela entraîne une perte de contrôle sur les échéances et les livrables, souvent au détriment de la qualité ou de la satisfaction des parties prenantes."
+  deadline_pressure: Pression intense des délais et stress
+  rigid_schedule: Calendrier rigide sans flexibilité
+  quality_compromise: Compromis entre qualité et délais
+  design_to: Conçu pour Répondre aux Défis des Deux Approches
+  sinra_combines: Sinra combine le meilleur des méthodologies Agile et en V pour créer une solution harmonieuse.
+  clear_planning: Planification Claire et Structurée
+  clear_planning_desc: Réduit la charge des réunions inutiles en favorisant des processus de planification clairs et structurés.
+  global_vision: Vision Globale avec Flexibilité
+  global_vision_desc: Maintient une vision globale des délais et des objectifs tout en permettant une flexibilité pour s'adapter aux imprévus.
+  enhanced_control: Contrôle Amélioré et Optimisation
+  enhanced_control_desc: Assure un contrôle amélioré des développements avec des cycles équilibrés et optimisés pour éviter les dérives de périmètre.
+  ready_to_transform: Prêt à Transformer Votre Gestion de Projet ?
+  ready_to_transform_desc: Rejoignez des milliers d'équipes qui ont déjà découvert la puissance de l'approche innovante de Sinra.
+  learn_more: En Savoir Plus
 hero:
   title: Sinra - La <strong>gestion de projets</strong> réinventée.
   body: Un outil de gestion de projet, simple et puissant,<br/> fusionnant la <strong>méthodologie en V</strong> et <strong>Agile</strong> pour une performance optimale.
