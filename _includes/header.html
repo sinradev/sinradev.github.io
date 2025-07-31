@@ -6,18 +6,19 @@
         <span>Sinra</span>
       </a>
     </div>
-    <nav>
-      <a href="/">Accueil</a>
-      <a href="/about">À propos</a>
-      <a href="/pricing">Tarifs</a>
-      <a href="/contact">Contact</a>
-      <a href="https://app.sinra.dev/users/sign_up" class="highlight">Commencer</a>
-      <div class="language-switcher">
-        <a href="/" class="lang-link {% if site.active_lang == 'en' %}active{% endif %}">EN</a>
-        <span class="lang-separator">|</span>
-        <a href="/fr/" class="lang-link {% if site.active_lang == 'fr' %}active{% endif %}">FR</a>
-      </div>
-    </nav>
+    {% include navigation.html %}
+    {% comment %}<nav>{% endcomment %}
+    {% comment %}  <a href="/">Accueil</a>{% endcomment %}
+    {% comment %}  <a href="/about">À propos</a>{% endcomment %}
+    {% comment %}  <a href="/pricing">Tarifs</a>{% endcomment %}
+    {% comment %}  <a href="/contact">Contact</a>{% endcomment %}
+    {% comment %}  <a href="https://app.sinra.dev/users/sign_up" class="highlight">Commencer</a>{% endcomment %}
+    {% comment %}  <div class="language-switcher">{% endcomment %}
+    {% comment %}    <a href="/" class="lang-link {% if site.active_lang == 'en' %}active{% endif %}">EN</a>{% endcomment %}
+    {% comment %}    <span class="lang-separator">|</span>{% endcomment %}
+    {% comment %}    <a href="/fr/" class="lang-link {% if site.active_lang == 'fr' %}active{% endif %}">FR</a>{% endcomment %}
+    {% comment %}  </div>{% endcomment %}
+    {% comment %}</nav>{% endcomment %}
     <button class="nav-toggle" id="open-nav">☰</button>
   </div>
 </header>

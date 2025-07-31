@@ -6,7 +6,9 @@
     {{ item.name }}
   </a>
   {% endfor %}
+<div class="language-switcher">
   {% for tongue in site.languages %}
-    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}{% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}<span>{{" | "}}</span>{{ site.langsep }}{%- endif -%}
+    <a {% if tongue == site.active_lang %}style="font-weight: bold;" class="lang-link active"{% endif %}{% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}<span>{{" | "}}</span>{{ site.langsep }}{%- endif -%}
   {% endfor %}
+  </div>
 </nav>
