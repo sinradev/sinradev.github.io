@@ -1,22 +1,53 @@
 <section class="container">
-  <div class="testimonial mySwiper">
+  <div class="testimonial">
     <h2>{{ site.data[site.active_lang].strings.testimonial }}</h2>
-    <div class="testi-content swiper-wrapper">
+    <div class="testimonial-carousel">
+      <div class="testi-content swiper-wrapper">
         {% for testimonial in site.data[site.active_lang].testimonials %}
-      <div class="slide swiper-slide">
-        <blockquote>
-          {{ testimonial.body }}
-          <p class="editable author">{{ testimonial.author }}</p>
-        </blockquote>
-      </div>
+        <div class="slide swiper-slide">
+          <blockquote>
+            {{ testimonial.body }}
+            <p class="editable author">{{ testimonial.author }}</p>
+          </blockquote>
+        </div>
         {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-button-next nav-btn"></div>
-    <div class="swiper-button-prev nav-btn"></div>
-    <div class="swiper-pagination"></div>
   </div>
 </section>
-<!-- Swiper JS -->
-<script src="/assets/js/swiper-bundle.min.js"></script>
-<!-- JavaScript -->
-<script src="/assets/js/script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Initializing testimonial carousel...');
+  const testimonialSwiper = new Swiper('.testimonial-carousel', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '"></span>';
+      },
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      }
+    },
+    on: {
+      init: function() {
+        console.log('Testimonial carousel initialized with', this.slides.length, 'slides');
+        console.log('Pagination element:', this.pagination.el);
+      }
+    }
+  });
+});
+</script>
