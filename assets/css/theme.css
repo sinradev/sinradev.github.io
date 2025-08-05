@@ -382,10 +382,7 @@ nav a.highlight:hover {
   background: radial-gradient(
     circle,
     #ffffff 0%,
-    #ffd700 10%,
-    #ff8c00 30%,
-    #ff4500 50%,
-    #ff0000 70%,
+    #ffb416 70%,
     transparent 100%
   );
   border-radius: 50%;
@@ -1529,7 +1526,6 @@ footer {
   }
 
   .footer-columns {
-    grid-template-columns: 1fr;
     gap: 30px;
   }
 }
