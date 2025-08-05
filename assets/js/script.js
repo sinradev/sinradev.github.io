@@ -314,59 +314,6 @@ const initImageEffects = () => {
   });
 };
 
-// Enhanced cursor effects
-const initCursorEffects = () => {
-  const cursor = document.createElement('div');
-  cursor.className = 'custom-cursor';
-  document.body.appendChild(cursor);
-
-  const cursorFollower = document.createElement('div');
-  cursorFollower.className = 'cursor-follower';
-  document.body.appendChild(cursorFollower);
-
-  let mouseX = 0;
-  let mouseY = 0;
-  let cursorX = 0;
-  let cursorY = 0;
-  let followerX = 0;
-  let followerY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-
-  // Animate cursor
-  const animateCursor = () => {
-    cursorX += (mouseX - cursorX) * 0.1;
-    cursorY += (mouseY - cursorY) * 0.1;
-    followerX += (mouseX - followerX) * 0.05;
-    followerY += (mouseY - followerY) * 0.05;
-
-    cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
-    cursorFollower.style.transform = `translate(${followerX}px, ${followerY}px)`;
-
-    requestAnimationFrame(animateCursor);
-  };
-
-  animateCursor();
-
-  // Hover effects
-  const hoverElements = document.querySelectorAll('a, button, .feature, .screenshot');
-  
-  hoverElements.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-      cursor.classList.add('hover');
-      cursorFollower.classList.add('hover');
-    });
-
-    element.addEventListener('mouseleave', () => {
-      cursor.classList.remove('hover');
-      cursorFollower.classList.remove('hover');
-    });
-  });
-};
-
 // Create floating elements animation
 const initFloatingElements = () => {
   const floatingIcons = document.querySelectorAll('.floating-icon');
@@ -407,19 +354,11 @@ document.addEventListener('DOMContentLoaded', () => {
   createParticles();
   initFloatingElements();
   initPerformanceMonitoring();
-  
-  // Initialize cursor effects only on desktop
-  if (window.innerWidth > 768) {
-    initCursorEffects();
-  }
 });
 
 // Handle window resize
 window.addEventListener('resize', debounce(() => {
   // Reinitialize effects that depend on viewport size
-  if (window.innerWidth > 768) {
-    initCursorEffects();
-  }
 }, 250));
 
 // Export for potential external use

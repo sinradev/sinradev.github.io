@@ -1516,20 +1516,6 @@ footer {
   }
 }
 
-  .testimonial {
-    padding: 40px 20px;
-    margin: 40px 0;
-  }
-
-  .slide blockquote {
-    font-size: 16px;
-  }
-
-  .footer-columns {
-    gap: 30px;
-  }
-}
-
 @media (min-width: 769px) {
   .nav-toggle {
     display: none;
