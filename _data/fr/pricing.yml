@@ -5,19 +5,15 @@
   period: "/mois"
   features:
     - text: Utilisable pour 1 utilisateur
-      highlight: false
+      highlight: true
     - text: Éditeur de texte moderne (WYSIWYG - Notion-like)
       highlight: true
     - text: Système de commentaires avancé
       highlight: true
-    - text: Compte rendu à travers les cérémonies
+    - text: Gestion de charge de travail
       highlight: true
     - text: Interface simplifiée par type d'utilisateur
       highlight: true
-    - text: Collaboration en temps réel
-      highlight: false
-    - text: Support prioritaire
-      highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Commencer
@@ -30,18 +26,14 @@
   recommended: true
   features:
     - text: Utilisable pour 1 utilisateur
-      highlight: false
+      highlight: true
     - text: Éditeur de texte moderne (WYSIWYG - Notion-like)
       highlight: true
     - text: Système de commentaires avancé
       highlight: true
-    - text: Compte rendu à travers les cérémonies
+    - text: Gestion de charge de travail
       highlight: true
     - text: Interface simplifiée par type d'utilisateur
-      highlight: true
-    - text: Collaboration en temps réel
-      highlight: true
-    - text: Support prioritaire
       highlight: true
     - text: 20% de remise
       highlight: true

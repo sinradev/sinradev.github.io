@@ -1,8 +1,6 @@
 - question: What types of payment do you accept?
   answer: Credit cards including MasterCard, Visa or American Express.
-- question: Can I change my plan at a later time?
-  answer: Yes, you can upgrade and downgrade your plan at anytime.
 - question: Do you offer pricing for nonprofit organizations?
   answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
 - question: Questions?
-  answer: Contact us for any further questions at <a class="courriel" data-courriel="contactarobassinrapointdev"></a>.
+  answer: Contact us for any further questions from <a href="/contact/">our contact form</a>.

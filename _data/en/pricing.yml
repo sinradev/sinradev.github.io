@@ -5,7 +5,7 @@
   period: "/month"
   features:
     - text: Up to 1 user
-      highlight: false
+      highlight: true
     - text: Modern WYSIWYG editor (Notion-like)
       highlight: true
     - text: Advanced comment system
@@ -14,10 +14,8 @@
       highlight: true
     - text: Simplified interface by user type
       highlight: true
-    - text: Real-time collaboration
-      highlight: false
-    - text: Priority support
-      highlight: false
+    - text: Workload Management
+      highlight: true
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Get started
@@ -30,7 +28,7 @@
   recommended: true
   features:
     - text: Up to 1 user
-      highlight: false
+      highlight: true
     - text: Modern WYSIWYG editor (Notion-like)
       highlight: true
     - text: Advanced comment system
@@ -39,9 +37,7 @@
       highlight: true
     - text: Simplified interface by user type
       highlight: true
-    - text: Real-time collaboration
-      highlight: true
-    - text: Priority support
+    - text: Workload Management
       highlight: true
     - text: 20% discount
       highlight: true

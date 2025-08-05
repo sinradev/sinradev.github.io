@@ -1,8 +1,6 @@
 - question: Quels types de paiement acceptez-vous ?
   answer: Les cartes de crédit, y compris MasterCard, Visa ou American Express.
-- question: Puis-je changer de plan plus tard ?
-  answer: Oui, vous pouvez passer à un plan supérieur ou inférieur à tout moment.
 - question: Proposez-vous des tarifs pour les organisations à but non lucratif ?
   answer: Oui, envoyez-nous un message et nous vous configurerons avec notre tarification pour les organisations à but non lucratif.
 - question: Des questions ?
-  answer: Contactez-nous pour toute question supplémentaire à <a class="courriel" data-courriel="contactarobassinrapointdev"></a>.
+  answer: Contactez-nous pour toute question supplémentaire à partir de <a href="/fr/contact/">notre formulaire de contact</a>.
