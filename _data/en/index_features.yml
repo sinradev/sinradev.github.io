@@ -1,11 +1,11 @@
-- title: Block-based text editor
-  body: Simplify your descriptions and documentation with a Notion-like editor.
+- title: Rich Text Editor with Context
+  body: Specification and issue bodies support rich formatting like Notion. Write detailed requirements once, reuse them across releases. No more scattered documentation.
   image: /assets/images/text-editor.png
-  alt: Text editor
-- title: Figma and Whimsical integration
-  body: Preview your layouts directly in the interface.
-  image: /assets/images/figma-integration.png
-  alt: Figma Sinra integration
-- title: Ultra-simplified interface
-  body: 2 editable fields only in each issue for maximum concentration.
-  image: /assets/images/simple-interface.png
+  alt: Rich text editor
+- title: Progress Tracking at Every Level
+  body: Track progress by date %, status completion, time spent vs estimated, and team workload across Issues, Cycles, Releases, and Capabilities. Real visibility.
+  image: /assets/images/sinra-overview.png
+  alt: Multi-level progress tracking
+- title: Polymorphic Comments & Real-Time Collaboration
+  body: Comment on issues, capabilities, feedback, and pages. Mention teammates with @mentions. Instant updates via Hotwire keep everyone in sync without meetings.
+  image: /assets/images/collaboration.png

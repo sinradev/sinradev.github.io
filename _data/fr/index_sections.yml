@@ -1,41 +1,60 @@
-- title: Méthodologie <strong>Hybride</strong> - Cycle V-Model et Agile
-  body: "Combinez la planification rigoureuse du Waterfall avec l'adaptabilité d'Agile. Planifiez, exécutez et itérez en toute simplicité.
+- title: Gestion <strong>Dual Workflow</strong> - Spécification + Développement
+  body: "Contrairement à d'autres logiciels de gestion de projet qui n'ont qu'un flux, Sinra supporte deux flux parallèles : <strong>Statut Écriture</strong> (spécification) et <strong>Statut Développement</strong> (implémentation). Les équipes produit écrivent pendant que les développeurs codent, sans ralentissements.
       <ul>
-        <li>Release simplifiée : Planifiez vos déploiements sans effort.</li>
-        <li>Cycle de développement : Visualisez la charge de travail des développeurs pour chaque cycle.</li>
+        <li>Flux séparé spec et dev : Produit écrit, dev exécute, zéro ralentissement.</li>
+        <li>Visualisation des charges par cycle : Voyez exactement ce que chaque développeur/équipe peut gérer.</li>
+        <li>Planification automatique des capacités : Prévenez la surcharge avec le suivi temps réel.</li>
       </ul>"
   image: /assets/images/methodology-hybrid.png
-  alt: Méthodologie Hybride
-  category: "Mélange de Méthodologies"
-- title: Éliminez les <strong>réunions inutiles</strong>
-  body: Réduisez le temps perdu en réunions et en planification. Sinra <strong>optimise la collaboration</strong> entre les équipes produit et les développeurs, minimisant le besoin de discussions répétitives.
-  image: /assets/images/reduce-meetings.png
-  alt: Réduire les réunions inutiles
-  category: Optimisation du temps
-- title: Gestion des <strong>tests</strong> et des <strong>problèmes</strong>
-  body: "<ul>
-        <li>Associez des tests à chaque user story et visualisez leur progression.</li>
-        <li>Différenciation technique/produit : Planifiez efficacement avec la possibilité d'allouer des tickets techniques.</li>
-      </ul>"
-  category: Tests
-  image: /assets/images/test-management.png
-  alt: Gestion des Tests Sinra
-- title: Votre projet, <strong>vos règles</strong>
-  body: "Personnalisez chaque aspect de votre projet avec des statuts, des rôles d'équipe et plus encore.</p>
+  alt: Méthodologie Dual Workflow
+  category: "Flux Parallèles"
+- title: <strong>Planification des Capacités Intégrée</strong> - Plus de Ralentissements
+  body: "Sinra calcule en temps réel la charge de travail par développeur/équipe. <strong>Voyez qui est surchargé avant même de lancer le sprint.</strong>
       <ul>
-        <li>Système de backlog : Planifiez à l'avance et maintenez une vue claire des tâches à venir.</li>
-        <li>Rôles personnalisables : Product owner, développeur, rapporteur—chaque rôle peut être ajusté pour s'adapter à votre projet.</li>
+        <li>Suivi par cycle : Temps estimé vs capacité réelle, par développeur et équipe.</li>
+        <li>Pourcentages de capacité : Définissez la disponibilité (50%, 75%, 100%) de chaque personne par équipe.</li>
+        <li>Alertes automatiques : Le système avertit si les tâches dépassent la capacité.</li>
+      </ul>"
+  image: /assets/images/sinra-overview.png
+  alt: Planification des Capacités Avancée
+  category: "Allocation Intelligente"
+- title: <strong>Gestion des Tests Intégrée</strong> - QA Inclus
+  body: "Sinra traite les tests comme une feature première classe, pas en arrière-plan. Créez des plans de test liés aux spécifications et suivez le statut d'acceptation directement.
+      <ul>
+        <li>Modèles de test : Cas réutilisables pour une QA cohérente dans les releases.</li>
+        <li>Assignation testeurs : Assignez l'équipe QA et suivez leur charge.</li>
+        <li>Suivi d'acceptation : Marquez accepté/rejeté; liez au statut dev.</li>
+      </ul>"
+  category: "Assurance Qualité"
+  image: /assets/images/sinra-overview.png
+  alt: Gestion des Tests Intégrée
+- title: <strong>Tout est Personnalisable</strong> - Sans Code
+  body: "D'autres logiciels de gestion de projet nécessitent des plugins ou règles d'automatisation. Sinra permet de personnaliser les statuts, rôles, labels, et plateformes directement dans les paramètres.
+      <ul>
+        <li>Statuts personnalisés : Créez votre exact flux (Backlog → Design → Code → Test → Fait).</li>
+        <li>Rôles flexibles : Définissez Product Owner, Développeur, Testeur, QA Lead, ou rôles custom.</li>
+        <li>Filtrage intelligent : Filtrez les issues par 40+ critères (complexité, temps passé, plateforme, etc.).</li>
       </ul>"
   image: /assets/images/customization.png
-  alt: Personnalisation Sinra
-  category: Votre Statut
-- title: Visualisation <strong>dynamique</strong>
-  body: Basculez entre la <strong>vue Kanban</strong> et la <strong>vue Liste</strong> pour organiser vos tâches de la manière la plus productive.
+  alt: Personnalisation Complète
+  category: "Flexibilité"
+- title: <strong>Intelligence Multi-Vue</strong> - Kanban, Liste, et Planification Release
+  body: "Basculez entre <strong>Kanban</strong> (tableau par statut) et <strong>Liste</strong> (tableau détaillé) instantanément. Plus des vues Release et Cycle pour la planification macro.
+      <ul>
+        <li>Tableau Kanban : Glissez-déposez avec updates temps réel via Hotwire.</li>
+        <li>Filtrage avancé : Appliquez des filtres complexes sans rechargement.</li>
+        <li>Feuille de route release : Voyez votre timeline complète avec cycles et capacités.</li>
+      </ul>"
   image: /assets/images/kanban-list-view.png
-  alt: Vue Kanban et Liste Sinra
-  category: "Kanban & Liste"
-- title: Besoin de partager votre <strong>feedback</strong> ?
-  body: Les cérémonies comme la "Retro" synchronisées avec la release actuelle sont incluses dans Sinra.
+  alt: Interface Multi-Vue
+  category: "Visualisation Intelligente"
+- title: <strong>Rétrospectives Intégrées</strong> - Amélioration Continue
+  body: "Après chaque release, créez automatiquement une retro pour collecter le feedback (Bien, Mal, Améliorations). Comparez avec les retros précédentes pour suivre la progression.
+      <ul>
+        <li>Création automatique : Chaque release a une cérémonie retro.</li>
+        <li>Catégories de feedback : Structurez le feedback (Ce qui a bien marché, À améliorer, Actions).</li>
+        <li>Comparaison historique : Suivez le sentiment de l'équipe et les améliorations dans le temps.</li>
+      </ul>"
   image: /assets/images/collaboration.png
-  alt: Collaborez efficacement avec Sinra
-  category: "Cérémonies"
+  alt: Rétrospectives Intégrées
+  category: "Croissance d'Équipe"
