@@ -27,12 +27,12 @@ about:
   ready_to_transform_desc: Rejoignez des milliers d'équipes qui ont déjà découvert la puissance de l'approche innovante de Sinra.
   learn_more: En Savoir Plus
 hero:
-  title: Sinra - La <strong>gestion de projets</strong> réinventée.
-  body: Un outil de gestion de projet, simple et puissant,<br/> fusionnant la <strong>méthodologie en V</strong> et <strong>Agile</strong> pour une performance optimale.
+  title: <strong>Maîtrisez Vos Mises en Production</strong> - Sinra Contrôle les Déploiements
+  body: Le seul outil de gestion de projet qui combine <strong>workflows parallèles</strong> (Spec + Dev), <strong>planification des capacités temps réel</strong>, et <strong>gestion QA intégrée</strong>. Pas de plugins. Pas de complexité. Juste des résultats.
   button: Essayez gratuitement
   alt_image: Présentation de Sinra
 features: Fonctionnalités
-reduce_complexity: <strong>Réduisez</strong> la complexité, <strong>optimisez</strong> vos projets<strong>
+reduce_complexity: <strong>Gérez les équipes plus intelligemment</strong>, <strong>livrez plus vite</strong>, <strong>maîtrisez vos déploiements</strong>.
 try_sinra: Essayer Sinra gratuitement
 got_to_blog: Aller au blog
 pricing:

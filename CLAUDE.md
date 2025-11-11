@@ -4,7 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the **Sinra website** - a multilingual static site built with **Jekyll 4.3.4** (Ruby-based static site generator). The site promotes Sinra, a project management tool combining V-methodology (Waterfall) and Agile approaches. The site supports English (en) and French (fr) languages.
+This is the **Sinra website** - a multilingual static site built with **Jekyll 4.3.4** (Ruby-based static site generator). The site promotes Sinra, a project management tool combining V-methodology (Waterfall) and Agile approaches. The site supports English (en) and French (fr) languages. The website unify lot of features
+inspiring itself from Notion, Airtable and others new modern Saas.
 
 **Tech Stack:**
 - Jekyll 4.3.4 (static site generator)
@@ -106,3 +107,4 @@ The site is actively in development (branch: feature/new-theme). Recent commits 
 - **No formatting tools:** No Prettier or StyleLint
 - **No testing framework:** Testing is manual via browser or Jekyll serve
 - **No custom cursor/copilot rules:** Use this CLAUDE.md as the primary guidance
+- Use mise instead rvm, and bundle instead of gem

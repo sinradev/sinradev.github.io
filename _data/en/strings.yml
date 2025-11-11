@@ -72,8 +72,8 @@ contact_success:
 features: Features
 got_to_blog: Go to the Blog
 hero:
-  title: Sinra - <strong>Project management</strong> reinvented.
-  body: A simple and powerful project management tool,<br/> merging <strong>V-Model methodology</strong> and <strong>Agile</strong> for optimal performance.
+  title: <strong>Master Your Releases</strong> - Sinra Controls Deployments
+  body: The only project management tool that combines <strong>dual workflows</strong> (Spec + Dev), <strong>real-time capacity planning</strong>, and <strong>integrated QA management</strong>. No plugins. No complexity. Just results.
   button: Try for free
   alt_image: Sinra Overview
 pricing:
@@ -88,6 +88,6 @@ pricing:
   ready_to_start_desc: "Choose the plan that best fits your needs and start managing your projects more efficiently today."
   start_free_trial: "Start Free Trial"
   contact_sales: "Contact Sales"
-reduce_complexity: <strong>Reduce</strong> complexity, <strong>optimize</strong> your projects.
+reduce_complexity: <strong>Manage teams smarter</strong>, <strong>deliver faster</strong>, <strong>master your releases</strong>.
 testimonial: Testimonial
 try_sinra: Try Sinra for free

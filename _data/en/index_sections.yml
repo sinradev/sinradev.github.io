@@ -1,41 +1,60 @@
-- title: Methodology <strong>Hybrid</strong> - V-Model and Agile Cycle
-  body: "Combine the rigorous planning of Waterfall with the adaptability of Agile. Plan, execute, and iterate seamlessly.
+- title: Dual Workflow Management <strong>with V-Model + Agile</strong>
+  body: "Unlike other project management tools with a single workflow, Sinra supports two parallel workflows: <strong>Writing Status</strong> (specification) and <strong>Development Status</strong> (implementation). Plan specifications while developers code, without bottlenecks.
       <ul>
-        <li>Simplified release: Plan your deployments effortlessly.</li>
-        <li>Development cycle: Visualize developers' workloads for each cycle.</li>
+        <li>Separate spec and dev workflows: Product teams write while developers execute.</li>
+        <li>Workload visualization by cycle: See exactly what each developer/team can handle.</li>
+        <li>Automatic capacity planning: Prevent overallocation with real-time workload tracking.</li>
       </ul>"
   image: /assets/images/methodology-hybrid.png
-  alt: Hybrid Methodology
-  category: "Mix Of Methodologies"
-- title: Eliminate <strong>unnecessary meetings</strong>
-  body: Reduce time wasted in meetings and planning. Sinra <strong>optimizes collaboration</strong> between product teams and developers, minimizing the need for repetitive discussions.
-  image: /assets/images/reduce-meetings.png
-  alt: Reduce unnecessary meetings
-  category: Time optimization
-- title: Management of <strong>tests</strong> and <strong>issues</strong>
-  body: "<ul>
-        <li>Associate tests with each user story and visualize their progress.</li>
-        <li>Technical/product differentiation: Plan efficiently with the ability to allocate technical tickets.</li>
-      </ul>"
-  category: Testing
-  image: /assets/images/test-management.png
-  alt: Sinra Test Management
-- title: Your project, <strong>your rules</strong>
-  body: "Customize every aspect of your project with statuses, team roles, and more.</p>
+  alt: Dual Workflow Methodology
+  category: "Dual Workflows"
+- title: <strong>Built-in Capacity Planning</strong> - No More Bottlenecks
+  body: "Sinra calculates team and individual workload in real-time. <strong>See who's overloaded before sprints even start.</strong>
       <ul>
-        <li>Backlog system: Plan ahead and maintain a clear view of upcoming tasks.</li>
-        <li>Customizable roles: Product owner, developer, reporter—each role can be adjusted to fit your project.</li>
+        <li>Per-cycle workload tracking: Track estimated time vs. capacity by developer and team.</li>
+        <li>Team capacity percentages: Set individual availability (50%, 75%, 100%) per team.</li>
+        <li>Automatic warnings: System alerts when tasks exceed capacity.</li>
+      </ul>"
+  image: /assets/images/sinra-overview.png
+  alt: Advanced Capacity Planning
+  category: "Smart Allocation"
+- title: <strong>Integrated Testing Management</strong> - QA Built-in
+  body: "Sinra treats testing as a first-class citizen, not an afterthought. Create test cases tied to specifications and track acceptance status directly.
+      <ul>
+        <li>Test templates: Reusable test cases for consistent QA across releases.</li>
+        <li>Tester assignment: Assign QA team members and track their workload.</li>
+        <li>Acceptance tracking: Mark tests as accepted/rejected; link to development status.</li>
+      </ul>"
+  category: "Quality Assurance"
+  image: /assets/images/sinra-overview.png
+  alt: Integrated Testing Management
+- title: <strong>Everything is Customizable</strong> - Without Code
+  body: "Other project management tools require plugins or Automation rules. Sinra lets teams customize statuses, roles, labels, and platforms directly in settings.
+      <ul>
+        <li>Custom statuses: Create your exact workflow (Backlog → Design → Code → Test → Done).</li>
+        <li>Flexible roles: Define Product Owner, Developer, Tester, QA Lead, or custom roles.</li>
+        <li>Smart filtering: Filter issues by 40+ attributes (complexity, time spent, platform, etc.).</li>
       </ul>"
   image: /assets/images/customization.png
-  alt: Sinra Customization
-  category: Your Status
-- title: <strong>Dynamic</strong> visualization
-  body: Switch between <strong>Kanban view</strong> and <strong>List view</strong> to organize your tasks in the most productive way.
+  alt: Complete Customization
+  category: "Flexibility"
+- title: <strong>Multi-View Intelligence</strong> - Kanban, List, and Release Planning
+  body: "Switch between <strong>Kanban</strong> (visual board by status) and <strong>List</strong> (detailed table) views instantly. Plus dedicated Release and Cycle views for big-picture planning.
+      <ul>
+        <li>Kanban board: Drag-and-drop with real-time updates via Hotwire.</li>
+        <li>Advanced filtering: Apply complex filters across views without reloading.</li>
+        <li>Release roadmap: See your entire release timeline with all cycles and capabilities.</li>
+      </ul>"
   image: /assets/images/kanban-list-view.png
-  alt: Sinra Kanban and List View
-  category: "Kanban & List"
-- title: Need to share your <strong>feedback</strong>?
-  body: Ceremonies like the "Retro" synchronized with the current release are included in Sinra.
+  alt: Multi-View Interface
+  category: "Smart Visualization"
+- title: <strong>Retrospectives Built-In</strong> - Continuous Improvement
+  body: "After each release, automatically create a retrospective to collect team feedback (Good, Bad, Improvements). Compare with previous retros to track progress.
+      <ul>
+        <li>Automated retro creation: Every release gets a retro ceremony attached.</li>
+        <li>Feedback categories: Structure feedback (What went well, What to improve, Action items).</li>
+        <li>Historical comparison: Track team sentiment and improvements over time.</li>
+      </ul>"
   image: /assets/images/collaboration.png
-  alt: Collaborate efficiently with Sinra
-  category: "Ceremonies"
+  alt: Built-in Retrospectives
+  category: "Team Growth"
