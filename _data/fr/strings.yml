@@ -1,28 +1,36 @@
 about:
   innovative_solution: La Nouvelle Génération de Gestion de Projet
-  result_deep_reflexion: Sinra réinvente la gestion de projet en combinant des workflows parallèles, une planification des capacités temps réel, et une QA intégrée. Conçu pour éliminer les compromis entre structure et flexibilité qui caractérisent les outils traditionnels.
-  problem_title: Pourquoi la Gestion de Projet Traditionnelle Échoue
-  problem_description: "Chaque outil de gestion de projet force un choix : suivre un processus rigide ou vivre dans le chaos. Ni l'Agile seul, ni le V-Model seul ne règlent les vrais problèmes. Sinra brise ce faux dilemme."
-  agile_pitfalls: Les Coûts Cachés d'Agile
-  time_consuming: Les Réunions Étouffent la Productivité
-  agile_environment: "Les équipes Agile se noient dans les réunions : planification de sprint, affinage du backlog, daily standups, rétrospectives, repriorisation constante. La collaboration importe, mais la communication synchrone excessive gaspille des heures chaque jour. Votre équipe passe plus de temps à parler du travail qu'à le faire."
-  meeting_overload: "60+ heures par mois perdues en réunions de planification"
-  constant_reprioritization: "Le changement de contexte constant réduit la productivité de 40%"
-  efficiency_loss: "Burnout des équipes causé par un rythme insoutenable"
-  waterfall_pitfalls: Les Contraintes Rigides du V-Model
-  loss_of_control: "Les Découvertes Tardives Dépassent les Projets"
-  waterfall_methodology: "Le V-Model repousse les problèmes jusqu'à ce qu'ils soient coûteux à corriger. Les équipes passent des mois à construire sur des spécifications incomplètes, puis découvrent les problèmes critiques lors des tests. À ce moment, la refonte est impossible sans rater les délais. Les projets échouent non pas à cause d'une mauvaise exécution, mais à cause d'une structure qui pénalise l'apprentissage."
-  deadline_pressure: "60%+ des projets dépassent leur timeline de 20% ou plus"
-  rigid_schedule: "Les changements requièrent de renégocier tout le plan"
-  quality_compromise: "QA devient un goulot, pas une sauvegarde"
-  design_to: "L'Approche Sinra : Agilité Structurée"
-  sinra_combines: "Sinra introduit une toute nouvelle façon de travailler. Au lieu de choisir entre structure et rapidité, obtenez les deux via des workflows parallèles qui permettent aux spécifications et au développement de progresser en parallèle sans friction."
-  clear_planning: "Workflows Parallèles (Spec + Dev)"
-  clear_planning_desc: "Les équipes produit écrivent les spécifications tandis que les développeurs codent. Pas d'attente, pas de blocages. Les deux flux alimentent des portes de qualité qui préviennent réellement les problèmes."
+  result_deep_reflexion: Sinra est construite de zéro pour les équipes modernes. Oubliez tout ce que vous savez sur la gestion de projet traditionnelle. C'est une approche fondamentalement différente conçue autour de la façon dont les vraies équipes travaillent réellement.
+  problem_title: Les Vrais Problèmes que Rencontrent les Équipes
+  problem_description: "Les outils de gestion de projet imposent de faux choix : processus rigides ou chaos complet. La planification est isolée de l'exécution. Les capacités sont invisibles. La qualité est une arrière-pensée. Les équipes gaspillent des heures en réunions de statut mais ratent quand même les délais. Sinra résout les vrais problèmes."
+  agile_pitfalls: Inefficacité par Fragmentation
+  time_consuming: La Communication Dispersée Tue l'Élan
+  agile_environment: "La plupart des équipes utilisent des outils déconnectés : un pour la planification, un pour le suivi, un pour les tests, un pour la communication. Le contexte se perd entre les systèmes. Les équipes répètent les décisions parce que personne ne peut trouver la dernière conversation. Les informations critiques vivent dans les emails et Slack. Tout le monde reste occupé mais rien ne sort en production."
+  meeting_overload: "Les équipes gaspillent 10+ heures par semaine à chercher les informations dispersées dans les outils"
+  constant_reprioritization: "Les équipes passent 30% de leur temps à re-saisir les mêmes données dans différents systèmes"
+  efficiency_loss: "Les détails critiques tombent à travers les fissures entre les outils déconnectés"
+  waterfall_pitfalls: Cécité Jusqu'à Ce Qu'il Soit Trop Tard
+  loss_of_control: "Les Découvertes Arrivent à la Fin"
+  waterfall_methodology: "Les outils de planification traditionnels créent une fausse impression de contrôle. Vous ne voyez pas la vraie capacité, la progression réelle, ou la couverture de test jusqu'à des semaines dans l'exécution. À ce moment, vous êtes engagé sur des dates qui ne peuvent pas être respectées. Les problèmes qui auraient pu être détectés tôt deviennent des combats d'urgence. Vous n'échouez pas parce que votre équipe est mauvaise—vous échouez parce que vous ne pouvez pas voir ce qui se passe réellement."
+  deadline_pressure: "La plupart des projets ne découvrent les vrais problèmes que quand ils sont 60% complets"
+  rigid_schedule: "Quand la réalité ne correspond pas au plan, les équipes improvisent au lieu de s'adapter"
+  quality_compromise: "La qualité est traitée comme un compromis négociable, pas une exigence"
+  design_to: "L'Approche Sinra : Visibilité, Capacité, et Exécution"
+  sinra_combines: "Sinra est une source unique de vérité pour tout votre projet. Tout ce dont les équipes ont besoin—planification, suivi, tests, communication, et déploiement—vit au même endroit. Visibilité temps réel sur les capacités, la progression, et la qualité. Pas de changement de contexte. Pas de devinage. Juste l'exécution."
+  clear_planning: "Visibilité Complète du Projet"
+  clear_planning_desc: "Voyez votre projet entier au même endroit. Features, spécifications, tests, capacités, progression, et communication tous connectés. Rien ne tombe à travers les fissures. Tout le monde sait ce qui se passe parce que c'est tout là."
   global_vision: "Intelligence Temps Réel des Capacités"
-  global_vision_desc: "Voyez avant d'assigner. Sachez exactement qui est disponible, ce qu'il peut gérer, et quand. La planification des capacités intégrée prévient la surcharge et les sprints insoutenables. Pas de plugins, pas de feuilles de calcul."
-  enhanced_control: "QA Intégrée comme Feature de Premier Ordre"
-  enhanced_control_desc: "Les tests ne sont pas ajoutés en arrière. Créez des cas de test liés aux spécifications, assignez les testeurs, suivez le statut d'acceptation, et liez les résultats au statut de développement. La qualité intégrée dès le départ, pas ajoutée à la fin."
+  global_vision_desc: "Sachez exactement qui peut faire quel travail, quand. Voyez la surcharge avant qu'elle ne devienne une crise. Planifiez les releases en fonction de ce que les équipes peuvent réellement livrer, pas des vœux pieux. Données de capacité toujours à jour."
+  enhanced_control: "Qualité Intégrée dès le Départ"
+  enhanced_control_desc: "Les tests ne sont pas une arrière-pensée. Ils font partie du flux de travail principal. Créez des cas de test, assignez les testeurs, suivez le statut d'acceptation, tout lié à la progression du développement. Des portes de qualité qui attrapent réellement les problèmes avant qu'ils ne deviennent des crises."
+  release_mastery: "Maîtrisez Vos Cycles de Release"
+  release_mastery_desc: "Sinra traite les releases comme des entités de première classe, pas comme une arrière-pensée. Chaque release a une visibilité complète sur toutes les features, la couverture de test, les assignations d'équipe, et la préparation au déploiement. Fini de deviner si vous êtes prêt à livrer."
+  release_planning: "Planification Complète des Releases"
+  release_planning_desc: "Voyez toutes les features, capacités, et issues qui alimentent chaque release. Suivez quelles équipes possèdent quoi, gérez les dépendances, et visualisez la timeline complète de la planification à la production."
+  deployment_readiness: "Listes de Vérification de Préparation au Déploiement"
+  deployment_readiness_desc: "Avant que toute release ne soit déployée, vérifiez que tous les critères d'acceptation sont met, tous les tests passent, et toutes les équipes sont alignées. Les listes de vérification de go-live assurent que rien n'est oublié dans le chaos du jour du lancement."
+  go_live_confidence: "Go-Live Sans Combat d'Urgence"
+  go_live_confidence_desc: "Avec une visibilité complète sur le statut des releases, la capacité des équipes, et les résultats des tests, les déploiements deviennent des événements prévisibles, pas de la gestion de crise. Lancez avec confiance, pas avec les doigts croisés."
   ready_to_transform: "Arrêtez de Choisir Entre Chaos et Rigidité"
   ready_to_transform_desc: "Essayez Sinra sans risque. Les équipes rapportent une réduction de 40%+ des frais généraux de planification, des dates de release prévisibles, et une meilleure qualité de code. Tout sans la prolifération de plugins des outils traditionnels."
   learn_more: "Planifier une Démo"
