@@ -7,5 +7,9 @@
   image: /assets/images/sinra-overview.png
   alt: Multi-level progress tracking
 - title: Polymorphic Comments & Real-Time Collaboration
-  body: Comment on issues, capabilities, feedback, and pages. Mention teammates with @mentions. Instant updates via Hotwire keep everyone in sync without meetings.
+  body: Discuss and synchronize directly on issues and capabilities. Comment threads with @mentions, instant notifications, and rich formatting keep teams aligned without endless status meetings. All context lives in one place.
   image: /assets/images/collaboration.png
+- title: Release-Driven Deployment Planning
+  body: Plan entire releases with full visibility into features, test coverage, capacity, and readiness. See which teams own which releases, track deployment dates, and manage go-live checklists. Release success, not firefighting.
+  image: /assets/images/sinra-overview.png
+  alt: Release and deployment planning

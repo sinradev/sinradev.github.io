@@ -108,3 +108,5 @@ The site is actively in development (branch: feature/new-theme). Recent commits 
 - **No testing framework:** Testing is manual via browser or Jekyll serve
 - **No custom cursor/copilot rules:** Use this CLAUDE.md as the primary guidance
 - Use mise instead rvm, and bundle instead of gem
+- Never speak about user stories or other thinks linked to agility, Sinra must be different.
+- Sinra use issues, capabilities, releases, sync instead of user stories, epics, standup ... Sinra use natural and comprehensive naming
