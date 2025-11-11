@@ -1,31 +1,31 @@
 about:
-  innovative_solution: Une solution innovante née de l'expérience et des défis du développement logiciel
-  result_deep_reflexion: Sinra est le résultat d'une profonde réflexion sur les limites des méthodologies traditionnelles de gestion de projet, qu'elles soient Agile ou en V. Deux constats majeurs ont guidé sa création.
-  problem_title: Le Défi de la Gestion de Projet Moderne
-  problem_description: Les méthodologies Agile et en V ont leurs forces, mais elles présentent aussi des limitations importantes qui peuvent entraver le succès des projets et l'efficacité des équipes.
-  agile_pitfalls: Les Écueils d'Agile
-  time_consuming: La Nature Chronophage des Réunions et Ajustements
-  agile_environment: "Dans un environnement Agile, les réunions s'accumulent : planification des sprints, re-priorisation, discussions interminables sur les fonctionnalités à développer ou non, et priorisation des bugs. Bien que ces échanges soient essentiels, ils entraînent souvent une perte de temps significative, réduisant l'efficacité globale de l'équipe."
-  meeting_overload: Surcharge de réunions et perte de temps
-  constant_reprioritization: Repriorisation constante et changements de périmètre
-  efficiency_loss: Perte d'efficacité et de productivité de l'équipe
-  waterfall_pitfalls: Les Écueils du Modèle en V
-  loss_of_control: La Perte de Contrôle dans le Développement
-  waterfall_methodology: "À l'inverse, la méthodologie en V fait face à un autre défi : les délais. Les projets dépassent fréquemment le temps alloué, et les ajustements tardifs sont difficiles à intégrer dans un calendrier rigide. Cela entraîne une perte de contrôle sur les échéances et les livrables, souvent au détriment de la qualité ou de la satisfaction des parties prenantes."
-  deadline_pressure: Pression intense des délais et stress
-  rigid_schedule: Calendrier rigide sans flexibilité
-  quality_compromise: Compromis entre qualité et délais
-  design_to: Conçu pour Répondre aux Défis des Deux Approches
-  sinra_combines: Sinra combine le meilleur des méthodologies Agile et en V pour créer une solution harmonieuse.
-  clear_planning: Planification Claire et Structurée
-  clear_planning_desc: Réduit la charge des réunions inutiles en favorisant des processus de planification clairs et structurés.
-  global_vision: Vision Globale avec Flexibilité
-  global_vision_desc: Maintient une vision globale des délais et des objectifs tout en permettant une flexibilité pour s'adapter aux imprévus.
-  enhanced_control: Contrôle Amélioré et Optimisation
-  enhanced_control_desc: Assure un contrôle amélioré des développements avec des cycles équilibrés et optimisés pour éviter les dérives de périmètre.
-  ready_to_transform: Prêt à Transformer Votre Gestion de Projet ?
-  ready_to_transform_desc: Rejoignez des milliers d'équipes qui ont déjà découvert la puissance de l'approche innovante de Sinra.
-  learn_more: En Savoir Plus
+  innovative_solution: La Nouvelle Génération de Gestion de Projet
+  result_deep_reflexion: Sinra réinvente la gestion de projet en combinant des workflows parallèles, une planification des capacités temps réel, et une QA intégrée. Conçu pour éliminer les compromis entre structure et flexibilité qui caractérisent les outils traditionnels.
+  problem_title: Pourquoi la Gestion de Projet Traditionnelle Échoue
+  problem_description: "Chaque outil de gestion de projet force un choix : suivre un processus rigide ou vivre dans le chaos. Ni l'Agile seul, ni le V-Model seul ne règlent les vrais problèmes. Sinra brise ce faux dilemme."
+  agile_pitfalls: Les Coûts Cachés d'Agile
+  time_consuming: Les Réunions Étouffent la Productivité
+  agile_environment: "Les équipes Agile se noient dans les réunions : planification de sprint, affinage du backlog, daily standups, rétrospectives, repriorisation constante. La collaboration importe, mais la communication synchrone excessive gaspille des heures chaque jour. Votre équipe passe plus de temps à parler du travail qu'à le faire."
+  meeting_overload: "60+ heures par mois perdues en réunions de planification"
+  constant_reprioritization: "Le changement de contexte constant réduit la productivité de 40%"
+  efficiency_loss: "Burnout des équipes causé par un rythme insoutenable"
+  waterfall_pitfalls: Les Contraintes Rigides du V-Model
+  loss_of_control: "Les Découvertes Tardives Dépassent les Projets"
+  waterfall_methodology: "Le V-Model repousse les problèmes jusqu'à ce qu'ils soient coûteux à corriger. Les équipes passent des mois à construire sur des spécifications incomplètes, puis découvrent les problèmes critiques lors des tests. À ce moment, la refonte est impossible sans rater les délais. Les projets échouent non pas à cause d'une mauvaise exécution, mais à cause d'une structure qui pénalise l'apprentissage."
+  deadline_pressure: "60%+ des projets dépassent leur timeline de 20% ou plus"
+  rigid_schedule: "Les changements requièrent de renégocier tout le plan"
+  quality_compromise: "QA devient un goulot, pas une sauvegarde"
+  design_to: "L'Approche Sinra : Agilité Structurée"
+  sinra_combines: "Sinra introduit une toute nouvelle façon de travailler. Au lieu de choisir entre structure et rapidité, obtenez les deux via des workflows parallèles qui permettent aux spécifications et au développement de progresser en parallèle sans friction."
+  clear_planning: "Workflows Parallèles (Spec + Dev)"
+  clear_planning_desc: "Les équipes produit écrivent les spécifications tandis que les développeurs codent. Pas d'attente, pas de blocages. Les deux flux alimentent des portes de qualité qui préviennent réellement les problèmes."
+  global_vision: "Intelligence Temps Réel des Capacités"
+  global_vision_desc: "Voyez avant d'assigner. Sachez exactement qui est disponible, ce qu'il peut gérer, et quand. La planification des capacités intégrée prévient la surcharge et les sprints insoutenables. Pas de plugins, pas de feuilles de calcul."
+  enhanced_control: "QA Intégrée comme Feature de Premier Ordre"
+  enhanced_control_desc: "Les tests ne sont pas ajoutés en arrière. Créez des cas de test liés aux spécifications, assignez les testeurs, suivez le statut d'acceptation, et liez les résultats au statut de développement. La qualité intégrée dès le départ, pas ajoutée à la fin."
+  ready_to_transform: "Arrêtez de Choisir Entre Chaos et Rigidité"
+  ready_to_transform_desc: "Essayez Sinra sans risque. Les équipes rapportent une réduction de 40%+ des frais généraux de planification, des dates de release prévisibles, et une meilleure qualité de code. Tout sans la prolifération de plugins des outils traditionnels."
+  learn_more: "Planifier une Démo"
 hero:
   title: <strong>Maîtrisez Vos Mises en Production</strong> - Sinra Contrôle les Déploiements
   body: Le seul outil de gestion de projet qui combine <strong>workflows parallèles</strong> (Spec + Dev), <strong>planification des capacités temps réel</strong>, et <strong>gestion QA intégrée</strong>. Pas de plugins. Pas de complexité. Juste des résultats.
