@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="600" y="40" font-size="24" font-weight="700" text-anchor="middle" fill="#1a1a1a">
+    Why Hybrid Methodology Wins
+  </text>
+
+  <!-- Phase 1: V-Model (Specification) -->
+  <g>
+    <rect x="50" y="100" width="300" height="320" rx="8" fill="rgba(33, 150, 243, 0.08)" stroke="#2196F3" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect x="50" y="100" width="300" height="50" rx="8" fill="#2196F3"/>
+    <text x="200" y="135" font-size="16" font-weight="700" text-anchor="middle" fill="white">Phase 1: Specification</text>
+
+    <!-- Content -->
+    <text x="70" y="170" font-size="12" font-weight="600" fill="#1a1a1a">✓ Write requirements</text>
+    <text x="70" y="195" font-size="12" font-weight="600" fill="#1a1a1a">✓ Plan dependencies</text>
+    <text x="70" y="220" font-size="12" font-weight="600" fill="#1a1a1a">✓ Define acceptance criteria</text>
+    <text x="70" y="245" font-size="12" font-weight="600" fill="#1a1a1a">✓ Plan test cases</text>
+    <text x="70" y="270" font-size="12" font-weight="600" fill="#1a1a1a">✓ Get sign-offs</text>
+
+    <!-- Duration -->
+    <text x="70" y="305" font-size="11" fill="#666" font-style="italic">Duration: 4-6 weeks</text>
+
+    <!-- Benefit box -->
+    <rect x="65" y="320" width="270" height="90" rx="6" fill="rgba(33, 150, 243, 0.1)" stroke="#2196F3" stroke-width="1"/>
+    <text x="200" y="340" font-size="11" font-weight="600" text-anchor="middle" fill="#1976D2">Why V-Model Here?</text>
+    <text x="75" y="360" font-size="10" fill="#1a1a1a">• Prevents surprises</text>
+    <text x="75" y="375" font-size="10" fill="#1a1a1a">• Clear scope</text>
+    <text x="75" y="390" font-size="10" fill="#1a1a1a">• Dependencies visible</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g>
+    <path d="M 350 260 L 400 260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="375" y="250" font-size="11" font-weight="600" text-anchor="middle" fill="#666">Ready</text>
+  </g>
+
+  <!-- Phase 2: Agile (Development) -->
+  <g>
+    <rect x="400" y="100" width="300" height="320" rx="8" fill="rgba(255, 152, 0, 0.08)" stroke="#FF9800" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect x="400" y="100" width="300" height="50" rx="8" fill="#FF9800"/>
+    <text x="550" y="135" font-size="16" font-weight="700" text-anchor="middle" fill="white">Phase 2: Development</text>
+
+    <!-- Content -->
+    <text x="420" y="170" font-size="12" font-weight="600" fill="#1a1a1a">✓ Sprint-based building</text>
+    <text x="420" y="195" font-size="12" font-weight="600" fill="#1a1a1a">✓ Continuous testing</text>
+    <text x="420" y="220" font-size="12" font-weight="600" fill="#1a1a1a">✓ Code reviews</text>
+    <text x="420" y="245" font-size="12" font-weight="600" fill="#1a1a1a">✓ Daily feedback</text>
+    <text x="420" y="270" font-size="12" font-weight="600" fill="#1a1a1a">✓ Adapt as needed</text>
+
+    <!-- Duration -->
+    <text x="420" y="305" font-size="11" fill="#666" font-style="italic">Duration: 2-12 weeks</text>
+
+    <!-- Benefit box -->
+    <rect x="415" y="320" width="270" height="90" rx="6" fill="rgba(255, 152, 0, 0.1)" stroke="#FF9800" stroke-width="1"/>
+    <text x="550" y="340" font-size="11" font-weight="600" text-anchor="middle" fill="#E65100">Why Agile Here?</text>
+    <text x="425" y="360" font-size="10" fill="#1a1a1a">• Flexible & responsive</text>
+    <text x="425" y="375" font-size="10" fill="#1a1a1a">• Fast feedback</text>
+    <text x="425" y="390" font-size="10" fill="#1a1a1a">• Quality through testing</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g>
+    <path d="M 700 260 L 750 260" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="725" y="250" font-size="11" font-weight="600" text-anchor="middle" fill="#666">Built</text>
+  </g>
+
+  <!-- Phase 3: V-Model (Release) -->
+  <g>
+    <rect x="750" y="100" width="300" height="320" rx="8" fill="rgba(76, 175, 80, 0.08)" stroke="#4CAF50" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect x="750" y="100" width="300" height="50" rx="8" fill="#4CAF50"/>
+    <text x="900" y="135" font-size="16" font-weight="700" text-anchor="middle" fill="white">Phase 3: Release</text>
+
+    <!-- Content -->
+    <text x="770" y="170" font-size="12" font-weight="600" fill="#1a1a1a">✓ Release testing</text>
+    <text x="770" y="195" font-size="12" font-weight="600" fill="#1a1a1a">✓ Stage gate approval</text>
+    <text x="770" y="220" font-size="12" font-weight="600" fill="#1a1a1a">✓ QA verification</text>
+    <text x="770" y="245" font-size="12" font-weight="600" fill="#1a1a1a">✓ Compliance check</text>
+    <text x="770" y="270" font-size="12" font-weight="600" fill="#1a1a1a">✓ Go-live sign-off</text>
+
+    <!-- Duration -->
+    <text x="770" y="305" font-size="11" fill="#666" font-style="italic">Duration: 1-2 weeks</text>
+
+    <!-- Benefit box -->
+    <rect x="765" y="320" width="270" height="90" rx="6" fill="rgba(76, 175, 80, 0.1)" stroke="#4CAF50" stroke-width="1"/>
+    <text x="900" y="340" font-size="11" font-weight="600" text-anchor="middle" fill="#2E7D32">Why V-Model Here?</text>
+    <text x="775" y="360" font-size="10" fill="#1a1a1a">• Controlled deployment</text>
+    <text x="775" y="375" font-size="10" fill="#1a1a1a">• Compliance certainty</text>
+    <text x="775" y="390" font-size="10" fill="#1a1a1a">• Zero-surprise releases</text>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Bottom message -->
+  <text x="600" y="460" font-size="14" font-weight="600" text-anchor="middle" fill="#2196F3">
+    Structure + Flexibility = Success
+  </text>
+</svg>
