@@ -17,3 +17,7 @@
   body: Gérez plusieurs applications et plateformes au même endroit. Les équipes front et back travaillent ensemble sans friction tout en connaissant leur charge en temps réel. Fini les silos entre départements. Intelligence complète des capacités dans toute votre pile technologique.
   image: /assets/images/multi-app-workload.svg
   alt: Gestion multi-app et charge croisée
+- title: <strong>Workflows Entièrement Personnalisables</strong> - Votre Processus, Pas le Nôtre
+  body: Construisez des workflows qui correspondent à votre processus exact sans toucher au code. Statuts personnalisés, gates d'approbation, accès basé sur les rôles, et règles de validation automatisées. Que vous suiviez V-Model, Agile, ou une approche hybride, Sinra s'adapte à vous—pas l'inverse. Exigences de conformité ? Pistes d'audit intégrées et application des workflows.
+  image: /assets/images/custom-workflows.svg
+  alt: Workflows personnalisables et application de conformité
