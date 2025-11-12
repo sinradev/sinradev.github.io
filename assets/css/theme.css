@@ -3010,7 +3010,7 @@ img {
 
 .trusted-by-logos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 32px;
   margin-bottom: 100px;
 }
@@ -3019,12 +3019,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 32px;
+  padding: 40px;
   background: var(--gray-100);
   border: 1px solid var(--gray-200);
   border-radius: var(--border-radius-lg);
   transition: all 0.3s ease;
-  min-height: 120px;
+  min-height: 150px;
 }
 
 .client-logo-wrapper:hover {
@@ -3034,10 +3034,10 @@ img {
 }
 
 .client-logo {
-  max-width: 120px;
-  max-height: 80px;
+  max-width: 140px;
+  max-height: 90px;
   object-fit: contain;
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
