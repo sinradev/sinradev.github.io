@@ -1,16 +1,23 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="200" height="200" fill="#f0f9f6"/>
+  <rect width="200" height="200" fill="white"/>
 
-  <!-- Health Connect - Heart + Pulse line -->
-  <!-- Heart shape -->
-  <path d="M 100 140 C 70 110 50 90 50 70 C 50 55 60 45 70 45 C 80 45 90 55 100 65 C 110 55 120 45 130 45 C 140 45 150 55 150 70 C 150 90 130 110 100 140" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Geometric mark - H shape with medical cross -->
+  <!-- Left vertical -->
+  <rect x="45" y="50" width="20" height="100" fill="#10b981" rx="3"/>
 
-  <!-- Pulse line through heart -->
-  <line x1="30" y1="110" x2="60" y2="110" stroke="#10b981" stroke-width="2"/>
-  <polyline points="60,110 75,100 85,120 95,100 100,110" stroke="#10b981" stroke-width="2" fill="none" stroke-linejoin="round"/>
-  <line x1="100" y1="110" x2="170" y2="110" stroke="#10b981" stroke-width="2"/>
+  <!-- Right vertical -->
+  <rect x="135" y="50" width="20" height="100" fill="#10b981" rx="3"/>
+
+  <!-- Horizontal connector -->
+  <rect x="50" y="95" width="100" height="20" fill="#10b981" rx="3"/>
+
+  <!-- Medical cross accent -->
+  <g transform="translate(145, 60)">
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  </g>
 
   <!-- Company name -->
-  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#10b981">HealthConnect</text>
+  <text x="100" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">HEALTHCONNECT</text>
 </svg>

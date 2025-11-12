@@ -1,27 +1,26 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="200" height="200" fill="#fdf2f8"/>
+  <rect width="200" height="200" fill="white"/>
 
-  <!-- Quantum - Atomic/Energy concept -->
-  <!-- Central nucleus -->
-  <circle cx="100" cy="100" r="12" fill="#ec4899"/>
+  <!-- Geometric mark - Q shape with particle accent -->
+  <!-- Main circle (Q body) -->
+  <circle cx="100" cy="95" r="40" fill="none" stroke="#ec4899" stroke-width="4"/>
 
-  <!-- Electron orbits -->
-  <!-- Orbit 1 (horizontal) -->
-  <ellipse cx="100" cy="100" rx="40" ry="15" fill="none" stroke="#ec4899" stroke-width="2"/>
-  <circle cx="140" cy="100" r="6" fill="#ec4899"/>
+  <!-- Q tail -->
+  <path d="M 130 120 Q 140 125 135 145" stroke="#ec4899" stroke-width="4" fill="none" stroke-linecap="round"/>
 
-  <!-- Orbit 2 (vertical) -->
-  <ellipse cx="100" cy="100" rx="15" ry="40" fill="none" stroke="#ec4899" stroke-width="2"/>
-  <circle cx="100" cy="140" r="6" fill="#ec4899"/>
+  <!-- Inner dot -->
+  <circle cx="100" cy="95" r="8" fill="#ec4899"/>
 
-  <!-- Orbit 3 (diagonal) -->
-  <ellipse cx="100" cy="100" rx="32" ry="32" fill="none" stroke="#ec4899" stroke-width="2" transform="rotate(45 100 100)"/>
-  <circle cx="130" cy="70" r="6" fill="#ec4899"/>
+  <!-- Energy particles -->
+  <circle cx="145" cy="75" r="6" fill="#ec4899" opacity="0.6"/>
+  <circle cx="60" cy="75" r="6" fill="#ec4899" opacity="0.6"/>
+  <circle cx="120" cy="55" r="5" fill="#ec4899" opacity="0.4"/>
 
-  <!-- Energy rings -->
-  <circle cx="100" cy="100" r="55" fill="none" stroke="#ec4899" stroke-width="1" opacity="0.5"/>
+  <!-- Connecting lines (particle trails) -->
+  <line x1="135" y1="85" x2="145" y2="75" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
+  <line x1="65" y1="85" x2="60" y2="75" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
 
   <!-- Company name -->
-  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#ec4899">Quantum</text>
+  <text x="100" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">QUANTUM</text>
 </svg>

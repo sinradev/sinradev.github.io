@@ -1,15 +1,21 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="200" height="200" fill="#faf5ff"/>
+  <rect width="200" height="200" fill="white"/>
 
-  <!-- Cloud Scale - Cloud with upward arrow -->
-  <!-- Cloud shape -->
-  <path d="M 50 120 C 50 100 65 85 85 85 C 90 70 105 60 120 60 C 140 60 155 75 155 95 C 165 100 172 110 172 125 C 172 140 162 152 150 152 L 60 152 C 45 152 35 140 35 125 C 35 112 43 100 50 100" fill="none" stroke="#ff0080" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Geometric mark - Stacked squares with upward arrow -->
+  <!-- Bottom square -->
+  <rect x="55" y="110" width="45" height="45" fill="#ff0080" rx="5"/>
 
-  <!-- Upward arrow -->
-  <line x1="100" y1="140" x2="100" y2="70" stroke="#ff0080" stroke-width="3"/>
-  <polygon points="100,70 90,85 110,85" fill="#ff0080"/>
+  <!-- Middle square -->
+  <rect x="70" y="90" width="45" height="45" fill="#ff0080" rx="5" opacity="0.7"/>
+
+  <!-- Top square -->
+  <rect x="85" y="70" width="45" height="45" fill="#ff0080" rx="5" opacity="0.4"/>
+
+  <!-- Arrow -->
+  <line x1="100" y1="70" x2="100" y2="40" stroke="#ff0080" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="100,40 90,55 110,55" fill="#ff0080"/>
 
   <!-- Company name -->
-  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff0080">CloudScale</text>
+  <text x="100" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">CLOUDSCALE</text>
 </svg>

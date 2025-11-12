@@ -1,30 +1,24 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="200" height="200" fill="#f0fdf4"/>
+  <rect width="200" height="200" fill="white"/>
 
-  <!-- DataFlow - Connected nodes/flow -->
-  <!-- Left circle -->
-  <circle cx="50" cy="100" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
-  <circle cx="50" cy="100" r="8" fill="#10b981"/>
+  <!-- Geometric mark - Three connected dots flowing downward -->
+  <!-- Top dot -->
+  <circle cx="100" cy="55" r="12" fill="#10b981"/>
 
-  <!-- Middle circle -->
-  <circle cx="100" cy="60" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
-  <circle cx="100" cy="60" r="8" fill="#10b981"/>
+  <!-- Middle dot -->
+  <circle cx="100" cy="100" r="12" fill="#10b981" opacity="0.7"/>
 
-  <!-- Right circle -->
-  <circle cx="150" cy="100" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
-  <circle cx="150" cy="100" r="8" fill="#10b981"/>
+  <!-- Bottom dot -->
+  <circle cx="100" cy="145" r="12" fill="#10b981" opacity="0.4"/>
 
-  <!-- Bottom circle -->
-  <circle cx="100" cy="140" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
-  <circle cx="100" cy="140" r="8" fill="#10b981"/>
+  <!-- Connecting lines (flowing) -->
+  <line x1="100" y1="67" x2="100" y2="88" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="112" x2="100" y2="133" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Connection lines with arrows -->
-  <line x1="65" y1="92" x2="85" y2="68" stroke="#10b981" stroke-width="2"/>
-  <line x1="115" y1="68" x2="135" y2="92" stroke="#10b981" stroke-width="2"/>
-  <line x1="142" y1="108" x2="108" y2="132" stroke="#10b981" stroke-width="2"/>
-  <line x1="92" y1="132" x2="58" y2="108" stroke="#10b981" stroke-width="2"/>
+  <!-- Arrow at bottom -->
+  <polygon points="100,150 95,140 105,140" fill="#10b981" opacity="0.7"/>
 
   <!-- Company name -->
-  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#10b981">DataFlow</text>
+  <text x="100" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">DATAFLOW</text>
 </svg>
