@@ -1,38 +1,8 @@
-- name: Starter
-  color: "#4CAF50"
-  price: "49"
-  currency: "$"
-  period: "/month"
-  description: "For small teams getting started with unified project management"
-  features:
-    - text: Up to 5 team members
-      highlight: true
-    - text: Unlimited projects and releases
-      highlight: true
-    - text: Rich text editor & specifications
-      highlight: true
-    - text: Basic capacity planning
-      highlight: false
-    - text: Comment & collaboration features
-      highlight: false
-    - text: Standard templates
-      highlight: false
-    - text: Email support
-      highlight: false
-  call_to_action:
-    link: https://app.sinra.dev/users/sign_up
-    text: Start Free Trial
-
-- name: Professional
+- name: Sinra Pro
   color: "#2196F3"
-  price: "149"
-  currency: "$"
-  period: "/month"
-  original_price: "$179"
-  recommended: true
-  description: "For growing teams needing advanced planning and QA management"
+  description: "The complete project management platform combining V-Model and Agile methodologies"
   features:
-    - text: Up to 25 team members
+    - text: Unlimited team members
       highlight: true
     - text: Unlimited projects and releases
       highlight: true
@@ -46,35 +16,31 @@
       highlight: true
     - text: Multi-view intelligence (Kanban, List, Release)
       highlight: true
-    - text: Priority email & chat support
-      highlight: false
-  call_to_action:
-    link: https://app.sinra.dev/users/sign_up
-    text: Start Free Trial
-
-- name: Enterprise
-  color: "#FF9800"
-  price: "Custom"
-  currency: ""
-  period: "pricing"
-  description: "For large organizations with custom workflows and dedicated support"
-  features:
-    - text: Unlimited team members
+    - text: Release management & go-live checklists
       highlight: true
-    - text: Everything in Professional
+    - text: Priority email & chat support
       highlight: true
     - text: Custom workflows & roles
-      highlight: true
+      highlight: false
     - text: Advanced security & SSO
-      highlight: true
+      highlight: false
     - text: Dedicated account manager
-      highlight: true
-    - text: Custom integrations
-      highlight: true
-    - text: SLA & priority support
-      highlight: true
-    - text: On-premise deployment option
-      highlight: true
-  call_to_action:
-    link: /contact
-    text: Contact Sales
+      highlight: false
+  pricing:
+    - period: Monthly
+      price: "199"
+      currency: "$"
+      billing: "/month"
+      call_to_action:
+        link: https://app.sinra.dev/users/sign_up
+        text: Start Free Trial
+    - period: Annual
+      price: "1990"
+      currency: "$"
+      billing: "/year"
+      original_price: "$2388"
+      savings: "Save 17%"
+      recommended: true
+      call_to_action:
+        link: https://app.sinra.dev/users/sign_up
+        text: Start Free Trial
