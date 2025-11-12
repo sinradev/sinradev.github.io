@@ -2,13 +2,13 @@ about:
   innovative_solution: The Next Generation of Project Management
   result_deep_reflexion: Sinra is built from the ground up for modern software teams. Forget everything you know about traditional project management. This is a fundamentally different approach designed around how real teams actually work.
   problem_title: The Real Problems Teams Face
-  problem_description: "Project management tools force false choices: rigid processes or complete chaos. Planning gets siloed from execution. Capacities are invisible. Quality is an afterthought. Teams waste hours in status meetings but still miss deadlines. Sinra solves the actual problems."
+  problem_description: "Traditional tools create silos: planning here, execution there. Your real capacity remains invisible. Your quality depends on luck. Meetings multiply, but deadlines slip. Sinra breaks these silos. One single source of truth to plan, execute, and verify."
   agile_pitfalls: Inefficiency Through Fragmentation
   time_consuming: Scattered Communication Kills Momentum
-  agile_environment: "Most teams use disconnected tools: one for planning, one for tracking, one for testing, one for communication. Context gets lost between systems. Teams repeat decisions because nobody can find the last conversation. Critical information lives in emails and Slack. Everyone stays busy but nothing ships."
+  agile_environment: "Most teams use disconnected tools: one for planning, one for tracking, one for testing, one for communication. Your decisions get lost. Critical information lives scattered across emails and Slack instead of being centralized. Teams redo the same work over and over. Lots of activity, zero results."
   meeting_overload: "Teams waste 10+ hours weekly finding information scattered across tools"
   constant_reprioritization: "Teams spend 30% of time re-entering the same data in different systems"
-  efficiency_loss: "Critical details fall through cracks between disconnected tools"
+  efficiency_loss: "Critical details get lost between disconnected tools"
   waterfall_pitfalls: Blindness Until It's Too Late
   loss_of_control: "Discovery Happens at the End"
   waterfall_methodology: "Traditional planning tools create a false sense of control. You don't see real capacity, actual progress, or test coverage until weeks into execution. By then, you're committed to dates that can't be met. Problems that could have been caught early become emergency fire drills. You don't fail because your team is bad—you fail because you can't see what's actually happening."
@@ -29,8 +29,10 @@ about:
   release_planning_desc: "See all features, capabilities, and issues that feed into each release. Track which teams own what, manage dependencies, and visualize the complete timeline from planning to production."
   deployment_readiness: "Deployment Readiness Checklists"
   deployment_readiness_desc: "Before any release ships, verify all acceptance criteria are met, all tests pass, and all teams are aligned. Go-live checklists ensure nothing is missed in the chaos of launch day."
-  go_live_confidence: "Go-Live Without Firefighting"
+  go_live_confidence: "Deploy with Confidence"
   go_live_confidence_desc: "With complete visibility into release status, team capacity, and test results, deployments become predictable events, not crisis management. Launch with confidence, not crossed fingers."
+  release_team_coordination: "Coordinate Teams Across Releases"
+  release_team_coordination_desc: "Visualize all teams involved in each release, track deployment timelines, and manage go-live checklists. Releases succeed through coordination, not firefighting."
   ready_to_transform: "Stop Choosing Between Chaos and Rigidity"
   ready_to_transform_desc: "Try Sinra risk-free. Teams report 40%+ reduction in planning overhead, predictable release dates, and higher code quality. All without the plugin sprawl of traditional tools."
   learn_more: "Schedule a Demo"

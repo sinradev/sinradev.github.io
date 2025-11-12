@@ -13,65 +13,8 @@
   <!-- Contact Content -->
   <section class="contact-content">
     <div class="container">
-      <div class="contact-grid">
-        <!-- Contact Information -->
-        <div class="contact-info">
-          <h2>{{ site.data[site.active_lang].strings.contact.get_in_touch }}</h2>
-          <p>{{ site.data[site.active_lang].strings.contact.get_in_touch_desc }}</p>
-
-          <div class="contact-methods">
-            <div class="contact-method">
-              <div class="method-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="method-content">
-                <h3>{{ site.data[site.active_lang].strings.contact.email_title }}</h3>
-                <p>{{ site.data[site.active_lang].strings.contact.email_desc }}</p>
-              </div>
-            </div>
-
-            <div class="contact-method">
-              <div class="method-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="method-content">
-                <h3>{{ site.data[site.active_lang].strings.contact.phone_title }}</h3>
-                <p>{{ site.data[site.active_lang].strings.contact.phone_desc }}</p>
-                <a href="tel:{{ site.data[site.active_lang].strings.contact.phone_number }}" class="contact-link">
-                  {{ site.data[site.active_lang].strings.contact.phone_number }}
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-method">
-              <div class="method-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="method-content">
-                <h3>{{ site.data[site.active_lang].strings.contact.address_title }}</h3>
-                <p>{{ site.data[site.active_lang].strings.contact.address_desc }}</p>
-                <span class="contact-link">{{ site.data[site.active_lang].strings.contact.address }}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-hours">
-            <h3>{{ site.data[site.active_lang].strings.contact.hours_title }}</h3>
-            <p>{{ site.data[site.active_lang].strings.contact.hours_desc }}</p>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form-container">
-          <div class="form-card">
+      <div class="contact-form-container-centered">
+        <div class="form-card">
             <h2>{{ site.data[site.active_lang].strings.contact.send_message_title }}</h2>
             <p>{{ site.data[site.active_lang].strings.contact.send_message_desc }}</p>
 

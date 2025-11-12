@@ -2,13 +2,13 @@ about:
   innovative_solution: La Nouvelle Génération de Gestion de Projet
   result_deep_reflexion: Sinra est construite de zéro pour les équipes modernes. Oubliez tout ce que vous savez sur la gestion de projet traditionnelle. C'est une approche fondamentalement différente conçue autour de la façon dont les vraies équipes travaillent réellement.
   problem_title: Les Vrais Problèmes que Rencontrent les Équipes
-  problem_description: "Les outils de gestion de projet imposent de faux choix : processus rigides ou chaos complet. La planification est isolée de l'exécution. Les capacités sont invisibles. La qualité est une arrière-pensée. Les équipes gaspillent des heures en réunions de statut mais ratent quand même les délais. Sinra résout les vrais problèmes."
+  problem_description: "Les outils traditionnels créent des silos : planification ici, exécution là-bas. Votre capacité réelle reste invisible. Votre qualité dépend de la chance. Les réunions se multiplient, mais les délais glissent. Sinra casse ces silos. Une seule source de vérité pour planifier, exécuter, et vérifier."
   agile_pitfalls: Inefficacité par Fragmentation
   time_consuming: La Communication Dispersée Tue l'Élan
-  agile_environment: "La plupart des équipes utilisent des outils déconnectés : un pour la planification, un pour le suivi, un pour les tests, un pour la communication. Le contexte se perd entre les systèmes. Les équipes répètent les décisions parce que personne ne peut trouver la dernière conversation. Les informations critiques vivent dans les emails et Slack. Tout le monde reste occupé mais rien ne sort en production."
+  agile_environment: "La plupart des équipes utilisent des outils déconnectés : un pour la planification, un pour le suivi, un pour les tests, un pour la communication. Vos décisions se perdent. Les infos critiques vivent dans les emails et Slack au lieu d'être centralisées. Les équipes reprennent le même travail sans cesse. Beaucoup d'activité, zéro résultats."
   meeting_overload: "Les équipes gaspillent 10+ heures par semaine à chercher les informations dispersées dans les outils"
   constant_reprioritization: "Les équipes passent 30% de leur temps à re-saisir les mêmes données dans différents systèmes"
-  efficiency_loss: "Les détails critiques tombent à travers les fissures entre les outils déconnectés"
+  efficiency_loss: "Les détails critiques se perdent entre les outils déconnectés"
   waterfall_pitfalls: Cécité Jusqu'à Ce Qu'il Soit Trop Tard
   loss_of_control: "Les Découvertes Arrivent à la Fin"
   waterfall_methodology: "Les outils de planification traditionnels créent une fausse impression de contrôle. Vous ne voyez pas la vraie capacité, la progression réelle, ou la couverture de test jusqu'à des semaines dans l'exécution. À ce moment, vous êtes engagé sur des dates qui ne peuvent pas être respectées. Les problèmes qui auraient pu être détectés tôt deviennent des combats d'urgence. Vous n'échouez pas parce que votre équipe est mauvaise—vous échouez parce que vous ne pouvez pas voir ce qui se passe réellement."
@@ -28,9 +28,11 @@ about:
   release_planning: "Planification Complète des Releases"
   release_planning_desc: "Voyez toutes les features, capacités, et issues qui alimentent chaque release. Suivez quelles équipes possèdent quoi, gérez les dépendances, et visualisez la timeline complète de la planification à la production."
   deployment_readiness: "Listes de Vérification de Préparation au Déploiement"
-  deployment_readiness_desc: "Avant que toute release ne soit déployée, vérifiez que tous les critères d'acceptation sont met, tous les tests passent, et toutes les équipes sont alignées. Les listes de vérification de go-live assurent que rien n'est oublié dans le chaos du jour du lancement."
-  go_live_confidence: "Go-Live Sans Combat d'Urgence"
+  deployment_readiness_desc: "Avant que toute release ne soit déployée, vérifiez que tous les critères d'acceptation sont validés, tous les tests passent, et toutes les équipes sont alignées. Les listes de vérification de go-live assurent que rien n'est oublié dans le chaos du jour du lancement."
+  go_live_confidence: "Déployez en tout confiance"
   go_live_confidence_desc: "Avec une visibilité complète sur le statut des releases, la capacité des équipes, et les résultats des tests, les déploiements deviennent des événements prévisibles, pas de la gestion de crise. Lancez avec confiance, pas avec les doigts croisés."
+  release_team_coordination: "Coordonnez les Équipes à Travers les Releases"
+  release_team_coordination_desc: "Visualisez les équipes impliquées dans chaque release, suivez les calendriers de déploiement, et gérez les listes de contrôle avant mise en production. Les releases réussissent par la coordination, pas par la gestion de crise."
   ready_to_transform: "Arrêtez de Choisir Entre Chaos et Rigidité"
   ready_to_transform_desc: "Essayez Sinra sans risque. Les équipes rapportent une réduction de 40%+ des frais généraux de planification, des dates de release prévisibles, et une meilleure qualité de code. Tout sans la prolifération de plugins des outils traditionnels."
   learn_more: "Planifier une Démo"
