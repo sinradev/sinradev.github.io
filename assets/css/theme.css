@@ -2838,7 +2838,7 @@ img {
 .case-studies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 40px;
+  gap: 48px;
   margin-bottom: 60px;
 }
 
@@ -2846,7 +2846,7 @@ img {
   background: var(--gray-50);
   border: 1px solid var(--gray-200);
   border-radius: var(--border-radius-lg);
-  padding: 40px;
+  padding: 48px;
   transition: all 0.3s ease;
 }
 
@@ -2858,20 +2858,20 @@ img {
 
 .case-study-header {
   margin-bottom: 32px;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
   border-bottom: 2px solid var(--gray-200);
 }
 
 .company-info {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: 20px;
 }
 
 .company-logo-placeholder {
-  min-width: 60px;
-  width: 60px;
-  height: 60px;
+  min-width: 90px;
+  width: 90px;
+  height: 90px;
   background: var(--gray-100);
   border-radius: var(--border-radius);
   display: flex;
@@ -2903,7 +2903,7 @@ img {
 .case-study-content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .case-study-content h4 {
@@ -2930,11 +2930,11 @@ img {
 .results-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 20px;
 }
 
 .result-item {
-  padding: 16px;
+  padding: 20px;
   background: var(--gray-100);
   border-radius: var(--border-radius);
   text-align: center;
@@ -2955,8 +2955,8 @@ img {
 }
 
 .testimonial-section {
-  margin-top: 24px;
-  padding-top: 24px;
+  margin-top: 32px;
+  padding-top: 32px;
   border-top: 2px solid var(--gray-200);
 }
 
