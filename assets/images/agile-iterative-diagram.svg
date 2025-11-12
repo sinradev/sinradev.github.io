@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="500" y="40" font-size="24" font-weight="700" text-anchor="middle" fill="#1a1a1a">
+    Agile / Iterative Approach
+  </text>
+
+  <!-- Central cycle -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4CAF50"/>
+    </marker>
+  </defs>
+
+  <!-- Sprint cycle visualization -->
+  <g>
+    <!-- Sprint 1 -->
+    <circle cx="150" cy="200" r="50" fill="#4CAF50" opacity="0.2" stroke="#4CAF50" stroke-width="2"/>
+    <text x="150" y="200" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">Sprint 1</text>
+    <text x="150" y="220" font-size="11" text-anchor="middle" fill="#555">Plan</text>
+    <text x="150" y="235" font-size="11" text-anchor="middle" fill="#555">Build</text>
+    <text x="150" y="250" font-size="11" text-anchor="middle" fill="#555">Review</text>
+
+    <!-- Arrow to Sprint 2 -->
+    <path d="M 200 200 L 280 200" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Sprint 2 -->
+    <circle cx="380" cy="200" r="50" fill="#4CAF50" opacity="0.3" stroke="#4CAF50" stroke-width="2"/>
+    <text x="380" y="200" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">Sprint 2</text>
+    <text x="380" y="220" font-size="11" text-anchor="middle" fill="#555">Refine</text>
+    <text x="380" y="235" font-size="11" text-anchor="middle" fill="#555">Build</text>
+    <text x="380" y="250" font-size="11" text-anchor="middle" fill="#555">Adapt</text>
+
+    <!-- Arrow to Sprint 3 -->
+    <path d="M 430 200 L 510 200" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Sprint 3 -->
+    <circle cx="610" cy="200" r="50" fill="#4CAF50" opacity="0.4" stroke="#4CAF50" stroke-width="2"/>
+    <text x="610" y="200" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">Sprint 3</text>
+    <text x="610" y="220" font-size="11" text-anchor="middle" fill="#555">Learn</text>
+    <text x="610" y="235" font-size="11" text-anchor="middle" fill="#555">Build</text>
+    <text x="610" y="250" font-size="11" text-anchor="middle" fill="#555">Release</text>
+
+    <!-- Arrow back (cycle) -->
+    <path d="M 560 260 Q 380 330 200 260" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+
+    <!-- Cycle label -->
+    <text x="380" y="360" font-size="12" font-weight="600" text-anchor="middle" fill="#4CAF50">Continuous Feedback Loop</text>
+  </g>
+
+  <!-- Feedback points -->
+  <g>
+    <circle cx="150" cy="80" r="8" fill="#FF9800"/>
+    <line x1="150" y1="150" x2="150" y2="100" stroke="#FF9800" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="150" y="70" font-size="11" text-anchor="middle" fill="#FF9800">💬 Feedback</text>
+
+    <circle cx="380" cy="80" r="8" fill="#FF9800"/>
+    <line x1="380" y1="150" x2="380" y2="100" stroke="#FF9800" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="380" y="70" font-size="11" text-anchor="middle" fill="#FF9800">💬 Feedback</text>
+
+    <circle cx="610" cy="80" r="8" fill="#FF9800"/>
+    <line x1="610" y1="150" x2="610" y2="100" stroke="#FF9800" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="610" y="70" font-size="11" text-anchor="middle" fill="#FF9800">💬 Feedback</text>
+  </g>
+
+  <!-- Characteristics -->
+  <g>
+    <!-- Left characteristics -->
+    <text x="50" y="320" font-size="12" font-weight="600" fill="#1a1a1a">✓ Rapid feedback loops</text>
+    <text x="50" y="345" font-size="12" font-weight="600" fill="#1a1a1a">✓ Flexible requirements</text>
+    <text x="50" y="370" font-size="12" font-weight="600" fill="#1a1a1a">✓ Fast delivery</text>
+
+    <!-- Right characteristics -->
+    <text x="550" y="320" font-size="12" font-weight="600" fill="#d32f2f">✗ No upfront planning</text>
+    <text x="550" y="345" font-size="12" font-weight="600" fill="#d32f2f">✗ Technical debt accumulation</text>
+    <text x="550" y="370" font-size="12" font-weight="600" fill="#d32f2f">✗ Scope creep</text>
+  </g>
+
+  <!-- Bottom info -->
+  <text x="500" y="460" font-size="13" text-anchor="middle" fill="#555" font-style="italic">
+    Best for: Uncertain requirements, fast feedback loops, small teams, continuous deployment
+  </text>
+</svg>
