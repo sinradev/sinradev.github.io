@@ -11,7 +11,7 @@
         <div class="planet planet-4"></div>
         <div class="planet planet-5"></div>
       </div>
-      <img src="{{ '/assets/images/sinra-overview.png' | relative_url }}" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" />
+      <img src="{{ '/assets/images/sinra-overview.png' | relative_url }}" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" loading="lazy" />
     </div>
   </div>
 </section>
@@ -56,7 +56,7 @@
         <p>{{ section.body }}</p>
       </div>
       <div class="image">
-        <img src="{{ section.image | relative_url }}" alt="{{ section.alt }}" class="screenshot"  />
+        <img src="{{ section.image | relative_url }}" alt="{{ section.alt }}" class="screenshot" loading="lazy" />
       </div>
     </div>
   </section>
@@ -69,7 +69,7 @@
       {% for feature in site.data[site.active_lang].index_features %}
       <div class="feature">
         <div class="feature-icon">
-          <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}">
+          <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}" loading="lazy">
         </div>
         <div>
           <h3>{{ feature.title }}</h3>
