@@ -18,23 +18,24 @@
             <h2>{{ site.data[site.active_lang].strings.contact.send_message_title }}</h2>
             <p>{{ site.data[site.active_lang].strings.contact.send_message_desc }}</p>
 
-            <form action="http://localhost:3000/contact/form" method="post" class="contact-form">
+            <form action="http://localhost:3000/contact/form" method="post" class="contact-form" aria-label="Contact form">
               <input type="hidden" name="_to" value="support@example.com" />
               <input type="text" name="_gotcha" style="display: none;">
+              <div class="form-error-alert" role="alert" aria-live="polite" aria-hidden="true"></div>
 
               <div class="form-group">
-                <label for="name">{{ site.data[site.active_lang].strings.contact.full_name }}</label>
-                <input type="text" name="name" id="name" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.full_name }}" required />
+                <label for="name">{{ site.data[site.active_lang].strings.contact.full_name }} <span aria-label="required">*</span></label>
+                <input type="text" name="name" id="name" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.full_name }}" required aria-required="true" />
               </div>
 
               <div class="form-group">
-                <label for="email">{{ site.data[site.active_lang].strings.contact.email }}</label>
-                <input type="email" name="email" id="email" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.email }}" required />
+                <label for="email">{{ site.data[site.active_lang].strings.contact.email }} <span aria-label="required">*</span></label>
+                <input type="email" name="email" id="email" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.email }}" required aria-required="true" />
               </div>
 
               <div class="form-group">
-                <label for="subject">{{ site.data[site.active_lang].strings.contact.subject }}</label>
-                <select name="subject" id="subject" required>
+                <label for="subject">{{ site.data[site.active_lang].strings.contact.subject }} <span aria-label="required">*</span></label>
+                <select name="subject" id="subject" required aria-required="true">
                   <option value="">{{ site.data[site.active_lang].strings.contact.placeholders.subject }}</option>
                   <option value="general">{{ site.data[site.active_lang].strings.contact.subject_general }}</option>
                   <option value="support">{{ site.data[site.active_lang].strings.contact.subject_support }}</option>
@@ -44,8 +45,8 @@
               </div>
 
               <div class="form-group">
-                <label for="message">{{ site.data[site.active_lang].strings.contact.message }}</label>
-                <textarea name="message" id="message" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.message }}" rows="6" required></textarea>
+                <label for="message">{{ site.data[site.active_lang].strings.contact.message }} <span aria-label="required">*</span></label>
+                <textarea name="message" id="message" placeholder="{{ site.data[site.active_lang].strings.contact.placeholders.message }}" rows="6" required aria-required="true"></textarea>
               </div>
 
               <input type="hidden" name="return_url" value="{{ site.url }}/{% if site.active_lang != site.default_lang %}fr/{% endif %}contact-success/" />
@@ -112,24 +113,32 @@
     // Form validation and enhancement
     const form = document.querySelector('.contact-form');
     const submitButton = form.querySelector('.submit-button');
+    const errorAlert = form.querySelector('.form-error-alert');
 
     form.addEventListener('submit', function(e) {
       const requiredFields = form.querySelectorAll('[required]');
       let isValid = true;
+      let errorMessages = [];
 
       requiredFields.forEach(field => {
         if (!field.value.trim()) {
           isValid = false;
           field.classList.add('error');
+          field.setAttribute('aria-invalid', 'true');
+          errorMessages.push(field.previousElementSibling.textContent);
         } else {
           field.classList.remove('error');
+          field.setAttribute('aria-invalid', 'false');
         }
       });
 
       if (!isValid) {
         e.preventDefault();
-        alert('{{ site.data[site.active_lang].strings.contact.validation_error }}');
+        errorAlert.setAttribute('aria-hidden', 'false');
+        errorAlert.textContent = '{{ site.data[site.active_lang].strings.contact.validation_error }}';
       } else {
+        errorAlert.setAttribute('aria-hidden', 'true');
+        errorAlert.textContent = '';
         submitButton.disabled = true;
         submitButton.innerHTML = '<span>{{ site.data[site.active_lang].strings.contact.sending }}</span>';
       }

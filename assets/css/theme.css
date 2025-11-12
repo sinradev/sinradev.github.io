@@ -2729,6 +2729,22 @@ img {
   min-height: 120px;
 }
 
+.form-error-alert {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  background: oklch(82.418% 0.099 33.756 / 0.1);
+  border: 1px solid var(--error);
+  border-radius: var(--border-radius);
+  color: var(--error);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: none;
+}
+
+.form-error-alert:not([aria-hidden="true"]) {
+  display: block;
+}
+
 .submit-button {
   display: flex;
   align-items: center;
