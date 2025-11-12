@@ -1,14 +1,24 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="200" height="200" fill="#f0f4ff"/>
+  <rect width="200" height="200" fill="white"/>
 
-  <!-- FinServe - Dollar/Finance concept -->
-  <!-- Large dollar sign -->
-  <text x="100" y="115" font-size="80" font-weight="bold" text-anchor="middle" fill="none" stroke="#0066ff" stroke-width="2">$</text>
+  <!-- Geometric mark - Nested circles with F shape -->
+  <!-- Outer circle -->
+  <circle cx="100" cy="90" r="50" fill="none" stroke="#0066ff" stroke-width="3"/>
 
-  <!-- Checkmark inside dollar -->
-  <path d="M 85 110 L 95 120 L 115 90" stroke="#0066ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Inner circle -->
+  <circle cx="100" cy="90" r="35" fill="none" stroke="#0066ff" stroke-width="2"/>
+
+  <!-- F shape -->
+  <!-- Vertical bar -->
+  <rect x="85" y="60" width="8" height="60" fill="#0066ff" rx="2"/>
+
+  <!-- Top horizontal -->
+  <rect x="85" y="60" width="25" height="8" fill="#0066ff" rx="2"/>
+
+  <!-- Middle horizontal -->
+  <rect x="85" y="85" width="20" height="8" fill="#0066ff" rx="2"/>
 
   <!-- Company name -->
-  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066ff">FinServe</text>
+  <text x="100" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">FINSERVE</text>
 </svg>
