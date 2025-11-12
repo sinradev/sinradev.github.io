@@ -82,10 +82,26 @@ contact_success:
 features: Features
 got_to_blog: Go to the Blog
 hero:
-  title: <strong>Master Your Releases</strong> - Sinra Controls Deployments
-  body: The only project management tool that combines <strong>dual workflows</strong> (Spec + Dev), <strong>real-time capacity planning</strong>, and <strong>integrated QA management</strong>. No plugins. No complexity. Just results.
+  title: <strong>Stop Shipping Delayed.</strong> Ship with Confidence.
+  body: The only project management tool built for teams doing both V-Model and Agile. <strong>See exactly where everything stands.</strong> Unified capacity planning. Real-time QA tracking. One platform, no firefighting.
   button: Try for free
   alt_image: Sinra Overview
+why_sinra_title: Why Teams Choose Sinra
+why_sinra_description: Most PM tools force you to choose between rigid planning and complete chaos. Sinra unifies planning and execution.
+why_sinra_stats:
+  - stat: "60%"
+    label: "of PM tool users waste time context-switching"
+  - stat: "20h/week"
+    label: "teams spend in status meetings and status updates"
+  - stat: "1 Platform"
+    label: "for specs, dev, QA, and releases"
+why_sinra_benefits:
+  - title: "See Everything in Real-Time"
+    description: "Specs, code, tests, capacity, and releases all in one place. No more scattered information in emails and Slack."
+  - title: "Plan Based on Reality"
+    description: "Know exactly who can deliver what. Stop overloading teams and missing deadlines by guessing capacity."
+  - title: "Ship Quality, Not Excuses"
+    description: "QA is built-in, not bolted-on. Catch issues early. Deploy with confidence, not crossed fingers."
 pricing:
   title: Pricing
   heading: Find the perfect plan for your business
@@ -101,3 +117,19 @@ pricing:
 reduce_complexity: <strong>Manage teams smarter</strong>, <strong>deliver faster</strong>, <strong>master your releases</strong>.
 testimonial: Testimonial
 try_sinra: Try Sinra for free
+case_studies:
+  title: How Teams Transform Their Project Management
+  description: Real companies, real results. See how Sinra helps teams ship faster, improve quality, and reduce planning overhead.
+  challenge: The Challenge
+  solution: The Solution
+  results: Results
+  timeline_label: Timeline
+trusted_by:
+  title: Trusted by Teams at Forward-Thinking Companies
+  description: From SaaS startups to regulated enterprises to digital agencies, teams choose Sinra to manage their most complex projects.
+  stat_teams: "1000+"
+  stat_teams_label: teams collaborating with Sinra
+  stat_users: "15,000+"
+  stat_users_label: users shipping faster every month
+  stat_satisfaction: "98%"
+  stat_satisfaction_label: customer satisfaction score

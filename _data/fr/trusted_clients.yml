@@ -1,0 +1,19 @@
+- name: "TechVision Labs"
+  logo: "/assets/images/logos/techvision.svg"
+  url: "https://techvision.example.com"
+
+- name: "HealthConnect Systems"
+  logo: "/assets/images/logos/healthconnect.svg"
+  url: "https://healthconnect.example.com"
+
+- name: "Velocity Creative Agency"
+  logo: "/assets/images/logos/velocity.svg"
+  url: "https://velocity.example.com"
+
+- name: "CloudScale Inc"
+  logo: "/assets/images/logos/cloudscale.svg"
+  url: "https://cloudscale.example.com"
+
+- name: "FinServe Digital"
+  logo: "/assets/images/logos/finserve.svg"
+  url: "https://finserve.example.com"

@@ -1,47 +1,80 @@
-- name: Monthly Plan
-  color: "#8e8e8e"
-  price: "10"
-  currency: "€"
+- name: Starter
+  color: "#4CAF50"
+  price: "49"
+  currency: "$"
   period: "/month"
+  description: "For small teams getting started with unified project management"
   features:
-    - text: Up to 1 user
+    - text: Up to 5 team members
       highlight: true
-    - text: Modern WYSIWYG editor (Notion-like)
+    - text: Unlimited projects and releases
       highlight: true
-    - text: Advanced comment system
+    - text: Rich text editor & specifications
       highlight: true
-    - text: Ceremonies reporting
-      highlight: true
-    - text: Simplified interface by user type
-      highlight: true
-    - text: Workload Management
-      highlight: true
+    - text: Basic capacity planning
+      highlight: false
+    - text: Comment & collaboration features
+      highlight: false
+    - text: Standard templates
+      highlight: false
+    - text: Email support
+      highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
-    text: Get started
-- name: Yearly Plan
-  color: "#4a4a4a"
-  price: "96"
-  currency: "€"
-  period: "/year"
-  original_price: "120€"
-  recommended: true
-  features:
-    - text: Up to 1 user
-      highlight: true
-    - text: Modern WYSIWYG editor (Notion-like)
-      highlight: true
-    - text: Advanced comment system
-      highlight: true
-    - text: Ceremonies reporting
-      highlight: true
-    - text: Simplified interface by user type
-      highlight: true
-    - text: Workload Management
-      highlight: true
-    - text: 20% discount
-      highlight: true
-  call_to_action:
-    link: https://app.sinra.dev/users/sign_up
-    text: Get started
+    text: Start Free Trial
 
+- name: Professional
+  color: "#2196F3"
+  price: "149"
+  currency: "$"
+  period: "/month"
+  original_price: "$179"
+  recommended: true
+  description: "For growing teams needing advanced planning and QA management"
+  features:
+    - text: Up to 25 team members
+      highlight: true
+    - text: Unlimited projects and releases
+      highlight: true
+    - text: Rich text editor & specifications
+      highlight: true
+    - text: Advanced real-time capacity planning
+      highlight: true
+    - text: Integrated QA management
+      highlight: true
+    - text: Advanced templates & customization
+      highlight: true
+    - text: Multi-view intelligence (Kanban, List, Release)
+      highlight: true
+    - text: Priority email & chat support
+      highlight: false
+  call_to_action:
+    link: https://app.sinra.dev/users/sign_up
+    text: Start Free Trial
+
+- name: Enterprise
+  color: "#FF9800"
+  price: "Custom"
+  currency: ""
+  period: "pricing"
+  description: "For large organizations with custom workflows and dedicated support"
+  features:
+    - text: Unlimited team members
+      highlight: true
+    - text: Everything in Professional
+      highlight: true
+    - text: Custom workflows & roles
+      highlight: true
+    - text: Advanced security & SSO
+      highlight: true
+    - text: Dedicated account manager
+      highlight: true
+    - text: Custom integrations
+      highlight: true
+    - text: SLA & priority support
+      highlight: true
+    - text: On-premise deployment option
+      highlight: true
+  call_to_action:
+    link: /contact
+    text: Contact Sales
