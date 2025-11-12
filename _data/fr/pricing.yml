@@ -2,7 +2,7 @@
   color: "#2196F3"
   description: "La plateforme complète de gestion de projet combinant V-Model et Agile"
   features:
-    - text: Membres d'équipe illimités
+    - text: Facturation à l'utilisateur (flexibilité d'équipe)
       highlight: true
     - text: Projets et releases illimités
       highlight: true
@@ -22,7 +22,7 @@
       highlight: true
     - text: Workflows et rôles personnalisés
       highlight: false
-    - text: Sécurité avancée et SSO
+    - text: Sécurité avancée
       highlight: false
     - text: Gestionnaire de compte dédié
       highlight: false
