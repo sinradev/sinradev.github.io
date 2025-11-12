@@ -1,15 +1,19 @@
 - title: Éditeur Texte Riche avec Contexte
   body: Les corps de spécification et issues supportent le formatage riche comme Notion. Écrivez des requirements détaillés une fois, réutilisez-les dans les releases. Plus de docs éparpillées.
-  image: /assets/images/text-editor.png
+  image: /assets/images/rich-text-editor.svg
   alt: Éditeur texte riche
 - title: Suivi de Progression à Tous les Niveaux
   body: Suivez la progression par date %, complétude statut, temps passé vs estimé, et charge équipe sur Issues, Cycles, Releases, et Capacités. Vraie visibilité.
-  image: /assets/images/sinra-overview.png
+  image: /assets/images/progress-tracking.svg
   alt: Suivi multi-niveaux de la progression
 - title: Commentaires Polymorphes & Collaboration Temps Réel
   body: Discutez et synchronisez-vous directement sur les issues et capacités. Les fils de commentaires avec @mentions, notifications instantanées, et formatage riche maintiennent les équipes alignées sans réunions de statut interminables. Tout le contexte vit au même endroit.
-  image: /assets/images/collaboration.png
+  image: /assets/images/collaboration-sync.svg
 - title: Planification des Déploiements par Release
   body: Planifiez les releases complètes avec visibilité totale sur les features, la couverture de test, les capacités, et la préparation. Voyez quelles équipes possèdent quelles releases, suivez les dates de déploiement, et gérez les listes de vérification de go-live. Succès des releases, pas du combat d'urgence.
-  image: /assets/images/sinra-overview.png
+  image: /assets/images/release-planning.svg
   alt: Planification des releases et déploiements
+- title: Visibilité Multi-App & Charge d'Équipes Croisées
+  body: Gérez plusieurs applications et plateformes au même endroit. Les équipes front et back travaillent ensemble sans friction tout en connaissant leur charge en temps réel. Fini les silos entre départements. Intelligence complète des capacités dans toute votre pile technologique.
+  image: /assets/images/multi-app-workload.svg
+  alt: Gestion multi-app et charge croisée
