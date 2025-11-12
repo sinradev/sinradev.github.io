@@ -9,7 +9,7 @@
       {% for client in site.data[site.active_lang].trusted_clients %}
       <div class="client-logo-wrapper">
         <a href="{{ client.url }}" target="_blank" rel="noopener noreferrer" title="{{ client.name }}">
-          <img src="{{ client.logo | relative_url }}" alt="{{ client.name }}" class="client-logo" />
+          <img src="{{ client.logo | relative_url }}" alt="{{ client.name }}" class="client-logo" loading="lazy" />
         </a>
       </div>
       {% endfor %}
