@@ -1,24 +1,22 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+  <!-- Data/Analytics concept -->
   <rect width="200" height="200" fill="white"/>
 
-  <!-- Geometric mark - Three connected dots flowing downward -->
-  <!-- Top dot -->
-  <circle cx="100" cy="55" r="12" fill="#10b981"/>
+  <!-- Network nodes -->
+  <circle cx="100" cy="60" r="12" fill="#059669"/>
+  <circle cx="70" cy="100" r="12" fill="#059669"/>
+  <circle cx="100" cy="120" r="12" fill="#059669"/>
+  <circle cx="130" cy="100" r="12" fill="#059669"/>
 
-  <!-- Middle dot -->
-  <circle cx="100" cy="100" r="12" fill="#10b981" opacity="0.7"/>
+  <!-- Connection lines -->
+  <line x1="100" y1="72" x2="70" y2="100" stroke="#059669" stroke-width="2"/>
+  <line x1="100" y1="72" x2="130" y2="100" stroke="#059669" stroke-width="2"/>
+  <line x1="70" y1="100" x2="100" y2="120" stroke="#059669" stroke-width="2"/>
+  <line x1="130" y1="100" x2="100" y2="120" stroke="#059669" stroke-width="2"/>
+  <line x1="70" y1="100" x2="130" y2="100" stroke="#059669" stroke-width="2"/>
 
-  <!-- Bottom dot -->
-  <circle cx="100" cy="145" r="12" fill="#10b981" opacity="0.4"/>
+  <!-- Central larger node -->
+  <circle cx="100" cy="90" r="8" fill="#059669" opacity="0.8"/>
 
-  <!-- Connecting lines (flowing) -->
-  <line x1="100" y1="67" x2="100" y2="88" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
-  <line x1="100" y1="112" x2="100" y2="133" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Arrow at bottom -->
-  <polygon points="100,150 95,140 105,140" fill="#10b981" opacity="0.7"/>
-
-  <!-- Company name -->
-  <text x="100" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">DATAFLOW</text>
+  <text x="100" y="170" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">IntelliMesh Labs</text>
 </svg>

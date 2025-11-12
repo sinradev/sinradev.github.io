@@ -1,26 +1,27 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+  <!-- AI/Machine Learning concept -->
   <rect width="200" height="200" fill="white"/>
 
-  <!-- Geometric mark - Q shape with particle accent -->
-  <!-- Main circle (Q body) -->
-  <circle cx="100" cy="95" r="40" fill="none" stroke="#ec4899" stroke-width="4"/>
+  <!-- Brain/Neural network -->
+  <!-- Center circle -->
+  <circle cx="100" cy="100" r="18" fill="#f59e0b"/>
 
-  <!-- Q tail -->
-  <path d="M 130 120 Q 140 125 135 145" stroke="#ec4899" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Brain waves -->
+  <path d="M 100 50 Q 95 75 100 95 Q 105 75 100 50" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 100 105 Q 95 125 100 150 Q 105 125 100 105" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Inner dot -->
-  <circle cx="100" cy="95" r="8" fill="#ec4899"/>
+  <!-- Side neural connections -->
+  <circle cx="60" cy="100" r="8" fill="#f59e0b" opacity="0.6"/>
+  <line x1="78" y1="100" x2="82" y2="100" stroke="#f59e0b" stroke-width="2"/>
 
-  <!-- Energy particles -->
-  <circle cx="145" cy="75" r="6" fill="#ec4899" opacity="0.6"/>
-  <circle cx="60" cy="75" r="6" fill="#ec4899" opacity="0.6"/>
-  <circle cx="120" cy="55" r="5" fill="#ec4899" opacity="0.4"/>
+  <circle cx="140" cy="100" r="8" fill="#f59e0b" opacity="0.6"/>
+  <line x1="118" y1="100" x2="122" y2="100" stroke="#f59e0b" stroke-width="2"/>
 
-  <!-- Connecting lines (particle trails) -->
-  <line x1="135" y1="85" x2="145" y2="75" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
-  <line x1="65" y1="85" x2="60" y2="75" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
+  <!-- Learning nodes -->
+  <circle cx="80" cy="70" r="5" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="120" cy="70" r="5" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="80" cy="130" r="5" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="120" cy="130" r="5" fill="#f59e0b" opacity="0.4"/>
 
-  <!-- Company name -->
-  <text x="100" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">QUANTUM</text>
+  <text x="100" y="170" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">NeuralSync AI</text>
 </svg>
