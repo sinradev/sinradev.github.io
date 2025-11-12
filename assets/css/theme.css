@@ -3082,6 +3082,298 @@ img {
 }
 
 /* Responsive Design for Case Studies and Trusted By */
+/* Comparison Pages */
+.comparison-page {
+  padding: 0;
+}
+
+.comparison-hero {
+  padding: 80px 0;
+  background: var(--gradient-primary);
+  color: white;
+  text-align: center;
+}
+
+.comparison-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.comparison-hero .hero-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comparison-section {
+  padding: 80px 0;
+  background: var(--gray-50);
+}
+
+.comparison-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.comparison-category {
+  margin-bottom: 60px;
+}
+
+.comparison-category h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: oklch(82.901% 0.031 222.959);
+  text-align: center;
+}
+
+.comparison-table {
+  background: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-md);
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+
+.table-header {
+  background: var(--gray-100);
+  font-weight: 600;
+  color: oklch(82.901% 0.031 222.959);
+  padding: 20px 0;
+}
+
+.table-row {
+  border-top: 1px solid var(--gray-200);
+  padding: 20px 0;
+  align-items: start;
+}
+
+.table-row:hover {
+  background: var(--gray-50);
+}
+
+.feature-col,
+.sinra-col,
+.competitor-col {
+  padding: 0 20px;
+}
+
+.feature-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-col strong {
+  color: oklch(82.901% 0.031 222.959);
+  font-size: 1rem;
+}
+
+.feature-desc {
+  font-size: 0.85rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.7;
+  margin: 0;
+}
+
+.sinra-col,
+.competitor-col {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.check-mark {
+  font-size: 1.5rem;
+  color: var(--success);
+  font-weight: bold;
+}
+
+.cross-mark {
+  font-size: 1.5rem;
+  color: var(--error);
+  font-weight: bold;
+}
+
+.text-value {
+  font-weight: 500;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.key-differences-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.key-differences-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.differences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.difference-card {
+  padding: 24px;
+  background: var(--gray-50);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s ease;
+}
+
+.difference-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.difference-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.difference-card p {
+  margin: 0;
+  color: oklch(82.901% 0.031 222.959);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.conclusion-section {
+  padding: 80px 0;
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.conclusion-card {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conclusion-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.conclusion-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .button {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .primary {
+  background: white;
+  color: var(--primary);
+}
+
+.cta-buttons .primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.cta-buttons .secondary {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.cta-buttons .secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 768px) {
+  .comparison-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .comparison-hero .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-col,
+  .sinra-col,
+  .competitor-col {
+    padding: 12px 0;
+  }
+
+  .sinra-col,
+  .competitor-col {
+    text-align: left;
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .comparison-category h2 {
+    font-size: 1.5rem;
+  }
+
+  .differences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conclusion-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .button {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .case-studies {
     padding: 80px 0;

@@ -1,0 +1,266 @@
+- id: sinra_vs_jira
+  title: Sinra vs Jira
+  competitor_name: Jira
+  competitor_logo: /assets/images/logos/jira.svg
+  intro: "Jira est un puissant outil de suivi de projets, mais il est conçu pour Agile/Scrum traditionnel. Sinra unifie Agile ET V-Model sur une seule plateforme."
+
+  comparison_table:
+    - category: Gestion de Projets
+      features:
+        - feature: "Support V-Model & Waterfall"
+          sinra: true
+          competitor: false
+          description: "Support intégré pour V-Model et planification waterfall traditionnel"
+        - feature: "Support Agile/Scrum"
+          sinra: true
+          competitor: true
+          description: "Support complet pour Agile, Scrum et workflows Kanban"
+        - feature: "Gestion des Releases"
+          sinra: true
+          competitor: false
+          description: "Planification et suivi de déploiement dédiés"
+        - feature: "Planification de Capacité Unifiée"
+          sinra: true
+          competitor: false
+          description: "Visibilité temps réel de la capacité d'équipe"
+
+    - category: Qualité & Tests
+      features:
+        - feature: "Gestion QA Intégrée"
+          sinra: true
+          competitor: false
+          description: "Tests QA liés directement aux spécifications"
+        - feature: "Gestion des Cas de Test"
+          sinra: true
+          competitor: false
+          description: "Créer, assigner et suivre les cas de test"
+        - feature: "Suivi de Couverture de Test"
+          sinra: true
+          competitor: false
+          description: "Suivi automatique de la couverture par release"
+        - feature: "Critères d'Acceptation"
+          sinra: true
+          competitor: true
+          description: "Définir et suivre les critères d'acceptation"
+
+    - category: Facilité d'Utilisation
+      features:
+        - feature: "Courbe d'Apprentissage"
+          sinra: true
+          competitor: false
+          description: "Interface plus simple et intuitive"
+        - feature: "Temps de Configuration"
+          sinra: true
+          competitor: false
+          description: "Minutes vs heures/jours pour Jira"
+        - feature: "Flexibilité de Configuration"
+          sinra: true
+          competitor: true
+          description: "Personnaliser les workflows et statuts"
+        - feature: "Onboarding"
+          sinra: true
+          competitor: false
+          description: "Templates et configuration guidée"
+
+    - category: Tarifs & Scalabilité
+      features:
+        - feature: "Modèle de Tarification"
+          sinra: "Par siège"
+          competitor: "Par utilisateur + add-ons"
+          description: "Sinra: Simple €10/mois par utilisateur. Jira: Tarification complexe"
+        - feature: "Coûts Cachés"
+          sinra: true
+          competitor: false
+          description: "Pas d'écosystème de plugins coûteux"
+        - feature: "Friendly pour Startups"
+          sinra: true
+          competitor: false
+          description: "Coût faible au démarrage"
+
+  key_differences:
+    - "Sinra combine Agile ET V-Model; Jira est Agile uniquement"
+    - "Les tests QA sont intégrés dans Sinra; c'est une arrière-pensée dans Jira"
+    - "Sinra a la gestion des releases native; Jira nécessite des plugins"
+    - "Sinra est 5x moins cher à implémenter"
+    - "Les équipes Sinra sont productives en jours; Jira prend des semaines"
+
+  conclusion: "Choisissez Sinra si vous avez besoin d'Agile+Waterfall unifié avec QA intégré. Choisissez Jira si vous êtes verrouillé dans Agile pur avec budget illimité."
+
+- id: sinra_vs_asana
+  title: Sinra vs Asana
+  competitor_name: Asana
+  competitor_logo: /assets/images/logos/asana.svg
+  intro: "Asana est un bel outil de gestion du travail pour les équipes générales. Sinra est conçu spécifiquement pour les équipes de développement logiciel."
+
+  comparison_table:
+    - category: Développement Logiciel
+      features:
+        - feature: "Gestion des Releases"
+          sinra: true
+          competitor: false
+          description: "Planification, suivi et préparation de déploiement des releases"
+        - feature: "Intégration QA"
+          sinra: true
+          competitor: false
+          description: "Workflows de cas de test et QA intégrés"
+        - feature: "V-Model/Waterfall"
+          sinra: true
+          competitor: false
+          description: "Support natif de la méthodologie V-Model"
+        - feature: "Intégration Code/Spec"
+          sinra: true
+          competitor: false
+          description: "Suivre les spécifications aux côtés du développement"
+
+    - category: Coordination d'Équipe
+      features:
+        - feature: "Planification de Capacité Temps Réel"
+          sinra: true
+          competitor: false
+          description: "Voir la capacité d'équipe et la charge en temps réel"
+        - feature: "Gestion des Dépendances"
+          sinra: true
+          competitor: true
+          description: "Gérer les dépendances inter-équipes et inter-releases"
+        - feature: "Vues Timeline"
+          sinra: true
+          competitor: true
+          description: "Graphiques Gantt et visualisation timeline"
+        - feature: "Collaboration"
+          sinra: true
+          competitor: true
+          description: "Commentaires, mentions et synchronisation d'équipe"
+
+    - category: Flexibilité
+      features:
+        - feature: "Personnalisation de Workflow"
+          sinra: true
+          competitor: true
+          description: "Statuts personnalisés et automatisation"
+        - feature: "Templates"
+          sinra: true
+          competitor: true
+          description: "Templates de projets pré-construits"
+        - feature: "Support Multi-Méthodologie"
+          sinra: true
+          competitor: false
+          description: "Agile, Waterfall, Hybrid - tout en un"
+        - feature: "Écosystème d'Intégrations"
+          sinra: false
+          competitor: true
+          description: "Asana a plus d'intégrations tierces"
+
+    - category: Tarifs
+      features:
+        - feature: "Prix de Départ"
+          sinra: "€10/mois"
+          competitor: "€10.99/mois"
+          description: "Sinra: €10/siège. Asana: tarification similaire"
+        - feature: "Fonctionnalités Spécifiques Dev"
+          sinra: "Incluses"
+          competitor: "Extra"
+          description: "Sinra inclut QA et gestion des releases"
+        - feature: "Friendly pour Petites Équipes"
+          sinra: true
+          competitor: true
+          description: "Les deux bon pour startups"
+
+  key_differences:
+    - "Sinra est conçu pour les équipes logicielles; Asana pour les équipes générales"
+    - "Sinra a QA et gestion des releases intégrées; Asana n'en a pas"
+    - "Sinra supporte V-Model; Asana est axé collaboration"
+    - "Sinra combine Agile+Waterfall; Asana est agnostique"
+    - "Tarifs similaires, mais Sinra économise sur les add-ons"
+
+  conclusion: "Choisissez Sinra si vous développez du logiciel avec QA+gestion des releases. Choisissez Asana pour équipes mixtes."
+
+- id: sinra_vs_monday
+  title: Sinra vs Monday.com
+  competitor_name: Monday.com
+  competitor_logo: /assets/images/logos/monday.svg
+  intro: "Monday.com est un OS visuel de travail pour tous les types de travail. Sinra est spécialisé pour les équipes logicielles gérant des releases complexes."
+
+  comparison_table:
+    - category: Pour Équipes Logicielles
+      features:
+        - feature: "Planification des Releases"
+          sinra: true
+          competitor: false
+          description: "Cycles de release et suivi de déploiement intégrés"
+        - feature: "Intégration QA"
+          sinra: true
+          competitor: false
+          description: "Gestion des tests liée aux spécifications"
+        - feature: "Planification de Capacité"
+          sinra: true
+          competitor: false
+          description: "Visibilité temps réel de la capacité"
+        - feature: "Support V-Model"
+          sinra: true
+          competitor: false
+          description: "Support natif de waterfall et v-model"
+
+    - category: Gestion Générale du Travail
+      features:
+        - feature: "Gestion Générale des Tâches"
+          sinra: true
+          competitor: true
+          description: "Les deux gèrent les tâches et workflows"
+        - feature: "Tableaux Visuels"
+          sinra: true
+          competitor: true
+          description: "Vues Kanban, Liste, Calendrier"
+        - feature: "Collaboration"
+          sinra: true
+          competitor: true
+          description: "Commentaires, mentions, notifications"
+        - feature: "Automatisation"
+          sinra: true
+          competitor: true
+          description: "Automatisation et triggers de workflow"
+
+    - category: Expérience Utilisateur
+      features:
+        - feature: "Design Visuel"
+          sinra: false
+          competitor: true
+          description: "Monday est très visuel et coloré"
+        - feature: "Facilité de Configuration"
+          sinra: true
+          competitor: false
+          description: "Sinra est plus rapide pour équipes logicielles"
+        - feature: "App Mobile"
+          sinra: false
+          competitor: true
+          description: "Monday a forte expérience mobile"
+        - feature: "Courbe d'Apprentissage"
+          sinra: true
+          competitor: false
+          description: "Plus simple pour équipes techniques"
+
+    - category: Tarifs & Personnalisation
+      features:
+        - feature: "Prix de Base"
+          sinra: "€10/mois"
+          competitor: "€8.99/mois"
+          description: "Monday moins cher au départ, mais cher avec add-ons"
+        - feature: "Coûts Cachés"
+          sinra: false
+          competitor: true
+          description: "Monday nécessite premium pour features avancées"
+        - feature: "Coût Total de Propriété"
+          sinra: true
+          competitor: false
+          description: "Sinra inclut des features que Monday facture extra"
+        - feature: "Meilleur Pour"
+          sinra: "Équipes logicielles"
+          competitor: "Équipes mixtes"
+
+  key_differences:
+    - "Sinra se spécialise en logiciel; Monday.com est généraliste"
+    - "Sinra a gestion des releases; Monday n'en a pas"
+    - "Sinra inclut QA; Monday facture en extra"
+    - "Monday est plus visuellement attrayant; Sinra plus fonctionnel"
+    - "Sinra économise long terme; Monday devient cher avec features"
+
+  conclusion: "Choisissez Sinra si vous développez du logiciel avec release+QA. Choisissez Monday pour équipes diversifiées avec flexibilité visuelle."

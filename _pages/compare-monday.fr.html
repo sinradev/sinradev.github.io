@@ -1,0 +1,9 @@
+---
+layout: default
+title: Sinra vs Monday.com
+lang: fr
+permalink: /fr/compare/monday/
+---
+
+{% assign comparison = site.data.fr.comparisons | where: "id", "sinra_vs_monday" | first %}
+{% include comparison.html %}

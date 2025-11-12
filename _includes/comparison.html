@@ -1,0 +1,88 @@
+<div class="comparison-page">
+  <!-- Hero Section -->
+  <section class="comparison-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>{{ comparison.title }}</h1>
+        <p class="hero-subtitle">{{ comparison.intro }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="comparison-container">
+        {% for category in comparison.comparison_table %}
+        <div class="comparison-category">
+          <h2>{{ category.category }}</h2>
+
+          <div class="comparison-table">
+            <div class="table-header">
+              <div class="feature-col">Feature</div>
+              <div class="sinra-col">Sinra</div>
+              <div class="competitor-col">{{ comparison.competitor_name }}</div>
+            </div>
+
+            {% for feature in category.features %}
+            <div class="table-row">
+              <div class="feature-col">
+                <strong>{{ feature.feature }}</strong>
+                <p class="feature-desc">{{ feature.description }}</p>
+              </div>
+              <div class="sinra-col">
+                {% if feature.sinra == true %}
+                  <div class="check-mark">✓</div>
+                {% elsif feature.sinra == false %}
+                  <div class="cross-mark">✗</div>
+                {% else %}
+                  <span class="text-value">{{ feature.sinra }}</span>
+                {% endif %}
+              </div>
+              <div class="competitor-col">
+                {% if feature.competitor == true %}
+                  <div class="check-mark">✓</div>
+                {% elsif feature.competitor == false %}
+                  <div class="cross-mark">✗</div>
+                {% else %}
+                  <span class="text-value">{{ feature.competitor }}</span>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Differences -->
+  <section class="key-differences-section">
+    <div class="container">
+      <h2>Key Differences</h2>
+      <div class="differences-grid">
+        {% for difference in comparison.key_differences %}
+        <div class="difference-card">
+          <div class="difference-number">{{ forloop.index }}</div>
+          <p>{{ difference }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="conclusion-section">
+    <div class="container">
+      <div class="conclusion-card">
+        <h2>Which Should You Choose?</h2>
+        <p>{{ comparison.conclusion }}</p>
+        <div class="cta-buttons">
+          <a href="https://app.sinra.dev/users/sign_up" class="button primary">Try Sinra for Free</a>
+          <a href="/" class="button secondary">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
