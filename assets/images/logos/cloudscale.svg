@@ -1,5 +1,15 @@
-<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="120" fill="none"/>
-  <text x="100" y="65" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#ff0080">CS</text>
-  <text x="100" y="95" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#8b5cf6">CloudScale</text>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#faf5ff"/>
+
+  <!-- Cloud Scale - Cloud with upward arrow -->
+  <!-- Cloud shape -->
+  <path d="M 50 120 C 50 100 65 85 85 85 C 90 70 105 60 120 60 C 140 60 155 75 155 95 C 165 100 172 110 172 125 C 172 140 162 152 150 152 L 60 152 C 45 152 35 140 35 125 C 35 112 43 100 50 100" fill="none" stroke="#ff0080" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Upward arrow -->
+  <line x1="100" y1="140" x2="100" y2="70" stroke="#ff0080" stroke-width="3"/>
+  <polygon points="100,70 90,85 110,85" fill="#ff0080"/>
+
+  <!-- Company name -->
+  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff0080">CloudScale</text>
 </svg>

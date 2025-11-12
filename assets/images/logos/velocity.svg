@@ -1,5 +1,17 @@
-<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="120" fill="none"/>
-  <text x="100" y="65" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#ff6b35">VCA</text>
-  <text x="100" y="95" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#8b5cf6">Velocity</text>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#fff5f0"/>
+
+  <!-- Velocity - Speed/Arrow concept -->
+  <!-- Arrow pointing right with speed lines -->
+  <!-- Main arrow -->
+  <polygon points="140,100 80,60 80,80 30,80 30,120 80,120 80,140" fill="#ff6b35"/>
+
+  <!-- Speed lines -->
+  <line x1="150" y1="85" x2="170" y2="85" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
+  <line x1="160" y1="100" x2="180" y2="100" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
+  <line x1="150" y1="115" x2="170" y2="115" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Company name -->
+  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff6b35">Velocity</text>
 </svg>

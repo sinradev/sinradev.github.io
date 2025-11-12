@@ -1,5 +1,14 @@
-<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="120" fill="none"/>
-  <text x="100" y="65" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#00d4ff">FS</text>
-  <text x="100" y="95" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#8b5cf6">FinServe</text>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0f4ff"/>
+
+  <!-- FinServe - Dollar/Finance concept -->
+  <!-- Large dollar sign -->
+  <text x="100" y="115" font-size="80" font-weight="bold" text-anchor="middle" fill="none" stroke="#0066ff" stroke-width="2">$</text>
+
+  <!-- Checkmark inside dollar -->
+  <path d="M 85 110 L 95 120 L 115 90" stroke="#0066ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Company name -->
+  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066ff">FinServe</text>
 </svg>

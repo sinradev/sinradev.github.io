@@ -1,5 +1,30 @@
-<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="120" fill="none"/>
-  <text x="100" y="65" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#10B981">DF</text>
-  <text x="100" y="95" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#10B981">DataFlow</text>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0fdf4"/>
+
+  <!-- DataFlow - Connected nodes/flow -->
+  <!-- Left circle -->
+  <circle cx="50" cy="100" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="50" cy="100" r="8" fill="#10b981"/>
+
+  <!-- Middle circle -->
+  <circle cx="100" cy="60" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="100" cy="60" r="8" fill="#10b981"/>
+
+  <!-- Right circle -->
+  <circle cx="150" cy="100" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="150" cy="100" r="8" fill="#10b981"/>
+
+  <!-- Bottom circle -->
+  <circle cx="100" cy="140" r="18" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="100" cy="140" r="8" fill="#10b981"/>
+
+  <!-- Connection lines with arrows -->
+  <line x1="65" y1="92" x2="85" y2="68" stroke="#10b981" stroke-width="2"/>
+  <line x1="115" y1="68" x2="135" y2="92" stroke="#10b981" stroke-width="2"/>
+  <line x1="142" y1="108" x2="108" y2="132" stroke="#10b981" stroke-width="2"/>
+  <line x1="92" y1="132" x2="58" y2="108" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Company name -->
+  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#10b981">DataFlow</text>
 </svg>

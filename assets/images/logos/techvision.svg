@@ -1,5 +1,23 @@
-<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="120" fill="none"/>
-  <text x="100" y="65" font-size="32" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#00d4ff">TV</text>
-  <text x="100" y="95" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#8b5cf6">TechVision</text>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0f4ff"/>
+
+  <!-- Tech Vision - Eye/Vision concept -->
+  <!-- Left eye -->
+  <circle cx="60" cy="85" r="25" fill="none" stroke="#00d4ff" stroke-width="3"/>
+  <circle cx="60" cy="85" r="12" fill="#00d4ff"/>
+
+  <!-- Right eye -->
+  <circle cx="140" cy="85" r="25" fill="none" stroke="#00d4ff" stroke-width="3"/>
+  <circle cx="140" cy="85" r="12" fill="#00d4ff"/>
+
+  <!-- Bridge between eyes -->
+  <line x1="85" y1="85" x2="115" y2="85" stroke="#00d4ff" stroke-width="2"/>
+
+  <!-- Vision rays -->
+  <line x1="30" y1="85" x2="10" y2="85" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="170" y1="85" x2="190" y2="85" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Company name -->
+  <text x="100" y="150" font-size="18" font-weight="bold" text-anchor="middle" fill="#00d4ff">TechVision</text>
 </svg>
