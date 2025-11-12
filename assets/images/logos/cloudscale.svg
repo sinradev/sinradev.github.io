@@ -1,21 +1,20 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+  <!-- Storage/Cloud concept -->
   <rect width="200" height="200" fill="white"/>
 
-  <!-- Geometric mark - Stacked squares with upward arrow -->
-  <!-- Bottom square -->
-  <rect x="55" y="110" width="45" height="45" fill="#ff0080" rx="5"/>
+  <!-- Database stack -->
+  <ellipse cx="100" cy="60" rx="35" ry="15" fill="none" stroke="#7c3aed" stroke-width="3"/>
+  <line x1="65" y1="60" x2="65" y2="85" stroke="#7c3aed" stroke-width="3"/>
+  <line x1="135" y1="60" x2="135" y2="85" stroke="#7c3aed" stroke-width="3"/>
+  <ellipse cx="100" cy="85" rx="35" ry="15" fill="none" stroke="#7c3aed" stroke-width="3"/>
 
-  <!-- Middle square -->
-  <rect x="70" y="90" width="45" height="45" fill="#ff0080" rx="5" opacity="0.7"/>
+  <line x1="65" y1="85" x2="65" y2="110" stroke="#7c3aed" stroke-width="3"/>
+  <line x1="135" y1="85" x2="135" y2="110" stroke="#7c3aed" stroke-width="3"/>
+  <ellipse cx="100" cy="110" rx="35" ry="15" fill="none" stroke="#7c3aed" stroke-width="3"/>
 
-  <!-- Top square -->
-  <rect x="85" y="70" width="45" height="45" fill="#ff0080" rx="5" opacity="0.4"/>
+  <line x1="65" y1="110" x2="65" y2="135" stroke="#7c3aed" stroke-width="3"/>
+  <line x1="135" y1="110" x2="135" y2="135" stroke="#7c3aed" stroke-width="3"/>
+  <ellipse cx="100" cy="135" rx="35" ry="15" fill="none" stroke="#7c3aed" stroke-width="3" opacity="0.6"/>
 
-  <!-- Arrow -->
-  <line x1="100" y1="70" x2="100" y2="40" stroke="#ff0080" stroke-width="4" stroke-linecap="round"/>
-  <polygon points="100,40 90,55 110,55" fill="#ff0080"/>
-
-  <!-- Company name -->
-  <text x="100" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">CLOUDSCALE</text>
+  <text x="100" y="170" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">DataVault Pro</text>
 </svg>

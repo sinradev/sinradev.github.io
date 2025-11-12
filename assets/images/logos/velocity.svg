@@ -1,22 +1,22 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+  <!-- Rocket/Speed concept -->
   <rect width="200" height="200" fill="white"/>
 
-  <!-- Geometric mark - V shape with forward momentum -->
-  <!-- Left diagonal -->
-  <polygon points="50,60 75,130 85,130 60,60" fill="#ff6b35"/>
+  <!-- Rocket body -->
+  <path d="M 100 40 L 115 90 L 100 130 L 85 90 Z" fill="#ff6b35" stroke="#ff6b35" stroke-width="2"/>
 
-  <!-- Right diagonal -->
-  <polygon points="120,60 145,130 155,130 130,60" fill="#ff6b35"/>
+  <!-- Flame -->
+  <path d="M 95 130 L 100 160 L 105 130" fill="#ff3b00" stroke="#ff3b00" stroke-width="1"/>
+  <path d="M 92 130 L 95 145 L 98 130" fill="#ffaa00" stroke="#ffaa00" stroke-width="1"/>
+  <path d="M 102 130 L 105 145 L 108 130" fill="#ffaa00" stroke="#ffaa00" stroke-width="1"/>
 
-  <!-- Forward arrow accent -->
-  <g transform="translate(140, 80)">
-    <polygon points="0,0 -15,10 -10,0 -15,-10" fill="#ff6b35"/>
-  </g>
+  <!-- Window -->
+  <circle cx="100" cy="70" r="8" fill="none" stroke="#ff6b35" stroke-width="2"/>
+  <circle cx="100" cy="70" r="5" fill="#fff" opacity="0.3"/>
 
-  <!-- Speed line -->
-  <line x1="160" y1="80" x2="180" y2="80" stroke="#ff6b35" stroke-width="4" stroke-linecap="round"/>
+  <!-- Speed lines -->
+  <line x1="60" y1="85" x2="40" y2="85" stroke="#ff6b35" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="100" x2="30" y2="100" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Company name -->
-  <text x="100" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">VELOCITY</text>
+  <text x="100" y="170" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">Rocket Dynamics</text>
 </svg>

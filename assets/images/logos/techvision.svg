@@ -1,17 +1,26 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+  <!-- Inspired by tech companies - Code/Tech concept -->
   <rect width="200" height="200" fill="white"/>
 
-  <!-- Geometric mark - Letter T with modern geometric design -->
-  <!-- Vertical bar -->
-  <rect x="85" y="50" width="30" height="100" fill="#00d4ff" rx="5"/>
+  <!-- Left bracket -->
+  <path d="M 60 60 L 50 60 L 50 140 L 60 140" stroke="#0066ff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Horizontal bar -->
-  <rect x="50" y="50" width="100" height="20" fill="#00d4ff" rx="5"/>
+  <!-- Right bracket -->
+  <path d="M 140 60 L 150 60 L 150 140 L 140 140" stroke="#0066ff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Accent circle -->
-  <circle cx="150" cy="130" r="15" fill="none" stroke="#00d4ff" stroke-width="3"/>
+  <!-- Code dots -->
+  <circle cx="75" cy="85" r="3" fill="#0066ff"/>
+  <circle cx="90" cy="85" r="3" fill="#0066ff"/>
+  <circle cx="105" cy="85" r="3" fill="#0066ff"/>
+  <circle cx="125" cy="85" r="3" fill="#0066ff"/>
 
-  <!-- Company name -->
-  <text x="100" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">TECHVISION</text>
+  <circle cx="75" cy="100" r="3" fill="#0066ff"/>
+  <circle cx="125" cy="100" r="3" fill="#0066ff"/>
+
+  <circle cx="65" cy="115" r="3" fill="#0066ff"/>
+  <circle cx="80" cy="115" r="3" fill="#0066ff"/>
+  <circle cx="115" cy="115" r="3" fill="#0066ff"/>
+  <circle cx="130" cy="115" r="3" fill="#0066ff"/>
+
+  <text x="100" y="170" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">CodeVault Labs</text>
 </svg>
