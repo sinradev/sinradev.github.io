@@ -2,7 +2,7 @@
   color: "#2196F3"
   description: "The complete project management platform combining V-Model and Agile methodologies"
   features:
-    - text: Unlimited team members
+    - text: Pay per seat (flexible team sizing)
       highlight: true
     - text: Unlimited projects and releases
       highlight: true
@@ -22,7 +22,7 @@
       highlight: true
     - text: Custom workflows & roles
       highlight: false
-    - text: Advanced security & SSO
+    - text: Advanced security features
       highlight: false
     - text: Dedicated account manager
       highlight: false
