@@ -1,0 +1,63 @@
+<!-- Schema.org structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sinra",
+  "url": "https://sinra.dev",
+  "logo": "https://sinra.dev/assets/images/sinra-logo.png",
+  "description": "The only project management tool built for teams doing both V-Model and Agile. Unified capacity planning, real-time QA tracking, one platform.",
+  "sameAs": [
+    "https://twitter.com/sinra",
+    "https://linkedin.com/company/sinra"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "contact@sinra.dev",
+    "url": "https://sinra.dev/contact"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Innovation Street",
+    "addressLocality": "Tech City",
+    "addressRegion": "TC",
+    "postalCode": "12345"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sinra",
+  "url": "https://sinra.dev",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://sinra.dev/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+{% if page.title and page.description %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | strip_html }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Sinra",
+    "url": "https://sinra.dev"
+  },
+  "inLanguage": "{{ site.active_lang }}"
+}
+</script>
+{% endif %}
