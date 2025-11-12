@@ -6,10 +6,10 @@
   link: pricing/
   target: _top
   klass:
-# - name: Blog
-#   link: blog/
-#   target: _top
-#   klass:
+- name: Blog
+  link: blog/
+  target: _top
+  klass:
 - name: Contact
   link: contact/
   target: _top
