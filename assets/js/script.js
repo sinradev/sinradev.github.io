@@ -314,18 +314,10 @@ const initImageEffects = () => {
   });
 };
 
-// Create floating elements animation
+// Create floating elements animation (disabled - no .floating-icon elements in use)
 const initFloatingElements = () => {
-  const floatingIcons = document.querySelectorAll('.floating-icon');
-  
-  floatingIcons.forEach((icon, index) => {
-    // Add random movement
-    setInterval(() => {
-      const x = Math.random() * 20 - 10;
-      const y = Math.random() * 20 - 10;
-      icon.style.transform = `translate(${x}px, ${y}px) rotate(${Math.random() * 360}deg)`;
-    }, 3000 + index * 500);
-  });
+  // Placeholder function - no floating icon elements in current design
+  // Can be removed or reimplemented if needed
 };
 
 // Performance monitoring
@@ -370,7 +362,6 @@ window.SinraWebsite = {
   initNavigation,
   initFormEffects,
   initImageEffects,
-  initCursorEffects,
   animateStats,
   createParticles,
   initFloatingElements

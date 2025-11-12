@@ -37,10 +37,26 @@ about:
   ready_to_transform_desc: "Essayez Sinra sans risque. Les équipes rapportent une réduction de 40%+ des frais généraux de planification, des dates de release prévisibles, et une meilleure qualité de code. Tout sans la prolifération de plugins des outils traditionnels."
   learn_more: "Planifier une Démo"
 hero:
-  title: <strong>Maîtrisez Vos Mises en Production</strong> - Sinra Contrôle les Déploiements
-  body: Le seul outil de gestion de projet qui combine <strong>workflows parallèles</strong> (Spec + Dev), <strong>planification des capacités temps réel</strong>, et <strong>gestion QA intégrée</strong>. Pas de plugins. Pas de complexité. Juste des résultats.
+  title: <strong>Arrêtez les Retards.</strong> Déployez en Confiance.
+  body: Le seul outil de gestion de projet conçu pour les équipes faisant V-Model ET Agile. <strong>Voyez exactement où en est chaque chose.</strong> Planification unifiée. Suivi QA temps réel. Une plateforme, zéro urgences.
   button: Essayez gratuitement
   alt_image: Présentation de Sinra
+why_sinra_title: Pourquoi les Équipes Choisissent Sinra
+why_sinra_description: La plupart des outils PM vous forcent à choisir entre planification rigide et chaos total. Sinra unifie planification et exécution.
+why_sinra_stats:
+  - stat: "60%"
+    label: "des utilisateurs PM gaspillent du temps à changer d'outil"
+  - stat: "20h/semaine"
+    label: "que les équipes passent en réunions de statut"
+  - stat: "1 Plateforme"
+    label: "pour specs, dev, QA, et releases"
+why_sinra_benefits:
+  - title: "Voyez Tout en Temps Réel"
+    description: "Specs, code, tests, capacités, et releases au même endroit. Fini les infos éparpillées dans les emails et Slack."
+  - title: "Planifiez Basé sur la Réalité"
+    description: "Sachez exactement qui peut livrer quoi. Arrêtez de surcharger les équipes et de rater les délais en devinant."
+  - title: "Livrez de la Qualité, Pas des Excuses"
+    description: "QA est intégré, pas rajouté après. Détectez les problèmes tôt. Déployez avec confiance, pas les doigts croisés."
 features: Fonctionnalités
 reduce_complexity: <strong>Gérez les équipes plus intelligemment</strong>, <strong>livrez plus vite</strong>, <strong>maîtrisez vos déploiements</strong>.
 try_sinra: Essayer Sinra gratuitement
@@ -100,3 +116,19 @@ blog:
   older_posts: Anciens articles
   newer_posts: Nouveaux articles
   date_format: "%d/%M/%Y"
+case_studies:
+  title: Comment les Équipes Transforment Leur Gestion de Projet
+  description: De vraies entreprises, de vrais résultats. Découvrez comment Sinra aide les équipes à livrer plus vite, améliorer la qualité et réduire les frais généraux de planification.
+  challenge: Le Défi
+  solution: La Solution
+  results: Résultats
+  timeline_label: Délai
+trusted_by:
+  title: De Confiance par les Équipes des Entreprises Avant-Gardistes
+  description: Des startups SaaS aux grandes entreprises réglementées en passant par les agences numériques, les équipes choisissent Sinra pour gérer leurs projets les plus complexes.
+  stat_teams: "1000+"
+  stat_teams_label: équipes collaborant avec Sinra
+  stat_users: "15,000+"
+  stat_users_label: utilisateurs livrant plus vite chaque mois
+  stat_satisfaction: "98%"
+  stat_satisfaction_label: score de satisfaction client

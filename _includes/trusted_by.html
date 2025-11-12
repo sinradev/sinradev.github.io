@@ -1,0 +1,33 @@
+<section class="trusted-by">
+  <div class="container">
+    <div class="trusted-by-header">
+      <h2>{{ site.data[site.active_lang].strings.trusted_by.title }}</h2>
+      <p>{{ site.data[site.active_lang].strings.trusted_by.description }}</p>
+    </div>
+
+    <div class="trusted-by-logos">
+      {% for client in site.data[site.active_lang].trusted_clients %}
+      <div class="client-logo-wrapper">
+        <a href="{{ client.url }}" target="_blank" rel="noopener noreferrer" title="{{ client.name }}">
+          <img src="{{ client.logo | relative_url }}" alt="{{ client.name }}" class="client-logo" />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="trusted-by-stats">
+      <div class="stat-item">
+        <div class="stat-value">{{ site.data[site.active_lang].strings.trusted_by.stat_teams }}</div>
+        <p>{{ site.data[site.active_lang].strings.trusted_by.stat_teams_label }}</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">{{ site.data[site.active_lang].strings.trusted_by.stat_users }}</div>
+        <p>{{ site.data[site.active_lang].strings.trusted_by.stat_users_label }}</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">{{ site.data[site.active_lang].strings.trusted_by.stat_satisfaction }}</div>
+        <p>{{ site.data[site.active_lang].strings.trusted_by.stat_satisfaction_label }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+<section class="case-studies">
+  <div class="container">
+    <div class="case-studies-header">
+      <h2>{{ site.data[site.active_lang].strings.case_studies.title }}</h2>
+      <p class="case-studies-description">{{ site.data[site.active_lang].strings.case_studies.description }}</p>
+    </div>
+
+    <div class="case-studies-grid">
+      {% for case in site.data[site.active_lang].case_studies %}
+      <div class="case-study-card">
+        <div class="case-study-header">
+          <div class="company-info">
+            <div class="company-logo-placeholder">
+              <img src="{{ case.company_logo | relative_url }}" alt="{{ case.company_name }}" class="company-logo" />
+            </div>
+            <div>
+              <h3 class="company-name">{{ case.company_name }}</h3>
+              <p class="company-industry">{{ case.industry }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-content">
+          <div class="challenge-section">
+            <h4>{{ site.data[site.active_lang].strings.case_studies.challenge }}</h4>
+            <p>{{ case.challenge }}</p>
+          </div>
+
+          <div class="solution-section">
+            <h4>{{ site.data[site.active_lang].strings.case_studies.solution }}</h4>
+            <p>{{ case.solution }}</p>
+          </div>
+
+          <div class="results-section">
+            <h4>{{ site.data[site.active_lang].strings.case_studies.results }}</h4>
+            <div class="results-grid">
+              {% for result in case.results %}
+              <div class="result-item">
+                <div class="result-metric">{{ result.metric }}</div>
+                <p class="result-description">{{ result.description }}</p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="testimonial-section">
+            <blockquote class="case-testimonial">
+              "{{ case.testimonial_quote }}"
+            </blockquote>
+            <p class="testimonial-author">— {{ case.testimonial_author }}</p>
+            <p class="timeline">{{ site.data[site.active_lang].strings.case_studies.timeline_label }}: {{ case.timeline }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

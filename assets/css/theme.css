@@ -686,6 +686,105 @@ nav a.highlight:hover {
   cursor: pointer !important;
 }
 
+/* Why Sinra Section */
+.why-sinra {
+  padding: 80px 0;
+  background: var(--gray-100);
+}
+
+.why-sinra-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-sinra-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.why-sinra-description {
+  font-size: 1.125rem;
+  color: oklch(82.901% 0.031 222.959);
+  margin-bottom: 60px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Why Sinra Stats */
+.why-sinra-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.stat-card {
+  padding: 32px 24px;
+  background: var(--gray-50);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Why Sinra Benefits */
+.why-sinra-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.benefit-card {
+  padding: 32px;
+  background: var(--gray-50);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
 /* GitHub-style Content Sections */
 .content {
   background: var(--gray-50);
@@ -2683,5 +2782,326 @@ img {
 
   .form-card {
     padding: 30px;
+  }
+}
+
+/* Case Studies Section */
+.case-studies {
+  padding: 120px 0;
+  background: var(--gray-100);
+}
+
+.case-studies-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.case-studies-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.case-studies-description {
+  font-size: 1.1rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.case-study-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.case-study-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.company-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.company-logo-placeholder {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  background: var(--gray-100);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.company-industry {
+  font-size: 0.9rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.7;
+}
+
+.case-study-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-study-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.challenge-section,
+.solution-section {
+  line-height: 1.6;
+}
+
+.challenge-section p,
+.solution-section p {
+  font-size: 0.95rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.85;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.result-item {
+  padding: 16px;
+  background: var(--gray-100);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.result-metric {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.result-description {
+  font-size: 0.85rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.testimonial-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid var(--gray-200);
+}
+
+.case-testimonial {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: oklch(82.901% 0.031 222.959);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.timeline {
+  font-size: 0.85rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.7;
+}
+
+/* Trusted By Section */
+.trusted-by {
+  padding: 100px 0;
+  background: var(--gray-50);
+}
+
+.trusted-by-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.trusted-by-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+.trusted-by-header p {
+  font-size: 1.1rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.trusted-by-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+  margin-bottom: 100px;
+}
+
+.client-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--border-radius-lg);
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+.client-logo-wrapper:hover {
+  background: var(--gray-200);
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+.client-logo {
+  max-width: 120px;
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.client-logo-wrapper:hover .client-logo {
+  opacity: 1;
+}
+
+.trusted-by-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 32px;
+  background: var(--gray-100);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.stat-item p {
+  font-size: 0.95rem;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Responsive Design for Case Studies and Trusted By */
+@media (max-width: 768px) {
+  .case-studies {
+    padding: 80px 0;
+  }
+
+  .case-studies-header h2 {
+    font-size: 2rem;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .case-study-card {
+    padding: 24px;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trusted-by {
+    padding: 80px 0;
+  }
+
+  .trusted-by-header h2 {
+    font-size: 2rem;
+  }
+
+  .trusted-by-logos {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+
+  .client-logo-wrapper {
+    padding: 16px;
+    min-height: 80px;
+  }
+
+  .trusted-by-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }

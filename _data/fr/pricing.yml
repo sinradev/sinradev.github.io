@@ -1,43 +1,81 @@
-- name: Plan Mensuel
-  color: "#8e8e8e"
-  price: "10"
+- name: Starter
+  color: "#4CAF50"
+  price: "49"
   currency: "€"
   period: "/mois"
+  description: "Pour les petites équipes qui commencent avec la gestion de projet unifiée"
   features:
-    - text: Utilisable pour 1 utilisateur
+    - text: Jusqu'à 5 membres d'équipe
       highlight: true
-    - text: Éditeur de texte moderne (WYSIWYG - Notion-like)
+    - text: Projets et releases illimités
       highlight: true
-    - text: Système de commentaires avancé
+    - text: Éditeur rich text et spécifications
       highlight: true
-    - text: Gestion de charge de travail
-      highlight: true
-    - text: Interface simplifiée par type d'utilisateur
-      highlight: true
+    - text: Planification de capacité basique
+      highlight: false
+    - text: Commentaires et collaboration
+      highlight: false
+    - text: Modèles standard
+      highlight: false
+    - text: Support par email
+      highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
-    text: Commencer
-- name: Plan Annuel
-  color: "#4a4a4a"
-  price: "96"
+    text: Essai Gratuit
+
+- name: Professional
+  color: "#2196F3"
+  price: "149"
   currency: "€"
-  period: "/an"
-  original_price: "120€"
+  period: "/mois"
+  original_price: "179€"
   recommended: true
+  description: "Pour les équipes en croissance ayant besoin de planification avancée et gestion QA"
   features:
-    - text: Utilisable pour 1 utilisateur
+    - text: Jusqu'à 25 membres d'équipe
       highlight: true
-    - text: Éditeur de texte moderne (WYSIWYG - Notion-like)
+    - text: Projets et releases illimités
       highlight: true
-    - text: Système de commentaires avancé
+    - text: Éditeur rich text et spécifications
       highlight: true
-    - text: Gestion de charge de travail
+    - text: Planification de capacité temps réel avancée
       highlight: true
-    - text: Interface simplifiée par type d'utilisateur
+    - text: Gestion QA intégrée
       highlight: true
-    - text: 20% de remise
+    - text: Modèles avancés et personnalisation
       highlight: true
+    - text: Multi-vues intelligentes (Kanban, Liste, Release)
+      highlight: true
+    - text: Support email et chat prioritaire
+      highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
-    text: Commencer
+    text: Essai Gratuit
+
+- name: Enterprise
+  color: "#FF9800"
+  price: "Sur mesure"
+  currency: ""
+  period: "prix"
+  description: "Pour les grandes organisations avec workflows personnalisés et support dédié"
+  features:
+    - text: Membres d'équipe illimités
+      highlight: true
+    - text: Tout ce qui est en Professional
+      highlight: true
+    - text: Workflows et rôles personnalisés
+      highlight: true
+    - text: Sécurité avancée et SSO
+      highlight: true
+    - text: Gestionnaire de compte dédié
+      highlight: true
+    - text: Intégrations personnalisées
+      highlight: true
+    - text: SLA et support prioritaire
+      highlight: true
+    - text: Option de déploiement sur site
+      highlight: true
+  call_to_action:
+    link: /contact
+    text: Contacter les Ventes
 
