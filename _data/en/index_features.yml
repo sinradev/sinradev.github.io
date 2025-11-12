@@ -17,3 +17,7 @@
   body: Manage multiple applications and platforms in one place. Front-end and back-end teams work together seamlessly while you see real-time workload across all teams. No more silos between departments. Complete capacity intelligence across your entire tech stack.
   image: /assets/images/multi-app-workload.svg
   alt: Multi-app and cross-team workload management
+- title: <strong>Fully Customizable Workflows</strong> - Your Process, Not Ours
+  body: Build workflows that match your exact process without touching code. Custom statuses, approval gates, role-based access, and automated validation rules. Whether you follow V-Model, Agile, or a hybrid approach, Sinra adapts to you—not the other way around. Compliance requirements? Built-in audit trails and workflow enforcement.
+  image: /assets/images/custom-workflows.svg
+  alt: Customizable workflows and compliance enforcement
