@@ -28,18 +28,18 @@
       highlight: false
   pricing:
     - period: Monthly
-      price: "199"
-      currency: "$"
+      price: "10"
+      currency: "€"
       billing: "/month"
       call_to_action:
         link: https://app.sinra.dev/users/sign_up
         text: Start Free Trial
     - period: Annual
-      price: "1990"
-      currency: "$"
+      price: "96"
+      currency: "€"
       billing: "/year"
-      original_price: "$2388"
-      savings: "Save 17%"
+      original_price: "€120"
+      savings: "Save 20%"
       recommended: true
       call_to_action:
         link: https://app.sinra.dev/users/sign_up

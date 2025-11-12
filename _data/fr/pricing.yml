@@ -28,18 +28,18 @@
       highlight: false
   pricing:
     - period: Mensuel
-      price: "199"
-      currency: "$"
+      price: "10"
+      currency: "€"
       billing: "/mois"
       call_to_action:
         link: https://app.sinra.dev/users/sign_up
         text: Essai Gratuit
     - period: Annuel
-      price: "1990"
-      currency: "$"
+      price: "96"
+      currency: "€"
       billing: "/an"
-      original_price: "$2388"
-      savings: "Économisez 17%"
+      original_price: "€120"
+      savings: "Économisez 20%"
       recommended: true
       call_to_action:
         link: https://app.sinra.dev/users/sign_up
