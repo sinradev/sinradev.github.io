@@ -12,14 +12,6 @@
   margin: 30px 0;
   font-size: 0.8em;
 }
-.blog-post .author .square-image {
-  width: 125px;
-  height: 125px;
-  margin-top: 0;
-}
-.blog-post .author .blurb {
-  text-align: center;
-}
 .blog-post h3 {
   margin: 0;
 }
