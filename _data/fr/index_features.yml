@@ -21,3 +21,7 @@
   body: Construisez des workflows qui correspondent à votre processus exact sans toucher au code. Statuts personnalisés, gates d'approbation, accès basé sur les rôles, et règles de validation automatisées. Que vous suiviez V-Model, Agile, ou une approche hybride, Sinra s'adapte à vous—pas l'inverse. Exigences de conformité ? Pistes d'audit intégrées et application des workflows.
   image: /assets/images/custom-workflows.svg
   alt: Workflows personnalisables et application de conformité
+- title: Report Intelligent des Issues
+  body: Les issues non termineées ne disparaissent pas. Sinra reporte automatiquement les issues incomplètes du cycle courant vers la planification du cycle suivant. Plus de contexte perdu. Plus de travail oublié. Chaque issue reste visible et suivie, assurant que rien ne glisse entre les mailles du filet entre les cycles.
+  image: /assets/images/carry-over-issues.svg
+  alt: Report intelligent des issues entre cycles

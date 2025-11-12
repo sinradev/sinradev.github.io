@@ -21,3 +21,7 @@
   body: Build workflows that match your exact process without touching code. Custom statuses, approval gates, role-based access, and automated validation rules. Whether you follow V-Model, Agile, or a hybrid approach, Sinra adapts to you—not the other way around. Compliance requirements? Built-in audit trails and workflow enforcement.
   image: /assets/images/custom-workflows.svg
   alt: Customizable workflows and compliance enforcement
+- title: Intelligent Issue Carry-Over
+  body: Unfinished issues don't disappear. Sinra automatically carries over incomplete issues from the current cycle into planning for the next one. No more lost context. No more forgotten work. Every issue remains visible and tracked, ensuring nothing slips through the cracks between cycles.
+  image: /assets/images/carry-over-issues.svg
+  alt: Intelligent issue carry-over between cycles
