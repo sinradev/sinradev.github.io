@@ -17,3 +17,15 @@
 - name: "FinServe Digital"
   logo: "/assets/images/logos/finserve.svg"
   url: "https://finserve.example.com"
+
+- name: "DataFlow Analytics"
+  logo: "/assets/images/logos/dataflow.svg"
+  url: "https://dataflow.example.com"
+
+- name: "Nexus Innovations"
+  logo: "/assets/images/logos/nexus.svg"
+  url: "https://nexus.example.com"
+
+- name: "Quantum Systems"
+  logo: "/assets/images/logos/quantum.svg"
+  url: "https://quantum.example.com"
