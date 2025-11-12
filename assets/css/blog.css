@@ -182,6 +182,9 @@
   padding-bottom: 40px;
   border-bottom: 2px solid #e5e5e5;
   margin-bottom: 50px;
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
 }
 
 .post-header h1 {
