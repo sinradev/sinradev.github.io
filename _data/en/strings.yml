@@ -28,12 +28,12 @@ about:
   release_planning: "Complete Release Planning"
   release_planning_desc: "See all features, capabilities, and issues that feed into each release. Track which teams own what, manage dependencies, and visualize the complete timeline from planning to production."
   deployment_readiness: "Deployment Readiness Checklists"
-  deployment_readiness_desc: "Before any release ships, verify all acceptance criteria are met, all tests pass, and all teams are aligned. Go-live checklists ensure nothing is missed in the chaos of launch day."
+  deployment_readiness_desc: "Before any release ships, verify all acceptance criteria are met, all tests pass, and all teams are aligned. Go-live checklists ensure nothing is missed in the unpredictability of launch day."
   go_live_confidence: "Deploy with Confidence"
   go_live_confidence_desc: "With complete visibility into release status, team capacity, and test results, deployments become predictable events, not crisis management. Launch with confidence, not crossed fingers."
   release_team_coordination: "Coordinate Teams Across Releases"
   release_team_coordination_desc: "Visualize all teams involved in each release, track deployment timelines, and manage go-live checklists. Releases succeed through coordination, not firefighting."
-  ready_to_transform: "Stop Choosing Between Chaos and Rigidity"
+  ready_to_transform: "Stop Choosing Between Unpredictability and Rigidity"
   ready_to_transform_desc: "Try Sinra risk-free. Teams report 40%+ reduction in planning overhead, predictable release dates, and higher code quality. All without the plugin sprawl of traditional tools."
   learn_more: "Try for Free"
 blog:
@@ -87,7 +87,7 @@ hero:
   button: Try for free
   alt_image: Sinra Overview
 why_sinra_title: Why Teams Choose Sinra
-why_sinra_description: Most PM tools force you to choose between rigid planning and complete chaos. Sinra unifies planning and execution.
+why_sinra_description: Most PM tools force you to choose between rigid planning and complete unpredictability. Sinra unifies planning and execution.
 why_sinra_stats:
   - stat: "60%"
     label: "of PM tool users waste time context-switching"
