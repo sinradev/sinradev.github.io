@@ -28,12 +28,12 @@ about:
   release_planning: "Planification Complète des Releases"
   release_planning_desc: "Voyez toutes les features, capacités, et issues qui alimentent chaque release. Suivez quelles équipes possèdent quoi, gérez les dépendances, et visualisez la timeline complète de la planification à la production."
   deployment_readiness: "Listes de Vérification de Préparation au Déploiement"
-  deployment_readiness_desc: "Avant que toute release ne soit déployée, vérifiez que tous les critères d'acceptation sont validés, tous les tests passent, et toutes les équipes sont alignées. Les listes de vérification de go-live assurent que rien n'est oublié dans le chaos du jour du lancement."
+  deployment_readiness_desc: "Avant que toute release ne soit déployée, vérifiez que tous les critères d'acceptation sont validés, tous les tests passent, et toutes les équipes sont alignées. Les listes de vérification de go-live assurent que rien n'est oublié dans l'imprévisibilité du jour du lancement."
   go_live_confidence: "Déployez en tout confiance"
   go_live_confidence_desc: "Avec une visibilité complète sur le statut des releases, la capacité des équipes, et les résultats des tests, les déploiements deviennent des événements prévisibles, pas de la gestion de crise. Lancez avec confiance, pas avec les doigts croisés."
   release_team_coordination: "Coordonnez les Équipes à Travers les Releases"
   release_team_coordination_desc: "Visualisez les équipes impliquées dans chaque release, suivez les calendriers de déploiement, et gérez les listes de contrôle avant mise en production. Les releases réussissent par la coordination, pas par la gestion de crise."
-  ready_to_transform: "Arrêtez de Choisir Entre Chaos et Rigidité"
+  ready_to_transform: "Arrêtez de Choisir Entre Imprévisibilité et Rigidité"
   ready_to_transform_desc: "Essayez Sinra sans risque. Les équipes rapportent une réduction de 40%+ des frais généraux de planification, des dates de release prévisibles, et une meilleure qualité de code. Tout sans la prolifération de plugins des outils traditionnels."
   learn_more: "Essayez gratuitement"
 hero:
@@ -42,7 +42,7 @@ hero:
   button: Essayez gratuitement
   alt_image: Présentation de Sinra
 why_sinra_title: Pourquoi les Équipes Choisissent Sinra
-why_sinra_description: La plupart des outils PM vous forcent à choisir entre planification rigide et chaos total. Sinra unifie planification et exécution.
+why_sinra_description: La plupart des outils PM vous forcent à choisir entre planification rigide et imprévisibilité totale. Sinra unifie planification et exécution.
 why_sinra_stats:
   - stat: "60%"
     label: "des utilisateurs PM gaspillent du temps à changer d'outil"

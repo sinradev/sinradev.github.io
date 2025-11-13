@@ -41,7 +41,7 @@ Example: A healthcare team estimated 6 months to build a patient dashboard. They
 
 ---
 
-## The Agile Promise (And Its Chaos)
+## The Agile Promise (And Its Unpredictability)
 
 **When Agile Works:**
 - Uncertain requirements (new product, emerging market)
@@ -163,7 +163,7 @@ Hybrid methodology *only works* if you can see:
 - Dependency risks between phases
 - Release readiness in real-time
 
-Without visibility, hybrid becomes chaos.
+Without visibility, hybrid becomes unpredictability.
 
 ![Implementation Workflow](/assets/images/implementation-workflow.svg "Implementing Hybrid Methodology")
 

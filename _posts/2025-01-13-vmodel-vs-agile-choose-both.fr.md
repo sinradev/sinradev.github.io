@@ -41,7 +41,7 @@ Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patien
 
 ---
 
-## La Promesse Agile (Et son Chaos)
+## La Promesse Agile (Et son Imprévisibilité)
 
 **Quand Agile Fonctionne:**
 - Exigences incertaines (nouveau produit, marché émergent)
@@ -163,7 +163,7 @@ La méthodologie hybride ne fonctionne *que si* vous pouvez voir:
 - Risques de dépendance entre phases
 - Readiness de release en temps réel
 
-Sans visibilité, hybride devient du chaos.
+Sans visibilité, hybride devient de l'imprévisibilité.
 
 ![Workflow d'Implémentation](/assets/images/implementation-workflow.svg "Implémenter une Méthodologie Hybride")
 
