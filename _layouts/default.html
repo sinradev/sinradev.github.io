@@ -33,12 +33,11 @@
     <link rel="stylesheet" href="/assets/css/blog.css">
     <link rel="stylesheet" href="/assets/css/plan.css">
     <link rel="stylesheet" href="/assets/css/contact.css">
-    {% I18n_Headers %}
+    {%- comment -%}I18n_Headers tag removed - using custom language-alternates.html instead{%- endcomment -%}
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
-    <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url }}">
-    <link rel="alternate" hreflang="fr" href="{{ site.url }}/fr{{ page.url }}">
+    {% include language-alternates.html %}
 
     <!-- Schema.org structured data -->
     {% include schema-org.html %}
