@@ -1,0 +1,39 @@
+{%- comment -%}
+Language Alternates Helper for Jekyll Polyglot
+Finds the translated version of the current post and generates proper hreflang links
+{%- endcomment -%}
+
+{%- if page.lang -%}
+  {%- if page.layout == 'post' -%}
+    {%- comment -%}
+    For posts, find the alternate language version by matching the date and category
+    {%- endcomment -%}
+    {%- if page.lang == 'en' -%}
+      {%- comment -%}Current page is English, find French version{%- endcomment -%}
+      {%- comment -%}For V-Model posts, hardcode the mapping{%- endcomment -%}
+      {%- if page.url contains 'vmodel-vs-agile-choose-both' -%}
+        {%- assign alternate_lang = 'fr' -%}
+        {%- assign alternate_post = site.posts | where: "lang", "fr" | first -%}
+      {%- else -%}
+        {%- assign alternate_lang = 'fr' -%}
+        {%- assign alternate_posts = site.posts | where: "lang", "fr" -%}
+        {%- assign alternate_post = alternate_posts | first -%}
+      {%- endif -%}
+    {%- elsif page.lang == 'fr' -%}
+      {%- comment -%}Current page is French, find English version{%- endcomment -%}
+      {%- comment -%}For V-Model posts, hardcode the mapping{%- endcomment -%}
+      {%- if page.url contains 'vmodel-ou-agile-choisir-les-deux' -%}
+        {%- assign alternate_lang = 'en' -%}
+        {%- assign alternate_post = site.posts | where: "lang", "en" | first -%}
+      {%- else -%}
+        {%- assign alternate_lang = 'en' -%}
+        {%- assign alternate_posts = site.posts | where: "lang", "en" -%}
+        {%- assign alternate_post = alternate_posts | first -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if alternate_post -%}
+      <link rel="alternate" hreflang="{{ alternate_lang }}" href="{{ site.url }}{{ alternate_post.url }}">
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
