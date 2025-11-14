@@ -51,12 +51,12 @@ why_sinra_stats:
   - stat: "100%"
     label: "de visibilité sur l'état des releases et capacités"
 why_sinra_benefits:
-  - title: "Voyez Tout en Temps Réel"
-    description: "Specs, code, tests, capacités, et releases au même endroit. Fini les infos éparpillées dans les emails et Slack."
-  - title: "Planifiez Basé sur la Réalité"
-    description: "Sachez exactement qui peut livrer quoi. Arrêtez de surcharger les équipes et de rater les délais en devinant."
-  - title: "Livrez de la Qualité, Pas des Excuses"
-    description: "QA est intégré, pas rajouté après. Détectez les problèmes tôt. Déployez avec confiance, pas les doigts croisés."
+  - title: "Visibilité Complète et Centralisée"
+    description: "Specs, développement, tests, capacités et releases converging dans une seule source de vérité. Élimine la fragmentation de l'information."
+  - title: "Planification Fondée sur les Réalités"
+    description: "Comprenez précisément les capacités et disponibilités de votre équipe. Planifiez avec données, non avec estimation."
+  - title: "Livraison de Qualité Maîtrisée"
+    description: "QA intégré au processus, pas appliqué a posteriori. Détectez les défauts tôt, déployez en toute confiance."
 features: Fonctionnalités
 reduce_complexity: <strong>Organisez.</strong> <strong>Priorisez.</strong> <strong>Livrez.</strong>
 try_sinra: Essayer Sinra gratuitement

@@ -152,3 +152,22 @@ When working on content related to SINRA, always use the following concepts:
 - **cycles** → Defined time periods, not "sprints" (Agile jargon)
 
 SINRA naming is more direct and reflects actual work artifacts, not planning abstractions.
+
+## Spec-Kit Integration
+
+This project now uses **Spec-Kit** for spec-driven development with Claude Code. See `SPEC_KIT_GUIDE.md` for detailed usage instructions.
+
+**Key resources:**
+- `.specify/memory/constitution.md` - Project constitution and governance
+- `SPEC_KIT_GUIDE.md` - Complete Spec-Kit workflow guide
+- `.claude/commands/speckit.*.md` - Slash commands for each step
+
+**Basic workflow:**
+```
+/speckit.specify      → Define requirements (WHAT + WHY)
+/speckit.plan         → Plan architecture (HOW)
+/speckit.tasks        → Generate actionable steps
+/speckit.implement    → Claude Code executes
+```
+
+All development on Sinra-website must comply with the Spec-Kit Constitution (English) and TONE_CONSISTENCY_REPORT.md (brand voice).
