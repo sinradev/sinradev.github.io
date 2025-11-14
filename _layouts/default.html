@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
-  <head lang="{{ site.active_lang }}">
+  <head lang="{{ page.lang | default: site.active_lang }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
+    <meta http-equiv="Content-Language" content="{{ page.lang | default: site.active_lang }}">
     <meta name="description" content="{{ page.description }}">
     <meta name="theme-color" content="#2196F3">
     <title>{{ page.title }}</title>

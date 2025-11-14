@@ -57,7 +57,7 @@
     "name": "Sinra",
     "url": "https://sinra.dev"
   },
-  "inLanguage": "{{ site.active_lang }}"
+  "inLanguage": "{{ page.lang | default: site.active_lang }}"
 }
 </script>
 {% endif %}
