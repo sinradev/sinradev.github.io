@@ -29,23 +29,32 @@ const throttle = (func, limit) => {
 // Animate statistics
 const animateStats = () => {
   const statNumbers = document.querySelectorAll('.stat-number');
-  
+
   statNumbers.forEach(stat => {
-    const target = parseInt(stat.getAttribute('data-target'));
+    const dataTarget = stat.getAttribute('data-target');
+    // Extract only the numeric part (handles "4", "40%", "100%", etc.)
+    const numericValue = parseInt(dataTarget.replace(/[^0-9]/g, ''));
+    const suffix = dataTarget.replace(/[0-9]/g, ''); // Gets "%" or empty string
+
+    // Skip animation if not a number
+    if (isNaN(numericValue)) {
+      return;
+    }
+
     const duration = 2000;
-    const increment = target / (duration / 16);
+    const increment = numericValue / (duration / 16);
     let current = 0;
-    
+
     const updateStat = () => {
       current += increment;
-      if (current < target) {
-        stat.textContent = Math.floor(current);
+      if (current < numericValue) {
+        stat.textContent = Math.floor(current) + suffix;
         requestAnimationFrame(updateStat);
       } else {
-        stat.textContent = target;
+        stat.textContent = numericValue + suffix;
       }
     };
-    
+
     // Start animation when element is visible
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -55,7 +64,7 @@ const animateStats = () => {
         }
       });
     });
-    
+
     observer.observe(stat);
   });
 };
