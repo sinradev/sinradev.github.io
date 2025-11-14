@@ -96,12 +96,12 @@ why_sinra_stats:
   - stat: "100%"
     label: "visibility on release status and capacity"
 why_sinra_benefits:
-  - title: "See Everything in Real-Time"
-    description: "Specs, code, tests, capacity, and releases all in one place. No more scattered information in emails and Slack."
-  - title: "Plan Based on Reality"
-    description: "Know exactly who can deliver what. Stop overloading teams and missing deadlines by guessing capacity."
-  - title: "Ship Quality, Not Excuses"
-    description: "QA is built-in, not bolted-on. Catch issues early. Deploy with confidence, not crossed fingers."
+  - title: "Complete, Centralized Visibility"
+    description: "Specs, development, testing, capacity, and releases converge in a single source of truth. Eliminates information fragmentation."
+  - title: "Planning Based on Reality"
+    description: "Understand precisely your team's capacity and availability. Plan with data, not estimates."
+  - title: "Controlled Quality Delivery"
+    description: "QA integrated into the process, not applied afterward. Detect defects early, deploy with confidence."
 pricing:
   title: Pricing
   heading: Find the perfect plan for your business
