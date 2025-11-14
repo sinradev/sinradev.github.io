@@ -87,14 +87,14 @@ hero:
   button: Try for free
   alt_image: Sinra Overview
 why_sinra_title: Why Teams Choose Sinra
-why_sinra_description: Most PM tools force you to choose between rigid planning and complete unpredictability. Sinra unifies planning and execution.
+why_sinra_description: Modern teams need balance between structured planning and execution flexibility. Sinra unites these two worlds in a single platform.
 why_sinra_stats:
-  - stat: "60%"
-    label: "of PM tool users waste time context-switching"
-  - stat: "20h/week"
-    label: "teams spend in status meetings and status updates"
-  - stat: "1 Platform"
-    label: "for specs, dev, QA, and releases"
+  - stat: "4"
+    label: "tools on average per team (replace with Sinra)"
+  - stat: "40%"
+    label: "of time saved on team coordination"
+  - stat: "100%"
+    label: "visibility on release status and capacity"
 why_sinra_benefits:
   - title: "See Everything in Real-Time"
     description: "Specs, code, tests, capacity, and releases all in one place. No more scattered information in emails and Slack."

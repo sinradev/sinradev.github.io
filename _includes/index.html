@@ -4,13 +4,7 @@
     <p class="subtext">{{ site.data[site.active_lang].strings.hero.body }}</p>
     <div class="cta button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.hero.button }}</a></div>
     <div class="hero-visual">
-      <div class="solar-system">
-        <div class="planet planet-1"></div>
-        <div class="planet planet-2"></div>
-        <div class="planet planet-3"></div>
-        <div class="planet planet-4"></div>
-        <div class="planet planet-5"></div>
-      </div>
+      <canvas id="solar-system-canvas"></canvas>
       <img src="{{ '/assets/images/sinra-overview.png' | relative_url }}" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" loading="lazy" />
     </div>
   </div>
@@ -20,14 +14,14 @@
 <section class="why-sinra">
   <div class="container">
     <div class="why-sinra-content">
-      <h2>{{ site.data[site.active_lang].strings.hero.why_sinra_title }}</h2>
-      <p class="why-sinra-description">{{ site.data[site.active_lang].strings.hero.why_sinra_description }}</p>
+      <h2>{{ site.data[site.active_lang].strings.why_sinra_title }}</h2>
+      <p class="why-sinra-description">{{ site.data[site.active_lang].strings.why_sinra_description }}</p>
 
       <!-- Stats -->
       <div class="why-sinra-stats">
-        {% for stat_item in site.data[site.active_lang].strings.hero.why_sinra_stats %}
+        {% for stat_item in site.data[site.active_lang].strings.why_sinra_stats %}
         <div class="stat-card">
-          <div class="stat-number">{{ stat_item.stat }}</div>
+          <div class="stat-number" data-target="{{ stat_item.stat }}">{{ stat_item.stat }}</div>
           <div class="stat-label">{{ stat_item.label }}</div>
         </div>
         {% endfor %}
@@ -35,7 +29,7 @@
 
       <!-- Benefits -->
       <div class="why-sinra-benefits">
-        {% for benefit in site.data[site.active_lang].strings.hero.why_sinra_benefits %}
+        {% for benefit in site.data[site.active_lang].strings.why_sinra_benefits %}
         <div class="benefit-card">
           <h3>{{ benefit.title }}</h3>
           <p>{{ benefit.description }}</p>
@@ -101,6 +95,7 @@
   </section>
 </div>
 
+<script src="{{ '/assets/js/solar-system.js' | relative_url }}"></script>
 <script>
   document.getElementById("open-nav").onclick = function () {
     document.body.classList.toggle("nav-open");
