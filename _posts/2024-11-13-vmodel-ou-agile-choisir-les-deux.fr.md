@@ -15,7 +15,7 @@ Depuis des décennies, on dit aux équipes: **Choisissez votre voie. V-Model ou 
 
 Mais la réalité est plus complexe.
 
-Une startup SaaS lançant un nouveau processeur de paiement a besoin de *spécifications upfront* (discipline V-Model). Mais elle a aussi besoin de *flexibilité de sprint* quand les exigences de sécurité changent à mi-projet (réactivité Agile). Une équipe santé construisant un système réglementaire a besoin de *stage gates et pistes d'audit* (V-Model). Mais elle a aussi besoin de *boucles de feedback rapides* des cliniciens (Agile).
+Une startup SaaS lançant un nouveau processeur de paiement a besoin de *spécifications upfront* (discipline V-Model). Mais elle a aussi besoin de *flexibilité de cycle* quand les exigences de sécurité changent à mi-projet (réactivité Agile). Une équipe santé construisant un système réglementaire a besoin de *stage gates et pistes d'audit* (V-Model). Mais elle a aussi besoin de *boucles de feedback rapides* des cliniciens (Agile).
 
 Le problème n'est pas les méthodologies—c'est que les managers sont forcés de choisir tout-ou-rien.
 
@@ -53,7 +53,7 @@ Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patien
 **Le Piège Agile:**
 10+ heures par semaine en standups. Repriorisation constante. Features à moitié construites parce que les exigences ont changé. Équipes refaisant du travail parce que les décisions vivent dans les threads Slack.
 
-Exemple: Une agence a pris l'approche "pure Agile" pour un rebuild CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 sprints plus tard, le client réalise que le design est faux. Backend entièrement rebuilt. L'équipe avait optimisé pour la vélocité, pas la valeur.
+Exemple: Une agence a pris l'approche "pure Agile" pour un rebuild CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement rebuilt. L'équipe avait optimisé pour la vélocité, pas la valeur.
 
 ![Diagramme Agile Itératif](/assets/images/agile-iterative-diagram.svg "Approche Agile / Itérative")
 
@@ -72,7 +72,7 @@ Les équipes performantes ne choisissent pas entre V-Model et Agile—elles **ut
 - Planifier les cas de test upfront
 
 **Phase de Développement (Agile):**
-- Construire en sprints
+- Construire en cycles
 - Obtenir un feedback hebdomadaire
 - Ajuster les détails d'implémentation
 - Boucles de feedback rapides
@@ -97,7 +97,7 @@ HealthConnect Systems gère les données patient pour 50+ fournisseurs de santé
 
 **Leur Approche Hybride:**
 1. **Phase 1 (V-Model):** Équipe produit + équipe conformité écrivent une spécification détaillée. Exigences de sécurité, pistes d'audit, gouvernance des données. 4 semaines.
-2. **Phase 2 (Agile):** Engineering construit en sprints de 2 semaines. QA testing continu. Reviews de sécurité quotidiennes. Ajuste l'implémentation si nécessaire.
+2. **Phase 2 (Agile):** Engineering construit en cycles de 2 semaines. QA testing continu. Reviews de sécurité quotidiennes. Ajuste l'implémentation si nécessaire.
 3. **Phase 3 (V-Model):** Release gates. Checklist de conformité. Vérification des pistes d'audit. Go-live sign-off.
 
 **Le Résultat:**
@@ -142,7 +142,7 @@ Tout le travail n'est pas égal. Certains ont besoin de planification upfront; c
 - Reviews réglementaires complétées
 
 **Track de Développement (Agile):**
-- Implémentation basée sur sprints
+- Implémentation basée sur cycles
 - Tests continus
 - Code review gates
 - Boucles de feedback quotidiennes
@@ -192,7 +192,7 @@ La plupart des outils vous forcent à choisir: Jira pour Agile ou Azure DevOps p
 Sinra est différent. Il traite **les deux workflows comme des citoyens de première classe**.
 
 - **Phase de spécification:** Écrivez des requirements, planifiez les cas de test, assignez les testeurs. Tout avant le développement.
-- **Phase de développement:** Suivi basé sur sprints, QA continue, planification adaptative. Changez quand vous avez besoin.
+- **Phase de développement:** Suivi basé sur cycles, QA continue, planification adaptative. Changez quand vous avez besoin.
 - **Phase de release:** Checklists de déploiement, stage gates, vérification de conformité. Livrez avec confiance.
 
 Une plateforme. Visibilité unifiée. Pas de changement entre outils. Vraie planification de capacité à travers toutes les phases.
@@ -202,7 +202,7 @@ Une plateforme. Visibilité unifiée. Pas de changement entre outils. Vraie plan
 ## Points d'Action: Adopter une Méthodologie Hybride
 
 1. **Auditez votre processus actuel.** Forcez-vous tout le travail dans Agile? Ou coincés en Waterfall pur?
-2. **Identifiez les limites.** Quel travail a besoin de spécification upfront? Quel travail a besoin de flexibilité de sprint?
+2. **Identifiez les limites.** Quel travail a besoin de spécification upfront? Quel travail a besoin de flexibilité de cycle?
 3. **Créez des workflows.** Concevez des tracks parallèles pour votre structure d'équipe.
 4. **Obtenez la vraie visibilité.** Assurez-vous de pouvoir voir la progression à travers spécifications et développement.
 5. **Mesurez les résultats.** Suivez la qualité, le cycle time, et la livraison on-time.

@@ -2,7 +2,7 @@
   title: Sinra vs Jira
   competitor_name: Jira
   competitor_logo: /assets/images/logos/jira.svg
-  intro: "Jira is a powerful project tracking tool, but it's built for traditional Agile/Scrum. Sinra unifies Agile AND V-Model in a single platform."
+  intro: "Jira is a powerful project tracking tool, but it's built for traditional Agile/Scrum. Sinra supports both iterative and sequential workflows in a single platform."
 
   comparison_table:
     - category: Project Management
@@ -78,13 +78,13 @@
           description: "Low cost to start, scales with team"
 
   key_differences:
-    - "Sinra combines Agile AND V-Model in one tool; Jira is Agile-only"
+    - "Sinra supports both iterative and sequential workflows in one tool; Jira is Agile-only"
     - "QA testing is integrated in Sinra; it's an afterthought in Jira"
     - "Sinra has native release management; Jira requires plugins"
     - "Sinra is 5x cheaper to implement and maintain"
     - "Sinra teams are productive in days; Jira takes weeks to configure"
 
-  conclusion: "Choose Sinra if you need unified Agile+Waterfall with integrated QA. Choose Jira if you're locked into pure Agile with unlimited budget for plugins."
+  conclusion: "Choose Sinra if you need support for multiple workflow types with integrated QA. Choose Jira if you're committed to pure Agile workflows with unlimited budget for plugins."
 
 - id: sinra_vs_asana
   title: Sinra vs Asana
@@ -168,8 +168,8 @@
   key_differences:
     - "Sinra is built for software teams; Asana is for general teams"
     - "Sinra has integrated QA and release management; Asana doesn't"
-    - "Sinra supports V-Model; Asana is collaboration-focused"
-    - "Sinra combines Agile+Waterfall; Asana is task/project agnostic"
+    - "Sinra supports V-Model methodology; Asana is collaboration-focused"
+    - "Sinra supports multiple workflow types; Asana is task/project agnostic"
     - "Similar pricing, but Sinra saves on add-ons"
 
   conclusion: "Choose Sinra if you develop software and need QA+release management. Choose Asana if you have mixed teams doing various types of work."

@@ -2,7 +2,7 @@
   title: Sinra vs Jira
   competitor_name: Jira
   competitor_logo: /assets/images/logos/jira.svg
-  intro: "Jira est un puissant outil de suivi de projets, mais il est conçu pour Agile/Scrum traditionnel. Sinra unifie Agile ET V-Model sur une seule plateforme."
+  intro: "Jira est un puissant outil de suivi de projets, mais il est conçu pour Agile/Scrum traditionnel. Sinra supporte les workflows itératifs ET séquentiels sur une seule plateforme."
 
   comparison_table:
     - category: Gestion de Projets
@@ -78,13 +78,13 @@
           description: "Coût faible au démarrage"
 
   key_differences:
-    - "Sinra combine Agile ET V-Model; Jira est Agile uniquement"
+    - "Sinra supporte les workflows itératifs ET séquentiels; Jira est Agile uniquement"
     - "Les tests QA sont intégrés dans Sinra; c'est une arrière-pensée dans Jira"
     - "Sinra a la gestion des releases native; Jira nécessite des plugins"
     - "Sinra est 5x moins cher à implémenter"
     - "Les équipes Sinra sont productives en jours; Jira prend des semaines"
 
-  conclusion: "Choisissez Sinra si vous avez besoin d'Agile+Waterfall unifié avec QA intégré. Choisissez Jira si vous êtes verrouillé dans Agile pur avec budget illimité."
+  conclusion: "Choisissez Sinra si vous avez besoin de support pour plusieurs types de workflows avec QA intégré. Choisissez Jira si vous êtes engagé dans des workflows Agile pur avec budget illimité."
 
 - id: sinra_vs_asana
   title: Sinra vs Asana
@@ -168,8 +168,8 @@
   key_differences:
     - "Sinra est conçu pour les équipes logicielles; Asana pour les équipes générales"
     - "Sinra a QA et gestion des releases intégrées; Asana n'en a pas"
-    - "Sinra supporte V-Model; Asana est axé collaboration"
-    - "Sinra combine Agile+Waterfall; Asana est agnostique"
+    - "Sinra supporte la méthodologie V-Model; Asana est axé collaboration"
+    - "Sinra supporte plusieurs types de workflows; Asana est agnostique"
     - "Tarifs similaires, mais Sinra économise sur les add-ons"
 
   conclusion: "Choisissez Sinra si vous développez du logiciel avec QA+gestion des releases. Choisissez Asana pour équipes mixtes."

@@ -9,7 +9,7 @@
   alt: Méthodologie Dual Workflow
   category: "Flux Parallèles"
 - title: <strong>Planification des Capacités Intégrée</strong> - Plus de Ralentissements
-  body: "Sinra calcule en temps réel la charge de travail par développeur/équipe. <strong>Voyez qui est surchargé avant même de lancer le sprint.</strong>
+  body: "Sinra calcule en temps réel la charge de travail par développeur/équipe. <strong>Voyez qui est surchargé avant même de lancer le cycle.</strong>
       <ul>
         <li>Suivi par cycle : Temps estimé vs capacité réelle, par développeur et équipe.</li>
         <li>Pourcentages de capacité : Définissez la disponibilité (50%, 75%, 100%) de chaque personne par équipe.</li>
