@@ -15,7 +15,7 @@ For decades, teams have been told: **Choose your lane. V-Model or Agile. Pick on
 
 But reality is messier.
 
-A SaaS startup launching a new payment processor needs *specification upfront* (V-Model discipline). But they also need *sprint flexibility* when security requirements change mid-project (Agile responsiveness). A healthcare team building a regulatory system needs *stage gates and evidence trails* (V-Model). But they also need *fast feedback loops* from clinicians (Agile).
+A SaaS startup launching a new payment processor needs *specification upfront* (V-Model discipline). But they also need *cycle flexibility* when security requirements change mid-project (Agile responsiveness). A healthcare team building a regulatory system needs *stage gates and evidence trails* (V-Model). But they also need *fast feedback loops* from clinicians (Agile).
 
 The problem isn't the methodologies—it's that managers are forced to choose all-or-nothing.
 
@@ -53,7 +53,7 @@ Example: A healthcare team estimated 6 months to build a patient dashboard. They
 **The Agile Trap:**
 10+ hours per week in standup meetings. Constant reprioritization. Features half-built because requirements changed again. Teams repeating work because decisions live in Slack threads instead of shared specs.
 
-Example: An agency took an "pure Agile" approach to a CMS rebuild. No specifications. Just "build a dashboard." 3 months and 5 sprints later, the client realized the design was wrong. Entire backend rebuilt. The team had optimized for velocity, not value.
+Example: An agency took an "pure Agile" approach to a CMS rebuild. No specifications. Just "build a dashboard." 3 months and 5 cycles later, the client realized the design was wrong. Entire backend rebuilt. The team had optimized for velocity, not value.
 
 ![Agile Iterative Diagram](/assets/images/agile-iterative-diagram.svg "Agile / Iterative Approach")
 
@@ -72,7 +72,7 @@ High-performing teams don't choose between V-Model and Agile—they **use both f
 - Plan test cases upfront
 
 **Development Phase (Agile):**
-- Build in sprints
+- Build in cycles
 - Get weekly feedback
 - Adjust implementation details
 - Fast feedback loops
@@ -97,7 +97,7 @@ HealthConnect Systems manages patient data for 50+ healthcare providers. They're
 
 **Their Hybrid Approach:**
 1. **Phase 1 (V-Model):** Product team + compliance team write detailed specification. Security requirements, audit trails, data governance. 4-week phase.
-2. **Phase 2 (Agile):** Engineering builds in 2-week sprints. Continuous QA testing. Daily security reviews. Adjust implementation as needed.
+2. **Phase 2 (Agile):** Engineering builds in 2-week cycles. Continuous QA testing. Daily security reviews. Adjust implementation as needed.
 3. **Phase 3 (V-Model):** Release gates. Compliance checklist. Audit trail verification. Go-live sign-off.
 
 **The Result:**
@@ -142,7 +142,7 @@ Not all work is equal. Some needs upfront planning; some needs flexibility.
 - Regulatory reviews completed
 
 **Development Track (Agile):**
-- Sprint-based implementation
+- Cycle-based implementation
 - Continuous testing
 - Code review gates
 - Daily feedback loops
@@ -192,7 +192,7 @@ Most tools force you to pick: Jira for Agile or Azure DevOps for Waterfall.
 Sinra is different. It treats **both workflows as first-class citizens**.
 
 - **Specification phase:** Write requirements, plan test cases, assign testers. All before development starts.
-- **Development phase:** Sprint-based tracking, continuous QA, adaptive planning. Change when you need to.
+- **Development phase:** Cycle-based tracking, continuous QA, adaptive planning. Change when you need to.
 - **Release phase:** Deployment checklists, stage gates, compliance verification. Ship with confidence.
 
 One platform. Unified visibility. No switching between tools. Real capacity planning across all phases.
@@ -202,7 +202,7 @@ One platform. Unified visibility. No switching between tools. Real capacity plan
 ## Action Items: Adopting Hybrid Methodology
 
 1. **Audit your current process.** Are you forcing all work into Agile? Or stuck in pure Waterfall?
-2. **Identify boundaries.** What work needs upfront specification? What needs sprint flexibility?
+2. **Identify boundaries.** What work needs upfront specification? What needs cycle flexibility?
 3. **Create workflows.** Design parallel tracks for your team structure.
 4. **Get real visibility.** Ensure you can see progress across both specifications and development.
 5. **Measure outcomes.** Track quality, cycle time, and on-time delivery.

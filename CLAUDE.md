@@ -4,8 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the **Sinra website** - a multilingual static site built with **Jekyll 4.3.4** (Ruby-based static site generator). The site promotes Sinra, a project management tool combining V-methodology (Waterfall) and Agile approaches. The site supports English (en) and French (fr) languages. The website unify lot of features
-inspiring itself from Notion, Airtable and others new modern Saas.
+This is the **Sinra website** - a multilingual static site built with **Jekyll 4.3.4** (Ruby-based static site generator). The site promotes Sinra, a project management tool with a modern approach to work organization. Unlike traditional Agile or Waterfall methodologies, Sinra uses concrete, straightforward naming: issues, capabilities, releases, and cycles instead of abstract terms like user stories, epics, or sprints. The site supports English (en) and French (fr) languages and draws inspiration from modern SaaS tools like Notion and Airtable.
 
 **Tech Stack:**
 - Jekyll 4.3.4 (static site generator)
@@ -97,9 +96,30 @@ The site uses **jekyll-polyglot** for multilingual support:
 - No build step or minification process
 
 ### Current Build Status
-The site is actively in development (branch: feature/new-theme). Recent commits show work on styling and imagery improvements. Modified files include:
-- `.ruby-version`
-- `assets/images/` (multiple feature images updated)
+The site is actively in development. Recent work includes content updates and competitive positioning improvements. Check git status or recent commits for current branch and modified files.
+
+## SINRA Concepts Glossary
+
+When working on content related to SINRA, always use the following concepts:
+
+- **capabilities** - Features or initiatives tracked in your releases. Organize work at a higher level than issues.
+- **categories** - Organize your pages by categories to structure documentation and knowledge base.
+- **current_capabilities** - Features and initiatives assigned to the current release. Track high-level objectives.
+- **current_testings** - Quality assurance work for the current release. Manage test cases and QA activities.
+- **cycles** - Time-boxed periods for organizing and tracking work. Plan iterations and manage progress over defined timeframes.
+- **issues** - Individual work items, bugs, and tasks. The core unit of work in SINRA.
+- **labels** - Tags for organizing and filtering issues, capabilities, and other resources.
+- **next_cycles** - Upcoming cycles in your organization. Plan future iterations.
+- **pages** - Documentation and knowledge base. Create pages and organize them by categories.
+- **platforms** - Target platforms for your software. Define where your product runs.
+- **projects** - Organize issues and work into projects. Group related work by project.
+- **releases** - Versions of your product. Group capabilities and issues into releases.
+- **roles** - Define roles and permissions for team members. Control access and responsibilities.
+- **statuses** - Workflow states for writing and development. Track progress of issues and capabilities.
+- **teams** - Group team members by team. Organize collaboration and ownership.
+- **templates** - Reusable templates for pages, issues, and tests. Speed up creation of recurring items.
+- **testings** - Quality assurance and testing management. Organize test cases and track test execution.
+- **users** - Team members in your organization. Manage users, permissions, and account settings.
 
 ## No Additional Tools Configured
 
@@ -108,5 +128,27 @@ The site is actively in development (branch: feature/new-theme). Recent commits 
 - **No testing framework:** Testing is manual via browser or Jekyll serve
 - **No custom cursor/copilot rules:** Use this CLAUDE.md as the primary guidance
 - Use mise instead rvm, and bundle instead of gem
-- Never speak about user stories or other thinks linked to agility, Sinra must be different.
-- Sinra use issues, capabilities, releases, sync instead of user stories, epics, standup ... Sinra use natural and comprehensive naming
+
+## SINRA Terminology Guidelines
+
+**When discussing SINRA features or concepts:** Always use the SINRA terminology from the glossary above. You may compare SINRA concepts to Agile or Waterfall terms to highlight differences, but avoid describing SINRA using Agile terminology.
+
+**Terminology Context:**
+- Use SINRA terminology when describing the Sinra product or features
+- You can reference Agile/Waterfall when explaining general project management methodologies
+- Comparisons are acceptable to show how Sinra differs
+
+**Examples of correct usage:**
+- ✅ "Sinra uses issues for individual work items (unlike user stories in Agile)"
+- ✅ "Capabilities in Sinra organize features at a higher level, similar to epics but with more direct naming"
+- ✅ "While Agile uses sprints, Sinra uses cycles for time-boxed work periods"
+- ❌ "Sinra has user stories"
+- ❌ "Sinra uses epics"
+
+**Why it matters - SINRA's concrete naming:**
+- **issues** → Direct, not "user stories" (which are often vague requirements)
+- **capabilities** → Clear features, not abstract "epics"
+- **releases** → Concrete product versions, not ambiguous "increments"
+- **cycles** → Defined time periods, not "sprints" (Agile jargon)
+
+SINRA naming is more direct and reflects actual work artifacts, not planning abstractions.
