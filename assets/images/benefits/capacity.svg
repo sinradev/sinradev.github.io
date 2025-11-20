@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Capacity: Container with expanding elements -->
+  <g stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Main container -->
+    <rect x="14" y="18" width="36" height="32" rx="2"/>
+    <!-- Internal elements showing expansion -->
+    <circle cx="24" cy="28" r="4" fill="#000000"/>
+    <circle cx="32" cy="28" r="5" fill="#000000"/>
+    <circle cx="40" cy="28" r="4" fill="#000000"/>
+    <!-- Expansion arrows -->
+    <line x1="10" y1="34" x2="14" y2="34"/>
+    <line x1="50" y1="34" x2="54" y2="34"/>
+  </g>
+</svg>

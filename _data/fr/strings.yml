@@ -16,21 +16,21 @@ about:
   rigid_schedule: "Quand la réalité ne correspond pas au plan, les équipes improvisent au lieu de s'adapter"
   quality_compromise: "La qualité est traitée comme un compromis négociable, pas une exigence"
   design_to: "L'Approche Sinra : Visibilité, Capacité, et Exécution"
-  sinra_combines: "Sinra est une source unique de vérité pour tout votre projet. Tout ce dont les équipes ont besoin—planification, suivi, tests, communication, et déploiement—vit au même endroit. Visibilité temps réel sur les capacités, la progression, et la qualité. Pas de changement de contexte. Pas de devinage. Juste l'exécution."
+  sinra_combines: "Sinra est une source unique de vérité pour tout votre projet. Tout ce dont les équipes ont besoin—planification, suivi, tests, communication, et déploiement—vit au même endroit. Visibilité temps réel sur les capacités, la progression, et la qualité. Pas de changement de contexte."
   clear_planning: "Visibilité Complète du Projet"
-  clear_planning_desc: "Voyez votre projet entier au même endroit. Features, spécifications, tests, capacités, progression, et communication tous connectés. Rien ne tombe à travers les fissures. Tout le monde sait ce qui se passe parce que c'est tout là."
+  clear_planning_desc: "Voyez votre projet entier au même endroit. Features, spécifications, tests, capacités, progression, et communication tous connectés. Aucun détail ne disparaît. Transparence totale pour tous."
   global_vision: "Intelligence Temps Réel des Capacités"
-  global_vision_desc: "Sachez exactement qui peut faire quel travail, quand. Voyez la surcharge avant qu'elle ne devienne une crise. Planifiez les releases en fonction de ce que les équipes peuvent réellement livrer, pas des vœux pieux. Données de capacité toujours à jour."
+  global_vision_desc: "Connaissez exactement les capacités de chacun et leur disponibilité. Prévoyez les surcharges, n'attendez pas la crise. Planifiez les releases en fonction de ce que les équipes peuvent réellement livrer."
   enhanced_control: "Qualité Intégrée dès le Départ"
-  enhanced_control_desc: "Les tests ne sont pas une arrière-pensée. Ils font partie du flux de travail principal. Créez des cas de test, assignez les testeurs, suivez le statut d'acceptation, tout lié à la progression du développement. Des portes de qualité qui attrapent réellement les problèmes avant qu'ils ne deviennent des crises."
+  enhanced_control_desc: "Les tests ne sont pas une étape finale : c'est un élément central du flux. Créez des cas de test, assignez les testeurs, suivez le statut d'acceptation, le tout lié à la progression du développement. Des portes de qualité qui attrapent réellement les problèmes avant qu'ils ne deviennent des crises."
   release_mastery: "Maîtrisez Vos Cycles de Release"
-  release_mastery_desc: "Sinra traite les releases comme des entités de première classe, pas comme une arrière-pensée. Chaque release a une visibilité complète sur toutes les features, la couverture de test, les assignations d'équipe, et la préparation au déploiement. Fini de deviner si vous êtes prêt à livrer."
+  release_mastery_desc: "Sinra place les releases au cœur de la plateforme. Chaque release a une visibilité complète sur toutes les features, la couverture de test, les assignations d'équipe, et la préparation au déploiement. Fini de deviner si vous êtes prêt à livrer."
   release_planning: "Planification Complète des Releases"
-  release_planning_desc: "Voyez toutes les features, capacités, et issues qui alimentent chaque release. Suivez quelles équipes possèdent quoi, gérez les dépendances, et visualisez la timeline complète de la planification à la production."
+  release_planning_desc: "Visualisez la composition de chaque release : features, issues, et dépendances. Identifiez les propriétaires, gérez les interdépendances, et tracez la timeline complète du planning à la production."
   deployment_readiness: "Listes de Vérification de Préparation au Déploiement"
   deployment_readiness_desc: "Avant que toute release ne soit déployée, vérifiez que tous les critères d'acceptation sont validés, tous les tests passent, et toutes les équipes sont alignées. Les listes de vérification de go-live assurent que rien n'est oublié dans l'imprévisibilité du jour du lancement."
   go_live_confidence: "Déployez en tout confiance"
-  go_live_confidence_desc: "Avec une visibilité complète sur le statut des releases, la capacité des équipes, et les résultats des tests, les déploiements deviennent des événements prévisibles, pas de la gestion de crise. Lancez avec confiance, pas avec les doigts croisés."
+  go_live_confidence_desc: "Avec une visibilité complète sur le statut des releases, la capacité des équipes, et les résultats des tests, les déploiements deviennent des événements prévisibles, pas de la gestion de crise."
   release_team_coordination: "Coordonnez les Équipes à Travers les Releases"
   release_team_coordination_desc: "Visualisez les équipes impliquées dans chaque release, suivez les calendriers de déploiement, et gérez les listes de contrôle avant mise en production. Les releases réussissent par la coordination, pas par la gestion de crise."
   ready_to_transform: "Arrêtez de Choisir Entre Imprévisibilité et Rigidité"
@@ -38,25 +38,25 @@ about:
   learn_more: "Essayez gratuitement"
 hero:
   title: <strong>Organisez.</strong> Priorisez. Livrez.
-  body: Le seul outil de gestion de projet conçu pour les équipes faisant V-Model ET Agile. <strong>Voyez exactement où en est chaque chose.</strong> Planification unifiée. Suivi QA temps réel. Une plateforme qui vous libère des urgences.
+  body: Le seul outil de gestion de projet conçu pour les équipes combinant V-Model et Agile. <strong>Une visibilité totale.</strong> Une plateforme unifiée. Une qualité maîtrisée. Fini les urgences.
   button: Essayez gratuitement
   alt_image: Présentation de Sinra
 why_sinra_title: Pourquoi les Équipes Choisissent Sinra
 why_sinra_description: Les équipes modernes ont besoin d'équilibre entre planification structurée et flexibilité d'exécution. Sinra unifie ces deux mondes en une seule plateforme.
 why_sinra_stats:
   - stat: "4"
-    label: "outils en moyenne utilisés par équipe (à remplacer par Sinra)"
+    label: "outils en moyenne peuvent être remplacer par Sinra"
   - stat: "40%"
     label: "de temps gagné sur la coordination entre équipes"
   - stat: "100%"
     label: "de visibilité sur l'état des releases et capacités"
 why_sinra_benefits:
   - title: "Visibilité Complète et Centralisée"
-    description: "Specs, développement, tests, capacités et releases converging dans une seule source de vérité. Élimine la fragmentation de l'information."
+    description: "Specs, développements, tests et releases convergent en une seule source de vérité. Élimine la fragmentation de l'information."
   - title: "Planification Fondée sur les Réalités"
-    description: "Comprenez précisément les capacités et disponibilités de votre équipe. Planifiez avec données, non avec estimation."
+    description: "Comprenez précisément les capacités et disponibilités de votre équipe. Planifiez avec vos données, non avec à travers des estimations."
   - title: "Livraison de Qualité Maîtrisée"
-    description: "QA intégré au processus, pas appliqué a posteriori. Détectez les défauts tôt, déployez en toute confiance."
+    description: "QA intégré au processus, pas appliqué a posteriori. Détectez les bugs dès la conception, livrez sans appréhension."
 features: Fonctionnalités
 reduce_complexity: <strong>Organisez.</strong> <strong>Priorisez.</strong> <strong>Livrez.</strong>
 try_sinra: Essayer Sinra gratuitement

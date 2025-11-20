@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Checkmark: Clear affordance for "included feature" -->
+  <g stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Checkmark (large, clear) -->
+    <polyline points="18,36 28,46 46,18"/>
+  </g>
+</svg>

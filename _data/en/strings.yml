@@ -16,21 +16,21 @@ about:
   rigid_schedule: "When reality doesn't match the plan, teams improvise rather than adapt"
   quality_compromise: "Quality is treated as a negotiable trade-off, not a requirement"
   design_to: "The Sinra Approach: Visibility, Capacity, and Execution"
-  sinra_combines: "Sinra is a single source of truth for your entire project. Everything teams need—planning, tracking, testing, communication, and deployment—lives in one place. Real-time visibility into capacity, progress, and quality. No context switching. No guessing. Just execution."
+  sinra_combines: "Sinra is a single source of truth for your entire project. Everything teams need—planning, tracking, testing, communication, and deployment—lives in one place. Real-time visibility into capacity, progress, and quality. No context switching."
   clear_planning: "Complete Project Visibility"
-  clear_planning_desc: "See your entire project in one place. Features, specifications, tests, capacity, progress, and communication all connected. Nothing falls through cracks. Everyone knows what's happening because it's all right there."
+  clear_planning_desc: "See your entire project in one place. Features, specifications, tests, capacity, progress, and communication all connected. No details get lost. Complete transparency for everyone."
   global_vision: "Real-Time Capacity Intelligence"
-  global_vision_desc: "Know exactly who can do what work, when. See overallocation before it becomes a crisis. Plan releases based on what teams can actually deliver, not wishful thinking. Capacity data that's always current."
+  global_vision_desc: "Know your team's exact capacity and availability. Anticipate overallocation, don't wait for crisis. Plan releases based on what teams can actually deliver."
   enhanced_control: "Quality Built-In from Day One"
-  enhanced_control_desc: "Tests aren't an afterthought. They're part of the core workflow. Create test cases, assign testers, track acceptance status, all tied to development progress. Quality gates that actually catch issues before they become problems."
+  enhanced_control_desc: "QA isn't a final step: it's a core element of the process. Create test cases, assign testers, track acceptance status, all tied to development progress. Quality gates that actually catch issues before they become problems."
   release_mastery: "Master Your Release Cycles"
-  release_mastery_desc: "Sinra treats releases as first-class entities, not afterthoughts. Every release has visibility into all features, test coverage, team assignments, and deployment readiness. No more guessing if you're ready to ship."
+  release_mastery_desc: "Sinra puts releases at the heart of the platform. Every release has visibility into all features, test coverage, team assignments, and deployment readiness. No more guessing if you're ready to ship."
   release_planning: "Complete Release Planning"
-  release_planning_desc: "See all features, capabilities, and issues that feed into each release. Track which teams own what, manage dependencies, and visualize the complete timeline from planning to production."
+  release_planning_desc: "Understand each release's composition: features, issues, and dependencies. Identify owners, manage interdependencies, and trace the complete timeline from planning to production."
   deployment_readiness: "Deployment Readiness Checklists"
   deployment_readiness_desc: "Before any release ships, verify all acceptance criteria are met, all tests pass, and all teams are aligned. Go-live checklists ensure nothing is missed in the unpredictability of launch day."
   go_live_confidence: "Deploy with Confidence"
-  go_live_confidence_desc: "With complete visibility into release status, team capacity, and test results, deployments become predictable events, not crisis management. Launch with confidence, not crossed fingers."
+  go_live_confidence_desc: "With complete visibility into release status, team capacity, and test results, deployments become predictable events, not crisis management."
   release_team_coordination: "Coordinate Teams Across Releases"
   release_team_coordination_desc: "Visualize all teams involved in each release, track deployment timelines, and manage go-live checklists. Releases succeed through coordination, not firefighting."
   ready_to_transform: "Stop Choosing Between Unpredictability and Rigidity"
@@ -83,25 +83,25 @@ features: Features
 got_to_blog: Go to the Blog
 hero:
   title: <strong>Organize.</strong> Prioritize. Deliver.
-  body: The only project management tool built for teams doing both V-Model and Agile. <strong>See exactly where everything stands.</strong> Unified capacity planning. Real-time QA tracking. One platform, no firefighting.
+  body: The only project management tool built for teams combining V-Model and Agile. <strong>Complete visibility.</strong> Unified platform. Controlled quality. No more firefighting.
   button: Try for free
   alt_image: Sinra Overview
 why_sinra_title: Why Teams Choose Sinra
 why_sinra_description: Modern teams need balance between structured planning and execution flexibility. Sinra unites these two worlds in a single platform.
 why_sinra_stats:
   - stat: "4"
-    label: "tools on average per team (replace with Sinra)"
+    label: "tools on average can be replaced with Sinra"
   - stat: "40%"
     label: "of time saved on team coordination"
   - stat: "100%"
     label: "visibility on release status and capacity"
 why_sinra_benefits:
   - title: "Complete, Centralized Visibility"
-    description: "Specs, development, testing, capacity, and releases converge in a single source of truth. Eliminates information fragmentation."
+    description: "Specs, development, testing, and releases converge in a single source of truth. Eliminates information fragmentation."
   - title: "Planning Based on Reality"
-    description: "Understand precisely your team's capacity and availability. Plan with data, not estimates."
+    description: "Understand precisely your team's capacity and availability. Plan with your data, not through estimates."
   - title: "Controlled Quality Delivery"
-    description: "QA integrated into the process, not applied afterward. Detect defects early, deploy with confidence."
+    description: "QA integrated into the process, not applied afterward. Catch bugs from design, ship without hesitation."
 pricing:
   title: Pricing
   heading: Find the perfect plan for your business

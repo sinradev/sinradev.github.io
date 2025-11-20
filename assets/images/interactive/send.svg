@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Send: Paper plane/send button metaphor -->
+  <g stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Paper plane body -->
+    <polygon points="14,32 48,18 48,32 34,40"/>
+    <!-- Fold line -->
+    <line x1="48" y1="18" x2="34" y2="40"/>
+  </g>
+</svg>

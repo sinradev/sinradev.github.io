@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Collaboration: Geometric elements working together -->
+  <g stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Left circle -->
+    <circle cx="22" cy="28" r="10"/>
+    <!-- Right circle (overlapping) -->
+    <circle cx="42" cy="28" r="10"/>
+    <!-- Center connecting circle -->
+    <circle cx="32" cy="42" r="8"/>
+    <!-- Connecting lines -->
+    <line x1="28" y1="37" x2="30" y2="40"/>
+    <line x1="36" y1="37" x2="34" y2="40"/>
+  </g>
+</svg>

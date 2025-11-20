@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Chevron: Clear affordance for "expand/collapse" -->
+  <g stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Chevron pointing down (can be rotated) -->
+    <polyline points="18,26 32,40 46,26"/>
+  </g>
+</svg>
