@@ -8,7 +8,7 @@
   image: /assets/images/methodology-hybrid.png
   alt: Méthodologie Dual Workflow
   category: "Flux Parallèles"
-- title: <strong>Planification des Capacités Intégrée</strong> - Plus de Ralentissements
+- title: <strong>Planification de la Charge de Travail Intégrée</strong> - Plus de Ralentissements
   body: "Sinra calcule en temps réel la charge de travail par développeur/équipe. <strong>Voyez qui est surchargé avant même de lancer le cycle.</strong>
       <ul>
         <li>Suivi par cycle : Temps estimé vs capacité réelle, par développeur et équipe.</li>
@@ -16,7 +16,7 @@
         <li>Alertes automatiques : Le système avertit si les tâches dépassent la capacité.</li>
       </ul>"
   image: /assets/images/sinra-overview.png
-  alt: Planification des Capacités Avancée
+  alt: Planification de la Charge de Travail Avancée
   category: "Allocation Intelligente"
 - title: <strong>Gestion des Tests Intégrée</strong> - QA Inclus
   body: "Sinra traite les tests comme une feature première classe, pas en arrière-plan. Créez des plans de test liés aux spécifications et suivez le statut d'acceptation directement.
@@ -41,9 +41,9 @@
 - title: <strong>Intelligence Multi-Vue</strong> - Kanban, Liste, et Planification Release
   body: "Basculez entre <strong>Kanban</strong> (tableau par statut) et <strong>Liste</strong> (tableau détaillé) instantanément. Plus des vues Release et Cycle pour la planification macro.
       <ul>
-        <li>Tableau Kanban : Glissez-déposez avec updates temps réel via Hotwire.</li>
+        <li>Tableau Kanban : Glissez-déposez avec updates temps réel.</li>
         <li>Filtrage avancé : Appliquez des filtres complexes sans rechargement.</li>
-        <li>Feuille de route release : Voyez votre timeline complète avec cycles et capacités.</li>
+        <li>Feuille de route release : Voyez votre timeline complète avec cycles et fonctionnalités.</li>
       </ul>"
   image: /assets/images/kanban-list-view.png
   alt: Interface Multi-Vue

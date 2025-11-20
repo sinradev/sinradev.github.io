@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Custom Workflows: Connected nodes showing flow -->
+  <g stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Connecting lines -->
+    <line x1="18" y1="32" x2="32" y2="32"/>
+    <line x1="32" y1="32" x2="46" y2="32"/>
+    <!-- Nodes -->
+    <rect x="12" y="26" width="12" height="12" rx="1.5"/>
+    <circle cx="32" cy="32" r="6"/>
+    <rect x="40" y="26" width="12" height="12" rx="1.5"/>
+    <!-- Arrow indicators -->
+    <polyline points="26,32 28,31 28,33"/>
+    <polyline points="40,32 42,31 42,33"/>
+  </g>
+</svg>
