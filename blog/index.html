@@ -4,10 +4,17 @@ layout: page
 lang: en
 ---
 
+{% assign page_lang = site.active_lang | default: page.lang | default: "en" %}
+
 <section class="blog-hero">
   <div class="container">
-    <h1>Project Management Insights & Strategies</h1>
-    <p class="subtitle">Master project management with strategies from leading engineering teams. Learn capacity planning, release management, QA integration, and scaling best practices.</p>
+    {% if page_lang == "en" %}
+      <h1>Project Management Insights & Strategies</h1>
+      <p class="subtitle">Master project management with strategies from leading engineering teams. Learn capacity planning, release management, QA integration, and scaling best practices.</p>
+    {% else %}
+      <h1>Insights et Stratégies de Gestion de Projet</h1>
+      <p class="subtitle">Maîtrisez la gestion de projet avec les stratégies des meilleures équipes d'ingénierie. Apprenez la planification de capacité, la gestion des releases, l'intégration QA et les bonnes pratiques de scaling.</p>
+    {% endif %}
   </div>
 </section>
 
@@ -20,7 +27,7 @@ lang: en
         {% for post in posts limit: 12 %}
           <article class="post-card">
             <div class="post-meta">
-              <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+              <span class="date">{{ post.date | date: site.data[page_lang].strings.blog.date_format }}</span>
               {% if post.category %}
                 <span class="category">{{ post.category }}</span>
               {% endif %}
@@ -29,12 +36,16 @@ lang: en
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
             <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-            <a href="{{ post.url }}" class="read-more">Read Article →</a>
+            <a href="{{ post.url }}" class="read-more">{{ site.data[page_lang].strings.blog.read_more }}</a>
           </article>
         {% endfor %}
       {% else %}
         <div class="no-posts">
-          <p>Blog posts coming soon. Check back regularly for insights on project management, capacity planning, release management, and team scaling.</p>
+          {% if page_lang == "en" %}
+            <p>Blog posts coming soon. Check back regularly for insights on project management, capacity planning, release management, and team scaling.</p>
+          {% else %}
+            <p>Les articles du blog arrivent bientôt. Revenez régulièrement pour des insights sur la gestion de projet, la planification de capacité, la gestion des releases, et le scaling d'équipes.</p>
+          {% endif %}
         </div>
       {% endif %}
     </div>
@@ -43,8 +54,8 @@ lang: en
 
 <section class="blog-cta">
   <div class="container">
-    <h2>Ready to Transform Your Project Management?</h2>
-    <p>Get started with Sinra and see how unified project management drives delivery.</p>
-    <a href="https://app.sinra.dev/users/sign_up" class="button primary">Start Free Trial</a>
+    <h2>{{ site.data[page_lang].strings.blog.ready_to_transform }}</h2>
+    <p>{{ site.data[page_lang].strings.blog.cta_description }}</p>
+    <a href="https://app.sinra.dev/users/sign_up" class="button primary">{{ site.data[page_lang].strings.blog.start_free_trial }}</a>
   </div>
 </section>
