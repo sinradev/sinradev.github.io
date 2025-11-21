@@ -1,31 +1,14 @@
-- name: "CodeVault Labs"
-  logo: "/assets/images/logos/techvision.svg"
-  url: "https://codevault.example.com"
+- name: "Acquia"
+  logo: "/assets/images/logos/acquia.svg"
 
-- name: "Vitality Health"
-  logo: "/assets/images/logos/healthconnect.svg"
-  url: "https://vitalityhealth.example.com"
+- name: "Asphalion MedTech"
+  logo: "/assets/images/logos/asphalion-medtech.svg"
 
-- name: "Rocket Dynamics"
-  logo: "/assets/images/logos/velocity.svg"
-  url: "https://rocketdynamics.example.com"
+- name: "WeThink Nordic"
+  logo: "/assets/images/logos/wethinknordic.svg"
 
-- name: "DataVault Pro"
-  logo: "/assets/images/logos/cloudscale.svg"
-  url: "https://datavaultpro.example.com"
+- name: "Futur"
+  logo: "/assets/images/logos/futur.svg"
 
-- name: "Pinnacle Growth"
-  logo: "/assets/images/logos/finserve.svg"
-  url: "https://pinnaclegrowth.example.com"
-
-- name: "IntelliMesh Labs"
-  logo: "/assets/images/logos/dataflow.svg"
-  url: "https://intellimesh.example.com"
-
-- name: "Hexa Connect"
-  logo: "/assets/images/logos/nexus.svg"
-  url: "https://hexaconnect.example.com"
-
-- name: "NeuralSync AI"
-  logo: "/assets/images/logos/quantum.svg"
-  url: "https://neuralsync.example.com"
+- name: "Arival Bank"
+  logo: "/assets/images/logos/arivalbank.svg"

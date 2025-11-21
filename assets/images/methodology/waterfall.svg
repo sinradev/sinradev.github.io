@@ -1,17 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Waterfall: Sequential/cascading phases -->
-  <g stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <!-- Waterfall: Refined sequential phases with cascading progression -->
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <!-- Phase 1 (top) -->
-    <rect x="18" y="14" width="28" height="8" rx="1"/>
-    <!-- Arrow down -->
-    <line x1="32" y1="22" x2="32" y2="26"/>
-    <polyline points="30,25 32,27 34,25"/>
+    <rect x="16" y="12" width="32" height="10" rx="2" stroke-width="2"/>
+    <line x1="18" y1="16" x2="46" y2="16" stroke-width="1.5"/>
+    <line x1="18" y1="19" x2="42" y2="19" stroke-width="1.5"/>
+    <!-- Down arrow -->
+    <path d="M 32 22 L 32 28" stroke-width="2"/>
+    <polyline points="30,26 32,29 34,26" stroke-width="2" fill="none"/>
     <!-- Phase 2 -->
-    <rect x="18" y="28" width="28" height="8" rx="1"/>
-    <!-- Arrow down -->
-    <line x1="32" y1="36" x2="32" y2="40"/>
-    <polyline points="30,39 32,41 34,39"/>
+    <rect x="14" y="30" width="32" height="10" rx="2" stroke-width="2"/>
+    <line x1="16" y1="34" x2="44" y2="34" stroke-width="1.5"/>
+    <line x1="16" y1="37" x2="40" y2="37" stroke-width="1.5"/>
+    <!-- Down arrow -->
+    <path d="M 30 40 L 30 46" stroke-width="2"/>
+    <polyline points="28,44 30,47 32,44" stroke-width="2" fill="none"/>
     <!-- Phase 3 (bottom) -->
-    <rect x="18" y="42" width="28" height="8" rx="1"/>
+    <rect x="12" y="48" width="32" height="10" rx="2" stroke-width="2"/>
+    <line x1="14" y1="52" x2="42" y2="52" stroke-width="1.5"/>
+    <line x1="14" y1="55" x2="38" y2="55" stroke-width="1.5"/>
   </g>
 </svg>
