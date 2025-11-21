@@ -2,7 +2,6 @@
 page_id: blog
 lang: fr
 layout: page
-permalink: /blog/
 title: "Blog Sinra - Insights Gestion de Projet"
 description: "Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA, et scaling des équipes. Insights pour les leaders techniques et chefs de projet."
 heading: "Insights et Stratégies de Gestion de Projet"
@@ -19,10 +18,7 @@ heading: "Insights et Stratégies de Gestion de Projet"
   <div class="container">
     <div class="posts-grid">
       {% if site.posts.size > 0 %}
-        {% assign posts = site.posts | where: "lang", "fr" | sort: "date" | reverse %}
-        {% if posts.size == 0 %}
-          {% assign posts = site.posts | sort: "date" | reverse %}
-        {% endif %}
+        {% assign posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
         {% for post in posts limit: 12 %}
           <article class="post-card">
             <div class="post-meta">
