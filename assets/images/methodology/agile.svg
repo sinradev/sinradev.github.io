@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Agile: Iterative cycles/flexibility -->
-  <g stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <!-- Outer cycle arrow (circular) -->
-    <path d="M 16 32 Q 16 16 32 16 Q 48 16 48 32"/>
-    <polyline points="46,30 48,32 46,34"/>
-    <!-- Inner cycle arrow (smaller) -->
-    <path d="M 20 32 Q 20 22 32 22 Q 44 22 44 32"/>
-    <polyline points="42,30 44,32 42,34"/>
-    <!-- Center iteration marker -->
-    <circle cx="32" cy="32" r="6" fill="none"/>
-    <line x1="32" y1="28" x2="32" y2="36"/>
+  <!-- Agile: Refined iterative cycles showing flexibility and continuous refinement -->
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Outer cycle arrow (larger continuous cycle) -->
+    <path d="M 14 32 Q 14 14 32 14 Q 50 14 50 32 Q 50 42 42 48" stroke-width="2"/>
+    <polyline points="43,46 42,48 40,46" stroke-width="2" fill="none"/>
+    <!-- Inner cycle arrow (refinement cycle) -->
+    <path d="M 20 32 Q 20 20 32 20 Q 44 20 44 32 Q 44 40 38 44" stroke-width="2"/>
+    <polyline points="38,46 38,44 40,44" stroke-width="2" fill="none"/>
+    <!-- Center focus area -->
+    <circle cx="32" cy="32" r="8" stroke-width="2"/>
+    <circle cx="32" cy="32" r="4" stroke-width="1.5"/>
+    <!-- Iteration indicator -->
+    <circle cx="32" cy="32" r="1.5" fill="#000000"/>
   </g>
 </svg>

@@ -359,8 +359,8 @@ nav a.highlight:hover {
 #solar-system-canvas {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: -40%;
   bottom: 0;
   pointer-events: none;
   z-index: 1;
@@ -3120,7 +3120,7 @@ img {
 
 .cta-buttons .primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .cta-buttons .secondary {
@@ -3130,7 +3130,7 @@ img {
 }
 
 .cta-buttons .secondary:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {

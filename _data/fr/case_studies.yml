@@ -1,10 +1,9 @@
 - id: tech_startup
-  company_name: "TechVision Labs"
-  company_logo: "/assets/images/logos/techvision.svg"
-  company_url: "https://techvision.example.com"
+  company_name: "Acquia"
+  company_logo: "/assets/images/logos/acquia.svg"
   industry: "SaaS / Infrastructure Cloud"
   team_size: "35 personnes"
-  challenge: "TechVision Labs gérait les projets de 4 équipes (Produit, Engineering, QA, DevOps) avec des outils déconnectés. Les spécifications étaient dispersées, les délais de test QA repoussaient régulièrement les releases, et la planification des capacités était du travail manuel. L'équipe passait 8+ heures par semaine en réunions de statut juste pour rester alignée."
+  challenge: "Acquia gérait les projets de 4 équipes (Produit, Engineering, QA, DevOps) avec des outils déconnectés. Les spécifications étaient dispersées, les délais de test QA repoussaient régulièrement les releases, et la planification des capacités était du travail manuel. L'équipe passait 8+ heures par semaine en réunions de statut juste pour rester alignée."
   solution: "Ils ont adopté Sinra et unifié specs, dev, QA, et planification des releases dans une source unique de vérité. La planification des capacités temps réel leur a permis de voir les surcharges d'équipe avant qu'elles ne deviennent une crise. Le suivi automatique des tests liés aux specs a signifié que les problèmes de qualité étaient détectés tôt."
   results:
     - metric: "40%"
@@ -20,12 +19,11 @@
   timeline: "3 mois de l'inscription à l'adoption complète"
 
 - id: enterprise_healthcare
-  company_name: "HealthConnect Systems"
-  company_logo: "/assets/images/logos/healthconnect.svg"
-  company_url: "https://healthconnect.example.com"
+  company_name: "Asphalion MedTech"
+  company_logo: "/assets/images/logos/asphalion-medtech.svg"
   industry: "Technologie Santé / Conformité"
   team_size: "120+ personnes réparties sur 3 bureaux"
-  challenge: "En tant qu'entreprise de logiciels santé réglementée, HealthConnect avait des exigences de conformité strictes et des workflows complexes. Plusieurs équipes régionales travaillaient sur différentes fonctionnalités avec des priorités floues, la couverture des tests était difficile à suivre, et les fenêtres de déploiement étaient chaotiques. La préparation des releases était un jeu de devinettes."
+  challenge: "En tant qu'entreprise de logiciels santé réglementée, Asphalion MedTech avait des exigences de conformité strictes et des workflows complexes. Plusieurs équipes régionales travaillaient sur différentes fonctionnalités avec des priorités floues, la couverture des tests était difficile à suivre, et les fenêtres de déploiement étaient chaotiques. La préparation des releases était un jeu de devinettes."
   solution: "Les workflows personnalisables de Sinra et la gestion des releases sont devenus leur colonne vertébrale de conformité. Ils ont créé des statuts personnalisés correspondant à leur liste de contrôle réglementaire, intégré le suivi de la couverture des tests lié à chaque fonctionnalité, et construit des listes de contrôle d'approbation de pré-déploiement. La coordination multi-équipe via un tableau de bord de release unique a éliminé la confusion."
   results:
     - metric: "100%"
@@ -41,12 +39,11 @@
   timeline: "6 mois du pilote au déploiement à l'échelle de l'entreprise"
 
 - id: agency_digital
-  company_name: "Velocity Creative Agency"
-  company_logo: "/assets/images/logos/velocity.svg"
-  company_url: "https://velocity.example.com"
+  company_name: "WeThink Nordic"
+  company_logo: "/assets/images/logos/wethinknordic.svg"
   industry: "Agence Numérique / Services Client"
   team_size: "45 personnes gérant 15+ projets simultanés"
-  challenge: "En tant qu'agence numérique, Velocity gérait plusieurs projets clients simultanément, chacun avec des exigences et des délais différents. L'allocation des ressources était un cauchemar—les designers, développeurs, et QA changeaient constamment de contexte. Les clients n'avaient pas de visibilité sur la progression, et le glissement de périmètre tuait les marges sur chaque projet."
+  challenge: "En tant qu'agence numérique, WeThink Nordic gérait plusieurs projets clients simultanément, chacun avec des exigences et des délais différents. L'allocation des ressources était un cauchemar—les designers, développeurs, et QA changeaient constamment de contexte. Les clients n'avaient pas de visibilité sur la progression, et le glissement de périmètre tuait les marges sur chaque projet."
   solution: "Sinra est devenu leur centre de projet orienté client. Ils ont créé des modèles de projet pour les types de clients récurrents, ont donné aux clients un accès en lecture seule aux calendriers de release et aux métriques de qualité, et ont implémenté une planification des capacités stricte pour prévenir la surallocation. La planification axée sur les releases signifiait qu'ils pouvaient s'engager en confiance sur les délais de livraison."
   results:
     - metric: "45%"
@@ -62,12 +59,11 @@
   timeline: "2 mois pour la configuration initiale, évolution pendant 1 an"
 
 - id: fintech_payment
-  company_name: "FinServe Digital"
-  company_logo: "/assets/images/logos/finserve.svg"
-  company_url: "https://finserve.example.com"
+  company_name: "Arival Bank"
+  company_logo: "/assets/images/logos/arivalbank.svg"
   industry: "FinTech / Systèmes de Paiement"
   team_size: "65 personnes réparties sur 5 lignes de produits"
-  challenge: "FinServe Digital gérait des plateformes de traitement des paiements avec 5 équipes produits distinctes, chacune expédiant des fonctionnalités indépendantes mais partageant une infrastructure centrale. Les tests d'intégration étaient complexes, les dépendances de release entre équipes causaient des retards, et le suivi des fonctionnalités déployées où était presque impossible. Un seul bug pouvait affecter des milliers de transactions."
+  challenge: "Arival Bank gérait des plateformes de traitement des paiements avec 5 équipes produits distinctes, chacune expédiant des fonctionnalités indépendantes mais partageant une infrastructure centrale. Les tests d'intégration étaient complexes, les dépendances de release entre équipes causaient des retards, et le suivi des fonctionnalités déployées où était presque impossible. Un seul bug pouvait affecter des milliers de transactions."
   solution: "Sinra a unifié la planification des releases sur les 5 lignes de produits avec un calendrier de release maître. Ils ont créé un système de cartographie des dépendances pour identifier les points d'intégration tôt, automatisé les listes de contrôle de validation de pré-déploiement, et implémenté une visibilité en temps réel de quelles fonctionnalités étaient actives dans chaque environnement (dev, staging, production). Les workflows de release personnalisés correspondaient à leurs exigences strictes de conformité financière."
   results:
     - metric: "75%"
