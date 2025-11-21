@@ -189,7 +189,7 @@ Utilisez ce framework pour décider quelle méthodologie convient à chaque init
 
 La plupart des outils vous forcent à choisir: Jira pour Agile ou Azure DevOps pour Waterfall.
 
-Sinra est différent. Il traite **les deux workflows comme des citoyens de première classe**.
+Sinra est différent. Aucun workflow n'est privilégié.
 
 - **Phase de spécification:** Écrivez des requirements, planifiez les cas de test, assignez les testeurs. Tout avant le développement.
 - **Phase de développement:** Suivi basé sur cycles, QA continue, planification adaptative. Changez quand vous avez besoin.
