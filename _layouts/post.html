@@ -10,16 +10,16 @@ layout: default
 
     <div class="post-meta-full">
       <div class="post-meta-item author">
-        <span>{{ site.data[site.active_lang].blog.by_author }}</span>
+        <span>{{ site.data[site.active_lang].strings.blog.by_author }}</span>
       </div>
       <div class="post-meta-item">
-        <span>{{ page.date | date: site.data[site.active_lang].blog.date_format }}</span>
+        <span>{{ page.date | date: site.data[site.active_lang].strings.blog.date_format }}</span>
       </div>
       <div class="post-meta-item">
         <span class="category">{{ page.category }}</span>
       </div>
       <div class="post-meta-item reading-time">
-        <span>{{ page.content | number_of_words | divided_by: 200 | round | plus: 1 }} {{ site.data[site.active_lang].blog.min_read }}</span>
+        <span>{{ page.content | number_of_words | divided_by: 200 | round | plus: 1 }} {{ site.data[site.active_lang].strings.blog.min_read }}</span>
       </div>
     </div>
   </header>
@@ -38,9 +38,9 @@ layout: default
 
   <!-- Post CTA -->
   <div class="post-cta">
-    <h3>{{ site.data[site.active_lang].blog.ready_to_transform }}</h3>
-    <p>{{ site.data[site.active_lang].blog.cta_description }}</p>
-    <a href="https://app.sinra.dev/users/sign_up" class="button primary">{{ site.data[site.active_lang].blog.start_free_trial }}</a>
+    <h3>{{ site.data[site.active_lang].strings.blog.ready_to_transform }}</h3>
+    <p>{{ site.data[site.active_lang].strings.blog.cta_description }}</p>
+    <a href="https://app.sinra.dev/users/sign_up" class="button primary">{{ site.data[site.active_lang].strings.blog.start_free_trial }}</a>
   </div>
 
   <!-- Author Bio -->
@@ -48,7 +48,7 @@ layout: default
     <img src="/assets/images/sinra-logo.svg" style="filter: brightness(0) invert(1);" alt="Sinra Team" width="80" height="80">
     <div class="author-bio-content">
       <h4>Sinra Team</h4>
-      <p>{{ site.data[site.active_lang].blog.author_bio_description }}</p>
+      <p>{{ site.data[site.active_lang].strings.blog.author_bio_description }}</p>
     </div>
   </section>
 
@@ -56,14 +56,14 @@ layout: default
   {% assign related_posts = site.posts | where: "lang", page.lang | where: "category", page.category | where_exp: "post", "post.url != page.url" | sort: "date" | reverse | slice: 0, 3 %}
   {% if related_posts.size > 0 %}
   <section class="related-posts">
-    <h3>{{ site.data[site.active_lang].blog.related_articles }}</h3>
+    <h3>{{ site.data[site.active_lang].strings.blog.related_articles }}</h3>
     <div class="related-posts-grid">
       {% for post in related_posts %}
       <article class="related-post-card">
         <div class="category">{{ post.category }}</div>
         <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-        <a href="{{ post.url }}" class="read-more">{{ site.data[site.active_lang].blog.read_more }}</a>
+        <a href="{{ post.url }}" class="read-more">{{ site.data[site.active_lang].strings.blog.read_more }}</a>
       </article>
       {% endfor %}
     </div>
@@ -89,7 +89,7 @@ layout: default
   <nav class="post-navigation">
     {% if prev_post %}
     <a href="{{ prev_post.url }}" class="post-nav-item prev">
-      <span class="label">{{ site.data[site.active_lang].blog.previous }}</span>
+      <span class="label">{{ site.data[site.active_lang].strings.blog.previous }}</span>
       <span class="title">{{ prev_post.title }}</span>
     </a>
     {% endif %}
