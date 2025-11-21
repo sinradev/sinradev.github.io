@@ -5,8 +5,8 @@
 /* Blog Hero Section */
 .blog-hero {
   padding: 80px 0;
-  background: rgba(33, 150, 243, 0.05);
-  border-bottom: 2px solid rgba(33, 150, 243, 0.15);
+  background: rgba(199, 146, 233, 0.05);
+  border-bottom: 2px solid rgba(199, 146, 233, 0.15);
   margin-bottom: 60px;
 }
 
@@ -57,8 +57,8 @@
 }
 
 .post-card:hover {
-  border-color: rgba(33, 150, 243, 0.5);
-  box-shadow: 0 16px 40px rgba(33, 150, 243, 0.2);
+  border-color: rgba(199, 146, 233, 0.5);
+  box-shadow: 0 16px 40px rgba(199, 146, 233, 0.2);
   transform: translateY(-6px);
   background: rgba(30, 41, 59, 0.8);
 }
@@ -66,7 +66,7 @@
 .post-card-image {
   width: 100%;
   height: 240px;
-  background: linear-gradient(135deg, #2196F3 0%, #4CAF50 100%);
+  background: linear-gradient(135deg, #c792e9 0%, #4CAF50 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,8 +119,8 @@
 
 .post-meta .category {
   display: inline-block;
-  background: rgba(33, 150, 243, 0.1);
-  color: #2196F3;
+  background: rgba(199, 146, 233, 0.1);
+  color: #c792e9;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -256,7 +256,7 @@
   margin: 40px 0 24px;
   color: #f1f5f9;
   font-weight: 700;
-  border-left: 4px solid #2196F3;
+  border-left: 4px solid #c792e9;
   padding-left: 16px;
 }
 
@@ -311,7 +311,7 @@
 
 /* Code Blocks */
 .post-content code {
-  background: rgba(33, 150, 243, 0.15);
+  background: rgba(199, 146, 233, 0.15);
   color: #60a5fa;
   padding: 2px 6px;
   border-radius: 4px;
@@ -346,8 +346,8 @@
 }
 
 .post-content table thead {
-  background: rgba(33, 150, 243, 0.1);
-  border-bottom: 2px solid #2196F3;
+  background: rgba(199, 146, 233, 0.1);
+  border-bottom: 2px solid #c792e9;
 }
 
 .post-content table th,
@@ -358,7 +358,7 @@
 }
 
 .post-content table tbody tr:hover {
-  background: rgba(33, 150, 243, 0.05);
+  background: rgba(199, 146, 233, 0.05);
 }
 
 .post-content table th {
@@ -394,8 +394,8 @@
    ============================================================================ */
 
 .author-bio {
-  background: rgba(33, 150, 243, 0.05);
-  border: 1px solid rgba(33, 150, 243, 0.15);
+  background: rgba(199, 146, 233, 0.05);
+  border: 1px solid rgba(199, 146, 233, 0.15);
   border-radius: 12px;
   padding: 24px;
   margin: 60px 0;
@@ -457,8 +457,8 @@
 }
 
 .related-post-card:hover {
-  border-color: #2196F3;
-  box-shadow: 0 8px 24px rgba(33, 150, 243, 0.12);
+  border-color: #c792e9;
+  box-shadow: 0 8px 24px rgba(199, 146, 233, 0.12);
 }
 
 .related-post-card .category {
@@ -486,7 +486,7 @@
 }
 
 .related-post-card a:hover h4 {
-  color: #2196F3;
+  color: #c792e9;
 }
 
 /* ============================================================================
@@ -514,8 +514,8 @@
 }
 
 .post-nav-item:hover {
-  border-color: #2196F3;
-  background: rgba(33, 150, 243, 0.02);
+  border-color: #c792e9;
+  background: rgba(199, 146, 233, 0.02);
 }
 
 .post-nav-item .label {
@@ -548,7 +548,7 @@
 
 .post-cta {
   background: rgba(30, 41, 59, 0.8);
-  border: 2px solid #2196F3;
+  border: 2px solid #c792e9;
   border-radius: 12px;
   padding: 48px 40px;
   text-align: center;
@@ -576,7 +576,7 @@
 
 .blog-cta {
   background: rgba(30, 41, 59, 0.8);
-  border-top: 3px solid #2196F3;
+  border-top: 3px solid #c792e9;
   padding: 70px 40px;
   text-align: center;
   margin-top: 100px;
