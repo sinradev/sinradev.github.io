@@ -40,6 +40,16 @@ blog:
   older_posts: Older posts
   newer_posts: Newer posts
   date_format: "%B %d, %Y"
+  by_author: By Sinra Team
+  min_read: min read
+  related_articles: Related Articles
+  read_more: Read more →
+  previous: "← Previous"
+  next: "Next →"
+  ready_to_transform: Ready to Transform Your Project Management?
+  cta_description: Apply these insights with Sinra - the unified platform for modern teams.
+  start_free_trial: Start Free Trial
+  author_bio_description: We help engineering teams ship faster, with higher quality, and fewer surprises. Learn from our experience building project management tools that work with how real teams actually work.
 contact:
   title: Contact
   heading: Get in touch today
