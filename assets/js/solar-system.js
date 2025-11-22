@@ -150,8 +150,8 @@
       y,
       radius * 2.5,
     );
-    haloGradient.addColorStop(0, "rgba(255, 215, 0, 0.3)");
-    haloGradient.addColorStop(0.5, "rgba(255, 140, 0, 0.2)");
+    haloGradient.addColorStop(0, "rgba(255, 215, 0, 0.1)");
+    haloGradient.addColorStop(0.5, "rgba(255, 140, 0, 0.1)");
     haloGradient.addColorStop(1, "rgba(255, 140, 0, 0)");
 
     ctx.fillStyle = haloGradient;
@@ -171,9 +171,9 @@
       y,
       radius,
     );
-    sunGradient.addColorStop(0, "#ffffff");
-    sunGradient.addColorStop(0.4, "#ffd700");
-    sunGradient.addColorStop(1, "#ff8c00");
+    sunGradient.addColorStop(0, "#ecd373");
+    sunGradient.addColorStop(0.4, "#efd057");
+    sunGradient.addColorStop(1, "#e1b716");
 
     ctx.fillStyle = sunGradient;
     ctx.beginPath();
