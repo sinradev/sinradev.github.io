@@ -1,31 +1,14 @@
-- name: "TechVision Labs"
-  logo: "/assets/images/logos/techvision.svg"
-  url: "https://techvision.example.com"
+- name: "Acquia"
+  logo: "/assets/images/logos/acquia.svg"
 
-- name: "HealthConnect Systems"
-  logo: "/assets/images/logos/healthconnect.svg"
-  url: "https://healthconnect.example.com"
+- name: "Asphalion MedTech"
+  logo: "/assets/images/logos/asphalion-medtech.svg"
 
-- name: "Velocity Creative Agency"
-  logo: "/assets/images/logos/velocity.svg"
-  url: "https://velocity.example.com"
+- name: "WeThink Nordic"
+  logo: "/assets/images/logos/wethinknordic.svg"
 
-- name: "CloudScale Inc"
-  logo: "/assets/images/logos/cloudscale.svg"
-  url: "https://cloudscale.example.com"
+- name: "Futur"
+  logo: "/assets/images/logos/futur.svg"
 
-- name: "FinServe Digital"
-  logo: "/assets/images/logos/finserve.svg"
-  url: "https://finserve.example.com"
-
-- name: "DataFlow Analytics"
-  logo: "/assets/images/logos/dataflow.svg"
-  url: "https://dataflow.example.com"
-
-- name: "Nexus Innovations"
-  logo: "/assets/images/logos/nexus.svg"
-  url: "https://nexus.example.com"
-
-- name: "Quantum Systems"
-  logo: "/assets/images/logos/quantum.svg"
-  url: "https://quantum.example.com"
+- name: "Arival Bank"
+  logo: "/assets/images/logos/arivalbank.svg"

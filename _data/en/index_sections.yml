@@ -8,7 +8,7 @@
   image: /assets/images/methodology-hybrid.png
   alt: Dual Workflow Methodology
   category: "Dual Workflows"
-- title: <strong>Built-in Capacity Planning</strong> - No More Bottlenecks
+- title: <strong>Integrated Workload Planning</strong> - No More Bottlenecks
   body: "Sinra calculates team and individual workload in real-time. <strong>See who's overloaded before cycles even start.</strong>
       <ul>
         <li>Per-cycle workload tracking: Track estimated time vs. capacity by developer and team.</li>
@@ -16,7 +16,7 @@
         <li>Automatic warnings: System alerts when tasks exceed capacity.</li>
       </ul>"
   image: /assets/images/sinra-overview.png
-  alt: Advanced Capacity Planning
+  alt: Advanced Workload Planning
   category: "Smart Allocation"
 - title: <strong>Integrated Testing Management</strong> - QA Built-in
   body: "Sinra treats testing as a first-class citizen, not an afterthought. Create test cases tied to specifications and track acceptance status directly.
@@ -41,7 +41,7 @@
 - title: <strong>Multi-View Intelligence</strong> - Kanban, List, and Release Planning
   body: "Switch between <strong>Kanban</strong> (visual board by status) and <strong>List</strong> (detailed table) views instantly. Plus dedicated Release and Cycle views for big-picture planning.
       <ul>
-        <li>Kanban board: Drag-and-drop with real-time updates via Hotwire.</li>
+        <li>Kanban board: Drag-and-drop with real-time updates.</li>
         <li>Advanced filtering: Apply complex filters across views without reloading.</li>
         <li>Release roadmap: See your entire release timeline with all cycles and capabilities.</li>
       </ul>"
