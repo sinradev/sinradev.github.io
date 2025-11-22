@@ -1,10 +1,10 @@
 - id: tech_startup
-  company_name: "TechVision Labs"
-  company_logo: "/assets/images/logos/techvision.svg"
+  company_name: "Acquia"
+  company_logo: "/assets/images/logos/acquia.svg"
   company_url: "https://techvision.example.com"
   industry: "SaaS / Cloud Infrastructure"
   team_size: "35 people"
-  challenge: "TechVision Labs was managing projects across 4 teams (Product, Engineering, QA, DevOps) using disconnected tools. Specifications were scattered, QA testing delays pushed releases back consistently, and capacity planning was manual guesswork. The team spent 8+ hours per week in status meetings just to stay aligned."
+  challenge: "Acquia was managing projects across 4 teams (Product, Engineering, QA, DevOps) using disconnected tools. Specifications were scattered, QA testing delays pushed releases back consistently, and capacity planning was manual guesswork. The team spent 8+ hours per week in status meetings just to stay aligned."
   solution: "They adopted Sinra and unified specs, dev, QA, and release planning in a single source of truth. Real-time capacity planning helped them see team overallocation before it became a crisis. Automated test tracking tied to specs meant quality issues were caught early."
   results:
     - metric: "40%"
@@ -20,12 +20,12 @@
   timeline: "3 months from signup to full adoption"
 
 - id: enterprise_healthcare
-  company_name: "HealthConnect Systems"
-  company_logo: "/assets/images/logos/healthconnect.svg"
+  company_name: "Asphalion MedTech"
+  company_logo: "/assets/images/logos/asphalion-medtech.svg"
   company_url: "https://healthconnect.example.com"
   industry: "Healthcare Technology / Compliance"
   team_size: "120+ people across 3 offices"
-  challenge: "As a regulated healthcare software company, HealthConnect had strict compliance requirements and complex workflows. Multiple regional teams worked on different features with unclear priorities, testing coverage was hard to track, and deployment windows were chaotic. Release readiness was a guessing game."
+  challenge: "As a regulated healthcare software company, Asphalion MedTech had strict compliance requirements and complex workflows. Multiple regional teams worked on different features with unclear priorities, testing coverage was hard to track, and deployment windows were chaotic. Release readiness was a guessing game."
   solution: "Sinra's customizable workflows and release management became their compliance backbone. They created custom statuses matching their regulatory checklist, integrated test coverage tracking tied to each feature, and built pre-deployment approval checklists. Multi-team coordination through a single release dashboard eliminated confusion."
   results:
     - metric: "100%"
@@ -41,12 +41,12 @@
   timeline: "6 months from pilot to enterprise-wide rollout"
 
 - id: agency_digital
-  company_name: "Velocity Creative Agency"
-  company_logo: "/assets/images/logos/velocity.svg"
+  company_name: "WeThink Nordic"
+  company_logo: "/assets/images/logos/wethinknordic.svg"
   company_url: "https://velocity.example.com"
   industry: "Digital Agency / Client Services"
   team_size: "45 people managing 15+ concurrent projects"
-  challenge: "As a digital agency, Velocity managed multiple client projects simultaneously, each with different requirements and timelines. Resource allocation was a nightmare—designers, developers, and QA were constantly context-switching. Clients had no visibility into progress, and scope creep killed margins on every project."
+  challenge: "As a digital agency, WeThink Nordic managed multiple client projects simultaneously, each with different requirements and timelines. Resource allocation was a nightmare—designers, developers, and QA were constantly context-switching. Clients had no visibility into progress, and scope creep killed margins on every project."
   solution: "Sinra became their client-facing project hub. They created project templates for recurring client types, gave clients read-only access to release timelines and quality metrics, and implemented strict capacity planning to prevent overallocation. Release-driven planning meant they could commit to delivery dates confidently."
   results:
     - metric: "45%"
@@ -62,12 +62,12 @@
   timeline: "2 months for initial setup, evolved over 1 year"
 
 - id: fintech_payment
-  company_name: "FinServe Digital"
-  company_logo: "/assets/images/logos/finserve.svg"
+  company_name: "Arival Bank"
+  company_logo: "/assets/images/logos/arivalbank.svg"
   company_url: "https://finserve.example.com"
   industry: "FinTech / Payment Systems"
   team_size: "65 people across 5 product lines"
-  challenge: "FinServe Digital managed payment processing platforms with 5 separate product teams, each shipping independent features but sharing core infrastructure. Integration testing was complex, release dependencies across teams caused delays, and tracking which features were deployed where was nearly impossible. A single bug could affect thousands of transactions."
+  challenge: "Arival Bank managed payment processing platforms with 5 separate product teams, each shipping independent features but sharing core infrastructure. Integration testing was complex, release dependencies across teams caused delays, and tracking which features were deployed where was nearly impossible. A single bug could affect thousands of transactions."
   solution: "Sinra unified release planning across all 5 product lines with a master release calendar. They created a dependency mapping system to identify integration points early, automated pre-deployment validation checklists, and implemented real-time visibility of which features were live in each environment (dev, staging, production). Custom release workflows matched their strict financial compliance requirements."
   results:
     - metric: "75%"

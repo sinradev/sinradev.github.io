@@ -7,6 +7,7 @@ date: 2024-11-13
 lang: fr
 category: Méthodologie
 excerpt: "La plupart des équipes font face à un faux choix: V-Model ou Agile. Mais les meilleurs projets utilisent les deux. Découvrez pourquoi les méthodologies hybrides gagnent et comment les implémenter."
+permalink: /méthodologie/:year/:month/:day/vmodel-vs-agile-choose-both.html
 ---
 
 ## Le Mythe du Choix Binaire
@@ -30,12 +31,12 @@ Le problème n'est pas les méthodologies—c'est que les managers sont forcés 
 - Exigences bien comprises dès le départ (scope fixe, timeline fixe)
 - Développement parallèle + dépendances de test
 - Multi-phases nécessitant des approbations
-- Cycles long (18+ mois)
+- Cycles longs (18+ mois)
 
 **Le Piège V-Model:**
 La vraie capacité reste invisible jusqu'à 60% du développement. Vous planifiez sur les estimations d'hier et livrez sur la réalité d'aujourd'hui. À ce moment, vous avez déjà promis des dates impossibles.
 
-Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patient. Ils ont découvert des problèmes d'intégration au mois 4—mais ils avaient déjà promis le lancement aux administrateurs hôpital. Les 2 derniers mois: mode panique, features coupées, tests coupés, qualité coupée.
+Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patient. Ils ont découvert des problèmes d'intégration au mois 4—mais ils avaient déjà promis le lancement aux administrateurs hospitaliers. Les 2 derniers mois: mode panique, features coupées, tests coupés, qualité coupée.
 
 ![Diagramme V-Model Waterfall](/assets/images/vmodel-waterfall-diagram.svg "Approche V-Model / Waterfall")
 
@@ -53,7 +54,7 @@ Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patien
 **Le Piège Agile:**
 10+ heures par semaine en standups. Repriorisation constante. Features à moitié construites parce que les exigences ont changé. Équipes refaisant du travail parce que les décisions vivent dans les threads Slack.
 
-Exemple: Une agence a pris l'approche "pure Agile" pour un rebuild CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement rebuilt. L'équipe avait optimisé pour la vélocité, pas la valeur.
+Exemple: Une agence a pris l'approche "pure Agile" pour une refonte de CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement reconstruit. L'équipe avait optimisé pour la vélocité, pas la valeur.
 
 ![Diagramme Agile Itératif](/assets/images/agile-iterative-diagram.svg "Approche Agile / Itérative")
 
@@ -74,7 +75,7 @@ Les équipes performantes ne choisissent pas entre V-Model et Agile—elles **ut
 **Phase de Développement (Agile):**
 - Construire en cycles
 - Obtenir un feedback hebdomadaire
-- Ajuster les détails d'implémentation
+- Ajuster les détails de l'implémentation
 - Boucles de feedback rapides
 - Tests continus
 
@@ -135,7 +136,7 @@ Tout le travail n'est pas égal. Certains ont besoin de planification upfront; c
 ### 2. Créez des Workflows Parallèles
 
 **Track de Spécification (V-Model):**
-- Requirements détaillées écrites
+- Exigences détaillées écrites
 - Critères d'acceptation définis
 - Dépendances identifiées
 - Cas de test planifiés
@@ -152,7 +153,7 @@ Tout le travail n'est pas égal. Certains ont besoin de planification upfront; c
 - Le développement gèle
 - Les tests de release commencent
 - Approbations de stage gate
-- Vérification de readiness de déploiement
+- Vérification de la préparation du déploiement
 
 ### 3. Utilisez la Visibilité Temps Réel
 
@@ -161,7 +162,7 @@ La méthodologie hybride ne fonctionne *que si* vous pouvez voir:
 - Quelles features sont testées vs non-testées
 - Contraintes de capacité à travers les deux tracks
 - Risques de dépendance entre phases
-- Readiness de release en temps réel
+- Préparation du lancement en temps réel
 
 Sans visibilité, hybride devient de l'imprévisibilité.
 
@@ -175,13 +176,13 @@ Utilisez ce framework pour décider quelle méthodologie convient à chaque init
 
 | Facteur | Heavy V-Model | Hybride | Heavy Agile |
 |---------|---------------|---------|------------|
-| **Clarté des requirements** | 100% connues | 80% connues | 50% connues |
-| **Besoins réglementaires** | Audit strict requis | Conformité + vitesse | Best-effort |
-| **Cycles de feedback** | Trimestriel+ | Mensuel | Hebdo ou quotidien |
+| **Clarté des exigences** | 100% connues | 80% connues | 50% connues |
+| **Besoins réglementaires** | Audit strict requis | Conformité + vitesse | Au mieux |
+| **Cycles de feedback** | Trimestriel+ | Mensuel | Hebdomadaire ou quotidien |
 | **Fréquence des changements** | Rare | Modérée | Constante |
 | **Taille d'équipe** | Grande (20+) | Moyenne (8-15) | Petite (2-6) |
 | **Tolérance au risque** | Basse | Modérée | Haute |
-| **Time to market** | 6+ mois | 3-6 mois | 1-3 mois |
+| **Délai de mise sur le marché** | 6+ mois | 3-6 mois | 1-3 mois |
 
 ---
 
@@ -189,9 +190,9 @@ Utilisez ce framework pour décider quelle méthodologie convient à chaque init
 
 La plupart des outils vous forcent à choisir: Jira pour Agile ou Azure DevOps pour Waterfall.
 
-Sinra est différent. Il traite **les deux workflows comme des citoyens de première classe**.
+Sinra est différent. Aucun workflow n'est privilégié.
 
-- **Phase de spécification:** Écrivez des requirements, planifiez les cas de test, assignez les testeurs. Tout avant le développement.
+- **Phase de spécification:** Écrivez des exigences, planifiez les cas de test, assignez les testeurs. Tout cela avant le développement.
 - **Phase de développement:** Suivi basé sur cycles, QA continue, planification adaptative. Changez quand vous avez besoin.
 - **Phase de release:** Checklists de déploiement, stage gates, vérification de conformité. Livrez avec confiance.
 

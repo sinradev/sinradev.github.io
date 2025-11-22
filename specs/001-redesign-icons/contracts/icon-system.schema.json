@@ -1,0 +1,422 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sinra.dev/schemas/icon-system-v1.schema.json",
+  "title": "Sinra Icon System Schema",
+  "description": "Specification for all icons in the Sinra website redesign project",
+  "type": "object",
+  "required": ["version", "project", "icons"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Schema version (semantic versioning)"
+    },
+    "project": {
+      "type": "string",
+      "const": "001-redesign-icons",
+      "description": "Project identifier"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Schema generation date"
+    },
+    "icons": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "description": "Array of all icon specifications (15 total)",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "category",
+          "description",
+          "file_path",
+          "viewbox",
+          "stroke_width",
+          "alt_text",
+          "use_cases"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$",
+            "description": "Unique identifier (kebab-case)",
+            "examples": ["editor", "visibility", "release-mgmt"]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 50,
+            "description": "Display name",
+            "examples": ["Rich Text Editor", "Visibility", "Release Management"]
+          },
+          "category": {
+            "type": "string",
+            "enum": ["feature", "benefit", "methodology", "interactive"],
+            "description": "Icon category"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 200,
+            "description": "Semantic meaning and context"
+          },
+          "visual_approach": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 100,
+            "description": "Visual metaphor or design approach",
+            "examples": ["Eye or window metaphor", "Ascending line indicator", "Pen + document"]
+          },
+          "file_path": {
+            "type": "string",
+            "pattern": "^assets/images/(features|benefits|methodology|interactive)/[a-z][a-z0-9-]*\\.svg$",
+            "description": "Location of SVG file in repository"
+          },
+          "viewbox": {
+            "type": "string",
+            "const": "0 0 64 64",
+            "description": "Fixed viewBox for all icons"
+          },
+          "canvas_size": {
+            "type": "object",
+            "properties": {
+              "width": { "type": "integer", "const": 64 },
+              "height": { "type": "integer", "const": 64 },
+              "unit": { "type": "string", "const": "px" }
+            }
+          },
+          "stroke_width": {
+            "type": "number",
+            "minimum": 1.5,
+            "maximum": 2.5,
+            "description": "Primary stroke width in pixels"
+          },
+          "stroke_linecap": {
+            "type": "string",
+            "enum": ["butt", "round", "square"],
+            "default": "round",
+            "description": "Stroke endpoint style"
+          },
+          "stroke_linejoin": {
+            "type": "string",
+            "enum": ["arcs", "bevel", "miter", "miter-clip", "round"],
+            "default": "round",
+            "description": "Stroke junction style"
+          },
+          "colors": {
+            "type": "object",
+            "properties": {
+              "stroke": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$",
+                "const": "#000000",
+                "description": "Stroke color (black)"
+              },
+              "fill": {
+                "type": "string",
+                "enum": ["none", "transparent", "#ffffff"],
+                "description": "Fill color (transparent by default)"
+              },
+              "currentColor_support": {
+                "type": "boolean",
+                "const": true,
+                "description": "Supports CSS currentColor for theming"
+              }
+            }
+          },
+          "scaling": {
+            "type": "object",
+            "properties": {
+              "min_display_size": {
+                "type": "integer",
+                "const": 32,
+                "description": "Minimum display size (px)"
+              },
+              "max_display_size": {
+                "type": "integer",
+                "const": 300,
+                "description": "Maximum display size (px)"
+              },
+              "tested_sizes": {
+                "type": "array",
+                "items": { "type": "integer" },
+                "const": [60, 96, 128, 192],
+                "description": "Representative test sizes"
+              }
+            }
+          },
+          "alt_text": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 100,
+            "pattern": "^[A-Z]",
+            "description": "Semantic alt text for accessibility (starts with capital letter)",
+            "examples": [
+              "Visibility - Clear planning and oversight of all work",
+              "Rich Text Editor - Write and edit content"
+            ]
+          },
+          "aria_label": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 100,
+            "description": "ARIA label for inline SVGs (optional, defaults to alt_text)"
+          },
+          "use_cases": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "homepage-features",
+                "about-benefits",
+                "methodology-comparison",
+                "pricing-table",
+                "faq-section",
+                "contact-form"
+              ]
+            },
+            "description": "Where icon appears on site"
+          },
+          "file_size": {
+            "type": "object",
+            "properties": {
+              "unoptimized_bytes": {
+                "type": "integer",
+                "description": "File size before optimization"
+              },
+              "optimized_bytes": {
+                "type": "integer",
+                "maximum": 5000,
+                "description": "File size after SVGO optimization"
+              },
+              "optimization_ratio": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Ratio of optimized/unoptimized"
+              }
+            }
+          },
+          "validation": {
+            "type": "object",
+            "properties": {
+              "recognition_tested": {
+                "type": "boolean",
+                "description": "User recognition testing completed"
+              },
+              "recognition_score": {
+                "type": "number",
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "description": "Percentage of test users who correctly identified icon (target: 0.75+)"
+              },
+              "recognition_participants": {
+                "type": "integer",
+                "minimum": 10,
+                "description": "Number of users in recognition test"
+              },
+              "coherence_variance": {
+                "type": "number",
+                "maximum": 1.5,
+                "description": "Max stroke weight variance across icon set (px)"
+              },
+              "coherence_verified": {
+                "type": "boolean",
+                "description": "Visual coherence audit completed"
+              },
+              "optimized": {
+                "type": "boolean",
+                "description": "SVGO optimization completed"
+              },
+              "accessibility_tested": {
+                "type": "boolean",
+                "description": "Screen reader testing completed"
+              },
+              "browser_tested": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Browsers tested",
+                "examples": [["Chrome", "Firefox", "Safari"]]
+              },
+              "production_ready": {
+                "type": "boolean",
+                "description": "Icon approved for deployment"
+              },
+              "notes": {
+                "type": "string",
+                "description": "Any additional validation notes"
+              }
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "created_date": {
+                "type": "string",
+                "format": "date",
+                "description": "Date icon was created"
+              },
+              "designer": {
+                "type": "string",
+                "description": "Designer name (optional)"
+              },
+              "design_tool": {
+                "type": "string",
+                "enum": ["figma", "adobe-xd", "sketch", "inkscape"],
+                "description": "Tool used to create icon"
+              },
+              "revision": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Revision number (1 for initial)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "design_system": {
+      "type": "object",
+      "properties": {
+        "base_canvas": {
+          "type": "string",
+          "const": "64x64px",
+          "description": "Standard canvas size"
+        },
+        "stroke_weight_primary": {
+          "type": "number",
+          "const": 2,
+          "description": "Primary stroke weight (px)"
+        },
+        "stroke_weight_range": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "number", "const": 1.5 },
+            "max": { "type": "number", "const": 2.5 }
+          },
+          "description": "Acceptable stroke weight range"
+        },
+        "maximum_variance": {
+          "type": "number",
+          "const": 1.5,
+          "description": "Maximum variance across all icons (px)"
+        },
+        "decimal_precision": {
+          "type": "integer",
+          "const": 2,
+          "description": "Path coordinate decimal precision"
+        },
+        "optimization_tool": {
+          "type": "string",
+          "const": "SVGO",
+          "description": "SVG optimization tool"
+        },
+        "file_size_target": {
+          "type": "object",
+          "properties": {
+            "maximum_bytes": { "type": "integer", "const": 5000 },
+            "unit": { "type": "string", "const": "bytes" }
+          }
+        }
+      }
+    },
+    "success_criteria": {
+      "type": "object",
+      "properties": {
+        "recognition_accuracy": {
+          "type": "number",
+          "minimum": 0.75,
+          "description": "Target: 75%+ of test users identify icons correctly"
+        },
+        "recognition_test_size": {
+          "type": "integer",
+          "minimum": 10,
+          "description": "Minimum participants for recognition testing"
+        },
+        "file_size_compliance": {
+          "type": "string",
+          "const": "100% of icons ≤5KB post-optimization"
+        },
+        "visual_clarity": {
+          "type": "string",
+          "const": "All icons recognizable at 60px minimum size"
+        },
+        "interactive_affordance": {
+          "type": "string",
+          "const": "100% of interactive icons maintain functional affordances"
+        },
+        "coherence_variance": {
+          "type": "string",
+          "const": "Stroke weight variance ≤1.5px across icon set"
+        },
+        "accessibility": {
+          "type": "string",
+          "const": "All icons have semantic alt text and pass screen reader testing"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "version": "1.0.0",
+      "project": "001-redesign-icons",
+      "date": "2025-11-18",
+      "icons": [
+        {
+          "id": "visibility",
+          "name": "Visibility",
+          "category": "benefit",
+          "description": "Icon representing seeing, understanding, clarity, or transparency in planning and execution",
+          "visual_approach": "Eye or window metaphor",
+          "file_path": "assets/images/benefits/visibility.svg",
+          "viewbox": "0 0 64 64",
+          "canvas_size": { "width": 64, "height": 64, "unit": "px" },
+          "stroke_width": 2,
+          "stroke_linecap": "round",
+          "stroke_linejoin": "round",
+          "colors": {
+            "stroke": "#000000",
+            "fill": "transparent",
+            "currentColor_support": true
+          },
+          "scaling": {
+            "min_display_size": 32,
+            "max_display_size": 300,
+            "tested_sizes": [60, 96, 128, 192]
+          },
+          "alt_text": "Visibility - Clear planning and oversight of all work",
+          "aria_label": "Visibility - Clear planning and oversight of all work",
+          "use_cases": ["about-benefits"],
+          "file_size": {
+            "unoptimized_bytes": 3200,
+            "optimized_bytes": 1850,
+            "optimization_ratio": 0.58
+          },
+          "validation": {
+            "recognition_tested": true,
+            "recognition_score": 0.92,
+            "recognition_participants": 12,
+            "coherence_variance": 1.0,
+            "coherence_verified": true,
+            "optimized": true,
+            "accessibility_tested": true,
+            "browser_tested": ["Chrome", "Firefox", "Safari"],
+            "production_ready": true,
+            "notes": "Eye metaphor clearly communicated; 92% accuracy on recognition test"
+          },
+          "metadata": {
+            "created_date": "2025-11-18",
+            "designer": "Design team",
+            "design_tool": "figma",
+            "revision": 1
+          }
+        }
+      ]
+    }
+  ]
+}
