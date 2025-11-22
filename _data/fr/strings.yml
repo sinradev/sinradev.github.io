@@ -45,7 +45,7 @@ why_sinra_title: Pourquoi les Équipes Choisissent Sinra
 why_sinra_description: Les équipes modernes ont besoin d'équilibre entre planification structurée et flexibilité d'exécution. Sinra unifie ces deux mondes en une seule plateforme.
 why_sinra_stats:
   - stat: "4"
-    label: "outils en moyenne peuvent être remplacer par Sinra"
+    label: "outils en moyenne peuvent être remplacés par Sinra"
   - stat: "40%"
     label: "de temps gagné sur la coordination entre équipes"
   - stat: "100%"
@@ -54,7 +54,7 @@ why_sinra_benefits:
   - title: "Visibilité Complète et Centralisée"
     description: "Specs, développements, tests et releases convergent en une seule source de vérité. Élimine la fragmentation de l'information."
   - title: "Planification Fondée sur les Réalités"
-    description: "Comprenez précisément les capacités et disponibilités de votre équipe. Planifiez avec vos données, non avec à travers des estimations."
+    description: "Comprenez précisément les capacités et disponibilités de votre équipe. Planifiez avec vos données, pas à travers des estimations."
   - title: "Livraison de Qualité Maîtrisée"
     description: "QA intégré au processus, pas appliqué a posteriori. Détectez les bugs dès la conception, livrez sans appréhension."
 features: Fonctionnalités
@@ -135,7 +135,7 @@ case_studies:
   results: Résultats
   timeline_label: Délai
 trusted_by:
-  title: De Confiance par les Équipes des Entreprises Avant-Gardistes
+  title: Reconnu par les Équipes des Entreprises Avant-Gardistes
   description: Des startups SaaS aux grandes entreprises réglementées en passant par les agences numériques, les équipes choisissent Sinra pour gérer leurs projets les plus complexes.
   stat_teams: "1000+"
   stat_teams_label: équipes collaborant avec Sinra
