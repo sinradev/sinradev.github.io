@@ -685,15 +685,15 @@ CSS:
 
 À ajouter dynamiquement dans post.html:
 ```html
-<section class="related-posts">
+{% raw %}<section class="related-posts">
   <h3>Related Articles</h3>
   <div class="posts-grid-mini">
-    {% assign related = site.posts 
-       | where: "category", page.category 
+    {% assign related = site.posts
+       | where: "category", page.category
        | where: "lang", page.lang
        | where_not: "url", page.url
        | sort: "date" | reverse | first: 3 %}
-    
+
     {% for post in related %}
       <article class="post-card-mini">
         <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
@@ -701,7 +701,7 @@ CSS:
       </article>
     {% endfor %}
   </div>
-</section>
+</section>{% endraw %}
 ```
 
 CSS:
@@ -822,13 +822,13 @@ class DiagramGenerator {
 ## Layout post.html - Refactorisé
 
 ```html
----
+{% raw %}---
 layout: page
 ---
 
 <article class="blog-post">
   <div class="text-container">
-    
+
     <!-- Hero Section -->
     <header class="post-header">
       <div class="post-meta">
@@ -840,17 +840,17 @@ layout: page
           <span class="reading-time">{{ page.reading_time }}</span>
         {% endif %}
       </div>
-      
+
       <h1>{{ page.title }}</h1>
-      
+
       {% if page.subtitle %}
         <p class="subtitle">{{ page.subtitle }}</p>
       {% endif %}
-      
+
       {% if page.featured_image %}
         <figure class="featured-image-container">
-          <img 
-            src="{{ page.featured_image }}" 
+          <img
+            src="{{ page.featured_image }}"
             alt="{{ page.featured_image_alt }}"
             class="featured-image"
           />
@@ -890,12 +890,12 @@ layout: page
     <section class="related-posts">
       <h3>Related Articles</h3>
       <div class="posts-grid-mini">
-        {% assign related = site.posts 
-          | where: "category", page.category 
+        {% assign related = site.posts
+          | where: "category", page.category
           | where: "lang", page.lang
           | where_not: "url", page.url
           | sort: "date" | reverse | first: 3 %}
-        
+
         {% if related.size > 0 %}
           {% for post in related %}
             <article class="post-card-mini">
@@ -917,7 +917,7 @@ layout: page
           <span class="nav-title">{{ page.previous.title }}</span>
         </a>
       {% endif %}
-      
+
       {% if page.next.url %}
         <a href="{{ page.next.url }}" class="nav-next">
           <span class="nav-label">Next Article</span>
@@ -934,7 +934,7 @@ layout: page
     </section>
 
   </div>
-</article>
+</article>{% endraw %}
 ```
 
 **CSS pour post.html refactorisé:**
