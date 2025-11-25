@@ -127,7 +127,7 @@ Ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` après les
 Créer `/Users/thomas/Apps/sinra-website/_includes/seo-schema.html`:
 
 ```liquid
-<script type="application/ld+json">
+{% raw %}<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -146,13 +146,13 @@ Créer `/Users/thomas/Apps/sinra-website/_includes/seo-schema.html`:
     "availableLanguage": ["en", "fr"]
   }
 }
-</script>
+</script>{% endraw %}
 ```
 
 Puis ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` après `</head>`:
 
 ```html
-  {% include seo-schema.html %}
+{% raw %}  {% include seo-schema.html %}{% endraw %}
 ```
 
 ---
@@ -162,7 +162,7 @@ Puis ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` aprè
 Créer `/Users/thomas/Apps/sinra-website/_includes/breadcrumb-schema.html`:
 
 ```liquid
-{% if page.url != "/" %}
+{% raw %}{% if page.url != "/" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -183,13 +183,13 @@ Créer `/Users/thomas/Apps/sinra-website/_includes/breadcrumb-schema.html`:
   ]
 }
 </script>
-{% endif %}
+{% endif %}{% endraw %}
 ```
 
 Utiliser dans la template page:
 
 ```html
-{% include breadcrumb-schema.html %}
+{% raw %}{% include breadcrumb-schema.html %}{% endraw %}
 ```
 
 ---

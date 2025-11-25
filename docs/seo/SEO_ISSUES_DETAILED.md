@@ -371,17 +371,17 @@ Ou convertir avec ImageMagick/TinyPNG API
 **Impact SEO**: Faible  
 **Découverte**: default.html ligne 6
 
-**Description**:  
+**Description**:
 Syntaxe cassée:
 ```html
-<meta http-equiv="Content-Language" content="{ {site.active_lang }}">
-<!-- Espaces superflus: { { au lieu de {{ -->
+{% raw %}<meta http-equiv="Content-Language" content="{ {site.active_lang }}">
+<!-- Espaces superflus: { { au lieu de {{ -->{% endraw %}
 ```
 
-**Solution**:  
+**Solution**:
 Corriger:
 ```html
-<meta http-equiv="Content-Language" content="{{ site.active_lang }}">
+{% raw %}<meta http-equiv="Content-Language" content="{{ site.active_lang }}">{% endraw %}
 ```
 
 **Effort**: 5 minutes
