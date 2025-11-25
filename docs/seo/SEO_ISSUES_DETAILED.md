@@ -433,12 +433,12 @@ jekyll-feed génère un flux RSS mais:
 **Impact SEO**: Faible (mais hreflang crucial pour multilingue)  
 **Découverte**: Grep pour I18n_Headers
 
-**Description**:  
-`{% I18n_Headers %}` est censé générer les hreflang mais:
+**Description**:
+{% raw %}`{% I18n_Headers %}` est censé générer les hreflang mais:{% endraw %}
 - Tag plugin jekyll-polyglot
 - Pas de vérification manuelle que ça marche
 
-**Solution**:  
+**Solution**:
 Tester manuellement:
 ```bash
 bundle exec jekyll build
@@ -447,8 +447,8 @@ grep -n "hreflang" _site/index.html
 
 Vérifier présence de:
 ```html
-<link rel="alternate" hreflang="en" href="https://sinra.dev/...">
-<link rel="alternate" hreflang="fr" href="https://sinra.dev/fr/...">
+{% raw %}<link rel="alternate" hreflang="en" href="https://sinra.dev/...">
+<link rel="alternate" hreflang="fr" href="https://sinra.dev/fr/...">{% endraw %}
 <link rel="alternate" hreflang="x-default" href="https://sinra.dev/...">
 ```
 
