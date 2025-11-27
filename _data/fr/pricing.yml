@@ -39,13 +39,15 @@
   color: "#2196F3"
   description: "La plateforme complète de gestion de projet combinant V-Model et Agile"
   period: Annuel
-  price: "96"
+  price: "60"
   currency: "€"
   billing: "/an"
   original_price: "120"
+  struck_price: "96"
   plan_type: "annual"
-  savings: "Économisez 20%"
+  savings: "Économisez 50%"
   recommended: true
+  has_black_friday: true
   features:
     - text: Facturation à l'utilisateur (flexibilité d'équipe)
       highlight: true

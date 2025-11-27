@@ -3329,6 +3329,26 @@ body.banner-active {
   gap: 4px;
 }
 
+.plan-price-black-friday {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plan-price-black-friday .original-price {
+  color: #888;
+  font-size: 11px;
+  text-decoration: line-through;
+  display: inline-block;
+}
+
+.plan-price-black-friday .struck-price {
+  color: #888;
+  font-size: 12px;
+  text-decoration: line-through;
+  display: inline-block;
+}
+
 .original-price {
   color: #888;
   font-size: 12px;
