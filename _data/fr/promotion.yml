@@ -8,7 +8,7 @@ banner:
   enabled: true
   message: "Black Friday : 50% de réduction sur les forfaits annuels"
   cta_text: "Voir les tarifs"
-  cta_link: "/fr/pricing"
+  cta_link: "/pricing"
   dismissible: true
 
 badge:
