@@ -1,156 +1,143 @@
-# Sinra-Website Constitution
+# Sinra Website Constitution & Development Guidance
 
-## Core Principles
+## Project Overview
 
-### I. Pragmatisme Élégant (Elegant Pragmatism)
-All content and design must reflect confidence without aggression, professionalism without stiffness, operational grounding, and implicit rather than explicit communication. Solutions-focused, not problem-focused. Brand voice is our north star—every feature, page, and word should reinforce this positioning. Reference: Notion, Linear, GitLab (NOT Slack, Atlassian, Figma).
-
-### II. Specification-Driven Development
-Every feature starts with a clear specification defining WHAT and WHY before discussing HOW. Specs must answer: What problem does this solve? Who benefits? What are acceptance criteria? How does it align with Sinra's V-Model + Agile hybrid positioning? Vague requirements are unacceptable.
-
-### III. Multilingual-First Architecture
-All content must support English (en) and French (fr) equally. YAML translations in `_data/en/` and `_data/fr/` must be synchronized and identical in structure. Liquid templating via `{{ site.data[page.lang].section.key }}` is mandatory. No hardcoded strings. Cultural adaptations welcome but functionally equivalent.
-
-### IV. V-Model + Agile Hybrid Methodology
-Sinra embodies hybrid methodology in its core. Content and features must reflect this dual approach: structured planning (V-Model discipline) + execution flexibility (Agile responsiveness). Never reduce to pure Agile or pure Waterfall terminology. Use Sinra terminology: issues, capabilities, releases, cycles (NOT user stories, epics, sprints).
-
-### V. Quality Through Manual Testing & Browser Validation
-No automated test framework. Validation happens via:
-- `jekyll serve` local testing with visual inspection
-- Cross-browser compatibility (Chrome, Firefox, Safari)
-- Multilingual consistency check (EN/FR side-by-side)
-- Git conventions: conventional commits, feature branches, clean PRs
-- Tone consistency against TONE_CONSISTENCY_REPORT.md baselines
-
-### VI. Operational Grounding Over Hype
-Every feature description, testimonial, case study, and marketing claim must be grounded in operational reality. Avoid: "revolutionary," "game-changing," "disrupt," "kill," "transformative." Embrace: specific benefits, measurable outcomes, real examples, team-focused language. Show confidence through substance, not superlatives.
-
-### VII. Jekyll Static Site Simplicity
-Technology stack is minimal by design:
-- Jekyll 4.3.4 for static generation
-- Ruby 3.4.5 (managed via Mise)
-- Plain CSS (no SCSS/preprocessor)
-- Vanilla JavaScript (no build tools, transpilation, or frameworks)
-- Liquid templating only
-- No asset minification or versioning
-- YAML for all data and translations
-
-NO linting, NO formatters, NO testing frameworks, NO complex build pipelines.
-
-## Content Standards
-
-### Brand Voice Consistency
-- **Tone Baseline:** Pragmatisme Élégant (documented in TONE_CONSISTENCY_REPORT.md)
-- **Vocabulary:** Technical but accessible (Kanban, Hotwire, polymorphic comments, stage gates—yes; "disruptive," "innovative," "cutting-edge"—no)
-- **Structure:** Problem → Specific Solution → Measurable Result
-- **Evidence:** Real examples, specific metrics, grounded testimonials
-- **Confidence:** Stated as fact, not aspiration ("Teams ship predictably" not "Teams can ship predictably")
-
-### Multilingual Content Parity
-- All pages must exist in EN and FR versions
-- YAML keys must match between `/data/en/` and `/data/fr/`
-- French translations must maintain English tone/meaning (not literal translation)
-- Blog categories, case studies, features—synchronized across languages
-- Test: `jekyll serve` with both language parameters; visually inspect both versions
-
-### Feature Requirements
-Every feature must include:
-1. **Clear specification:** What problem? Who benefits? Why now?
-2. **Acceptance criteria:** How will we know it works?
-3. **Multilingual plan:** How does this translate to FR?
-4. **Tone alignment:** Does this reinforce Pragmatisme Élégant?
-5. **Testing approach:** Manual testing steps (via jekyll serve + browser)
-6. **Git workflow:** Feature branch, conventional commit, PR
-
-## Development Workflow
-
-### Spec-Kit Integration
-This project uses Spec-Kit for spec-driven development:
-1. `/speckit.specify` - Define requirements (WHAT + WHY)
-2. `/speckit.plan` - Architecture and approach (HOW + STRUCTURE)
-3. `/speckit.clarify` - Resolve ambiguities before planning (optional but recommended)
-4. `/speckit.tasks` - Break into actionable steps
-5. `/speckit.implement` - Execute with Claude Code
-
-### Git Conventions
-- **Branches:** `feature/[feature-name]`, `fix/[bug-name]`, `docs/[doc-name]`
-- **Commits:** Conventional format with emoji (🎨 styling, 🐛 fix, ✨ feature, 📝 docs, etc.)
-- **Messages:** Clear, descriptive, reference Sinra terminology when applicable
-- **PRs:** Describe changes, link to spec if available, note multilingual updates
-- **Merges:** Squash for cleanliness; keep main branch production-ready
-
-### Testing & Validation
-1. **Local Build:** `bundle exec jekyll build` → no errors
-2. **Development Server:** `bundle exec jekyll serve` → visual inspection
-3. **Multilingual Check:** Test both `/en/` and `/fr/` routes
-4. **Tone Review:** Does this match TONE_CONSISTENCY_REPORT.md?
-5. **Cross-Browser:** Chrome, Firefox, Safari (at minimum)
-6. **Mobile Responsiveness:** Test on mobile viewport (if applicable)
-7. **Links & Assets:** All internal links working, images loading
-
-### Common Commands
-```bash
-mise use ruby@3.4.5           # Activate Ruby version
-bundle install               # Install dependencies (after Gemfile changes)
-bundle exec jekyll serve     # Development server (http://localhost:4000)
-bundle exec jekyll serve --drafts  # Include draft posts
-bundle exec jekyll build     # Production build → _site/
-```
-
-## Dependencies & Tools
-
-### Ruby Stack (REQUIRED)
-- Ruby 3.4.5 (via Mise)
-- Jekyll 4.3.4
-- Gems: jekyll-polyglot, jekyll-feed, jekyll-paginate, jekyll-archives, jekyll-sitemap
-- Bundle for dependency management
-
-### External Tools (OPTIONAL)
-- Spec-Kit (specify-cli) for spec-driven workflow
-- Git for version control
-- Browser dev tools for testing
-
-### NO Additional Tools
-- No ESLint, Prettier, RuboCop, StyleLint
-- No build tools (webpack, rollup, parcel)
-- No test frameworks (RSpec, Jasmine, Jest)
-- No CI/CD pipelines (this is manual)
-
-## Sinra Terminology
-
-When discussing Sinra features or concepts, use ONLY Sinra terminology:
-- **Issues** — Individual work items, bugs, tasks (NOT "user stories")
-- **Capabilities** — Higher-level features/initiatives (NOT "epics")
-- **Releases** — Product versions (NOT "increments")
-- **Cycles** — Time-boxed work periods (NOT "sprints")
-- **Pages** — Documentation and knowledge base
-- **Projects, Teams, Roles, Labels** — Organization structures
-- **Tests/Testings** — Quality assurance and testing management
-
-## Governance
-
-This Constitution supersedes all other development practices and guidelines. All features, content, and code changes must comply with these principles.
-
-**Amendments** require:
-1. Documentation of rationale
-2. Impact assessment (scope of change)
-3. Migration plan if existing work needs updating
-4. Team acknowledgment
-
-**Compliance Verification:**
-- Every PR includes a checklist: "Constitution compliance verified?"
-- Code reviews assess adherence to principles
-- Tone consistency against TONE_CONSISTENCY_REPORT.md
-- Multilingual parity verified before merge
-
-**When in Doubt:**
-- Refer to TONE_CONSISTENCY_REPORT.md for brand voice
-- Refer to CLAUDE.md for development guidance
-- Refer to V-Model vs Agile blog post for methodology examples
-- Ask in `/speckit.clarify` before planning
+**Sinra Website** is a multilingual static site built with **Jekyll 4.3.4** promoting Sinra, a modern project management tool. The site features:
+- Multilingual support (EN/FR)
+- DaisyUI Dim theme
+- Plain CSS (no preprocessors)
+- Vanilla JavaScript
+- YAML-based data and translations
 
 ---
 
-**Version**: 1.0 | **Ratified**: 2025-11-14 | **Last Amended**: 2025-11-14
+## Core Styling Guidelines
 
-This Constitution was established as the foundational governance document for Sinra-website development with Spec-Kit, ensuring consistent, high-quality, operationally-grounded development aligned with Sinra's brand and methodology.
+### DaisyUI Dim Theme Colors
+
+All styling must use the **DaisyUI Dim theme** colors defined in `assets/css/theme.css`. These are the canonical colors:
+
+```scss
+/* DaisyUI Dim Theme Variables */
+--color-base-100: oklch(30.857% 0.023 264.149);    /* Dark background */
+--color-base-200: oklch(28.036% 0.019 264.182);    /* Slightly darker bg */
+--color-base-300: oklch(26.346% 0.018 262.177);    /* Even darker bg */
+--color-base-content: oklch(82.901% 0.031 222.959); /* Light text */
+
+--color-primary: oklch(86.133% 0.141 139.549);       /* Cyan/Green primary */
+--color-primary-content: oklch(17.226% 0.028 139.549);
+
+--color-secondary: oklch(73.375% 0.165 35.353);      /* Orange secondary */
+--color-secondary-content: oklch(14.675% 0.033 35.353);
+
+--color-accent: #c792e9;                              /* Purple accent */
+--color-accent-content: oklch(14.845% 0.026 311.379);
+
+--color-neutral: oklch(24.731% 0.02 264.094);         /* Neutral dark */
+--color-neutral-content: oklch(82.901% 0.031 222.959);
+
+--color-info: oklch(86.078% 0.142 206.182);           /* Info (blue) */
+--color-info-content: oklch(17.215% 0.028 206.182);
+
+--color-success: oklch(86.171% 0.142 166.534);        /* Success (green) */
+--color-success-content: oklch(17.234% 0.028 166.534);
+
+--color-warning: oklch(86.163% 0.142 94.818);         /* Warning (yellow) */
+--color-warning-content: oklch(17.232% 0.028 94.818);
+
+--color-error: oklch(82.418% 0.099 33.756);           /* Error (red) */
+--color-error-content: oklch(16.483% 0.019 33.756);
+
+/* Radius and spacing */
+--radius-selector: 1rem;
+--radius-field: 0.5rem;
+--radius-box: 1rem;
+--size-selector: 0.25rem;
+--size-field: 0.25rem;
+--border: 1px;
+--depth: 0;
+--noise: 0;
+```
+
+### CSS Guidelines
+
+**MUST**:
+1. **Use `assets/css/theme.css`** as the primary stylesheet
+2. **Reference DaisyUI Dim theme variables** for all colors (never hardcode colors except for transient promotional content)
+3. **Use plain CSS** (NO SCSS, NO preprocessors)
+4. **Define new styles within `theme.css`** following existing patterns
+5. **Maintain existing color harmony** - new colors must complement the Dim theme
+6. **Test responsiveness** with DaisyUI breakpoints (md: 768px default)
+
+**AVOID**:
+- Hardcoded color values (except for temporary promotions like Black Friday)
+- CSS-in-JS or inline styles (except for dynamic content)
+- SCSS/SASS preprocessing
+- CSS frameworks other than DaisyUI
+- !important rules (rework selectors instead)
+
+### Black Friday Exception (Temporary)
+
+For time-limited promotions (Black Friday), hardcoded colors are acceptable:
+- Badge: `#d63031` (red) - high-contrast promotional red
+- Banner: `#d63031` with white text
+- Original price text: `#888` (gray strikethrough)
+- Discounted price: `#d63031` (red emphasis)
+
+These promotional colors are **temporary** and isolated to promotion components. Remove after campaign ends (Nov 28, 2025).
+
+---
+
+## Development Standards
+
+### Multilingual Support
+
+- All text must support EN/FR via YAML data files in `_data/en/` and `_data/fr/`
+- Use Liquid templating: `{{ site.data[page.lang].section.key }}`
+- No hardcoded strings in HTML/templates
+- French translations must maintain English tone/meaning
+
+### Testing
+
+- Manual testing via `bundle exec jekyll serve`
+- Cross-browser: Chrome, Firefox, Safari (desktop + mobile)
+- Responsive design: test at 320px, 768px, 1024px, 1440px
+- Build verification: `bundle exec jekyll build` must succeed
+
+### Git Workflow
+
+- Feature branches: `feature/name` or numbered like `002-feature-name`
+- Commits: Clear, descriptive messages with file paths
+- PRs: Link to spec/plan, note multilingual updates
+
+---
+
+## Technology Stack
+
+**Fixed**:
+- Jekyll 4.3.4
+- Ruby 3.4.5
+- Plain CSS (from `assets/css/theme.css`)
+- Vanilla JavaScript (no transpilation)
+- DaisyUI Dim theme variables
+- YAML for data/translations
+
+**NO additions** of:
+- Build tools, minifiers, or preprocessors
+- CSS frameworks (use DaisyUI Dim only)
+- Testing frameworks
+- Linters or formatters
+- Additional gems (unless critical)
+
+---
+
+## Summary
+
+✅ **All styling must align with DaisyUI Dim theme**
+✅ **Use `theme.css` as single stylesheet**
+✅ **Reference CSS variables from Dim theme**
+✅ **Plain CSS only, no SCSS**
+✅ **Test EN/FR multilingual rendering**
+✅ **Temporary hardcoded colors only for time-limited promotions**
+
+This constitution ensures visual consistency, maintainability, and adherence to Sinra's minimalist, elegant design approach.

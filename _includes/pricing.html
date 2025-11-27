@@ -17,8 +17,21 @@
     <div class="container">
       <div class="plans-grid">
         {% for plan in site.data[site.active_lang].pricing %}
-          <div class="plan-card {% if plan.recommended %}recommended{% endif %}">
-            {% if plan.recommended %}
+          {% assign promo = site.data[page.lang].promotion %}
+          {% assign today = site.time | date: "%Y-%m-%d" %}
+          {% assign is_black_friday_active = false %}
+          {% if promo.end_date %}
+            {% if today <= promo.end_date %}
+              {% assign is_black_friday_active = true %}
+            {% endif %}
+          {% endif %}
+
+          <div class="plan-card {% if plan.recommended %}recommended{% endif %}" style="position: relative;">
+            {% if plan.has_black_friday and is_black_friday_active %}
+              <div class="promotion-badge badge-black-friday">
+                Black Friday
+              </div>
+            {% elsif plan.recommended %}
               <div class="recommended-badge">
                 <span>{{ site.data[site.active_lang].strings.pricing.recommended }}</span>
               </div>
@@ -27,14 +40,30 @@
             <div class="plan-header">
               <h3 class="plan-name">{{ plan.name }}</h3>
               {% if plan.price %}
-                <div class="plan-price">
-                  <span class="currency">{{ plan.currency }}</span>
-                  <span class="amount">{{ plan.price }}</span>
-                  <span class="period">{{ plan.period }}</span>
-                </div>
-                {% if plan.original_price %}
-                  <div class="original-price">
-                    <span>{{ site.data[site.active_lang].strings.pricing.original_price }} {{ plan.original_price }}</span>
+                {% if plan.has_black_friday and is_black_friday_active and plan.struck_price and plan.black_friday_price %}
+                  <div class="plan-price-black-friday">
+                    <span class="original-price">{{ plan.currency }}{{ plan.original_price }}</span>
+                    <span class="struck-price">{{ plan.currency }}{{ plan.struck_price }}</span>
+                    <div class="plan-price">
+                      <span class="currency">{{ plan.currency }}</span>
+                      <span class="amount">{{ plan.black_friday_price }}</span>
+                      <span class="period">{{ plan.period }}</span>
+                    </div>
+                  </div>
+                {% elsif plan.original_price and plan.plan_type == "annual" %}
+                  <div class="plan-price-with-discount">
+                    <span class="original-price">{{ plan.currency }}{{ plan.original_price }}</span>
+                    <div class="plan-price">
+                      <span class="currency">{{ plan.currency }}</span>
+                      <span class="amount">{{ plan.price }}</span>
+                      <span class="period">{{ plan.period }}</span>
+                    </div>
+                  </div>
+                {% else %}
+                  <div class="plan-price">
+                    <span class="currency">{{ plan.currency }}</span>
+                    <span class="amount">{{ plan.price }}</span>
+                    <span class="period">{{ plan.period }}</span>
                   </div>
                 {% endif %}
               {% endif %}
