@@ -5,23 +5,16 @@
   - name: Pricing
     link: pricing/
     target: _top
+- links:
   - name: About
     link: about/
     target: _top
-- links:
   - name: Contact
     link: contact/
     target: _top
+- links:
   - name: Login
     link: https://app.sinra.dev/users/sign_in
     target: _blank
   - name: Sign Up
     link: https://app.sinra.dev/users/sign_up
-- links:
-  # - name: Docs
-  #   link:
-  # - name: Status
-  #   link:
-  #   target: _blank
-  - name: RSS
-    link: /feed.xml
