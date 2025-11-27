@@ -41,6 +41,7 @@
   period: Annual
   price: "96"
   black_friday_price: "60"
+  promo_code: "BLACKFRIDAY2025"
   currency: "€"
   billing: "/year"
   original_price: "120"
