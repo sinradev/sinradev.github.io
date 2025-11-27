@@ -69,6 +69,7 @@ pricing:
   discount_badge: "20% DE RÉDUCTION - Plan Annuel"
   recommended: "Le Plus Populaire"
   original_price: "Prix original :"
+  promo_code: "Code promo :"
   ready_to_start: "Prêt à commencer ?"
   ready_to_start_desc: "Choisissez le plan qui correspond le mieux à vos besoins et commencez à gérer vos projets plus efficacement dès aujourd'hui."
   start_free_trial: "Essai Gratuit"
