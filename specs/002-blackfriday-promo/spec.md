@@ -1,13 +1,21 @@
 # Feature Specification: Black Friday 50% Discount Promotion
 
-**Feature Branch**: `001-blackfriday-promo`
+**Feature Branch**: `002-blackfriday-promo`
 **Created**: 2025-11-27
 **Status**: Draft
 **Input**: User description: "Implement Black Friday promotion with 50% annual pricing discount badge and sticky top banner notification"
 
 ## Overview
 
-This feature introduces a time-limited Black Friday promotion offering 50% discount on annual pricing plans. The promotion will be highlighted through two complementary visual mechanisms: a discount badge on the annual pricing card and a sticky banner notification at the top of the site, ensuring maximum visibility without being intrusive.
+This feature introduces a time-limited Black Friday promotion offering 50% discount on annual pricing plans from November 27-28, 2025. The promotion will be highlighted through two complementary visual mechanisms: a discount badge on the annual pricing card and a sticky banner notification at the top of the site, ensuring maximum visibility without being intrusive.
+
+## Clarifications
+
+### Session 2025-11-27
+
+- **Q: How long is a "session" for banner dismissal?** → **A**: Browser session (sessionStorage lifecycle). Banner dismissal persists while the browser tab/window is open; disappears when user closes the tab/browser or clears sessionStorage, and reappears on the user's next visit.
+
+- **Q: Should promotion disable automatically after Nov 28, 2025?** → **A**: Yes, hard-coded end date (28 Nov 2025) with automatic disable. Implementation will include a date comparison (now vs. end_date) in YAML/Liquid/JS logic; promotion automatically becomes inactive post-deadline without manual intervention.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -41,7 +49,7 @@ A first-time visitor landing on any page of the site sees a non-intrusive banner
 1. **Given** a new visitor lands on any page (homepage, about, contact, etc.), **When** the page loads, **Then** a sticky banner appears at the top with "Black Friday: 50% off annual plans" messaging
 2. **Given** the banner is visible, **When** the visitor scrolls the page, **Then** the banner remains fixed at the top of the viewport
 3. **Given** the visitor reads the banner, **When** they click the "View Pricing" or similar CTA link, **Then** they are taken directly to the pricing section with the annual plan in view
-4. **Given** the visitor has seen the banner, **When** they click a close button (X), **Then** the banner disappears from the page for the current session
+4. **Given** the visitor has seen the banner, **When** they click a close button (X), **Then** the banner disappears from the page for the browser session (persists until browser tab/window closes or sessionStorage is cleared)
 5. **Given** the banner is displayed, **When** viewing on mobile, **Then** the banner text is concise and readable without horizontal scrolling
 
 ---
@@ -64,9 +72,9 @@ On the pricing page, visitors see not just the discount badge but also understan
 
 ### Edge Cases
 
-- What happens if the discount period has ended (after Black Friday)? The badge and banner should be removed or replaced with updated messaging
-- What if a user has closed the banner but returns to the site? Should the banner reappear on a new session or remain dismissed?
-- How does the discount display on social media previews or email previews (if pricing is shared)?
+- **Post-campaign behavior (after Nov 28, 2025)**: The badge and banner are automatically disabled by date logic; no manual intervention required. Social sharing of pricing page pre-28 Nov may show discount in cached previews; this is acceptable as promotion link is time-limited.
+- **Banner persistence across visits**: If visitor closes banner (dismisses it), it remains dismissed for that browser session only (until tab/window closes). On next visit (new browser session), banner reappears.
+- **Browser with sessionStorage disabled**: If user has disabled sessionStorage, dismissal may not persist within session; banner may reappear on page navigation (graceful degradation accepted).
 
 ## Requirements *(mandatory)*
 
@@ -77,11 +85,12 @@ On the pricing page, visitors see not just the discount badge but also understan
 - **FR-003**: A sticky banner MUST appear at the top of every page on the site with the message "Black Friday: 50% off annual plans" (or similar)
 - **FR-004**: The sticky banner MUST remain fixed at the top of the viewport when the user scrolls
 - **FR-005**: The sticky banner MUST include a clickable call-to-action (button or link) that navigates users to the pricing page
-- **FR-006**: The sticky banner MUST include a close button (X) that allows users to dismiss it for the current session
+- **FR-006**: The sticky banner MUST include a close button (X) that allows users to dismiss it for the browser session (dismissal persists until browser tab/window closes; banner reappears on next visit)
 - **FR-007**: The discount badge on the annual pricing card MUST use high-contrast colors (red, gold, or similar) to draw attention
 - **FR-008**: Both the badge and banner MUST be responsive and display correctly on mobile, tablet, and desktop viewports
 - **FR-009**: The banner message MUST be concise and readable on mobile devices without requiring horizontal scrolling
 - **FR-010**: The discount calculation MUST be accurate and match any promotional terms
+- **FR-011**: The promotion MUST automatically disable after November 28, 2025 (end of business day); badge and banner will not display after this date without manual redeploy
 
 ### Key Entities
 
@@ -102,12 +111,14 @@ On the pricing page, visitors see not just the discount badge but also understan
 
 ## Assumptions
 
-- The promotion runs for a fixed duration (Black Friday period); no need for dynamic date-based logic during this implementation
+- The promotion runs from November 27-28, 2025; end date is November 28, 2025, 23:59 UTC (hard-coded)
+- After Nov 28, 2025, promotion automatically disables via date comparison logic (Liquid/JS); no manual redeploy required
 - The discount is a flat 50% off the annual plan with no additional conditions or code requirements
 - Styling will follow existing site design patterns and color scheme
 - Mobile responsiveness uses existing breakpoints defined in site CSS
-- Banner dismissal is session-based (reappears on next page load/visit) - no need for persistent cookie storage
+- Banner dismissal is browser-session-based (uses sessionStorage; reappears when user opens new browser session)
 - The annual plan exists and is the only plan eligible for this promotion
+- Date comparison logic assumes server/client system clock is reasonably accurate; no NTP sync required
 
 ## Notes
 
