@@ -1,0 +1,24 @@
+name: "Black Friday"
+description: "50% de réduction sur la tarification annuelle"
+discount_percentage: 50
+plan_type: "annual"
+end_date: "2025-11-28"
+
+banner:
+  enabled: true
+  message: "Black Friday : 50% de réduction sur les forfaits annuels"
+  cta_text: "Voir les tarifs"
+  cta_link: "/fr/pricing"
+  dismissible: true
+
+badge:
+  enabled: true
+  text: "50% DE RÉDUCTION"
+  color_class: "badge-promotion"
+
+pricing:
+  original_annual_price: 100
+  discount_amount: 50
+  discounted_annual_price: 50
+  currency: "€"
+  currency_code: "EUR"

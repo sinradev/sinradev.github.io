@@ -17,24 +17,33 @@
     <div class="container">
       <div class="plans-grid">
         {% for plan in site.data[site.active_lang].pricing %}
-          <div class="plan-card {% if plan.recommended %}recommended{% endif %}">
+          <div class="plan-card {% if plan.recommended %}recommended{% endif %}" style="position: relative;">
             {% if plan.recommended %}
               <div class="recommended-badge">
                 <span>{{ site.data[site.active_lang].strings.pricing.recommended }}</span>
               </div>
             {% endif %}
+            {% if plan.plan_type == "annual" %}
+              {% include blackfriday-badge.html %}
+            {% endif %}
 
             <div class="plan-header">
               <h3 class="plan-name">{{ plan.name }}</h3>
               {% if plan.price %}
-                <div class="plan-price">
-                  <span class="currency">{{ plan.currency }}</span>
-                  <span class="amount">{{ plan.price }}</span>
-                  <span class="period">{{ plan.period }}</span>
-                </div>
-                {% if plan.original_price %}
-                  <div class="original-price">
-                    <span>{{ site.data[site.active_lang].strings.pricing.original_price }} {{ plan.original_price }}</span>
+                {% if plan.original_price and plan.plan_type == "annual" %}
+                  <div class="plan-price-with-discount">
+                    <span class="original-price">{{ plan.currency }}{{ plan.original_price }}</span>
+                    <div class="plan-price">
+                      <span class="currency">{{ plan.currency }}</span>
+                      <span class="amount">{{ plan.price }}</span>
+                      <span class="period">{{ plan.period }}</span>
+                    </div>
+                  </div>
+                {% else %}
+                  <div class="plan-price">
+                    <span class="currency">{{ plan.currency }}</span>
+                    <span class="amount">{{ plan.price }}</span>
+                    <span class="period">{{ plan.period }}</span>
                   </div>
                 {% endif %}
               {% endif %}
