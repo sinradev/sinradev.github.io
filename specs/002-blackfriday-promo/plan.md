@@ -1,104 +1,93 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Black Friday 50% Discount Promotion
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
+**Branch**: `002-blackfriday-promo` | **Date**: 2025-11-27 | **Spec**: [spec.md](./spec.md)
+**Input**: Feature specification from `/specs/002-blackfriday-promo/spec.md`
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Implement a time-limited Black Friday promotion offering 50% discount on annual pricing plans through two complementary visual mechanisms: (1) a discount badge on the annual pricing card with strikethrough original price and bold discounted price, and (2) a sticky notification banner at the top of every site page with a CTA to visit pricing. The implementation leverages Jekyll's existing template structure and CSS, requiring only markup updates to pricing data and a minimal JavaScript snippet for banner dismissal behavior.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
-
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Ruby 3.4.5 (Jekyll 4.3.4 static site generator)
+**Primary Dependencies**: jekyll-polyglot (multilingual support), Liquid templating
+**Storage**: N/A (static site; promotion data stored in YAML)
+**Testing**: Manual via `jekyll serve` with cross-browser visual inspection
+**Target Platform**: Web (all browsers; mobile-responsive)
+**Project Type**: Static Jekyll site with HTML/CSS/vanilla JS
+**Performance Goals**: Page load time <2 seconds; banner appears within 1 second
+**Constraints**: No new external dependencies; minimal JS footprint; banner must not interfere with header navigation
+**Scale/Scope**: Two main components (badge + banner) affecting pricing page and site layout includes
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+✓ **Pragmatisme Élégant**: Promotion messaging is solution-focused ("50% off annual plans") not problem-focused. Design integrates elegantly without aggression.
+
+✓ **Specification-Driven Development**: Feature spec clearly defines WHAT (badge + banner), WHY (drive conversions), and WHO (visitors/purchasers). Acceptance criteria detailed.
+
+✓ **Multilingual-First Architecture**: Promotion messaging must be translated to French in `_data/fr/` and `_data/en/`. Liquid templating via `{{ site.data[page.lang].promotion.* }}`.
+
+✓ **V-Model + Agile Hybrid**: Feature aligns with marketing discipline (V-Model planning) + responsive execution. No Sinra terminology conflicts; feature is marketing-focused, not product-feature development.
+
+✓ **Quality Through Manual Testing**: Validation via `jekyll serve`, cross-browser testing (Chrome, Firefox, Safari), multilingual consistency (EN/FR), responsive design check.
+
+✓ **Operational Grounding**: 50% discount is concrete, measurable. Success criteria based on conversion rates and CTR—not aspirational.
+
+✓ **Jekyll Static Site Simplicity**: Minimal implementation: YAML data updates + markup changes + vanilla JS for banner dismissal. No new gems, no build tools, no test frameworks needed.
+
+**All Constitution gates PASS.** Feature is compliant and ready for Phase 0.
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit.plan command output)
-├── research.md          # Phase 0 output (/speckit.plan command)
-├── data-model.md        # Phase 1 output (/speckit.plan command)
-├── quickstart.md        # Phase 1 output (/speckit.plan command)
-├── contracts/           # Phase 1 output (/speckit.plan command)
-└── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
+specs/002-blackfriday-promo/
+├── spec.md              # Feature specification
+├── checklists/
+│   └── requirements.md  # Quality validation checklist
+├── plan.md              # This file (plan output)
+├── research.md          # Phase 0 output (no unknowns, will be minimal)
+├── data-model.md        # Phase 1 output (YAML data structure)
+├── quickstart.md        # Phase 1 output (implementation guide)
+├── contracts/           # Phase 1 output (not applicable to static site)
+└── tasks.md             # Phase 2 output (/speckit.tasks command)
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
+
+This is a static Jekyll site feature with no application-specific source directories. Changes affect:
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+_data/
+├── en/
+│   ├── strings.yml         # [MODIFIED] Add promotion messaging keys
+│   └── pricing.yml         # [MODIFIED] Add pricing discount data
+└── fr/
+    ├── strings.yml         # [MODIFIED] Add French promotion messaging
+    └── pricing.yml         # [MODIFIED] Add French pricing data
 
-tests/
-├── contract/
-├── integration/
-└── unit/
+_includes/
+├── header.html             # [MODIFIED] Add sticky banner component
+└── pricing-badge.html      # [NEW] Reusable badge component
 
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
+assets/
+├── css/
+│   └── theme.css           # [MODIFIED] Add banner styling
+└── js/
+    └── script.js           # [MODIFIED] Add banner dismissal behavior
 
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
+_layouts/
+└── default.html            # [MODIFIED] Include sticky banner globally
 
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+_pages/
+└── pricing.en.html, pricing.fr.html  # [MODIFIED] Include badge on annual card
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Static Jekyll site with YAML data-driven content. No new directories created. All changes are localized to existing template and data structure. Multilingual consistency maintained via parallel EN/FR YAML files.
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+No Constitution violations. Feature is minimal, well-scoped, and fully compliant with all 7 core principles.
