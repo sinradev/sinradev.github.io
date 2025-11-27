@@ -171,3 +171,4 @@ This project now uses **Spec-Kit** for spec-driven development with Claude Code.
 ```
 
 All development on Sinra-website must comply with the Spec-Kit Constitution (English) and TONE_CONSISTENCY_REPORT.md (brand voice).
+- Read: .specify/memory/constitution.md
