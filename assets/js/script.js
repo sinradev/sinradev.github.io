@@ -341,6 +341,44 @@ const initPerformanceMonitoring = () => {
   }
 };
 
+// Black Friday banner dismissal
+const initBlackFridayBanner = () => {
+  const BANNER_ID = 'blackfriday-banner';
+  const SESSION_STORAGE_KEY = 'blackfriday_banner_dismissed';
+
+  function closeBanner() {
+    const banner = document.getElementById(BANNER_ID);
+    if (banner) {
+      banner.style.display = 'none';
+      document.body.classList.remove('banner-active');
+      sessionStorage.setItem(SESSION_STORAGE_KEY, 'true');
+    }
+  }
+
+  function initBanner() {
+    const banner = document.getElementById(BANNER_ID);
+    if (!banner) return;
+
+    // Check if banner was dismissed in this session
+    if (sessionStorage.getItem(SESSION_STORAGE_KEY)) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    // Add active state to body for padding adjustment
+    document.body.classList.add('banner-active');
+
+    // Attach close button listener
+    const closeBtn = document.getElementById('banner-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeBanner);
+    }
+  }
+
+  // Initialize banner when DOM is ready
+  initBanner();
+};
+
 // Initialize all effects when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   createScrollIndicator();
@@ -351,6 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initFormEffects();
   initImageEffects();
+  initBlackFridayBanner();
   animateStats();
   createParticles();
   initFloatingElements();
