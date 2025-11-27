@@ -49,6 +49,7 @@
                       <span class="amount">{{ plan.black_friday_price }}</span>
                       <span class="period">{{ plan.period }}</span>
                     </div>
+                    <span class="first-year-badge">{{ site.data[site.active_lang].strings.pricing.first_year }}</span>
                     {% if plan.promo_code %}
                       <div class="promo-code">
                         <span class="promo-label">{{ site.data[site.active_lang].strings.pricing.promo_code }}</span>
