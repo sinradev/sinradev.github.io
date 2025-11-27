@@ -49,6 +49,11 @@
                       <span class="amount">{{ plan.black_friday_price }}</span>
                       <span class="period">{{ plan.period }}</span>
                     </div>
+                    {% if plan.promo_code %}
+                      <div class="promo-code">
+                        {{ plan.promo_code }}
+                      </div>
+                    {% endif %}
                   </div>
                 {% elsif plan.original_price and plan.plan_type == "annual" %}
                   <div class="plan-price-with-discount">
