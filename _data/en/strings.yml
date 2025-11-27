@@ -122,6 +122,7 @@ pricing:
   recommended: "Most Popular"
   original_price: "Original price:"
   promo_code: "Promo code:"
+  first_year: "First year"
   ready_to_start: "Ready to get started?"
   ready_to_start_desc: "Choose the plan that best fits your needs and start managing your projects more efficiently today."
   start_free_trial: "Start Free Trial"
