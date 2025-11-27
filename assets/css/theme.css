@@ -3375,16 +3375,6 @@ body.banner-active {
   font-family: 'Courier New', monospace;
 }
 
-.first-year-badge {
-  font-size: 11px;
-  color: #888;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  display: block;
-  margin-top: 4px;
-}
-
 .original-price {
   color: #888;
   font-size: 12px;
