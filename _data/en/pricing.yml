@@ -1,6 +1,11 @@
 - name: Sinra Pro
   color: "#2196F3"
   description: "The complete project management platform combining V-Model and Agile methodologies"
+  period: Monthly
+  price: "10"
+  currency: "€"
+  billing: "/month"
+  plan_type: "monthly"
   features:
     - text: Pay per seat (flexible team sizing)
       highlight: true
@@ -26,21 +31,46 @@
       highlight: false
     - text: Dedicated account manager
       highlight: false
-  pricing:
-    - period: Monthly
-      price: "10"
-      currency: "€"
-      billing: "/month"
-      call_to_action:
-        link: https://app.sinra.dev/users/sign_up
-        text: Start Free Trial
-    - period: Annual
-      price: "96"
-      currency: "€"
-      billing: "/year"
-      original_price: "€120"
-      savings: "Save 20%"
-      recommended: true
-      call_to_action:
-        link: https://app.sinra.dev/users/sign_up
-        text: Start Free Trial
+  call_to_action:
+    link: https://app.sinra.dev/users/sign_up
+    text: Start Free Trial
+
+- name: Sinra Pro
+  color: "#2196F3"
+  description: "The complete project management platform combining V-Model and Agile methodologies"
+  period: Annual
+  price: "96"
+  currency: "€"
+  billing: "/year"
+  original_price: "120"
+  plan_type: "annual"
+  savings: "Save 20%"
+  recommended: true
+  features:
+    - text: Pay per seat (flexible team sizing)
+      highlight: true
+    - text: Unlimited projects and releases
+      highlight: true
+    - text: Rich text editor & specifications
+      highlight: true
+    - text: Advanced real-time capacity planning
+      highlight: true
+    - text: Integrated QA management
+      highlight: true
+    - text: Advanced templates & customization
+      highlight: true
+    - text: Multi-view intelligence (Kanban, List, Release)
+      highlight: true
+    - text: Release management & go-live checklists
+      highlight: true
+    - text: Priority email & chat support
+      highlight: true
+    - text: Custom workflows & roles
+      highlight: false
+    - text: Advanced security features
+      highlight: false
+    - text: Dedicated account manager
+      highlight: false
+  call_to_action:
+    link: https://app.sinra.dev/users/sign_up
+    text: Start Free Trial
