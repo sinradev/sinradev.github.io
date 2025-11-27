@@ -39,7 +39,8 @@
   color: "#2196F3"
   description: "The complete project management platform combining V-Model and Agile methodologies"
   period: Annual
-  price: "60"
+  price: "96"
+  black_friday_price: "60"
   currency: "€"
   billing: "/year"
   original_price: "120"
