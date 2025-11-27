@@ -3238,7 +3238,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #d63031;
+  background-color: #c792e9;
   color: white;
   padding: 12px 20px;
   z-index: 1000;
@@ -3262,7 +3262,7 @@ img {
 
 .banner-cta {
   background-color: white;
-  color: #d63031;
+  color: #c792e9;
   padding: 6px 16px;
   border-radius: 4px;
   text-decoration: none;
@@ -3306,7 +3306,7 @@ body.banner-active {
   position: absolute;
   top: 12px;
   right: 12px;
-  background-color: #d63031;
+  background-color: #c792e9;
   color: white;
   padding: 6px 12px;
   border-radius: 4px;
@@ -3318,7 +3318,7 @@ body.banner-active {
 }
 
 .badge-promotion {
-  background-color: #d63031;
+  background-color: #c792e9;
   color: white;
 }
 
@@ -3338,7 +3338,7 @@ body.banner-active {
 }
 
 .discounted-price {
-  color: #d63031;
+  color: #c792e9;
   font-size: 20px;
   font-weight: 700;
 }
