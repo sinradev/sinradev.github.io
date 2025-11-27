@@ -8,7 +8,7 @@ banner:
   enabled: true
   message: "Black Friday: 50% off annual plans"
   cta_text: "View Pricing"
-  cta_link: "/en/pricing"
+  cta_link: "/pricing"
   dismissible: true
 
 badge:
