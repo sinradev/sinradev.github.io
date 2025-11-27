@@ -43,6 +43,7 @@
     {% include schema-org.html %}
   </head>
   <body id="{{ page.name | split: "." | first }}">
+  {% include blackfriday-banner.html %}
   {% include header.html %}
   {{ content }}
   {% include footer.html %}

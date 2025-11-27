@@ -1,0 +1,10 @@
+{% assign promo = site.data[page.lang].promotion %}
+{% if promo.badge.enabled %}
+  {% assign today = site.time | date: "%Y-%m-%d" %}
+  {% assign end_date = promo.end_date %}
+  {% if today <= end_date %}
+  <div class="promotion-badge {{ promo.badge.color_class }}">
+    {{ promo.badge.text }}
+  </div>
+  {% endif %}
+{% endif %}
