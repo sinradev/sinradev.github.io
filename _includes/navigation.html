@@ -1,39 +1,14 @@
-<!-- DaisyUI Navbar Component -->
-<!-- Structure: navbar-start (logo), navbar-center (mobile dropdown + desktop menu), navbar-end (language + Sign Up) -->
-<div class="navbar bg-base-100">
-  <!-- navbar-start: Logo/Brand -->
-  <div class="navbar-start">
-    <a href="{{ site.baseurl }}/" class="btn btn-ghost text-xl">
-      <img src="{{ site.baseurl }}/assets/images/sinra-logo.svg" alt="Sinra Logo" class="h-6 w-auto">
-    </a>
-  </div>
-
-  <!-- navbar-center: Navigation Menu -->
-  <div class="navbar-center">
-    <!-- Mobile Dropdown (visible on screens < 1024px) -->
-    <div class="dropdown lg:hidden">
-      <button class="btn btn-ghost btn-circle" tabindex="0" aria-label="Toggle navigation menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-        {% for item in site.data[site.active_lang].navigation %}
-        {% assign page_url = "/" | append: item.link %}
-        <li>
-          <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
-             class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
-             target="{{ item.target }}"
-             aria-current="{% if page.url == page_url %}page{% else %}false{% endif %}">
-            {{ item.name }}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <!-- Desktop Menu (visible on screens >= 1024px) -->
-    <ul class="menu menu-horizontal px-1 hidden lg:flex gap-1">
+<!-- DaisyUI Navigation Component -->
+<!-- This component is integrated into the header and provides responsive navigation -->
+<nav role="navigation" aria-label="Main navigation" class="nav-wrapper">
+  <!-- Mobile Dropdown (visible on screens < 1024px) -->
+  <div class="dropdown lg:hidden">
+    <button class="btn btn-ghost btn-circle" tabindex="0" aria-label="Toggle navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
       {% for item in site.data[site.active_lang].navigation %}
       {% assign page_url = "/" | append: item.link %}
       <li>
@@ -48,23 +23,30 @@
     </ul>
   </div>
 
-  <!-- navbar-end: Language Switcher + Sign Up Button -->
-  <div class="navbar-end gap-2">
-    <!-- Language Switcher -->
-    <div class="language-switcher" aria-label="Language selection">
-      {% for tongue in site.languages %}
-        <a {% if tongue == site.active_lang %}class="lang-link active"{% else %}class="lang-link"{% endif %}
-           {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
-           title="Switch to {{ tongue | upcase }}">
-          {{ tongue | upcase }}
-        </a>
-        {%- if forloop.last == false -%}<span class="divider divider-horizontal mx-1"></span>{%- endif -%}
-      {% endfor %}
-    </div>
+  <!-- Desktop Menu (visible on screens >= 1024px) -->
+  <ul class="menu menu-horizontal px-1 hidden lg:flex gap-4">
+    {% for item in site.data[site.active_lang].navigation %}
+    {% assign page_url = "/" | append: item.link %}
+    <li>
+      <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
+         class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
+         target="{{ item.target }}"
+         aria-current="{% if page.url == page_url %}page{% else %}false{% endif %}">
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 
-    <!-- Sign Up Button -->
-    <a href="https://app.sinra.dev/users/sign_up" target="_blank" class="btn btn-primary">
-      Sign up
-    </a>
+  <!-- Language Switcher -->
+  <div class="language-switcher" aria-label="Language selection">
+    {% for tongue in site.languages %}
+      <a {% if tongue == site.active_lang %}class="lang-link active"{% else %}class="lang-link"{% endif %}
+         {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
+         title="Switch to {{ tongue | upcase }}">
+        {{ tongue | upcase }}
+      </a>
+      {%- if forloop.last == false -%}<span class="divider divider-horizontal mx-1"></span>{%- endif -%}
+    {% endfor %}
   </div>
-</div>
+</nav>
