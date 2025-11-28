@@ -271,6 +271,217 @@ nav a.highlight:hover {
   font-size: 0.875rem;
 }
 
+/* DaisyUI Navbar Component Styling */
+.navbar {
+  min-height: 4rem;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-start {
+  flex-shrink: 0;
+}
+
+.navbar-center {
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-end {
+  flex-shrink: 0;
+  gap: 0.5rem;
+}
+
+/* DaisyUI Navbar Link Styling */
+.navbar a {
+  color: oklch(82.901% 0.031 222.959);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: var(--transition-normal);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar a:not(.btn):not(.highlight)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: var(--transition-normal);
+}
+
+.navbar a:not(.btn):not(.highlight):hover::before {
+  width: 100%;
+}
+
+.navbar a:not(.btn):not(.highlight):hover {
+  color: var(--primary);
+}
+
+.navbar a.highlight {
+  background: var(--primary);
+  color: var(--color-base-content);
+  padding: 0.5rem 1rem;
+  border-radius: var(--btn-border-radius);
+  font-weight: 600;
+  transition: var(--transition-normal);
+}
+
+.navbar a.highlight:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Mobile Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  background: var(--gray-50) !important;
+  border: 1px solid var(--gray-300) !important;
+  border-radius: 0.5rem;
+}
+
+.dropdown-content li > a {
+  padding: 0.5rem 1rem;
+  color: oklch(82.901% 0.031 222.959) !important;
+  border-radius: 0.25rem;
+}
+
+.dropdown-content li > a:hover {
+  background: var(--gray-200);
+  color: var(--primary) !important;
+}
+
+.dropdown-content li > a.active {
+  background: var(--primary);
+  color: var(--color-base-content) !important;
+  font-weight: 600;
+}
+
+.dropdown-content li > a.highlight {
+  background: var(--primary);
+  color: var(--color-base-content) !important;
+  padding: 0.5rem 1rem;
+}
+
+/* Desktop Menu */
+.menu {
+  background: transparent;
+  padding: 0;
+}
+
+.menu li > a {
+  padding: 0.5rem;
+  color: oklch(82.901% 0.031 222.959) !important;
+  border-radius: 0.25rem;
+  transition: var(--transition-normal);
+}
+
+.menu li > a:hover {
+  background: transparent;
+  color: var(--primary) !important;
+}
+
+.menu li > a.active {
+  background: transparent;
+  color: var(--primary) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary);
+}
+
+.menu li > a.highlight {
+  background: var(--primary);
+  color: var(--color-base-content) !important;
+  padding: 0.5rem 1rem;
+  border-radius: var(--btn-border-radius);
+  font-weight: 600;
+}
+
+.menu li > a.highlight:hover {
+  background: var(--primary-dark);
+  border-bottom: none;
+}
+
+/* Logo Button */
+.navbar .btn.btn-ghost {
+  padding: 0;
+  min-height: auto;
+  height: auto;
+}
+
+.navbar .btn.btn-ghost:hover {
+  background: transparent;
+}
+
+.navbar .btn.btn-ghost img {
+  max-height: 2rem;
+  width: auto;
+}
+
+/* Language Switcher in Navbar */
+.navbar .language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.navbar .divider-horizontal {
+  width: 1px;
+  height: 1.5rem;
+  background: var(--gray-300);
+  margin: 0 0.25rem;
+}
+
+.navbar .lang-link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 1023px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-start {
+    flex: 1;
+  }
+
+  .navbar-center {
+    flex: 0;
+    justify-content: flex-end;
+  }
+
+  .navbar-end {
+    gap: 0.25rem;
+  }
+
+  .navbar .language-switcher {
+    gap: 0.25rem;
+  }
+
+  .navbar .lang-link {
+    font-size: 0.65rem;
+  }
+
+  /* Hide label when small */
+  .navbar .divider-horizontal {
+    height: 1rem;
+  }
+}
+
 /* GitHub-style Hero Section */
 .hero {
   margin-top: -70px;
