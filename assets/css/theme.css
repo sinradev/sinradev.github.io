@@ -268,15 +268,17 @@ header.navbar .menu li > a.active {
   font-weight: 600;
 }
 
-header.navbar .menu li > a.highlight {
-  background: var(--primary);
+/* Sign up button styling */
+header.navbar .menu li > a.btn.btn-accent,
+header.navbar .dropdown-content li > a.btn.btn-accent {
+  background: var(--accent);
   color: var(--color-base-content) !important;
-  border-radius: var(--border-radius);
-  padding: 0.5rem 1rem;
+  border: none;
 }
 
-header.navbar .menu li > a.highlight:hover {
-  background: var(--primary-dark);
+header.navbar .menu li > a.btn.btn-accent:hover,
+header.navbar .dropdown-content li > a.btn.btn-accent:hover {
+  background: oklch(70% 0.133 311.379);
 }
 
 /* Navbar dropdown menu styling */
@@ -293,17 +295,6 @@ header.navbar .dropdown-content li > a.active {
   background: var(--primary);
   color: var(--color-base-content) !important;
   font-weight: 600;
-}
-
-header.navbar .dropdown-content li > a.highlight {
-  background: var(--primary);
-  color: var(--color-base-content) !important;
-  border-radius: var(--border-radius);
-  padding: 0.5rem 1rem;
-}
-
-header.navbar .dropdown-content li > a.highlight:hover {
-  background: var(--primary-dark);
 }
 
 /* Language Switcher Dropdown */
