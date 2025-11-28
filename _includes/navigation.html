@@ -38,15 +38,20 @@
     {% endfor %}
   </ul>
 
-  <!-- Language Switcher -->
-  <div class="language-switcher" aria-label="Language selection">
-    {% for tongue in site.languages %}
-      <a {% if tongue == site.active_lang %}class="lang-link active"{% else %}class="lang-link"{% endif %}
-         {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
-         title="Switch to {{ tongue | upcase }}">
-        {{ tongue | upcase }}
-      </a>
-      {%- if forloop.last == false -%}<span class="divider divider-horizontal mx-1"></span>{%- endif -%}
-    {% endfor %}
+  <!-- Language Switcher Dropdown -->
+  <div class="dropdown dropdown-end">
+    <button class="btn btn-ghost btn-sm" tabindex="0">
+      {{ site.active_lang | upcase }}
+    </button>
+    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+      {% for tongue in site.languages %}
+      <li>
+        <a {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
+           class="{% if tongue == site.active_lang %}active{% endif %}">
+          {{ tongue | upcase }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </nav>
