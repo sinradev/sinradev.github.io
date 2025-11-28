@@ -157,6 +157,24 @@ header .container {
   padding: 1rem var(--container-padding);
   max-width: 1200px;
   margin: 0 auto;
+  gap: 2rem;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Navigation wrapper for proper alignment */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  margin-left: auto;
 }
 
 .company-name a {
@@ -376,13 +394,24 @@ nav a.highlight:hover {
 .menu {
   background: transparent;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0;
 }
 
 .menu li > a {
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   color: oklch(82.901% 0.031 222.959) !important;
   border-radius: 0.25rem;
   transition: var(--transition-normal);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
 }
 
 .menu li > a:hover {
