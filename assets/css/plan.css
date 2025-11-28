@@ -89,3 +89,172 @@
   padding: 0;
   margin: 0;
 }
+
+/* Pricing Tiers - Dual Monthly/Annual Frames */
+.pricing-tiers {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.pricing-frame {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: var(--border-radius-lg);
+  background: oklch(26.346% 0.018 262.177);
+  border: 2px solid oklch(24.731% 0.02 264.094);
+  transition: all 0.3s ease;
+}
+
+.pricing-frame.emphasized {
+  flex: 1.15;
+  background: oklch(28.036% 0.019 264.182);
+  border: 2px solid oklch(86.133% 0.141 139.549);
+  box-shadow: 0 0 15px oklch(86.133% 0.141 139.549 / 0.2);
+}
+
+.tier-period {
+  font-size: 0.875rem;
+  color: oklch(82.901% 0.031 222.959);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tier-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: oklch(86.133% 0.141 139.549);
+  margin: 0.5rem 0;
+}
+
+.pricing-frame.emphasized .tier-price {
+  font-size: 2rem;
+  color: oklch(86.133% 0.141 139.549);
+}
+
+.plan-price-black-friday {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-price-black-friday .original-price {
+  font-size: 0.875rem;
+  color: oklch(60% 0.02 264.094);
+  text-decoration: line-through;
+}
+
+.plan-price-black-friday .struck-price {
+  font-size: 0.875rem;
+  color: oklch(60% 0.02 264.094);
+  text-decoration: line-through;
+}
+
+.plan-price-black-friday .plan-price {
+  margin-top: 0.5rem;
+}
+
+.plan-price-black-friday .promo-code {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: oklch(30.857% 0.023 264.149);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.plan-price-black-friday .promo-label {
+  font-size: 0.75rem;
+  color: oklch(82.901% 0.031 222.959);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.plan-price-black-friday .promo-code-value {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+.plan-price-with-discount {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.plan-price-with-discount .original-price {
+  font-size: 0.875rem;
+  color: oklch(60% 0.02 264.094);
+  text-decoration: line-through;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.plan-price .currency {
+  font-size: 1.2rem;
+  color: oklch(86.133% 0.141 139.549);
+  font-weight: bold;
+}
+
+.plan-price .amount {
+  font-size: 1.8rem;
+  color: oklch(86.133% 0.141 139.549);
+  font-weight: bold;
+}
+
+.pricing-frame.emphasized .plan-price .amount {
+  font-size: 2.2rem;
+}
+
+.plan-price .period {
+  font-size: 0.875rem;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+/* Coming Soon Badge */
+.cta-badge {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-lg);
+  background: oklch(24.731% 0.02 264.094);
+  color: oklch(82.901% 0.031 222.959);
+  border: 2px solid oklch(32% 0.02 264.094);
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile Responsive - Stack frames vertically */
+@media (max-width: 767px) {
+  .pricing-tiers {
+    flex-direction: column;
+  }
+
+  .pricing-frame.emphasized {
+    order: -1;
+  }
+
+  .tier-price {
+    font-size: 1.25rem;
+  }
+
+  .pricing-frame.emphasized .tier-price {
+    font-size: 1.5rem;
+  }
+
+  .plan-price .amount {
+    font-size: 1.5rem;
+  }
+
+  .pricing-frame.emphasized .plan-price .amount {
+    font-size: 1.8rem;
+  }
+}

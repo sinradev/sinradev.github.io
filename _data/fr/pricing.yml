@@ -1,11 +1,23 @@
 - name: Sinra Pro
   color: "#2196F3"
   description: "La plateforme complète de gestion de projet combinant V-Model et Agile"
-  period: Mensuel
-  price: "10"
-  currency: "€"
-  billing: "/mois"
-  plan_type: "monthly"
+  pricing_tiers:
+    - period: Mensuel
+      price: "10"
+      currency: "€"
+      billing: "/mois"
+      plan_type: "monthly"
+    - period: Annuel
+      price: "96"
+      currency: "€"
+      billing: "/an"
+      plan_type: "annual"
+      original_price: "120"
+      struck_price: "96"
+      has_black_friday: true
+      black_friday_price: "60"
+      promo_code: "BLACKFRIDAY2025"
+      recommended: true
   features:
     - text: Facturation à l'utilisateur (flexibilité d'équipe)
       highlight: true
@@ -33,24 +45,29 @@
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
-    text: Essai Gratuit
+    text: Démarrer l'essai gratuit
 
-- name: Sinra Pro
+- name: Sinra Specif-AI
   color: "#2196F3"
-  description: "La plateforme complète de gestion de projet combinant V-Model et Agile"
-  period: Annuel
-  price: "96"
-  black_friday_price: "60"
-  promo_code: "BLACKFRIDAY2025"
-  currency: "€"
-  billing: "/an"
-  original_price: "120"
-  struck_price: "96"
-  plan_type: "annual"
-  savings: "Économisez 50%"
-  recommended: true
-  has_black_friday: true
+  description: "Génération de spécifications alimentée par l'IA pour les issues, capacités et projets"
+  pricing_tiers:
+    - period: Bientôt disponible
+      price: null
+      billing: null
+      plan_type: "coming_soon"
   features:
+    - text: Spécification d'issues alimentée par l'IA
+      highlight: true
+      ai_feature: true
+    - text: Définition automatisée des capacités
+      highlight: true
+      ai_feature: true
+    - text: Modèles de projet générés par l'IA
+      highlight: true
+      ai_feature: true
+    - text: Génération d'exigences assistée par l'IA
+      highlight: true
+      ai_feature: true
     - text: Facturation à l'utilisateur (flexibilité d'équipe)
       highlight: true
     - text: Projets et releases illimités
@@ -76,5 +93,6 @@
     - text: Gestionnaire de compte dédié
       highlight: false
   call_to_action:
-    link: https://app.sinra.dev/users/sign_up
-    text: Essai Gratuit
+    link: null
+    text: Bientôt disponible
+    badge_type: "coming_soon"
