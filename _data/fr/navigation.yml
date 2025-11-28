@@ -18,7 +18,7 @@
   link: https://app.sinra.dev/users/sign_in
   target: _blank
   klass:
-- name: S’enregistrer
+- name: S'enregistrer
   link: https://app.sinra.dev/users/sign_up
   target: _blank
-  klass: highlight
+  klass: btn btn-accent

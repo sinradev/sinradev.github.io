@@ -96,6 +96,11 @@
   box-sizing: border-box;
 }
 
+/* Override DaisyUI hero-content to remove flex display */
+.hero-content {
+  display: block !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -124,151 +129,198 @@ body {
   padding: 0 var(--container-padding);
 }
 
-/* GitHub-style Header - Transparent to Dark */
-header {
+/* DaisyUI Navbar Styling */
+header.navbar {
   background: transparent;
-  border-bottom: 1px solid transparent;
+  box-shadow: none;
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  box-shadow: none;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-header.scrolled {
-  background: var(--gray-50);
-  border-bottom: 1px solid var(--gray-300);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo SVG en blanc */
-header img[src*="sinra-logo.svg"] {
-  filter: brightness(0) invert(1);
-}
-
-header .container {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem var(--container-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem var(--container-padding);
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.company-name a {
+header.navbar.scrolled {
+  background: var(--gray-50);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar sections */
+header.navbar .navbar-start,
+header.navbar .navbar-center,
+header.navbar .navbar-end {
   display: flex;
   align-items: center;
-  gap: 12px;
-  text-decoration: none;
+  gap: 1rem;
+}
+
+header.navbar .navbar-start {
+  flex-grow: 0;
+}
+
+header.navbar .navbar-center {
+  flex-grow: 1;
+  justify-content: center;
+  display: none;
+}
+
+header.navbar .navbar-end {
+  flex-grow: 0;
+  margin-left: auto;
+}
+
+/* Navbar toggle button (hamburger) - mobile only */
+header.navbar .navbar-toggle {
+  display: inline-flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide desktop menu on small screens */
+@media (max-width: 1023px) {
+  header.navbar .navbar-menu {
+    display: none !important;
+  }
+
+  header.navbar .navbar-toggle {
+    display: inline-flex !important;
+  }
+}
+
+/* Show desktop menu on large screens */
+@media (min-width: 1024px) {
+  header.navbar .navbar-center {
+    display: flex !important;
+  }
+
+  /* Hide mobile toggle on large screens */
+  header.navbar .navbar-toggle {
+    display: none !important;
+  }
+}
+
+header.navbar .navbar-toggle:hover {
+  background: transparent !important;
+}
+
+header.navbar .navbar-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: white !important;
+  display: block !important;
+  flex-shrink: 0;
+}
+
+header.navbar .navbar-toggle path {
+  stroke: white !important;
+}
+
+/* Navbar brand/logo */
+header.navbar .navbar-logo {
   color: oklch(82.901% 0.031 222.959);
   font-weight: 600;
   font-size: 18px;
+  text-decoration: none;
   transition: var(--transition-normal);
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.company-name a:hover {
+header.navbar .navbar-logo:hover {
   color: var(--primary);
+  background: transparent !important;
 }
 
-.company-name img {
+header.navbar img[src*="sinra-logo.svg"] {
+  filter: brightness(0) invert(1);
   width: 40px;
   height: 40px;
   border-radius: var(--border-radius);
   transition: var(--transition-normal);
 }
 
-.company-name a:hover img {
+header.navbar .navbar-logo:hover img {
   transform: scale(1.05);
 }
 
-nav {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-}
+/* DaisyUI Navigation - Navbar specific styling only */
 
-nav a {
-  color: oklch(82.901% 0.031 222.959);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  transition: var(--transition-normal);
-  position: relative;
-  padding: 8px 0;
-}
-
-nav a:not(.highlight)::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
+/* Navbar menu styling */
+header.navbar .menu li > a {
+  color: oklch(82.901% 0.031 222.959) !important;
   transition: var(--transition-normal);
 }
 
-nav a:not(.highlight):hover::before {
-  width: 100%;
+header.navbar .menu li > a:hover {
+  background: transparent;
+  color: var(--primary) !important;
 }
 
-nav a:not(.highlight):hover {
-  color: var(--primary);
-}
-
-nav a.highlight {
-  background: var(--primary);
-  color: var(--color-base-content);
-  padding: 8px 16px;
-  border-radius: var(--btn-border-radius);
-  font-weight: 600;
-  transition: var(--transition-normal);
-}
-
-nav a.highlight:hover {
-  background: var(--primary-dark);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-/* Language Switcher */
-.language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: 24px;
-  padding-left: 24px;
-  border-left: 1px solid var(--gray-300);
-}
-
-.lang-link {
-  color: oklch(82.901% 0.031 222.959);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
-  opacity: 0.7;
-}
-
-.lang-link:hover {
-  color: var(--primary);
-  opacity: 1;
-}
-
-.lang-link.active {
-  color: var(--primary);
-  opacity: 1;
+header.navbar .menu li > a.active {
+  color: var(--primary) !important;
   font-weight: 600;
 }
 
-.lang-separator {
-  color: oklch(82.901% 0.031 222.959);
-  opacity: 0.5;
-  font-size: 0.875rem;
+/* Sign up button styling */
+header.navbar .menu li > a.btn.btn-accent,
+header.navbar .dropdown-content li > a.btn.btn-accent {
+  background: var(--accent);
+  color: var(--color-base-content) !important;
+  border: none;
+}
+
+header.navbar .menu li > a.btn.btn-accent:hover,
+header.navbar .dropdown-content li > a.btn.btn-accent:hover {
+  background: oklch(70% 0.133 311.379);
+}
+
+/* Navbar dropdown menu styling */
+header.navbar .dropdown-content li > a {
+  color: oklch(82.901% 0.031 222.959) !important;
+}
+
+header.navbar .dropdown-content li > a:hover {
+  background: var(--gray-200);
+  color: var(--primary) !important;
+}
+
+header.navbar .dropdown-content li > a.active {
+  background: var(--primary);
+  color: var(--color-base-content) !important;
+  font-weight: 600;
+}
+
+/* Language Switcher Dropdown */
+header.navbar .dropdown-end > ul {
+  left: auto;
+  right: 0;
+}
+
+header.navbar .dropdown ul li > a {
+  color: oklch(82.901% 0.031 222.959) !important;
+}
+
+header.navbar .dropdown ul li > a:hover {
+  background: var(--gray-200);
+  color: var(--primary) !important;
+}
+
+header.navbar .dropdown ul li > a.active {
+  background: var(--primary);
+  color: var(--color-base-content) !important;
+  font-weight: 600;
 }
 
 /* GitHub-style Hero Section */
@@ -280,7 +332,9 @@ nav a.highlight:hover {
   overflow: hidden;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .hero::before {
@@ -1709,6 +1763,10 @@ img {
   padding: 80px 0 60px;
   text-align: center;
   background: var(--gray-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-hero .hero-content h1 {
@@ -2069,6 +2127,10 @@ img {
   padding: 20px 0 60px;
   text-align: center;
   background: var(--gray-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pricing-hero .hero-content h1 {
@@ -2425,6 +2487,10 @@ img {
   padding: 0px 0 60px;
   text-align: center;
   background: var(--gray-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-hero .hero-content h1 {

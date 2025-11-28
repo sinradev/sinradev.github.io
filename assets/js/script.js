@@ -223,6 +223,7 @@ const initButtonEffects = () => {
 
 // Enhanced navigation
 const initNavigation = () => {
+  // Legacy navigation support (old nav structure)
   const navToggle = document.getElementById('open-nav');
   const nav = document.querySelector('nav');
   const body = document.body;
@@ -230,16 +231,45 @@ const initNavigation = () => {
   if (navToggle) {
     navToggle.addEventListener('click', () => {
       body.classList.toggle('nav-open');
-      navToggle.setAttribute('aria-expanded', 
+      navToggle.setAttribute('aria-expanded',
         body.classList.contains('nav-open').toString());
     });
   }
 
   // Close mobile nav when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && !navToggle.contains(e.target)) {
-      body.classList.remove('nav-open');
-      navToggle.setAttribute('aria-expanded', 'false');
+  if (nav) {
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !navToggle?.contains(e.target)) {
+        body.classList.remove('nav-open');
+        navToggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // DaisyUI dropdown menu - close when navigation item clicked
+  const dropdownItems = document.querySelectorAll('.dropdown-content li > a');
+  const dropdownButton = document.querySelector('.dropdown > button');
+
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // Close the dropdown by removing focus from the button
+      if (dropdownButton) {
+        dropdownButton.blur();
+      }
+    });
+  });
+
+  // Active page highlighting for DaisyUI navbar
+  const currentPath = window.location.pathname.split('/').filter(p => p).join('/');
+  const navLinks = document.querySelectorAll('.navbar a[href], .dropdown-content a[href], .menu a[href]');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && !href.includes('http') && href !== '/') {
+      const linkPath = href.split('/').filter(p => p).join('/');
+      if (currentPath.includes(linkPath) || currentPath === linkPath) {
+        link.classList.add('active');
+      }
     }
   });
 
