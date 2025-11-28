@@ -21,4 +21,4 @@
 - name: Sign up
   link: https://app.sinra.dev/users/sign_up
   target: _blank
-  klass: btn btn-accent
+  klass: btn btn-accent btn-sm
