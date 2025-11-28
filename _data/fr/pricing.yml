@@ -68,9 +68,29 @@
     - text: Génération d'exigences assistée par l'IA
       highlight: true
       ai_feature: true
-    - text: Intégration avec les fonctionnalités de Sinra Pro
+    - text: Facturation à l'utilisateur (flexibilité d'équipe)
+      highlight: true
+    - text: Projets et releases illimités
+      highlight: true
+    - text: Éditeur rich text et spécifications
+      highlight: true
+    - text: Planification de capacité temps réel avancée
+      highlight: true
+    - text: Gestion QA intégrée
+      highlight: true
+    - text: Modèles avancés et personnalisation
+      highlight: true
+    - text: Multi-vues intelligentes (Kanban, Liste, Release)
+      highlight: true
+    - text: Gestion des releases et listes de vérification
+      highlight: true
+    - text: Support email et chat prioritaire
+      highlight: true
+    - text: Workflows et rôles personnalisés
       highlight: false
-    - text: D'autres capacités à venir...
+    - text: Sécurité avancée
+      highlight: false
+    - text: Gestionnaire de compte dédié
       highlight: false
   call_to_action:
     link: null
