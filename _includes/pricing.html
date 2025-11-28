@@ -26,12 +26,15 @@
             {% endif %}
           {% endif %}
 
-          <div class="plan-card {% if plan.recommended %}recommended{% endif %}" style="position: relative;">
-            {% if plan.has_black_friday and is_black_friday_active %}
-              <div class="promotion-badge badge-black-friday">
-                {{ site.data[site.active_lang].strings.pricing.black_friday_first_year }}
-              </div>
-            {% elsif plan.recommended %}
+          <div class="plan-card" style="position: relative;">
+            {% assign plan_recommended = false %}
+            {% for tier in plan.pricing_tiers %}
+              {% if tier.recommended %}
+                {% assign plan_recommended = true %}
+              {% endif %}
+            {% endfor %}
+
+            {% if plan_recommended and plan.pricing_tiers.size > 1 %}
               <div class="recommended-badge">
                 <span>{{ site.data[site.active_lang].strings.pricing.recommended }}</span>
               </div>
@@ -39,40 +42,53 @@
 
             <div class="plan-header">
               <h3 class="plan-name">{{ plan.name }}</h3>
-              {% if plan.price %}
-                {% if plan.has_black_friday and is_black_friday_active and plan.struck_price and plan.black_friday_price %}
-                  <div class="plan-price-black-friday">
-                    <span class="original-price">{{ plan.currency }}{{ plan.original_price }}</span>
-                    <span class="struck-price">{{ plan.currency }}{{ plan.struck_price }}</span>
-                    <div class="plan-price">
-                      <span class="currency">{{ plan.currency }}</span>
-                      <span class="amount">{{ plan.black_friday_price }}</span>
-                      <span class="period">{{ plan.period }}</span>
-                    </div>
-                    {% if plan.promo_code %}
-                      <div class="promo-code">
-                        <span class="promo-label">{{ site.data[site.active_lang].strings.pricing.promo_code }}</span>
-                        <span class="promo-code-value">{{ plan.promo_code }}</span>
+
+              <!-- Pricing Tiers Container -->
+              <div class="pricing-tiers">
+                {% for tier in plan.pricing_tiers %}
+                  <div class="pricing-frame {% if tier.recommended %}emphasized{% endif %}">
+                    <div class="tier-period">{{ tier.period }}</div>
+
+                    {% if tier.plan_type == "coming_soon" %}
+                      <!-- Coming Soon: No price display -->
+                    {% elsif tier.has_black_friday and is_black_friday_active %}
+                      <!-- Black Friday Pricing -->
+                      <div class="plan-price-black-friday">
+                        <span class="original-price">{{ tier.currency }}{{ tier.original_price }}</span>
+                        <span class="struck-price">{{ tier.currency }}{{ tier.struck_price }}</span>
+                        <div class="plan-price">
+                          <span class="currency">{{ tier.currency }}</span>
+                          <span class="amount">{{ tier.black_friday_price }}</span>
+                          <span class="period">{{ tier.billing }}</span>
+                        </div>
+                        {% if tier.promo_code %}
+                          <div class="promo-code">
+                            <span class="promo-label">{{ site.data[site.active_lang].strings.pricing.promo_code }}</span>
+                            <span class="promo-code-value">{{ tier.promo_code }}</span>
+                          </div>
+                        {% endif %}
+                      </div>
+                    {% elsif tier.original_price %}
+                      <!-- Regular Discount Display -->
+                      <div class="plan-price-with-discount">
+                        <span class="original-price">{{ tier.currency }}{{ tier.original_price }}</span>
+                        <div class="plan-price">
+                          <span class="currency">{{ tier.currency }}</span>
+                          <span class="amount">{{ tier.price }}</span>
+                          <span class="period">{{ tier.billing }}</span>
+                        </div>
+                      </div>
+                    {% else %}
+                      <!-- Standard Pricing -->
+                      <div class="plan-price">
+                        <span class="currency">{{ tier.currency }}</span>
+                        <span class="amount">{{ tier.price }}</span>
+                        <span class="period">{{ tier.billing }}</span>
                       </div>
                     {% endif %}
                   </div>
-                {% elsif plan.original_price and plan.plan_type == "annual" %}
-                  <div class="plan-price-with-discount">
-                    <span class="original-price">{{ plan.currency }}{{ plan.original_price }}</span>
-                    <div class="plan-price">
-                      <span class="currency">{{ plan.currency }}</span>
-                      <span class="amount">{{ plan.price }}</span>
-                      <span class="period">{{ plan.period }}</span>
-                    </div>
-                  </div>
-                {% else %}
-                  <div class="plan-price">
-                    <span class="currency">{{ plan.currency }}</span>
-                    <span class="amount">{{ plan.price }}</span>
-                    <span class="period">{{ plan.period }}</span>
-                  </div>
-                {% endif %}
-              {% endif %}
+                {% endfor %}
+              </div>
             </div>
 
             <div class="plan-features">
@@ -96,9 +112,15 @@
 
             {% if plan.call_to_action %}
               <div class="plan-cta">
-                <a href="{{ plan.call_to_action.link }}" class="cta-button {% if plan.recommended %}primary{% else %}secondary{% endif %}">
-                  {{ plan.call_to_action.text }}
-                </a>
+                {% if plan.call_to_action.badge_type == "coming_soon" %}
+                  <div class="cta-badge coming-soon">
+                    {{ plan.call_to_action.text }}
+                  </div>
+                {% else %}
+                  <a href="{{ plan.call_to_action.link }}" class="cta-button {% if plan_recommended %}primary{% else %}secondary{% endif %}">
+                    {{ plan.call_to_action.text }}
+                  </a>
+                {% endif %}
               </div>
             {% endif %}
           </div>
