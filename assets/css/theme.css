@@ -96,6 +96,11 @@
   box-sizing: border-box;
 }
 
+/* Override DaisyUI hero-content to remove flex display */
+.hero-content {
+  display: block !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
