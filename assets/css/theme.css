@@ -327,7 +327,9 @@ header.navbar .dropdown ul li > a.active {
   overflow: hidden;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .hero::before {
