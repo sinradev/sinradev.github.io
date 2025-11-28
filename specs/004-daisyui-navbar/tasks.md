@@ -515,6 +515,18 @@ Verify project builds successfully and document implementation changes.
 
 ---
 
+## Implementation Notes
+
+### Critical Dependency: DaisyUI CSS
+The navbar implementation requires DaisyUI CSS library to render properly. This has been added to `_layouts/default.html`:
+```html
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+```
+
+Without this library, the HTML structure is present but styling and interactive components (dropdown, menu, buttons) will not render correctly.
+
+---
+
 ## Summary
 
 ### Task Breakdown by Phase
