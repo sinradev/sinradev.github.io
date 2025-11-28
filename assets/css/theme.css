@@ -189,8 +189,31 @@ header.navbar .navbar-end {
 
 /* Navbar toggle button (hamburger) */
 header.navbar .navbar-toggle {
-  display: inline-flex;
+  display: inline-flex !important;
   padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent !important;
+  border: none;
+  cursor: pointer;
+}
+
+header.navbar .navbar-toggle:hover {
+  background: transparent !important;
+}
+
+header.navbar .navbar-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: white !important;
+  display: block !important;
+  flex-shrink: 0;
+}
+
+header.navbar .navbar-toggle path {
+  stroke: white !important;
 }
 
 /* Navbar brand/logo */
