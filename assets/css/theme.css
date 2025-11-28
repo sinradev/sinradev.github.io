@@ -168,16 +168,17 @@ header.navbar .navbar-end {
   margin-left: auto;
 }
 
-/* Show desktop menu on large screens */
-@media (min-width: 1024px) {
-  header.navbar .navbar-center {
-    display: flex;
-  }
-
-  /* Hide mobile toggle on large screens */
-  header.navbar .navbar-toggle {
-    display: none !important;
-  }
+/* Navbar toggle button (hamburger) - mobile only */
+header.navbar .navbar-toggle {
+  display: inline-flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* Hide desktop menu on small screens */
@@ -185,19 +186,22 @@ header.navbar .navbar-end {
   header.navbar .navbar-menu {
     display: none !important;
   }
+
+  header.navbar .navbar-toggle {
+    display: inline-flex !important;
+  }
 }
 
-/* Navbar toggle button (hamburger) */
-header.navbar .navbar-toggle {
-  display: inline-flex !important;
-  padding: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: transparent !important;
-  border: none;
-  cursor: pointer;
+/* Show desktop menu on large screens */
+@media (min-width: 1024px) {
+  header.navbar .navbar-center {
+    display: flex !important;
+  }
+
+  /* Hide mobile toggle on large screens */
+  header.navbar .navbar-toggle {
+    display: none !important;
+  }
 }
 
 header.navbar .navbar-toggle:hover {
