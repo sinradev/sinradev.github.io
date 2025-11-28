@@ -271,6 +271,8 @@ header.navbar .menu li > a.active {
 header.navbar .menu li > a.highlight {
   background: var(--primary);
   color: var(--color-base-content) !important;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
 }
 
 header.navbar .menu li > a.highlight:hover {
@@ -296,6 +298,12 @@ header.navbar .dropdown-content li > a.active {
 header.navbar .dropdown-content li > a.highlight {
   background: var(--primary);
   color: var(--color-base-content) !important;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+}
+
+header.navbar .dropdown-content li > a.highlight:hover {
+  background: var(--primary-dark);
 }
 
 /* Language Switcher Dropdown */
