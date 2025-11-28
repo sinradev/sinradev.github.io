@@ -1,14 +1,66 @@
-<header>
-  <div class="container header-content">
-    <!-- Logo/Brand -->
-    <div class="company-name">
-      <a href="/">
-        <img src="/assets/images/sinra-logo.svg" style="path: #fff" alt="Sinra Logo" width="40" height="40" />
-        <span>Sinra</span>
-      </a>
+<header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <!-- Mobile Menu Dropdown -->
+    <div class="dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        {% for item in site.data[site.active_lang].navigation %}
+        {% assign page_url = "/" | append: item.link %}
+        <li>
+          <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
+             class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
+             target="{{ item.target }}"
+             aria-current="{% if page.url == page_url %}page{% else %}false{% endif %}">
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
 
-    <!-- Navigation with DaisyUI Components -->
-    {% include navigation.html %}
+    <!-- Logo/Brand -->
+    <a href="/" class="btn btn-ghost text-xl flex items-center gap-2">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      {% for item in site.data[site.active_lang].navigation %}
+      {% assign page_url = "/" | append: item.link %}
+      <li>
+        <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
+           class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
+           target="{{ item.target }}"
+           aria-current="{% if page.url == page_url %}page{% else %}false{% endif %}">
+          {{ item.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    <!-- Language Switcher Dropdown -->
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        {{ site.active_lang | upcase }}
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        {% for tongue in site.languages %}
+        <li>
+          <a {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
+             class="{% if tongue == site.active_lang %}active{% endif %}">
+            {{ tongue | upcase }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </header>
