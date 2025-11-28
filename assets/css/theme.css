@@ -246,70 +246,70 @@ header.navbar .navbar-start a.btn:hover img {
   transform: scale(1.05);
 }
 
-/* DaisyUI Navigation - Minimal Style Overrides (Let DaisyUI handle layout) */
+/* DaisyUI Navigation - Navbar specific styling only */
 
-/* Menu styling - colors and hover only */
-.menu li > a {
+/* Navbar menu styling */
+header.navbar .menu li > a {
   color: oklch(82.901% 0.031 222.959) !important;
   transition: var(--transition-normal);
 }
 
-.menu li > a:hover {
+header.navbar .menu li > a:hover {
   background: transparent;
   color: var(--primary) !important;
 }
 
-.menu li > a.active {
+header.navbar .menu li > a.active {
   color: var(--primary) !important;
   font-weight: 600;
 }
 
-.menu li > a.highlight {
+header.navbar .menu li > a.highlight {
   background: var(--primary);
   color: var(--color-base-content) !important;
 }
 
-.menu li > a.highlight:hover {
+header.navbar .menu li > a.highlight:hover {
   background: var(--primary-dark);
 }
 
-/* Dropdown menu styling - colors and hover only */
-.dropdown-content li > a {
+/* Navbar dropdown menu styling */
+header.navbar .dropdown-content li > a {
   color: oklch(82.901% 0.031 222.959) !important;
 }
 
-.dropdown-content li > a:hover {
+header.navbar .dropdown-content li > a:hover {
   background: var(--gray-200);
   color: var(--primary) !important;
 }
 
-.dropdown-content li > a.active {
+header.navbar .dropdown-content li > a.active {
   background: var(--primary);
   color: var(--color-base-content) !important;
   font-weight: 600;
 }
 
-.dropdown-content li > a.highlight {
+header.navbar .dropdown-content li > a.highlight {
   background: var(--primary);
   color: var(--color-base-content) !important;
 }
 
 /* Language Switcher Dropdown */
-.dropdown-end > ul {
+header.navbar .dropdown-end > ul {
   left: auto;
   right: 0;
 }
 
-.dropdown ul li > a {
+header.navbar .dropdown ul li > a {
   color: oklch(82.901% 0.031 222.959) !important;
 }
 
-.dropdown ul li > a:hover {
+header.navbar .dropdown ul li > a:hover {
   background: var(--gray-200);
   color: var(--primary) !important;
 }
 
-.dropdown ul li > a.active {
+header.navbar .dropdown ul li > a.active {
   background: var(--primary);
   color: var(--color-base-content) !important;
   font-weight: 600;
