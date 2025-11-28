@@ -221,7 +221,7 @@ header.navbar .navbar-toggle path {
 }
 
 /* Navbar brand/logo */
-header.navbar .navbar-start a.btn {
+header.navbar .navbar-logo {
   color: oklch(82.901% 0.031 222.959);
   font-weight: 600;
   font-size: 18px;
@@ -233,9 +233,9 @@ header.navbar .navbar-start a.btn {
   gap: 0.5rem;
 }
 
-header.navbar .navbar-start a.btn:hover {
+header.navbar .navbar-logo:hover {
   color: var(--primary);
-  background: transparent;
+  background: transparent !important;
 }
 
 header.navbar img[src*="sinra-logo.svg"] {
@@ -246,7 +246,7 @@ header.navbar img[src*="sinra-logo.svg"] {
   transition: var(--transition-normal);
 }
 
-header.navbar .navbar-start a.btn:hover img {
+header.navbar .navbar-logo:hover img {
   transform: scale(1.05);
 }
 
