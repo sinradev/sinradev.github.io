@@ -191,6 +191,11 @@ header.navbar .navbar-end {
 header.navbar .navbar-toggle {
   display: inline-flex;
   padding: 0.5rem;
+  color: oklch(82.901% 0.031 222.959);
+}
+
+header.navbar .navbar-toggle svg {
+  stroke: currentColor;
 }
 
 /* Navbar brand/logo */
