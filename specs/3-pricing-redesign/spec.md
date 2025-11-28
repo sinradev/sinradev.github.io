@@ -5,6 +5,12 @@
 **Status**: Draft
 **Input**: User description: "Je veux que tu merge les prix annuel et mensuel en 1 seul plan. Tu dois garder également le sytème de black friday. Ajoute simplement 2 cadre l'un a côté de l'autre avec le prix mensuel et annuel et mettant en avant l'annuel. Ne change pas l'aspect visuel des plans garde le comme ça. Et dans le deuxième plan, je veux que tu le nomme \"Sinra Specif-AI\". Et au lieu du bouton \"Try free\" tu mets un badge \"Coming Soon\", Rajoute dans la liste des features qui permette la spécification d'issues, capabilities, project,..  par AI."
 
+## Clarifications
+
+### Session 2025-11-28
+
+- Q: Should Sinra Specif-AI be always visible with "Coming Soon" badge, or hidden until launch? → A: Always visible with "Coming Soon" badge (Option A)
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Pricing Comparison with Flexible Billing Options (Priority: P1)
@@ -72,8 +78,8 @@ The product team has invested in a specific visual design language for pricing c
 - **FR-001**: Single plan card for Sinra Pro MUST display both monthly and annual pricing options in separate frames positioned side-by-side
 - **FR-002**: Annual pricing frame MUST be visually emphasized compared to monthly frame (through size, color, contrast, or visual weight) to indicate it as the recommended choice
 - **FR-003**: Black Friday promotion system MUST continue to work—when active, the annual frame MUST display promotional pricing with original price struck through, discounted price, and promo code visible
-- **FR-004**: The second plan card MUST be renamed to "Sinra Specif-AI" to introduce the new AI-powered feature tier
-- **FR-005**: Sinra Specif-AI plan MUST display a "Coming Soon" badge instead of a "Try Free" or "Start Free Trial" call-to-action button
+- **FR-004**: The second plan card MUST be renamed to "Sinra Specif-AI" to introduce the new AI-powered feature tier and MUST be visible on the pricing page at all times (not hidden or feature-flagged)
+- **FR-005**: Sinra Specif-AI plan MUST display a "Coming Soon" badge instead of a "Try Free" or "Start Free Trial" call-to-action button to communicate its upcoming status while building market awareness
 - **FR-006**: Sinra Specif-AI plan features list MUST include new AI-powered specification capabilities (e.g., "AI-powered issue specification", "Automated capability definition", "AI-generated project templates", "AI-assisted requirement generation")
 - **FR-007**: Monthly and annual frames MUST maintain visual consistency with current card styling—no changes to font sizes, weights, card dimensions, or spacing
 - **FR-008**: All existing plan features, descriptions, and metadata for Sinra Pro MUST be preserved and accessible in both billing options
