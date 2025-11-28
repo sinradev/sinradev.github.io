@@ -44,12 +44,12 @@ Phase 6: Polish & Testing (T012-T013)
 
 ### Phase 1: Setup & Verification
 
-- [ ] T001 Verify current pricing implementation and backup existing YAML files in `_data/en/pricing.yml` and `_data/fr/pricing.yml`
+- [x] T001 Verify current pricing implementation and backup existing YAML files in `_data/en/pricing.yml` and `_data/fr/pricing.yml`
 
 ### Phase 2: Foundational Data & Template Setup
 
-- [ ] T002 Update English pricing data structure: Consolidate two Sinra Pro entries into single unified plan with `pricing_tiers` array in `_data/en/pricing.yml`
-- [ ] T003 Update French pricing data structure: Mirror English structure with French translations in `_data/fr/pricing.yml`
+- [x] T002 Update English pricing data structure: Consolidate two Sinra Pro entries into single unified plan with `pricing_tiers` array in `_data/en/pricing.yml`
+- [x] T003 Update French pricing data structure: Mirror English structure with French translations in `_data/fr/pricing.yml`
 
 ### Phase 3: User Story 1 - Pricing Comparison with Flexible Billing Options
 
@@ -57,9 +57,9 @@ Phase 6: Polish & Testing (T012-T013)
 
 **Independent Test**: Customers can identify monthly cost (€10), annual cost (€96/€60), and recommended option with 75%+ clarity
 
-- [ ] T004 [P] [US1] Update pricing template to support `pricing_tiers` array iteration in `_includes/pricing.html`
-- [ ] T005 [P] [US1] Add CSS classes for pricing frames layout (.pricing-tiers, .pricing-frame, .emphasized) in `assets/css/plan.css`
-- [ ] T006 [US1] Test pricing display at desktop (1024px+), tablet (768-1023px), and mobile (<768px) breakpoints; verify Black Friday logic
+- [x] T004 [P] [US1] Update pricing template to support `pricing_tiers` array iteration in `_includes/pricing.html`
+- [x] T005 [P] [US1] Add CSS classes for pricing frames layout (.pricing-tiers, .pricing-frame, .emphasized) in `assets/css/plan.css`
+- [x] T006 [US1] Test pricing display at desktop (1024px+), tablet (768-1023px), and mobile (<768px) breakpoints; verify Black Friday logic
 
 ### Phase 4: User Story 2 - AI-Powered Issue and Capability Specification
 
@@ -67,9 +67,9 @@ Phase 6: Polish & Testing (T012-T013)
 
 **Independent Test**: Customers understand Specif-AI purpose, availability, and value; 80%+ clarity on AI feature benefits
 
-- [ ] T007 [P] [US2] Add Sinra Specif-AI plan entry to `_data/en/pricing.yml` with Coming Soon tier and AI feature list
-- [ ] T008 [P] [US2] Add Sinra Specif-AI plan entry to `_data/fr/pricing.yml` with French translations of features
-- [ ] T009 [US2] Implement Coming Soon badge rendering in template (conditional logic for non-interactive badge) in `_includes/pricing.html`
+- [x] T007 [P] [US2] Add Sinra Specif-AI plan entry to `_data/en/pricing.yml` with Coming Soon tier and AI feature list
+- [x] T008 [P] [US2] Add Sinra Specif-AI plan entry to `_data/fr/pricing.yml` with French translations of features
+- [x] T009 [US2] Implement Coming Soon badge rendering in template (conditional logic for non-interactive badge) in `_includes/pricing.html`
 
 ### Phase 5: User Story 3 - Visual Consistency and Layout Preservation
 
@@ -77,13 +77,13 @@ Phase 6: Polish & Testing (T012-T013)
 
 **Independent Test**: Visual regression test shows no pixel-level changes to card dimensions, colors, or typography
 
-- [ ] T010 [P] [US3] Add responsive CSS for mobile stacking: `.pricing-tiers { flex-direction: column; }` and `order: -1` for emphasized frame in `assets/css/plan.css`
-- [ ] T011 [US3] Perform visual regression test: Compare redesigned pricing page against current version for card dimensions, typography, colors, and interactive behavior
+- [x] T010 [P] [US3] Add responsive CSS for mobile stacking: `.pricing-tiers { flex-direction: column; }` and `order: -1` for emphasized frame in `assets/css/plan.css`
+- [x] T011 [US3] Perform visual regression test: Compare redesigned pricing page against current version for card dimensions, typography, colors, and interactive behavior
 
 ### Phase 6: Polish & Cross-Cutting Concerns
 
-- [ ] T012 Test complete pricing page flow: Create Sinra Pro dual frames, verify Specif-AI Coming Soon, test all responsive breakpoints, confirm Black Friday logic in `bundle exec jekyll serve`
-- [ ] T013 Verify build success: Run `bundle exec jekyll build` and confirm no warnings or errors
+- [x] T012 Test complete pricing page flow: Create Sinra Pro dual frames, verify Specif-AI Coming Soon, test all responsive breakpoints, confirm Black Friday logic in `bundle exec jekyll serve`
+- [x] T013 Verify build success: Run `bundle exec jekyll build` and confirm no warnings or errors
 
 ---
 
