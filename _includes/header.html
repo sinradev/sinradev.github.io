@@ -1,8 +1,8 @@
 <header class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
     <!-- Mobile Menu Dropdown -->
-    <div class="dropdown">
-      <button tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -23,13 +23,13 @@
     </div>
 
     <!-- Logo/Brand -->
-    <a href="/" class="btn btn-ghost text-xl flex items-center gap-2">
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
       <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
       <span>Sinra</span>
     </a>
   </div>
 
-  <div class="navbar-center hidden lg:flex">
+  <div class="navbar-center navbar-menu">
     <ul class="menu menu-horizontal px-1">
       {% for item in site.data[site.active_lang].navigation %}
       {% assign page_url = "/" | append: item.link %}

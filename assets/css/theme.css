@@ -134,11 +134,63 @@ header.navbar {
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   padding: 1rem var(--container-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header.navbar.scrolled {
   background: var(--gray-50);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar sections */
+header.navbar .navbar-start,
+header.navbar .navbar-center,
+header.navbar .navbar-end {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header.navbar .navbar-start {
+  flex-grow: 0;
+}
+
+header.navbar .navbar-center {
+  flex-grow: 1;
+  justify-content: center;
+  display: none;
+}
+
+header.navbar .navbar-end {
+  flex-grow: 0;
+  margin-left: auto;
+}
+
+/* Show desktop menu on large screens */
+@media (min-width: 1024px) {
+  header.navbar .navbar-center {
+    display: flex;
+  }
+
+  /* Hide mobile toggle on large screens */
+  header.navbar .navbar-toggle {
+    display: none !important;
+  }
+}
+
+/* Hide desktop menu on small screens */
+@media (max-width: 1023px) {
+  header.navbar .navbar-menu {
+    display: none !important;
+  }
+}
+
+/* Navbar toggle button (hamburger) */
+header.navbar .navbar-toggle {
+  display: inline-flex;
+  padding: 0.5rem;
 }
 
 /* Navbar brand/logo */
@@ -149,6 +201,9 @@ header.navbar .navbar-start a.btn {
   text-decoration: none;
   transition: var(--transition-normal);
   padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 header.navbar .navbar-start a.btn:hover {
