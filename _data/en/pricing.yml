@@ -1,11 +1,23 @@
 - name: Sinra Pro
   color: "#2196F3"
   description: "The complete project management platform combining V-Model and Agile methodologies"
-  period: Monthly
-  price: "10"
-  currency: "€"
-  billing: "/month"
-  plan_type: "monthly"
+  pricing_tiers:
+    - period: Monthly
+      price: "10"
+      currency: "€"
+      billing: "/month"
+      plan_type: "monthly"
+    - period: Annual
+      price: "96"
+      currency: "€"
+      billing: "/year"
+      plan_type: "annual"
+      original_price: "120"
+      struck_price: "96"
+      has_black_friday: true
+      black_friday_price: "60"
+      promo_code: "BLACKFRIDAY2025"
+      recommended: true
   features:
     - text: Pay per seat (flexible team sizing)
       highlight: true
@@ -35,46 +47,32 @@
     link: https://app.sinra.dev/users/sign_up
     text: Start Free Trial
 
-- name: Sinra Pro
+- name: Sinra Specif-AI
   color: "#2196F3"
-  description: "The complete project management platform combining V-Model and Agile methodologies"
-  period: Annual
-  price: "96"
-  black_friday_price: "60"
-  promo_code: "BLACKFRIDAY2025"
-  currency: "€"
-  billing: "/year"
-  original_price: "120"
-  struck_price: "96"
-  plan_type: "annual"
-  savings: "Save 50%"
-  recommended: true
-  has_black_friday: true
+  description: "AI-powered specification generation for issues, capabilities, and projects"
+  pricing_tiers:
+    - period: Coming Soon
+      price: null
+      billing: null
+      plan_type: "coming_soon"
   features:
-    - text: Pay per seat (flexible team sizing)
+    - text: AI-powered issue specification
       highlight: true
-    - text: Unlimited projects and releases
+      ai_feature: true
+    - text: Automated capability definition
       highlight: true
-    - text: Rich text editor & specifications
+      ai_feature: true
+    - text: AI-generated project templates
       highlight: true
-    - text: Advanced real-time capacity planning
+      ai_feature: true
+    - text: AI-assisted requirement generation
       highlight: true
-    - text: Integrated QA management
-      highlight: true
-    - text: Advanced templates & customization
-      highlight: true
-    - text: Multi-view intelligence (Kanban, List, Release)
-      highlight: true
-    - text: Release management & go-live checklists
-      highlight: true
-    - text: Priority email & chat support
-      highlight: true
-    - text: Custom workflows & roles
+      ai_feature: true
+    - text: Integration with Sinra Pro features
       highlight: false
-    - text: Advanced security features
-      highlight: false
-    - text: Dedicated account manager
+    - text: More capabilities coming soon...
       highlight: false
   call_to_action:
-    link: https://app.sinra.dev/users/sign_up
-    text: Start Free Trial
+    link: null
+    text: Coming Soon
+    badge_type: "coming_soon"
