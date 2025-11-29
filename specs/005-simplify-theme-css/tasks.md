@@ -59,23 +59,23 @@ This tasks document breaks down the CSS simplification refactoring into actionab
 
 ### Component Audit Tasks
 
-- [ ] T014 Map all buttons to DaisyUI variants at `specs/005-simplify-theme-css/audit/component-audit.md` (document current button classes, map to `btn`, `btn-primary`, `btn-secondary`, etc.)
-- [ ] T015 [P] Map all cards to DaisyUI card component at `specs/005-simplify-theme-css/audit/component-audit.md` (document current card classes, map to `card`, `card-body`, etc.)
-- [ ] T016 [P] Map all badges to DaisyUI badge component at `specs/005-simplify-theme-css/audit/component-audit.md` (document current badge classes, map to `badge`, `badge-primary`, etc.)
-- [ ] T017 [P] Map all forms to DaisyUI form components at `specs/005-simplify-theme-css/audit/component-audit.md` (document current form classes, map to `form-control`, `input`, `textarea`, etc.)
-- [ ] T018 [P] Map tables/modals to DaisyUI if present at `specs/005-simplify-theme-css/audit/component-audit.md` (document table and modal classes if used; map to DaisyUI equivalents)
+- [x] T014 Map all buttons to DaisyUI variants at `specs/005-simplify-theme-css/audit/component-audit.md` (document current button classes, map to `btn`, `btn-primary`, `btn-secondary`, etc.)
+- [x] T015 [P] Map all cards to DaisyUI card component at `specs/005-simplify-theme-css/audit/component-audit.md` (document current card classes, map to `card`, `card-body`, etc.)
+- [x] T016 [P] Map all badges to DaisyUI badge component at `specs/005-simplify-theme-css/audit/component-audit.md` (document current badge classes, map to `badge`, `badge-primary`, etc.)
+- [x] T017 [P] Map all forms to DaisyUI form components at `specs/005-simplify-theme-css/audit/component-audit.md` (document current form classes, map to `form-control`, `input`, `textarea`, etc.)
+- [x] T018 [P] Map tables/modals to DaisyUI if present at `specs/005-simplify-theme-css/audit/component-audit.md` (document table and modal classes if used; map to DaisyUI equivalents)
 
 ### Color Override Analysis Tasks
 
-- [ ] T019 Extract all colors from theme.css at `specs/005-simplify-theme-css/audit/color-audit.md` (list every color definition, note if hardcoded or variable)
-- [ ] T020 Compare colors to DaisyUI Dim theme at `specs/005-simplify-theme-css/audit/color-audit.md` (check which colors match Dim theme, which require custom overrides)
-- [ ] T021 Document override rationale at `specs/005-simplify-theme-css/audit/color-audit.md` (for each override, explain why DaisyUI default doesn't work; note visual impact)
-- [ ] T022 Identify color duplicates across CSS files at `specs/005-simplify-theme-css/audit/color-audit.md` (find color definitions duplicated in layout.css, blog.css, plan.css, contact.css)
+- [x] T019 Extract all colors from theme.css at `specs/005-simplify-theme-css/audit/color-audit.md` (list every color definition, note if hardcoded or variable)
+- [x] T020 Compare colors to DaisyUI Dim theme at `specs/005-simplify-theme-css/audit/color-audit.md` (check which colors match Dim theme, which require custom overrides)
+- [x] T021 Document override rationale at `specs/005-simplify-theme-css/audit/color-audit.md` (for each override, explain why DaisyUI default doesn't work; note visual impact)
+- [x] T022 Identify color duplicates across CSS files at `specs/005-simplify-theme-css/audit/color-audit.md` (find color definitions duplicated in layout.css, blog.css, plan.css, contact.css)
 
 ### HTML Component Usage Tasks
 
-- [ ] T023 Run HTML class scanning script at `specs/005-simplify-theme-css/audit/html-usage.txt` (execute bash script to scan all HTML files; generate report of component class usage)
-- [ ] T024 Document component usage patterns at `specs/005-simplify-theme-css/audit/component-audit.md` (from scan results, document which pages use which components; identify missing component classes)
+- [x] T023 Run HTML class scanning script at `specs/005-simplify-theme-css/audit/html-usage.txt` (execute bash script to scan all HTML files; generate report of component class usage)
+- [x] T024 Document component usage patterns at `specs/005-simplify-theme-css/audit/component-audit.md` (from scan results, document which pages use which components; identify missing component classes)
 
 ---
 

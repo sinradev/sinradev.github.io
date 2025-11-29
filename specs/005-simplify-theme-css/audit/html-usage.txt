@@ -1,0 +1,197 @@
+# HTML Component Class Usage Report
+Generated: 2025-11-29
+
+## Component Class Scan Results
+
+### Button Classes Found
+Searching for class patterns matching 'btn'...
+/Users/thomas/Apps/sinra-website/_includes/blog.html:    <a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; {{ site.data[site.active_lang].strings.blog.newer_posts }}</a>
+/Users/thomas/Apps/sinra-website/_includes/blog.html:    <a href="{{ paginator.next_page_path }}" class="next btn">{{ site.data[site.active_lang].strings.blog.older_posts }} &rarr;</a>
+/Users/thomas/Apps/sinra-website/_includes/header.html:      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+/Users/thomas/Apps/sinra-website/_includes/header.html:    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+/Users/thomas/Apps/sinra-website/_includes/header.html:      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+/Users/thomas/Apps/sinra-website/_includes/blog.html:    <a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; {{ site.data[site.active_lang].strings.blog.newer_posts }}</a>
+/Users/thomas/Apps/sinra-website/_includes/blog.html:    <a href="{{ paginator.next_page_path }}" class="next btn">{{ site.data[site.active_lang].strings.blog.older_posts }} &rarr;</a>
+/Users/thomas/Apps/sinra-website/_includes/header.html:      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+/Users/thomas/Apps/sinra-website/_includes/header.html:    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+/Users/thomas/Apps/sinra-website/_includes/header.html:      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:             class=" btn btn-accent btn-sm"
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:           class=" btn btn-accent btn-sm"
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+/Users/thomas/Apps/sinra-website/_site/index.html:      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+/Users/thomas/Apps/sinra-website/_site/index.html:             class=" btn btn-accent btn-sm"
+/Users/thomas/Apps/sinra-website/_site/index.html:    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+/Users/thomas/Apps/sinra-website/_site/index.html:           class=" btn btn-accent btn-sm"
+/Users/thomas/Apps/sinra-website/_site/index.html:      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+
+### Card Classes Found
+Searching for class patterns matching 'card'...
+/Users/thomas/Apps/sinra-website/_includes/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_includes/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_includes/about.html:      <div class="challenge-card agile">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_includes/about.html:      <div class="challenge-card waterfall">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:          <div class="plan-card" style="position: relative;">
+/Users/thomas/Apps/sinra-website/_includes/comparison.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_includes/comparison.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_includes/case_studies.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_includes/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_includes/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_includes/about.html:      <div class="challenge-card agile">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_includes/about.html:      <div class="challenge-card waterfall">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_includes/about.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:          <div class="plan-card" style="position: relative;">
+/Users/thomas/Apps/sinra-website/_includes/comparison.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_includes/comparison.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_includes/case_studies.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_layouts/post.html:      <article class="related-post-card">
+/Users/thomas/Apps/sinra-website/_layouts/category.html:          <article class="post-card">
+/Users/thomas/Apps/sinra-website/blog/index.html:          <article class="post-card">
+/Users/thomas/Apps/sinra-website/_pages/blog.fr.html:          <article class="post-card">
+/Users/thomas/Apps/sinra-website/_pages/blog.en.html:          <article class="post-card">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/about/index.html:      <div class="challenge-card agile">
+/Users/thomas/Apps/sinra-website/_site/about/index.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_site/about/index.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_site/about/index.html:      <div class="challenge-card waterfall">
+/Users/thomas/Apps/sinra-website/_site/about/index.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_site/about/index.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_site/blog/index.html:          <article class="post-card">
+/Users/thomas/Apps/sinra-website/_site/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/monday/index.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_site/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/jira/index.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_site/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/compare/asana/index.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:        <div class="stat-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:        <div class="benefit-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/fr/index.html:      <div class="case-study-card">
+/Users/thomas/Apps/sinra-website/_site/fr/about/index.html:      <div class="challenge-card agile">
+/Users/thomas/Apps/sinra-website/_site/fr/about/index.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_site/fr/about/index.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_site/fr/about/index.html:      <div class="challenge-card waterfall">
+/Users/thomas/Apps/sinra-website/_site/fr/about/index.html:        <div class="card-icon">
+/Users/thomas/Apps/sinra-website/_site/fr/about/index.html:        <div class="card-content">
+/Users/thomas/Apps/sinra-website/_site/fr/blog/index.html:          <article class="post-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/monday/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/monday/index.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/jira/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/jira/index.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/asana/index.html:        <div class="difference-card">
+/Users/thomas/Apps/sinra-website/_site/fr/fr/compare/asana/index.html:      <div class="conclusion-card">
+/Users/thomas/Apps/sinra-website/_site/fr/pricing/index.html:          <div class="plan-card" style="position: relative;">
+/Users/thomas/Apps/sinra-website/_site/fr/pricing/index.html:          <div class="plan-card" style="position: relative;">
+/Users/thomas/Apps/sinra-website/_site/pricing/index.html:          <div class="plan-card" style="position: relative;">
+/Users/thomas/Apps/sinra-website/_site/pricing/index.html:          <div class="plan-card" style="position: relative;">
+/Users/thomas/Apps/sinra-website/vendor/bundle/ruby/3.4.0/gems/minima-2.5.2/_includes/footer.html:<footer class="site-footer h-card">
+/Users/thomas/Apps/sinra-website/vendor/bundle/ruby/3.4.0/gems/minima-2.5.2/_layouts/post.html:        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+/Users/thomas/Apps/sinra-website/vendor/bundle/ruby/2.6.0/gems/minima-2.5.1/_includes/footer.html:<footer class="site-footer h-card">
+/Users/thomas/Apps/sinra-website/vendor/bundle/ruby/2.6.0/gems/minima-2.5.1/_layouts/post.html:        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+
+### Badge Classes Found
+Searching for class patterns matching 'badge'...
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:        <a href="https://app.sinra.dev/users/sign_up" class="discount-badge">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:              <div class="recommended-badge">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:                  <div class="cta-badge coming-soon">
+/Users/thomas/Apps/sinra-website/_includes/blackfriday-badge.html:  <div class="promotion-badge {{ promo.badge.color_class }}">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:        <a href="https://app.sinra.dev/users/sign_up" class="discount-badge">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:              <div class="recommended-badge">
+/Users/thomas/Apps/sinra-website/_includes/pricing.html:                  <div class="cta-badge coming-soon">
+/Users/thomas/Apps/sinra-website/_includes/blackfriday-badge.html:  <div class="promotion-badge {{ promo.badge.color_class }}">
+/Users/thomas/Apps/sinra-website/_site/fr/pricing/index.html:        <a href="https://app.sinra.dev/users/sign_up" class="discount-badge">
+/Users/thomas/Apps/sinra-website/_site/fr/pricing/index.html:              <div class="recommended-badge">
+/Users/thomas/Apps/sinra-website/_site/fr/pricing/index.html:                  <div class="cta-badge coming-soon">
+/Users/thomas/Apps/sinra-website/_site/pricing/index.html:        <a href="https://app.sinra.dev/users/sign_up" class="discount-badge">
+/Users/thomas/Apps/sinra-website/_site/pricing/index.html:              <div class="recommended-badge">
+/Users/thomas/Apps/sinra-website/_site/pricing/index.html:                  <div class="cta-badge coming-soon">
+
+### Form Classes Found
+Searching for class patterns matching 'form\|input'...
+/Users/thomas/Apps/sinra-website/_includes/contact.html:      <div class="contact-form-container-centered">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:            <form action="http://localhost:3000/contact/form" method="post" class="contact-form" aria-label="Contact form">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-error-alert" role="alert" aria-live="polite" aria-hidden="true"></div>
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:      <div class="contact-form-container-centered">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:            <form action="http://localhost:3000/contact/form" method="post" class="contact-form" aria-label="Contact form">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-error-alert" role="alert" aria-live="polite" aria-hidden="true"></div>
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_includes/contact.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:      <div class="contact-form-container-centered">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:            <form action="http://localhost:3000/contact/form" method="post" class="contact-form" aria-label="Contact form">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:              <div class="form-error-alert" role="alert" aria-live="polite" aria-hidden="true"></div>
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:      <div class="contact-form-container-centered">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:        <div class="form-card">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:            <form action="http://localhost:3000/contact/form" method="post" class="contact-form" aria-label="Contact form">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:              <div class="form-error-alert" role="alert" aria-live="polite" aria-hidden="true"></div>
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:              <div class="form-group">
+/Users/thomas/Apps/sinra-website/_site/fr/contact/index.html:              <div class="form-group">
+
+### All Files Scanned
+Total HTML files found:
+     587
