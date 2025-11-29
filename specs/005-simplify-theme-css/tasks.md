@@ -91,10 +91,10 @@ This tasks document breaks down the CSS simplification refactoring into actionab
 
 ### Strategy Documentation Tasks
 
-- [ ] T025 Create component mapping guide at `specs/005-simplify-theme-css/contracts/daisyui-components.md` (table: current HTML → DaisyUI classes, include breakpoint conventions, color classes, state classes)
-- [ ] T026 Document override rules at `specs/005-simplify-theme-css/contracts/css-overrides.md` (rules for acceptable overrides, format for documenting, rationale template, testing requirements)
-- [ ] T027 Create refactoring quick reference at `specs/005-simplify-theme-css/quickstart.md` (step-by-step checklist, before/after examples, DaisyUI component reference, common patterns)
-- [ ] T028 Create data model for CSS structure at `specs/005-simplify-theme-css/data-model.md` (document CSS architecture: sections, groupings, proposed simplified structure, component groupings)
+- [x] T025 Create component mapping guide at `specs/005-simplify-theme-css/contracts/daisyui-components.md` (table: current HTML → DaisyUI classes, include breakpoint conventions, color classes, state classes)
+- [x] T026 Document override rules at `specs/005-simplify-theme-css/contracts/css-overrides.md` (rules for acceptable overrides, format for documenting, rationale template, testing requirements)
+- [x] T027 Create refactoring quick reference at `specs/005-simplify-theme-css/quickstart.md` (step-by-step checklist, before/after examples, DaisyUI component reference, common patterns)
+- [x] T028 Create data model for CSS structure at `specs/005-simplify-theme-css/data-model.md` (document CSS architecture: sections, groupings, proposed simplified structure, component groupings)
 
 ---
 
