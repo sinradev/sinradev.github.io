@@ -64,3 +64,28 @@ jekyll-archives:
   enabled:
     - categories
 
+# Minification for production builds
+jekyll-minifier:
+  preserve_php: false
+  remove_multi_spaces: true
+  remove_comments: true
+  remove_inlineJS_comments: false
+  remove_cdata: false
+  compress_css: true
+  compress_javascript: true
+  compress_json: false
+  simple_doctype: false
+  remove_script_attributes: false
+  remove_style_attributes: false
+  remove_link_attributes: false
+  remove_form_attributes: false
+  remove_input_attributes: false
+  remove_boolean_attributes: false
+  compress_style_inline: false
+  compress_script_inline: false
+  obfuscate_javascript: false
+  obfuscate_javascript_limited: false
+  obfuscate_javascript_simple: false
+  preserve_authorization_header: false
+  arithmetics: false
+
