@@ -102,7 +102,8 @@ Refactor `theme.css` to minimize custom CSS by:
 - [ ] DaisyUI dim theme applied globally (via Tailwind/DaisyUI configuration)
 - [ ] Dim theme colors used for all backgrounds, borders, and text
 - [ ] No custom color definitions that duplicate dim theme colors
-- [ ] Custom brand colors only override when needed for brand differentiation
+- [ ] Custom brand colors and design-matching overrides applied where DaisyUI defaults conflict with current site appearance
+- [ ] Selective overrides documented in theme.css with clear rationale
 
 ### F3: CSS Simplification
 - [ ] Duplicate utility classes removed (margin, padding, display, etc. handled by Tailwind)
@@ -191,6 +192,11 @@ Refactor `theme.css` to minimize custom CSS by:
 - Jekyll configuration for CSS compilation
 - DaisyUI theme configuration files
 
+## Clarifications
+
+### Session 2025-11-29
+- Q: When DaisyUI dim theme defaults conflict with current site design, what approach should be taken? → A: Hybrid approach – Use DaisyUI defaults where they match current design; override only where necessary to maintain visual consistency and current appearance.
+
 ## Assumptions
 
 1. **DaisyUI is Available**: DaisyUI is already configured and available in the project
@@ -201,6 +207,7 @@ Refactor `theme.css` to minimize custom CSS by:
 6. **No Custom JavaScript Styling**: JavaScript does not add inline styles; all styling is CSS-based
 7. **Brand Colors**: Any custom brand colors beyond dim theme are documented
 8. **Performance Baseline**: Current page load time is acceptable and CSS reduction won't negatively impact performance
+9. **DaisyUI/Design Alignment**: When DaisyUI dim theme defaults conflict with current design, selective overrides are acceptable to maintain visual consistency (hybrid approach)
 
 ## Testing Strategy
 
