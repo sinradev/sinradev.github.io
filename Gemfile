@@ -17,6 +17,7 @@ gem 'minima', '~> 2.5'
 group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-feed', '~> 0.12'
+  gem 'jekyll-minifier'
   gem 'jekyll-paginate'
   gem 'jekyll-polyglot'
   gem 'jekyll-sitemap'

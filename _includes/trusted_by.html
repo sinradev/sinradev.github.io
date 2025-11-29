@@ -8,7 +8,10 @@
     <div class="trusted-by-logos">
       {% for client in site.data[site.active_lang].trusted_clients %}
       <div class="client-logo-wrapper">
-        <img src="{{ client.logo | relative_url }}" alt="{{ client.name }}" class="client-logo" loading="lazy" />
+        <picture>
+          <source srcset="{{ client.logo | replace: '.png', '.webp' | replace: '.jpg', '.webp' | relative_url }}" type="image/webp">
+          <img src="{{ client.logo | relative_url }}" alt="{{ client.name }}" class="client-logo" loading="lazy" width="80" height="80" />
+        </picture>
       </div>
       {% endfor %}
     </div>

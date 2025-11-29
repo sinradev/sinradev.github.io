@@ -5,7 +5,10 @@
     <div class="cta button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.hero.button }}</a></div>
     <div class="hero-visual">
       <canvas id="solar-system-canvas"></canvas>
-      <img src="{{ '/assets/images/sinra-overview.png' | relative_url }}" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" loading="lazy" />
+      <picture>
+        <source srcset="{{ '/assets/images/sinra-overview.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/sinra-overview.png' | relative_url }}" alt="{{ site.data[site.active_lang].strings.hero.alt_image }}" class="screenshot" width="752" height="478" />
+      </picture>
     </div>
   </div>
 </section>
@@ -50,7 +53,10 @@
         <p>{{ section.body }}</p>
       </div>
       <div class="image">
-        <img src="{{ section.image | relative_url }}" alt="{{ section.alt }}" class="screenshot" loading="lazy" />
+        <picture>
+          <source srcset="{{ section.image | replace: '.png', '.webp' | replace: '.jpg', '.webp' | relative_url }}" type="image/webp">
+          <img src="{{ section.image | relative_url }}" alt="{{ section.alt }}" class="screenshot" loading="lazy" width="356" height="230" />
+        </picture>
       </div>
     </div>
   </section>
@@ -63,7 +69,10 @@
       {% for feature in site.data[site.active_lang].index_features %}
       <div class="feature">
         <div class="feature-icon">
-          <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}" loading="lazy">
+          <picture>
+            <source srcset="{{ feature.image | replace: '.png', '.webp' | replace: '.jpg', '.webp' | relative_url }}" type="image/webp">
+            <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}" loading="lazy">
+          </picture>
         </div>
         <div>
           <h3>{{ feature.title }}</h3>
@@ -97,8 +106,11 @@
 
 <script src="{{ '/assets/js/solar-system.js' | relative_url }}"></script>
 <script>
-  document.getElementById("open-nav").onclick = function () {
-    document.body.classList.toggle("nav-open");
-    return false;
-  };
+  var openNavBtn = document.getElementById("open-nav");
+  if (openNavBtn) {
+    openNavBtn.onclick = function () {
+      document.body.classList.toggle("nav-open");
+      return false;
+    };
+  }
 </script>

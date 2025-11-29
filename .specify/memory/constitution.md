@@ -62,12 +62,13 @@ All styling must use the **DaisyUI Dim theme** colors defined in `assets/css/the
 ### CSS Guidelines
 
 **MUST**:
-1. **Use `assets/css/theme.css`** as the primary stylesheet
-2. **Reference DaisyUI Dim theme variables** for all colors (never hardcode colors except for transient promotional content)
-3. **Use plain CSS** (NO SCSS, NO preprocessors)
-4. **Define new styles within `theme.css`** following existing patterns
-5. **Maintain existing color harmony** - new colors must complement the Dim theme
-6. **Test responsiveness** with DaisyUI breakpoints (md: 768px default)
+1. **Use DaisyUI components in HTML first** - leverage built-in component classes (`btn`, `card`, `badge`, `form-control`, etc.) before adding custom CSS
+2. **Use `assets/css/theme.css`** as the primary stylesheet for brand-specific overrides only
+3. **Reference DaisyUI Dim theme variables** for all colors (never hardcode colors except for transient promotional content)
+4. **Use plain CSS** (NO SCSS, NO preprocessors)
+5. **Define new styles within `theme.css`** following existing patterns, but minimize custom CSS by maximizing DaisyUI component usage
+6. **Maintain existing color harmony** - new colors must complement the Dim theme
+7. **Test responsiveness** with DaisyUI breakpoints (md: 768px default)
 
 **AVOID**:
 - Hardcoded color values (except for temporary promotions like Black Friday)
@@ -129,15 +130,24 @@ These promotional colors are **temporary** and isolated to promotion components.
 - Linters or formatters
 - Additional gems (unless critical)
 
+### DaisyUI Documentation References
+
+When implementing components, refer to:
+- **Components**: https://daisyui.com/components/
+- **Themes (Dim)**: https://daisyui.com/docs/themes/
+- **Tailwind Utilities**: https://tailwindcss.com/docs/utility-first
+- **Responsive Design**: https://daisyui.com/docs/use/
+
 ---
 
 ## Summary
 
+✅ **Prioritize DaisyUI component classes in HTML** - use built-in components before custom CSS
 ✅ **All styling must align with DaisyUI Dim theme**
-✅ **Use `theme.css` as single stylesheet**
+✅ **Use `theme.css` for brand-specific overrides only** - minimize custom CSS
 ✅ **Reference CSS variables from Dim theme**
 ✅ **Plain CSS only, no SCSS**
 ✅ **Test EN/FR multilingual rendering**
 ✅ **Temporary hardcoded colors only for time-limited promotions**
 
-This constitution ensures visual consistency, maintainability, and adherence to Sinra's minimalist, elegant design approach.
+This constitution ensures visual consistency, maintainability, and adherence to Sinra's minimalist, elegant design approach while maximizing DaisyUI component usage to reduce CSS duplication.
