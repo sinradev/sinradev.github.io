@@ -469,9 +469,9 @@ header.navbar .dropdown ul li > a.active {
 
 /* Removed hover effects - halo always visible like GitHub */
 
-/* GitHub-style Buttons */
-.button a,
-.button button {
+/* GitHub-style Buttons - ONLY for custom buttons, NOT DaisyUI buttons */
+.button a:not(.btn),
+.button button:not(.btn) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -491,8 +491,8 @@ header.navbar .dropdown ul li > a.active {
   user-select: none;
 }
 
-.button a::before,
-.button button::before {
+.button a:not(.btn)::before,
+.button button:not(.btn)::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -505,14 +505,14 @@ header.navbar .dropdown ul li > a.active {
   transition: var(--transition-normal);
 }
 
-.button a:hover::before,
-.button button:hover::before {
+.button a:not(.btn):hover::before,
+.button button:not(.btn):hover::before {
   width: 300px;
   height: 300px;
 }
 
-.button a:hover,
-.button button:hover {
+.button a:not(.btn):hover,
+.button button:not(.btn):hover {
   background: var(--primary-dark);
   transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-lg);
@@ -520,11 +520,16 @@ header.navbar .dropdown ul li > a.active {
 }
 
 .button.alt a {
+  display: block;
+  text-align: center;
   background: transparent;
   color: oklch(82.901% 0.031 222.959);
   border: 1px solid oklch(24.731% 0.02 264.094);
   cursor: pointer !important;
   transition: all 0.3s ease;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: var(--btn-border-radius);
 }
 
 .button.alt a:hover {
@@ -1604,14 +1609,14 @@ img.loaded {
 }
 
 /* Button States */
-.button a:active,
-.button button:active {
+.button a:not(.btn):active,
+.button button:not(.btn):active {
   transform: translateY(0) scale(0.98);
   cursor: pointer !important;
 }
 
-.button a:focus,
-.button button:focus {
+.button a:not(.btn):focus,
+.button button:not(.btn):focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
   cursor: pointer !important;
@@ -1650,7 +1655,7 @@ img.loaded {
     --gray-800: #ffffff;
   }
 
-  .button a {
+  .button a:not(.btn) {
     border: 2px solid currentColor;
   }
 }
@@ -1668,7 +1673,7 @@ img.loaded {
     color: black !important;
   }
 
-  .button a {
+  .button a:not(.btn) {
     background: black !important;
     color: oklch(17.226% 0.028 139.549) !important;
   }
