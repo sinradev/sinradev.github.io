@@ -140,6 +140,48 @@ When implementing components, refer to:
 
 ---
 
+## Lighthouse CI & Performance Standards
+
+### Performance Requirements
+
+All code must maintain or improve the following **minimum Lighthouse scores**:
+
+- **Performance**: ≥ 90/100
+- **Accessibility**: ≥ 95/100
+- **Best Practices**: ≥ 90/100
+- **SEO**: ≥ 90/100
+
+### GitHub Actions Verification (MANDATORY)
+
+**After every PR creation:**
+1. ✅ **Check GitHub Actions status** in the PR checks section
+2. ✅ **Verify Lighthouse CI passed** (green checkmark)
+3. ✅ **Review the Lighthouse comment** showing score breakdown
+4. ❌ **If scores dropped** below thresholds, address before merging
+5. ❌ **If Lighthouse CI failed**, fix issues and push new commit
+
+**Workflow Details**:
+- Runs on every PR targeting `main` and every push to `main`
+- Tests: homepage (EN/FR) + about page (EN/FR)
+- Results posted as PR comment with clickable detailed report
+- Cannot merge PRs with Lighthouse warnings without review
+
+### Performance Optimization Guidelines
+
+**When optimizing for Lighthouse:**
+1. **Images**: Use WebP format with PNG/JPG fallback via `<picture>` element
+2. **Dimensions**: Always set explicit width/height on images
+3. **Lazy Loading**: Only use on below-the-fold content, NOT on LCP elements
+4. **CSS/JS**: Use jekyll-minifier for automatic production minification
+5. **Core Web Vitals**: Monitor LCP, FID, CLS
+
+**Tools**:
+- Local: `bundle exec jekyll serve` + manual Chrome DevTools
+- CI/CD: Lighthouse CI (automated on every PR)
+- Manual: lighthouse CLI or Web Vitals extension
+
+---
+
 ## Summary
 
 ✅ **Prioritize DaisyUI component classes in HTML** - use built-in components before custom CSS
@@ -149,5 +191,6 @@ When implementing components, refer to:
 ✅ **Plain CSS only, no SCSS**
 ✅ **Test EN/FR multilingual rendering**
 ✅ **Temporary hardcoded colors only for time-limited promotions**
+✅ **Check Lighthouse CI results after every PR** - verify all scores meet minimum thresholds before merging
 
-This constitution ensures visual consistency, maintainability, and adherence to Sinra's minimalist, elegant design approach while maximizing DaisyUI component usage to reduce CSS duplication.
+This constitution ensures visual consistency, maintainability, adherence to Sinra's minimalist, elegant design approach while maximizing DaisyUI component usage to reduce CSS duplication, and maintaining high performance standards through automated Lighthouse CI verification.

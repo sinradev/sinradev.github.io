@@ -1,0 +1,84 @@
+# Lighthouse CI Workflow - Verify performance on every PR
+name: Lighthouse CI
+
+on:
+  pull_request:
+    branches: ["main"]
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        with:
+          bundler-cache: true
+          cache-version: 0
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          configPath: "./.github/lighthouse-ci.json"
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
+      - name: Comment PR with Lighthouse results
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        with:
+          script: |
+            const fs = require('fs');
+            const resultsPath = './lhci_reports/manifest.json';
+
+            if (fs.existsSync(resultsPath)) {
+              const manifest = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));
+              const lhciResults = manifest.results[0].summary;
+
+              const scores = {
+                performance: Math.round(lhciResults.performance * 100),
+                accessibility: Math.round(lhciResults.accessibility * 100),
+                'best-practices': Math.round(lhciResults['best-practices'] * 100),
+                seo: Math.round(lhciResults.seo * 100),
+              };
+
+              const getEmoji = (score) => {
+                if (score >= 90) return '✅';
+                if (score >= 80) return '⚠️';
+                return '❌';
+              };
+
+              const comment = `## 🔦 Lighthouse CI Results
+
+| Metric | Score | Status |
+|--------|-------|--------|
+| Performance | ${scores.performance}/100 | ${getEmoji(scores.performance)} |
+| Accessibility | ${scores.accessibility}/100 | ${getEmoji(scores.accessibility)} |
+| Best Practices | ${scores['best-practices']}/100 | ${getEmoji(scores['best-practices'])} |
+| SEO | ${scores.seo}/100 | ${getEmoji(scores.seo)} |
+
+**Thresholds**: Performance ≥90, Accessibility ≥95, Best Practices ≥90, SEO ≥90
+
+[View detailed report](${manifest.results[0].url})`;
+
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            }
