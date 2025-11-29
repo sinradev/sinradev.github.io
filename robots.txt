@@ -8,8 +8,9 @@ Disallow: /_site/
 Disallow: /.jekyll-cache/
 Disallow: /search
 
-# Sitemap location
-Sitemap: https://sinra.dev/sitemap_index.xml
+# Sitemap locations
+Sitemap: https://sinra.dev/sitemap.xml
+Sitemap: https://sinra.dev/fr/sitemap.xml
 
 # Crawl delay (optional, in seconds)
 Crawl-delay: 1
