@@ -362,6 +362,11 @@ section + section {
   .feature {
     padding: 1.5rem;
   }
+
+  .features h2,
+  .features > p {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 480px) {
