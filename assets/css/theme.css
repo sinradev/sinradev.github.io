@@ -519,8 +519,14 @@ header.navbar .dropdown ul li > a.active {
   cursor: pointer !important;
 }
 
+.button.alt {
+  text-align: center;
+}
+
 .button.alt a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   color: oklch(82.901% 0.031 222.959);
   border: 1px solid oklch(24.731% 0.02 264.094);
@@ -529,6 +535,28 @@ header.navbar .dropdown ul li > a.active {
   padding: 12px 24px;
   text-decoration: none;
   border-radius: var(--btn-border-radius);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 3px oklch(30.857% 0.023 264.149 / 0.3);
+  user-select: none;
+}
+
+.button.alt a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.alt a:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .button.alt a:hover {
@@ -536,14 +564,8 @@ header.navbar .dropdown ul li > a.active {
   border-color: oklch(22% 0.02 264.094);
   color: oklch(82.901% 0.031 222.959);
   transform: translateY(-1px) scale(1.02);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 24px oklch(30.857% 0.023 264.149 / 0.3);
   cursor: pointer !important;
-}
-
-/* Center "Go to Blog" button - only for .button.alt with mt-5 class */
-.button.alt.mt-5 a {
-  display: block;
-  text-align: center;
 }
 
 /* Why Sinra Section */
