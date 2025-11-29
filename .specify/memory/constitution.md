@@ -130,6 +130,14 @@ These promotional colors are **temporary** and isolated to promotion components.
 - Linters or formatters
 - Additional gems (unless critical)
 
+### DaisyUI Documentation References
+
+When implementing components, refer to:
+- **Components**: https://daisyui.com/components/
+- **Themes (Dim)**: https://daisyui.com/docs/themes/
+- **Tailwind Utilities**: https://tailwindcss.com/docs/utility-first
+- **Responsive Design**: https://daisyui.com/docs/use/
+
 ---
 
 ## Summary
