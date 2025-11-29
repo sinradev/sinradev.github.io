@@ -68,7 +68,7 @@ nav a:hover::after {
 }
 
 .nav-toggle:hover {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
 }
 
 @media (max-width: 768px) {
@@ -133,7 +133,7 @@ nav a:hover::after {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gray-200), transparent);
+  background: linear-gradient(90deg, transparent, oklch(26.346% 0.018 262.177), transparent);
 }
 
 /* Enhanced features section */
