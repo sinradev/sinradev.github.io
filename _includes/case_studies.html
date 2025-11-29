@@ -11,7 +11,10 @@
         <div class="case-study-header">
           <div class="company-info">
             <div class="company-logo-placeholder">
-              <img src="{{ case.company_logo | relative_url }}" alt="{{ case.company_name }}" class="company-logo" loading="lazy" />
+              <picture>
+                <source srcset="{{ case.company_logo | replace: '.png', '.webp' | replace: '.jpg', '.webp' | relative_url }}" type="image/webp">
+                <img src="{{ case.company_logo | relative_url }}" alt="{{ case.company_name }}" class="company-logo" loading="lazy" width="80" height="80" />
+              </picture>
             </div>
             <div>
               <h3 class="company-name">{{ case.company_name }}</h3>
