@@ -52,10 +52,10 @@ This tasks document breaks down the CSS simplification refactoring into actionab
 ### CSS Analysis Tasks
 
 - [x] T009 Audit theme.css for duplicate utilities at `assets/css/theme.css` (document margin, padding, display, flex, grid rules that duplicate Tailwind; list line numbers)
-- [ ] T010 [P] Audit layout.css for Tailwind equivalents at `assets/css/layout.css` (identify layout utilities that should be Tailwind classes instead)
-- [ ] T011 [P] Audit blog.css for typography at `assets/css/blog.css` (identify typography rules; check if markdown elements can use Tailwind text utilities)
-- [ ] T012 [P] Audit plan.css for table/layout styles at `assets/css/plan.css` (identify table and layout rules; check DaisyUI table component compatibility)
-- [ ] T013 [P] Audit contact.css for form styles at `assets/css/contact.css` (identify form-related rules; check DaisyUI form component compatibility)
+- [x] T010 [P] Audit layout.css for Tailwind equivalents at `assets/css/layout.css` (identify layout utilities that should be Tailwind classes instead)
+- [x] T011 [P] Audit blog.css for typography at `assets/css/blog.css` (identify typography rules; check if markdown elements can use Tailwind text utilities)
+- [x] T012 [P] Audit plan.css for table/layout styles at `assets/css/plan.css` (identify table and layout rules; check DaisyUI table component compatibility)
+- [x] T013 [P] Audit contact.css for form styles at `assets/css/contact.css` (identify form-related rules; check DaisyUI form component compatibility)
 
 ### Component Audit Tasks
 
