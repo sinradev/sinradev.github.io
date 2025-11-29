@@ -5,14 +5,14 @@ plan_type: "annual"
 end_date: "2025-11-28"
 
 banner:
-  enabled: true
+  enabled: false
   message: "Black Friday: 50% off annual plans"
   cta_text: "View Pricing"
   cta_link: "/pricing"
   dismissible: true
 
 badge:
-  enabled: true
+  enabled: false
   text: "50% OFF"
   color_class: "badge-promotion"
 
