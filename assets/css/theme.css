@@ -520,8 +520,7 @@ header.navbar .dropdown ul li > a.active {
 }
 
 .button.alt a {
-  display: block;
-  text-align: center;
+  display: inline-block;
   background: transparent;
   color: oklch(82.901% 0.031 222.959);
   border: 1px solid oklch(24.731% 0.02 264.094);
@@ -539,6 +538,12 @@ header.navbar .dropdown ul li > a.active {
   transform: translateY(-1px) scale(1.02);
   box-shadow: var(--shadow-md);
   cursor: pointer !important;
+}
+
+/* Center "Go to Blog" button - only for .button.alt with mt-5 class */
+.button.alt.mt-5 a {
+  display: block;
+  text-align: center;
 }
 
 /* Why Sinra Section */
