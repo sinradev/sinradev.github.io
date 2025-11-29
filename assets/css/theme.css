@@ -7,8 +7,8 @@
 */
 :root {
   /* Brand Custom Colors - KEEP */
-  /* OVERRIDE: --primary is provided by DaisyUI Dim theme, only defining brand neon colors
-     Rationale: DaisyUI CDN (via data-theme="dim") provides --primary variable
+  /* OVERRIDE: --color-primary is provided by DaisyUI Dim theme, only defining brand neon colors
+     Rationale: DaisyUI CDN (via data-theme="dim") provides --color-primary variable
      Impact: Reduces custom CSS, relies on DaisyUI defaults
      Brand: Preserves neon accent colors unique to Sinra
   */
@@ -232,7 +232,7 @@ header.navbar .navbar-logo {
 }
 
 header.navbar .navbar-logo:hover {
-  color: var(--primary);
+  color: var(--color-primary);
   background: transparent !important;
 }
 
@@ -258,18 +258,18 @@ header.navbar .menu li > a {
 
 header.navbar .menu li > a:hover {
   background: transparent;
-  color: var(--primary) !important;
+  color: var(--color-primary) !important;
 }
 
 header.navbar .menu li > a.active {
-  color: var(--primary) !important;
+  color: var(--color-primary) !important;
   font-weight: 600;
 }
 
 /* Sign up button styling */
 header.navbar .menu li > a.btn.btn-accent,
 header.navbar .dropdown-content li > a.btn.btn-accent {
-  background: var(--accent);
+  background: var(--color-accent);
   color: var(--color-base-content) !important;
   border: none;
 }
@@ -286,11 +286,11 @@ header.navbar .dropdown-content li > a {
 
 header.navbar .dropdown-content li > a:hover {
   background: oklch(26.346% 0.018 262.177);
-  color: var(--primary) !important;
+  color: var(--color-primary) !important;
 }
 
 header.navbar .dropdown-content li > a.active {
-  background: var(--primary);
+  background: var(--color-primary);
   color: var(--color-base-content) !important;
   font-weight: 600;
 }
@@ -307,11 +307,11 @@ header.navbar .dropdown ul li > a {
 
 header.navbar .dropdown ul li > a:hover {
   background: oklch(26.346% 0.018 262.177);
-  color: var(--primary) !important;
+  color: var(--color-primary) !important;
 }
 
 header.navbar .dropdown ul li > a.active {
-  background: var(--primary);
+  background: var(--color-primary);
   color: var(--color-base-content) !important;
   font-weight: 600;
 }
@@ -481,7 +481,7 @@ header.navbar .dropdown ul li > a.active {
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  background: var(--primary);
+  background: var(--color-primary);
   color: oklch(17.226% 0.028 139.549);
   text-decoration: none;
   border: none;
@@ -637,13 +637,13 @@ header.navbar .dropdown ul li > a.active {
 .stat-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--color-primary);
   margin-bottom: 12px;
 }
 
@@ -673,7 +673,7 @@ header.navbar .dropdown ul li > a.active {
 .benefit-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .benefit-card h3 {
@@ -878,7 +878,7 @@ header.navbar .dropdown ul li > a.active {
 }
 
 .category-section {
-  color: var(--primary);
+  color: var(--color-primary);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1022,7 +1022,7 @@ header.navbar .dropdown ul li > a.active {
 .feature:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .feature img {
@@ -1116,7 +1116,7 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: var(--primary);
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px oklch(86.133% 0.141 139.549 / 0.1);
   background: oklch(30.857% 0.023 264.149);
 }
@@ -1282,7 +1282,7 @@ footer {
 }
 
 .footer-column a:hover {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .footer-links {
@@ -1303,7 +1303,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .copyright {
@@ -1417,7 +1417,7 @@ footer {
 .slide blockquote::before {
   content: '"';
   font-size: 48px;
-  color: var(--primary);
+  color: var(--color-primary);
   position: absolute;
   top: -20px;
   left: -20px;
@@ -1432,7 +1432,7 @@ footer {
 }
 
 .nav-btn {
-  color: var(--primary);
+  color: var(--color-primary);
   background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   width: 40px;
@@ -1445,7 +1445,7 @@ footer {
 }
 
 .nav-btn:hover {
-  background: var(--primary);
+  background: var(--color-primary);
   color: oklch(17.226% 0.028 139.549);
   transform: scale(1.1);
 }
@@ -1482,7 +1482,7 @@ footer {
 
 .nav-toggle:hover {
   background: oklch(26.346% 0.018 262.177);
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
@@ -1563,7 +1563,7 @@ footer {
 .custom-cursor {
   width: 20px;
   height: 20px;
-  background: var(--primary);
+  background: var(--color-primary);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -1575,7 +1575,7 @@ footer {
 .cursor-follower {
   width: 40px;
   height: 40px;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--color-primary);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -1616,13 +1616,13 @@ footer {
 }
 
 .form-group.focused label {
-  color: var(--primary);
+  color: var(--color-primary);
   transform: translateY(-20px) scale(0.8);
 }
 
 .form-group input:focus + label,
 .form-group textarea:focus + label {
-  color: var(--primary);
+  color: var(--color-primary);
   transform: translateY(-20px) scale(0.8);
 }
 
@@ -1667,7 +1667,7 @@ img.loaded {
 
 .button a:not(.btn):focus,
 .button button:not(.btn):focus {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
   cursor: pointer !important;
 }
@@ -1700,7 +1700,7 @@ img.loaded {
 /* High Contrast */
 @media (prefers-contrast: high) {
   :root {
-    --primary: #ffffff;
+    --color-primary: #ffffff;
     --gray-600: #ffffff;
     --gray-800: #ffffff;
   }
@@ -1861,15 +1861,15 @@ img {
 .challenge-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .challenge-card.agile {
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--color-accent);
 }
 
 .challenge-card.waterfall {
-  border-left: 4px solid var(--primary);
+  border-left: 4px solid var(--color-primary);
 }
 
 .card-icon {
@@ -1926,7 +1926,7 @@ img {
 
 .point:hover {
   background: oklch(28.036% 0.019 264.182);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 /* Solution Section */
@@ -1974,7 +1974,7 @@ img {
 .benefit:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .benefit h3 {
@@ -2072,7 +2072,7 @@ img {
 }
 
 .button.primary {
-  background: var(--primary);
+  background: var(--color-primary);
   padding: 16px 32px;
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -2100,7 +2100,7 @@ img {
 
 .button.secondary:hover {
   background: oklch(28.036% 0.019 264.182);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
   color: oklch(82.901% 0.031 222.959);
   transform: translateY(-2px);
 }
@@ -2179,7 +2179,7 @@ img {
 
 .discount-badge {
   display: inline-block;
-  background: var(--primary);
+  background: var(--color-primary);
   color: var(--color-primary-content);
   padding: 8px 16px;
   border-radius: var(--border-radius);
@@ -2221,11 +2221,11 @@ img {
 .plan-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .plan-card.recommended {
-  border-color: var(--primary);
+  border-color: var(--color-primary);
   box-shadow: var(--shadow-md);
 }
 
@@ -2234,7 +2234,7 @@ img {
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--primary);
+  background: var(--color-primary);
   color: var(--color-primary-content);
   padding: 6px 16px;
   border-radius: var(--border-radius);
@@ -2314,11 +2314,11 @@ img {
 
 .feature-icon {
   flex-shrink: 0;
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .feature-item.highlighted .feature-icon {
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .feature-text {
@@ -2342,7 +2342,7 @@ img {
 }
 
 .cta-button.primary {
-  background: var(--primary);
+  background: var(--color-primary);
   color: var(--color-primary-content);
 }
 
@@ -2359,7 +2359,7 @@ img {
 
 .cta-button.secondary:hover {
   background: oklch(28.036% 0.019 264.182);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
   transform: translateY(-2px);
 }
 
@@ -2615,14 +2615,14 @@ img {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.1);
 }
 
 .form-group input.error,
 .form-group select.error,
 .form-group textarea.error {
-  border-color: var(--error);
+  border-color: var(--color-error);
   box-shadow: 0 0 0 3px rgba(var(--error-rgb), 0.1);
 }
 
@@ -2635,9 +2635,9 @@ img {
   padding: 12px 16px;
   margin-bottom: 16px;
   background: oklch(82.418% 0.099 33.756 / 0.1);
-  border: 1px solid var(--error);
+  border: 1px solid var(--color-error);
   border-radius: var(--border-radius);
-  color: var(--error);
+  color: var(--color-error);
   font-size: 0.875rem;
   font-weight: 500;
   display: none;
@@ -2653,7 +2653,7 @@ img {
   justify-content: center;
   gap: 8px;
   padding: 16px 32px;
-  background: var(--primary);
+  background: var(--color-primary);
   color: var(--color-primary-content);
   border: none;
   border-radius: var(--border-radius);
@@ -2755,7 +2755,7 @@ img {
 .case-study-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .case-study-header {
@@ -2811,7 +2811,7 @@ img {
 .case-study-content h4 {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--color-primary);
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -2845,7 +2845,7 @@ img {
 .result-metric {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--color-primary);
   margin-bottom: 8px;
 }
 
@@ -2873,7 +2873,7 @@ img {
 .testimonial-author {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--color-primary);
   margin-bottom: 8px;
 }
 
@@ -2930,7 +2930,7 @@ img {
 
 .client-logo-wrapper:hover {
   background: oklch(26.346% 0.018 262.177);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
   transform: scale(1.05);
 }
 
@@ -2966,13 +2966,13 @@ img {
 .stat-item:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .stat-value {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--color-primary);
   margin-bottom: 12px;
 }
 
@@ -3098,13 +3098,13 @@ img {
 
 .check-mark {
   font-size: 1.5rem;
-  color: var(--success);
+  color: var(--color-success);
   font-weight: bold;
 }
 
 .cross-mark {
   font-size: 1.5rem;
-  color: var(--error);
+  color: var(--color-error);
   font-weight: bold;
 }
 
@@ -3143,7 +3143,7 @@ img {
 .difference-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
-  border-color: var(--primary);
+  border-color: var(--color-primary);
 }
 
 .difference-number {
@@ -3152,7 +3152,7 @@ img {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: var(--primary);
+  background: var(--color-primary);
   color: white;
   border-radius: 50%;
   font-weight: 700;
@@ -3209,7 +3209,7 @@ img {
 
 .cta-buttons .primary {
   background: white;
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .cta-buttons .primary:hover {
