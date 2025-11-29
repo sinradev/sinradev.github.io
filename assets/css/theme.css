@@ -568,6 +568,24 @@ header.navbar .dropdown ul li > a.active {
   cursor: pointer !important;
 }
 
+/* OVERRIDE: CTA button accent color for Try for free
+   Rationale: CTA button should use primary color for hover bubble effect
+   Impact: Better visual distinction for primary CTA button
+   Brand: Maintains hierarchy of button importance
+*/
+.cta.button.alt a::before {
+  background: oklch(80% 0.141 139.549 / 0.4);
+}
+
+/* OVERRIDE: Go to Blog button spacing
+   Rationale: Button was too tight against other content
+   Impact: Better visual breathing room
+   Brand: Improves spacing in hero section
+*/
+.button.alt.mt-5 {
+  margin-top: 32px;
+}
+
 /* Why Sinra Section */
 .why-sinra {
   padding: 80px 0;
