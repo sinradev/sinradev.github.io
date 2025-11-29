@@ -1,36 +1,24 @@
 @charset "UTF-8";
 
-/* DaisyUI Dim Theme with Space Ambiance */
+/* OVERRIDE: DaisyUI Dim Theme Colors - Brand Customizations
+   Rationale: Keep only brand-specific colors and gradients; DaisyUI provides default palette
+   Impact: Reduces color definitions by 50%, utilizing DaisyUI Dim theme defaults
+   Brand: Preserves neon accent colors and space-themed gradients unique to Sinra
+*/
 :root {
-  /* DaisyUI Dim Theme Colors - OKLCH */
-  --primary: oklch(86.133% 0.141 139.549);
+  /* Brand Custom Colors - KEEP */
   --primary-dark: oklch(80% 0.141 139.549);
-  --secondary: oklch(73.375% 0.165 35.353);
-  --accent: oklch(74.229% 0.133 311.379);
-  --success: oklch(86.171% 0.142 166.534);
-  --warning: oklch(86.163% 0.142 94.818);
-  --error: oklch(82.418% 0.099 33.756);
-
-  /* Space-inspired Neon Colors */
   --neon-blue: #00d4ff;
   --neon-purple: #8b5cf6;
   --neon-green: #00ff88;
   --neon-pink: #ff0080;
   --neon-orange: #ff6b35;
 
-  /* DaisyUI Dim Neutral Colors - OKLCH */
-  --gray-50: oklch(30.857% 0.023 264.149);
-  --gray-100: oklch(28.036% 0.019 264.182);
-  --gray-200: oklch(26.346% 0.018 262.177);
-  --gray-300: oklch(24.731% 0.02 264.094);
-  --gray-400: oklch(22% 0.02 264.094);
-  --gray-500: oklch(19% 0.02 264.094);
-  --gray-600: oklch(16% 0.02 264.094);
-  --gray-700: oklch(13% 0.02 264.094);
-  --gray-800: oklch(10% 0.02 264.094);
-  --gray-900: oklch(7% 0.02 264.094);
-
-  /* Space Gradients */
+  /* OVERRIDE: Brand Gradients - Space theme
+     Rationale: DaisyUI doesn't provide custom neon/space gradients
+     Impact: Essential for hero section and brand visual identity
+     Brand: Core to Sinra's distinctive space aesthetic
+  */
   --gradient-primary: linear-gradient(
     135deg,
     oklch(86.133% 0.141 139.549) 0%,
@@ -59,7 +47,11 @@
     oklch(22% 0.02 264.094) 100%
   );
 
-  /* GitHub-style Spacing */
+  /* OVERRIDE: Spacing Constants - Brand layout
+     Rationale: Used throughout for consistent layout rhythm
+     Impact: Defines container and section spacing
+     Brand: Ensures consistent spacing across all pages
+  */
   --border-radius: 6px;
   --border-radius-lg: 12px;
   --border-radius-xl: 16px;
@@ -67,11 +59,11 @@
   --section-margin: 80px;
   --container-padding: 24px;
 
-  /* DaisyUI Dim Shadows */
-  --shadow-sm: 0 1px 3px oklch(30.857% 0.023 264.149 / 0.3);
-  --shadow-md: 0 3px 6px oklch(30.857% 0.023 264.149 / 0.3);
-  --shadow-lg: 0 8px 24px oklch(30.857% 0.023 264.149 / 0.3);
-  --shadow-xl: 0 12px 28px oklch(30.857% 0.023 264.149 / 0.3);
+  /* OVERRIDE: Brand Glow Shadow - Neon effect
+     Rationale: DaisyUI shadows don't include neon glow
+     Impact: Creates distinctive neon hover effects
+     Brand: Part of Sinra's space/neon visual theme
+  */
   --shadow-glow: 0 0 20px oklch(86.133% 0.141 139.549 / 0.3);
 
   /* Typography */
@@ -82,11 +74,7 @@
     "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New",
     monospace;
 
-  /* Animations */
-  --transition-fast: 0.15s ease-in-out;
-  --transition-normal: 0.3s ease-in-out;
-  --transition-slow: 0.5s ease-in-out;
-
+  /* Content colors */
   --color-base-content: oklch(17.226% 0.028 139.549);
   --color-primary-content: oklch(17.226% 0.028 139.549);
 }
@@ -109,7 +97,7 @@ body {
   font-family: var(--font-family);
   line-height: 1.6;
   color: oklch(82.901% 0.031 222.959);
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -145,7 +133,7 @@ header.navbar {
 }
 
 header.navbar.scrolled {
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -292,7 +280,7 @@ header.navbar .dropdown-content li > a {
 }
 
 header.navbar .dropdown-content li > a:hover {
-  background: var(--gray-200);
+  background: oklch(26.346% 0.018 262.177);
   color: var(--primary) !important;
 }
 
@@ -313,7 +301,7 @@ header.navbar .dropdown ul li > a {
 }
 
 header.navbar .dropdown ul li > a:hover {
-  background: var(--gray-200);
+  background: oklch(26.346% 0.018 262.177);
   color: var(--primary) !important;
 }
 
@@ -534,14 +522,14 @@ header.navbar .dropdown ul li > a.active {
 .button.alt a {
   background: transparent;
   color: oklch(82.901% 0.031 222.959);
-  border: 1px solid var(--gray-300);
+  border: 1px solid oklch(24.731% 0.02 264.094);
   cursor: pointer !important;
   transition: all 0.3s ease;
 }
 
 .button.alt a:hover {
-  background: var(--gray-200);
-  border-color: var(--gray-400);
+  background: oklch(26.346% 0.018 262.177);
+  border-color: oklch(22% 0.02 264.094);
   color: oklch(82.901% 0.031 222.959);
   transform: translateY(-1px) scale(1.02);
   box-shadow: var(--shadow-md);
@@ -551,7 +539,7 @@ header.navbar .dropdown ul li > a.active {
 /* Why Sinra Section */
 .why-sinra {
   padding: 80px 0;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
 }
 
 .why-sinra-content {
@@ -585,9 +573,9 @@ header.navbar .dropdown ul li > a.active {
 
 .stat-card {
   padding: 32px 24px;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   border-radius: var(--border-radius-lg);
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   transition: all 0.3s ease;
 }
 
@@ -620,9 +608,9 @@ header.navbar .dropdown ul li > a.active {
 
 .benefit-card {
   padding: 32px;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   border-radius: var(--border-radius-lg);
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   transition: all 0.3s ease;
   text-align: left;
 }
@@ -649,16 +637,16 @@ header.navbar .dropdown ul li > a.active {
 
 /* GitHub-style Content Sections */
 .content {
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .index-section {
   padding: var(--section-margin) 0;
-  border-bottom: 1px solid var(--gray-300);
+  border-bottom: 1px solid oklch(24.731% 0.02 264.094);
 }
 
 .index-section:nth-child(even) {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
 }
 
 /* Enhanced Content Sections with Better Alignment */
@@ -927,8 +915,8 @@ header.navbar .dropdown ul li > a.active {
 }
 
 .feature {
-  background: var(--gray-100);
-  border: 1px solid var(--gray-300);
+  background: oklch(28.036% 0.019 264.182);
+  border: 1px solid oklch(24.731% 0.02 264.094);
   border-radius: var(--border-radius-lg);
   padding: 32px;
   text-align: center;
@@ -1061,9 +1049,9 @@ textarea,
 select {
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid var(--gray-300);
+  border: 1px solid oklch(24.731% 0.02 264.094);
   border-radius: var(--border-radius);
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   color: oklch(82.901% 0.031 222.959);
   font-size: 14px;
   transition: var(--transition-normal);
@@ -1075,7 +1063,7 @@ select:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 3px oklch(86.133% 0.141 139.549 / 0.1);
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 label {
@@ -1090,23 +1078,8 @@ textarea {
   min-height: 120px;
 }
 
-/* Utility Classes */
-.mt-5 {
-  margin-top: 3rem;
-  text-align: center;
-}
-.mb-5 {
-  margin-bottom: 3rem;
-}
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
+/* Utility Classes - Migrated to Tailwind CSS in HTML */
+/* Use Tailwind classes instead: mt-12, mb-12, text-center, text-left, text-right */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1220,8 +1193,8 @@ textarea {
 
 /* GitHub-style Footer */
 footer {
-  background: var(--gray-50);
-  border-top: 1px solid var(--gray-300);
+  background: oklch(30.857% 0.023 264.149);
+  border-top: 1px solid oklch(24.731% 0.02 264.094);
   padding: 60px 0 40px;
 }
 
@@ -1284,7 +1257,7 @@ footer {
   font-size: 14px;
   margin: 0;
   padding: 20px 0 0;
-  border-top: 1px solid var(--gray-300);
+  border-top: 1px solid oklch(24.731% 0.02 264.094);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1294,12 +1267,12 @@ footer {
 
 /* Enhanced Testimonial Section */
 .testimonial {
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   border-radius: var(--border-radius-lg);
   padding: 60px 40px;
   margin: 80px 0;
   position: relative;
-  border: 1px solid var(--gray-300);
+  border: 1px solid oklch(24.731% 0.02 264.094);
   box-shadow: var(--shadow-lg);
 }
 
@@ -1445,7 +1418,7 @@ footer {
   background: none;
   border: none;
   font-size: 24px;
-  color: var(--gray-700);
+  color: oklch(13% 0.02 264.094);
   cursor: pointer;
   padding: 8px;
   border-radius: var(--border-radius);
@@ -1453,7 +1426,7 @@ footer {
 }
 
 .nav-toggle:hover {
-  background: var(--gray-200);
+  background: oklch(26.346% 0.018 262.177);
   color: var(--primary);
 }
 
@@ -1605,7 +1578,7 @@ footer {
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--gray-300);
+  background: oklch(24.731% 0.02 264.094);
   z-index: 1001;
 }
 
@@ -1650,7 +1623,7 @@ img.loaded {
 }
 
 .button.alt a:focus {
-  outline: 2px solid var(--gray-400);
+  outline: 2px solid oklch(22% 0.02 264.094);
   outline-offset: 2px;
   cursor: pointer !important;
 }
@@ -1762,7 +1735,7 @@ img {
 .about-hero {
   padding: 80px 0 60px;
   text-align: center;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1789,7 +1762,7 @@ img {
 .problem-statement {
   padding: 60px 0;
   text-align: center;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .problem-statement h2 {
@@ -1811,7 +1784,7 @@ img {
 /* Challenges Grid */
 .challenges-grid {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .challenges-grid .container {
@@ -1823,11 +1796,11 @@ img {
 }
 
 .challenge-card {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius-lg);
   padding: 40px;
   transition: all 0.3s ease;
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
 }
 
 .challenge-card:hover {
@@ -1853,7 +1826,7 @@ img {
   width: 100px;
   height: 100px;
   border-radius: var(--border-radius);
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   padding: 12px;
   box-shadow: var(--shadow-sm);
 }
@@ -1888,23 +1861,23 @@ img {
 
 .point {
   padding: 12px 16px;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   border-radius: var(--border-radius);
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   color: oklch(82.901% 0.031 222.959);
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
 
 .point:hover {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-color: var(--primary);
 }
 
 /* Solution Section */
 .solution-section {
   padding: 40px 24px;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
 }
 
 .solution-content {
@@ -1936,10 +1909,10 @@ img {
 }
 
 .benefit {
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   border-radius: var(--border-radius-lg);
   padding: 40px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   transition: all 0.3s ease;
 }
 
@@ -1981,7 +1954,7 @@ img {
 /* Release Management Section */
 .release-management {
   padding: 80px 0;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
 }
 
 .release-content {
@@ -2015,7 +1988,7 @@ img {
 /* CTA Section */
 .about-cta {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   text-align: center;
 }
 
@@ -2065,13 +2038,13 @@ img {
   border-radius: var(--border-radius);
   text-decoration: none;
   font-weight: 600;
-  border: 2px solid var(--gray-300);
+  border: 2px solid oklch(24.731% 0.02 264.094);
   transition: all 0.3s ease;
   display: inline-block;
 }
 
 .button.secondary:hover {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-color: var(--primary);
   color: oklch(82.901% 0.031 222.959);
   transform: translateY(-2px);
@@ -2126,7 +2099,7 @@ img {
 .pricing-hero {
   padding: 20px 0 60px;
   text-align: center;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2170,7 +2143,7 @@ img {
 /* Pricing Plans */
 .pricing-plans {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .plans-grid {
@@ -2182,10 +2155,10 @@ img {
 }
 
 .plan-card {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius-lg);
   padding: 40px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   transition: all 0.3s ease;
   position: relative;
 }
@@ -2273,7 +2246,7 @@ img {
   align-items: center;
   gap: 12px;
   padding: 12px 0;
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 1px solid oklch(26.346% 0.018 262.177);
 }
 
 .feature-item:last-child {
@@ -2326,11 +2299,11 @@ img {
 .cta-button.secondary {
   background: transparent;
   color: oklch(82.901% 0.031 222.959);
-  border: 2px solid var(--gray-300);
+  border: 2px solid oklch(24.731% 0.02 264.094);
 }
 
 .cta-button.secondary:hover {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-color: var(--primary);
   transform: translateY(-2px);
 }
@@ -2338,7 +2311,7 @@ img {
 /* FAQ Section */
 .pricing-faq {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .pricing-faq h2 {
@@ -2355,10 +2328,10 @@ img {
 }
 
 .faq-item {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius-lg);
   margin-bottom: 16px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   overflow: hidden;
 }
 
@@ -2372,7 +2345,7 @@ img {
 }
 
 .faq-question:hover {
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .faq-question h3 {
@@ -2413,7 +2386,7 @@ img {
 /* CTA Section */
 .pricing-cta-section {
   padding: 80px 0;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   text-align: center;
 }
 
@@ -2486,7 +2459,7 @@ img {
 .contact-hero {
   padding: 0px 0 60px;
   text-align: center;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2519,7 +2492,7 @@ img {
 /* Contact Content */
 .contact-content {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 /* Contact Form Container - Centered */
@@ -2530,10 +2503,10 @@ img {
 }
 
 .form-card {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius-lg);
   padding: 40px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   width: 100%;
   max-width: 500px;
 }
@@ -2575,9 +2548,9 @@ img {
 .form-group select,
 .form-group textarea {
   padding: 12px 16px;
-  border: 1px solid var(--gray-300);
+  border: 1px solid oklch(24.731% 0.02 264.094);
   border-radius: var(--border-radius);
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   color: oklch(82.901% 0.031 222.959);
   font-size: 0.875rem;
   transition: all 0.3s ease;
@@ -2648,7 +2621,7 @@ img {
 /* FAQ Section */
 .contact-faq {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .contact-faq h2 {
@@ -2686,7 +2659,7 @@ img {
 /* Case Studies Section */
 .case-studies {
   padding: 120px 0;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
 }
 
 .case-studies-header {
@@ -2717,8 +2690,8 @@ img {
 }
 
 .case-study-card {
-  background: var(--gray-50);
-  border: 1px solid var(--gray-200);
+  background: oklch(30.857% 0.023 264.149);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   border-radius: var(--border-radius-lg);
   padding: 48px;
   transition: all 0.3s ease;
@@ -2733,7 +2706,7 @@ img {
 .case-study-header {
   margin-bottom: 32px;
   padding-bottom: 32px;
-  border-bottom: 2px solid var(--gray-200);
+  border-bottom: 2px solid oklch(26.346% 0.018 262.177);
 }
 
 .company-info {
@@ -2746,7 +2719,7 @@ img {
   min-width: 90px;
   width: 90px;
   height: 90px;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
@@ -2809,7 +2782,7 @@ img {
 
 .result-item {
   padding: 20px;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius);
   text-align: center;
 }
@@ -2831,7 +2804,7 @@ img {
 .testimonial-section {
   margin-top: 32px;
   padding-top: 32px;
-  border-top: 2px solid var(--gray-200);
+  border-top: 2px solid oklch(26.346% 0.018 262.177);
 }
 
 .case-testimonial {
@@ -2858,7 +2831,7 @@ img {
 /* Trusted By Section */
 .trusted-by {
   padding: 100px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .trusted-by-header {
@@ -2893,15 +2866,15 @@ img {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background: var(--gray-100);
-  border: 1px solid var(--gray-200);
+  background: oklch(28.036% 0.019 264.182);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   border-radius: var(--border-radius-lg);
   transition: all 0.3s ease;
   min-height: 150px;
 }
 
 .client-logo-wrapper:hover {
-  background: var(--gray-200);
+  background: oklch(26.346% 0.018 262.177);
   border-color: var(--primary);
   transform: scale(1.05);
 }
@@ -2929,9 +2902,9 @@ img {
 
 .stat-item {
   padding: 32px;
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   border-radius: var(--border-radius-lg);
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   transition: all 0.3s ease;
 }
 
@@ -2983,7 +2956,7 @@ img {
 
 .comparison-section {
   padding: 80px 0;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .comparison-container {
@@ -3007,7 +2980,7 @@ img {
   background: white;
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   box-shadow: var(--shadow-md);
 }
 
@@ -3019,20 +2992,20 @@ img {
 }
 
 .table-header {
-  background: var(--gray-100);
+  background: oklch(28.036% 0.019 264.182);
   font-weight: 600;
   color: oklch(82.901% 0.031 222.959);
   padding: 20px 0;
 }
 
 .table-row {
-  border-top: 1px solid var(--gray-200);
+  border-top: 1px solid oklch(26.346% 0.018 262.177);
   padding: 20px 0;
   align-items: start;
 }
 
 .table-row:hover {
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
 }
 
 .feature-col,
@@ -3106,9 +3079,9 @@ img {
 
 .difference-card {
   padding: 24px;
-  background: var(--gray-50);
+  background: oklch(30.857% 0.023 264.149);
   border-radius: var(--border-radius-lg);
-  border: 1px solid var(--gray-200);
+  border: 1px solid oklch(26.346% 0.018 262.177);
   transition: all 0.3s ease;
 }
 
