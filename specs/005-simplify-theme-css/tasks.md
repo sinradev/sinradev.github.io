@@ -28,13 +28,13 @@ This tasks document breaks down the CSS simplification refactoring into actionab
 
 ### Setup Tasks
 
-- [ ] T001 Create baseline CSS metrics document at `specs/005-simplify-theme-css/audit/baseline-metrics.md` (measure theme.css size in bytes and lines, count current CSS rules by category)
+- [x] T001 Create baseline CSS metrics document at `specs/005-simplify-theme-css/audit/baseline-metrics.md` (measure theme.css size in bytes and lines, count current CSS rules by category)
 - [ ] T002 Capture visual baseline screenshots at `specs/005-simplify-theme-css/audit/baseline-screenshots/` (screenshot all pages: homepage, about, pricing, blog, contact at 1440px, 768px, and 320px)
-- [ ] T003 Create CSS audit template at `specs/005-simplify-theme-css/audit/css-audit.md` (document structure: current rules, duplicates, candidates for removal)
-- [ ] T004 Create component audit template at `specs/005-simplify-theme-css/audit/component-audit.md` (document all HTML components: buttons, cards, badges, forms, tables, modals with current classes)
-- [ ] T005 Create color audit template at `specs/005-simplify-theme-css/audit/color-audit.md` (document all colors in theme.css, map to DaisyUI dim theme, identify overrides needed)
-- [ ] T006 Create HTML class usage script at `specs/005-simplify-theme-css/audit/scan-html-classes.sh` (bash script to scan all HTML files for component classes and generate report)
-- [ ] T007 [P] Run Jekyll build and verify clean output with `bundle exec jekyll build` (ensure current state builds successfully, no warnings)
+- [x] T003 Create CSS audit template at `specs/005-simplify-theme-css/audit/css-audit.md` (document structure: current rules, duplicates, candidates for removal)
+- [x] T004 Create component audit template at `specs/005-simplify-theme-css/audit/component-audit.md` (document all HTML components: buttons, cards, badges, forms, tables, modals with current classes)
+- [x] T005 Create color audit template at `specs/005-simplify-theme-css/audit/color-audit.md` (document all colors in theme.css, map to DaisyUI dim theme, identify overrides needed)
+- [x] T006 Create HTML class usage script at `specs/005-simplify-theme-css/audit/scan-html-classes.sh` (bash script to scan all HTML files for component classes and generate report)
+- [x] T007 [P] Run Jekyll build and verify clean output with `bundle exec jekyll build` (ensure current state builds successfully, no warnings)
 - [ ] T008 [P] Test current site in browsers at `bundle exec jekyll serve` (manual verification: Chrome, Firefox, Safari at baseline)
 
 ---
