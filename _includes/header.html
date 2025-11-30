@@ -10,6 +10,28 @@
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
         {% for item in site.data[site.active_lang].navigation %}
         {% assign page_url = "/" | append: item.link %}
+        {% if item.children %}
+        <!-- Mobile dropdown menu -->
+        <li class="dropdown">
+          <button tabindex="0" role="button" class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}">
+            {{ item.name }}
+          </button>
+          <ul class="dropdown-content menu">
+            {% for child in item.children %}
+            {% assign child_url = "/" | append: child.link %}
+            <li>
+              <a href="{% if child.link contains "http" %}{{ child.link }}{% else %}{{ site.baseurl}}/{{ child.link }}{% endif %}"
+                 class="{% if page.url == child_url %}active{% endif %}"
+                 target="{{ child.target }}"
+                 aria-current="{% if page.url == child_url %}page{% else %}false{% endif %}">
+                {{ child.name }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% else %}
+        <!-- Regular mobile menu item -->
         <li>
           <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
              class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
@@ -18,6 +40,7 @@
             {{ item.name }}
           </a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </div>
@@ -33,6 +56,28 @@
     <ul class="menu menu-horizontal px-1">
       {% for item in site.data[site.active_lang].navigation %}
       {% assign page_url = "/" | append: item.link %}
+      {% if item.children %}
+      <!-- Dropdown menu -->
+      <li class="dropdown">
+        <button tabindex="0" role="button" class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}">
+          {{ item.name }}
+        </button>
+        <ul class="dropdown-content menu">
+          {% for child in item.children %}
+          {% assign child_url = "/" | append: child.link %}
+          <li>
+            <a href="{% if child.link contains "http" %}{{ child.link }}{% else %}{{ site.baseurl}}/{{ child.link }}{% endif %}"
+               class="{% if page.url == child_url %}active{% endif %}"
+               target="{{ child.target }}"
+               aria-current="{% if page.url == child_url %}page{% else %}false{% endif %}">
+              {{ child.name }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% else %}
+      <!-- Regular menu item -->
       <li>
         <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
            class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
@@ -41,6 +86,7 @@
           {{ item.name }}
         </a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

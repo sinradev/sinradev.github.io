@@ -1,0 +1,31 @@
+---
+layout: default
+title: Compare Sinra to Other Tools
+lang: en
+permalink: /compare/
+description: Compare Sinra with Asana, Jira, and Monday. See features, pricing, and ideal use cases.
+sitemap: false
+---
+
+{% assign data = site.data[page.lang].comparisons.comparison_hub %}
+
+<div class="comparison-hub">
+  <section class="comparison-intro">
+    <h1>{{ data.title }}</h1>
+    <p class="subtitle">{{ data.subtitle }}</p>
+  </section>
+
+  <div class="comparison-table-wrapper">
+    {% include comparison-table.html %}
+  </div>
+
+  <section class="comparison-cta">
+    <h2>Want to learn more?</h2>
+    <p>Dive deeper into specific comparisons:</p>
+    <div class="cta-links">
+      <a href="{{site.baseurl}}compare/asana/" class="btn btn-outline">Sinra vs Asana</a>
+      <a href="{{site.baseurl}}compare/jira/" class="btn btn-outline">Sinra vs Jira</a>
+      <a href="{{site.baseurl}}compare/monday/" class="btn btn-outline">Sinra vs Monday</a>
+    </div>
+  </section>
+</div>

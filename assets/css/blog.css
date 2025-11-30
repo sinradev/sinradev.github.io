@@ -375,6 +375,13 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* SVG Images in Post */
+.post-content img[src$=".svg"] {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
 /* Emphasis boxes */
 .emphasis-box {
   background: linear-gradient(

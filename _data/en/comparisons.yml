@@ -1,266 +1,138 @@
-- id: sinra_vs_jira
-  title: Sinra vs Jira
-  competitor_name: Jira
-  competitor_logo: /assets/images/logos/jira.svg
-  intro: "Jira is a powerful project tracking tool, but it's built for traditional Agile/Scrum. Sinra supports both iterative and sequential workflows in a single platform."
+comparisons:
+    conclusion: "Choose Sinra if you build software and need release+QA management. Choose Monday if you have diverse teams and want maximum visual flexibility."
 
-  comparison_table:
-    - category: Project Management
-      features:
-        - feature: "V-Model & Waterfall Support"
-          sinra: true
-          competitor: false
-          description: "Built-in support for both V-Model methodology and traditional waterfall planning"
-        - feature: "Agile/Scrum Support"
-          sinra: true
-          competitor: true
-          description: "Full support for Agile, Scrum, and Kanban workflows"
-        - feature: "Release Management"
-          sinra: true
-          competitor: false
-          description: "Dedicated release planning and deployment tracking"
-        - feature: "Unified Capacity Planning"
-          sinra: true
-          competitor: false
-          description: "Real-time team capacity visibility across all projects"
-
-    - category: Quality & Testing
-      features:
-        - feature: "Integrated QA Management"
-          sinra: true
-          competitor: false
-          description: "QA testing tied directly to specifications and development"
-        - feature: "Test Case Management"
-          sinra: true
-          competitor: false
-          description: "Create, assign, and track test cases in workflow"
-        - feature: "Test Coverage Tracking"
-          sinra: true
-          competitor: false
-          description: "Automatic tracking of test coverage per release"
-        - feature: "Acceptance Criteria"
-          sinra: true
-          competitor: true
-          description: "Define and track acceptance criteria per task"
-
-    - category: Ease of Use
-      features:
-        - feature: "Learning Curve"
-          sinra: true
-          competitor: false
-          description: "Simpler, intuitive interface - teams productive in days"
-        - feature: "Setup Time"
-          sinra: true
-          competitor: false
-          description: "Minutes to setup vs hours/days for Jira"
-        - feature: "Configuration Flexibility"
-          sinra: true
-          competitor: true
-          description: "Customize workflows and statuses"
-        - feature: "Onboarding"
-          sinra: true
-          competitor: false
-          description: "Built-in templates and guided setup"
-
-    - category: Pricing & Scalability
-      features:
-        - feature: "Pricing Model"
-          sinra: "Per seat"
-          competitor: "Per user + add-ons"
-          description: "Sinra: Simple €10/month per user. Jira: Complex pricing with plugins"
-        - feature: "Hidden Costs"
-          sinra: true
-          competitor: false
-          description: "No expensive plugin ecosystem - features included"
-        - feature: "Startup-Friendly"
-          sinra: true
-          competitor: false
-          description: "Low cost to start, scales with team"
-
-  key_differences:
-    - "Sinra supports both iterative and sequential workflows in one tool; Jira is Agile-only"
-    - "QA testing is integrated in Sinra; it's an afterthought in Jira"
-    - "Sinra has native release management; Jira requires plugins"
-    - "Sinra is 5x cheaper to implement and maintain"
-    - "Sinra teams are productive in days; Jira takes weeks to configure"
-
-  conclusion: "Choose Sinra if you need support for multiple workflow types with integrated QA. Choose Jira if you're committed to pure Agile workflows with unlimited budget for plugins."
-
-- id: sinra_vs_asana
-  title: Sinra vs Asana
-  competitor_name: Asana
-  competitor_logo: /assets/images/logos/asana.svg
-  intro: "Asana is a beautiful work management tool for general teams. Sinra is purpose-built for software development teams managing complex projects."
-
-  comparison_table:
-    - category: Software Development
-      features:
-        - feature: "Release Management"
-          sinra: true
-          competitor: false
-          description: "Dedicated release planning, tracking, and deployment readiness"
-        - feature: "QA Integration"
-          sinra: true
-          competitor: false
-          description: "Test cases and QA workflows built into platform"
-        - feature: "V-Model/Waterfall"
-          sinra: true
-          competitor: false
-          description: "Native support for V-Model methodology"
-        - feature: "Code/Spec Integration"
-          sinra: true
-          competitor: false
-          description: "Track specifications alongside development"
-
-    - category: Team Coordination
-      features:
-        - feature: "Real-Time Capacity Planning"
-          sinra: true
-          competitor: false
-          description: "See team capacity and workload in real-time"
-        - feature: "Dependency Management"
-          sinra: true
-          competitor: true
-          description: "Manage cross-team and cross-release dependencies"
-        - feature: "Timeline Views"
-          sinra: true
-          competitor: true
-          description: "Gantt charts and timeline visualization"
-        - feature: "Collaboration"
-          sinra: true
-          competitor: true
-          description: "Comments, mentions, and team synchronization"
-
-    - category: Flexibility
-      features:
-        - feature: "Workflow Customization"
-          sinra: true
-          competitor: true
-          description: "Custom statuses and workflow automation"
-        - feature: "Templates"
-          sinra: true
-          competitor: true
-          description: "Pre-built project templates"
-        - feature: "Multi-Methodology Support"
-          sinra: true
-          competitor: false
-          description: "Agile, Waterfall, Hybrid - all in one tool"
-        - feature: "Integration Ecosystem"
-          sinra: false
-          competitor: true
-          description: "Asana has more third-party integrations"
-
-    - category: Pricing
-      features:
-        - feature: "Starting Price"
-          sinra: "€10/month"
-          competitor: "€10.99/month"
-          description: "Sinra: €10/seat. Asana: similar per-seat pricing"
-        - feature: "Development-Specific Features"
-          sinra: "Included"
-          competitor: "Extra"
-          description: "Sinra includes QA and release mgmt; Asana charges separately"
-        - feature: "Small Team Friendly"
-          sinra: true
-          competitor: true
-          description: "Both good for startups"
-
-  key_differences:
-    - "Sinra is built for software teams; Asana is for general teams"
-    - "Sinra has integrated QA and release management; Asana doesn't"
-    - "Sinra supports V-Model methodology; Asana is collaboration-focused"
-    - "Sinra supports multiple workflow types; Asana is task/project agnostic"
-    - "Similar pricing, but Sinra saves on add-ons"
-
-  conclusion: "Choose Sinra if you develop software and need QA+release management. Choose Asana if you have mixed teams doing various types of work."
-
-- id: sinra_vs_monday
-  title: Sinra vs Monday.com
-  competitor_name: Monday.com
-  competitor_logo: /assets/images/logos/monday.svg
-  intro: "Monday.com is a visual work OS for all types of work. Sinra is specialized for software teams managing complex releases."
-
-  comparison_table:
-    - category: For Software Teams
-      features:
-        - feature: "Release Planning"
-          sinra: true
-          competitor: false
-          description: "Built-in release cycles and deployment tracking"
-        - feature: "QA Integration"
-          sinra: true
-          competitor: false
-          description: "Test management tied to specifications"
-        - feature: "Capacity Planning"
-          sinra: true
-          competitor: false
-          description: "Real-time team capacity visibility"
-        - feature: "V-Model Support"
-          sinra: true
-          competitor: false
-          description: "Native waterfall and v-model methodology"
-
-    - category: General Work Management
-      features:
-        - feature: "General Task Management"
-          sinra: true
-          competitor: true
-          description: "Both manage tasks and workflows"
-        - feature: "Visual Boards"
-          sinra: true
-          competitor: true
-          description: "Kanban, List, Calendar views"
-        - feature: "Collaboration"
-          sinra: true
-          competitor: true
-          description: "Comments, mentions, notifications"
-        - feature: "Automation"
-          sinra: true
-          competitor: true
-          description: "Workflow automation and triggers"
-
-    - category: User Experience
-      features:
-        - feature: "Visual Design"
-          sinra: false
-          competitor: true
-          description: "Monday is very visual and colorful"
-        - feature: "Ease of Setup"
-          sinra: true
-          competitor: false
-          description: "Sinra is faster to setup for software teams"
-        - feature: "Mobile App"
-          sinra: false
-          competitor: true
-          description: "Monday has strong mobile experience"
-        - feature: "Learning Curve"
-          sinra: true
-          competitor: false
-          description: "Simpler for technical teams"
-
-    - category: Pricing & Customization
-      features:
-        - feature: "Base Price"
-          sinra: "€10/month"
-          competitor: "€8.99/month"
-          description: "Monday cheaper at base, but add-ons get expensive"
-        - feature: "Hidden Costs"
-          sinra: false
-          competitor: true
-          description: "Monday requires premium for advanced features"
-        - feature: "Total Cost of Ownership"
-          sinra: true
-          competitor: false
-          description: "Sinra includes features Monday charges extra for"
-        - feature: "Best For"
-          sinra: "Software teams"
-          competitor: "Mixed teams"
-
-  key_differences:
-    - "Sinra specializes in software; Monday.com is general-purpose"
-    - "Sinra has release management; Monday doesn't"
-    - "Sinra includes QA management; Monday requires add-ons"
-    - "Monday is more visually appealing; Sinra is more functional"
-    - "Sinra saves money long-term; Monday gets expensive with features"
-
-  conclusion: "Choose Sinra if you build software and need release+QA management. Choose Monday if you have diverse teams and want maximum visual flexibility."
+comparison_hub:
+  title: "Compare Sinra to Other Tools"
+  subtitle: "See how Sinra stacks up against Asana, Jira, and Monday"
+  description: "Compare Sinra with Asana, Jira, and Monday. Explore features, pricing, and find the best tool for your team."
+  
+  tools:
+    - name: Sinra
+      logo: /assets/images/sinra-logo.svg
+    - name: Asana
+      logo: /assets/images/asana-logo.svg
+    - name: Jira
+      logo: /assets/images/jira-logo.svg
+    - name: Monday
+      logo: /assets/images/monday-logo.svg
+  
+  dimensions:
+    - category: "Best For"
+      rows:
+        - dimension: "Ideal Use Case"
+          values:
+            - "Modern, visibility-first project management"
+            - "Enterprise workflows and large teams"
+            - "Software development and technical teams"
+            - "General team collaboration and task management"
+    
+    - category: "Pricing Model"
+      rows:
+        - dimension: "Cost Structure"
+          values:
+            - "Usage-based with cycle billing"
+            - "Per-user monthly subscription"
+            - "Self-hosted or cloud (subscription)"
+            - "Per-user or team plan"
+        - dimension: "Free Trial"
+          values:
+            - "14 days"
+            - "30 days"
+            - "N/A (open source available)"
+            - "14 days"
+    
+    - category: "Core Features"
+      rows:
+        - dimension: "Issue Management"
+          values:
+            - "✅ Native, first-class"
+            - "✅ Available via Asana tasks"
+            - "✅ Built-in (Jira Issues)"
+            - "✅ Task-based"
+        - dimension: "Workflows & Automation"
+          values:
+            - "✅ Custom workflows"
+            - "✅ Rules and automations"
+            - "✅ Advanced automation"
+            - "✅ Automations and workflows"
+        - dimension: "Release Planning"
+          values:
+            - "✅ Native cycles and releases"
+            - "⭐ Limited (Portfolios)"
+            - "✅ Strong (Jira Releases)"
+            - "⭐ Timeline view"
+    
+    - category: "Team Collaboration"
+      rows:
+        - dimension: "Comments & Mentions"
+          values:
+            - "✅ Full inline comments"
+            - "✅ Available"
+            - "✅ Full featured"
+            - "✅ Available"
+        - dimension: "Real-time Updates"
+          values:
+            - "✅ Real-time sync"
+            - "✅ Real-time collaboration"
+            - "✅ Real-time updates"
+            - "✅ Real-time sync"
+    
+    - category: "Reporting & Insights"
+      rows:
+        - dimension: "Dashboards"
+          values:
+            - "✅ Customizable dashboards"
+            - "✅ Portfolio dashboards"
+            - "✅ Dashboards and insights"
+            - "✅ Widgets and dashboards"
+        - dimension: "Analytics"
+          values:
+            - "✅ Burn-down and metrics"
+            - "✅ Advanced reporting"
+            - "✅ Advanced analytics"
+            - "✅ Reports and charts"
+    
+    - category: "Integrations"
+      rows:
+        - dimension: "API & Webhooks"
+          values:
+            - "✅ REST API"
+            - "✅ Webhooks and API"
+            - "✅ Comprehensive API"
+            - "✅ API and Webhooks"
+        - dimension: "Popular Integrations"
+          values:
+            - "✅ Slack, GitHub, GitLab"
+            - "✅ 100+ integrations"
+            - "✅ 500+ integrations"
+            - "✅ 200+ integrations"
+    
+    - category: "Ease of Use"
+      rows:
+        - dimension: "Setup Time"
+          values:
+            - "⚡ 5-10 minutes"
+            - "⚡ 15-30 minutes"
+            - "🔧 1-2 hours"
+            - "⚡ 15-20 minutes"
+        - dimension: "Learning Curve"
+          values:
+            - "Flat, intuitive"
+            - "Moderate"
+            - "Steep for complex setups"
+            - "Flat, intuitive"
+    
+    - category: "Mobile Experience"
+      rows:
+        - dimension: "Native Apps"
+          values:
+            - "✅ iOS & Android"
+            - "✅ iOS & Android"
+            - "✅ iOS & Android"
+            - "✅ iOS & Android"
+        - dimension: "Responsive Web"
+          values:
+            - "✅ Fully responsive"
+            - "✅ Fully responsive"
+            - "✅ Fully responsive"
+            - "✅ Fully responsive"
