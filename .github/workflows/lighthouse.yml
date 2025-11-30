@@ -62,18 +62,15 @@ jobs:
                 return '❌';
               };
 
-              const comment = `## 🔦 Lighthouse CI Results
-
-| Metric | Score | Status |
-|--------|-------|--------|
-| Performance | ${scores.performance}/100 | ${getEmoji(scores.performance)} |
-| Accessibility | ${scores.accessibility}/100 | ${getEmoji(scores.accessibility)} |
-| Best Practices | ${scores['best-practices']}/100 | ${getEmoji(scores['best-practices'])} |
-| SEO | ${scores.seo}/100 | ${getEmoji(scores.seo)} |
-
-**Thresholds**: Performance ≥90, Accessibility ≥95, Best Practices ≥90, SEO ≥90
-
-[View detailed report](${manifest.results[0].url})`;
+              const comment = "## 🔦 Lighthouse CI Results\n\n" +
+                "| Metric | Score | Status |\n" +
+                "|--------|-------|--------|\n" +
+                "| Performance | " + scores.performance + "/100 | " + getEmoji(scores.performance) + " |\n" +
+                "| Accessibility | " + scores.accessibility + "/100 | " + getEmoji(scores.accessibility) + " |\n" +
+                "| Best Practices | " + scores['best-practices'] + "/100 | " + getEmoji(scores['best-practices']) + " |\n" +
+                "| SEO | " + scores.seo + "/100 | " + getEmoji(scores.seo) + " |\n\n" +
+                "**Thresholds**: Performance ≥90, Accessibility ≥95, Best Practices ≥90, SEO ≥90\n\n" +
+                "[View detailed report](" + manifest.results[0].url + ")";
 
               github.rest.issues.createComment({
                 issue_number: context.issue.number,
