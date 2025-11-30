@@ -3,7 +3,7 @@
     "collect": {
       "staticDistDir": "./_site",
       "numberOfRuns": 1,
-      "url": ["http://localhost:3000/", "http://localhost:3000/about", "http://localhost:3000/en/", "http://localhost:3000/en/about"]
+      "url": ["/", "/about", "/compare/", "/fr/", "/fr/about", "/fr/compare/"]
     },
     "upload": {
       "target": "temporary-public-storage"
