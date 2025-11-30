@@ -10,23 +10,6 @@
   link: /blog
   target: _top
   klass:
-- name: Comparaison
-  link: compare/
-  target: _top
-  klass:
-  children:
-    - name: Hub de Comparaison
-      link: compare/
-      target: _top
-    - name: Asana
-      link: compare/asana/
-      target: _top
-    - name: Jira
-      link: compare/jira/
-      target: _top
-    - name: Monday
-      link: compare/monday/
-      target: _top
 - name: Contact
   link: /contact
   target: _top
