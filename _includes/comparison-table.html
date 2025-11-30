@@ -1,0 +1,29 @@
+<table class="comparison-table">
+  <thead>
+    <tr>
+      <th class="dimension-header">Feature</th>
+      {% for tool in data.tools %}
+      <th class="tool-column">
+        <img src="{{ tool.logo }}" alt="{{ tool.name }}" class="tool-logo" />
+        <span class="tool-name">{{ tool.name }}</span>
+      </th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for dimension_group in data.dimensions %}
+    {% for row in dimension_group.rows %}
+    <tr class="comparison-row">
+      <td class="dimension">
+        <strong>{{ row.dimension }}</strong>
+      </td>
+      {% for value in row.values %}
+      <td class="tool-value">
+        {{ value }}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
