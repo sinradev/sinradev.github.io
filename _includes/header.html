@@ -13,12 +13,9 @@
         {% if item.children %}
         <!-- Mobile dropdown menu -->
         <li class="dropdown">
-          <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
-             class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
-             target="{{ item.target }}"
-             aria-current="{% if page.url == page_url %}page{% else %}false{% endif %}">
+          <button tabindex="0" role="button" class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}">
             {{ item.name }}
-          </a>
+          </button>
           <ul class="dropdown-content menu">
             {% for child in item.children %}
             {% assign child_url = "/" | append: child.link %}
@@ -62,12 +59,9 @@
       {% if item.children %}
       <!-- Dropdown menu -->
       <li class="dropdown">
-        <a href="{% if item.link contains "http" %}{{ item.link }}{% else %}{{ site.baseurl}}/{{ item.link }}{% endif %}"
-           class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}"
-           target="{{ item.target }}"
-           aria-current="{% if page.url == page_url %}page{% else %}false{% endif %}">
+        <button tabindex="0" role="button" class="{% if page.url == page_url %}active{% endif %} {{ item.klass }}">
           {{ item.name }}
-        </a>
+        </button>
         <ul class="dropdown-content menu">
           {% for child in item.children %}
           {% assign child_url = "/" | append: child.link %}
