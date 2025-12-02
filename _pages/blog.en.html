@@ -1,13 +1,14 @@
 ---
 page_id: blog
 lang: en
-layout: page
+layout: default
 permalink: /blog/
 title: "Sinra Blog - Project Management Insights"
 description: "Learn modern project management strategies, release planning, QA integration, and team scaling. Insights for engineering leaders and project managers."
 heading: "Project Management Insights & Strategies"
 ---
 
+<div class="content">
 <section class="blog-hero">
   <div class="container">
     <h1>{{ page.heading }}</h1>
@@ -16,32 +17,28 @@ heading: "Project Management Insights & Strategies"
 </section>
 
 <section class="blog-posts">
-  <div class="container">
-    <div class="posts-grid">
-      {% if site.posts.size > 0 %}
-        {% assign posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
-        {% for post in posts limit: 12 %}
-          <article class="post-card">
-            <div class="post-meta">
-              <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
-              {% if post.category %}
-                <span class="category">{{ post.category }}</span>
-              {% endif %}
-            </div>
-            <h2 class="post-title">
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h2>
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-            <a href="{{ post.url }}" class="read-more">Read Article →</a>
-          </article>
-        {% endfor %}
-      {% else %}
-        <div class="no-posts">
-          <p>Blog posts coming soon. Check back regularly for insights on project management, capacity planning, release management, and team scaling.</p>
+  {% if site.posts.size > 0 %}
+    {% assign posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
+    {% for post in posts limit: 12 %}
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          {% if post.category %}
+            <span class="category">{{ post.category }}</span>
+          {% endif %}
         </div>
-      {% endif %}
+        <h2 class="post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url }}" class="read-more">Read Article →</a>
+      </article>
+    {% endfor %}
+  {% else %}
+    <div class="no-posts">
+      <p>Blog posts coming soon. Check back regularly for insights on project management, capacity planning, release management, and team scaling.</p>
     </div>
-  </div>
+  {% endif %}
 </section>
 
 <section class="blog-cta">
@@ -51,3 +48,4 @@ heading: "Project Management Insights & Strategies"
     <a href="https://app.sinra.dev/users/sign_up" class="button primary">Start Free Trial</a>
   </div>
 </section>
+</div>

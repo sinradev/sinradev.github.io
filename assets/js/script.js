@@ -409,6 +409,34 @@ const initBlackFridayBanner = () => {
   initBanner();
 };
 
+// Fix blog post dates (workaround for jekyll-polyglot bug)
+const fixBlogDates = () => {
+  // Only run on blog pages
+  if (!document.querySelector('.blog-posts')) return;
+
+  const postCards = document.querySelectorAll('.post-card');
+
+  postCards.forEach(card => {
+    const dateSpan = card.querySelector('.date');
+    const postLink = card.querySelector('.post-title a');
+
+    if (dateSpan && postLink && dateSpan.textContent.includes('/00/')) {
+      // Extract date from post URL: /fr/category/2025/12/03/...
+      const url = postLink.getAttribute('href');
+      const match = url.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
+
+      if (match) {
+        const [_, year, month, day] = match;
+        // Format: DD.MM.YYYY for French, MM/DD/YYYY for English
+        const isFrench = window.location.pathname.includes('/fr/');
+        dateSpan.textContent = isFrench
+          ? `${day}.${month}.${year}`
+          : `${month}/${day}/${year}`;
+      }
+    }
+  });
+};
+
 // Initialize all effects when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   createScrollIndicator();
@@ -424,6 +452,7 @@ document.addEventListener('DOMContentLoaded', () => {
   createParticles();
   initFloatingElements();
   initPerformanceMonitoring();
+  fixBlogDates();
 });
 
 // Handle window resize
