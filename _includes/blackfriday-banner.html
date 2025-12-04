@@ -1,6 +1,6 @@
 {% assign promo = site.data[page.lang].promotion %}
 {% if promo.banner.enabled %}
-  {% assign today = site.time | date: "%Y-%m-%d" %}
+  {% assign today = site.time | date: “%Y-%m-%d” %}
   {% assign end_date = promo.end_date %}
   {% if today <= end_date %}
   <div id="blackfriday-banner" class="sticky-banner">

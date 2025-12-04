@@ -1,14 +1,14 @@
-- name: "Acquia"
-  logo: "/assets/images/logos/acquia.svg"
+- name: “Acquia”
+  logo: “/assets/images/logos/acquia.svg”
 
-- name: "Asphalion MedTech"
-  logo: "/assets/images/logos/asphalion-medtech.svg"
+- name: “Asphalion MedTech”
+  logo: “/assets/images/logos/asphalion-medtech.svg”
 
-- name: "WeThink Nordic"
-  logo: "/assets/images/logos/wethinknordic.svg"
+- name: “WeThink Nordic”
+  logo: “/assets/images/logos/wethinknordic.svg”
 
-- name: "Futur"
-  logo: "/assets/images/logos/futur.svg"
+- name: “Futur”
+  logo: “/assets/images/logos/futur.svg”
 
-- name: "Arival Bank"
-  logo: "/assets/images/logos/arivalbank.svg"
+- name: “Arival Bank”
+  logo: “/assets/images/logos/arivalbank.svg”

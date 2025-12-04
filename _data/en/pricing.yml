@@ -1,22 +1,22 @@
 - name: Sinra Pro
-  color: "#2196F3"
-  description: "The complete project management platform combining V-Model and Agile methodologies"
+  color: “#2196F3”
+  description: “The complete project management platform combining V-Model and Agile methodologies”
   pricing_tiers:
     - period: Monthly
-      price: "10"
-      currency: "€"
-      billing: "/month"
-      plan_type: "monthly"
+      price: “10”
+      currency: “€”
+      billing: “/month”
+      plan_type: “monthly”
     - period: Annual
-      price: "96"
-      currency: "€"
-      billing: "/year"
-      plan_type: "annual"
-      original_price: "120"
-      struck_price: "96"
+      price: “96”
+      currency: “€”
+      billing: “/year”
+      plan_type: “annual”
+      original_price: “120”
+      struck_price: “96”
       has_black_friday: true
-      black_friday_price: "60"
-      promo_code: "BLACKFRIDAY2025"
+      black_friday_price: “60”
+      promo_code: “BLACKFRIDAY2025”
       recommended: true
   features:
     - text: Pay per seat (flexible team sizing)
@@ -48,13 +48,13 @@
     text: Start Free Trial
 
 - name: Sinra Specif-AI
-  color: "#2196F3"
-  description: "AI-powered specification generation for issues, capabilities, and projects"
+  color: “#2196F3”
+  description: “AI-powered specification generation for issues, capabilities, and projects”
   pricing_tiers:
     - period: Coming Soon
       price: null
       billing: null
-      plan_type: "coming_soon"
+      plan_type: “coming_soon”
   features:
     - text: AI-powered issue specification
       highlight: true
@@ -95,4 +95,4 @@
   call_to_action:
     link: null
     text: Coming Soon
-    badge_type: "coming_soon"
+    badge_type: “coming_soon”
