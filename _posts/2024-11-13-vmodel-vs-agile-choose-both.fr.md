@@ -53,7 +53,7 @@ Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patien
 **Le Piège Agile:**
 10+ heures par semaine en standups. Repriorisation constante. Features à moitié construites parce que les exigences ont changé. Équipes refaisant du travail parce que les décisions vivent dans les threads Slack.
 
-Exemple: Une agence a pris l'approche "pure Agile" pour une refonte de CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement reconstruit. L'équipe avait optimisé pour la vélocité, pas la valeur.
+Exemple: Une agence a pris l'approche « pure Agile » pour une refonte de CMS. Pas de spécifications. Juste « construis un dashboard. » 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement reconstruit. L'équipe avait optimisé pour la vélocité, pas la valeur.
 
 ![Diagramme Agile Itératif](/assets/images/agile-iterative-diagram.svg "Approche Agile / Itérative")
 
@@ -213,7 +213,7 @@ Une plateforme. Visibilité unifiée. Pas de changement entre outils. Vraie plan
 
 Arrêtez de choisir entre V-Model et Agile. Les meilleures équipes utilisent les deux.
 
-La question n'est pas "V-Model ou Agile?" La question est: **"Comment appliquons-nous la bonne méthodologie à chaque phase de notre travail?"**
+La question n'est pas « V-Model ou Agile? » La question est: **« Comment appliquons-nous la bonne méthodologie à chaque phase de notre travail? »**
 
 Les équipes qui répondent cette question livrent plus vite, avec meilleure qualité, et moins de surprises.
 

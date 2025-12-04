@@ -1,24 +1,24 @@
-name: "Black Friday"
-description: "50% discount on annual pricing"
+name: “Black Friday”
+description: “50% discount on annual pricing”
 discount_percentage: 50
-plan_type: "annual"
-end_date: "2025-11-28"
+plan_type: “annual”
+end_date: “2025-11-28”
 
 banner:
   enabled: false
-  message: "Black Friday: 50% off annual plans"
-  cta_text: "View Pricing"
-  cta_link: "/pricing"
+  message: “Black Friday: 50% off annual plans”
+  cta_text: “View Pricing”
+  cta_link: “/pricing”
   dismissible: true
 
 badge:
   enabled: false
-  text: "50% OFF"
-  color_class: "badge-promotion"
+  text: “50% OFF”
+  color_class: “badge-promotion”
 
 pricing:
   original_annual_price: 100
   discount_amount: 50
   discounted_annual_price: 50
-  currency: "€"
-  currency_code: "EUR"
+  currency: “€”
+  currency_code: “EUR”

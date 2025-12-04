@@ -13,23 +13,23 @@ permalink: /philosophie/:year/:month/:day/why-we-abandoned-sprints-for-cycles.ht
 
 Dans la gestion de projets logiciels, le langage n'est pas neutre.
 
-Quand vous appelez une période de travail de deux semaines un **"sprint"**, vous invoquez des images : des coureurs poussés à l'épuisement, des lignes d'arrivée qui doivent être franchies, une course contre la montre. La métaphore est athlétique, urgente, insoutenable.
+Quand vous appelez une période de travail de deux semaines un **« sprint »**, vous invoquez des images : des coureurs poussés à l'épuisement, des lignes d'arrivée qui doivent être franchies, une course contre la montre. La métaphore est athlétique, urgente, insoutenable.
 
 Quand nous avons construit Sinra, nous avons complètement rejeté cette métaphore.
 
-Nous les appelons **cycles**—des périodes concrètes et time-boxed pour organiser le travail. Pas parce que "cycle" sonne mieux. Parce que ça *signifie quelque chose de différent*.
+Nous les appelons **cycles**—des périodes concrètes et time-boxed pour organiser le travail. Pas parce que « cycle » sonne mieux. Parce que ça *signifie quelque chose de différent*.
 
 Ce n'était pas une décision de branding. C'était philosophique.
 
 ---
 
-## Le Problème avec la Pensée "Sprint"
+## Le Problème avec la Pensée « Sprint »
 
 **La Promesse Agile :**
-Les "sprints" devaient créer de la concentration—des rafales courtes de travail productif avec des objectifs clairs et une livraison rapide.
+Les « sprints » devaient créer de la concentration—des rafales courtes de travail productif avec des objectifs clairs et une livraison rapide.
 
 **La Réalité :**
-Les équipes traitent chaque période de deux semaines comme une course vers la ligne d'arrivée. Les product owners remplissent les sprints à capacité maximale. Les développeurs coupent les coins pour "respecter l'engagement du sprint". La qualité en souffre. Le burnout devient routinier. Le sprint se termine—et un autre sprint commence. Et un autre. Et encore un autre.
+Les équipes traitent chaque période de deux semaines comme une course vers la ligne d'arrivée. Les product owners remplissent les sprints à capacité maximale. Les développeurs coupent les coins pour « respecter l'engagement du sprint ». La qualité en souffre. Le burnout devient routinier. Le sprint se termine—et un autre sprint commence. Et un autre. Et encore un autre.
 
 Ça ne s'arrête jamais.
 
@@ -37,7 +37,7 @@ La métaphore entraîne les équipes à penser que le travail est une course per
 
 ---
 
-## Ce Qui Rend les "Cycles" Différents
+## Ce Qui Rend les « Cycles » Différents
 
 **Les cycles sont des périodes time-boxed pour organiser le travail.**
 
@@ -53,9 +53,9 @@ Pas des courses. Pas des engagements à tout livrer. Pas des promesses de courir
 
 Un cycle reconnaît que le travail prend du temps. Que les estimations sont imparfaites. Que les plans changent. Que les gens ne sont pas des machines optimisées pour la vélocité.
 
-Quand vous planifiez un cycle, vous ne demandez pas : *"À quelle vitesse pouvons-nous aller ?"*
+Quand vous planifiez un cycle, vous ne demandez pas : *« À quelle vitesse pouvons-nous aller ? »*
 
-Vous demandez : *"Qu'est-ce que nous pouvons réalistement accomplir dans cette période ?"*
+Vous demandez : *« Qu'est-ce que nous pouvons réalistement accomplir dans cette période ? »*
 
 ---
 
@@ -90,11 +90,11 @@ Ce pattern se répète à travers tout Sinra :
 | Epics | Capabilities | Les epics sont vagues. Les capabilities décrivent des fonctionnalités réelles. |
 | Sprint | Cycle | Les sprints impliquent des courses. Les cycles sont des périodes neutres. |
 | Increment | Release | Les increments sont ambigus. Les releases sont des versions concrètes. |
-| Backlog grooming | Planning | "Grooming" est du jargon. Planning est clair. |
+| Backlog grooming | Planning | « Grooming » est du jargon. Planning est clair. |
 
 **Chaque choix privilégie la clarté plutôt que le jargon.**
 
-Quand un développeur demande "Sur quoi est-ce que je travaille ce cycle ?", il voit :
+Quand un développeur demande « Sur quoi est-ce que je travaille ce cycle ? », il voit :
 - **Issues :** Items de travail individuels (bugs, tâches, features)
 - **Capabilities :** Fonctionnalités de plus haut niveau en construction
 - **Releases :** La version produit en préparation
@@ -159,7 +159,7 @@ Juste des périodes de travail structurées avec des limites claires.
 - Sprint reviews : 2 heures toutes les 2 semaines
 - Sprint retrospectives : 1.5 heures toutes les 2 semaines
 - **Surcharge totale : 37.5 heures/semaine pour une équipe de 12 personnes**
-- Pression constante pour "respecter l'engagement"
+- Pression constante pour « respecter l'engagement »
 - 40% des objectifs de sprint manqués
 - Moral de l'équipe : bas
 
@@ -183,13 +183,13 @@ Juste des périodes de travail structurées avec des limites claires.
 
 ## Pourquoi Cela Compte pour Votre Équipe
 
-La plupart des équipes héritent de la terminologie Agile sans la questionner. Les "sprints" semblent normaux parce que tout le monde les utilise.
+La plupart des équipes héritent de la terminologie Agile sans la questionner. Les « sprints » semblent normaux parce que tout le monde les utilise.
 
 Mais le langage façonne le comportement.
 
-Quand vous appelez les périodes de travail "sprints", vous créez une culture d'urgence, de vélocité et d'épuisement.
+Quand vous appelez les périodes de travail « sprints », vous créez une culture d'urgence, de vélocité et d'épuisement.
 
-Quand vous les appelez "cycles", vous créez une culture de structure, de capacité et de durabilité.
+Quand vous les appelez « cycles », vous créez une culture de structure, de capacité et de durabilité.
 
 **Le changement n'est pas sémantique—il est culturel.**
 
@@ -233,11 +233,11 @@ Quand vos outils utilisent un langage simple, votre équipe passe moins de temps
 Si votre équipe est coincée dans la culture sprint, voici comment changer :
 
 ### 1. Renommer la Période
-Arrêtez de les appeler "sprints". Commencez à les appeler "cycles". Le changement de langage seul change la mentalité.
+Arrêtez de les appeler « sprints ». Commencez à les appeler « cycles ». Le changement de langage seul change la mentalité.
 
 ### 2. Planifier pour la Capacité, Pas la Vélocité
-Ne demandez pas : "Combien de story points pouvons-nous compléter ?"
-Demandez : "Compte tenu de la capacité de notre équipe, qu'est-ce que nous pouvons réalistement finir ?"
+Ne demandez pas : « Combien de story points pouvons-nous compléter ? »
+Demandez : « Compte tenu de la capacité de notre équipe, qu'est-ce que nous pouvons réalistement finir ? »
 
 ### 3. Éliminer la Cérémonie Sprint
 - Remplacer les standups quotidiens par des mises à jour async
@@ -249,15 +249,15 @@ Demandez : "Compte tenu de la capacité de notre équipe, qu'est-ce que nous pou
 Laisser une marge pour les interruptions, corrections de bugs et apprentissage. Viser 70-80% d'utilisation de capacité.
 
 ### 5. Mesurer le Taux de Complétion, Pas la Vélocité
-Suivre : "Avons-nous terminé ce que nous avons planifié ?" Pas : "À quelle vitesse sommes-nous allés ?"
+Suivre : « Avons-nous terminé ce que nous avons planifié ? » Pas : « À quelle vitesse sommes-nous allés ? »
 
 ---
 
 ## Le Point Clé
 
-**"Sprint" est une métaphore qui crée de l'urgence sans direction.**
+**« Sprint » est une métaphore qui crée de l'urgence sans direction.**
 
-**"Cycle" est un terme concret qui crée de la structure sans pression.**
+**« Cycle » est un terme concret qui crée de la structure sans pression.**
 
 Le langage compte. Les mots que vous utilisez façonnent la façon dont votre équipe pense au travail.
 

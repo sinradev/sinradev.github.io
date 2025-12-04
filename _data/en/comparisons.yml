@@ -1,10 +1,10 @@
 comparisons:
-    conclusion: "Choose Sinra if you build software and need release+QA management. Choose Monday if you have diverse teams and want maximum visual flexibility."
+    conclusion: “Choose Sinra if you build software and need release+QA management. Choose Monday if you have diverse teams and want maximum visual flexibility.”
 
 comparison_hub:
-  title: "Compare Sinra to Other Tools"
-  subtitle: "See how Sinra stacks up against Asana, Jira, and Monday"
-  description: "Compare Sinra with Asana, Jira, and Monday. Explore features, pricing, and find the best tool for your team."
+  title: “Compare Sinra to Other Tools”
+  subtitle: “See how Sinra stacks up against Asana, Jira, and Monday”
+  description: “Compare Sinra with Asana, Jira, and Monday. Explore features, pricing, and find the best tool for your team.”
   
   tools:
     - name: Sinra
@@ -17,122 +17,122 @@ comparison_hub:
       logo: /assets/images/monday-logo.svg
   
   dimensions:
-    - category: "Best For"
+    - category: “Best For”
       rows:
-        - dimension: "Ideal Use Case"
+        - dimension: “Ideal Use Case”
           values:
-            - "Modern, visibility-first project management"
-            - "Enterprise workflows and large teams"
-            - "Software development and technical teams"
-            - "General team collaboration and task management"
+            - “Modern, visibility-first project management”
+            - “Enterprise workflows and large teams”
+            - “Software development and technical teams”
+            - “General team collaboration and task management”
     
-    - category: "Pricing Model"
+    - category: “Pricing Model”
       rows:
-        - dimension: "Cost Structure"
+        - dimension: “Cost Structure”
           values:
-            - "Usage-based with cycle billing"
-            - "Per-user monthly subscription"
-            - "Self-hosted or cloud (subscription)"
-            - "Per-user or team plan"
-        - dimension: "Free Trial"
+            - “Usage-based with cycle billing”
+            - “Per-user monthly subscription”
+            - “Self-hosted or cloud (subscription)”
+            - “Per-user or team plan”
+        - dimension: “Free Trial”
           values:
-            - "14 days"
-            - "30 days"
-            - "N/A (open source available)"
-            - "14 days"
+            - “14 days”
+            - “30 days”
+            - “N/A (open source available)”
+            - “14 days”
     
-    - category: "Core Features"
+    - category: “Core Features”
       rows:
-        - dimension: "Issue Management"
+        - dimension: “Issue Management”
           values:
-            - "✅ Native, first-class"
-            - "✅ Available via Asana tasks"
-            - "✅ Built-in (Jira Issues)"
-            - "✅ Task-based"
-        - dimension: "Workflows & Automation"
+            - “✅ Native, first-class”
+            - “✅ Available via Asana tasks”
+            - “✅ Built-in (Jira Issues)”
+            - “✅ Task-based”
+        - dimension: “Workflows & Automation”
           values:
-            - "✅ Custom workflows"
-            - "✅ Rules and automations"
-            - "✅ Advanced automation"
-            - "✅ Automations and workflows"
-        - dimension: "Release Planning"
+            - “✅ Custom workflows”
+            - “✅ Rules and automations”
+            - “✅ Advanced automation”
+            - “✅ Automations and workflows”
+        - dimension: “Release Planning”
           values:
-            - "✅ Native cycles and releases"
-            - "⭐ Limited (Portfolios)"
-            - "✅ Strong (Jira Releases)"
-            - "⭐ Timeline view"
+            - “✅ Native cycles and releases”
+            - “⭐ Limited (Portfolios)”
+            - “✅ Strong (Jira Releases)”
+            - “⭐ Timeline view”
     
-    - category: "Team Collaboration"
+    - category: “Team Collaboration”
       rows:
-        - dimension: "Comments & Mentions"
+        - dimension: “Comments & Mentions”
           values:
-            - "✅ Full inline comments"
-            - "✅ Available"
-            - "✅ Full featured"
-            - "✅ Available"
-        - dimension: "Real-time Updates"
+            - “✅ Full inline comments”
+            - “✅ Available”
+            - “✅ Full featured”
+            - “✅ Available”
+        - dimension: “Real-time Updates”
           values:
-            - "✅ Real-time sync"
-            - "✅ Real-time collaboration"
-            - "✅ Real-time updates"
-            - "✅ Real-time sync"
+            - “✅ Real-time sync”
+            - “✅ Real-time collaboration”
+            - “✅ Real-time updates”
+            - “✅ Real-time sync”
     
-    - category: "Reporting & Insights"
+    - category: “Reporting & Insights”
       rows:
-        - dimension: "Dashboards"
+        - dimension: “Dashboards”
           values:
-            - "✅ Customizable dashboards"
-            - "✅ Portfolio dashboards"
-            - "✅ Dashboards and insights"
-            - "✅ Widgets and dashboards"
-        - dimension: "Analytics"
+            - “✅ Customizable dashboards”
+            - “✅ Portfolio dashboards”
+            - “✅ Dashboards and insights”
+            - “✅ Widgets and dashboards”
+        - dimension: “Analytics”
           values:
-            - "✅ Burn-down and metrics"
-            - "✅ Advanced reporting"
-            - "✅ Advanced analytics"
-            - "✅ Reports and charts"
+            - “✅ Burn-down and metrics”
+            - “✅ Advanced reporting”
+            - “✅ Advanced analytics”
+            - “✅ Reports and charts”
     
-    - category: "Integrations"
+    - category: “Integrations”
       rows:
-        - dimension: "API & Webhooks"
+        - dimension: “API & Webhooks”
           values:
-            - "✅ REST API"
-            - "✅ Webhooks and API"
-            - "✅ Comprehensive API"
-            - "✅ API and Webhooks"
-        - dimension: "Popular Integrations"
+            - “✅ REST API”
+            - “✅ Webhooks and API”
+            - “✅ Comprehensive API”
+            - “✅ API and Webhooks”
+        - dimension: “Popular Integrations”
           values:
-            - "✅ Slack, GitHub, GitLab"
-            - "✅ 100+ integrations"
-            - "✅ 500+ integrations"
-            - "✅ 200+ integrations"
+            - “✅ Slack, GitHub, GitLab”
+            - “✅ 100+ integrations”
+            - “✅ 500+ integrations”
+            - “✅ 200+ integrations”
     
-    - category: "Ease of Use"
+    - category: “Ease of Use”
       rows:
-        - dimension: "Setup Time"
+        - dimension: “Setup Time”
           values:
-            - "⚡ 5-10 minutes"
-            - "⚡ 15-30 minutes"
-            - "🔧 1-2 hours"
-            - "⚡ 15-20 minutes"
-        - dimension: "Learning Curve"
+            - “⚡ 5-10 minutes”
+            - “⚡ 15-30 minutes”
+            - “🔧 1-2 hours”
+            - “⚡ 15-20 minutes”
+        - dimension: “Learning Curve”
           values:
-            - "Flat, intuitive"
-            - "Moderate"
-            - "Steep for complex setups"
-            - "Flat, intuitive"
+            - “Flat, intuitive”
+            - “Moderate”
+            - “Steep for complex setups”
+            - “Flat, intuitive”
     
-    - category: "Mobile Experience"
+    - category: “Mobile Experience”
       rows:
-        - dimension: "Native Apps"
+        - dimension: “Native Apps”
           values:
-            - "✅ iOS & Android"
-            - "✅ iOS & Android"
-            - "✅ iOS & Android"
-            - "✅ iOS & Android"
-        - dimension: "Responsive Web"
+            - “✅ iOS & Android”
+            - “✅ iOS & Android”
+            - “✅ iOS & Android”
+            - “✅ iOS & Android”
+        - dimension: “Responsive Web”
           values:
-            - "✅ Fully responsive"
-            - "✅ Fully responsive"
-            - "✅ Fully responsive"
-            - "✅ Fully responsive"
+            - “✅ Fully responsive”
+            - “✅ Fully responsive”
+            - “✅ Fully responsive”
+            - “✅ Fully responsive”
