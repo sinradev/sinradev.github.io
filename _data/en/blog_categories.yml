@@ -1,6 +1,6 @@
 - name: Methodology
   slug: methodology
-  description: “Learn modern project management methodologies: V-Model, Agile, hybrid approaches, and how to choose the right method for your team.”
+  description: "Learn modern project management methodologies: V-Model, Agile, hybrid approaches, and how to choose the right method for your team."
 
 - name: Capacity Planning
   slug: capacity-planning
@@ -16,7 +16,7 @@
 
 - name: Team Scaling
   slug: team-scaling
-  description: "Scale your engineering team from startup to enterprise while maintaining quality and velocity.”
+  description: "Scale your engineering team from startup to enterprise while maintaining quality and velocity."
 
 - name: Compliance
   slug: compliance
