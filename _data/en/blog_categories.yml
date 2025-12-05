@@ -4,15 +4,15 @@
 
 - name: Capacity Planning
   slug: capacity-planning
-  description: “Master team capacity planning, workload forecasting, resource allocation, and avoiding overallocation.”
+  description: "Master team capacity planning, workload forecasting, resource allocation, and avoiding overallocation."
 
 - name: Release Management
   slug: release-management
-  description: “Strategies for planning, coordinating, and executing successful releases with confidence and precision.”
+  description: "Strategies for planning, coordinating, and executing successful releases with confidence and precision."
 
 - name: QA & Testing
   slug: qa-testing
-  description: “Integrate quality assurance early, build effective testing strategies, and ship with confidence.”
+  description: "Integrate quality assurance early, build effective testing strategies, and ship with confidence."
 
 - name: Team Scaling
   slug: team-scaling
@@ -20,4 +20,4 @@
 
 - name: Compliance
   slug: compliance
-  description: “Navigate regulatory requirements while maintaining agility. Build systems that pass audits without sacrificing speed.”
+  description: "Navigate regulatory requirements while maintaining agility. Build systems that pass audits without sacrificing speed."
