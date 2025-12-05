@@ -11,13 +11,13 @@ permalink: /méthodologie/:year/:month/:day/release-driven-development.html
 
 ## La Crise du Déploiement
 
-Demandez à la plupart des équipes de développement : **« C'est quand votre prochain déploiement ? »**
+Demandez à la plupart des équipes de développement : **« C'est quand votre prochain déploiement ? »**
 
 Réponses courantes :
-- « Quand on finit le sprint »
-- « Quand les fonctionnalités sont prêtes »
-- « On déploie en continu »
-- « Pas sûr, c'est le Product qui décide »
+- « Quand on finit le sprint »
+- « Quand les fonctionnalités sont prêtes »
+- « On déploie en continu »
+- « Pas sûr, c'est le Product qui décide »
 
 **Traduction : On ne sait pas.**
 
@@ -44,11 +44,11 @@ Sinra résout cela avec le **release-driven development** : organiser le travail
 3. Vous suivez la progression vers la préparation de release en temps réel
 4. Vous déployez quand la release est prête, pas quand quelqu'un devine qu'elle pourrait l'être
 
-**C'est l'opposé de « déployer quand on a fini. »**
+**C'est l'opposé de « déployer quand on a fini. »**
 
-Au lieu : **On décide ce que « fini » signifie avant de commencer à construire.**
+Au lieu : **On décide ce que « fini » signifie avant de commencer à construire.**
 
-![Timeline Release-Driven](/assets/images/release-driven-timeline.svg "Comment Fonctionne le Release-Driven Development")
+![Timeline Release-Driven](/assets/images/release-driven-timeline.svg « Comment Fonctionne le Release-Driven Development »)
 
 ---
 
@@ -58,11 +58,11 @@ Au lieu : **On décide ce que « fini » signifie avant de commencer à constr
 
 **Semaine 1-4 :** Construire des fonctionnalités
 - Les développeurs travaillent sur des tâches
-- Le Product continue d'ajouter « juste une chose de plus »
-- QA teste quand le code est « terminé »
+- Le Product continue d'ajouter « juste une chose de plus »
+- QA teste quand le code est « terminé »
 - Personne ne pense au déploiement
 
-**Semaine 5 :** Quelqu'un demande : « Quand est-ce qu'on livre ? »
+**Semaine 5 :** Quelqu'un demande : « Quand est-ce qu'on livre ? »
 - Course folle pour évaluer la préparation
 - Découverte de dépendances manquantes
 - Découverte de cas limites non testés
@@ -79,7 +79,7 @@ Au lieu : **On décide ce que « fini » signifie avant de commencer à constr
 
 Ça ne fonctionne pas.
 
-![Chaos Feature-Driven](/assets/images/feature-driven-chaos.svg "Le Problème avec le Développement Feature-First")
+![Chaos Feature-Driven](/assets/images/feature-driven-chaos.svg « Le Problème avec le Développement Feature-First »)
 
 ---
 
@@ -117,7 +117,7 @@ Au lieu : **On décide ce que « fini » signifie avant de commencer à constr
 
 Ça fonctionne.
 
-![Succès Release-Driven](/assets/images/release-driven-success.svg "Le Pouvoir de la Planification Release-First")
+![Succès Release-Driven](/assets/images/release-driven-success.svg « Le Pouvoir de la Planification Release-First »)
 
 ---
 
@@ -131,7 +131,7 @@ Au lieu : **On décide ce que « fini » signifie avant de commencer à constr
 - QA voit des cas de test
 - Les Executives voient... rien de cohérent
 
-Personne n'a une vue unifiée de « qu'est-ce qu'on livre et quand ? »
+Personne n'a une vue unifiée de « qu'est-ce qu'on livre et quand ? »
 
 **La Solution Release-Driven :**
 Chaque stakeholder voit la même chose :
@@ -144,16 +144,16 @@ Chaque stakeholder voit la même chose :
 
 Une vue. Temps réel. Accessible à tous.
 
-**Quand le Product demande :** « Qu'est-ce qui est dans la prochaine release ? »
+**Quand le Product demande :** « Qu'est-ce qui est dans la prochaine release ? »
 **Réponse :** La vue Release 2.3 montre exactement ce qui est planifié, en cours et complet.
 
-**Quand les Executives demandent :** « Quand livrons-nous les permissions utilisateur ? »
+**Quand les Executives demandent :** « Quand livrons-nous les permissions utilisateur ? »
 **Réponse :** Release 2.3, 15 mars, actuellement 73% complète.
 
-**Quand QA demande :** « Qu'est-ce qui doit être testé ? »
+**Quand QA demande :** « Qu'est-ce qui doit être testé ? »
 **Réponse :** Release 2.3 montre 14 issues non testées à travers 2 capabilities.
 
-![Vue Release Unifiée](/assets/images/unified-release-view.svg "Tout le Monde Voit la Même Vérité")
+![Vue Release Unifiée](/assets/images/unified-release-view.svg « Tout le Monde Voit la Même Vérité »)
 
 ---
 
@@ -177,13 +177,13 @@ La capacité est visible dès le premier jour :
 - Alerte de surengagement si capacité dépassée
 
 Quand le Product veut ajouter une fonctionnalité :
-**Question :** « Est-ce que ça rentre dans Release 2.3 ? »
+**Question :** « Est-ce que ça rentre dans Release 2.3 ? »
 **Le système montre :** Actuellement à 93% capacité. Ajouter 4 issues vous met à 102% (surengagé).
 **Décision :** Soit retirer une autre fonctionnalité soit pousser à Release 2.4.
 
 Les décisions de capacité deviennent **pilotées par les données, pas politiques**.
 
-![Tableau de Bord Capacité](/assets/images/capacity-dashboard.svg "Capacité vs. Charge de Travail Temps Réel")
+![Tableau de Bord Capacité](/assets/images/capacity-dashboard.svg « Capacité vs. Charge de Travail Temps Réel »)
 
 ---
 
@@ -191,7 +191,7 @@ Les décisions de capacité deviennent **pilotées par les données, pas politiq
 
 **Le Problème avec Feature-Driven :**
 Le déploiement est chaotique parce que la préparation n'est pas claire :
-- Fonctionnalités « terminées » mais non testées
+- Fonctionnalités « terminées » mais non testées
 - Documentation manquante
 - Dépendances peu claires
 - Stakeholders non préparés
@@ -216,7 +216,7 @@ Les équipes rapportent :
 - 90% plus haute confiance d'équipe
 - 100% communication stakeholder plus claire
 
-![Préparation Release](/assets/images/release-readiness.svg "Confiance de Déploiement Par la Planification")
+![Préparation Release](/assets/images/release-readiness.svg « Confiance de Déploiement Par la Planification »)
 
 ---
 
@@ -285,7 +285,7 @@ Quand Release 2.3 est prête :
 ### Avant Release-Driven (Chaos Fonctionnalité)
 **Leur Processus :**
 - Construire des fonctionnalités en sprints de 2 semaines
-- « Déployer quand prêt »
+- « Déployer quand prêt »
 - Pas de planification release
 - Scope creep constant
 - Déploiements toutes les 4-6 semaines (espéré 2)
@@ -294,8 +294,8 @@ Quand Release 2.3 est prête :
 - Le Product ajoutait des fonctionnalités à mi-sprint
 - QA ne pouvait pas suivre les tests
 - Déploiements retardés 70% du temps
-- Engineers frustrés : « On ne sait jamais ce qu'on livre »
-- Clients confus : « Qu'est-ce qui a changé dans cette release ? »
+- Engineers frustrés : « On ne sait jamais ce qu'on livre »
+- Clients confus : « Qu'est-ce qui a changé dans cette release ? »
 
 **Métriques :**
 - Retard moyen déploiement : 3 semaines
@@ -317,7 +317,7 @@ Quand Release 2.3 est prête :
 
 **Semaine 2-4 :** Construire vers release
 - Progression visible quotidiennement
-- Le Product demande nouvelle fonctionnalité : « Est-ce que ça rentre ? » Non—92% capacité déjà. Ajouter à Release 1.6.
+- Le Product demande nouvelle fonctionnalité : « Est-ce que ça rentre ? » Non—92% capacité déjà. Ajouter à Release 1.6.
 - QA identifie blocage tôt : Tests webhook nécessitent 3 jours extra
 - Ajuster timeline : Pousser release au 4 février
 
@@ -332,10 +332,10 @@ Quand Release 2.3 est prête :
 - Déploiements à temps : 95% (vs 30%)
 - Hotfixes post-déploiement : 0.5 par release (vs 4)
 - Moral équipe : 9/10
-- Satisfaction client : « Enfin, des releases prévisibles »
+- Satisfaction client : « Enfin, des releases prévisibles »
 
 **Lead Developer :**
-> « On est passé du chaos constant à la livraison prévisible. Le release-driven development nous a rendu le contrôle. »
+> « On est passé du chaos constant à la livraison prévisible. Le release-driven development nous a rendu le contrôle. »
 
 ---
 
@@ -350,7 +350,7 @@ Créer des releases concrètes et numérotées avec dates cibles :
 Chaque release a besoin :
 - D'un numéro de version
 - D'une date cible de déploiement
-- De critères de succès (ex : « Toutes capabilities planifiées complètes, 90%+ couverture test »)
+- De critères de succès (ex : « Toutes capabilities planifiées complètes, 90%+ couverture test »)
 
 ### Étape 2 : Planifier la Capacité Par Release
 Calculer la capacité réaliste :
@@ -394,7 +394,7 @@ Quand la release atteint 100% complète :
 
 ## Release-Driven vs. Déploiement Continu
 
-**Question Courante :** « On fait du déploiement continu. Le release-driven est-il en conflit avec ça ? »
+**Question Courante :** « On fait du déploiement continu. Le release-driven est-il en conflit avec ça ? »
 
 **Non.** Le release-driven development est **orthogonal à la fréquence de déploiement**.
 
@@ -406,16 +406,16 @@ Vous pouvez combiner les deux :
 - Définir Release 2.3 avec 20 capabilities
 - Assigner issues à Release 2.3
 - Déployer issues complétées en continu en production
-- Suivre la « préparation Release 2.3 » globale
-- Quand les 20 capabilities sont terminées, annoncer « Release 2.3 livrée »
+- Suivre la « préparation Release 2.3 » globale
+- Quand les 20 capabilities sont terminées, annoncer « Release 2.3 livrée »
 
-**La différence :** Même avec déploiement continu, vous avez une définition claire de ce qui constitue une « release » et pouvez communiquer cela aux stakeholders.
+**La différence :** Même avec déploiement continu, vous avez une définition claire de ce qui constitue une « release » et pouvez communiquer cela aux stakeholders.
 
 ---
 
 ## Objections Courantes (Et Réponses)
 
-### Objection 1 : « Nos priorités changent trop vite pour la planification release. »
+### Objection 1 : « Nos priorités changent trop vite pour la planification release. »
 
 **Réponse :** Le release-driven n'empêche pas le changement—il rend le changement visible.
 
@@ -424,36 +424,36 @@ Quand les priorités changent :
 - Ajuster la portée release
 - Communiquer le changement
 
-Ce que vous gagnez : **Tout le monde voit l'impact du changement** (ex : « Ajouter fonctionnalité X à Release 2.3 repousse déploiement de 1 semaine »).
+Ce que vous gagnez : **Tout le monde voit l'impact du changement** (ex : « Ajouter fonctionnalité X à Release 2.3 repousse déploiement de 1 semaine »).
 
-### Objection 2 : « On est Agile. Les releases fixes semblent Waterfall. »
+### Objection 2 : « On est Agile. Les releases fixes semblent Waterfall. »
 
 **Réponse :** Le release-driven n'est pas Waterfall. Vous travaillez toujours en cycles, vous adaptez au feedback et itérez rapidement.
 
-La différence : Vous avez une **cible concrète** (Release 2.3, 15 mars) au lieu d'un objectif vague (« livrer fonctionnalités quand prêtes »).
+La différence : Vous avez une **cible concrète** (Release 2.3, 15 mars) au lieu d'un objectif vague (« livrer fonctionnalités quand prêtes »).
 
 Les équipes Agile avec discipline release livrent plus vite, pas plus lentement.
 
-### Objection 3 : « Nos clients attendent de nouvelles fonctionnalités constamment. »
+### Objection 3 : « Nos clients attendent de nouvelles fonctionnalités constamment. »
 
 **Réponse :** Le release-driven permet une **livraison plus rapide et plus prévisible**.
 
 Au lieu de :
-- « On travaille sur des fonctionnalités, pas sûr quand elles seront prêtes »
+- « On travaille sur des fonctionnalités, pas sûr quand elles seront prêtes »
 
 Vous dites :
-- « Release 2.3 livre le 15 mars avec rôles utilisateur et API v2. Release 2.4 livre le 30 avril avec redesign dashboard. »
+- « Release 2.3 livre le 15 mars avec rôles utilisateur et API v2. Release 2.4 livre le 30 avril avec redesign dashboard. »
 
 Les clients préfèrent la prévisibilité aux promesses vagues.
 
-### Objection 4 : « On n'a pas le temps de planifier releases en amont. »
+### Objection 4 : « On n'a pas le temps de planifier releases en amont. »
 
 **Réponse :** Vous planifiez déjà—juste implicitement et mal.
 
 Le release-driven rend la planification **explicite et efficace** :
 - 2 heures pour définir une release
 - Zéro maintenance continue (progression suivie automatiquement)
-- Économise 5-10 heures/semaine en réunions « qu'est-ce qu'on livre ? »
+- Économise 5-10 heures/semaine en réunions « qu'est-ce qu'on livre ? »
 
 La planification en amont **économise du temps**, ne le coûte pas.
 
@@ -464,17 +464,17 @@ La planification en amont **économise du temps**, ne le coûte pas.
 Le release-driven development nécessite un changement de mentalité :
 
 **Ancienne mentalité (feature-driven) :**
-- « Construisons ces 5 fonctionnalités cool »
-- « On déterminera le déploiement plus tard »
-- « Livrer quand elles sont terminées »
+- « Construisons ces 5 fonctionnalités cool »
+- « On déterminera le déploiement plus tard »
+- « Livrer quand elles sont terminées »
 
 **Nouvelle mentalité (release-driven) :**
-- « Release 2.3 livre le 15 mars. Qu'est-ce qu'on peut réalistement finir d'ici là ? »
-- « Planifions le déploiement dès le premier jour »
-- « Livrer ce à quoi on s'est engagé, à la date à laquelle on s'est engagé »
+- « Release 2.3 livre le 15 mars. Qu'est-ce qu'on peut réalistement finir d'ici là ? »
+- « Planifions le déploiement dès le premier jour »
+- « Livrer ce à quoi on s'est engagé, à la date à laquelle on s'est engagé »
 
 **Ce changement améliore :**
-- **Responsabilité :** Les équipes s'engagent sur des releases, pas vague « on travaille dessus »
+- **Responsabilité :** Les équipes s'engagent sur des releases, pas vague « on travaille dessus »
 - **Communication :** Les stakeholders savent ce qui arrive et quand
 - **Qualité :** Tests et documentation font partie de la planification release, pas des réflexions après coup
 - **Moral :** Les équipes vivent la satisfaction de compléter des releases planifiées

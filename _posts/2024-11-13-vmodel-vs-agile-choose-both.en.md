@@ -19,7 +19,7 @@ A SaaS startup launching a new payment processor needs _specification upfront_ (
 
 The problem isn't the methodologies—it's that managers are forced to choose all-or-nothing.
 
-![False Choice Dilemma](/assets/images/false-choice-dilemma.svg “The False Binary Choice”)
+![False Choice Dilemma](/assets/images/false-choice-dilemma.svg "The False Binary Choice")
 
 ---
 
@@ -38,7 +38,7 @@ Real capacity stays invisible until 60% through development. You plan on Friday'
 
 Example: A healthcare team estimated 6 months to build a patient dashboard. They discovered integration issues at month 4—but they'd already promised go-live to hospital administrators. The last 2 months were panic mode: cutting features, cutting tests, cutting quality.
 
-![V-Model Waterfall Diagram](/assets/images/vmodel-waterfall-diagram.svg “V-Model / Waterfall Approach”)
+![V-Model Waterfall Diagram](/assets/images/vmodel-waterfall-diagram.svg "V-Model / Waterfall Approach")
 
 ---
 
@@ -55,9 +55,9 @@ Example: A healthcare team estimated 6 months to build a patient dashboard. They
 **The Agile Trap:**
 10+ hours per week in standup meetings. Constant reprioritization. Features half-built because requirements changed again. Teams repeating work because decisions live in Slack threads instead of shared specs.
 
-Example: An agency took an “pure Agile” approach to a CMS rebuild. No specifications. Just “build a dashboard.” 3 months and 5 cycles later, the client realized the design was wrong. Entire backend rebuilt. The team had optimized for velocity, not value.
+Example: An agency took an "pure Agile" approach to a CMS rebuild. No specifications. Just "build a dashboard." 3 months and 5 cycles later, the client realized the design was wrong. Entire backend rebuilt. The team had optimized for velocity, not value.
 
-![Agile Iterative Diagram](/assets/images/agile-iterative-diagram.svg “Agile / Iterative Approach”)
+![Agile Iterative Diagram](/assets/images/agile-iterative-diagram.svg "Agile / Iterative Approach")
 
 ---
 
@@ -92,7 +92,7 @@ High-performing teams don't choose between V-Model and Agile—they **use both f
 
 This is what works. **Not Agile. Not Waterfall. Both.**
 
-![Hybrid Methodology Phases](/assets/images/hybrid-methodology-phases.svg “Why Hybrid Methodology Wins”)
+![Hybrid Methodology Phases](/assets/images/hybrid-methodology-phases.svg "Why Hybrid Methodology Wins")
 
 ---
 
@@ -180,7 +180,7 @@ Hybrid methodology _only works_ if you can see:
 
 Without visibility, hybrid becomes unpredictability.
 
-![Implementation Workflow](/assets/images/implementation-workflow.svg “Implementing Hybrid Methodology”)
+![Implementation Workflow](/assets/images/implementation-workflow.svg "Implementing Hybrid Methodology")
 
 ---
 
@@ -228,7 +228,7 @@ One platform. Unified visibility. No switching between tools. Real capacity plan
 
 Stop choosing between V-Model and Agile. The best teams use both.
 
-The question isn't “V-Model or Agile?” The question is: **“How do we apply the right methodology to each phase of our work?”**
+The question isn't "V-Model or Agile?" The question is: **"How do we apply the right methodology to each phase of our work?"**
 
 Teams that answer that question ship faster, with higher quality, and fewer surprises.
 

@@ -13,10 +13,10 @@ permalink: /guide-produit/:year/:month/:day/from-issue-to-release.html
 
 La plupart des outils de gestion de projet vous forcent à penser en abstractions :
 
-- Des « user stories » qui ne sont pas vraiment des stories
-- Des « epics » qui ne semblent pas épiques
-- Des « backlogs » qui deviennent des cimetières
-- Des « increments » que personne ne comprend
+- Des « user stories » qui ne sont pas vraiment des stories
+- Des « epics » qui ne semblent pas épiques
+- Des « backlogs » qui deviennent des cimetières
+- Des « increments » que personne ne comprend
 
 **Le résultat ?** Les équipes passent plus de temps à traduire des concepts qu'à faire le travail.
 
@@ -31,9 +31,9 @@ Suivons une vraie fonctionnalité du début à la fin.
 Votre équipe décide d'ajouter l'authentification à deux facteurs (2FA) à votre produit SaaS.
 
 Dans les outils traditionnels, vous pourriez créer :
-- Une « user story » pour la 2FA
-- Plusieurs « sous-tâches »
-- Un « epic » pour les regrouper
+- Une « user story » pour la 2FA
+- Plusieurs « sous-tâches »
+- Un « epic » pour les regrouper
 - Des tags pour suivre les tests
 - Des champs personnalisés pour cibler la release
 
@@ -48,22 +48,22 @@ Dans les outils traditionnels, vous pourriez créer :
 Pour la 2FA, vous créez ces issues :
 
 **Issues Backend :**
-1. « Implémenter la génération de token TOTP »
-2. « Créer l'endpoint API d'enrollment 2FA »
-3. « Ajouter la vérification 2FA au flux de login »
-4. « Générer des codes de secours lors de l'enrollment »
+1. « Implémenter la génération de token TOTP »
+2. « Créer l'endpoint API d'enrollment 2FA »
+3. « Ajouter la vérification 2FA au flux de login »
+4. « Générer des codes de secours lors de l'enrollment »
 
 **Issues Frontend :**
-5. « Construire l'UI de la page de configuration 2FA »
-6. « Ajouter le composant scanner de code QR »
-7. « Créer l'interface de téléchargement des codes de secours »
-8. « Mettre à jour le formulaire de login avec l'input 2FA »
+5. « Construire l'UI de la page de configuration 2FA »
+6. « Ajouter le composant scanner de code QR »
+7. « Créer l'interface de téléchargement des codes de secours »
+8. « Mettre à jour le formulaire de login avec l'input 2FA »
 
 **Issues Testing :**
-9. « Écrire les tests unitaires pour la validation TOTP »
-10. « Tester le flux d'enrollment 2FA »
-11. « Tester la vérification de login 2FA »
-12. « Tester la récupération par code de secours »
+9. « Écrire les tests unitaires pour la validation TOTP »
+10. « Tester le flux d'enrollment 2FA »
+11. « Tester la vérification de login 2FA »
+12. « Tester la récupération par code de secours »
 
 Chaque issue a :
 - Un titre clair (ce qui doit être fait)
@@ -74,7 +74,7 @@ Chaque issue a :
 
 **Les issues sont l'unité atomique du travail.** Tout commence ici.
 
-![Structure Issue](/assets/images/issue-structure.svg "Comment Fonctionnent les Issues dans Sinra")
+![Structure Issue](/assets/images/issue-structure.svg « Comment Fonctionnent les Issues dans Sinra »)
 
 ---
 
@@ -83,7 +83,7 @@ Chaque issue a :
 **Les capabilities sont des fonctionnalités ou initiatives suivies dans vos releases.** Elles organisent le travail à un niveau supérieur aux issues.
 
 Pour la 2FA, vous créez une capability appelée :
-**« Authentification à Deux Facteurs »**
+**« Authentification à Deux Facteurs »**
 
 Cette capability inclut :
 - Toutes les 12 issues listées ci-dessus
@@ -91,9 +91,9 @@ Cette capability inclut :
 - Dépendances (ex : nécessite intégration fournisseur SMS)
 - Release cible (ex : Release 2.1)
 
-**Pourquoi « capability » au lieu de « epic » ?**
+**Pourquoi « capability » au lieu de « epic » ?**
 
-Parce que c'est concret. Une capability décrit ce que votre produit peut faire. « Capability 2FA » signifie que votre produit peut faire de l'authentification à deux facteurs. Pas de métaphore requise.
+Parce que c'est concret. Une capability décrit ce que votre produit peut faire. « Capability 2FA » signifie que votre produit peut faire de l'authentification à deux facteurs. Pas de métaphore requise.
 
 **Les capabilities vous permettent de voir :**
 - La progression à travers toutes les issues connexes
@@ -102,7 +102,7 @@ Parce que c'est concret. Une capability décrit ce que votre produit peut faire.
 - Les blocages et dépendances
 - La préparation pour la release
 
-![Hiérarchie Capability](/assets/images/capability-hierarchy.svg "Issues Regroupées dans des Capabilities")
+![Hiérarchie Capability](/assets/images/capability-hierarchy.svg « Issues Regroupées dans des Capabilities »)
 
 ---
 
@@ -117,7 +117,7 @@ La Release 2.1 pourrait inclure :
 - **Améliorations de la réinitialisation de mot de passe** (capability existante)
 - **Corrections de bugs pour la page de login** (issues individuelles)
 
-**Les releases répondent à la question critique : « Qu'est-ce qu'on livre, et quand ? »**
+**Les releases répondent à la question critique : « Qu'est-ce qu'on livre, et quand ? »**
 
 Dans la vue Release 2.1, vous voyez :
 - Toutes les capabilities assignées à cette release
@@ -126,7 +126,7 @@ Dans la vue Release 2.1, vous voyez :
 - Statut des tests
 - Préparation du déploiement
 
-![Vue Release](/assets/images/release-view.svg "Capabilities Regroupées dans des Releases")
+![Vue Release](/assets/images/release-view.svg « Capabilities Regroupées dans des Releases »)
 
 ---
 
@@ -150,8 +150,8 @@ Traçons la fonctionnalité 2FA à travers le système :
 
 ### Semaine 3-4 : Développement
 **Action :** L'équipe commence à construire
-- Le développeur backend marque « Implémenter TOTP » comme in_progress
-- Le développeur frontend marque « Construire page setup 2FA » comme in_progress
+- Le développeur backend marque « Implémenter TOTP » comme in_progress
+- Le développeur frontend marque « Construire page setup 2FA » comme in_progress
 - Les issues passent de writing → development → review
 - Le commentary capture les décisions de design et blocages
 - L'ingénieur QA prépare les cas de test
@@ -159,7 +159,7 @@ Traçons la fonctionnalité 2FA à travers le système :
 **Visibilité :** La progression en temps réel montre :
 - Quelles issues sont en développement vs. terminées
 - Pourcentage de complétion global de la capability
-- Blocages (ex : « En attente des clés API fournisseur SMS »)
+- Blocages (ex : « En attente des clés API fournisseur SMS »)
 - Capacité vs. charge de travail
 
 ### Semaine 5 : Testing
@@ -188,17 +188,17 @@ Traçons la fonctionnalité 2FA à travers le système :
 - Documentation complète
 - Déploiement réussi
 
-![Workflow Complet](/assets/images/issue-to-release-workflow.svg "Parcours Complet d'Issue à Release")
+![Workflow Complet](/assets/images/issue-to-release-workflow.svg « Parcours Complet d'Issue à Release »)
 
 ---
 
 ## Pourquoi Cette Hiérarchie Fonctionne
 
 ### 1. Reflète la Réalité
-Le travail ne se passe pas en « user stories » ou « epics ». Il se passe en tâches (issues), regroupées en fonctionnalités (capabilities), livrées en versions (releases).
+Le travail ne se passe pas en « user stories » ou « epics ». Il se passe en tâches (issues), regroupées en fonctionnalités (capabilities), livrées en versions (releases).
 
 ### 2. Pas de Traduction Requise
-Un développeur n'a pas besoin de décoder ce qu'un « epic » signifie. Il voit une capability appelée « Authentification à Deux Facteurs » et comprend immédiatement ce qui est construit.
+Un développeur n'a pas besoin de décoder ce qu'un « epic » signifie. Il voit une capability appelée « Authentification à Deux Facteurs » et comprend immédiatement ce qui est construit.
 
 ### 3. Visibilité Multi-Niveaux
 - **Contributeurs individuels** voient leurs issues assignées
@@ -212,7 +212,7 @@ Tout le monde obtient la vue dont il a besoin sans tableaux de bord personnalis�
 Tout n'a pas besoin d'être une capability. Les petites fonctionnalités peuvent être des issues autonomes assignées directement aux releases. Les grandes initiatives peuvent avoir 50+ issues regroupées dans une capability. La structure s'adapte à votre travail.
 
 ### 5. Les Tests Sont de Première Classe
-Les issues de test coexistent avec les issues de développement. Les ingénieurs QA voient ce qui doit être testé en temps réel, pas après que le développement soit « terminé ».
+Les issues de test coexistent avec les issues de développement. Les ingénieurs QA voient ce qui doit être testé en temps réel, pas après que le développement soit « terminé ».
 
 ---
 
@@ -244,7 +244,7 @@ Résultat : **3+ heures par semaine à maintenir la structure**
 
 ### Après Sinra
 **Solution :** Suivre la même fonctionnalité :
-- Créer 1 capability : « Facturation par Abonnement »
+- Créer 1 capability : « Facturation par Abonnement »
 - Créer 18 issues (dev, design, QA)
 - Assigner à Release 3.2
 - Voir la progression en temps réel
@@ -252,7 +252,7 @@ Résultat : **3+ heures par semaine à maintenir la structure**
 Résultat : **15 minutes pour configurer, zéro maintenance**
 
 **Retour d'équipe :**
-> « On a arrêté de passer du temps à gérer Jira et on a commencé à livrer des fonctionnalités. La hiérarchie a du sens. »
+> « On a arrêté de passer du temps à gérer Jira et on a commencé à livrer des fonctionnalités. La hiérarchie a du sens. »
 > — Lead Developer, PayFast
 
 ---
@@ -260,13 +260,13 @@ Résultat : **15 minutes pour configurer, zéro maintenance**
 ## Comment Structurer Votre Première Fonctionnalité dans Sinra
 
 ### Étape 1 : Définir la Capability
-Demandez : « Quelle fonctionnalité ou initiative construisons-nous ? »
-- Exemple : « Rate Limiting API »
+Demandez : « Quelle fonctionnalité ou initiative construisons-nous ? »
+- Exemple : « Rate Limiting API »
 - Écrire une brève description et critères d'acceptation
 - Assigner à une release cible
 
 ### Étape 2 : Décomposer en Issues
-Demandez : « Quelles tâches individuelles sont nécessaires ? »
+Demandez : « Quelles tâches individuelles sont nécessaires ? »
 - Issues backend (implémenter middleware rate limit, ajouter caching Redis)
 - Issues frontend (afficher statut rate limit dans dashboard)
 - Issues testing (tester enforcement rate limit, tester logique reset)
@@ -326,7 +326,7 @@ Quand votre outil parle le même langage que votre équipe, le travail circule p
 ## Points d'Action : Structurer Votre Travail dans Sinra
 
 1. **Identifiez votre prochaine fonctionnalité.** Qu'est-ce que vous construisez ?
-2. **Créez une capability.** Nommez-la concrètement (pas « Epic: User Mgmt » mais « Permissions de Rôle Utilisateur »)
+2. **Créez une capability.** Nommez-la concrètement (pas « Epic: User Mgmt » mais « Permissions de Rôle Utilisateur »)
 3. **Décomposez-la en issues.** Développement, design, testing—tout ce qu'une personne fait
 4. **Assignez à une release.** Dans quelle version cela sera-t-il livré ?
 5. **Commencez à construire.** Suivez la progression en temps réel, ajustez selon les besoins
