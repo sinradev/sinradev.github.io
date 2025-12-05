@@ -18,7 +18,7 @@
       <div class="plans-grid">
         {% for plan in site.data[site.active_lang].pricing %}
           {% assign promo = site.data[page.lang].promotion %}
-          {% assign today = site.time | date: “%Y-%m-%d” %}
+          {% assign today = site.time | date: "%Y-%m-%d" %}
           {% assign is_black_friday_active = false %}
           {% if promo.end_date %}
             {% if today <= promo.end_date %}
@@ -49,7 +49,7 @@
                   <div class="pricing-frame {% if tier.recommended %}emphasized{% endif %}">
                     <div class="tier-period">{{ tier.period }}</div>
 
-                    {% if tier.plan_type == “coming_soon” %}
+                    {% if tier.plan_type == "coming_soon" %}
                       <!-- Coming Soon: No price display -->
                     {% elsif tier.has_black_friday and is_black_friday_active %}
                       <!-- Black Friday Pricing -->
@@ -112,7 +112,7 @@
 
             {% if plan.call_to_action %}
               <div class="plan-cta">
-                {% if plan.call_to_action.badge_type == “coming_soon” %}
+                {% if plan.call_to_action.badge_type == "coming_soon" %}
                   <div class="cta-badge coming-soon">
                     {{ plan.call_to_action.text }}
                   </div>
@@ -173,7 +173,7 @@
 </div>
 
 <script>
-  document.addEventListener(“DOMContentLoaded”, function() {
+  document.addEventListener("DOMContentLoaded", function() {
     // FAQ Toggle
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
@@ -196,13 +196,13 @@
     });
 
     // Email decoding
-    var oC = document.getElementsByClassName(“courriel”);
+    var oC = document.getElementsByClassName("courriel");
     var i;
     for (i = 0; i < oC.length; i++) {
-      var sC = oC[i].getAttribute(“data-courriel”);
-      sC = sC.replace(“point”, “.”);
-      sC = sC.replace(“arobas”, “@”);
-      oC[i].setAttribute(“href”, “mailto:” + sC);
+      var sC = oC[i].getAttribute("data-courriel");
+      sC = sC.replace("point", ".");
+      sC = sC.replace("arobas", "@");
+      oC[i].setAttribute("href", "mailto:" + sC);
       oC[i].innerHTML = sC;
     }
   });

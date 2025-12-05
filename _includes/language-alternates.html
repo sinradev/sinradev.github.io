@@ -13,10 +13,10 @@ Finds the translated version of the current post and generates proper hreflang l
       {%- comment -%}For V-Model posts, hardcode the mapping{%- endcomment -%}
       {%- if page.url contains 'vmodel-vs-agile-choose-both' -%}
         {%- assign alternate_lang = 'fr' -%}
-        {%- assign alternate_post = site.posts | where: “lang”, “fr” | first -%}
+        {%- assign alternate_post = site.posts | where: "lang", "fr" | first -%}
       {%- else -%}
         {%- assign alternate_lang = 'fr' -%}
-        {%- assign alternate_posts = site.posts | where: “lang”, “fr” -%}
+        {%- assign alternate_posts = site.posts | where: "lang", "fr" -%}
         {%- assign alternate_post = alternate_posts | first -%}
       {%- endif -%}
     {%- elsif page.lang == 'fr' -%}
@@ -24,10 +24,10 @@ Finds the translated version of the current post and generates proper hreflang l
       {%- comment -%}For V-Model posts, hardcode the mapping{%- endcomment -%}
       {%- if page.url contains 'vmodel-ou-agile-choisir-les-deux' -%}
         {%- assign alternate_lang = 'en' -%}
-        {%- assign alternate_post = site.posts | where: “lang”, “en” | first -%}
+        {%- assign alternate_post = site.posts | where: "lang", "en" | first -%}
       {%- else -%}
         {%- assign alternate_lang = 'en' -%}
-        {%- assign alternate_posts = site.posts | where: “lang”, “en” -%}
+        {%- assign alternate_posts = site.posts | where: "lang", "en" -%}
         {%- assign alternate_post = alternate_posts | first -%}
       {%- endif -%}
     {%- endif -%}
