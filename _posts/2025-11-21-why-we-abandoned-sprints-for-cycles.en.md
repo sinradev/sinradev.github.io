@@ -13,23 +13,23 @@ permalink: /philosophy/:year/:month/:day/why-we-abandoned-sprints-for-cycles.htm
 
 In software project management, language isn't neutral.
 
-When you call a two-week work period a **“sprint”**, you're invoking imagery: runners pushing to exhaustion, finish lines that must be crossed, a race against time. The metaphor is athletic, urgent, unsustainable.
+When you call a two-week work period a **"sprint"**, you're invoking imagery: runners pushing to exhaustion, finish lines that must be crossed, a race against time. The metaphor is athletic, urgent, unsustainable.
 
 When we built Sinra, we rejected that metaphor entirely.
 
-We call them **cycles**—concrete, time-boxed periods for organizing work. Not because “cycle” sounds cooler. Because it *means something different*.
+We call them **cycles**—concrete, time-boxed periods for organizing work. Not because "cycle" sounds cooler. Because it _means something different_.
 
 This wasn't a branding decision. It was philosophical.
 
 ---
 
-## The Problem with “Sprint” Thinking
+## The Problem with "Sprint" Thinking
 
 **The Agile Promise:**
-“Sprints” were meant to create focus—short bursts of productive work with clear goals and fast delivery.
+"Sprints" were meant to create focus—short bursts of productive work with clear goals and fast delivery.
 
 **The Reality:**
-Teams treat every two weeks like a race to the finish line. Product owners pack sprints to capacity. Developers cut corners to “make the sprint commitment.” Quality suffers. Burnout becomes routine. The sprint ends—and another sprint begins. And another. And another.
+Teams treat every two weeks like a race to the finish line. Product owners pack sprints to capacity. Developers cut corners to "make the sprint commitment." Quality suffers. Burnout becomes routine. The sprint ends—and another sprint begins. And another. And another.
 
 It never stops.
 
@@ -37,13 +37,14 @@ The metaphor trains teams to think work is a perpetual race. There's always anot
 
 ---
 
-## What Makes “Cycles” Different
+## What Makes "Cycles" Different
 
 **Cycles are time-boxed periods for organizing work.**
 
 Not races. Not commitments to deliver everything. Not promises to run until you're exhausted.
 
 **They're periods of time with natural boundaries:**
+
 - A beginning
 - An end
 - Work planned within capacity
@@ -53,9 +54,9 @@ Not races. Not commitments to deliver everything. Not promises to run until you'
 
 A cycle acknowledges that work takes time. That estimates are imperfect. That plans change. That people aren't machines optimized for velocity.
 
-When you plan a cycle, you're not asking: *“How fast can we go?”*
+When you plan a cycle, you're not asking: _"How fast can we go?"_
 
-You're asking: *“What can we realistically accomplish in this period?”*
+You're asking: _"What can we realistically accomplish in this period?"_
 
 ---
 
@@ -66,12 +67,14 @@ Agile culture obsesses over **velocity**—story points completed per sprint. Te
 But velocity is a vanity metric.
 
 **What actually matters:**
+
 - Did we deliver value?
 - Did we maintain quality?
 - Did we make sustainable progress?
 - Did we learn from what we built?
 
 Sinra replaces velocity with **capacity planning**:
+
 - How much work can this team realistically handle?
 - What are the constraints (people, time, dependencies)?
 - Are we overcommitting or underutilizing?
@@ -84,17 +87,18 @@ Capacity planning respects reality. Velocity chases numbers.
 
 This pattern repeats throughout Sinra:
 
-| **Agile Jargon** | **Sinra Concrete Terms** | **Why It Matters** |
-|------------------|-------------------------|-------------------|
-| User stories | Issues | Stories are abstractions. Issues are real work. |
-| Epics | Capabilities | Epics are vague. Capabilities describe actual features. |
-| Sprint | Cycle | Sprints imply races. Cycles are neutral time periods. |
-| Increment | Release | Increments are ambiguous. Releases are concrete versions. |
-| Backlog grooming | Planning | “Grooming” is jargon. Planning is clear. |
+| **Agile Jargon** | **Sinra Concrete Terms** | **Why It Matters**                                        |
+| ---------------- | ------------------------ | --------------------------------------------------------- |
+| User stories     | Issues                   | Stories are abstractions. Issues are real work.           |
+| Epics            | Capabilities             | Epics are vague. Capabilities describe actual features.   |
+| Sprint           | Cycle                    | Sprints imply races. Cycles are neutral time periods.     |
+| Increment        | Release                  | Increments are ambiguous. Releases are concrete versions. |
+| Backlog grooming | Planning                 | "Grooming" is jargon. Planning is clear.                  |
 
 **Every choice prioritizes clarity over jargon.**
 
-When a developer asks, “What am I working on this cycle?”, they see:
+When a developer asks, "What am I working on this cycle?", they see:
+
 - **Issues:** Individual work items (bugs, tasks, features)
 - **Capabilities:** Higher-level features being built
 - **Releases:** The product version being prepared
@@ -106,6 +110,7 @@ No translation required. No metaphors. No cognitive overhead.
 ## The Agile Trap: Perpetual Motion Without Progress
 
 Agile teams often fall into this pattern:
+
 1. Sprint planning Monday morning
 2. Daily standups all week
 3. Sprint review Friday afternoon
@@ -114,7 +119,7 @@ Agile teams often fall into this pattern:
 
 **Repeat forever.**
 
-The machinery of Agile—standups, planning, reviews, retrospectives—becomes the work itself. Teams spend 10+ hours per week in meetings *about* work instead of *doing* work.
+The machinery of Agile—standups, planning, reviews, retrospectives—becomes the work itself. Teams spend 10+ hours per week in meetings _about_ work instead of _doing_ work.
 
 The sprint cadence creates urgency without purpose. You're always sprinting, but where are you going?
 
@@ -125,18 +130,21 @@ The sprint cadence creates urgency without purpose. You're always sprinting, but
 Sinra's cycle model eliminates the ceremony:
 
 **At the start of a cycle:**
+
 - Review available capacity
 - Assign issues and capabilities
 - Set realistic expectations
 - Align on priorities
 
 **During the cycle:**
+
 - Build. Test. Ship.
 - Update progress in real-time
 - Adjust when blockers appear
 - Collaborate asynchronously via commentary
 
 **At the end of a cycle:**
+
 - Review what shipped
 - Carry forward unfinished work
 - Learn from capacity mismatches
@@ -153,17 +161,19 @@ Just structured work periods with clear boundaries.
 **CloudSync Engineering Team (12 developers):**
 
 **Before (Agile Sprints):**
+
 - 2-week sprints with 100% capacity allocation
 - Daily 30-minute standups (30 hours/week team time)
 - Sprint planning: 4 hours every 2 weeks
 - Sprint reviews: 2 hours every 2 weeks
 - Sprint retrospectives: 1.5 hours every 2 weeks
 - **Total overhead: 37.5 hours/week for a 12-person team**
-- Constant pressure to “make the commitment”
+- Constant pressure to "make the commitment"
 - 40% of sprint goals missed
 - Team morale: low
 
 **After (Sinra Cycles):**
+
 - 3-week cycles with 80% capacity allocation
 - Async progress updates (no standups)
 - Cycle planning: 2 hours every 3 weeks
@@ -174,6 +184,7 @@ Just structured work periods with clear boundaries.
 - Team morale: high
 
 **The Result:**
+
 - 35+ hours/week recovered for actual work
 - Higher completion rates
 - Better quality (more time for testing)
@@ -183,24 +194,25 @@ Just structured work periods with clear boundaries.
 
 ## Why This Matters for Your Team
 
-Most teams inherit Agile terminology without questioning it. “Sprints” sound normal because everyone uses them.
+Most teams inherit Agile terminology without questioning it. "Sprints" sound normal because everyone uses them.
 
 But language shapes behavior.
 
-When you call work periods “sprints,” you create a culture of urgency, velocity, and exhaustion.
+When you call work periods "sprints," you create a culture of urgency, velocity, and exhaustion.
 
-When you call them “cycles,” you create a culture of structure, capacity, and sustainability.
+When you call them "cycles," you create a culture of structure, capacity, and sustainability.
 
 **The shift isn't semantic—it's cultural.**
 
 Teams using Sinra report:
+
 - Less pressure to overcommit
 - More realistic planning
 - Better work-life balance
 - Clearer expectations
 - Higher completion rates
 
-Not because cycles are magical. Because they're *honest*.
+Not because cycles are magical. Because they're _honest_.
 
 ---
 
@@ -209,6 +221,7 @@ Not because cycles are magical. Because they're *honest*.
 Sinra's naming philosophy extends beyond cycles:
 
 **Agile uses metaphors and jargon:**
+
 - Sprints (athletic race)
 - Velocity (speed)
 - Burndown charts (exhaustion imagery)
@@ -216,6 +229,7 @@ Sinra's naming philosophy extends beyond cycles:
 - Backlog grooming (maintenance metaphor)
 
 **Sinra uses concrete terms:**
+
 - Cycles (time periods)
 - Capacity (realistic work volume)
 - Progress tracking (neutral)
@@ -233,31 +247,36 @@ When your tools use plain language, your team spends less time decoding jargon a
 If your team is stuck in sprint culture, here's how to shift:
 
 ### 1. Rename the Period
-Stop calling them “sprints.” Start calling them “cycles.” The language change alone shifts mindset.
+
+Stop calling them "sprints." Start calling them "cycles." The language change alone shifts mindset.
 
 ### 2. Plan for Capacity, Not Velocity
-Don't ask: “How many story points can we complete?”
-Ask: “Given our team's capacity, what can we realistically finish?”
+
+Don't ask: "How many story points can we complete?"
+Ask: "Given our team's capacity, what can we realistically finish?"
 
 ### 3. Eliminate Sprint Ceremony
+
 - Replace daily standups with async updates
 - Simplify planning meetings (2 hours max)
 - Skip the sprint review (use real-time visibility instead)
 - Make retrospectives lightweight (1 hour, focus on blockers)
 
 ### 4. Allocate Below 100% Capacity
+
 Leave buffer for interruptions, bug fixes, and learning. Aim for 70-80% capacity utilization.
 
 ### 5. Measure Completion Rate, Not Velocity
-Track: “Did we finish what we planned?” Not: “How fast did we go?”
+
+Track: "Did we finish what we planned?" Not: "How fast did we go?"
 
 ---
 
 ## The Bottom Line
 
-**“Sprint” is a metaphor that creates urgency without direction.**
+**"Sprint" is a metaphor that creates urgency without direction.**
 
-**“Cycle” is a concrete term that creates structure without pressure.**
+**"Cycle" is a concrete term that creates structure without pressure.**
 
 Language matters. The words you use shape how your team thinks about work.
 

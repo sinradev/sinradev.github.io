@@ -13,10 +13,10 @@ permalink: /product-guide/:year/:month/:day/from-issue-to-release.html
 
 Most project management tools force you to think in abstractions:
 
-- “User stories” that aren't actually stories
-- “Epics” that don't feel epic
-- “Backlogs” that become graveyards
-- “Increments” that nobody understands
+- "User stories" that aren't actually stories
+- "Epics" that don't feel epic
+- "Backlogs" that become graveyards
+- "Increments" that nobody understands
 
 **The result?** Teams spend more time translating concepts than doing work.
 
@@ -32,9 +32,9 @@ Your team decides to add two-factor authentication (2FA) to your SaaS product.
 
 In traditional tools, you might create:
 
-- A “user story” for 2FA
-- Multiple “sub-tasks”
-- An “epic” to group them
+- A "user story" for 2FA
+- Multiple "sub-tasks"
+- An "epic" to group them
 - Tags to track testing
 - Custom fields for release targeting
 
@@ -50,14 +50,14 @@ For 2FA, you create these issues:
 
 **Backend Issues:**
 
-1. “Implement TOTP token generation”
-2. “Create 2FA enrollment API endpoint”
-3. “Add 2FA verification to login flow”
-4. “Generate backup codes on enrollment”
+1. "Implement TOTP token generation"
+2. "Create 2FA enrollment API endpoint"
+3. "Add 2FA verification to login flow"
+4. "Generate backup codes on enrollment"
 
-**Frontend Issues:** 5. “Build 2FA setup page UI” 6. “Add QR code scanner component” 7. “Create backup codes download interface” 8. “Update login form with 2FA input”
+**Frontend Issues:** 5. "Build 2FA setup page UI" 6. "Add QR code scanner component" 7. "Create backup codes download interface" 8. "Update login form with 2FA input"
 
-**Testing Issues:** 9. “Write unit tests for TOTP validation” 10. “Test 2FA enrollment flow” 11. “Test 2FA login verification” 12. “Test backup code recovery”
+**Testing Issues:** 9. "Write unit tests for TOTP validation" 10. "Test 2FA enrollment flow" 11. "Test 2FA login verification" 12. "Test backup code recovery"
 
 Each issue has:
 
@@ -69,7 +69,7 @@ Each issue has:
 
 **Issues are the atomic unit of work.** Everything starts here.
 
-![Issue Structure](/assets/images/issue-structure.svg “How Issues Work in Sinra”)
+![Issue Structure](/assets/images/issue-structure.svg "How Issues Work in Sinra")
 
 ---
 
@@ -78,7 +78,7 @@ Each issue has:
 **Capabilities are features or initiatives tracked in your releases.** They organize work at a higher level than issues.
 
 For 2FA, you create a capability called:
-**“Two-Factor Authentication”**
+**"Two-Factor Authentication"**
 
 This capability includes:
 
@@ -87,9 +87,9 @@ This capability includes:
 - Dependencies (e.g., requires SMS provider integration)
 - Target release (e.g., Release 2.1)
 
-**Why “capability” instead of “epic”?**
+**Why "capability" instead of "epic"?**
 
-Because it's concrete. A capability describes what your product can do. “2FA capability” means your product can do two-factor authentication. No metaphor required.
+Because it's concrete. A capability describes what your product can do. "2FA capability" means your product can do two-factor authentication. No metaphor required.
 
 **Capabilities let you see:**
 
@@ -99,7 +99,7 @@ Because it's concrete. A capability describes what your product can do. “2FA c
 - Blockers and dependencies
 - Release readiness
 
-![Capability Hierarchy](/assets/images/capability-hierarchy.svg “Issues Grouped into Capabilities”)
+![Capability Hierarchy](/assets/images/capability-hierarchy.svg "Issues Grouped into Capabilities")
 
 ---
 
@@ -115,7 +115,7 @@ Release 2.1 might include:
 - **Password reset improvements** (existing capability)
 - **Bug fixes for login page** (individual issues)
 
-**Releases answer the critical question: “What are we shipping, and when?“**
+**Releases answer the critical question: "What are we shipping, and when?"**
 
 In Release 2.1 view, you see:
 
@@ -125,7 +125,7 @@ In Release 2.1 view, you see:
 - Testing status
 - Deployment readiness
 
-![Release View](/assets/images/release-view.svg “Capabilities Grouped into Releases”)
+![Release View](/assets/images/release-view.svg "Capabilities Grouped into Releases")
 
 ---
 
@@ -154,8 +154,8 @@ Let's trace the 2FA feature through the system:
 
 **Action:** Team starts building
 
-- Backend developer marks “Implement TOTP” as in_progress
-- Frontend developer marks “Build 2FA setup page” as in_progress
+- Backend developer marks "Implement TOTP" as in_progress
+- Frontend developer marks "Build 2FA setup page" as in_progress
 - Issues move from writing → development → review
 - Commentary captures design decisions and blockers
 - QA engineer prepares test cases
@@ -164,7 +164,7 @@ Let's trace the 2FA feature through the system:
 
 - Which issues are in development vs. done
 - Overall capability completion percentage
-- Blockers (e.g., “Waiting on SMS provider API keys”)
+- Blockers (e.g., "Waiting on SMS provider API keys")
 - Capacity vs. workload
 
 ### Week 5: Testing
@@ -199,7 +199,7 @@ Let's trace the 2FA feature through the system:
 - Documentation complete
 - Deployment successful
 
-![Complete Workflow](/assets/images/issue-to-release-workflow.svg “Full Journey from Issue to Release”)
+![Complete Workflow](/assets/images/issue-to-release-workflow.svg "Full Journey from Issue to Release")
 
 ---
 
@@ -207,11 +207,11 @@ Let's trace the 2FA feature through the system:
 
 ### 1. Mirrors Reality
 
-Work doesn't happen in “user stories” or “epics.” It happens in tasks (issues), grouped into features (capabilities), shipped in versions (releases).
+Work doesn't happen in "user stories" or "epics." It happens in tasks (issues), grouped into features (capabilities), shipped in versions (releases).
 
 ### 2. No Translation Required
 
-A developer doesn't need to decode what an “epic” means. They see a capability called “Two-Factor Authentication” and immediately understand what's being built.
+A developer doesn't need to decode what an "epic" means. They see a capability called "Two-Factor Authentication" and immediately understand what's being built.
 
 ### 3. Multi-Level Visibility
 
@@ -228,7 +228,7 @@ Not everything needs to be a capability. Small features can be standalone issues
 
 ### 5. Testing is First-Class
 
-Test issues live alongside development issues. QA engineers see what needs testing in real-time, not after development is “done.”
+Test issues live alongside development issues. QA engineers see what needs testing in real-time, not after development is "done."
 
 ---
 
@@ -264,7 +264,7 @@ Result: **3+ hours per week maintaining structure**
 
 **Solution:** Tracking the same feature:
 
-- Create 1 capability: “Subscription Billing”
+- Create 1 capability: "Subscription Billing"
 - Create 18 issues (dev, design, QA)
 - Assign to Release 3.2
 - View progress in real-time
@@ -273,7 +273,7 @@ Result: **15 minutes to set up, zero maintenance**
 
 **Team feedback:**
 
-> “We stopped spending time managing Jira and started shipping features. The hierarchy just makes sense.”
+> "We stopped spending time managing Jira and started shipping features. The hierarchy just makes sense."
 > — Lead Developer, PayFast
 
 ---
@@ -282,15 +282,15 @@ Result: **15 minutes to set up, zero maintenance**
 
 ### Step 1: Define the Capability
 
-Ask: “What feature or initiative are we building?”
+Ask: "What feature or initiative are we building?"
 
-- Example: “API Rate Limiting”
+- Example: "API Rate Limiting"
 - Write a brief description and acceptance criteria
 - Assign to a target release
 
 ### Step 2: Break Down into Issues
 
-Ask: “What individual tasks are needed?”
+Ask: "What individual tasks are needed?"
 
 - Backend issues (implement rate limit middleware, add Redis caching)
 - Frontend issues (show rate limit status in dashboard)
@@ -354,7 +354,7 @@ When your tool speaks the same language as your team, work flows faster.
 ## Action Items: Structuring Your Work in Sinra
 
 1. **Identify your next feature.** What are you building?
-2. **Create a capability.** Name it concretely (not “Epic: User Mgmt” but “User Role Permissions”)
+2. **Create a capability.** Name it concretely (not "Epic: User Mgmt" but "User Role Permissions")
 3. **Break it into issues.** Development, design, testing—everything a person does
 4. **Assign to a release.** What version will this ship in?
 5. **Start building.** Track progress in real-time, adjust as needed
