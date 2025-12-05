@@ -1,60 +1,60 @@
 - title: Dual Workflow Management <strong>with V-Model + Agile</strong>
-  body: “Unlike other project management tools with a single workflow, Sinra supports two parallel workflows: <strong>Writing Status</strong> (specification) and <strong>Development Status</strong> (implementation). Plan specifications while developers code, without bottlenecks.
+  body: "Unlike other project management tools with a single workflow, Sinra supports two parallel workflows: <strong>Writing Status</strong> (specification) and <strong>Development Status</strong> (implementation). Plan specifications while developers code, without bottlenecks.
       <ul>
         <li>Separate spec and dev workflows: Product teams write while developers execute.</li>
         <li>Workload visualization by cycle: See exactly what each developer/team can handle.</li>
         <li>Automatic capacity planning: Prevent overallocation with real-time workload tracking.</li>
-      </ul>”
+      </ul>"
   image: /assets/images/methodology-hybrid.png
   alt: Dual Workflow Methodology
-  category: “Dual Workflows”
+  category: "Dual Workflows"
 - title: <strong>Integrated Workload Planning</strong> - No More Bottlenecks
-  body: “Sinra calculates team and individual workload in real-time. <strong>See who's overloaded before cycles even start.</strong>
+  body: "Sinra calculates team and individual workload in real-time. <strong>See who's overloaded before cycles even start.</strong>
       <ul>
         <li>Per-cycle workload tracking: Track estimated time vs. capacity by developer and team.</li>
         <li>Team capacity percentages: Set individual availability (50%, 75%, 100%) per team.</li>
         <li>Automatic warnings: System alerts when tasks exceed capacity.</li>
-      </ul>”
+      </ul>"
   image: /assets/images/sinra-overview.png
   alt: Advanced Workload Planning
-  category: “Smart Allocation”
+  category: "Smart Allocation"
 - title: <strong>Integrated Testing Management</strong> - QA Built-in
-  body: “Sinra treats testing as a first-class citizen, not an afterthought. Create test cases tied to specifications and track acceptance status directly.
+  body: "Sinra treats testing as a first-class citizen, not an afterthought. Create test cases tied to specifications and track acceptance status directly.
       <ul>
         <li>Test templates: Reusable test cases for consistent QA across releases.</li>
         <li>Tester assignment: Assign QA team members and track their workload.</li>
         <li>Acceptance tracking: Mark tests as accepted/rejected; link to development status.</li>
-      </ul>”
-  category: “Quality Assurance”
+      </ul>"
+  category: "Quality Assurance"
   image: /assets/images/sinra-overview.png
   alt: Integrated Testing Management
 - title: <strong>Everything is Customizable</strong> - Without Code
-  body: “Other project management tools require plugins or Automation rules. Sinra lets teams customize statuses, roles, labels, and platforms directly in settings.
+  body: "Other project management tools require plugins or Automation rules. Sinra lets teams customize statuses, roles, labels, and platforms directly in settings.
       <ul>
         <li>Custom statuses: Create your exact workflow (Backlog → Design → Code → Test → Done).</li>
         <li>Flexible roles: Define Product Owner, Developer, Tester, QA Lead, or custom roles.</li>
         <li>Smart filtering: Filter issues by 40+ attributes (complexity, time spent, platform, etc.).</li>
-      </ul>”
+      </ul>"
   image: /assets/images/customization.png
   alt: Complete Customization
-  category: “Flexibility”
+  category: "Flexibility"
 - title: <strong>Multi-View Intelligence</strong> - Kanban, List, and Release Planning
-  body: “Switch between <strong>Kanban</strong> (visual board by status) and <strong>List</strong> (detailed table) views instantly. Plus dedicated Release and Cycle views for big-picture planning.
+  body: "Switch between <strong>Kanban</strong> (visual board by status) and <strong>List</strong> (detailed table) views instantly. Plus dedicated Release and Cycle views for big-picture planning.
       <ul>
         <li>Kanban board: Drag-and-drop with real-time updates.</li>
         <li>Advanced filtering: Apply complex filters across views without reloading.</li>
         <li>Release roadmap: See your entire release timeline with all cycles and capabilities.</li>
-      </ul>”
+      </ul>"
   image: /assets/images/kanban-list-view.png
   alt: Multi-View Interface
-  category: “Smart Visualization”
+  category: "Smart Visualization"
 - title: <strong>Retrospectives Built-In</strong> - Continuous Improvement
-  body: “After each release, automatically create a retrospective to collect team feedback (Good, Bad, Improvements). Compare with previous retros to track progress.
+  body: "After each release, automatically create a retrospective to collect team feedback (Good, Bad, Improvements). Compare with previous retros to track progress.
       <ul>
         <li>Automated retro creation: Every release gets a retro ceremony attached.</li>
         <li>Feedback categories: Structure feedback (What went well, What to improve, Action items).</li>
         <li>Historical comparison: Track team sentiment and improvements over time.</li>
-      </ul>”
+      </ul>"
   image: /assets/images/collaboration.png
   alt: Built-in Retrospectives
-  category: “Team Growth”
+  category: "Team Growth"
