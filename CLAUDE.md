@@ -172,3 +172,11 @@ This project now uses **Spec-Kit** for spec-driven development with Claude Code.
 
 All development on Sinra-website must comply with the Spec-Kit Constitution (English) and TONE_CONSISTENCY_REPORT.md (brand voice).
 - Read: .specify/memory/constitution.md
+
+## Active Technologies
+- Ruby 3.4.5, Jekyll 4.3.4 + jekyll-polyglot (multilingual support), existing YAML/Liquid patterns (006-spanish-language)
+- N/A (static site, file-based) (006-spanish-language)
+
+## Recent Changes
+- 006-spanish-language: Added Ruby 3.4.5, Jekyll 4.3.4 + jekyll-polyglot (multilingual support), existing YAML/Liquid patterns
+- Always use « and » for latin language and "" for the other langage for  pages and posts
