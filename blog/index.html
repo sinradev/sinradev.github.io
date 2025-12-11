@@ -11,6 +11,9 @@ lang: en
     {% if page_lang == "en" %}
       <h1>Project Management Insights & Strategies</h1>
       <p class="subtitle">Master project management with strategies from leading engineering teams. Learn capacity planning, release management, QA integration, and scaling best practices.</p>
+    {% elsif page_lang == "es" %}
+      <h1>Insights y Estrategias de Gestión de Proyectos</h1>
+      <p class="subtitle">Domine la gestión de proyectos con estrategias de equipos de ingeniería líderes. Aprenda planificación de capacidad, gestión de releases, integración de QA y mejores prácticas de escalado.</p>
     {% else %}
       <h1>Conseils et Stratégies de Gestion de Projet</h1>
       <p class="subtitle">Découvrez comment les meilleures équipes réduisent la fragmentation et gagnent en prévisibilité : visibilité complète, capacité réelle, livraison maîtrisée.</p>
@@ -43,6 +46,8 @@ lang: en
         <div class="no-posts">
           {% if page_lang == "en" %}
             <p>Blog posts coming soon. Check back regularly for insights on project management, capacity planning, release management, and team scaling.</p>
+          {% elsif page_lang == "es" %}
+            <p>Publicaciones del blog próximamente. Vuelva regularmente para obtener insights sobre gestión de proyectos, planificación de capacidad, gestión de releases y escalado de equipos.</p>
           {% else %}
             <p>Les articles du blog arrivent bientôt. Revenez régulièrement pour des conseils sur la gestion de projet, la planification de capacité, la gestion des releases et la montée en charge des équipes.</p>
           {% endif %}
