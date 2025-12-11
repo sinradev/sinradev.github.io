@@ -15,9 +15,9 @@ permalink: /methodology/:year/:month/:day/flexibility-trap-tools.html
 You've probably heard these marketing promises:
 
 **Jira:** "Adapts to any workflow"
-**Notion:** “Customize everything to your needs"
-**Linear:** “Shape the tool to your way of working"
-**Airtable:** “Build the perfect app for your team"
+**Notion:** "Customize everything to your needs"
+**Linear:** "Shape the tool to your way of working"
+**Airtable:** "Build the perfect app for your team"
 
 **Sounds great, right?**
 
@@ -47,7 +47,7 @@ Except in reality, here's what happens:
 
 **Week 4:** Realization
 
-> “We spend more time managing the tool than shipping features."
+> "We spend more time managing the tool than shipping features."
 
 **That's the flexibility trap.**
 
@@ -74,7 +74,7 @@ And this ambiguity forces you to:
 1. **Build your own system** on their platform
 2. **Maintain that system** with every new feature
 3. **Train every new member** on your conventions
-4. **Debate endlessly** about “best practices"
+4. **Debate endlessly** about "best practices"
 
 **Result:** You hired a project manager just to manage the tool.
 
@@ -91,7 +91,7 @@ What you want is:
 ✅ **Predictability:** Know when you'll ship
 ✅ **Focus:** Build features, not configure tools
 
-You don't want to spend 3 weeks debating whether an “Epic" should be an “Initiative" or a “Theme".
+You don't want to spend 3 weeks debating whether an "Epic" should be an "Initiative" or a "Theme".
 
 You want to **ship**.
 
@@ -139,7 +139,7 @@ Sinra knows you build multiple applications:
 - Mobile apps
 - Microservices
 
-**The structure supports this natively.** No need to hack “Projects" or “Workspaces".
+**The structure supports this natively.** No need to hack "Projects" or "Workspaces".
 
 ### 4. Native Capacity Management
 
@@ -155,7 +155,7 @@ Sinra automatically calculates:
 
 ## But... Is Sinra Too Rigid?
 
-**Legitimate question:** “If Sinra imposes structure, does it lack flexibility?"
+**Legitimate question:** "If Sinra imposes structure, does it lack flexibility?"
 
 **Answer:** Sinra is opinionated about **what matters**, flexible about **what varies**.
 
@@ -227,14 +227,14 @@ Sinra automatically calculates:
 **Problems:**
 
 - Product and Engineering used different views
-- Impossible to see “what's in the next release?"
+- Impossible to see "what's in the next release?"
 - Capacity calculated manually in Google Sheets
-- 8h/week spent on “Jira administration"
+- 8h/week spent on "Jira administration"
 - New members lost for weeks
 
 **Lead Developer quote:**
 
-> “We had a full-time Jira admin. That's ridiculous."
+> "We had a full-time Jira admin. That's ridiculous."
 
 ### With Sinra (Opinionated Tool)
 
@@ -251,7 +251,7 @@ Sinra automatically calculates:
 
 - Immediate release visibility for everyone
 - Capacity calculated automatically
-- 0h/week on “tool administration"
+- 0h/week on "tool administration"
 - New members productive in 1 day
 - Total focus on shipping
 
@@ -263,7 +263,7 @@ Sinra automatically calculates:
 
 ## The 5 Signs You're Trapped by Flexibility
 
-### Sign 1: You Have a “Jira Admin"
+### Sign 1: You Have a "Jira Admin"
 
 If someone on your team spends >20% of their time configuring/maintaining the tool, **you have a problem**.
 
@@ -271,11 +271,11 @@ The tool should serve the team, not the other way around.
 
 ### Sign 2: New Members Take 1+ Week to Understand
 
-If onboarding includes multi-day training on “how to use our special configuration", **it's too complex**.
+If onboarding includes multi-day training on "how to use our special configuration", **it's too complex**.
 
-### Sign 3: You Maintain “How to Use the Tool" Docs
+### Sign 3: You Maintain "How to Use the Tool" Docs
 
-20+ pages of Confluence on “Our custom Jira workflow"? **Red flag.**
+20+ pages of Confluence on "Our custom Jira workflow"? **Red flag.**
 
 The tool should be intuitive, not require a manual.
 
@@ -283,9 +283,9 @@ The tool should be intuitive, not require a manual.
 
 If you have to extract data to analyze it elsewhere, **the tool isn't doing its job**.
 
-### Sign 5: You're Always Debating the “Right Way" to Use the Tool
+### Sign 5: You're Always Debating the "Right Way" to Use the Tool
 
-If every retrospective includes “We should reorganize our Jira workflow", **you're trapped**.
+If every retrospective includes "We should reorganize our Jira workflow", **you're trapped**.
 
 ---
 
@@ -342,15 +342,15 @@ Moving from a flexible tool to Sinra requires a change:
 
 ### Old Mindset (Flexible Tool)
 
-- “How do we configure the tool to match our workflow?"
-- “Should we add a new issue type?"
-- “How should we model this special situation?"
+- "How do we configure the tool to match our workflow?"
+- "Should we add a new issue type?"
+- "How should we model this special situation?"
 
 ### New Mindset (Opinionated Tool)
 
-- “How do we organize our work in the Issues → Capabilities → Releases framework?"
-- “Which release does this work belong to?"
-- “Are we within planned capacity?"
+- "How do we organize our work in the Issues → Capabilities → Releases framework?"
+- "Which release does this work belong to?"
+- "Are we within planned capacity?"
 
 **The first spends time on the tool.**
 **The second spends time on the product.**
@@ -363,15 +363,15 @@ Moving from a flexible tool to Sinra requires a change:
 
 **Answers:**
 
-### 1. “Not Invented Here" Syndrome
+### 1. "Not Invented Here" Syndrome
 
-Teams think: “Our workflow is unique and special."
+Teams think: "Our workflow is unique and special."
 
 Spoiler: It probably isn't.
 
 ### 2. Effective Marketing
 
-“Adapts to any workflow" sounds better than “Imposes a workflow that works."
+"Adapts to any workflow" sounds better than "Imposes a workflow that works."
 
 ### 3. Fear of Commitment
 
@@ -381,7 +381,7 @@ Flexible tools postpone that decision (indefinitely).
 
 ### 4. Network Effect
 
-“Everyone uses Jira" → easy to justify, even if suboptimal.
+"Everyone uses Jira" → easy to justify, even if suboptimal.
 
 ---
 
@@ -419,15 +419,15 @@ Flexible tools postpone that decision (indefinitely).
 
 ## Frequently Asked Questions
 
-### Q: “What if Sinra doesn't match our workflow?"
+### Q: "What if Sinra doesn't match our workflow?"
 
-**A:** Ask yourself: “Does our current workflow ship predictably?"
+**A:** Ask yourself: "Does our current workflow ship predictably?"
 
 If not, maybe the problem isn't the tool—it's the workflow.
 
 Sinra imposes a release-driven workflow **because it works**. If you resist, ask yourself why.
 
-### Q: “Can we use Sinra with Scrum/Kanban/other methodology?"
+### Q: "Can we use Sinra with Scrum/Kanban/other methodology?"
 
 **A:** Sinra replaces these methodologies with a release-driven approach.
 
@@ -435,16 +435,16 @@ If you're attached to Scrum, Sinra probably isn't for you.
 
 If you want to ship predictably, try Sinra for one cycle.
 
-### Q: “What if we need a feature Sinra doesn't have?"
+### Q: "What if we need a feature Sinra doesn't have?"
 
 **A:** Important distinction:
 
 - **Missing core feature:** Contact us, we might add it
 - **Missing exotic configuration:** Probably intentional
 
-Sinra says “no" to many features to stay simple.
+Sinra says "no" to many features to stay simple.
 
-### Q: “Why not just configure Jira better?"
+### Q: "Why not just configure Jira better?"
 
 **A:** You can spend 2 months configuring Jira to look like Sinra.
 
@@ -454,7 +454,7 @@ Or you can use Sinra and ship during those 2 months.
 
 ## The Hidden Cost of Flexibility
 
-Let's calculate the real cost of a “flexible" tool:
+Let's calculate the real cost of a "flexible" tool:
 
 **Initial configuration:** 40 hours (1 week)
 **Ongoing maintenance:** 5 hours/week × 50 weeks = 250 hours
