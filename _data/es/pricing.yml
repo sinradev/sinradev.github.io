@@ -1,0 +1,98 @@
+- name: Sinra Pro
+  color: "#2196F3"
+  description: "La plataforma completa de gestión de proyectos que combina las metodologías V-Model y Agile"
+  pricing_tiers:
+    - period: Mensual
+      price: "10"
+      currency: "€"
+      billing: "/mes"
+      plan_type: "monthly"
+    - period: Anual
+      price: "96"
+      currency: "€"
+      billing: "/año"
+      plan_type: "annual"
+      original_price: "120"
+      struck_price: "96"
+      has_black_friday: true
+      black_friday_price: "60"
+      promo_code: "BLACKFRIDAY2025"
+      recommended: true
+  features:
+    - text: Pago por puesto (tamaño de equipo flexible)
+      highlight: true
+    - text: Projects y releases ilimitados
+      highlight: true
+    - text: Editor de texto enriquecido y especificaciones
+      highlight: true
+    - text: Planificación de capacidad avanzada en tiempo real
+      highlight: true
+    - text: Gestión de QA integrada
+      highlight: true
+    - text: Templates y personalización avanzados
+      highlight: true
+    - text: Inteligencia multi-vista (Kanban, Lista, Release)
+      highlight: true
+    - text: Gestión de releases y checklists de puesta en producción
+      highlight: true
+    - text: Soporte prioritario por email y chat
+      highlight: true
+    - text: Flujos de trabajo y roles personalizados
+      highlight: false
+    - text: Funciones de seguridad avanzadas
+      highlight: false
+    - text: Gestor de cuenta dedicado
+      highlight: false
+  call_to_action:
+    link: https://app.sinra.dev/users/sign_up
+    text: Iniciar Prueba Gratuita
+
+- name: Sinra Specif-AI
+  color: "#2196F3"
+  description: "Generación de especificaciones impulsada por IA para issues, capabilities y projects"
+  pricing_tiers:
+    - period: Próximamente
+      price: null
+      billing: null
+      plan_type: "coming_soon"
+  features:
+    - text: Especificación de issues impulsada por IA
+      highlight: true
+      ai_feature: true
+    - text: Definición automatizada de capabilities
+      highlight: true
+      ai_feature: true
+    - text: Templates de projects generados por IA
+      highlight: true
+      ai_feature: true
+    - text: Generación de requisitos asistida por IA
+      highlight: true
+      ai_feature: true
+    - text: Pago por puesto (tamaño de equipo flexible)
+      highlight: true
+    - text: Projects y releases ilimitados
+      highlight: true
+    - text: Editor de texto enriquecido y especificaciones
+      highlight: true
+    - text: Planificación de capacidad avanzada en tiempo real
+      highlight: true
+    - text: Gestión de QA integrada
+      highlight: true
+    - text: Templates y personalización avanzados
+      highlight: true
+    - text: Inteligencia multi-vista (Kanban, Lista, Release)
+      highlight: true
+    - text: Gestión de releases y checklists de puesta en producción
+      highlight: true
+    - text: Soporte prioritario por email y chat
+      highlight: true
+    - text: Flujos de trabajo y roles personalizados
+      highlight: false
+    - text: Funciones de seguridad avanzadas
+      highlight: false
+    - text: Gestor de cuenta dedicado
+      highlight: false
+  call_to_action:
+    link: null
+    text: Próximamente
+    badge_type: "coming_soon"

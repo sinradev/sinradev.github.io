@@ -1,0 +1,60 @@
+- title: Gestión de Flujo de Trabajo Dual <strong>con V-Model + Agile</strong>
+  body: "A diferencia de otras herramientas de gestión de proyectos con un solo flujo de trabajo, Sinra admite dos flujos de trabajo paralelos: <strong>Writing Status</strong> (especificación) y <strong>Development Status</strong> (implementación). Planifique especificaciones mientras los desarrolladores codifican, sin cuellos de botella.
+      <ul>
+        <li>Flujos de trabajo de spec y dev separados: Los equipos de producto escriben mientras los desarrolladores ejecutan.</li>
+        <li>Visualización de carga de trabajo por cycle: Vea exactamente qué puede manejar cada desarrollador/equipo.</li>
+        <li>Planificación de capacidad automática: Prevenga la sobreasignación con seguimiento de carga de trabajo en tiempo real.</li>
+      </ul>"
+  image: /assets/images/methodology-hybrid.png
+  alt: Metodología de Flujo de Trabajo Dual
+  category: "Flujos de Trabajo Duales"
+- title: <strong>Planificación de Carga de Trabajo Integrada</strong> - No Más Cuellos de Botella
+  body: "Sinra calcula la carga de trabajo del equipo e individual en tiempo real. <strong>Vea quién está sobrecargado antes de que comiencen los cycles.</strong>
+      <ul>
+        <li>Seguimiento de carga de trabajo por cycle: Rastree tiempo estimado vs. capacidad por desarrollador y equipo.</li>
+        <li>Porcentajes de capacidad del equipo: Establezca disponibilidad individual (50%, 75%, 100%) por equipo.</li>
+        <li>Advertencias automáticas: El sistema alerta cuando las tareas exceden la capacidad.</li>
+      </ul>"
+  image: /assets/images/sinra-overview.png
+  alt: Planificación de Carga de Trabajo Avanzada
+  category: "Asignación Inteligente"
+- title: <strong>Gestión de Pruebas Integrada</strong> - QA Integrado
+  body: "Sinra trata las pruebas como un ciudadano de primera clase, no como una ocurrencia tardía. Cree casos de prueba vinculados a especificaciones y rastree el status de aceptación directamente.
+      <ul>
+        <li>Templates de prueba: Casos de prueba reutilizables para QA consistente en releases.</li>
+        <li>Asignación de testers: Asigne miembros del equipo de QA y rastree su carga de trabajo.</li>
+        <li>Seguimiento de aceptación: Marque pruebas como aceptadas/rechazadas; vincule al development status.</li>
+      </ul>"
+  category: "Aseguramiento de Calidad"
+  image: /assets/images/sinra-overview.png
+  alt: Gestión de Pruebas Integrada
+- title: <strong>Todo es Personalizable</strong> - Sin Código
+  body: "Otras herramientas de gestión de proyectos requieren plugins o reglas de Automatización. Sinra permite a los equipos personalizar statuses, roles, labels y platforms directamente en la configuración.
+      <ul>
+        <li>Statuses personalizados: Cree su flujo de trabajo exacto (Backlog → Design → Code → Test → Done).</li>
+        <li>Roles flexibles: Defina Product Owner, Developer, Tester, QA Lead o roles personalizados.</li>
+        <li>Filtrado inteligente: Filtre issues por más de 40 atributos (complejidad, tiempo invertido, plataforma, etc.).</li>
+      </ul>"
+  image: /assets/images/customization.png
+  alt: Personalización Completa
+  category: "Flexibilidad"
+- title: <strong>Inteligencia Multi-Vista</strong> - Kanban, Lista y Planificación de Releases
+  body: "Cambie entre vistas <strong>Kanban</strong> (tablero visual por status) y <strong>Lista</strong> (tabla detallada) instantáneamente. Además, vistas dedicadas de Release y Cycle para planificación general.
+      <ul>
+        <li>Tablero Kanban: Arrastrar y soltar con actualizaciones en tiempo real.</li>
+        <li>Filtrado avanzado: Aplique filtros complejos en todas las vistas sin recargar.</li>
+        <li>Hoja de ruta de releases: Vea toda su línea de tiempo de releases con todos los cycles y capabilities.</li>
+      </ul>"
+  image: /assets/images/kanban-list-view.png
+  alt: Interfaz Multi-Vista
+  category: "Visualización Inteligente"
+- title: <strong>Retrospectivas Integradas</strong> - Mejora Continua
+  body: "Después de cada release, cree automáticamente una retrospectiva para recopilar comentarios del equipo (Bueno, Malo, Mejoras). Compare con retros anteriores para rastrear el progreso.
+      <ul>
+        <li>Creación automática de retro: Cada release obtiene una ceremonia de retro adjunta.</li>
+        <li>Categorías de comentarios: Estructura de comentarios (Qué salió bien, Qué mejorar, Elementos de acción).</li>
+        <li>Comparación histórica: Rastree el sentimiento del equipo y las mejoras a lo largo del tiempo.</li>
+      </ul>"
+  image: /assets/images/collaboration.png
+  alt: Retrospectivas Integradas
+  category: "Crecimiento del Equipo"

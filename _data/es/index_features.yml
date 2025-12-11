@@ -1,0 +1,31 @@
+- title: Editor de Texto Enriquecido con Contexto
+  body: Los cuerpos de especificaciones e issues admiten formato enriquecido como Notion. Escriba requisitos detallados una vez, reutilícelos en diferentes releases. No más documentación dispersa.
+  image: /assets/images/rich-text-editor.svg
+  alt: Editor de texto enriquecido
+- title: Seguimiento de Progreso en Cada Nivel
+  body: Realice seguimiento del progreso por % de fecha, finalización de status, tiempo invertido vs. estimado, y carga de trabajo del equipo por Issues, Cycles, Releases y Capabilities. Visibilidad real.
+  image: /assets/images/progress-tracking.svg
+  alt: Seguimiento de progreso multinivel
+- title: Comentarios Polimórficos y Colaboración en Tiempo Real
+  body: Discuta y sincronice directamente en issues y capabilities. Hilos de comentarios con @menciones, notificaciones instantáneas y formato enriquecido mantienen a los equipos alineados sin reuniones de status interminables. Todo el contexto vive en un solo lugar.
+  image: /assets/images/collaboration-sync.svg
+- title: Planificación de Despliegue Dirigida por Releases
+  body: Planifique releases completos con visibilidad total de funcionalidades, cobertura de pruebas y preparación. Vea qué equipos son responsables de qué releases, realice seguimiento de fechas de despliegue y gestione checklists de puesta en producción. Éxito en releases, no apagar incendios.
+  image: /assets/images/release-planning.svg
+  alt: Planificación de releases y despliegue
+- title: Visibilidad de Carga de Trabajo Multi-Aplicación y Entre Equipos
+  body: Gestione múltiples aplicaciones y plataformas en un solo lugar. Los equipos de front-end y back-end trabajan juntos sin problemas mientras usted ve la carga de trabajo en tiempo real en todos los equipos. No más silos entre departamentos. Inteligencia de capacidad completa en todo su stack tecnológico.
+  image: /assets/images/multi-app-workload.svg
+  alt: Gestión de carga de trabajo multi-aplicación y entre equipos
+- title: <strong>Flujos de Trabajo Completamente Personalizables</strong> - Su Proceso, No el Nuestro
+  body: Construya flujos de trabajo que coincidan con su proceso exacto sin tocar código. Status personalizados, puertas de aprobación, acceso basado en roles y reglas de validación automatizadas. Ya sea que siga V-Model, Agile o un enfoque híbrido, Sinra se adapta a usted, no al revés. ¿Requisitos de cumplimiento? Pistas de auditoría integradas y aplicación de flujos de trabajo.
+  image: /assets/images/custom-workflows.svg
+  alt: Flujos de trabajo personalizables y aplicación de cumplimiento
+- title: Traspaso Inteligente de Issues
+  body: Los issues no finalizados no desaparecen. Sinra traspasa automáticamente los issues incompletos del cycle actual a la planificación del siguiente. No más contexto perdido. No más trabajo olvidado. Cada issue permanece visible y rastreado, asegurando que nada se pierda entre cycles.
+  image: /assets/images/carry-over-issues.svg
+  alt: Traspaso inteligente de issues entre cycles
+- title: Glosario de Términos Empresariales Centralizado
+  body: Documente y estandarice su terminología empresarial directamente en Sinra. Cree un glosario único que defina los conceptos clave de su producto. Reutilice estos términos automáticamente en especificaciones, issues y documentación. Elimina ambigüedades, asegura terminología consistente en todos los equipos.
+  image: /assets/images/glossary-terminology.svg
+  alt: Glosario empresarial y reutilización de términos en especificaciones
