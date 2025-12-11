@@ -109,7 +109,7 @@
       </ul>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      function updateLanguageSwitcher() {
         var path = window.location.pathname;
         var currentLang = 'en';
 
@@ -124,15 +124,27 @@
         var button = document.getElementById('lang-button');
         if (button) button.textContent = currentLang.toUpperCase();
 
-        // Update active state
+        // Update active state - force remove from all, then add to current
         var links = document.querySelectorAll('#lang-dropdown a');
         links.forEach(function(link) {
-          link.classList.remove('active');
-          if (link.getAttribute('data-lang') === currentLang) {
+          var lang = link.getAttribute('data-lang');
+          if (lang === currentLang) {
             link.classList.add('active');
+          } else {
+            link.classList.remove('active');
           }
         });
-      });
+      }
+
+      // Run on DOM ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateLanguageSwitcher);
+      } else {
+        updateLanguageSwitcher();
+      }
+
+      // Run again after a short delay to override DaisyUI
+      setTimeout(updateLanguageSwitcher, 100);
     </script>
   </div>
 </header>
