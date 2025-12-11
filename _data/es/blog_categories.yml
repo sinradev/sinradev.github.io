@@ -1,0 +1,23 @@
+- name: Metodología
+  slug: methodology
+  description: "Aprenda metodologías modernas de gestión de proyectos: V-Model, Agile, enfoques híbridos y cómo elegir el método adecuado para su equipo."
+
+- name: Planificación de Capacidad
+  slug: capacity-planning
+  description: "Domine la planificación de capacidad del equipo, previsión de carga de trabajo, asignación de recursos y evite la sobreasignación."
+
+- name: Gestión de Releases
+  slug: release-management
+  description: "Estrategias para planificar, coordinar y ejecutar releases exitosos con confianza y precisión."
+
+- name: QA y Pruebas
+  slug: qa-testing
+  description: "Integre el aseguramiento de calidad temprano, construya estrategias de prueba efectivas y envíe con confianza."
+
+- name: Escalado de Equipos
+  slug: team-scaling
+  description: "Escale su equipo de ingeniería de startup a empresa mientras mantiene calidad y velocidad."
+
+- name: Cumplimiento
+  slug: compliance
+  description: "Navegue los requisitos regulatorios mientras mantiene agilidad. Construya sistemas que pasen auditorías sin sacrificar velocidad."

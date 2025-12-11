@@ -1,0 +1,138 @@
+comparisons:
+    conclusion: "Elija Sinra si desarrolla software y necesita gestión de releases+QA. Elija Monday si tiene equipos diversos y desea máxima flexibilidad visual."
+
+comparison_hub:
+  title: "Compare Sinra con Otras Herramientas"
+  subtitle: "Vea cómo Sinra se compara con Asana, Jira y Monday"
+  description: "Compare Sinra con Asana, Jira y Monday. Explore funcionalidades, precios y encuentre la mejor herramienta para su equipo."
+
+  tools:
+    - name: Sinra
+      logo: /assets/images/sinra-logo.svg
+    - name: Asana
+      logo: /assets/images/asana-logo.svg
+    - name: Jira
+      logo: /assets/images/jira-logo.svg
+    - name: Monday
+      logo: /assets/images/monday-logo.svg
+
+  dimensions:
+    - category: "Mejor Para"
+      rows:
+        - dimension: "Caso de Uso Ideal"
+          values:
+            - "Gestión de proyectos moderna, centrada en visibilidad"
+            - "Flujos de trabajo empresariales y equipos grandes"
+            - "Desarrollo de software y equipos técnicos"
+            - "Colaboración general de equipo y gestión de tareas"
+
+    - category: "Modelo de Precios"
+      rows:
+        - dimension: "Estructura de Costos"
+          values:
+            - "Basado en uso con facturación por cycle"
+            - "Suscripción mensual por usuario"
+            - "Auto-alojado o en la nube (suscripción)"
+            - "Por usuario o plan de equipo"
+        - dimension: "Prueba Gratuita"
+          values:
+            - "14 días"
+            - "30 días"
+            - "N/A (código abierto disponible)"
+            - "14 días"
+
+    - category: "Funcionalidades Principales"
+      rows:
+        - dimension: "Gestión de Issues"
+          values:
+            - "✅ Nativo, de primera clase"
+            - "✅ Disponible vía tareas de Asana"
+            - "✅ Integrado (Jira Issues)"
+            - "✅ Basado en tareas"
+        - dimension: "Flujos de Trabajo y Automatización"
+          values:
+            - "✅ Flujos de trabajo personalizados"
+            - "✅ Reglas y automatizaciones"
+            - "✅ Automatización avanzada"
+            - "✅ Automatizaciones y flujos de trabajo"
+        - dimension: "Planificación de Releases"
+          values:
+            - "✅ Cycles y releases nativos"
+            - "⭐ Limitado (Portfolios)"
+            - "✅ Fuerte (Jira Releases)"
+            - "⭐ Vista de cronología"
+
+    - category: "Colaboración de Equipo"
+      rows:
+        - dimension: "Comentarios y Menciones"
+          values:
+            - "✅ Comentarios inline completos"
+            - "✅ Disponible"
+            - "✅ Completamente funcional"
+            - "✅ Disponible"
+        - dimension: "Actualizaciones en Tiempo Real"
+          values:
+            - "✅ Sincronización en tiempo real"
+            - "✅ Colaboración en tiempo real"
+            - "✅ Actualizaciones en tiempo real"
+            - "✅ Sincronización en tiempo real"
+
+    - category: "Informes e Insights"
+      rows:
+        - dimension: "Dashboards"
+          values:
+            - "✅ Dashboards personalizables"
+            - "✅ Dashboards de portfolio"
+            - "✅ Dashboards e insights"
+            - "✅ Widgets y dashboards"
+        - dimension: "Análisis"
+          values:
+            - "✅ Burn-down y métricas"
+            - "✅ Informes avanzados"
+            - "✅ Análisis avanzados"
+            - "✅ Informes y gráficos"
+
+    - category: "Integraciones"
+      rows:
+        - dimension: "API y Webhooks"
+          values:
+            - "✅ REST API"
+            - "✅ Webhooks y API"
+            - "✅ API comprehensiva"
+            - "✅ API y Webhooks"
+        - dimension: "Integraciones Populares"
+          values:
+            - "✅ Slack, GitHub, GitLab"
+            - "✅ Más de 100 integraciones"
+            - "✅ Más de 500 integraciones"
+            - "✅ Más de 200 integraciones"
+
+    - category: "Facilidad de Uso"
+      rows:
+        - dimension: "Tiempo de Configuración"
+          values:
+            - "⚡ 5-10 minutos"
+            - "⚡ 15-30 minutos"
+            - "🔧 1-2 horas"
+            - "⚡ 15-20 minutos"
+        - dimension: "Curva de Aprendizaje"
+          values:
+            - "Plana, intuitiva"
+            - "Moderada"
+            - "Pronunciada para configuraciones complejas"
+            - "Plana, intuitiva"
+
+    - category: "Experiencia Móvil"
+      rows:
+        - dimension: "Aplicaciones Nativas"
+          values:
+            - "✅ iOS y Android"
+            - "✅ iOS y Android"
+            - "✅ iOS y Android"
+            - "✅ iOS y Android"
+        - dimension: "Web Responsivo"
+          values:
+            - "✅ Completamente responsivo"
+            - "✅ Completamente responsivo"
+            - "✅ Completamente responsivo"
+            - "✅ Completamente responsivo"

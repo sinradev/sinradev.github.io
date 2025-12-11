@@ -1,0 +1,24 @@
+- name: Acerca de
+  link: about/
+  target: _top
+  klass:
+- name: Precios
+  link: pricing/
+  target: _top
+  klass:
+- name: Blog
+  link: blog/
+  target: _top
+  klass:
+- name: Contacto
+  link: contact/
+  target: _top
+  klass:
+- name: Iniciar sesión
+  link: https://app.sinra.dev/users/sign_in
+  target: _blank
+  klass:
+- name: Registrarse
+  link: https://app.sinra.dev/users/sign_up
+  target: _blank
+  klass: btn btn-accent btn-sm

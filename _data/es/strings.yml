@@ -1,0 +1,149 @@
+about:
+  innovative_solution: La Próxima Generación de Gestión de Proyectos
+  result_deep_reflexion: Sinra está construido desde cero para equipos de software modernos. Olvide todo lo que sabe sobre la gestión tradicional de proyectos. Este es un enfoque fundamentalmente diferente diseñado en torno a cómo los equipos reales realmente trabajan.
+  problem_title: Los Problemas Reales que Enfrentan los Equipos
+  problem_description: "Las herramientas tradicionales crean silos: planificación aquí, ejecución allá. Su capacidad real permanece invisible. Su calidad depende de la suerte. Las reuniones se multiplican, pero los plazos se retrasan. Sinra rompe estos silos. Una única fuente de verdad para planificar, ejecutar y verificar."
+  agile_pitfalls: Ineficiencia por Fragmentación
+  time_consuming: La Comunicación Dispersa Mata el Impulso
+  agile_environment: "La mayoría de los equipos usan herramientas desconectadas: una para planificar, una para rastrear, una para pruebas, una para comunicación. Sus decisiones se pierden. La información crítica vive dispersa en emails y Slack en lugar de estar centralizada. Los equipos rehacer el mismo trabajo una y otra vez. Mucha actividad, cero resultados."
+  meeting_overload: "Los equipos desperdician más de 10 horas semanales encontrando información dispersa en herramientas"
+  constant_reprioritization: "Los equipos gastan el 30% del tiempo reingresando los mismos datos en diferentes sistemas"
+  efficiency_loss: "Los detalles críticos se pierden entre herramientas desconectadas"
+  waterfall_pitfalls: Ceguera Hasta que es Demasiado Tarde
+  loss_of_control: "El Descubrimiento Ocurre al Final"
+  waterfall_methodology: "Las herramientas tradicionales de planificación crean una falsa sensación de control. No ve la capacidad real, el progreso actual ni la cobertura de pruebas hasta semanas después de la ejecución. Para entonces, está comprometido con fechas que no se pueden cumplir. Los problemas que podrían haberse detectado temprano se convierten en simulacros de emergencia. No falla porque su equipo sea malo, falla porque no puede ver lo que realmente está sucediendo."
+  deadline_pressure: "La mayoría de los proyectos no descubren problemas reales hasta estar completos al 60%"
+  rigid_schedule: "Cuando la realidad no coincide con el plan, los equipos improvisan en lugar de adaptarse"
+  quality_compromise: "La calidad se trata como un compromiso negociable, no como un requisito"
+  design_to: "El Enfoque de Sinra: Visibilidad, Capacidad y Ejecución"
+  sinra_combines: "Sinra es una única fuente de verdad para todo su proyecto. Todo lo que los equipos necesitan (planificación, seguimiento, pruebas, comunicación y despliegue) vive en un solo lugar. Visibilidad en tiempo real de capacidad, progreso y calidad. Sin cambio de contexto."
+  clear_planning: "Visibilidad Completa del Proyecto"
+  clear_planning_desc: "Vea todo su proyecto en un solo lugar. Funcionalidades, especificaciones, pruebas, capacidad, progreso y comunicación, todo conectado. Ningún detalle se pierde. Transparencia completa para todos."
+  global_vision: "Inteligencia de Capacidad en Tiempo Real"
+  global_vision_desc: "Conozca la capacidad exacta y disponibilidad de su equipo. Anticipe la sobreasignación, no espere la crisis. Planifique releases basándose en lo que los equipos realmente pueden entregar."
+  enhanced_control: "Calidad Integrada desde el Día Uno"
+  enhanced_control_desc: "QA no es un paso final: es un elemento central del proceso. Cree casos de prueba, asigne testers, rastree el status de aceptación, todo vinculado al progreso de desarrollo. Puertas de calidad que realmente detectan problemas antes de que se conviertan en issues."
+  release_mastery: "Domine sus Cycles de Release"
+  release_mastery_desc: "Sinra pone los releases en el corazón de la plataforma. Cada release tiene visibilidad de todas las funcionalidades, cobertura de pruebas, asignaciones de equipo y preparación para despliegue. No más adivinanzas sobre si está listo para enviar."
+  release_planning: "Planificación Completa de Releases"
+  release_planning_desc: "Entienda la composición de cada release: funcionalidades, issues y dependencias. Identifique propietarios, gestione interdependencias y rastree la línea de tiempo completa desde la planificación hasta producción."
+  deployment_readiness: "Checklists de Preparación para Despliegue"
+  deployment_readiness_desc: "Antes de que cualquier release se envíe, verifique que todos los criterios de aceptación se cumplan, todas las pruebas pasen y todos los equipos estén alineados. Los checklists de puesta en producción aseguran que nada se pierda en la imprevisibilidad del día de lanzamiento."
+  go_live_confidence: "Despliegue con Confianza"
+  go_live_confidence_desc: "Con visibilidad completa del status del release, capacidad del equipo y resultados de pruebas, los despliegues se convierten en eventos predecibles, no en gestión de crisis."
+  release_team_coordination: "Coordine Equipos a Través de Releases"
+  release_team_coordination_desc: "Visualice todos los equipos involucrados en cada release, rastree cronogramas de despliegue y gestione checklists de puesta en producción. Los releases tienen éxito a través de coordinación, no apagando incendios."
+  ready_to_transform: "Deje de Elegir Entre Imprevisibilidad y Rigidez"
+  ready_to_transform_desc: "Pruebe Sinra sin riesgo. Los equipos reportan más del 40% de reducción en sobrecarga de planificación, fechas de release predecibles y mayor calidad de código. Todo sin la expansión de plugins de las herramientas tradicionales."
+  learn_more: "Probar Gratis"
+blog:
+  older_posts: Publicaciones anteriores
+  newer_posts: Publicaciones más recientes
+  date_format: "%d de %B de %Y"
+  by_author: Por el Equipo de Sinra
+  min_read: min de lectura
+  related_articles: Artículos Relacionados
+  read_more: Leer más →
+  previous: "← Anterior"
+  next: "Siguiente →"
+  ready_to_transform: ¿Listo para Transformar su Gestión de Proyectos?
+  cta_description: Aplique estos insights con Sinra, la plataforma unificada para equipos modernos.
+  start_free_trial: Iniciar Prueba Gratuita
+  no_posts_in_category: Aún no hay publicaciones en esta categoría. ¡Vuelva pronto!
+  author_bio_description: Ayudamos a los equipos de ingeniería a enviar más rápido, con mayor calidad y menos sorpresas. Aprenda de nuestra experiencia construyendo herramientas de gestión de proyectos que funcionan con cómo los equipos reales realmente trabajan.
+contact:
+  title: Contacto
+  heading: Póngase en contacto hoy
+  description: Estamos aquí para ayudar y responder cualquier pregunta que pueda tener.
+  get_in_touch: Póngase en Contacto
+  get_in_touch_desc: Estamos aquí para ayudar y responder cualquier pregunta que pueda tener. No dude en contactarnos a través de cualquiera de los métodos a continuación.
+  email_title: Email
+  email_desc: Envíenos un email y le responderemos dentro de las 24 horas.
+  email_address: contact@sinra.dev
+  phone_title: Teléfono
+  phone_desc: Llámenos durante el horario comercial para asistencia inmediata.
+  phone_number: "+1 (555) 123-4567"
+  address_title: Dirección
+  address_desc: Visite nuestra oficina para reuniones en persona y consultas.
+  address: "123 Innovation Street, Tech City, TC 12345"
+  hours_title: Horario Comercial
+  hours_desc: Lunes a Viernes, 9:00 AM - 6:00 PM (EST)
+  send_message_title: Envíenos un Mensaje
+  send_message_desc: Complete el formulario a continuación y nos pondremos en contacto con usted lo antes posible.
+  full_name: Nombre Completo
+  email: Email
+  subject: Asunto
+  message: Mensaje
+  send_message: Enviar Mensaje
+  placeholders:
+    full_name: Ingrese su nombre completo...
+    email: Ingrese su email...
+    subject: Seleccione un asunto...
+    message: Ingrese su mensaje...
+  subject_general: Consulta General
+  subject_support: Soporte Técnico
+  subject_sales: Pregunta de Ventas
+  subject_partnership: Asociación
+  validation_error: Por favor complete todos los campos requeridos.
+  sending: Enviando...
+  faq_title: Preguntas Frecuentes
+contact_success:
+  success: Éxito
+  message: Su mensaje ha sido enviado. Estaremos en contacto pronto.
+features: Funcionalidades
+got_to_blog: Ir al Blog
+hero:
+  title: <strong>Organice.</strong> Priorice. Entregue.
+  body: La única herramienta de gestión de proyectos construida para equipos que combinan V-Model y Agile. <strong>Visibilidad completa.</strong> Plataforma unificada. Calidad controlada. No más apagar incendios.
+  button: Probar gratis
+  alt_image: Vista General de Sinra
+why_sinra_title: Por Qué los Equipos Eligen Sinra
+why_sinra_description: Los equipos modernos necesitan equilibrio entre planificación estructurada y flexibilidad de ejecución. Sinra une estos dos mundos en una sola plataforma.
+why_sinra_stats:
+  - stat: "4"
+    label: "herramientas en promedio pueden ser reemplazadas con Sinra"
+  - stat: "40%"
+    label: "de tiempo ahorrado en coordinación de equipo"
+  - stat: "100%"
+    label: "visibilidad del status de release y capacidad"
+why_sinra_benefits:
+  - title: "Visibilidad Completa y Centralizada"
+    description: "Specs, desarrollo, pruebas y releases convergen en una única fuente de verdad. Elimina la fragmentación de información."
+  - title: "Planificación Basada en la Realidad"
+    description: "Entienda con precisión la capacidad y disponibilidad de su equipo. Planifique con sus datos, no a través de estimaciones."
+  - title: "Entrega de Calidad Controlada"
+    description: "QA integrado en el proceso, no aplicado después. Detecte bugs desde el diseño, envíe sin dudas."
+pricing:
+  title: Precios
+  heading: Encuentre el plan perfecto para su negocio
+  description: Todos los planes incluyen nuestra galardonada solución de optimización de ventas para rastrear sus ventas en tiempo real.
+  pricing_faq: Preguntas Frecuentes de Precios
+  discount_badge: "20% DESC - Plan Anual"
+  recommended: "Más Popular"
+  original_price: "Precio original:"
+  promo_code: "Código promocional:"
+  first_year: "Primer año"
+  black_friday_first_year: "Black Friday / Primer Año"
+  ready_to_start: "¿Listo para comenzar?"
+  ready_to_start_desc: "Elija el plan que mejor se adapte a sus necesidades y comience a gestionar sus proyectos de manera más eficiente hoy."
+  start_free_trial: "Iniciar Prueba Gratuita"
+  contact_sales: "Contactar Ventas"
+reduce_complexity: <strong>Organice.</strong> <strong>Priorice.</strong> <strong>Entregue.</strong>
+testimonial: Testimonio
+try_sinra: Pruebe Sinra gratis
+case_studies:
+  title: Cómo los Equipos Transforman su Gestión de Proyectos
+  description: Empresas reales, resultados reales. Vea cómo Sinra ayuda a los equipos a enviar más rápido, mejorar la calidad y reducir la sobrecarga de planificación.
+  challenge: El Desafío
+  solution: La Solución
+  results: Resultados
+  timeline_label: Cronología
+trusted_by:
+  title: Confiado por Equipos en Empresas con Visión de Futuro
+  description: Desde startups SaaS hasta empresas reguladas y agencias digitales, los equipos eligen Sinra para gestionar sus proyectos más complejos.
+  stat_teams: "1000+"
+  stat_teams_label: equipos colaborando con Sinra
+  stat_users: "15,000+"
+  stat_users_label: usuarios enviando más rápido cada mes
+  stat_satisfaction: "98%"
+  stat_satisfaction_label: puntuación de satisfacción del cliente
