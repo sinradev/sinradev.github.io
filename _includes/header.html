@@ -95,13 +95,13 @@
     <!-- Language Switcher Dropdown -->
     <div class="dropdown dropdown-end">
       <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
-        {{ site.active_lang | upcase }}
+        {{ page.lang | default: site.active_lang | upcase }}
       </button>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
         {% for tongue in site.languages %}
         <li>
           <a {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
-             class="{% if tongue == site.active_lang %}active{% endif %}">
+             class="{% if tongue == page.lang %}active{% endif %}">
             {{ tongue | upcase }}
           </a>
         </li>
