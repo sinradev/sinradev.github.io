@@ -1,0 +1,51 @@
+---
+page_id: blog
+lang: es
+layout: default
+permalink: /blog/
+title: "Blog de Sinra - Insights de Gestión de Proyectos"
+description: "Aprenda estrategias modernas de gestión de proyectos, planificación de releases, integración de QA y escalado de equipos. Insights para líderes de ingeniería y gerentes de proyectos."
+heading: "Insights y Estrategias de Gestión de Proyectos"
+---
+
+<div class="content">
+<section class="blog-hero">
+  <div class="container">
+    <h1>{{ page.heading }}</h1>
+    <p class="subtitle">Domine la gestión de proyectos con estrategias de equipos de ingeniería líderes. Aprenda planificación de capacidad, gestión de releases, integración de QA y mejores prácticas de escalado.</p>
+  </div>
+</section>
+
+<section class="blog-posts">
+  {% if site.posts.size > 0 %}
+    {% assign posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
+    {% for post in posts limit: 12 %}
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="date">{{ post.date | date: "%-d de %B de %Y" }}</span>
+          {% if post.category %}
+            <span class="category">{{ post.category }}</span>
+          {% endif %}
+        </div>
+        <h2 class="post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url }}" class="read-more">Leer Artículo →</a>
+      </article>
+    {% endfor %}
+  {% else %}
+    <div class="no-posts">
+      <p>Publicaciones del blog próximamente. Vuelva regularmente para obtener insights sobre gestión de proyectos, planificación de capacidad, gestión de releases y escalado de equipos.</p>
+    </div>
+  {% endif %}
+</section>
+
+<section class="blog-cta">
+  <div class="container">
+    <h2>¿Listo para Transformar su Gestión de Proyectos?</h2>
+    <p>Comience con Sinra y vea cómo la gestión unificada de proyectos impulsa la entrega.</p>
+    <a href="https://app.sinra.dev/users/sign_up" class="button primary">Iniciar Prueba Gratuita</a>
+  </div>
+</section>
+</div>

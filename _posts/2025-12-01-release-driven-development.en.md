@@ -310,7 +310,7 @@ _Note: DevStream is a real company that we have anonymized under a fictitious na
 **Their Process:**
 
 - Build features in 2-week sprints
-- “Deploy when ready"
+- "Deploy when ready"
 - No release planning
 - Constant scope creep
 - Deployments every 4-6 weeks (hoped for 2)
@@ -320,8 +320,8 @@ _Note: DevStream is a real company that we have anonymized under a fictitious na
 - Product kept adding features mid-sprint
 - QA couldn't keep up with testing
 - Deployments delayed 70% of the time
-- Engineers frustrated: “We never know what we're shipping"
-- Customers confused: “What changed in this release?"
+- Engineers frustrated: "We never know what we're shipping"
+- Customers confused: "What changed in this release?"
 
 **Metrics:**
 
@@ -348,7 +348,7 @@ _Note: DevStream is a real company that we have anonymized under a fictitious na
 **Week 2-4:** Build toward release
 
 - Progress visible daily
-- Product requests new feature: “Does it fit?" No—92% capacity already. Add to Release 1.6.
+- Product requests new feature: "Does it fit?" No—92% capacity already. Add to Release 1.6.
 - QA identifies blocker early: Webhook testing needs 3 extra days
 - Adjust timeline: Push release to Feb 4
 
@@ -365,11 +365,11 @@ _Note: DevStream is a real company that we have anonymized under a fictitious na
 - Deployments on time: 95% (vs 30%)
 - Post-deployment hotfixes: 0.5 per release (vs 4)
 - Team morale: 9/10
-- Customer satisfaction: “Finally, predictable releases"
+- Customer satisfaction: "Finally, predictable releases"
 
 **Lead Developer:**
 
-> “We went from constant chaos to predictable delivery. Release-driven development gave us back control."
+> "We went from constant chaos to predictable delivery. Release-driven development gave us back control."
 
 ---
 
@@ -387,7 +387,7 @@ Each release needs:
 
 - A version number
 - A target deployment date
-- Success criteria (e.g., “All planned capabilities complete, 90%+ test coverage")
+- Success criteria (e.g., "All planned capabilities complete, 90%+ test coverage")
 
 ### Step 2: Plan Capacity Per Release
 
@@ -440,7 +440,7 @@ When the release hits 100% complete:
 
 ## Release-Driven vs. Continuous Deployment
 
-**Common Question:** “We do continuous deployment. Doesn't release-driven conflict with that?"
+**Common Question:** "We do continuous deployment. Doesn't release-driven conflict with that?"
 
 **No.** Release-driven development is **orthogonal to deployment frequency**.
 
@@ -453,16 +453,16 @@ You can combine both:
 - Define Release 2.3 with 20 capabilities
 - Assign issues to Release 2.3
 - Deploy completed issues continuously to production
-- Track overall “Release 2.3 readiness"
-- When all 20 capabilities are done, announce “Release 2.3 shipped"
+- Track overall "Release 2.3 readiness"
+- When all 20 capabilities are done, announce "Release 2.3 shipped"
 
-**The difference:** Even with continuous deployment, you have a clear definition of what constitutes a “release" and can communicate that to stakeholders.
+**The difference:** Even with continuous deployment, you have a clear definition of what constitutes a "release" and can communicate that to stakeholders.
 
 ---
 
 ## Common Objections (And Responses)
 
-### Objection 1: “Our priorities change too fast for release planning."
+### Objection 1: "Our priorities change too fast for release planning."
 
 **Response:** Release-driven doesn't prevent change—it makes change visible.
 
@@ -472,17 +472,17 @@ When priorities shift:
 - Adjust release scope
 - Communicate the change
 
-What you gain: **Everyone sees the impact of the change** (e.g., “Adding feature X to Release 2.3 pushes deployment back 1 week").
+What you gain: **Everyone sees the impact of the change** (e.g., "Adding feature X to Release 2.3 pushes deployment back 1 week").
 
-### Objection 2: “We're Agile. Fixed releases feel like Waterfall."
+### Objection 2: "We're Agile. Fixed releases feel like Waterfall."
 
 **Response:** Release-driven isn't Waterfall. You still work in cycles, adapt to feedback, and iterate rapidly.
 
-The difference: You have a **concrete target** (Release 2.3, March 15) instead of a vague goal (“ship features when ready").
+The difference: You have a **concrete target** (Release 2.3, March 15) instead of a vague goal ("ship features when ready").
 
 Agile teams with release discipline ship faster, not slower.
 
-### Objection 3: “Our customers expect new features constantly."
+### Objection 3: "Our customers expect new features constantly."
 
 **Response:** Release-driven enables **faster, more predictable delivery**.
 
@@ -492,11 +492,11 @@ Instead of:
 
 You say:
 
-- “Release 2.3 ships March 15 with user roles and API v2. Release 2.4 ships April 30 with dashboard redesign."
+- "Release 2.3 ships March 15 with user roles and API v2. Release 2.4 ships April 30 with dashboard redesign."
 
 Customers prefer predictability over vague promises.
 
-### Objection 4: “We don't have time to plan releases upfront."
+### Objection 4: "We don't have time to plan releases upfront."
 
 **Response:** You're already planning—just implicitly and poorly.
 
@@ -504,7 +504,7 @@ Release-driven makes planning **explicit and efficient**:
 
 - 2 hours to define a release
 - Zero ongoing maintenance (progress tracked automatically)
-- Saves 5-10 hours/week in “what are we shipping?" meetings
+- Saves 5-10 hours/week in "what are we shipping?" meetings
 
 Upfront planning **saves time**, not costs it.
 
@@ -528,7 +528,7 @@ Release-driven development requires a mindset change:
 
 **This shift improves:**
 
-- **Accountability:** Teams commit to releases, not vague “we're working on it"
+- **Accountability:** Teams commit to releases, not vague "we're working on it"
 - **Communication:** Stakeholders know what's coming and when
 - **Quality:** Testing and documentation are part of release planning, not afterthoughts
 - **Morale:** Teams experience the satisfaction of completing planned releases

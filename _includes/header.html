@@ -94,19 +94,57 @@
   <div class="navbar-end">
     <!-- Language Switcher Dropdown -->
     <div class="dropdown dropdown-end">
-      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
-        {{ site.active_lang | upcase }}
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm" id="lang-button">
+        EN
       </button>
-      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow" id="lang-dropdown">
         {% for tongue in site.languages %}
         <li>
           <a {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %}
-             class="{% if tongue == site.active_lang %}active{% endif %}">
+             data-lang="{{ tongue }}">
             {{ tongue | upcase }}
           </a>
         </li>
         {% endfor %}
       </ul>
     </div>
+    <script>
+      function updateLanguageSwitcher() {
+        var path = window.location.pathname;
+        var currentLang = 'en';
+
+        // Detect language from URL path
+        if (path.indexOf('/fr') === 0 || path.indexOf('/fr/') === 0) {
+          currentLang = 'fr';
+        } else if (path.indexOf('/es') === 0 || path.indexOf('/es/') === 0) {
+          currentLang = 'es';
+        }
+
+        // Update button text
+        var button = document.getElementById('lang-button');
+        if (button) button.textContent = currentLang.toUpperCase();
+
+        // Update active state - force remove from all, then add to current
+        var links = document.querySelectorAll('#lang-dropdown a');
+        links.forEach(function(link) {
+          var lang = link.getAttribute('data-lang');
+          if (lang === currentLang) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+
+      // Run on DOM ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateLanguageSwitcher);
+      } else {
+        updateLanguageSwitcher();
+      }
+
+      // Run again after a short delay to override DaisyUI
+      setTimeout(updateLanguageSwitcher, 100);
+    </script>
   </div>
 </header>
