@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #1a1a1a; }
+      .section-title { font: bold 16px sans-serif; fill: #1a1a1a; }
+      .metric-label { font: 13px sans-serif; fill: #4a5568; }
+      .metric-before { font: bold 16px sans-serif; fill: #dc2626; }
+      .metric-after { font: bold 16px sans-serif; fill: #059669; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">CloudBridge : Avant et Après Sinra</text>
+  <text x="450" y="55" text-anchor="middle" style="font: italic 14px sans-serif; fill: #6b7280;">
+    Équipe de 12 personnes · Plateforme d'infrastructure cloud
+  </text>
+
+  <!-- LEFT SIDE: BEFORE -->
+  <g>
+    <rect x="50" y="80" width="380" height="430" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/>
+    <text x="240" y="110" text-anchor="middle" class="section-title" style="fill: #dc2626;">
+      ❌ Avant Sinra : Communication Dispersée
+    </text>
+
+    <!-- Tools stack -->
+    <rect x="80" y="130" width="320" height="60" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+    <text x="240" y="150" text-anchor="middle" style="font: bold 13px sans-serif; fill: #991b1b;">Stack d'outils</text>
+    <text x="95" y="172" class="metric-label">Notion · Linear · Discord · Slack · Email · GitHub</text>
+
+    <!-- Metrics -->
+    <g transform="translate(0, 210)">
+      <!-- Time searching -->
+      <rect x="80" y="0" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="20" class="metric-label">⏱️ Temps de recherche/semaine</text>
+      <text x="240" y="37" text-anchor="middle" class="metric-before">6-8 heures</text>
+
+      <!-- Onboarding -->
+      <rect x="80" y="55" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="75" class="metric-label">👤 Temps onboarding nouveau dev</text>
+      <text x="240" y="92" text-anchor="middle" class="metric-before">2 semaines</text>
+
+      <!-- Repeated decisions -->
+      <rect x="80" y="110" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="130" class="metric-label">🔄 Débats répétés (6 mois)</text>
+      <text x="240" y="147" text-anchor="middle" class="metric-before">3 fois même débat</text>
+
+      <!-- Desync -->
+      <rect x="80" y="165" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="185" class="metric-label">📄 Documentation désynchronisée</text>
+      <text x="240" y="202" text-anchor="middle" class="metric-before">Fréquent</text>
+
+      <!-- Team morale -->
+      <rect x="80" y="220" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="240" class="metric-label">😓 Frustration équipe</text>
+      <text x="240" y="257" text-anchor="middle" class="metric-before">Élevée</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(450, 300)">
+    <circle cx="0" cy="0" r="30" fill="#2196F3" opacity="0.1"/>
+    <text x="0" y="8" text-anchor="middle" style="font: bold 24px sans-serif; fill: #2196F3;">→</text>
+  </g>
+
+  <!-- RIGHT SIDE: AFTER -->
+  <g>
+    <rect x="470" y="80" width="380" height="430" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="3"/>
+    <text x="660" y="110" text-anchor="middle" class="section-title" style="fill: #059669;">
+      ✅ Après Sinra : Commentary Centralisé
+    </text>
+
+    <!-- New workflow -->
+    <rect x="500" y="130" width="320" height="60" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+    <text x="660" y="150" text-anchor="middle" style="font: bold 13px sans-serif; fill: #065f46;">Workflow simplifié</text>
+    <text x="515" y="172" class="metric-label">Toutes discussions dans Commentary Sinra</text>
+
+    <!-- Metrics -->
+    <g transform="translate(420, 210)">
+      <!-- Time searching -->
+      <rect x="80" y="0" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="20" class="metric-label">⏱️ Temps de recherche/semaine</text>
+      <text x="240" y="37" text-anchor="middle" class="metric-after">&lt;1 heure (-85%)</text>
+
+      <!-- Onboarding -->
+      <rect x="80" y="55" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="75" class="metric-label">👤 Temps onboarding nouveau dev</text>
+      <text x="240" y="92" text-anchor="middle" class="metric-after">3 jours (-85%)</text>
+
+      <!-- Repeated decisions -->
+      <rect x="80" y="110" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="130" class="metric-label">🔄 Débats répétés (6 mois)</text>
+      <text x="240" y="147" text-anchor="middle" class="metric-after">0 (historique accessible)</text>
+
+      <!-- Desync -->
+      <rect x="80" y="165" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="185" class="metric-label">📄 Documentation désynchronisée</text>
+      <text x="240" y="202" text-anchor="middle" class="metric-after">0 (impossible)</text>
+
+      <!-- Team morale -->
+      <rect x="80" y="220" width="320" height="45" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+      <text x="95" y="240" class="metric-label">😊 Moral équipe</text>
+      <text x="240" y="257" text-anchor="middle" class="metric-after">Amélioré ++</text>
+    </g>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="100" y="520" width="700" height="1" fill="#cbd5e0"/>
+</svg>
