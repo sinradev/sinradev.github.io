@@ -44,6 +44,11 @@
   margin: 0;
 }
 
+hr {
+  color: #5b5b5b6b;
+  height: 1px;
+}
+
 /* Post Card */
 .post-card {
   background: rgba(30, 41, 59, 0.6);
@@ -195,7 +200,7 @@
 /* Post Header */
 .post-header {
   padding-bottom: 40px;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid oklch(24.731% 0.02 264.094);
   margin-bottom: 50px;
   position: static !important;
   top: auto !important;
@@ -756,4 +761,8 @@
   .post-content {
     font-size: 0.95rem;
   }
+}
+
+.post-content h4 {
+  padding-top: 5rem;
 }
