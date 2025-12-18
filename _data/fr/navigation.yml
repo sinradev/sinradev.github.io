@@ -1,17 +1,17 @@
 - name: À propos
-  link: /about
+  link: about/
   target: _top
   klass:
 - name: Tarifs
-  link: /pricing
+  link: pricing/
   target: _top
   klass:
 - name: Blog
-  link: /blog
+  link: blog/
   target: _top
   klass:
 - name: Contact
-  link: /contact
+  link: contact/
   target: _top
   klass:
 - name: Se connecter
