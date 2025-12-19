@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .title { font: bold 18px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .subtitle { font: 14px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .label { font: 13px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .small { font: 11px sans-serif; fill: oklch(82.901% 0.031 222.959); opacity: 0.8; }
+      .number { font: bold 16px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="oklch(30.857% 0.023 264.149)"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Charge Temps Réel Par Développeur - Release v2.0</text>
+  <text x="400" y="52" text-anchor="middle" class="small">Livraison : 31 Mars 2025</text>
+
+  <!-- Developer Cards -->
+  <!-- Marc -->
+  <g transform="translate(50, 80)">
+    <rect width="220" height="300" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(86.163% 0.142 94.818)" stroke-width="2" rx="8"/>
+
+    <!-- Header -->
+    <text x="110" y="30" text-anchor="middle" class="subtitle">Marc</text>
+    <text x="110" y="48" text-anchor="middle" class="small">Senior Developer</text>
+
+    <!-- Capacity -->
+    <g transform="translate(20, 70)">
+      <text x="0" y="0" class="label">Capacité Totale</text>
+      <text x="180" y="0" text-anchor="end" class="number">160h</text>
+
+      <rect x="0" y="10" width="180" height="24" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="0" y="10" width="158" height="24" fill="oklch(86.163% 0.142 94.818)" rx="4"/>
+      <text x="90" y="28" text-anchor="middle" class="label" fill="oklch(17.232% 0.028 94.818)">88% allouée</text>
+
+      <text x="0" y="50" class="small">Allouée: 140h</text>
+      <text x="180" y="50" text-anchor="end" class="small" fill="oklch(86.171% 0.142 166.534)">20h dispo</text>
+    </g>
+
+    <!-- Progress -->
+    <g transform="translate(20, 150)">
+      <text x="0" y="0" class="label">Progression</text>
+      <text x="180" y="0" text-anchor="end" class="number" fill="oklch(86.133% 0.141 139.549)">65%</text>
+
+      <rect x="0" y="10" width="180" height="20" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="0" y="10" width="117" height="20" fill="oklch(86.133% 0.141 139.549)" rx="4"/>
+    </g>
+
+    <!-- Features breakdown -->
+    <g transform="translate(20, 200)">
+      <text x="0" y="0" class="label">Assignations</text>
+
+      <g transform="translate(0, 15)">
+        <circle cx="4" cy="0" r="3" fill="oklch(86.133% 0.141 139.549)"/>
+        <text x="12" y="4" class="small">SSO: 80h (60%)</text>
+      </g>
+
+      <g transform="translate(0, 32)">
+        <circle cx="4" cy="0" r="3" fill="oklch(86.133% 0.141 139.549)"/>
+        <text x="12" y="4" class="small">API: 60h (10%)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Sophie -->
+  <g transform="translate(290, 80)">
+    <rect width="220" height="300" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(82.418% 0.099 33.756)" stroke-width="2" rx="8"/>
+
+    <!-- Header -->
+    <text x="110" y="30" text-anchor="middle" class="subtitle">Sophie</text>
+    <text x="110" y="48" text-anchor="middle" class="small">Full Stack Developer</text>
+
+    <!-- Capacity -->
+    <g transform="translate(20, 70)">
+      <text x="0" y="0" class="label">Capacité Totale</text>
+      <text x="180" y="0" text-anchor="end" class="number">160h</text>
+
+      <rect x="0" y="10" width="180" height="24" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="0" y="10" width="180" height="24" fill="oklch(82.418% 0.099 33.756)" rx="4"/>
+      <text x="90" y="28" text-anchor="middle" class="label" fill="oklch(16.483% 0.019 33.756)">100% allouée</text>
+
+      <text x="0" y="50" class="small">Allouée: 160h</text>
+      <text x="180" y="50" text-anchor="end" class="small" fill="oklch(82.418% 0.099 33.756)">0h dispo ⚠️</text>
+    </g>
+
+    <!-- Progress -->
+    <g transform="translate(20, 150)">
+      <text x="0" y="0" class="label">Progression</text>
+      <text x="180" y="0" text-anchor="end" class="number" fill="oklch(86.133% 0.141 139.549)">42%</text>
+
+      <rect x="0" y="10" width="180" height="20" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="0" y="10" width="76" height="20" fill="oklch(86.133% 0.141 139.549)" rx="4"/>
+    </g>
+
+    <!-- Features breakdown -->
+    <g transform="translate(20, 200)">
+      <text x="0" y="0" class="label">Assignations</text>
+
+      <g transform="translate(0, 15)">
+        <circle cx="4" cy="0" r="3" fill="oklch(86.133% 0.141 139.549)"/>
+        <text x="12" y="4" class="small">SSO: 60h (60%)</text>
+      </g>
+
+      <g transform="translate(0, 32)">
+        <circle cx="4" cy="0" r="3" fill="oklch(86.133% 0.141 139.549)"/>
+        <text x="12" y="4" class="small">Analytics: 100h (35%)</text>
+      </g>
+
+      <g transform="translate(0, 55)">
+        <text x="0" y="0" class="small" fill="oklch(82.418% 0.099 33.756)">⚠️ Surchargée</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Thomas -->
+  <g transform="translate(530, 80)">
+    <rect width="220" height="300" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(86.171% 0.142 166.534)" stroke-width="2" rx="8"/>
+
+    <!-- Header -->
+    <text x="110" y="30" text-anchor="middle" class="subtitle">Thomas</text>
+    <text x="110" y="48" text-anchor="middle" class="small">Backend Developer</text>
+
+    <!-- Capacity -->
+    <g transform="translate(20, 70)">
+      <text x="0" y="0" class="label">Capacité Totale</text>
+      <text x="180" y="0" text-anchor="end" class="number">140h</text>
+
+      <rect x="0" y="10" width="180" height="24" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="0" y="10" width="103" height="24" fill="oklch(86.133% 0.141 139.549)" rx="4"/>
+      <text x="90" y="28" text-anchor="middle" class="label">57% allouée</text>
+
+      <text x="0" y="50" class="small">Allouée: 80h</text>
+      <text x="180" y="50" text-anchor="end" class="small" fill="oklch(86.171% 0.142 166.534)">60h dispo ✓</text>
+    </g>
+
+    <!-- Progress -->
+    <g transform="translate(20, 150)">
+      <text x="0" y="0" class="label">Progression</text>
+      <text x="180" y="0" text-anchor="end" class="number" fill="oklch(86.133% 0.141 139.549)">28%</text>
+
+      <rect x="0" y="10" width="180" height="20" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="0" y="10" width="50" height="20" fill="oklch(86.133% 0.141 139.549)" rx="4"/>
+    </g>
+
+    <!-- Features breakdown -->
+    <g transform="translate(20, 200)">
+      <text x="0" y="0" class="label">Assignations</text>
+
+      <g transform="translate(0, 15)">
+        <circle cx="4" cy="0" r="3" fill="oklch(86.133% 0.141 139.549)"/>
+        <text x="12" y="4" class="small">Analytics: 40h (35%)</text>
+      </g>
+
+      <g transform="translate(0, 32)">
+        <circle cx="4" cy="0" r="3" fill="oklch(86.133% 0.141 139.549)"/>
+        <text x="12" y="4" class="small">API: 40h (10%)</text>
+      </g>
+
+      <g transform="translate(0, 55)">
+        <text x="0" y="0" class="small" fill="oklch(86.171% 0.142 166.534)">✓ Disponible pour réallocation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(50, 405)">
+    <rect width="700" height="35" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(86.133% 0.141 139.549)" stroke-width="1" rx="4"/>
+    <text x="350" y="23" text-anchor="middle" class="label" fill="oklch(86.133% 0.141 139.549)">💡 Suggestion : Réallouer 40h de Thomas vers Analytics pour aider Sophie</text>
+  </g>
+</svg>

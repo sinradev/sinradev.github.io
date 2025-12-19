@@ -113,6 +113,42 @@ These promotional colors are **temporary** and isolated to promotion components.
 
 ---
 
+## Blog Content Guidelines
+
+### Illustrations for Blog Posts
+
+**MANDATORY**: Every blog post created must include custom illustrations that:
+
+1. **Visualize the core message** - illustrations must clarify and reinforce the article's main concepts
+2. **Follow brand consistency** - use DaisyUI Dim theme colors and Sinra's visual identity
+3. **Are placed strategically** - insert illustrations at key sections to break up text and maintain reader engagement
+4. **Are format-appropriate** - use SVG for diagrams/icons, WebP with PNG fallback for complex images
+5. **Have descriptive alt text** - ensure accessibility with clear, meaningful descriptions
+
+**Illustration Types to Consider**:
+- **Diagrams** - workflow comparisons (before/after), process flows, architecture
+- **Visual metaphors** - illustrate abstract concepts (fragmentation, synchronization, visibility)
+- **Data visualizations** - charts, graphs, progress indicators, Gantt examples
+- **UI mockups** - annotated screenshots showing Sinra features in action
+- **Infographics** - summarize key statistics or benefits
+
+**Naming Convention**:
+- Store in `assets/images/blog/`
+- Format: `YYYY-MM-DD-post-slug-illustration-name.svg` or `.webp`
+- Example: `2025-12-19-roadmap-incomplete-pm-gantt-comparison.svg`
+
+**Implementation**:
+```markdown
+![Alt Text](/assets/images/blog/illustration-name.svg "Tooltip Title")
+```
+
+**When to Create Illustrations**:
+- Immediately after drafting the blog post content
+- Before requesting user validation
+- Aim for 3-6 illustrations per long-form article (3000+ words)
+
+---
+
 ## Technology Stack
 
 **Fixed**:
