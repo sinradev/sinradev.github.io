@@ -2,7 +2,7 @@
   <div class="text-container">
     <h1>{{ site.data[site.active_lang].strings.hero.title }}</h1>
     <p class="subtext">{{ site.data[site.active_lang].strings.hero.body }}</p>
-    <div class="cta button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.hero.button }}</a></div>
+    <div class="cta"><a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg">{{ site.data[site.active_lang].strings.hero.button }}</a></div>
     <div class="hero-visual">
       <canvas id="solar-system-canvas"></canvas>
       <picture>
@@ -81,7 +81,7 @@
       </div>
       {% endfor %}
     </div>
-    <div class="button alt mt-5"><a href="blog/">{{ site.data[site.active_lang].strings.got_to_blog }}</a></div>
+    <div class="mt-5"><a href="blog/" class="btn btn-secondary">{{ site.data[site.active_lang].strings.got_to_blog }}</a></div>
   </section>
 
   <section class="testimonial-section">
@@ -100,7 +100,7 @@
 
   <section class="bottom-cta">
     <h2>{{ site.data[site.active_lang].strings.reduce_complexity }}</h2>
-    <div class="button alt"><a href="https://app.sinra.dev/users/sign_up">{{ site.data[site.active_lang].strings.try_sinra }}</a></div>
+    <div><a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg">{{ site.data[site.active_lang].strings.try_sinra }}</a></div>
   </section>
 </div>
 

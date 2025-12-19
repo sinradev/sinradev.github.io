@@ -63,12 +63,18 @@ All styling must use the **DaisyUI Dim theme** colors defined in `assets/css/the
 
 **MUST**:
 1. **Use DaisyUI components in HTML first** - leverage built-in component classes (`btn`, `card`, `badge`, `form-control`, etc.) before adding custom CSS
-2. **Use `assets/css/theme.css`** as the primary stylesheet for brand-specific overrides only
-3. **Reference DaisyUI Dim theme variables** for all colors (never hardcode colors except for transient promotional content)
-4. **Use plain CSS** (NO SCSS, NO preprocessors)
-5. **Define new styles within `theme.css`** following existing patterns, but minimize custom CSS by maximizing DaisyUI component usage
-6. **Maintain existing color harmony** - new colors must complement the Dim theme
-7. **Test responsiveness** with DaisyUI breakpoints (md: 768px default)
+2. **NEVER create custom button/component classes** - always use DaisyUI classes:
+   - ❌ `class="button primary"` or `class="cta-button primary"`
+   - ✅ `class="btn btn-primary"`
+   - ❌ `class="submit-button"`
+   - ✅ `class="btn btn-primary"`
+   - Available button modifiers: `btn-primary`, `btn-secondary`, `btn-accent`, `btn-ghost`, `btn-link`, `btn-sm`, `btn-lg`
+3. **Use `assets/css/theme.css`** as the primary stylesheet for brand-specific overrides only
+4. **Reference DaisyUI Dim theme variables** for all colors (never hardcode colors except for transient promotional content)
+5. **Use plain CSS** (NO SCSS, NO preprocessors)
+6. **Define new styles within `theme.css`** following existing patterns, but minimize custom CSS by maximizing DaisyUI component usage
+7. **Maintain existing color harmony** - new colors must complement the Dim theme
+8. **Test responsiveness** with DaisyUI breakpoints (md: 768px default)
 
 **AVOID**:
 - Hardcoded color values (except for temporary promotions like Black Friday)

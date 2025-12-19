@@ -117,7 +117,7 @@
                     {{ plan.call_to_action.text }}
                   </div>
                 {% else %}
-                  <a href="{{ plan.call_to_action.link }}" class="cta-button {% if plan_recommended %}primary{% else %}secondary{% endif %}">
+                  <a href="{{ plan.call_to_action.link }}" class="btn {% if plan_recommended %}btn-primary{% else %}btn-secondary{% endif %}">
                     {{ plan.call_to_action.text }}
                   </a>
                 {% endif %}
@@ -160,10 +160,10 @@
         <h2>{{ site.data[site.active_lang].strings.pricing.ready_to_start }}</h2>
         <p>{{ site.data[site.active_lang].strings.pricing.ready_to_start_desc }}</p>
         <div class="cta-buttons">
-          <a href="https://app.sinra.dev/users/sign_up" class="cta-button primary">
+          <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary">
             {{ site.data[site.active_lang].strings.pricing.start_free_trial }}
           </a>
-          <a href="/contact" class="cta-button secondary">
+          <a href="/contact" class="btn btn-secondary">
             {{ site.data[site.active_lang].strings.pricing.contact_sales }}
           </a>
         </div>
