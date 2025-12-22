@@ -6,3 +6,4 @@ vendor
 
 # Local configuration
 CLAUDE.md
+.DS_Store

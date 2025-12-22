@@ -3483,6 +3483,12 @@ body.banner-active {
   font-weight: 700;
 }
 
+.gtb-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .sticky-banner-content {
@@ -3520,3 +3526,4 @@ body.banner-active {
     font-size: 18px;
   }
 }
+
