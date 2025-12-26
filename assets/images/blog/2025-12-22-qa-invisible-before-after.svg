@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    HealthTech Solutions : Avant vs Après Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- AVANT Section -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ AVANT Sinra
+    </text>
+    <text x="200" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      QA Invisible (Excel + Jira)
+    </text>
+
+    <!-- Metric 1: Coverage -->
+    <rect x="50" y="110" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Couverture QA
+    </text>
+    <text x="330" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      ??? %
+    </text>
+    <text x="200" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Impossible de savoir
+    </text>
+
+    <!-- Metric 2: Forgotten tests -->
+    <rect x="50" y="170" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Tests oubliés
+    </text>
+    <text x="330" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      2 features
+    </text>
+    <text x="200" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Livrées sans aucun test
+    </text>
+
+    <!-- Metric 3: Sync -->
+    <rect x="50" y="230" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Désynchronisation
+    </text>
+    <text x="330" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Fréquente
+    </text>
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      QA teste versions obsolètes
+    </text>
+
+    <!-- Metric 4: Bottleneck -->
+    <rect x="50" y="290" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Goulot QA
+    </text>
+    <text x="330" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Critique
+    </text>
+    <text x="200" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Marie submergée en fin sprint
+    </text>
+
+    <!-- Metric 5: History -->
+    <rect x="50" y="350" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Historique tests
+    </text>
+    <text x="330" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      ❌ Aucun
+    </text>
+    <text x="200" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      "J'ai déjà testé ça ?"
+    </text>
+  </g>
+
+  <!-- APRÈS Section -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ APRÈS Sinra
+    </text>
+    <text x="600" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      QA Unifié (4 mois après)
+    </text>
+
+    <!-- Metric 1: Coverage -->
+    <rect x="450" y="110" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Couverture QA
+    </text>
+    <text x="730" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      78%
+    </text>
+    <text x="600" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Vue automatique temps réel
+    </text>
+
+    <!-- Metric 2: Forgotten tests -->
+    <rect x="450" y="170" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Tests oubliés
+    </text>
+    <text x="730" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      0
+    </text>
+    <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Impossible de livrer sans tests
+    </text>
+
+    <!-- Metric 3: Sync -->
+    <rect x="450" y="230" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Synchronisation
+    </text>
+    <text x="730" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      100%
+    </text>
+    <text x="600" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Dev et QA alignés temps réel
+    </text>
+
+    <!-- Metric 4: Bottleneck -->
+    <rect x="450" y="290" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Goulot QA
+    </text>
+    <text x="730" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      Éliminé
+    </text>
+    <text x="600" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Testing continu tout le sprint
+    </text>
+
+    <!-- Metric 5: History -->
+    <rect x="450" y="350" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Historique tests
+    </text>
+    <text x="730" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      ✅ Complet
+    </text>
+    <text x="600" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Qui, Quand, Résultat, Notes
+    </text>
+  </g>
+
+  <!-- Bottom impact -->
+  <rect x="100" y="415" width="600" height="25" fill="#27ae60" rx="4"/>
+  <text x="400" y="432" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    📈 Impact: 2x tests exécutés • 0 features oubliées • Zéro stress QA
+  </text>
+</svg>
