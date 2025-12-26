@@ -7,6 +7,7 @@ lang: fr
 category: Philosophie
 excerpt: "Les mots comptent. Quand nous avons choisi 'cycles' au lieu de 'sprints', ce n'était pas du rebranding—c'était rejeter la mentalité de course d'Agile et adopter des périodes de travail time-boxed qui respectent la réalité."
 permalink: /philosophie/:year/:month/:day/why-we-abandoned-sprints-for-cycles.html
+featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.svg
 ---
 
 ## Les Mots Façonnent Notre Façon de Travailler

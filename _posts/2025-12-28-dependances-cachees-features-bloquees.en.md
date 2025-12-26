@@ -8,6 +8,7 @@ lang: en
 category: Dependencies
 excerpt: "The dev asks: \"Why has my feature been blocked for 3 weeks?\". You discover it depends on the backend team, who's waiting for the infra team, who's waiting for a CTO decision. Nobody knew. Welcome to hidden dependencies hell."
 permalink: /dependencies/:year/:month/:day/dependances-cachees-features-bloquees.html
+featured_image: /assets/images/blog/2025-12-28-dependances-cachees-featured.svg
 ---
 
 ## The Feature Blocked For 3 Weeks

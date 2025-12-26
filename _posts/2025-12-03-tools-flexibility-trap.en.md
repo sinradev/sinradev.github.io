@@ -8,6 +8,7 @@ lang: en
 category: Methodology
 excerpt: "Modern project management tools promise total flexibility. In reality, this neutrality forces you to spend weeks configuring instead of shipping. Sinra chooses an opinionated approach: a structured framework that guides without constraining."
 permalink: /methodology/:year/:month/:day/flexibility-trap-tools.html
+featured_image: /assets/images/blog/2025-12-03-tools-flexibility-trap-featured.svg
 ---
 
 ## The Promise of Flexibility

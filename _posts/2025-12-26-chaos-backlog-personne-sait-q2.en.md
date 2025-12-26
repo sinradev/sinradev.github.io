@@ -8,6 +8,7 @@ lang: en
 category: Planning
 excerpt: "The Product Manager asks: 'What are we shipping in Q2?'. You open the backlog: 537 unsorted issues, 47 marked 'urgent', 12 different priorities. Nobody has an answer. Welcome to backlog chaos."
 permalink: /planning/:year/:month/:day/backlog-chaos-nobody-knows-q2.html
+featured_image: /assets/images/blog/2025-12-26-chaos-backlog-featured.svg
 ---
 
 ## The Q2 Planning Meeting

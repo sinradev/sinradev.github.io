@@ -8,6 +8,7 @@ lang: fr
 category: Quality Assurance
 excerpt: "Vous êtes à 3 jours de la release. Le CTO demande : « On peut livrer ? ». Vous interrogez la QA. Elle ouvre Excel, compte manuellement, vérifie ses notes, et répond : « Je pense que oui... sauf si j'ai oublié quelque chose ». Bienvenue dans le QA invisible."
 permalink: /quality-assurance/:year/:month/:day/qa-invisible-tests-disperses.html
+featured_image: /assets/images/blog/2025-12-22-qa-invisible-featured.svg
 ---
 
 ## Le Vendredi Avant La Release

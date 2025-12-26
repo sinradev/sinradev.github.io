@@ -8,6 +8,7 @@ lang: es
 category: Planning
 excerpt: "El Product Manager pregunta: '¿Qué entregamos en Q2?'. Abres el backlog: 537 issues sin ordenar, 47 marcadas 'urgente', 12 prioridades diferentes. Nadie tiene una respuesta. Bienvenido al caos del backlog."
 permalink: /planning/:year/:month/:day/caos-backlog-nadie-sabe-q2.html
+featured_image: /assets/images/blog/2025-12-26-chaos-backlog-featured.svg
 ---
 
 ## La Reunión De Planificación Q2

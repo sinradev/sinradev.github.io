@@ -7,6 +7,7 @@ lang: fr
 category: Guide Produit
 excerpt: "Comprendre comment le travail circule dans Sinra : les issues sont les blocs de construction, les capabilities regroupent le travail connexe, et les releases définissent ce qui est livré. Pas de jargon, juste une structure claire."
 permalink: /guide-produit/:year/:month/:day/from-issue-to-release.html
+featured_image: /assets/images/blog/2025-11-26-from-issue-to-release-featured.svg
 ---
 
 ## Le Problème : Perdu en Traduction

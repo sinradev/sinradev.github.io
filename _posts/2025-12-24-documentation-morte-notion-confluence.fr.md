@@ -8,6 +8,7 @@ lang: fr
 category: Documentation
 excerpt: "Votre nouveau développeur demande : « Comment fonctionne l'authentification ? ». Vous pointez vers 3 docs Notion différentes datant de 6 mois. Aucune ne correspond au code actuel. Bienvenue dans le cimetière de la documentation morte."
 permalink: /documentation/:year/:month/:day/documentation-morte-notion-confluence.html
+featured_image: /assets/images/blog/2025-12-24-documentation-morte-featured.svg
 ---
 
 ## Le Premier Jour Du Nouveau Développeur

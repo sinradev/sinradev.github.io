@@ -8,6 +8,7 @@ lang: fr
 category: Planning
 excerpt: "Le Product Manager demande : « Qu'est-ce qu'on livre en Q2 ? ». Vous ouvrez le backlog : 537 issues non triées, 47 marquées « urgent », 12 priorités différentes. Personne n'a de réponse. Bienvenue dans le chaos du backlog."
 permalink: /planning/:year/:month/:day/chaos-backlog-personne-sait-q2.html
+featured_image: /assets/images/blog/2025-12-26-chaos-backlog-featured.svg
 ---
 
 ## La Réunion De Planification Q2

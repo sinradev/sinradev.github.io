@@ -7,6 +7,7 @@ lang: fr
 category: Méthodologie
 excerpt: "La plupart des équipes traitent les déploiements comme des réflexions après coup. Sinra fait des releases le principe organisateur—améliorant la visibilité, la planification de capacité et l'exécution dès le premier jour."
 permalink: /méthodologie/:year/:month/:day/release-driven-development.html
+featured_image: /assets/images/blog/2025-12-01-release-driven-development-featured.svg
 ---
 
 ## La Crise du Déploiement

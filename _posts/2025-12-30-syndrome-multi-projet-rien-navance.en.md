@@ -8,6 +8,7 @@ lang: en
 category: Capacity
 excerpt: "The dev answers: \"I'm on Project A, Project B, Project C and Project D at the same time. I spend my day switching. I finish nothing.\" Welcome to multi-project syndrome."
 permalink: /capacity/:year/:month/:day/syndrome-multi-projet-rien-navance.html
+featured_image: /assets/images/blog/2025-12-30-syndrome-multi-projet-featured.svg
 ---
 
 ## The Dev On 4 Simultaneous Projects

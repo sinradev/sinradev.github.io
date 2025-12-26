@@ -8,6 +8,7 @@ lang: fr
 category: Capacity
 excerpt: "Le dev répond : « Je suis sur Projet A, Projet B, Projet C et Projet D en même temps. Je passe ma journée à switcher. Je ne termine rien. » Bienvenue dans le syndrome du multi-projet."
 permalink: /capacity/:year/:month/:day/syndrome-multi-projet-rien-navance.html
+featured_image: /assets/images/blog/2025-12-30-syndrome-multi-projet-featured.svg
 ---
 
 ## Le Dev Sur 4 Projets Simultanés

@@ -7,6 +7,7 @@ lang: en
 category: Methodology
 excerpt: "Most teams treat deployments as afterthoughts. Sinra makes releases the organizing principle—improving visibility, capacity planning, and execution from day one."
 permalink: /methodology/:year/:month/:day/release-driven-development.html
+featured_image: /assets/images/blog/2025-12-01-release-driven-development-featured.svg
 ---
 
 ## The Deployment Crisis

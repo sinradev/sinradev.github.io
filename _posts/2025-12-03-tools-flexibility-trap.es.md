@@ -8,6 +8,7 @@ lang: es
 category: Methodology
 excerpt: "Las herramientas modernas de gestión de proyectos prometen flexibilidad total. En realidad, esta neutralidad te obliga a pasar semanas configurando en lugar de enviar. Sinra elige un enfoque con opinión: un marco estructurado que guía sin restringir."
 permalink: /methodology/:year/:month/:day/flexibility-trap-tools.html
+featured_image: /assets/images/blog/2025-12-03-tools-flexibility-trap-featured.svg
 ---
 
 ## La Promesa de Flexibilidad

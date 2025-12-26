@@ -8,6 +8,7 @@ lang: en
 category: Quality Assurance
 excerpt: "You're 3 days from release. The CTO asks: 'Can we ship?' You ask QA. She opens Excel, counts manually, checks her notes, and answers: 'I think so... unless I forgot something.' Welcome to invisible QA."
 permalink: /quality-assurance/:year/:month/:day/qa-invisible-tests-dispersed.html
+featured_image: /assets/images/blog/2025-12-22-qa-invisible-featured.svg
 ---
 
 ## The Friday Before Release

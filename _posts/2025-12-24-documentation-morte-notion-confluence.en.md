@@ -8,6 +8,7 @@ lang: en
 category: Documentation
 excerpt: "Your new developer asks: 'How does authentication work?'. You point to 3 different Notion docs from 6 months ago. None match the current code. Welcome to the dead documentation graveyard."
 permalink: /documentation/:year/:month/:day/dead-documentation-notion-confluence.html
+featured_image: /assets/images/blog/2025-12-24-documentation-morte-featured.svg
 ---
 
 ## The New Developer's First Day
