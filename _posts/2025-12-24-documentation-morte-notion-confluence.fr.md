@@ -735,6 +735,15 @@ Les pages structurent, le commentary capture le contexte, la recherche unifie to
 
 ---
 
+## Découvrez aussi la série « Problèmes Invisibles »
+
+- **[Le QA Invisible](/qa/2025/12/22/qa-invisible-tests-disperses.html)** - 847 tests dans Excel : comment rendre le QA visible avec Sinra Testings
+- **[Le Chaos Du Backlog](/planning/2025/12/26/chaos-backlog-personne-sait-q2.html)** - 537 issues chaotiques : comment organiser le travail par releases et cycles
+- **[Les Dépendances Cachées](/dependencies/2025/12/28/dependances-cachees-features-bloquees.html)** - 47% des features bloquées : comment rendre les dépendances visibles
+- **[Le Syndrome Du Multi-Projet](/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html)** - Développeurs sur 4 projets : comment limiter la surcharge
+
+---
+
 **Prêt à ressusciter votre documentation ?** [Démarrez un essai gratuit de Sinra →](https://app.sinra.dev/users/sign_up)
 
 Découvrez une gestion de projet où la documentation vit avec le travail, pas dans un cimetière Notion.

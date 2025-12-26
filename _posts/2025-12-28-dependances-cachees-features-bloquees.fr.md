@@ -841,6 +841,15 @@ Champs dédiés, vue graphique, alertes proactives.
 
 ---
 
+## Découvrez aussi la série « Problèmes Invisibles »
+
+- **[Le QA Invisible](/qa/2025/12/22/qa-invisible-tests-disperses.html)** - 847 tests dans Excel : comment rendre le QA visible avec Sinra Testings
+- **[La Documentation Morte](/documentation/2025/12/24/documentation-morte-notion-confluence.html)** - 127 pages Confluence obsolètes : comment rendre la documentation vivante
+- **[Le Chaos Du Backlog](/planning/2025/12/26/chaos-backlog-personne-sait-q2.html)** - 537 issues chaotiques : comment organiser le travail par releases et cycles
+- **[Le Syndrome Du Multi-Projet](/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html)** - Développeurs sur 4 projets : comment limiter la surcharge
+
+---
+
 **Prêt à rendre vos dépendances visibles ?** [Démarrez un essai gratuit de Sinra →](https://app.sinra.dev/users/sign_up)
 
 Découvrez une gestion de projet où les dépendances sont explicites et traçables, pas cachées et découvertes trop tard.

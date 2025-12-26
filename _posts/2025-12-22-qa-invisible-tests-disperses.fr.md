@@ -651,6 +651,15 @@ Les testings sont liés aux capabilities, l'historique est complet, la synchroni
 
 ---
 
+## Découvrez aussi la série « Problèmes Invisibles »
+
+- **[La Documentation Morte](/documentation/2025/12/24/documentation-morte-confluence-obsolete.html)** - 127 pages Confluence obsolètes : comment rendre la documentation vivante avec Sinra Pages
+- **[Le Chaos Du Backlog](/planning/2025/12/26/chaos-backlog-personne-sait-q2.html)** - 537 issues chaotiques : comment organiser le travail par releases et cycles
+- **[Les Dépendances Cachées](/dependencies/2025/12/28/dependances-cachees-features-bloquees.html)** - 47% des features bloquées : comment rendre les dépendances visibles
+- **[Le Syndrome Du Multi-Projet](/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html)** - Développeurs sur 4 projets : comment limiter la surcharge
+
+---
+
 **Prêt à rendre votre QA visible ?** [Démarrez un essai gratuit de Sinra →](https://app.sinra.dev/users/sign_up)
 
 Découvrez une gestion de projet où les tests sont liés au développement, pas perdus dans Excel.

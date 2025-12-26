@@ -2,7 +2,54 @@
 layout: default
 ---
 
-<article class="post-container">
+<!-- Schema.org JSON-LD for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.description | escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Sinra"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinra",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/sinra-logo.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }{% if page.featured_image %},
+  "image": "{{ site.url }}{{ page.featured_image }}"{% endif %}
+}
+</script>
+
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs" aria-label="breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">{{ site.data[page.lang].strings.navigation.home | default: "Home" }}</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">{{ page.title }}</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+<article class="post-container" itemscope itemtype="https://schema.org/BlogPosting">
   <!-- Post Header -->
   <header class="post-header">
     <h1>{{ page.title }}</h1>

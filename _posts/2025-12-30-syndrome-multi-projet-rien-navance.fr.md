@@ -815,6 +815,15 @@ Champ « Projects », vue d'allocation, alertes automatiques.
 
 ---
 
+## Découvrez aussi la série « Problèmes Invisibles »
+
+- **[Le QA Invisible](/qa/2025/12/22/qa-invisible-tests-disperses.html)** - 847 tests dans Excel : comment rendre le QA visible avec Sinra Testings
+- **[La Documentation Morte](/documentation/2025/12/24/documentation-morte-notion-confluence.html)** - 127 pages Confluence obsolètes : comment rendre la documentation vivante
+- **[Le Chaos Du Backlog](/planning/2025/12/26/chaos-backlog-personne-sait-q2.html)** - 537 issues chaotiques : comment organiser le travail par releases et cycles
+- **[Les Dépendances Cachées](/dependencies/2025/12/28/dependances-cachees-features-bloquees.html)** - 47% des features bloquées : comment rendre les dépendances visibles
+
+---
+
 **Prêt à éliminer le multi-projet ?** [Démarrez un essai gratuit de Sinra →](https://app.sinra.dev/users/sign_up)
 
 Découvrez une gestion de projet où les développeurs sont focalisés sur 1-2 projets max, pas éparpillés sur 4+.
