@@ -7,7 +7,7 @@ lang: es
 category: Methodology
 excerpt: "La mayoría de los equipos tratan los despliegues como ocurrencias tardías. Sinra hace de los releases el principio organizador, mejorando la visibilidad, planificación de capacidad y ejecución desde el primer día."
 permalink: /methodology/:year/:month/:day/release-driven-development.html
-featured_image: /assets/images/blog/2025-12-01-release-driven-development-featured.svg
+featured_image: /assets/images/blog/2025-12-01-release-driven-development-featured.png
 ---
 
 ## La Crisis de Despliegue

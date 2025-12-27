@@ -8,7 +8,7 @@ lang: fr
 category: Méthodologie
 excerpt: "Les outils modernes de gestion de projet promettent une flexibilité totale. En réalité, cette neutralité vous force à passer des semaines à configurer au lieu de livrer. Sinra choisit une approche opiniated : un cadre structuré qui guide sans enfermer."
 permalink: /méthodologie/:year/:month/:day/piege-flexibilite-outils.html
-featured_image: /assets/images/blog/2025-12-03-tools-flexibility-trap-featured.svg
+featured_image: /assets/images/blog/2025-12-03-tools-flexibility-trap-featured.png
 ---
 
 ## La Promesse de la Flexibilité

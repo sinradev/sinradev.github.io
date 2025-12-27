@@ -8,7 +8,7 @@ lang: en
 category: Product Management
 excerpt: "You plan a roadmap. Three weeks later, you discover half your features are delayed, nobody knows who's working on what, and you've forgotten two critical functionalities. Welcome to the PO/PM reality."
 permalink: /product-management/:year/:month/:day/roadmap-incomplete-po-pm.html
-featured_image: /assets/images/blog/2025-12-19-roadmap-incomplete-featured.svg
+featured_image: /assets/images/blog/2025-12-19-roadmap-incomplete-featured.png
 ---
 
 ## The Daily Life of a Product Owner

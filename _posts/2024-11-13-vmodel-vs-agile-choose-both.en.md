@@ -7,7 +7,7 @@ lang: en
 category: Methodology
 excerpt: "Most teams face a false choice: V-Model or Agile. But the best projects use both. Learn why hybrid methodologies win and how to implement them."
 permalink: /methodology/:year/:month/:day/vmodel-vs-agile-choose-both.html
-featured_image: /assets/images/blog/2024-11-13-vmodel-vs-agile-featured.svg
+featured_image: /assets/images/blog/2024-11-13-vmodel-vs-agile-featured.png
 ---
 
 ## The Myth of the Binary Choice

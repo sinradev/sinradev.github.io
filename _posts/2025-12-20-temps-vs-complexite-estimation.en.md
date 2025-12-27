@@ -8,7 +8,7 @@ lang: en
 category: Methodology
 excerpt: "Planning poker. The team debates for 20 minutes: \"Is it a 5 or an 8?\". Nobody knows what that represents in real time. Six weeks later, you discover that the \"5\" took 3 weeks. Story points lie."
 permalink: /methodology/:year/:month/:day/time-vs-complexity-estimation.html
-featured_image: /assets/images/blog/2025-12-20-time-vs-complexity-featured.svg
+featured_image: /assets/images/blog/2025-12-20-time-vs-complexity-featured.png
 ---
 
 ## The Planning Poker That Goes Wrong

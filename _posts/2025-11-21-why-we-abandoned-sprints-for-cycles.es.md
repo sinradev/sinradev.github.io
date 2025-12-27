@@ -7,7 +7,7 @@ lang: es
 category: Philosophy
 excerpt: "Las palabras importan. Cuando elegimos 'cycles' sobre 'sprints', no fue solo cambio de marca, fue rechazar la mentalidad de carrera de Agile y adoptar períodos de trabajo con límites de tiempo que respetan la realidad."
 permalink: /philosophy/:year/:month/:day/why-we-abandoned-sprints-for-cycles.html
-featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.svg
+featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png
 ---
 
 ## Las Palabras Dan Forma a Cómo Trabajamos

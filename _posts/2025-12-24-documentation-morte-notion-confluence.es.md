@@ -8,7 +8,7 @@ lang: es
 category: Documentation
 excerpt: "Tu nuevo desarrollador pregunta: '¿Cómo funciona la autenticación?'. Señalas 3 docs diferentes de Notion de hace 6 meses. Ninguno coincide con el código actual. Bienvenido al cementerio de documentación muerta."
 permalink: /documentation/:year/:month/:day/documentacion-muerta-notion-confluence.html
-featured_image: /assets/images/blog/2025-12-24-documentation-morte-featured.svg
+featured_image: /assets/images/blog/2025-12-24-documentation-morte-featured.png
 ---
 
 ## El Primer Día Del Nuevo Desarrollador

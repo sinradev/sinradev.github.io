@@ -8,7 +8,7 @@ lang: es
 category: Metodología
 excerpt: "Discutes una feature en Discord. La escribes en Notion. La trackeas en Linear. Tres meses después, imposible de encontrar por qué tomaste esa decisión. La comunicación dispersa mata el contexto."
 permalink: /metodología/:year/:month/:day/comunicacion-dispersa-features.html
-featured_image: /assets/images/blog/2025-12-18-dispersed-communication-featured.svg
+featured_image: /assets/images/blog/2025-12-18-dispersed-communication-featured.png
 ---
 
 ## El Escenario Familiar

@@ -7,7 +7,7 @@ lang: en
 category: Philosophy
 excerpt: "Words matter. When we chose 'cycles' over 'sprints', it wasn't just rebranding—it was rejecting the race mentality of Agile and embracing time-boxed work periods that respect reality."
 permalink: /philosophy/:year/:month/:day/why-we-abandoned-sprints-for-cycles.html
-featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.svg
+featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png
 ---
 
 ## Words Shape How We Work

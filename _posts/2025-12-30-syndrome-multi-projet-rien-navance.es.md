@@ -8,7 +8,7 @@ lang: es
 category: Capacity
 excerpt: "El dev responde: \"Estoy en Proyecto A, Proyecto B, Proyecto C y Proyecto D al mismo tiempo. Paso mi día cambiando. No termino nada.\" Bienvenido al síndrome multi-proyecto."
 permalink: /capacity/:year/:month/:day/syndrome-multi-projet-rien-navance.html
-featured_image: /assets/images/blog/2025-12-30-syndrome-multi-projet-featured.svg
+featured_image: /assets/images/blog/2025-12-30-syndrome-multi-projet-featured.png
 ---
 
 ## El Dev En 4 Proyectos Simultáneos

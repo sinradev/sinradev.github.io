@@ -7,7 +7,7 @@ lang: en
 category: Product Guide
 excerpt: "Understanding how work flows through Sinra: issues are the building blocks, capabilities group related work, and releases define what ships. No jargon, just clear structure."
 permalink: /product-guide/:year/:month/:day/from-issue-to-release.html
-featured_image: /assets/images/blog/2025-11-26-from-issue-to-release-featured.svg
+featured_image: /assets/images/blog/2025-11-26-from-issue-to-release-featured.png
 ---
 
 ## The Problem: Lost in Translation

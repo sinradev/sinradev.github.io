@@ -8,7 +8,7 @@ lang: en
 category: Methodology
 excerpt: "You discuss a feature in Discord. You write it in Notion. You track it in Linear. Three months later, impossible to find why you made that decision. Dispersed communication kills context."
 permalink: /methodology/:year/:month/:day/dispersed-communication-features.html
-featured_image: /assets/images/blog/2025-12-18-dispersed-communication-featured.svg
+featured_image: /assets/images/blog/2025-12-18-dispersed-communication-featured.png
 ---
 
 ## The Familiar Scenario

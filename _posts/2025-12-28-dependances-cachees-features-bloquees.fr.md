@@ -8,7 +8,7 @@ lang: fr
 category: Dependencies
 excerpt: "Le dev demande : « Pourquoi ma feature est bloquée depuis 3 semaines ? ». Vous découvrez qu'elle dépend de l'équipe backend, qui attend l'équipe infra, qui attend une décision du CTO. Personne ne le savait. Bienvenue dans l'enfer des dépendances cachées."
 permalink: /dependencies/:year/:month/:day/dependances-cachees-features-bloquees.html
-featured_image: /assets/images/blog/2025-12-28-dependances-cachees-featured.svg
+featured_image: /assets/images/blog/2025-12-28-dependances-cachees-featured.png
 ---
 
 ## La Feature Bloquée Depuis 3 Semaines

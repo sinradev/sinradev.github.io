@@ -8,7 +8,7 @@ lang: fr
 category: Méthodologie
 excerpt: "Vous discutez d'une feature dans Discord. Vous l'écrivez dans Notion. Vous la trackez dans Linear. Trois mois plus tard, impossible de retrouver pourquoi vous avez pris cette décision. La communication dispersée tue le contexte."
 permalink: /méthodologie/:year/:month/:day/communication-dispersee-features.html
-featured_image: /assets/images/blog/2025-12-18-dispersed-communication-featured.svg
+featured_image: /assets/images/blog/2025-12-18-dispersed-communication-featured.png
 ---
 
 ## Le Scénario Familier
