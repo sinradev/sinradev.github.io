@@ -20,7 +20,7 @@ Une startup SaaS lançant un nouveau processeur de paiement a besoin de *spécif
 
 Le problème n'est pas les méthodologies—c'est que les managers sont forcés de choisir tout-ou-rien.
 
-![Dilemme Faux Choix](/assets/images/false-choice-dilemma.svg « Le Faux Choix Binaire »)
+![Dilemme Faux Choix](/assets/images/false-choice-dilemma.svg "Le Faux Choix Binaire")
 
 ---
 
@@ -38,7 +38,7 @@ La vraie capacité reste invisible jusqu'à 60% du développement. Vous planifie
 
 Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patient. Ils ont découvert des problèmes d'intégration au mois 4—mais ils avaient déjà promis le lancement aux administrateurs hospitaliers. Les 2 derniers mois: mode panique, features coupées, tests coupés, qualité coupée.
 
-![Diagramme V-Model Waterfall](/assets/images/vmodel-waterfall-diagram.svg « Approche V-Model / Waterfall »)
+![Diagramme V-Model Waterfall](/assets/images/vmodel-waterfall-diagram.svg "Approche V-Model / Waterfall")
 
 ---
 
@@ -54,9 +54,9 @@ Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patien
 **Le Piège Agile:**
 10+ heures par semaine en standups. Repriorisation constante. Features à moitié construites parce que les exigences ont changé. Équipes refaisant du travail parce que les décisions vivent dans les threads Slack.
 
-Exemple: Une agence a pris l'approche « pure Agile » pour une refonte de CMS. Pas de spécifications. Juste « construis un dashboard. » 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement reconstruit. L'équipe avait optimisé pour la vélocité, pas la valeur.
+Exemple: Une agence a pris l'approche "pure Agile" pour une refonte de CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement reconstruit. L'équipe avait optimisé pour la vélocité, pas la valeur.
 
-![Diagramme Agile Itératif](/assets/images/agile-iterative-diagram.svg « Approche Agile / Itérative »)
+![Diagramme Agile Itératif](/assets/images/agile-iterative-diagram.svg "Approche Agile / Itérative")
 
 ---
 
@@ -88,7 +88,7 @@ Les équipes performantes ne choisissent pas entre V-Model et Agile—elles **ut
 
 C'est ce qui fonctionne. **Pas Agile. Pas Waterfall. Les deux.**
 
-![Phases Méthodologie Hybride](/assets/images/hybrid-methodology-phases.svg « Pourquoi la Méthodologie Hybride Gagne »)
+![Phases Méthodologie Hybride](/assets/images/hybrid-methodology-phases.svg "Pourquoi la Méthodologie Hybride Gagne")
 
 ---
 
@@ -166,7 +166,7 @@ La méthodologie hybride ne fonctionne *que si* vous pouvez voir:
 
 Sans visibilité, hybride devient de l'imprévisibilité.
 
-![Workflow d'Implémentation](/assets/images/implementation-workflow.svg « Implémenter une Méthodologie Hybride »)
+![Workflow d'Implémentation](/assets/images/implementation-workflow.svg "Implémenter une Méthodologie Hybride")
 
 ---
 
@@ -214,7 +214,7 @@ Une plateforme. Visibilité unifiée. Pas de changement entre outils. Vraie plan
 
 Arrêtez de choisir entre V-Model et Agile. Les meilleures équipes utilisent les deux.
 
-La question n'est pas « V-Model ou Agile? » La question est: **« Comment appliquons-nous la bonne méthodologie à chaque phase de notre travail? »**
+La question n'est pas "V-Model ou Agile?" La question est: **"Comment appliquons-nous la bonne méthodologie à chaque phase de notre travail?"**
 
 Les équipes qui répondent cette question livrent plus vite, avec meilleure qualité, et moins de surprises.
 
