@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    Développeur Devine → Code 2 Jours → Tout Est À Refaire
+  </text>
+
+  <!-- Story -->
+  <rect x="50" y="60" width="220" height="80" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="160" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    USER-445
+  </text>
+  <text x="60" y="102" font-family="Arial, sans-serif" font-size="10" fill="#1e3a8a">
+    En tant qu'utilisateur,
+  </text>
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="10" fill="#1e3a8a">
+    je veux éditer mon profil.
+  </text>
+
+  <!-- Arrow to dev -->
+  <path d="M 270 100 L 330 100" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow1)"/>
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Dev guesses -->
+  <rect x="340" y="60" width="200" height="140" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="440" y="80" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#92400e">
+    Dev devine
+  </text>
+  <text x="350" y="102" font-family="Arial, sans-serif" font-size="10" fill="#78350f">
+    "PO pas dispo, je fais
+  </text>
+  <text x="350" y="119" font-family="Arial, sans-serif" font-size="10" fill="#78350f">
+    au feeling..."
+  </text>
+  <text x="350" y="142" font-family="Arial, sans-serif" font-size="9" fill="#78350f">
+    ✓ Page /profile/edit
+  </text>
+  <text x="350" y="158" font-family="Arial, sans-serif" font-size="9" fill="#78350f">
+    ✓ Champs : Nom, Email,
+  </text>
+  <text x="350" y="174" font-family="Arial, sans-serif" font-size="9" fill="#78350f">
+      Photo, Bio
+  </text>
+  <text x="350" y="190" font-family="Arial, sans-serif" font-size="9" fill="#78350f">
+    ✓ Boutons Sauvegarder/
+  </text>
+  <text x="350" y="195" font-family="Arial, sans-serif" font-size="9" fill="#78350f">
+      Annuler
+  </text>
+
+  <!-- Arrow to coding -->
+  <path d="M 540 130 L 600 130" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow1)"/>
+
+  <!-- Coding -->
+  <rect x="610" y="60" width="140" height="80" rx="6" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+  <text x="680" y="80" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#15803d">
+    💻 Code
+  </text>
+  <text x="680" y="102" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#166534">
+    2 jours
+  </text>
+  <text x="680" y="120" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#166534">
+    de développement
+  </text>
+
+  <!-- Arrow to review -->
+  <path d="M 680 140 L 680 180" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow1)"/>
+
+  <!-- Review -->
+  <rect x="560" y="190" width="240" height="140" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+  <text x="680" y="215" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#991b1b">
+    ❌ Sprint Review
+  </text>
+  <text x="570" y="240" font-family="Arial, sans-serif" font-size="10" fill="#7f1d1d">
+    PO : "Non, ce n'est pas ça."
+  </text>
+  <text x="570" y="260" font-family="Arial, sans-serif" font-size="9" fill="#7f1d1d">
+    • L'édition devait être inline,
+  </text>
+  <text x="570" y="276" font-family="Arial, sans-serif" font-size="9" fill="#7f1d1d">
+      pas sur page dédiée
+  </text>
+  <text x="570" y="292" font-family="Arial, sans-serif" font-size="9" fill="#7f1d1d">
+    • Il fallait aussi : téléphone,
+  </text>
+  <text x="570" y="308" font-family="Arial, sans-serif" font-size="9" fill="#7f1d1d">
+      adresse
+  </text>
+
+  <!-- Refaire -->
+  <rect x="50" y="230" width="240" height="100" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+  <text x="170" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#991b1b">
+    🔄 Tout à refaire
+  </text>
+  <text x="170" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f1d1d">
+    2 jours de travail perdus
+  </text>
+  <text x="170" y="305" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f1d1d">
+    Code jamais utilisé
+  </text>
+
+  <!-- Stats box -->
+  <rect x="340" y="230" width="200" height="100" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="440" y="255" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#92400e">
+    📊 Statistique Réelle
+  </text>
+  <text x="440" y="280" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350f">
+    67% des développeurs
+  </text>
+  <text x="440" y="300" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350f">
+    ont dû "deviner" au moins
+  </text>
+  <text x="440" y="318" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350f">
+    une fois par sprint
+  </text>
+
+  <!-- Bottom warning -->
+  <rect x="100" y="360" width="600" height="30" rx="4" fill="#fee2e2"/>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#991b1b">
+    ❌ Story vague + PO indisponible = Développeur devine = Gaspillage
+  </text>
+</svg>

@@ -143,6 +143,17 @@ These promotional colors are **temporary** and isolated to promotion components.
 - Format: `YYYY-MM-DD-post-slug-illustration-name.svg` or `.webp`
 - Example: `2025-12-19-roadmap-incomplete-pm-gantt-comparison.svg`
 
+**Featured Images** (Open Graph/Social Media):
+- **MANDATORY FORMAT**: PNG only (`.png`)
+- Dimensions: 1200x630px (Open Graph standard)
+- Naming: `YYYY-MM-DD-post-slug-featured.png`
+- If created as SVG first, convert to PNG using ImageMagick:
+  ```bash
+  magick featured.svg -resize 1200x630 featured.png
+  ```
+- Store in `assets/images/blog/`
+- Referenced in post front matter: `featured_image: /assets/images/blog/YYYY-MM-DD-post-slug-featured.png`
+
 **Implementation**:
 ```markdown
 ![Alt Text](/assets/images/blog/illustration-name.svg "Tooltip Title")
