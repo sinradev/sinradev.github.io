@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    Perte De Souveraineté Des Données
+  </text>
+
+  <!-- Your belief (top) -->
+  <rect x="150" y="70" width="500" height="80" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="400" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    💭 Ce Que Vos Clients Croient
+  </text>
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#065f46">
+    « Mes données sont en France, hébergées à Paris »
+  </text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#065f46">
+    « Elles sont sécurisées et sous contrôle français »
+  </text>
+
+  <!-- Arrow down -->
+  <path d="M 400 150 L 400 185" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrowdown)"/>
+  <defs>
+    <marker id="arrowdown" markerWidth="10" markerHeight="10" refX="3" refY="9" orient="auto">
+      <polygon points="0 0, 6 0, 3 10" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <!-- Reality (bottom) -->
+  <rect x="50" y="185" width="700" height="220" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/>
+  <text x="400" y="215" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#991b1b">
+    ⚠️ La Réalité
+  </text>
+
+  <!-- Three boxes -->
+  <rect x="70" y="235" width="210" height="150" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1"/>
+  <text x="175" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    1. Juridiction US
+  </text>
+  <text x="80" y="285" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Hébergeur = entreprise
+  </text>
+  <text x="92" y="300" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    américaine (AWS, GCP)
+  </text>
+  <text x="80" y="320" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Soumis au Cloud Act
+  </text>
+  <text x="80" y="340" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Soumis au FISA 702
+  </text>
+  <text x="80" y="360" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Peut être contraint de
+  </text>
+  <text x="92" y="375" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    transmettre vos données
+  </text>
+
+  <rect x="295" y="235" width="210" height="150" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1"/>
+  <text x="400" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    2. Accès Interne
+  </text>
+  <text x="305" y="285" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Ingénieurs AWS/GCP
+  </text>
+  <text x="317" y="300" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    (basés aux US) peuvent
+  </text>
+  <text x="317" y="315" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    accéder techniquement
+  </text>
+  <text x="305" y="335" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Pas de transparence
+  </text>
+  <text x="317" y="350" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    sur qui accède à quoi
+  </text>
+  <text x="305" y="370" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Pas de contrôle
+  </text>
+
+  <rect x="520" y="235" width="210" height="150" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1"/>
+  <text x="625" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    3. Transferts Données
+  </text>
+  <text x="530" y="285" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Logs, backups,
+  </text>
+  <text x="542" y="300" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    métadonnées peuvent
+  </text>
+  <text x="542" y="315" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    être répliqués vers US
+  </text>
+  <text x="530" y="335" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Pas de contrôle sur
+  </text>
+  <text x="542" y="350" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    ces transferts
+  </text>
+  <text x="530" y="370" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+    • Opacité totale
+  </text>
+
+  <!-- Conclusion -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    Résultat: Vous avez perdu le contrôle de vos données
+  </text>
+</svg>

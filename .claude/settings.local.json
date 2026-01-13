@@ -29,7 +29,9 @@
       "Bash(git pull:*)",
       "Bash(curl:*)",
       "Bash(ls:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(convert:*)",
+      "Bash(magick convert:*)"
     ],
     "deny": [],
     "ask": [],
