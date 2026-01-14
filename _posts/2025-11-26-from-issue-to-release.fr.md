@@ -2,7 +2,7 @@
 layout: post
 title: "De l'Issue à la Release : Comment Sinra Structure Votre Travail"
 subtitle: "Un guide pratique du parcours d'une fonctionnalité de sa conception à sa livraison"
-description: "Suivez une fonctionnalité à travers la hiérarchie de Sinra—des issues individuelles aux capabilities jusqu'aux releases—et découvrez comment une structure concrète crée de la clarté au lieu de la complexité."
+description: "Suivez une fonctionnalité à travers la hiérarchie de Sinra - des issues individuelles aux capabilities jusqu'aux releases - et découvrez comment une structure concrète crée de la clarté au lieu de la complexité."
 lang: fr
 category: Guide Produit
 excerpt: "Comprendre comment le travail circule dans Sinra : les issues sont les blocs de construction, les capabilities regroupent le travail connexe, et les releases définissent ce qui est livré. Pas de jargon, juste une structure claire."
@@ -44,7 +44,7 @@ Dans les outils traditionnels, vous pourriez créer :
 
 ## Niveau 1 : Issues (Les Blocs de Construction)
 
-**Les issues sont des items de travail individuels.** Bugs, tâches, fonctionnalités—tout ce qu'une personne fait est une issue.
+**Les issues sont des items de travail individuels.** Bugs, tâches, fonctionnalités - tout ce qu'une personne fait est une issue.
 
 Pour la 2FA, vous créez ces issues :
 
@@ -254,7 +254,7 @@ Résultat : **15 minutes pour configurer, zéro maintenance**
 
 **Retour d'équipe :**
 > "On a arrêté de passer du temps à gérer Jira et on a commencé à livrer des fonctionnalités. La hiérarchie a du sens."
-> — Lead Developer, PayFast
+>  -  Lead Developer, PayFast
 
 ---
 
@@ -301,7 +301,7 @@ Non. Chaque issue appartient à une capability (ou aucune). Si le travail s'éte
 Sinra suit les dépendances entre issues et capabilities. Marquez les dépendances, et le système met en évidence les blocages dans votre workflow.
 
 **Q : Et si les priorités changent en cours de release ?**
-Déplacez les issues entre capabilities ou releases selon les besoins. Sinra ne force pas d'engagements de sprint rigides—adaptez-vous quand la réalité change.
+Déplacez les issues entre capabilities ou releases selon les besoins. Sinra ne force pas d'engagements de sprint rigides - adaptez-vous quand la réalité change.
 
 **Q : Comment voir sur quoi mon équipe travaille en ce moment ?**
 Filtrez par cycle actuel + équipe + statut in_progress. Vous verrez exactement ce qui est actif.
@@ -328,7 +328,7 @@ Quand votre outil parle le même langage que votre équipe, le travail circule p
 
 1. **Identifiez votre prochaine fonctionnalité.** Qu'est-ce que vous construisez ?
 2. **Créez une capability.** Nommez-la concrètement (pas "Epic: User Mgmt" mais "Permissions de Rôle Utilisateur")
-3. **Décomposez-la en issues.** Développement, design, testing—tout ce qu'une personne fait
+3. **Décomposez-la en issues.** Développement, design, testing - tout ce qu'une personne fait
 4. **Assignez à une release.** Dans quelle version cela sera-t-il livré ?
 5. **Commencez à construire.** Suivez la progression en temps réel, ajustez selon les besoins
 

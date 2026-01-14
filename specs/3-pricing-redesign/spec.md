@@ -23,7 +23,7 @@ When customers visit the pricing page, they want to understand both monthly and 
 
 **Acceptance Scenarios**:
 
-1. **Given** a customer visits the pricing page, **When** they view the Sinra Pro plan card, **Then** they see two price frames side-by-side—one for monthly billing, one for annual billing
+1. **Given** a customer visits the pricing page, **When** they view the Sinra Pro plan card, **Then** they see two price frames side-by-side - one for monthly billing, one for annual billing
 2. **Given** the annual and monthly frames are displayed together, **When** the customer scans the card, **Then** the annual option is visually emphasized (larger, bolder, or highlighted) to indicate it as the recommended choice
 3. **Given** Black Friday promotion is active, **When** customers view the annual pricing frame, **Then** they see the promotional pricing with the original price struck through, the discounted price prominently displayed, and the promo code visible
 4. **Given** the pricing frames are displayed on mobile, tablet, and desktop, **When** a customer views them at any breakpoint, **Then** both frames remain visible and the annual option remains emphasized
@@ -49,7 +49,7 @@ The product roadmap includes an AI-powered feature called "Sinra Specif-AI" that
 
 ### User Story 3 - Visual Consistency and Layout Preservation (Priority: P1)
 
-The product team has invested in a specific visual design language for pricing cards. Customers expect consistency across the site, and the design team has carefully calibrated visual hierarchy, spacing, and component styling. Any restructuring must preserve the existing visual aesthetic—the card layout, typography, color scheme, spacing, and interactive elements should remain unchanged, with modifications limited to content organization within cards.
+The product team has invested in a specific visual design language for pricing cards. Customers expect consistency across the site, and the design team has carefully calibrated visual hierarchy, spacing, and component styling. Any restructuring must preserve the existing visual aesthetic - the card layout, typography, color scheme, spacing, and interactive elements should remain unchanged, with modifications limited to content organization within cards.
 
 **Why this priority**: Maintaining visual consistency reinforces brand identity and prevents user confusion from unexpected layout changes. Preserving the current design ensures that existing brand positioning and customer familiarity remain intact while adding new content.
 
@@ -77,11 +77,11 @@ The product team has invested in a specific visual design language for pricing c
 
 - **FR-001**: Single plan card for Sinra Pro MUST display both monthly and annual pricing options in separate frames positioned side-by-side
 - **FR-002**: Annual pricing frame MUST be visually emphasized compared to monthly frame (through size, color, contrast, or visual weight) to indicate it as the recommended choice
-- **FR-003**: Black Friday promotion system MUST continue to work—when active, the annual frame MUST display promotional pricing with original price struck through, discounted price, and promo code visible
+- **FR-003**: Black Friday promotion system MUST continue to work - when active, the annual frame MUST display promotional pricing with original price struck through, discounted price, and promo code visible
 - **FR-004**: The second plan card MUST be renamed to "Sinra Specif-AI" to introduce the new AI-powered feature tier and MUST be visible on the pricing page at all times (not hidden or feature-flagged)
 - **FR-005**: Sinra Specif-AI plan MUST display a "Coming Soon" badge instead of a "Try Free" or "Start Free Trial" call-to-action button to communicate its upcoming status while building market awareness
 - **FR-006**: Sinra Specif-AI plan features list MUST include new AI-powered specification capabilities (e.g., "AI-powered issue specification", "Automated capability definition", "AI-generated project templates", "AI-assisted requirement generation")
-- **FR-007**: Monthly and annual frames MUST maintain visual consistency with current card styling—no changes to font sizes, weights, card dimensions, or spacing
+- **FR-007**: Monthly and annual frames MUST maintain visual consistency with current card styling - no changes to font sizes, weights, card dimensions, or spacing
 - **FR-008**: All existing plan features, descriptions, and metadata for Sinra Pro MUST be preserved and accessible in both billing options
 - **FR-009**: Pricing data structure (YAML) MUST be updated to support the unified plan with dual pricing options while maintaining backward compatibility where possible
 - **FR-010**: Responsive design MUST accommodate the side-by-side frames across mobile, tablet, and desktop breakpoints without breaking layout
@@ -102,11 +102,11 @@ The product team has invested in a specific visual design language for pricing c
 
 - **SC-001**: Dual pricing frames are displayed side-by-side on desktop and tablet (> 768px width) with annual frame visually emphasized
 - **SC-002**: 75%+ of test users (10+ participants) can quickly identify both monthly and annual costs for Sinra Pro without visual confusion
-- **SC-003**: Black Friday promotion system continues to function correctly—when active, promotional pricing, strike-through, and promo code display as expected
+- **SC-003**: Black Friday promotion system continues to function correctly - when active, promotional pricing, strike-through, and promo code display as expected
 - **SC-004**: Sinra Specif-AI plan is clearly labeled and includes "Coming Soon" badge in place of call-to-action
 - **SC-005**: Sinra Specif-AI plan features list includes 4+ AI-related capabilities (issue specification, capability definition, project templates, requirement generation)
 - **SC-006**: Visual regression test confirms no pixel-level changes to card dimensions, typography, colors, or spacing compared to current design
-- **SC-007**: Responsive layout adapts appropriately to mobile screens—frames either stack vertically or remain side-by-side with adjusted sizing, without breaking layout
+- **SC-007**: Responsive layout adapts appropriately to mobile screens - frames either stack vertically or remain side-by-side with adjusted sizing, without breaking layout
 - **SC-008**: All existing features, descriptions, and metadata for both plans are accurately preserved and accessible in updated pricing structure
 
 ## Assumptions

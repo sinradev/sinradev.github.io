@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Where Are Your Data? European vs American Hosting and Why It Matters"
-subtitle: "Between Cloud Act allowing US access to data, uncertain GDPR compliance, and compromised digital sovereignty, your project data isn't where you think—Sinra chose OVH"
+subtitle: "Between Cloud Act allowing US access to data, uncertain GDPR compliance, and compromised digital sovereignty, your project data isn't where you think: Sinra chose OVH"
 description: "American cloud hosting exposes your data to the Cloud Act and compromises your GDPR compliance. Discover why Sinra chose OVH, a French hosting provider, to guarantee your data sovereignty."
 date: 2026-01-13 09:00:00 +0100
 lang: en

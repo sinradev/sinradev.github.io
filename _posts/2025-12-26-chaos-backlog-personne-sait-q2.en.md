@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backlog Chaos: When Nobody Knows What's Planned For Q2"
-subtitle: "Between infinite backlogs, changing priorities and 'last-minute urgent', planning is impossible—Sinra organizes work by releases and cycles"
+subtitle: "Between infinite backlogs, changing priorities and 'last-minute urgent', planning is impossible: Sinra organizes work by releases and cycles"
 description: "Teams accumulate 500+ issues in a chaotic backlog. Priorities change every week. Nobody knows what will be delivered in Q2. Discover how Sinra structures work with releases, cycles and capabilities to eliminate chaos."
 date: 2025-12-26 09:00:00 +0100
 lang: en

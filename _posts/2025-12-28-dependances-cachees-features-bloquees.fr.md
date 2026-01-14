@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Les Dépendances Cachées : Pourquoi Vos Features Sont Toujours Bloquées"
-subtitle: "Entre dépendances invisibles, équipes qui s'attendent mutuellement et « attends, ça dépend de qui ? », rien n'avance—Sinra rend les dépendances visibles et gérables"
+subtitle: "Entre dépendances invisibles, équipes qui s'attendent mutuellement et « attends, ça dépend de qui ? », rien n'avance : Sinra rend les dépendances visibles et gérables"
 description: "Les features sont constamment bloquées par des dépendances qu'on découvre trop tard. Les équipes s'attendent mutuellement. Les releases glissent parce qu'une API n'est pas prête. Découvrez comment Sinra rend les dépendances explicites et traçables."
 date: 2025-12-28 09:00:00 +0100
 lang: fr

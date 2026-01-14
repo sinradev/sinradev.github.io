@@ -29,17 +29,17 @@
 **Q1: Mobile Display Strategy**
 - **Decision**: For screens < 768px, stack price frames vertically (annual frame above monthly)
 - **Rationale**: Side-by-side layout requires minimum 600px width to avoid cramping; stacking preserves clarity on mobile
-- **Alternatives**: Considered hiding monthly option on mobile (rejected—users want all pricing visible), considered single-column layout without frames (rejected—loses visual hierarchy)
+- **Alternatives**: Considered hiding monthly option on mobile (rejected - users want all pricing visible), considered single-column layout without frames (rejected - loses visual hierarchy)
 
 **Q2: Visual Emphasis Method for Annual Frame**
 - **Decision**: Use increased font size (1.2x larger) for annual price amount + subtle background container to differentiate
 - **Rationale**: Size difference is immediately recognizable without adding complexity; maintains DaisyUI color harmony
-- **Alternatives**: Considered border/outline (rejected—adds visual noise), considered opacity reduction for monthly (rejected—reduces clarity)
+- **Alternatives**: Considered border/outline (rejected - adds visual noise), considered opacity reduction for monthly (rejected - reduces clarity)
 
 **Q3: Sinra Specif-AI Feature List Source**
 - **Decision**: Use defined AI-related features in spec acceptance scenarios as baseline; add 2-3 additional related capabilities
 - **Rationale**: Spec provides 4 explicit examples; can expand with related concepts (templates, automation, integration with existing Sinra Pro features)
-- **Alternatives**: Considered waiting for full product specs (rejected—timeline requires content ready now), considered using placeholder text (rejected—unprofessional)
+- **Alternatives**: Considered waiting for full product specs (rejected - timeline requires content ready now), considered using placeholder text (rejected - unprofessional)
 
 ---
 

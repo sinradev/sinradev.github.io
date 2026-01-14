@@ -18,7 +18,7 @@
   image: /assets/images/multi-app-workload.svg
   alt: Gestion multi-app et charge croisée
 - title: <strong>Workflows Entièrement Personnalisables</strong> - Votre Processus, Pas le Nôtre
-  body: Construisez des workflows qui correspondent à votre processus exact sans toucher au code. Statuts personnalisés, gates d'approbation, accès basé sur les rôles, et règles de validation automatisées. Que vous suiviez V-Model, Agile, ou une approche hybride, Sinra s'adapte à vous—pas l'inverse. Exigences de conformité ? Pistes d'audit intégrées et application des workflows.
+  body: Construisez des workflows qui correspondent à votre processus exact sans toucher au code. Statuts personnalisés, gates d'approbation, accès basé sur les rôles, et règles de validation automatisées. Que vous suiviez V-Model, Agile, ou une approche hybride, Sinra s'adapte à vous - pas l'inverse. Exigences de conformité ? Pistes d'audit intégrées et application des workflows.
   image: /assets/images/custom-workflows.svg
   alt: Workflows personnalisables et application de conformité
 - title: Report Intelligent des Issues

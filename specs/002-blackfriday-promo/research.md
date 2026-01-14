@@ -7,7 +7,7 @@
 
 ### 1. Promotion Messaging & Tone
 
-**Decision**: Messaging follows "Pragmatisme Élégant" brand voice—concrete, solution-focused, no hyperbole
+**Decision**: Messaging follows "Pragmatisme Élégant" brand voice - concrete, solution-focused, no hyperbole
 
 **Rationale**: Feature spec established clear messaging: "50% OFF" on annual plans, "Black Friday: 50% off annual plans" for banner. This is specific, verifiable, and operationally grounded. No marketing superlatives.
 

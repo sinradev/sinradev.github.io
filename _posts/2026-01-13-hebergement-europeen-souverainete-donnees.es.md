@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "¿Dónde Están Tus Datos? Alojamiento Europeo vs Americano y Por Qué Importa"
-subtitle: "Entre Cloud Act que permite acceso estadounidense a datos, cumplimiento RGPD incierto y soberanía digital comprometida, tus datos de proyecto no están donde crees—Sinra eligió OVH"
+subtitle: "Entre Cloud Act que permite acceso estadounidense a datos, cumplimiento RGPD incierto y soberanía digital comprometida, tus datos de proyecto no están donde crees : Sinra eligió OVH"
 description: "El alojamiento cloud americano expone tus datos al Cloud Act y compromete tu cumplimiento RGPD. Descubre por qué Sinra eligió OVH, un proveedor de alojamiento francés, para garantizar la soberanía de tus datos."
 date: 2026-01-13 09:00:00 +0100
 lang: es

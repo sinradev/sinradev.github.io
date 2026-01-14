@@ -15,7 +15,7 @@
       description: "of quality issues now caught before production"
     - metric: "6 weeks"
       description: "faster time-to-value on new features"
-  testimonial_quote: "Sinra didn't just fix our project management—it transformed how our teams communicate. We went from firefighting every release to shipping predictably."
+  testimonial_quote: "Sinra didn't just fix our project management - it transformed how our teams communicate. We went from firefighting every release to shipping predictably."
   testimonial_author: "Maya Chen, VP Engineering"
   timeline: "3 months from signup to full adoption"
 
@@ -46,7 +46,7 @@
   company_url: "https://velocity.example.com"
   industry: "Digital Agency / Client Services"
   team_size: "45 people managing 15+ concurrent projects"
-  challenge: "As a digital agency, WeThink Nordic managed multiple client projects simultaneously, each with different requirements and timelines. Resource allocation was a nightmare—designers, developers, and QA were constantly context-switching. Clients had no visibility into progress, and scope creep killed margins on every project."
+  challenge: "As a digital agency, WeThink Nordic managed multiple client projects simultaneously, each with different requirements and timelines. Resource allocation was a nightmare - designers, developers, and QA were constantly context-switching. Clients had no visibility into progress, and scope creep killed margins on every project."
   solution: "Sinra became their client-facing project hub. They created project templates for recurring client types, gave clients read-only access to release timelines and quality metrics, and implemented strict capacity planning to prevent overallocation. Release-driven planning meant they could commit to delivery dates confidently."
   results:
     - metric: "45%"

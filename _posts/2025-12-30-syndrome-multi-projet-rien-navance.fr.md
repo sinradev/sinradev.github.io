@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Le Syndrome Du Multi-Projet : Pourquoi Rien N'Avance Jamais"
-subtitle: "Entre développeurs sur 4 projets simultanés, context switching permanent et « juste 2h pour m'aider », personne ne finit rien—Sinra limite les projets actifs et visualise la surcharge"
+subtitle: "Entre développeurs sur 4 projets simultanés, context switching permanent et « juste 2h pour m'aider », personne ne finit rien : Sinra limite les projets actifs et visualise la surcharge"
 description: "Les développeurs sont assignés à 3, 4, 5 projets en même temps. Résultat : context switching permanent, rien ne se termine, burnout. Découvrez comment Sinra limite les projets actifs par personne et visualise la surallocation."
 date: 2025-12-30 09:00:00 +0100
 lang: fr

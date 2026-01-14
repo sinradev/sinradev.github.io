@@ -18,7 +18,7 @@ Mais la réalité est plus complexe.
 
 Une startup SaaS lançant un nouveau processeur de paiement a besoin de *spécifications upfront* (discipline V-Model). Mais elle a aussi besoin de *flexibilité de cycle* quand les exigences de sécurité changent à mi-projet (réactivité Agile). Une équipe santé construisant un système réglementaire a besoin de *stage gates et pistes d'audit* (V-Model). Mais elle a aussi besoin de *boucles de feedback rapides* des cliniciens (Agile).
 
-Le problème n'est pas les méthodologies—c'est que les managers sont forcés de choisir tout-ou-rien.
+Le problème n'est pas les méthodologies - c'est que les managers sont forcés de choisir tout-ou-rien.
 
 ![Dilemme Faux Choix](/assets/images/false-choice-dilemma.svg "Le Faux Choix Binaire")
 
@@ -36,7 +36,7 @@ Le problème n'est pas les méthodologies—c'est que les managers sont forcés 
 **Le Piège V-Model:**
 La vraie capacité reste invisible jusqu'à 60% du développement. Vous planifiez sur les estimations d'hier et livrez sur la réalité d'aujourd'hui. À ce moment, vous avez déjà promis des dates impossibles.
 
-Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patient. Ils ont découvert des problèmes d'intégration au mois 4—mais ils avaient déjà promis le lancement aux administrateurs hospitaliers. Les 2 derniers mois: mode panique, features coupées, tests coupés, qualité coupée.
+Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patient. Ils ont découvert des problèmes d'intégration au mois 4 - mais ils avaient déjà promis le lancement aux administrateurs hospitaliers. Les 2 derniers mois: mode panique, features coupées, tests coupés, qualité coupée.
 
 ![Diagramme V-Model Waterfall](/assets/images/vmodel-waterfall-diagram.svg "Approche V-Model / Waterfall")
 
@@ -63,7 +63,7 @@ Exemple: Une agence a pris l'approche "pure Agile" pour une refonte de CMS. Pas 
 ## Pourquoi les Méthodologies Hybrides Gagnent
 
 **Le Vrai Pattern:**
-Les équipes performantes ne choisissent pas entre V-Model et Agile—elles **utilisent les deux pour différentes parties du travail**.
+Les équipes performantes ne choisissent pas entre V-Model et Agile - elles **utilisent les deux pour différentes parties du travail**.
 
 **Phase de Spécification (V-Model):**
 - Écrire des requirements détaillées

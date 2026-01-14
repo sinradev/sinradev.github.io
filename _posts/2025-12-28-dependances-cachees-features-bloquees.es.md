@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dependencias Ocultas: Por Qué Tus Features Siempre Están Bloqueadas"
-subtitle: "Entre dependencias invisibles, equipos que se esperan mutuamente y «espera, ¿quién depende de qué?», nada avanza—Sinra hace las dependencias visibles y gestionables"
+subtitle: "Entre dependencias invisibles, equipos que se esperan mutuamente y «espera, ¿quién depende de qué?», nada avanza : Sinra hace las dependencias visibles y gestionables"
 description: "Las features están constantemente bloqueadas por dependencias descubiertas demasiado tarde. Los equipos se esperan mutuamente. Los releases se retrasan porque una API no está lista. Descubre cómo Sinra hace las dependencias explícitas y rastreables."
 date: 2025-12-28 09:00:00 +0100
 lang: es

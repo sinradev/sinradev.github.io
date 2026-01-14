@@ -10,11 +10,11 @@
 
 ### Definition
 A tone that is:
-- **Confident without aggression** — Solutions-oriented, not problem-focused
-- **Professional but accessible** — Uses sophisticated vocabulary without becoming stiff
-- **Operationally-grounded** — Emphasizes real-world results and measurable outcomes
-- **Implicit rather than explicit** — Shows confidence through substance, not hype
-- **B2B SaaS** — Targets experienced technical teams and decision-makers
+- **Confident without aggression**  -  Solutions-oriented, not problem-focused
+- **Professional but accessible**  -  Uses sophisticated vocabulary without becoming stiff
+- **Operationally-grounded**  -  Emphasizes real-world results and measurable outcomes
+- **Implicit rather than explicit**  -  Shows confidence through substance, not hype
+- **B2B SaaS**  -  Targets experienced technical teams and decision-makers
 
 ### Reference Style Guides
 - ✅ Similar to: Notion, Linear, GitLab (sophisticated, direct, results-focused)
@@ -89,9 +89,9 @@ A tone that is:
 
 #### Features Section
 **Content Examples:**
-- "Rich Text Editor with Context" — "No more scattered documentation"
-- "Polymorphic Comments & Real-Time Collaboration" — "Discuss and synchronize directly on issues"
-- "Release-Driven Deployment Planning" — "Release success, not firefighting"
+- "Rich Text Editor with Context"  -  "No more scattered documentation"
+- "Polymorphic Comments & Real-Time Collaboration"  -  "Discuss and synchronize directly on issues"
+- "Release-Driven Deployment Planning"  -  "Release success, not firefighting"
 
 **Tone Analysis:**
 - ✅ Contrasts (documentation vs. scattered, success vs. firefighting) are operationally grounded
@@ -111,7 +111,7 @@ A tone that is:
 - ✅ Problem statements are specific and operational
   - "Specifications were scattered, QA testing delays pushed releases back"
   - "Multiple regional teams worked on different features with unclear priorities"
-  - "Resource allocation was a nightmare—designers, developers, and QA were constantly context-switching"
+  - "Resource allocation was a nightmare - designers, developers, and QA were constantly context-switching"
 
 **Tone Analysis - Solution Section:**
 - ✅ Explains *how* Sinra was applied, not just that it was used
@@ -122,11 +122,11 @@ A tone that is:
 - ✅ Metrics are specific and believable (40%, 60%, 85%, 6 weeks)
 - ✅ Results focus on operational outcomes: cycle time, meeting reduction, quality improvement
 - ✅ Testimonials are grounded in reality:
-  - "Sinra didn't just fix our project management—it transformed how our teams communicate"
+  - "Sinra didn't just fix our project management - it transformed how our teams communicate"
   - "Visibility is everything. Sinra gave us the single source of truth we needed"
   - "We're actually profitable now"
 
-**Verdict:** ✅ Excellent. Case studies exemplify Pragmatisme Élégant — specific problems, concrete solutions, measurable results.
+**Verdict:** ✅ Excellent. Case studies exemplify Pragmatisme Élégant  -  specific problems, concrete solutions, measurable results.
 
 ---
 
@@ -243,7 +243,7 @@ A tone that is:
 
 ---
 
-### 6. ABOUT PAGE ✅ (Minimal Analysis — Template Reference)
+### 6. ABOUT PAGE ✅ (Minimal Analysis  -  Template Reference)
 
 **Note:** About page references `{% include about.html %}` which points to an include file. The content emphasizes that Sinra is "built from the ground up for modern software teams" and reflects "deep reflection on limitations of traditional methodologies."
 
@@ -298,7 +298,7 @@ Content uses appropriate technical vocabulary:
 
 ## Areas for Improvement
 
-### 1. Testimonials — Minor Language Refinement
+### 1. Testimonials  -  Minor Language Refinement
 
 **Current Issue:**
 - One testimonial uses "game-changer" which conflicts with "avoid hype" guideline
@@ -310,7 +310,7 @@ Replace with operationally-grounded alternative:
 
 ---
 
-### 2. Pricing Page — Add Value Narrative
+### 2. Pricing Page  -  Add Value Narrative
 
 **Current Issue:**
 - Pricing page is feature-list only; no narrative connecting price to value
@@ -319,13 +319,13 @@ Replace with operationally-grounded alternative:
 **Recommendation:**
 Add brief intro paragraph (before pricing tiers) such as:
 
-> "Sinra pricing is straightforward: pay per seat, no hidden fees. Whether you're scaling a startup or managing enterprise complexity, Sinra adapts to your team size and grows with you. Start with a 14-day free trial—no credit card required."
+> "Sinra pricing is straightforward: pay per seat, no hidden fees. Whether you're scaling a startup or managing enterprise complexity, Sinra adapts to your team size and grows with you. Start with a 14-day free trial - no credit card required."
 
 This maintains professional tone while emphasizing flexibility and operational reality.
 
 ---
 
-### 3. Contact/FAQ — Enhance Brand Personality
+### 3. Contact/FAQ  -  Enhance Brand Personality
 
 **Current Issue:**
 - FAQ answers are functional but impersonal
@@ -338,13 +338,13 @@ Enhance answers with brief operational context:
 > "We typically respond to all inquiries within 24 hours during business days."
 
 **After:**
-> "Our support team typically responds to all inquiries within 24 hours during business days. Because we've worked with teams in regulated industries, we understand when urgent issues arise—call us directly for immediate assistance."
+> "Our support team typically responds to all inquiries within 24 hours during business days. Because we've worked with teams in regulated industries, we understand when urgent issues arise - call us directly for immediate assistance."
 
 This adds personality without sacrificing professionalism.
 
 ---
 
-### 4. About Page — Ensure Strong Narrative
+### 4. About Page  -  Ensure Strong Narrative
 
 **Current Issue:**
 - About page uses include reference (not fully analyzed)
@@ -370,7 +370,7 @@ If about page exists, verify it:
 4. **About Page:** Verify strong operational narrative positioning
 
 ### Low Priority
-5. **Blog:** Continue current approach—excellent foundation for content strategy
+5. **Blog:** Continue current approach - excellent foundation for content strategy
 
 ---
 
@@ -386,7 +386,7 @@ If about page exists, verify it:
 
 With minor refinements to testimonials, pricing narrative, and FAQ personality, the site will achieve **90%+ alignment with the identified brand voice.**
 
-The blog posts and case studies are exemplary—they should serve as templates for all future content creation.
+The blog posts and case studies are exemplary - they should serve as templates for all future content creation.
 
 ---
 

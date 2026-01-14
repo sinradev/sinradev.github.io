@@ -2,7 +2,7 @@
 layout: post
 title: "From Issue to Release: How Sinra Structures Your Work"
 subtitle: "A practical guide through the journey of a feature from conception to delivery"
-description: "Follow a feature through Sinra's hierarchy—from individual issues to capabilities to releases—and discover how concrete structure creates clarity instead of complexity."
+description: "Follow a feature through Sinra's hierarchy - from individual issues to capabilities to releases - and discover how concrete structure creates clarity instead of complexity."
 lang: en
 category: Product Guide
 excerpt: "Understanding how work flows through Sinra: issues are the building blocks, capabilities group related work, and releases define what ships. No jargon, just clear structure."
@@ -45,7 +45,7 @@ In traditional tools, you might create:
 
 ## Level 1: Issues (The Building Blocks)
 
-**Issues are individual work items.** Bugs, tasks, features—anything a person does is an issue.
+**Issues are individual work items.** Bugs, tasks, features - anything a person does is an issue.
 
 For 2FA, you create these issues:
 
@@ -275,7 +275,7 @@ Result: **15 minutes to set up, zero maintenance**
 **Team feedback:**
 
 > "We stopped spending time managing Jira and started shipping features. The hierarchy just makes sense."
-> — Lead Developer, PayFast
+>  -  Lead Developer, PayFast
 
 ---
 
@@ -329,7 +329,7 @@ No. Each issue belongs to one capability (or none). If work spans multiple featu
 Sinra tracks dependencies between issues and capabilities. Mark dependencies, and the system highlights blockers in your workflow.
 
 **Q: What if priorities change mid-release?**
-Move issues between capabilities or releases as needed. Sinra doesn't force rigid sprint commitments—adapt when reality changes.
+Move issues between capabilities or releases as needed. Sinra doesn't force rigid sprint commitments - adapt when reality changes.
 
 **Q: How do I see what my team is working on right now?**
 Filter by current cycle + team + in_progress status. You'll see exactly what's active.
@@ -356,7 +356,7 @@ When your tool speaks the same language as your team, work flows faster.
 
 1. **Identify your next feature.** What are you building?
 2. **Create a capability.** Name it concretely (not "Epic: User Mgmt" but "User Role Permissions")
-3. **Break it into issues.** Development, design, testing—everything a person does
+3. **Break it into issues.** Development, design, testing - everything a person does
 4. **Assign to a release.** What version will this ship in?
 5. **Start building.** Track progress in real-time, adjust as needed
 

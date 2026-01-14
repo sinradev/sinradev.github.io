@@ -2,10 +2,10 @@
 layout: post
 title: "Release-Driven Development : Reprendre le Contrôle de Vos Déploiements"
 subtitle: "Comment planifier autour de releases concrètes améliore la visibilité, la gestion de capacité et l'exécution"
-description: "Découvrez comment l'approche release-driven de Sinra transforme la planification de déploiement d'une réflexion après coup en avantage stratégique—avec une meilleure visibilité, gestion de capacité et exécution."
+description: "Découvrez comment l'approche release-driven de Sinra transforme la planification de déploiement d'une réflexion après coup en avantage stratégique - avec une meilleure visibilité, gestion de capacité et exécution."
 lang: fr
 category: Méthodologie
-excerpt: "La plupart des équipes traitent les déploiements comme des réflexions après coup. Sinra fait des releases le principe organisateur—améliorant la visibilité, la planification de capacité et l'exécution dès le premier jour."
+excerpt: "La plupart des équipes traitent les déploiements comme des réflexions après coup. Sinra fait des releases le principe organisateur - améliorant la visibilité, la planification de capacité et l'exécution dès le premier jour."
 permalink: /méthodologie/:year/:month/:day/release-driven-development.html
 featured_image: /assets/images/blog/2025-12-01-release-driven-development-featured.png
 ---
@@ -225,7 +225,7 @@ Les équipes rapportent :
 
 **Le Défi des Architectures Multi-Plateformes :**
 
-Les équipes modernes ne gèrent plus une seule application—elles orchestrent plusieurs plateformes interconnectées :
+Les équipes modernes ne gèrent plus une seule application - elles orchestrent plusieurs plateformes interconnectées :
 - Application web frontend
 - API backend
 - Applications mobiles (iOS, Android)
@@ -318,7 +318,7 @@ Quand Release 2.3 est prête :
 
 **Semaine 2-4 :** Construire vers release
 - Progression visible quotidiennement
-- Le Product demande nouvelle fonctionnalité : "Est-ce que ça rentre ?" Non—92% capacité déjà. Ajouter à Release 1.6.
+- Le Product demande nouvelle fonctionnalité : "Est-ce que ça rentre ?" Non - 92% capacité déjà. Ajouter à Release 1.6.
 - QA identifie blocage tôt : Tests webhook nécessitent 3 jours extra
 - Ajuster timeline : Pousser release au 4 février
 
@@ -418,7 +418,7 @@ Vous pouvez combiner les deux :
 
 ### Objection 1 : "Nos priorités changent trop vite pour la planification release."
 
-**Réponse :** Le release-driven n'empêche pas le changement—il rend le changement visible.
+**Réponse :** Le release-driven n'empêche pas le changement - il rend le changement visible.
 
 Quand les priorités changent :
 - Déplacer issues entre releases
@@ -449,7 +449,7 @@ Les clients préfèrent la prévisibilité aux promesses vagues.
 
 ### Objection 4 : "On n'a pas le temps de planifier releases en amont."
 
-**Réponse :** Vous planifiez déjà—juste implicitement et mal.
+**Réponse :** Vous planifiez déjà - juste implicitement et mal.
 
 Le release-driven rend la planification **explicite et efficace** :
 - 2 heures pour définir une release
@@ -484,7 +484,7 @@ Le release-driven development nécessite un changement de mentalité :
 
 ## L'Avantage Sinra : Conçu Pour les Releases
 
-La plupart des outils traitent les releases comme des tags ou milestones—des réflexions après coup dans un monde feature-driven.
+La plupart des outils traitent les releases comme des tags ou milestones - des réflexions après coup dans un monde feature-driven.
 
 Sinra traite les releases comme des **principes organisateurs de première classe** :
 - Définir releases avant d'assigner le travail
@@ -507,7 +507,7 @@ Quand votre outil est conçu pour le release-driven development, votre équipe t
 2. **Calculez la capacité par release.** Combien d'issues votre équipe peut-elle réalistement compléter ?
 3. **Assignez le travail aux releases.** Les capabilities et issues appartiennent à des releases spécifiques, pas un backlog vague.
 4. **Suivez la progression quotidiennement.** Utilisez la vue release de Sinra pour monitorer la préparation.
-5. **Déployez selon le calendrier.** Quand la release est prête, livrez-la—pas de retards, pas de surprises.
+5. **Déployez selon le calendrier.** Quand la release est prête, livrez-la - pas de retards, pas de surprises.
 
 ---
 
@@ -519,7 +519,7 @@ Quand votre outil est conçu pour le release-driven development, votre équipe t
 
 La différence est **visibilité, gestion de capacité et exécution**.
 
-Sinra fait du release-driven development le défaut—pas une réflexion après coup.
+Sinra fait du release-driven development le défaut - pas une réflexion après coup.
 
 ---
 

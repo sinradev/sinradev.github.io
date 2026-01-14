@@ -17,8 +17,8 @@
 | Metric | Baseline | Current | Change |
 |--------|----------|---------|--------|
 | Total CSS | 108,000 bytes | 89,426 bytes | -18.574 bytes |
-| Reduction % | — | 17.2% | — |
-| Target | 64,800 bytes | — | Need 24.6 KB more |
+| Reduction % |  -  | 17.2% |  -  |
+| Target | 64,800 bytes |  -  | Need 24.6 KB more |
 
 **Status:** 🟡 **IN PROGRESS** (43% of target achieved)
 
@@ -54,8 +54,8 @@
 | Metric | Baseline | Current | Change |
 |--------|----------|---------|--------|
 | Total Rules | ~514 | ~460 | -54 rules |
-| Reduction % | — | 10.5% | — |
-| Target | <50 | — | Need 410 rule reduction |
+| Reduction % |  -  | 10.5% |  -  |
+| Target | <50 |  -  | Need 410 rule reduction |
 
 **Status:** 🔴 **NOT ON TRACK** (only 10.5% of target achieved)
 
@@ -102,7 +102,7 @@ To reach <50 rules, would need to:
 | Typography | Full site | 100% | ✅ Complete |
 | Layout | Full site | 80% | ⚠️ Good |
 | Colors | Full site | 100% | ✅ Complete |
-| **Overall** | — | **75%** | 🟡 On track |
+| **Overall** |  -  | **75%** | 🟡 On track |
 
 **Component Breakdown:**
 
@@ -360,7 +360,7 @@ To reach <50 rules, would need to:
 | Utility Classes Removed | 5 | 0 | ✅ Removed |
 | Custom Rules | 514 | 460 | ✅ 10.5% reduction |
 | DaisyUI Coverage | 0% | 75% | ✅ Excellent progress |
-| Build Status | — | Success | ✅ No errors |
+| Build Status |  -  | Success | ✅ No errors |
 
 ### Revised Goals for Phase 7
 

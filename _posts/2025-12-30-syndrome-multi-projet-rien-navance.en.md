@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Multi-Project Syndrome: Why Nothing Ever Gets Done"
-subtitle: "Between developers on 4 simultaneous projects, permanent context switching and \"just 2h to help me\", nobody finishes anything—Sinra limits active projects and visualizes overload"
+subtitle: "Between developers on 4 simultaneous projects, permanent context switching and \"just 2h to help me\", nobody finishes anything: Sinra limits active projects and visualizes overload"
 description: "Developers are assigned to 3, 4, 5 projects at once. Result: permanent context switching, nothing gets finished, burnout. Discover how Sinra limits active projects per person and visualizes overallocation."
 date: 2025-12-30 09:00:00 +0100
 lang: en

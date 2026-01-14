@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La Fausse Promesse Des User Stories : Pourquoi « En Tant Que » Ne Dit Pas Quoi Faire"
-subtitle: "Entre format imposé « En tant que utilisateur, je veux... », stories trop vagues et 3 réunions pour comprendre ce qu'il faut vraiment coder, personne ne sait quoi faire—Sinra utilise des issues directes"
+subtitle: "Entre format imposé « En tant que utilisateur, je veux... », stories trop vagues et 3 réunions pour comprendre ce qu'il faut vraiment coder, personne ne sait quoi faire : Sinra utilise des issues directes"
 description: "Les user stories en format Agile sont trop vagues. Résultat : développeurs perdus, 4h de grooming par semaine, écart entre « ce qui est écrit » et « ce qu'il faut faire ». Découvrez comment Sinra utilise des issues directes et actionnables."
 date: 2026-01-02 09:00:00 +0100
 lang: fr

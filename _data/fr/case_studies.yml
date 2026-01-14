@@ -14,7 +14,7 @@
       description: "des problèmes de qualité détectés avant la production"
     - metric: "6 semaines"
       description: "plus rapide pour mettre en valeur les nouvelles fonctionnalités"
-  testimonial_quote: "Sinra n'a pas juste fixé notre gestion de projet—cela a transformé comment nos équipes communiquent. Nous sommes passés du pompier sur chaque release à l'expédition prévisible."
+  testimonial_quote: "Sinra n'a pas juste fixé notre gestion de projet - cela a transformé comment nos équipes communiquent. Nous sommes passés du pompier sur chaque release à l'expédition prévisible."
   testimonial_author: "Maya Chen, VP Engineering"
   timeline: "3 mois de l'inscription à l'adoption complète"
 
@@ -43,7 +43,7 @@
   company_logo: "/assets/images/logos/wethinknordic.svg"
   industry: "Agence Numérique / Services Client"
   team_size: "45 personnes gérant 15+ projets simultanés"
-  challenge: "En tant qu'agence numérique, WeThink Nordic gérait plusieurs projets clients simultanément, chacun avec des exigences et des délais différents. L'allocation des ressources était un cauchemar—les designers, développeurs, et QA changeaient constamment de contexte. Les clients n'avaient pas de visibilité sur la progression, et le glissement de périmètre tuait les marges sur chaque projet."
+  challenge: "En tant qu'agence numérique, WeThink Nordic gérait plusieurs projets clients simultanément, chacun avec des exigences et des délais différents. L'allocation des ressources était un cauchemar - les designers, développeurs, et QA changeaient constamment de contexte. Les clients n'avaient pas de visibilité sur la progression, et le glissement de périmètre tuait les marges sur chaque projet."
   solution: "Sinra est devenu leur centre de projet orienté client. Ils ont créé des modèles de projet pour les types de clients récurrents, ont donné aux clients un accès en lecture seule aux calendriers de release et aux métriques de qualité, et ont implémenté une planification des capacités stricte pour prévenir la surallocation. La planification axée sur les releases signifiait qu'ils pouvaient s'engager en confiance sur les délais de livraison."
   results:
     - metric: "45%"

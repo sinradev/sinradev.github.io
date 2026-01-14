@@ -283,7 +283,7 @@ Resultado: **15 minutos para configurar, cero mantenimiento**
 **Retroalimentación del equipo:**
 
 > "Dejamos de pasar tiempo gestionando Jira y comenzamos a enviar funcionalidades. La jerarquía simplemente tiene sentido."
-> — Desarrollador Líder, PayFast
+>  -  Desarrollador Líder, PayFast
 
 ---
 

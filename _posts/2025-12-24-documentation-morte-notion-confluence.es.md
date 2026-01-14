@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba"
-subtitle: "Entre specs obsoletas, docs contradictorios y versiones múltiples, nadie sabe qué información es fiable—Sinra unifica contexto y trabajo"
+subtitle: "Entre specs obsoletas, docs contradictorios y versiones múltiples, nadie sabe qué información es fiable : Sinra unifica contexto y trabajo"
 description: "Los equipos crean documentación hermosa en Notion/Confluence. Seis meses después, el 70% está obsoleto y nadie sabe qué versión es correcta. Descubre cómo Sinra integra documentación y trabajo en un sistema unificado."
 date: 2025-12-24 09:00:00 +0100
 lang: es

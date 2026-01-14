@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hidden Dependencies: Why Your Features Are Always Blocked"
-subtitle: "Between invisible dependencies, teams waiting for each other, and \"wait, who depends on what?\", nothing moves forward—Sinra makes dependencies visible and manageable"
+subtitle: "Between invisible dependencies, teams waiting for each other, and \"wait, who depends on what?\", nothing moves forward: Sinra makes dependencies visible and manageable"
 description: "Features are constantly blocked by dependencies discovered too late. Teams wait for each other. Releases slip because an API isn't ready. Discover how Sinra makes dependencies explicit and traceable."
 date: 2025-12-28 09:00:00 +0100
 lang: en

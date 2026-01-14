@@ -33,7 +33,7 @@ Implement a time-limited Black Friday promotion offering 50% discount on annual 
 
 ✓ **Quality Through Manual Testing**: Validation via `jekyll serve`, cross-browser testing (Chrome, Firefox, Safari), multilingual consistency (EN/FR), responsive design check.
 
-✓ **Operational Grounding**: 50% discount is concrete, measurable. Success criteria based on conversion rates and CTR—not aspirational.
+✓ **Operational Grounding**: 50% discount is concrete, measurable. Success criteria based on conversion rates and CTR - not aspirational.
 
 ✓ **Jekyll Static Site Simplicity**: Minimal implementation: YAML data updates + markup changes + vanilla JS for banner dismissal. No new gems, no build tools, no test frameworks needed.
 

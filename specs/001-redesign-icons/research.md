@@ -34,7 +34,7 @@
 - Primary stroke weight: 2px (standard in modern SaaS)
 - Secondary/detail strokes: 1.5px–2.5px
 - Maximum variance across icon set: ≤1.5px (measured from minimum to maximum stroke in any icon)
-- Reason for variance: Optical illusion—some shapes appear thicker/thinner due to geometry
+- Reason for variance: Optical illusion - some shapes appear thicker/thinner due to geometry
 
 **Examples from Reference Brands**:
 - Notion: 2px primary stroke, consistent on all icons

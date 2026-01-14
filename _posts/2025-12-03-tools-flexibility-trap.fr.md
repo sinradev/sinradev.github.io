@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Le Piège de la Flexibilité : Pourquoi les Outils 'Tout-en-Un' Ralentissent Vos Équipes"
-subtitle: "Les outils neutres promettent l'adaptabilité mais livrent la complexité—Sinra choisit l'approche opiniated"
+subtitle: "Les outils neutres promettent l'adaptabilité mais livrent la complexité : Sinra choisit l'approche opiniated"
 description: "Jira, Linear, Notion et autres promettent de s'adapter à votre workflow. En réalité, ils vous forcent à construire votre propre système de gestion de projet. Découvrez pourquoi l'approche opiniated de Sinra libère votre équipe."
 date: 2025-12-03 09:00:00 +0100
 lang: fr
@@ -52,7 +52,7 @@ Sauf qu'en réalité, voici ce qui se passe :
 
 ## Le Mythe de l'Outil Neutre
 
-Les outils « flexibles » prétendent être neutres—ils s'adaptent à *votre* méthodologie.
+Les outils « flexibles » prétendent être neutres - ils s'adaptent à *votre* méthodologie.
 
 **La réalité :** Il n'existe pas d'outil neutre.
 
@@ -63,7 +63,7 @@ Chaque outil impose implicitement une vision :
 - **Airtable :** Tableur glorifié nécessitant des heures de configuration
 - **GitHub Projects :** Bon pour le code, terrible pour la planification produit
 
-Ces outils ne sont pas neutres—**ils sont vagues**.
+Ces outils ne sont pas neutres - **ils sont vagues**.
 
 Et cette ambiguïté vous force à :
 1. **Construire votre propre système** sur leur plateforme
@@ -405,7 +405,7 @@ Les outils flexibles reportent cette décision (indéfiniment).
 
 **R :** Posez-vous cette question : « Notre workflow actuel livre-t-il de manière prévisible ? »
 
-Si non, peut-être que le problème n'est pas l'outil—c'est le workflow.
+Si non, peut-être que le problème n'est pas l'outil - c'est le workflow.
 
 Sinra impose un workflow release-driven **parce que ça fonctionne**. Si vous résistez, demandez-vous pourquoi.
 

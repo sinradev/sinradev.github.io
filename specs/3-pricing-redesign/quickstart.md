@@ -192,9 +192,9 @@ This guide provides developers with a quick reference for implementing the unifi
    ```
 
 3. **Preserve existing sections**:
-   - Plan header (name, description) — unchanged
-   - Plan features list — unchanged (no per-tier variation)
-   - Promotion badge logic — moved to tier-level logic
+   - Plan header (name, description)  -  unchanged
+   - Plan features list  -  unchanged (no per-tier variation)
+   - Promotion badge logic  -  moved to tier-level logic
 
 #### Step 2.2: Test Template Changes
 
@@ -300,11 +300,11 @@ bundle exec jekyll serve --drafts
 #### Step 3.2: Verify Theme Compliance
 
 ✅ Check all color variables used:
-- `--color-base-100`, `--color-base-200`, `--color-base-300` — backgrounds
-- `--color-primary` — prices and emphasis
-- `--color-neutral`, `--color-neutral-content` — badges
-- `--radius-box` — border radius
-- `--color-base-content` — text color
+- `--color-base-100`, `--color-base-200`, `--color-base-300`  -  backgrounds
+- `--color-primary`  -  prices and emphasis
+- `--color-neutral`, `--color-neutral-content`  -  badges
+- `--radius-box`  -  border radius
+- `--color-base-content`  -  text color
 
 ✅ No hardcoded colors except existing Black Friday (#d63031)
 ✅ All variables defined in `assets/css/theme.css`

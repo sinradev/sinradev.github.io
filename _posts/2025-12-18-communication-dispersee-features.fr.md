@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La Communication Dispersée : Pourquoi Vos Décisions Disparaissent Entre Notion, Linear et Discord"
-subtitle: "Quand chaque outil capture un fragment de contexte, personne n'a la vue complète—Sinra centralise les discussions là où le travail se passe"
+subtitle: "Quand chaque outil capture un fragment de contexte, personne n'a la vue complète : Sinra centralise les discussions là où le travail se passe"
 description: "Les équipes utilisent Notion pour les specs, Linear pour les issues, Discord pour les discussions. Résultat : contexte fragmenté, décisions perdues, et synchronisation impossible. Découvrez pourquoi Sinra centralise tout au même endroit."
 date: 2025-12-18 09:00:00 +0100
 lang: fr
@@ -254,7 +254,7 @@ Nouveau Dev : « Comment fonctionne l'architecture du rate limiting ? »
 Mentor : « Ok, lis d'abord la spec Notion. Ensuite cherche
 'rate limiting' dans Discord, channel #engineering.
 Regarde aussi la PR #234 sur GitHub. Ah, et demande à Marie
-pourquoi on a changé l'approche webhooks—je crois qu'elle
+pourquoi on a changé l'approche webhooks - je crois qu'elle
 en a parlé dans un Slack mais je sais plus où. »
 
 Nouveau Dev : « ... Ok. »
@@ -262,7 +262,7 @@ Nouveau Dev : « ... Ok. »
 
 **Temps d'onboarding typique sur une feature moyenne : 3-5 jours.**
 
-**Pourquoi ?** Parce que le contexte n'est pas accessible—il est dispersé et enfoui.
+**Pourquoi ?** Parce que le contexte n'est pas accessible - il est dispersé et enfoui.
 
 ---
 
@@ -297,7 +297,7 @@ La documentation (Notion, Confluence) se désynchronise du code réel.
 4. 3 mois plus tard, quelqu'un lit la spec et implémente... la mauvaise chose
 
 **Exemple Réel :**
-Une équipe a passé 2 semaines à réimplémenter une fonctionnalité selon une spec Notion obsolète—parce que personne ne savait que l'approche avait changé dans un Slack thread 4 mois plus tôt.
+Une équipe a passé 2 semaines à réimplémenter une fonctionnalité selon une spec Notion obsolète - parce que personne ne savait que l'approche avait changé dans un Slack thread 4 mois plus tôt.
 
 ---
 
@@ -362,7 +362,7 @@ Les outils de chat (Discord, Slack) optimisent pour le présent. Le passé dispa
 
 **Pourquoi ?** Parce que synchroniser manuellement entre outils **n'est pas un workflow naturel**.
 
-Les gens n'oublient pas par paresse—ils oublient parce que **le système ne supporte pas la synchronisation**.
+Les gens n'oublient pas par paresse - ils oublient parce que **le système ne supporte pas la synchronisation**.
 
 ---
 
@@ -388,7 +388,7 @@ Le commentary est un espace de discussion riche attaché à chaque issue et fonc
 - Historique complet préservé
 - Lié directement à l'issue ou fonctionnalité
 
-**Différence Clé :** Les discussions ne flottent pas dans Discord—elles **vivent avec le travail**.
+**Différence Clé :** Les discussions ne flottent pas dans Discord - elles **vivent avec le travail**.
 
 ![Commentary Centralisé](/assets/images/centralized-commentary.svg "Le Commentary : Discussions Attachées au Travail")
 
@@ -598,7 +598,7 @@ initiale + le changement d'approche avec justification.
 **Pourquoi ça marche ?**
 Parce que **la discussion et la documentation sont au même endroit**.
 
-Vous ne synchronisez pas—vous discutez **dans le contexte du travail**.
+Vous ne synchronisez pas - vous discutez **dans le contexte du travail**.
 
 ![Workflow Centralisé](/assets/images/centralized-workflow.svg "De la Dispersion à la Centralisation")
 
@@ -888,7 +888,7 @@ Quand vos discussions sont dans Discord, vos specs dans Notion, et vos issues da
 
 **Sinra centralise tout au même endroit que le travail.**
 
-Les discussions, les décisions, les issues, les fonctionnalités, les releases—**une source de vérité**.
+Les discussions, les décisions, les issues, les fonctionnalités, les releases - **une source de vérité**.
 
 **Le futur vous dira merci.**
 

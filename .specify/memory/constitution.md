@@ -121,6 +121,57 @@ These promotional colors are **temporary** and isolated to promotion components.
 
 ## Blog Content Guidelines
 
+### Typography Rules
+
+**MANDATORY**: All content (blog posts, data files, includes) must follow these typography rules:
+
+1. **NO EM DASHES** - Never use the em dash character "—" (U+2014)
+   - ❌ `This is wrong—it uses em dash`
+   - ✅ Replace with appropriate punctuation based on context and language (see below)
+   - **Rationale**: Em dashes cause encoding issues, are inconsistent across platforms, and should be replaced with proper punctuation
+
+2. **Punctuation Spacing by Language**:
+
+   **English (EN):**
+   - Colon: NO space before, space after → `text: explanation`
+   - Semicolon: NO space before, space after → `text; another`
+   - Exclamation/Question: NO space before → `Really?` `Wow!`
+   - Parentheses: NO space inside → `(text)`
+   - Em dash replacement: Use " - " (space-hyphen-space) for parenthetical or ": " (colon-space) for explanations
+
+   **French (FR) and Spanish (ES):**
+   - Colon: space before AND after → `texte : explication`
+   - Semicolon: space before AND after → `texte ; autre`
+   - Exclamation/Question: space before → `Vraiment ?` `Wow !`
+   - Parentheses: NO space inside → `(texte)`
+   - Em dash replacement: Use " - " (space-hyphen-space) for parenthetical or " : " (space-colon-space) for explanations
+
+3. **When to Use Each Punctuation** (applies to all languages, with spacing rules above):
+   - **Colon (: or :)**: For explanations, clarifications, conclusions
+     - EN: `problem: solution`
+     - FR: `problème : solution`
+   - **Hyphen with spaces ( - )**: For parenthetical remarks, additions, contrasts
+     - EN: `text - additional info - continuation`
+     - FR: `texte - info supplémentaire - suite`
+   - **Comma**: For lists, light pauses
+   - **Period**: For sentence endings
+
+4. **Quotation Marks**:
+   - Latin languages (FR, ES): Use « guillemets » with spaces
+   - Other languages (EN): Use "straight quotes"
+
+**Examples of em dash replacement:**
+
+EN:
+- ❌ `your data isn't where you think—Sinra chose OVH`
+- ✅ `your data isn't where you think: Sinra chose OVH` (explanation)
+- ✅ `your data isn't where you think - Sinra chose OVH` (alternative: parenthetical)
+
+FR:
+- ❌ `vos données ne sont pas où vous croyez—Sinra a choisi OVH`
+- ✅ `vos données ne sont pas où vous croyez : Sinra a choisi OVH` (explication)
+- ✅ `vos données ne sont pas où vous croyez - Sinra a choisi OVH` (alternative: incise)
+
 ### Illustrations for Blog Posts
 
 **MANDATORY**: Every blog post created must include custom illustrations that:

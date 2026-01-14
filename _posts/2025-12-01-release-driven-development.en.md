@@ -2,10 +2,10 @@
 layout: post
 title: "Release-Driven Development: Taking Back Control of Your Deployments"
 subtitle: "How planning around concrete releases improves visibility, capacity management, and execution"
-description: "Discover how Sinra's release-driven approach transforms deployment planning from an afterthought into a strategic advantage—with better visibility, capacity management, and execution."
+description: "Discover how Sinra's release-driven approach transforms deployment planning from an afterthought into a strategic advantage - with better visibility, capacity management, and execution."
 lang: en
 category: Methodology
-excerpt: "Most teams treat deployments as afterthoughts. Sinra makes releases the organizing principle—improving visibility, capacity planning, and execution from day one."
+excerpt: "Most teams treat deployments as afterthoughts. Sinra makes releases the organizing principle - improving visibility, capacity planning, and execution from day one."
 permalink: /methodology/:year/:month/:day/release-driven-development.html
 featured_image: /assets/images/blog/2025-12-01-release-driven-development-featured.png
 ---
@@ -242,7 +242,7 @@ Teams report:
 
 **The Multi-Platform Challenge:**
 
-Modern teams no longer manage a single application—they orchestrate multiple interconnected platforms:
+Modern teams no longer manage a single application - they orchestrate multiple interconnected platforms:
 
 - Web frontend application
 - Backend API
@@ -349,7 +349,7 @@ _Note: DevStream is a real company that we have anonymized under a fictitious na
 **Week 2-4:** Build toward release
 
 - Progress visible daily
-- Product requests new feature: "Does it fit?" No—92% capacity already. Add to Release 1.6.
+- Product requests new feature: "Does it fit?" No - 92% capacity already. Add to Release 1.6.
 - QA identifies blocker early: Webhook testing needs 3 extra days
 - Adjust timeline: Push release to Feb 4
 
@@ -465,7 +465,7 @@ You can combine both:
 
 ### Objection 1: "Our priorities change too fast for release planning."
 
-**Response:** Release-driven doesn't prevent change—it makes change visible.
+**Response:** Release-driven doesn't prevent change - it makes change visible.
 
 When priorities shift:
 
@@ -499,7 +499,7 @@ Customers prefer predictability over vague promises.
 
 ### Objection 4: "We don't have time to plan releases upfront."
 
-**Response:** You're already planning—just implicitly and poorly.
+**Response:** You're already planning - just implicitly and poorly.
 
 Release-driven makes planning **explicit and efficient**:
 
@@ -538,7 +538,7 @@ Release-driven development requires a mindset change:
 
 ## The Sinra Advantage: Built for Releases
 
-Most tools treat releases as tags or milestones—afterthoughts in a feature-driven world.
+Most tools treat releases as tags or milestones - afterthoughts in a feature-driven world.
 
 Sinra treats releases as **first-class organizing principles**:
 
@@ -563,7 +563,7 @@ When your tool is built for release-driven development, your team naturally work
 2. **Calculate capacity per release.** How many issues can your team realistically complete?
 3. **Assign work to releases.** Capabilities and issues belong to specific releases, not a vague backlog.
 4. **Track progress daily.** Use Sinra's release view to monitor readiness.
-5. **Deploy on schedule.** When the release is ready, ship it—no delays, no surprises.
+5. **Deploy on schedule.** When the release is ready, ship it - no delays, no surprises.
 
 ---
 
@@ -575,7 +575,7 @@ When your tool is built for release-driven development, your team naturally work
 
 The difference is **visibility, capacity management, and execution**.
 
-Sinra makes release-driven development the default—not an afterthought.
+Sinra makes release-driven development the default - not an afterthought.
 
 ---
 

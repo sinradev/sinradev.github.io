@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Flexibility Trap: Why 'Do-Everything' Tools Slow Down Your Teams"
-subtitle: "Neutral tools promise adaptability but deliver complexity—Sinra chooses the opinionated approach"
+subtitle: "Neutral tools promise adaptability but deliver complexity: Sinra chooses the opinionated approach"
 description: "Jira, Linear, Notion and others promise to adapt to your workflow. In reality, they force you to build your own project management system. Discover why Sinra's opinionated approach frees your team."
 date: 2025-12-03 09:00:00 +0100
 lang: en
@@ -56,7 +56,7 @@ Except in reality, here's what happens:
 
 ## The Myth of the Neutral Tool
 
-"Flexible" tools claim to be neutral—they adapt to _your_ methodology.
+"Flexible" tools claim to be neutral - they adapt to _your_ methodology.
 
 **The reality:** There's no such thing as a neutral tool.
 
@@ -68,7 +68,7 @@ Every tool implicitly imposes a vision:
 - **Airtable:** Glorified spreadsheet requiring hours of configuration
 - **GitHub Projects:** Good for code, terrible for product planning
 
-These tools aren't neutral—**they're vague**.
+These tools aren't neutral - **they're vague**.
 
 And this ambiguity forces you to:
 
@@ -424,7 +424,7 @@ Flexible tools postpone that decision (indefinitely).
 
 **A:** Ask yourself: "Does our current workflow ship predictably?"
 
-If not, maybe the problem isn't the tool—it's the workflow.
+If not, maybe the problem isn't the tool - it's the workflow.
 
 Sinra imposes a release-driven workflow **because it works**. If you resist, ask yourself why.
 

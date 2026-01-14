@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The False Promise of User Stories: Why 'As A User' Doesn't Say What To Do"
-subtitle: "Between imposed 'As a user, I want...' format, vague stories, and 3 meetings to understand what to actually code, nobody knows what to do—Sinra uses direct issues"
+subtitle: "Between imposed 'As a user, I want...' format, vague stories, and 3 meetings to understand what to actually code, nobody knows what to do: Sinra uses direct issues"
 description: "User stories in Agile format are too vague. Result: lost developers, 4h of grooming per week, gap between 'what's written' and 'what needs to be done'. Discover how Sinra uses direct and actionable issues."
 date: 2026-01-02 09:00:00 +0100
 lang: en

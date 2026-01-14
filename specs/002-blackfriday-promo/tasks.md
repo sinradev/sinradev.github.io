@@ -9,7 +9,7 @@
 
 ## Implementation Strategy
 
-**MVP Scope**: User Story 1 + User Story 2 (the two P1 stories) deliver core value—badge on pricing page + sticky banner across site.
+**MVP Scope**: User Story 1 + User Story 2 (the two P1 stories) deliver core value - badge on pricing page + sticky banner across site.
 
 **Incremental Delivery**:
 1. **Phase 1 (Setup)**: Promote data infrastructure and globals

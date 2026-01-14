@@ -254,7 +254,7 @@ ComparisonRow:
 
 - `dimension` must not be empty
 - `values` must be array of exactly 4 items (matching 4 tools)
-- Each value must not be empty (null values should use "N/A" or "—")
+- Each value must not be empty (null values should use "N/A" or " - ")
 - Values can include emojis (✅, ❌, ⭐, etc.) for visual indicators
 - Values support markdown-like formatting (e.g., `**bold**`, but rendered as plain text in table)
 

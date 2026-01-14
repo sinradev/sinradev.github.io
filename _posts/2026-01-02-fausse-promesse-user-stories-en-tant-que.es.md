@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer"
-subtitle: "Entre formato impuesto « Como usuario, quiero... », stories vagas y 3 reuniones para entender qué codificar realmente, nadie sabe qué hacer—Sinra usa issues directas"
+subtitle: "Entre formato impuesto « Como usuario, quiero... », stories vagas y 3 reuniones para entender qué codificar realmente, nadie sabe qué hacer : Sinra usa issues directas"
 description: "Las user stories en formato Agile son demasiado vagas. Resultado: desarrolladores perdidos, 4h de grooming por semana, brecha entre « lo que está escrito » y « lo que hay que hacer ». Descubre cómo Sinra usa issues directas y accionables."
 date: 2026-01-02 09:00:00 +0100
 lang: es

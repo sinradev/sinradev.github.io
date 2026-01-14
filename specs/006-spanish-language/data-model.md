@@ -5,7 +5,7 @@
 
 ## Overview
 
-This feature adds Spanish language data files following the existing YAML schema. No schema changes are required—only new Spanish content files.
+This feature adds Spanish language data files following the existing YAML schema. No schema changes are required - only new Spanish content files.
 
 ## Entities
 

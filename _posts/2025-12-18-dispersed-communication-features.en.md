@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dispersed Communication: Why Your Decisions Disappear Between Notion, Linear and Discord"
-subtitle: "When each tool captures a fragment of context, no one has the complete picture—Sinra centralizes discussions where the work happens"
+subtitle: "When each tool captures a fragment of context, no one has the complete picture: Sinra centralizes discussions where the work happens"
 description: "Teams use Notion for specs, Linear for issues, Discord for discussions. Result: fragmented context, lost decisions, and impossible synchronization. Discover why Sinra centralizes everything in one place."
 date: 2025-12-18 09:00:00 +0100
 lang: en
@@ -254,7 +254,7 @@ New Dev: "How does the rate limiting architecture work?"
 Mentor: "Ok, first read the Notion spec. Then search for
 'rate limiting' in Discord, #engineering channel.
 Also look at PR #234 on GitHub. Oh, and ask Marie
-why we changed the webhooks approach—I think she
+why we changed the webhooks approach - I think she
 mentioned it in Slack but I can't remember where."
 
 New Dev: "... Ok."
@@ -262,7 +262,7 @@ New Dev: "... Ok."
 
 **Typical onboarding time for a medium feature: 3-5 days.**
 
-**Why?** Because the context isn't accessible—it's dispersed and buried.
+**Why?** Because the context isn't accessible - it's dispersed and buried.
 
 ---
 
@@ -297,7 +297,7 @@ Documentation (Notion, Confluence) gets out of sync with actual code.
 4. 3 months later, someone reads the spec and implements... the wrong thing
 
 **Real Example:**
-A team spent 2 weeks reimplementing a feature according to a stale Notion spec—because no one knew the approach had changed in a Slack thread 4 months earlier.
+A team spent 2 weeks reimplementing a feature according to a stale Notion spec - because no one knew the approach had changed in a Slack thread 4 months earlier.
 
 ---
 
@@ -362,7 +362,7 @@ Chat tools (Discord, Slack) optimize for the present. The past disappears.
 
 **Why?** Because manually synchronizing between tools **isn't a natural workflow**.
 
-People don't forget out of laziness—they forget because **the system doesn't support synchronization**.
+People don't forget out of laziness - they forget because **the system doesn't support synchronization**.
 
 ---
 
@@ -388,7 +388,7 @@ Commentary is a rich discussion space attached to each issue and feature in Sinr
 - Complete history preserved
 - Directly linked to the issue or feature
 
-**Key Difference:** Discussions don't float in Discord—they **live with the work**.
+**Key Difference:** Discussions don't float in Discord - they **live with the work**.
 
 ![Centralized Commentary](/assets/images/centralized-commentary.svg "Commentary: Discussions Attached to Work")
 
@@ -598,7 +598,7 @@ discussion + approach change with justification.
 **Why does this work?**
 Because **discussion and documentation are in the same place**.
 
-You don't synchronize—you discuss **in the work's context**.
+You don't synchronize - you discuss **in the work's context**.
 
 ![Centralized Workflow](/assets/images/centralized-workflow.svg "From Dispersion to Centralization")
 
@@ -888,7 +888,7 @@ When your discussions are in Discord, your specs in Notion, and your issues in L
 
 **Sinra centralizes everything in the same place as the work.**
 
-Discussions, decisions, issues, features, releases—**one source of truth**.
+Discussions, decisions, issues, features, releases - **one source of truth**.
 
 **Your future self will thank you.**
 

@@ -29,20 +29,20 @@ This guide provides the minimal steps to implement and test the Black Friday pro
 
 ### New Files
 
-- `_data/en/promotion.yml` — English promotion data
-- `_data/fr/promotion.yml` — French promotion data
-- `_includes/blackfriday-banner.html` — Sticky banner component
-- `_includes/blackfriday-badge.html` — Discount badge component
+- `_data/en/promotion.yml`  -  English promotion data
+- `_data/fr/promotion.yml`  -  French promotion data
+- `_includes/blackfriday-banner.html`  -  Sticky banner component
+- `_includes/blackfriday-badge.html`  -  Discount badge component
 
 ### Modified Files
 
-- `_data/en/pricing.yml` — Add original price + promotion flag to annual plan
-- `_data/fr/pricing.yml` — French equivalent of pricing changes
-- `_layouts/default.html` — Include banner at top of page
-- `_pages/pricing.en.html` — Include badge on annual card
-- `_pages/pricing.fr.html` — Include badge on annual card (French)
-- `assets/css/theme.css` — Add `.sticky-banner` and `.promotion-badge` styles
-- `assets/js/script.js` — Add banner dismissal logic
+- `_data/en/pricing.yml`  -  Add original price + promotion flag to annual plan
+- `_data/fr/pricing.yml`  -  French equivalent of pricing changes
+- `_layouts/default.html`  -  Include banner at top of page
+- `_pages/pricing.en.html`  -  Include badge on annual card
+- `_pages/pricing.fr.html`  -  Include badge on annual card (French)
+- `assets/css/theme.css`  -  Add `.sticky-banner` and `.promotion-badge` styles
+- `assets/js/script.js`  -  Add banner dismissal logic
 
 ## Detailed Steps
 
@@ -370,7 +370,7 @@ To disable promotion:
 2. **`_data/fr/promotion.yml`**: Same changes
 3. **Rebuild**: `bundle exec jekyll serve` will reflect changes immediately
 
-No code needs to be removed—just toggle the YAML flags.
+No code needs to be removed - just toggle the YAML flags.
 
 ## Success Criteria Checklist
 

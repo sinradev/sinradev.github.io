@@ -5,7 +5,7 @@ subtitle: "Comment une terminologie concrète révèle une approche fondamentale
 description: "Découvrez pourquoi Sinra utilise 'cycles' au lieu de 'sprints' et comment cela reflète un changement philosophique profond du jargon Agile vers une terminologie de gestion de projet concrète et significative."
 lang: fr
 category: Philosophie
-excerpt: "Les mots comptent. Quand nous avons choisi 'cycles' au lieu de 'sprints', ce n'était pas du rebranding—c'était rejeter la mentalité de course d'Agile et adopter des périodes de travail time-boxed qui respectent la réalité."
+excerpt: "Les mots comptent. Quand nous avons choisi 'cycles' au lieu de 'sprints', ce n'était pas du rebranding - c'était rejeter la mentalité de course d'Agile et adopter des périodes de travail time-boxed qui respectent la réalité."
 permalink: /philosophie/:year/:month/:day/why-we-abandoned-sprints-for-cycles.html
 featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png
 ---
@@ -18,7 +18,7 @@ Quand vous appelez une période de travail de deux semaines un **« sprint »**,
 
 Quand nous avons construit Sinra, nous avons complètement rejeté cette métaphore.
 
-Nous les appelons **cycles**—des périodes concrètes et time-boxed pour organiser le travail. Pas parce que « cycle » sonne mieux. Parce que ça *signifie quelque chose de différent*.
+Nous les appelons **cycles** - des périodes concrètes et time-boxed pour organiser le travail. Pas parce que « cycle » sonne mieux. Parce que ça *signifie quelque chose de différent*.
 
 Ce n'était pas une décision de branding. C'était philosophique.
 
@@ -27,10 +27,10 @@ Ce n'était pas une décision de branding. C'était philosophique.
 ## Le Problème avec la Pensée « Sprint »
 
 **La Promesse Agile :**
-Les « sprints » devaient créer de la concentration—des rafales courtes de travail productif avec des objectifs clairs et une livraison rapide.
+Les « sprints » devaient créer de la concentration - des rafales courtes de travail productif avec des objectifs clairs et une livraison rapide.
 
 **La Réalité :**
-Les équipes traitent chaque période de deux semaines comme une course vers la ligne d'arrivée. Les product owners remplissent les sprints à capacité maximale. Les développeurs coupent les coins pour « respecter l'engagement du sprint ». La qualité en souffre. Le burnout devient routinier. Le sprint se termine—et un autre sprint commence. Et un autre. Et encore un autre.
+Les équipes traitent chaque période de deux semaines comme une course vers la ligne d'arrivée. Les product owners remplissent les sprints à capacité maximale. Les développeurs coupent les coins pour « respecter l'engagement du sprint ». La qualité en souffre. Le burnout devient routinier. Le sprint se termine - et un autre sprint commence. Et un autre. Et encore un autre.
 
 Ça ne s'arrête jamais.
 
@@ -50,7 +50,7 @@ Pas des courses. Pas des engagements à tout livrer. Pas des promesses de courir
 - Du travail planifié dans les limites de la capacité
 - Des ajustements faits quand la réalité change
 
-**Le cycle n'est pas une question de vitesse—c'est une question de structure.**
+**Le cycle n'est pas une question de vitesse - c'est une question de structure.**
 
 Un cycle reconnaît que le travail prend du temps. Que les estimations sont imparfaites. Que les plans changent. Que les gens ne sont pas des machines optimisées pour la vélocité.
 
@@ -62,7 +62,7 @@ Vous demandez : *« Qu'est-ce que nous pouvons réalistement accomplir dans cett
 
 ## Le Changement Philosophique : De la Vélocité à la Capacité
 
-La culture Agile est obsédée par la **vélocité**—les story points complétés par sprint. Les équipes se font concurrence pour augmenter la vélocité. Les managers font pression sur les équipes pour qu'elles s'engagent davantage. Le système optimise pour l'output.
+La culture Agile est obsédée par la **vélocité** - les story points complétés par sprint. Les équipes se font concurrence pour augmenter la vélocité. Les managers font pression sur les équipes pour qu'elles s'engagent davantage. Le système optimise pour l'output.
 
 Mais la vélocité est une métrique de vanité.
 
@@ -115,7 +115,7 @@ Les équipes Agile tombent souvent dans ce pattern :
 
 **Répéter à l'infini.**
 
-La machinerie d'Agile—standups, planning, reviews, retrospectives—devient le travail lui-même. Les équipes passent 10+ heures par semaine en réunions *à propos* du travail au lieu de *faire* le travail.
+La machinerie d'Agile - standups, planning, reviews, retrospectives - devient le travail lui-même. Les équipes passent 10+ heures par semaine en réunions *à propos* du travail au lieu de *faire* le travail.
 
 La cadence du sprint crée de l'urgence sans but. Vous sprintez toujours, mais où allez-vous ?
 
@@ -192,7 +192,7 @@ Mais le langage façonne le comportement.
 
 (??)Quand vous les appelez "cycles", vous créez une culture de structure, de capacité et de durabilité.
 
-**Le changement n'est pas sémantique—il est culturel.**
+**Le changement n'est pas sémantique - il est culturel.**
 
 Les équipes utilisant Sinra rapportent :
 - Moins de pression pour le surengagement
@@ -262,7 +262,7 @@ Laisser une marge pour les interruptions, corrections de bugs et apprentissage. 
 
 Le langage compte. Les mots que vous utilisez façonnent la façon dont votre équipe pense au travail.
 
-Sinra a choisi les cycles parce que nous croyons que le travail doit être durable, structuré et réaliste—pas une course perpétuelle.
+Sinra a choisi les cycles parce que nous croyons que le travail doit être durable, structuré et réaliste - pas une course perpétuelle.
 
 ---
 

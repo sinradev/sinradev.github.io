@@ -31,7 +31,8 @@
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(convert:*)",
-      "Bash(magick convert:*)"
+      "Bash(magick convert:*)",
+      "Bash(git st:*)"
     ],
     "deny": [],
     "ask": [],

@@ -10,7 +10,7 @@
 
 ### Design Principles
 
-The Sinra icon system embodies **Pragmatisme Élégant**—sophisticated yet approachable, refined without being ornate. Icons should:
+The Sinra icon system embodies **Pragmatisme Élégant** - sophisticated yet approachable, refined without being ornate. Icons should:
 
 1. **Be geometrically refined**: Intentional, deliberate shapes with thoughtful details
 2. **Communicate with sophistication**: Concept immediately clear, with visual depth and refinement

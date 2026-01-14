@@ -5,7 +5,7 @@ subtitle: "How concrete naming reveals a fundamentally different approach to pro
 description: "Discover why Sinra uses 'cycles' instead of 'sprints' and how this reflects a deeper philosophical shift from Agile jargon to concrete, meaningful project management terminology."
 lang: en
 category: Philosophy
-excerpt: "Words matter. When we chose 'cycles' over 'sprints', it wasn't just rebranding—it was rejecting the race mentality of Agile and embracing time-boxed work periods that respect reality."
+excerpt: "Words matter. When we chose 'cycles' over 'sprints', it wasn't just rebranding - it was rejecting the race mentality of Agile and embracing time-boxed work periods that respect reality."
 permalink: /philosophy/:year/:month/:day/why-we-abandoned-sprints-for-cycles.html
 featured_image: /assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png
 ---
@@ -18,7 +18,7 @@ When you call a two-week work period a **"sprint"**, you're invoking imagery: ru
 
 When we built Sinra, we rejected that metaphor entirely.
 
-We call them **cycles**—concrete, time-boxed periods for organizing work. Not because "cycle" sounds cooler. Because it _means something different_.
+We call them **cycles** - concrete, time-boxed periods for organizing work. Not because "cycle" sounds cooler. Because it _means something different_.
 
 This wasn't a branding decision. It was philosophical.
 
@@ -27,10 +27,10 @@ This wasn't a branding decision. It was philosophical.
 ## The Problem with "Sprint" Thinking
 
 **The Agile Promise:**
-"Sprints" were meant to create focus—short bursts of productive work with clear goals and fast delivery.
+"Sprints" were meant to create focus - short bursts of productive work with clear goals and fast delivery.
 
 **The Reality:**
-Teams treat every two weeks like a race to the finish line. Product owners pack sprints to capacity. Developers cut corners to "make the sprint commitment." Quality suffers. Burnout becomes routine. The sprint ends—and another sprint begins. And another. And another.
+Teams treat every two weeks like a race to the finish line. Product owners pack sprints to capacity. Developers cut corners to "make the sprint commitment." Quality suffers. Burnout becomes routine. The sprint ends - and another sprint begins. And another. And another.
 
 It never stops.
 
@@ -51,7 +51,7 @@ Not races. Not commitments to deliver everything. Not promises to run until you'
 - Work planned within capacity
 - Adjustments made when reality changes
 
-**The cycle isn't about speed—it's about structure.**
+**The cycle isn't about speed - it's about structure.**
 
 A cycle acknowledges that work takes time. That estimates are imperfect. That plans change. That people aren't machines optimized for velocity.
 
@@ -63,7 +63,7 @@ You're asking: _"What can we realistically accomplish in this period?"_
 
 ## The Philosophical Shift: From Velocity to Capacity
 
-Agile culture obsesses over **velocity**—story points completed per sprint. Teams compete to increase velocity. Managers pressure teams to commit to more. The system optimizes for output.
+Agile culture obsesses over **velocity** - story points completed per sprint. Teams compete to increase velocity. Managers pressure teams to commit to more. The system optimizes for output.
 
 But velocity is a vanity metric.
 
@@ -120,7 +120,7 @@ Agile teams often fall into this pattern:
 
 **Repeat forever.**
 
-The machinery of Agile—standups, planning, reviews, retrospectives—becomes the work itself. Teams spend 10+ hours per week in meetings _about_ work instead of _doing_ work.
+The machinery of Agile - standups, planning, reviews, retrospectives - becomes the work itself. Teams spend 10+ hours per week in meetings _about_ work instead of _doing_ work.
 
 The sprint cadence creates urgency without purpose. You're always sprinting, but where are you going?
 
@@ -203,7 +203,7 @@ When you call work periods "sprints," you create a culture of urgency, velocity,
 
 When you call them "cycles," you create a culture of structure, capacity, and sustainability.
 
-**The shift isn't semantic—it's cultural.**
+**The shift isn't semantic - it's cultural.**
 
 Teams using Sinra report:
 
@@ -281,7 +281,7 @@ Track: "Did we finish what we planned?" Not: "How fast did we go?"
 
 Language matters. The words you use shape how your team thinks about work.
 
-Sinra chose cycles because we believe work should be sustainable, structured, and realistic—not a perpetual race.
+Sinra chose cycles because we believe work should be sustainable, structured, and realistic - not a perpetual race.
 
 ---
 

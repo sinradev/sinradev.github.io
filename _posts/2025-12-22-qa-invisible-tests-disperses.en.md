@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Invisible QA: When Tests Are Scattered Between Jira, Excel And QA's Memory"
-subtitle: "Between obsolete Excel test cases, disconnected Jira bugs, and lost results, nobody knows if the release is ready—Sinra centralizes everything"
+subtitle: "Between obsolete Excel test cases, disconnected Jira bugs, and lost results, nobody knows if the release is ready: Sinra centralizes everything"
 description: "Teams test without visibility: test cases in Excel, bugs in Jira, QA results in memory. Impossible to know what's been tested, what remains, and if the release can ship. Discover how Sinra unifies QA and development."
 date: 2025-12-22 09:00:00 +0100
 lang: en
@@ -84,7 +84,7 @@ Your QA maintains an Excel file with all test cases:
 - ❌ Multiple Excel versions (nobody knows which is current)
 
 **Real Result:**
-A team discovers 3 weeks after a release that a critical feature had **no test case** defined—it was in an old lost Excel version.
+A team discovers 3 weeks after a release that a critical feature had **no test case** defined - it was in an old lost Excel version.
 
 ![QA Scattered Across Tools](/assets/images/blog/2025-12-22-qa-invisible-fragmented-tools.svg "Excel, Jira, Notes: Fragmented QA")
 

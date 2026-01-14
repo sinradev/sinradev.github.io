@@ -26,7 +26,7 @@ Each step builds on the previous one, ensuring clarity and reducing surprises.
 
 ---
 
-## 1. `/speckit.specify` — Define the Feature
+## 1. `/speckit.specify`  -  Define the Feature
 
 **Purpose:** Answer WHAT and WHY before discussing HOW.
 
@@ -64,7 +64,7 @@ customer focus (helping readers find what they need). Pragmatisme Élégant.
 
 ---
 
-## 2. `/speckit.clarify` — Resolve Ambiguities (Optional)
+## 2. `/speckit.clarify`  -  Resolve Ambiguities (Optional)
 
 **Purpose:** Ask structured questions before planning to de-risk ambiguous areas.
 
@@ -80,7 +80,7 @@ customer focus (helping readers find what they need). Pragmatisme Élégant.
 
 ---
 
-## 3. `/speckit.plan` — Architecture & Approach
+## 3. `/speckit.plan`  -  Architecture & Approach
 
 **Purpose:** Describe HOW you'll build it. Architectural decisions, file changes, dependencies.
 
@@ -116,7 +116,7 @@ TESTING:
 
 ---
 
-## 4. `/speckit.checklist` — Quality Validation (Optional)
+## 4. `/speckit.checklist`  -  Quality Validation (Optional)
 
 **Purpose:** Generate quality checklists to verify requirements completeness and clarity.
 
@@ -140,7 +140,7 @@ PLAN VALIDATION:
 
 ---
 
-## 5. `/speckit.tasks` — Actionable Steps
+## 5. `/speckit.tasks`  -  Actionable Steps
 
 **Purpose:** Generate concrete, ordered tasks you (or Claude Code) will execute.
 
@@ -172,7 +172,7 @@ Task 3: Create category page template (EN)
 
 ---
 
-## 6. `/speckit.analyze` — Consistency Review (Optional)
+## 6. `/speckit.analyze`  -  Consistency Review (Optional)
 
 **Purpose:** Cross-check artifact consistency & alignment.
 
@@ -187,7 +187,7 @@ Task 3: Create category page template (EN)
 
 ---
 
-## 7. `/speckit.implement` — Execute
+## 7. `/speckit.implement`  -  Execute
 
 **Purpose:** Claude Code executes the tasks and writes code/content.
 
@@ -307,13 +307,13 @@ All Spec-Kit work must comply with the **Sinra-Website Constitution** (`.specify
 ## Quick Reference: Spec-Kit Commands
 
 ```
-/speckit.specify      — Define requirements (WHAT + WHY)
-/speckit.clarify      — Ask structured questions (optional)
-/speckit.plan         — Plan architecture and approach
-/speckit.checklist    — Generate quality checklists (optional)
-/speckit.tasks        — Break into actionable steps
-/speckit.analyze      — Check consistency (optional)
-/speckit.implement    — Execute implementation
+/speckit.specify       -  Define requirements (WHAT + WHY)
+/speckit.clarify       -  Ask structured questions (optional)
+/speckit.plan          -  Plan architecture and approach
+/speckit.checklist     -  Generate quality checklists (optional)
+/speckit.tasks         -  Break into actionable steps
+/speckit.analyze       -  Check consistency (optional)
+/speckit.implement     -  Execute implementation
 ```
 
 Start with `/speckit.specify` for your next feature. Good luck! 🚀
