@@ -402,3 +402,49 @@ section + section {
     border: 1px solid #ccc;
   }
 }
+
+/* Breadcrumbs navigation */
+.breadcrumb-nav {
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-base-content);
+  opacity: 0.7;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  padding: 0 0.5rem;
+  color: var(--color-base-content);
+  opacity: 0.5;
+}
+
+.breadcrumb-item a {
+  color: var(--color-base-content);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--color-base-content);
+  opacity: 1;
+  font-weight: 500;
+}

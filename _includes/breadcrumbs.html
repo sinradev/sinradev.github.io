@@ -1,0 +1,34 @@
+{%- comment -%}
+Breadcrumbs navigation for SEO and UX
+Displays navigation path: Home > Category > Page Title
+{%- endcomment -%}
+
+{%- if page.layout == 'post' or page.layout == 'page' -%}
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb">
+    {%- comment -%}Home link{%- endcomment -%}
+    <li class="breadcrumb-item">
+      <a href="{{ site.url }}{% if page.lang != 'en' %}/{{ page.lang }}{% endif %}/">
+        {%- if page.lang == 'fr' -%}Accueil
+        {%- elsif page.lang == 'es' -%}Inicio
+        {%- else -%}Home
+        {%- endif -%}
+      </a>
+    </li>
+
+    {%- comment -%}Category for blog posts{%- endcomment -%}
+    {%- if page.layout == 'post' and page.category -%}
+      <li class="breadcrumb-item">
+        <a href="{{ site.url }}{% if page.lang != 'en' %}/{{ page.lang }}{% endif %}/{{ page.category | downcase }}/">
+          {{ page.category }}
+        </a>
+      </li>
+    {%- endif -%}
+
+    {%- comment -%}Current page (no link){%- endcomment -%}
+    <li class="breadcrumb-item active" aria-current="page">
+      {{ page.title }}
+    </li>
+  </ol>
+</nav>
+{%- endif -%}

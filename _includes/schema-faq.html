@@ -1,0 +1,29 @@
+{%- comment -%}
+FAQ Schema.org structured data
+Add FAQPage schema to pages with frequently asked questions
+Pass 'faq_page_id' to specify which FAQ to load from _data
+{%- endcomment -%}
+
+{%- if page.faq_page_id -%}
+  {%- assign faq_data = site.data[page.lang][page.faq_page_id] -%}
+  {%- if faq_data and faq_data.faq -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in faq_data.faq -%}
+    {
+      "@type": "Question",
+      "name": "{{ item.question | escape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ item.answer | escape }}"
+      }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+  {%- endif -%}
+{%- endif -%}
