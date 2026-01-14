@@ -38,7 +38,9 @@
       "Bash(do convert \"$img.png\" \"$img.webp\")",
       "Bash(echo:*)",
       "Bash(done)",
-      "Bash(magick:*)"
+      "Bash(magick:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)"
     ],
     "deny": [],
     "ask": [],
