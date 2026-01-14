@@ -405,8 +405,9 @@ section + section {
 
 /* Breadcrumbs navigation */
 .breadcrumb-nav {
-  padding: 1rem 0;
-  margin-bottom: 1.5rem;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid oklch(26.346% 0.018 262.177);
 }
 
 .breadcrumb {
@@ -416,35 +417,37 @@ section + section {
   padding: 0;
   margin: 0;
   font-size: 0.875rem;
-  color: var(--color-base-content);
-  opacity: 0.7;
 }
 
 .breadcrumb-item {
   display: flex;
   align-items: center;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.6;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: "›";
   padding: 0 0.5rem;
-  color: var(--color-base-content);
-  opacity: 0.5;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.4;
 }
 
 .breadcrumb-item a {
-  color: var(--color-base-content);
+  color: oklch(82.901% 0.031 222.959);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.7;
 }
 
 .breadcrumb-item a:hover {
-  color: var(--color-primary);
-  text-decoration: underline;
+  color: oklch(86.133% 0.141 139.549);
+  opacity: 1;
+  text-decoration: none;
 }
 
 .breadcrumb-item.active {
-  color: var(--color-base-content);
-  opacity: 1;
-  font-weight: 500;
+  color: oklch(82.901% 0.031 222.959);
+  opacity: 0.8;
+  font-weight: 400;
 }
