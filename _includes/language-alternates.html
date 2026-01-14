@@ -1,39 +1,99 @@
 {%- comment -%}
-Language Alternates Helper for Jekyll Polyglot
-Finds the translated version of the current post and generates proper hreflang links
+Language Alternates (hreflang) for SEO
+Generates hreflang links for multilingual content (EN/FR/ES)
+Supports both static pages (via page_id) and blog posts (via matching slugs)
 {%- endcomment -%}
 
 {%- if page.lang -%}
-  {%- if page.layout == 'post' -%}
-    {%- comment -%}
-    For posts, find the alternate language version by matching the date and category
-    {%- endcomment -%}
-    {%- if page.lang == 'en' -%}
-      {%- comment -%}Current page is English, find French version{%- endcomment -%}
-      {%- comment -%}For V-Model posts, hardcode the mapping{%- endcomment -%}
-      {%- if page.url contains 'vmodel-vs-agile-choose-both' -%}
-        {%- assign alternate_lang = 'fr' -%}
-        {%- assign alternate_post = site.posts | where: "lang", "fr" | first -%}
-      {%- else -%}
-        {%- assign alternate_lang = 'fr' -%}
-        {%- assign alternate_posts = site.posts | where: "lang", "fr" -%}
-        {%- assign alternate_post = alternate_posts | first -%}
-      {%- endif -%}
-    {%- elsif page.lang == 'fr' -%}
-      {%- comment -%}Current page is French, find English version{%- endcomment -%}
-      {%- comment -%}For V-Model posts, hardcode the mapping{%- endcomment -%}
-      {%- if page.url contains 'vmodel-ou-agile-choisir-les-deux' -%}
-        {%- assign alternate_lang = 'en' -%}
-        {%- assign alternate_post = site.posts | where: "lang", "en" | first -%}
-      {%- else -%}
-        {%- assign alternate_lang = 'en' -%}
-        {%- assign alternate_posts = site.posts | where: "lang", "en" -%}
-        {%- assign alternate_post = alternate_posts | first -%}
-      {%- endif -%}
-    {%- endif -%}
+  {%- comment -%}Self-reference: always include current page{%- endcomment -%}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url }}{{ page.url }}">
 
-    {%- if alternate_post -%}
-      <link rel="alternate" hreflang="{{ alternate_lang }}" href="{{ site.url }}{{ alternate_post.url }}">
+  {%- comment -%}
+  STATIC PAGES: Use page_id to map translations
+  {%- endcomment -%}
+  {%- if page.page_id -%}
+    {%- assign translations = site.data.page_translations[page.page_id] -%}
+
+    {%- if translations -%}
+      {%- for lang in site.languages -%}
+        {%- if lang != page.lang -%}
+          {%- assign lang_url = translations[lang] -%}
+          {%- if lang_url -%}
+            {%- if lang == 'en' -%}
+              <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ lang_url }}">
+            {%- else -%}
+              <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ lang_url }}">
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- comment -%}x-default: fallback to English version{%- endcomment -%}
+      {%- assign en_url = translations['en'] -%}
+      {%- if en_url -%}
+        <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ en_url }}">
+      {%- endif -%}
     {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%}
+  BLOG POSTS: Find translations by matching slug (filename without date)
+  Example: 2025-12-01-release-driven-development.en.md → slug = "release-driven-development"
+  {%- endcomment -%}
+  {%- if page.layout == 'post' -%}
+    {%- comment -%}Extract slug from current post (remove date prefix and language suffix){%- endcomment -%}
+    {%- assign url_parts = page.url | split: '/' -%}
+    {%- assign filename = url_parts | last | remove: '.html' -%}
+
+    {%- comment -%}Try to extract base slug{%- endcomment -%}
+    {%- assign slug_parts = filename | split: '-' -%}
+    {%- assign slug_size = slug_parts | size | minus: 1 -%}
+    {%- if slug_size > 3 -%}
+      {%- comment -%}Remove first 3 parts (YYYY-MM-DD) to get slug{%- endcomment -%}
+      {%- assign base_slug_arr = slug_parts | slice: 3, slug_size -%}
+      {%- assign base_slug = base_slug_arr | join: '-' -%}
+
+      {%- comment -%}Find posts in other languages with same date and matching slug{%- endcomment -%}
+      {%- for lang in site.languages -%}
+        {%- if lang != page.lang -%}
+          {%- assign lang_posts = site.posts | where: "lang", lang -%}
+          {%- for alt_post in lang_posts -%}
+            {%- if alt_post.url contains base_slug or alt_post.date == page.date -%}
+              <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ alt_post.url }}">
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- comment -%}x-default: find English version{%- endcomment -%}
+      {%- if page.lang != 'en' -%}
+        {%- assign en_posts = site.posts | where: "lang", "en" -%}
+        {%- for en_post in en_posts -%}
+          {%- if en_post.url contains base_slug or en_post.date == page.date -%}
+            <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ en_post.url }}">
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}">
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%}
+  HOMEPAGE: Special case for root URL
+  {%- endcomment -%}
+  {%- if page.url == '/' or page.url == '/index.html' -%}
+    {%- for lang in site.languages -%}
+      {%- if lang != page.lang -%}
+        {%- if lang == 'en' -%}
+          <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/">
+        {%- else -%}
+          <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}/">
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
   {%- endif -%}
 {%- endif -%}
