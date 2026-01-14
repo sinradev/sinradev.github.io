@@ -1,31 +1,31 @@
 - title: Éditeur Texte Riche avec Contexte
   body: Les corps de spécification et issues supportent le formatage riche comme Notion. Écrivez des requirements détaillés une fois, réutilisez-les dans les releases. Plus de docs éparpillées.
-  image: /assets/images/rich-text-editor.svg
+  image: /assets/images/rich-text-editor.png
   alt: Éditeur texte riche
 - title: Suivi de Progression à Tous les Niveaux
   body: Suivez la progression par date %, complétude statut, temps passé vs estimé, et charge équipe par Issues, Cycles, Releases, et Fonctionnalités. Vraie visibilité.
-  image: /assets/images/progress-tracking.svg
+  image: /assets/images/progress-tracking.png
   alt: Suivi multi-niveaux de la progression
 - title: Commentaires Polymorphes & Collaboration Temps Réel
   body: Discutez et synchronisez-vous directement sur les issues et fonctionnalités. Les fils de commentaires avec @mentions, notifications instantanées, et formatage riche maintiennent les équipes alignées sans réunions de statut interminables. Tout le contexte vit au même endroit.
-  image: /assets/images/collaboration-sync.svg
+  image: /assets/images/collaboration-sync.png
 - title: Planification des Déploiements par Release
   body: Planifiez les releases complètes avec visibilité totale sur les features, la couverture de test, et la préparation. Voyez quelles équipes possèdent quelles releases, suivez les dates de déploiement, et gérez les listes de vérification de go-live. Succès des releases, pas du combat d'urgence.
-  image: /assets/images/release-planning.svg
+  image: /assets/images/release-planning.png
   alt: Planification des releases et déploiements
 - title: Visibilité Multi-App & Charge d'Équipes Croisées
   body: Gérez plusieurs applications et plateformes au même endroit. Les équipes front et back travaillent ensemble sans friction tout en connaissant leur charge en temps réel. Fini les silos entre départements. Intelligence complète des capacités dans toute votre pile technologique.
-  image: /assets/images/multi-app-workload.svg
+  image: /assets/images/multi-app-workload.png
   alt: Gestion multi-app et charge croisée
 - title: <strong>Workflows Entièrement Personnalisables</strong> - Votre Processus, Pas le Nôtre
   body: Construisez des workflows qui correspondent à votre processus exact sans toucher au code. Statuts personnalisés, gates d'approbation, accès basé sur les rôles, et règles de validation automatisées. Que vous suiviez V-Model, Agile, ou une approche hybride, Sinra s'adapte à vous - pas l'inverse. Exigences de conformité ? Pistes d'audit intégrées et application des workflows.
-  image: /assets/images/custom-workflows.svg
+  image: /assets/images/custom-workflows.png
   alt: Workflows personnalisables et application de conformité
 - title: Report Intelligent des Issues
   body: Les issues non termineées ne disparaissent pas. Sinra reporte automatiquement les issues incomplètes du cycle courant vers la planification du cycle suivant. Plus de contexte perdu. Plus de travail oublié. Chaque issue reste visible et suivie, assurant que rien ne glisse entre les mailles du filet entre les cycles.
-  image: /assets/images/carry-over-issues.svg
+  image: /assets/images/carry-over-issues.png
   alt: Report intelligent des issues entre cycles
 - title: Glossaire des Termes Métier Centralisé
   body: Documentez et standardisez vos termes métier directement dans Sinra. Créez un glossaire unique qui définit les concepts clés de votre produit. Réutilisez ces termes automatiquement dans les spécifications, les issues, et la documentation. Élimine les ambiguïtés, garantit la cohérence terminologique entre les équipes.
-  image: /assets/images/glossary-terminology.svg
+  image: /assets/images/glossary-terminology.png
   alt: Glossaire des termes métier et réutilisation dans les specs

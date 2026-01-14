@@ -32,7 +32,13 @@
       "Bash(grep:*)",
       "Bash(convert:*)",
       "Bash(magick convert:*)",
-      "Bash(git st:*)"
+      "Bash(git st:*)",
+      "Bash(wc:*)",
+      "Bash(for img in rich-text-editor progress-tracking collaboration-sync release-planning multi-app-workload)",
+      "Bash(do convert \"$img.png\" \"$img.webp\")",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "Bash(magick:*)"
     ],
     "deny": [],
     "ask": [],
