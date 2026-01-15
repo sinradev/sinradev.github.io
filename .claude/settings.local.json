@@ -32,10 +32,16 @@
       "Bash(grep:*)",
       "Bash(convert:*)",
       "Bash(magick convert:*)",
-      "Bash(git st:*)"
+      "Bash(git st:*)",
+      "Bash(magick:*)",
+      "Bash(sort:*)"
     ],
     "deny": [],
     "ask": [],
     "defaultMode": "acceptEdits"
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
   }
 }
