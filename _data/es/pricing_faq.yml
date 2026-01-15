@@ -1,12 +1,11 @@
-faq:
-  - question: "¿Qué es Sinra?"
-    answer: "Sinra es una herramienta moderna de gestión de proyectos que combina la estructura del modelo en V con la flexibilidad Ágil. Ayuda a los equipos a organizar el trabajo en torno a releases concretas, gestionar la planificación de capacidad, realizar un seguimiento de issues y capabilities, y mantener documentación unificada, todo en un solo lugar."
+- question: "¿Qué es Sinra?"
+  answer: "Sinra es una herramienta moderna de gestión de proyectos que combina la estructura del modelo en V con la flexibilidad Ágil. Ayuda a los equipos a organizar el trabajo en torno a releases concretas, gestionar la planificación de capacidad, realizar un seguimiento de issues y capabilities, y mantener documentación unificada, todo en un solo lugar."
 
-  - question: "¿Cuánto cuesta Sinra?"
-    answer: "Sinra Pro cuesta 10 € por usuario por mes con facturación mensual, o 96 € por usuario por año (8 €/mes) con facturación anual, ahorrándote un 20%. Ofrecemos una prueba gratuita de 14 días sin necesidad de tarjeta de crédito."
+- question: "¿Cuánto cuesta Sinra?"
+  answer: "Sinra Pro cuesta 10 € por usuario por mes con facturación mensual, o 96 € por usuario por año (8 €/mes) con facturación anual, ahorrándote un 20%. Ofrecemos una prueba gratuita de 14 días sin necesidad de tarjeta de crédito."
 
-  - question: "¿Puedo probar Sinra antes de comprar?"
-    answer: "¡Sí! Ofrecemos una prueba gratuita de 14 días con acceso completo a todas las funcionalidades. No se requiere tarjeta de crédito para comenzar tu prueba. Puedes invitar a tu equipo y probar Sinra en un entorno de proyecto real."
+- question: "¿Puedo probar Sinra antes de comprar?"
+  answer: "¡Sí! Ofrecemos una prueba gratuita de 14 días con acceso completo a todas las funcionalidades. No se requiere tarjeta de crédito para comenzar tu prueba. Puedes invitar a tu equipo y probar Sinra en un entorno de proyecto real."
 
-  - question: "¿Qué incluye el plan Sinra Pro?"
-    answer: "Sinra Pro incluye proyectos y releases ilimitados, planificación de capacidad avanzada, gestión de QA integrada, editor de texto enriquecido para especificaciones, inteligencia multivista (Kanban, Lista, Release), gestión de releases con checklists, workflows personalizados y soporte prioritario por correo electrónico y chat."
+- question: "¿Qué incluye el plan Sinra Pro?"
+  answer: "Sinra Pro incluye proyectos y releases ilimitados, planificación de capacidad avanzada, gestión de QA integrada, editor de texto enriquecido para especificaciones, inteligencia multivista (Kanban, Lista, Release), gestión de releases con checklists, workflows personalizados y soporte prioritario por correo electrónico y chat."
