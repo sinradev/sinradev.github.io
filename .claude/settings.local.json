@@ -45,5 +45,9 @@
     "deny": [],
     "ask": [],
     "defaultMode": "acceptEdits"
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
   }
 }

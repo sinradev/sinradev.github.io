@@ -1,6 +1,11 @@
-- question: What types of payment do you accept?
-  answer: Credit cards including MasterCard, Visa or American Express.
-- question: Do you offer pricing for nonprofit organizations?
-  answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
-- question: Questions?
-  answer: Contact us for any further questions from <a href="/contact/">our contact form</a>.
+- question: "What is Sinra?"
+  answer: "Sinra is a modern project management tool that combines V-Model structure with Agile flexibility. It helps teams organize work around concrete releases, manage capacity planning, track issues and capabilities, and maintain unified documentation - all in one place."
+
+- question: "How much does Sinra cost?"
+  answer: "Sinra Pro costs €10 per user per month when billed monthly, or €96 per user per year (€8/month) when billed annually - saving you 20%. We offer a 14-day free trial with no credit card required."
+
+- question: "Can I try Sinra before purchasing?"
+  answer: "Yes! We offer a 14-day free trial with full access to all features. No credit card is required to start your trial. You can invite your team and test Sinra in a real project environment."
+
+- question: "What's included in the Sinra Pro plan?"
+  answer: "Sinra Pro includes unlimited projects and releases, advanced capacity planning, integrated QA management, rich text editor for specifications, multi-view intelligence (Kanban, List, Release), release management with checklists, custom workflows, and priority email and chat support."

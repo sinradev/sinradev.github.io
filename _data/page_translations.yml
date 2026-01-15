@@ -1,0 +1,27 @@
+# Page translations mapping for hreflang tags
+# Maps page_id to URL paths for each language
+
+pricing:
+  en: /pricing/
+  fr: /pricing/
+  es: /pricing/
+
+about:
+  en: /about/
+  fr: /about/
+  es: /about/
+
+contact:
+  en: /contact/
+  fr: /contact/
+  es: /contact/
+
+contact-success:
+  en: /contact/success/
+  fr: /contact/success/
+  es: /contact/success/
+
+home:
+  en: /
+  fr: /
+  es: /
