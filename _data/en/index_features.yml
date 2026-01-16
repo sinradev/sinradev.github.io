@@ -1,31 +1,31 @@
 - title: Rich Text Editor with Context
   body: Specification and issue bodies support rich formatting like Notion. Write detailed requirements once, reuse them across releases. No more scattered documentation.
-  image: /assets/images/rich-text-editor.svg
+  image: /assets/images/rich-text-editor.png
   alt: Rich text editor
 - title: Progress Tracking at Every Level
   body: Track progress by date %, status completion, time spent vs estimated, and team workload per Issues, Cycles, Releases, and Capabilities. Real visibility.
-  image: /assets/images/progress-tracking.svg
+  image: /assets/images/progress-tracking.png
   alt: Multi-level progress tracking
 - title: Polymorphic Comments & Real-Time Collaboration
   body: Discuss and synchronize directly on issues and capabilities. Comment threads with @mentions, instant notifications, and rich formatting keep teams aligned without endless status meetings. All context lives in one place.
-  image: /assets/images/collaboration-sync.svg
+  image: /assets/images/collaboration-sync.png
 - title: Release-Driven Deployment Planning
   body: Plan entire releases with full visibility into features, test coverage, and readiness. See which teams own which releases, track deployment dates, and manage go-live checklists. Release success, not firefighting.
-  image: /assets/images/release-planning.svg
+  image: /assets/images/release-planning.png
   alt: Release and deployment planning
 - title: Multi-App & Cross-Team Workload Visibility
   body: Manage multiple applications and platforms in one place. Front-end and back-end teams work together seamlessly while you see real-time workload across all teams. No more silos between departments. Complete capacity intelligence across your entire tech stack.
-  image: /assets/images/multi-app-workload.svg
+  image: /assets/images/multi-app-workload.png
   alt: Multi-app and cross-team workload management
 - title: <strong>Fully Customizable Workflows</strong> - Your Process, Not Ours
   body: Build workflows that match your exact process without touching code. Custom statuses, approval gates, role-based access, and automated validation rules. Whether you follow V-Model, Agile, or a hybrid approach, Sinra adapts to you - not the other way around. Compliance requirements? Built-in audit trails and workflow enforcement.
-  image: /assets/images/custom-workflows.svg
+  image: /assets/images/custom-workflows.png
   alt: Customizable workflows and compliance enforcement
 - title: Intelligent Issue Carry-Over
   body: Unfinished issues don't disappear. Sinra automatically carries over incomplete issues from the current cycle into planning for the next one. No more lost context. No more forgotten work. Every issue remains visible and tracked, ensuring nothing slips through the cracks between cycles.
-  image: /assets/images/carry-over-issues.svg
+  image: /assets/images/carry-over-issues.png
   alt: Intelligent issue carry-over between cycles
 - title: Centralized Business Terms Glossary
   body: Document and standardize your business terminology directly in Sinra. Create a single glossary that defines your product's key concepts. Reuse these terms automatically across specifications, issues, and documentation. Eliminates ambiguity, ensures consistent terminology across all teams.
-  image: /assets/images/glossary-terminology.svg
+  image: /assets/images/glossary-terminology.png
   alt: Business glossary and term reuse in specifications
