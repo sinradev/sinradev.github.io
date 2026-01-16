@@ -37,6 +37,8 @@ about:
   ready_to_transform_desc: "Try Sinra risk-free. Teams report 40%+ reduction in planning overhead, predictable release dates, and higher code quality. All without the plugin sprawl of traditional tools."
   learn_more: "Try for Free"
 blog:
+  page_title: "Sinra Blog - Project Management Insights"
+  page_description: "Learn modern project management strategies, release planning, QA integration, and team scaling. Insights for engineering leaders and project managers."
   older_posts: Older posts
   newer_posts: Newer posts
   date_format: "%B %d, %Y"

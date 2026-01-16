@@ -116,6 +116,8 @@ contact_success:
   success: Succès
   message: Votre message a été envoyé. Nous vous contacterons dès que possible.
 blog:
+  page_title: "Blog Sinra - Conseils en Gestion de Projet"
+  page_description: "Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA et montée en charge des équipes. Conseils pour les leaders techniques et chefs de projet."
   older_posts: Anciens articles
   newer_posts: Nouveaux articles
   date_format: "%d/%M/%Y"

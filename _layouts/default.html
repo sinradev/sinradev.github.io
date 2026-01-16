@@ -4,9 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ page.lang | default: site.active_lang }}">
+    {% if page.url contains '/blog/' %}
+      {% if site.active_lang == 'fr' %}
+    <meta name="description" content="Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA et montée en charge des équipes. Conseils pour les leaders techniques et chefs de projet.">
+      {% elsif site.active_lang == 'es' %}
+    <meta name="description" content="Aprenda estrategias modernas de gestión de proyectos, planificación de releases, integración de QA y escalado de equipos. Insights para líderes de ingeniería y gerentes de proyectos.">
+      {% else %}
+    <meta name="description" content="Learn modern project management strategies, release planning, QA integration, and team scaling. Insights for engineering leaders and project managers.">
+      {% endif %}
+    {% elsif page.description %}
     <meta name="description" content="{{ page.description }}">
+    {% elsif page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
     <meta name="theme-color" content="#1a1a2e">
+    {% if page.url contains '/blog/' %}
+      {% if site.active_lang == 'fr' %}
+    <title>Blog Sinra - Conseils en Gestion de Projet</title>
+      {% elsif site.active_lang == 'es' %}
+    <title>Blog de Sinra - Insights de Gestión de Proyectos</title>
+      {% else %}
+    <title>Sinra Blog - Project Management Insights</title>
+      {% endif %}
+    {% elsif page.title %}
     <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
 
     <!-- Canonical URL for SEO -->
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
