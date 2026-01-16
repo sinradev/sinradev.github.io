@@ -59,7 +59,7 @@ DPO: «Exactamente.»
 
 CTO: «Tenemos que cambiar de proveedor. Ahora.»
 
-![Datos en Europa pero accesibles desde EE.UU.](/assets/images/blog/2026-01-13-cloud-act-contradiction.svg)
+<img src="/assets/images/blog/2026-01-13-cloud-act-contradiction.svg" alt="Datos en Europa pero accesibles desde EE.UU." width="800" height="421" loading="lazy">
 
 ---
 
@@ -107,7 +107,7 @@ Amazon está **legalmente obligado** a cumplir con el Cloud Act, incluso si los 
 
 **No tienes ningún control.**
 
-![Cloud Act evita la ubicación física](/assets/images/blog/2026-01-13-cloud-act-flow.svg)
+<img src="/assets/images/blog/2026-01-13-cloud-act-flow.svg" alt="Cloud Act evita la ubicación física" width="800" height="516" loading="lazy">
 
 **El Problema:**
 - ❌ Datos en Europa, pero accesibles a EE.UU.
@@ -160,7 +160,7 @@ Usar AWS, Google Cloud o Azure con datos personales europeos es **legalmente arr
 
 Varias autoridades de protección de datos (CNIL en Francia, EDPB a nivel europeo) han advertido que estas transferencias no cumplen con el RGPD.
 
-![RGPD y Cloud Act incompatibles](/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg)
+<img src="/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg" alt="RGPD y Cloud Act incompatibles" width="800" height="468" loading="lazy">
 
 **El Problema:**
 - ❌ Imposible cumplir RGPD con proveedor de EE.UU.
@@ -222,7 +222,7 @@ Tus clientes te confían:
 
 **Has perdido el control.**
 
-![Pérdida de soberanía de datos](/assets/images/blog/2026-01-13-sovereignty-loss.svg)
+<img src="/assets/images/blog/2026-01-13-sovereignty-loss.svg" alt="Pérdida de soberanía de datos" width="800" height="468" loading="lazy">
 
 **El Problema:**
 - ❌ Datos bajo jurisdicción extranjera
@@ -268,7 +268,7 @@ Un cliente B2B te pregunta dónde están alojados sus datos. Respondes «Europa�
 
 **Deal perdido.**
 
-![Deal perdido por alojamiento en EE.UU.](/assets/images/blog/2026-01-13-deal-lost-hosting.svg)
+<img src="/assets/images/blog/2026-01-13-deal-lost-hosting.svg" alt="Deal perdido por alojamiento en EE.UU." width="800" height="421" loading="lazy">
 
 **El Problema:**
 - ❌ Clientes B2B exigen soberanía de datos
@@ -469,7 +469,7 @@ Sinra hizo la elección de la **soberanía de datos** desde el principio.
    - SecNumCloud (ANSSI) = referencial francés más exigente
    - ISO 27001 = estándar internacional de seguridad
 
-![Datos de Sinra alojados en OVH Francia](/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg)
+<img src="/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg" alt="Datos de Sinra alojados en OVH Francia" width="800" height="468" loading="lazy">
 
 **Cita de Thomas Milcent (fundador de Sinra):**
 > «Desde el principio, queríamos que los datos de nuestros clientes permanecieran en Francia. No por razones de marketing, sino porque es lo correcto. OVH nos permite garantizar la soberanía de datos mientras tenemos una infraestructura fiable y eficiente.»
@@ -617,7 +617,7 @@ Presupuesto ajustado.
 **Cita del CTO de TechCorp:**
 > «Migrar a OVH fue la mejor decisión técnica del año. Ahorramos €16k, ganamos 2 grandes deals que habríamos perdido, y dormimos mejor sabiendo que nuestros datos están verdaderamente en Francia.»
 
-![TechCorp: métricas antes/después migración OVH](/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg)
+<img src="/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg" alt="TechCorp: métricas antes/después migración OVH" width="800" height="468" loading="lazy">
 
 ---
 

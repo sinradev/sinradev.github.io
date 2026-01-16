@@ -82,7 +82,7 @@ Lead Dev : « Euh... bonne question. Peut-être le 'Auth System Overview' ? Ou l
 
 **Résultat :** Alex a passé 2 heures à lire de la documentation obsolète pour finalement apprendre en lisant le code.
 
-![Versions multiples : Personne ne sait laquelle est correcte](/assets/images/blog/2025-12-24-documentation-morte-multiple-versions.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-multiple-versions.svg" alt="Versions multiples : Personne ne sait laquelle est correcte" width="800" height="500" loading="lazy">
 
 ---
 
@@ -118,7 +118,7 @@ Vous écrivez une magnifique spec technique dans Notion il y a 6 mois. Le code �
 **Résultat Réel :**
 Une étude interne chez une scale-up tech de 50 personnes a révélé que **73% de leur documentation Confluence avait plus de 6 mois et ne correspondait plus au code actuel**.
 
-![Chronologie de l'obsolescence de la documentation sur 6 mois](/assets/images/blog/2025-12-24-documentation-morte-obsolescence-timeline.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-obsolescence-timeline.svg" alt="Chronologie de l'obsolescence de la documentation sur 6 mois" width="800" height="400" loading="lazy">
 
 ---
 
@@ -300,7 +300,7 @@ Informations dispersées entre :
 
 Personne ne sait où chercher. Personne ne sait quelle info est correcte. Chacun maintient sa propre version mentale de « comment ça marche vraiment ».
 
-![Documentation dispersée entre 6 outils](/assets/images/blog/2025-12-24-documentation-morte-scattered-tools.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-scattered-tools.svg" alt="Documentation dispersée entre 6 outils" width="800" height="450" loading="lazy">
 
 ---
 
@@ -366,7 +366,7 @@ Reprenons l'exemple de l'authentification.
 
 **Résultat :** Doc Notion figée, code évolue, désynchronisation totale.
 
-![Approche traditionnelle vs Sinra](/assets/images/blog/2025-12-24-documentation-morte-traditional-vs-sinra.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-traditional-vs-sinra.svg" alt="Approche traditionnelle vs Sinra" width="800" height="450" loading="lazy">
 
 ---
 
@@ -546,7 +546,7 @@ Développeur cherche : « OAuth2 refresh tokens »
 
 **Avec Notion + GitHub + Jira séparés :** 30 minutes (3 recherches dans 3 outils).
 
-![Recherche silotée vs recherche unifiée](/assets/images/blog/2025-12-24-documentation-morte-search-comparison.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-search-comparison.svg" alt="Recherche silotée vs recherche unifiée" width="800" height="400" loading="lazy">
 
 ---
 
@@ -606,7 +606,7 @@ Nouveau développeur implémente feature « Export CSV » basé sur spec Notion 
 **Citation Product Manager :**
 > « Fini les 6 versions contradictoires d'une spec. On a une capability avec description + commentary. C'est LA source de vérité. Si ça change, on met à jour la capability. Simple. »
 
-![DataFlow : Avant vs Après Sinra](/assets/images/blog/2025-12-24-documentation-morte-before-after.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-before-after.svg" alt="DataFlow : Avant vs Après Sinra" width="800" height="450" loading="lazy">
 
 ---
 

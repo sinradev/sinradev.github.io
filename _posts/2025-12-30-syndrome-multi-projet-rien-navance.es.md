@@ -53,7 +53,7 @@ Manager: "OK. Voy a mirar eso."
 
 Manager: "Mierda."
 
-![Dev 1 asignado a 4 proyectos simultáneos con sobreasignación 180%](/assets/images/blog/2025-12-30-syndrome-multi-projet-developer-overload.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-developer-overload.svg" alt="Dev 1 asignado a 4 proyectos simultáneos con sobreasignación 180%" width="800" height="450" loading="lazy">
 
 ---
 
@@ -100,7 +100,7 @@ Equipo de 8 desarrolladores. 6 proyectos activos.
 
 **Ningún proyecto terminado.**
 
-![6 proyectos activos, ninguno terminado tras 4 semanas](/assets/images/blog/2025-12-30-syndrome-multi-projet-nothing-finishes.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-nothing-finishes.svg" alt="6 proyectos activos, ninguno terminado tras 4 semanas" width="800" height="450" loading="lazy">
 
 **El Problema:**
 - ❌ Desarrolladores fragmentados en múltiples proyectos
@@ -158,7 +158,7 @@ Tu desarrollador pasa su día cambiando entre 3, 4 proyectos diferentes. Resulta
 
 **17:00:** Fin del día. Dev 1 se da cuenta de que no ha **terminado nada**.
 
-![Día típico con 6 context switches y 60% tiempo perdido](/assets/images/blog/2025-12-30-syndrome-multi-projet-context-switching.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-context-switching.svg" alt="Día típico con 6 context switches y 60% tiempo perdido" width="800" height="450" loading="lazy">
 
 **El Problema:**
 - ❌ 5-6 context switches al día
@@ -174,7 +174,7 @@ Investigación (Gerald Weinberg, *Quality Software Management*):
 - **3 proyectos:** 20% productividad por proyecto (40% perdido en switching)
 - **4+ proyectos:** <10% productividad por proyecto (60%+ perdido en switching)
 
-![Pérdida de productividad según número de proyectos](/assets/images/blog/2025-12-30-syndrome-multi-projet-productivity-loss.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-productivity-loss.svg" alt="Pérdida de productividad según número de proyectos" width="800" height="450" loading="lazy">
 
 **Resultado:** El context switching destruye la productividad.
 
@@ -565,7 +565,7 @@ Dev 5: 3 proyectos (Proyecto B, D, E) 🚨 Sobreasignado
 - Quitar Dev 3 de 2 proyectos
 - Quitar Dev 5 de 1 proyecto
 
-![Vista asignación Sinra con alertas de sobrecarga](/assets/images/blog/2025-12-30-syndrome-multi-projet-allocation-view.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-allocation-view.svg" alt="Vista asignación Sinra con alertas de sobrecarga" width="800" height="450" loading="lazy">
 
 **Beneficio:** Imposible no ver la sobrecarga.
 
@@ -695,7 +695,7 @@ Cada proyecto ahora tiene desarrolladores **a tiempo completo**.
 **Cita Product Manager:**
 > "Los proyectos finalmente se terminan. Antes, todo estaba retrasado. Ahora, entregamos a tiempo. ¿La diferencia? Cada dev está enfocado en un solo proyecto."
 
-![Nexus: métricas antes/después de Sinra](/assets/images/blog/2025-12-30-syndrome-multi-projet-nexus-before-after.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-nexus-before-after.svg" alt="Nexus: métricas antes/después de Sinra" width="800" height="450" loading="lazy">
 
 ---
 

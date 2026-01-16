@@ -63,7 +63,7 @@ CTO: "Ah. Nadie me explicó el contexto. OK, aprobado. Tardará 2 días en provi
 - **Tiempo real necesario tras desbloqueo:** 4 días
 - **Tiempo perdido por dependencias ocultas:** 17 días
 
-![Cronología: feature bloqueada 3 semanas, pero solo 4 días de trabajo real](/assets/images/blog/2025-12-28-dependances-cachees-blocked-timeline.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-blocked-timeline.svg" alt="Cronología: feature bloqueada 3 semanas, pero solo 4 días de trabajo real" width="800" height="400" loading="lazy">
 
 ---
 
@@ -138,7 +138,7 @@ Feature: **"Notificaciones push móviles"**
 
 Móvil → Backend → Infra (Redis) → Infra (Firebase) → Seguridad → Móvil (APNs)
 
-![Descubrimiento progresivo de la cadena de dependencias durante 23 días](/assets/images/blog/2025-12-28-dependances-cachees-chain-progressive.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-chain-progressive.svg" alt="Descubrimiento progresivo de la cadena de dependencias durante 23 días" width="800" height="450" loading="lazy">
 
 **El Problema:**
 - ❌ Cadena descubierta progresivamente (no anticipada)
@@ -192,7 +192,7 @@ Frontend completa la integración.
 - **Tiempo real necesario con coordinación clara:** 1.5 semanas
 - **Tiempo perdido por mala coordinación:** 2.5 semanas
 
-![Equipos que se esperan mutuamente: deadlock total](/assets/images/blog/2025-12-28-dependances-cachees-teams-waiting.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-teams-waiting.svg" alt="Equipos que se esperan mutuamente: deadlock total" width="800" height="450" loading="lazy">
 
 **El Problema:**
 - ❌ Suposiciones contradictorias (cada uno piensa que el otro hace el trabajo)
@@ -509,7 +509,7 @@ Bloquea: [INFRA-567] Bucket S3
 
 **Ganancia:** 11 días ahorrados gracias a la anticipación.
 
-![Comparación: enfoque tradicional (17 días) vs Sinra (6 días)](/assets/images/blog/2025-12-28-dependances-cachees-traditional-vs-sinra.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-traditional-vs-sinra.svg" alt="Comparación: enfoque tradicional (17 días) vs Sinra (6 días)" width="800" height="450" loading="lazy">
 
 ---
 
@@ -563,7 +563,7 @@ Release Q2
 - Contactar CTO para desbloquear Feature B
 - Hacer seguimiento con diseño para desbloquear Feature D
 
-![Vista gráfica completa de dependencias en Sinra](/assets/images/blog/2025-12-28-dependances-cachees-dependency-graph.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-dependency-graph.svg" alt="Vista gráfica completa de dependencias en Sinra" width="800" height="450" loading="lazy">
 
 **Beneficio:** Sin dependencias ocultas. Todo el mundo ve los bloqueos.
 
@@ -713,7 +713,7 @@ Frontend integra en 2 días.
 **Cita Product Manager:**
 > "Los releases ya no se retrasan. Sabemos exactamente qué features tienen dependencias, y las desbloqueamos proactivamente. Se acabaron las sorpresas 5 días antes del release."
 
-![Quantum: métricas antes/después de Sinra](/assets/images/blog/2025-12-28-dependances-cachees-quantum-before-after.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-quantum-before-after.svg" alt="Quantum: métricas antes/después de Sinra" width="800" height="450" loading="lazy">
 
 ---
 

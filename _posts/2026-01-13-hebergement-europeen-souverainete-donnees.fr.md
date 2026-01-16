@@ -59,7 +59,7 @@ DPO : « Exactement. »
 
 CTO : « Il faut qu'on change d'hébergeur. Maintenant. »
 
-![Données en Europe mais accessibles aux États-Unis](/assets/images/blog/2026-01-13-cloud-act-contradiction.svg)
+<img src="/assets/images/blog/2026-01-13-cloud-act-contradiction.svg" alt="Données en Europe mais accessibles aux États-Unis" width="800" height="421" loading="lazy">
 
 ---
 
@@ -107,7 +107,7 @@ Amazon est **légalement obligé** de se conformer au Cloud Act, même si les do
 
 **Vous n'avez aucun contrôle.**
 
-![Cloud Act contourne la localisation physique](/assets/images/blog/2026-01-13-cloud-act-flow.svg)
+<img src="/assets/images/blog/2026-01-13-cloud-act-flow.svg" alt="Cloud Act contourne la localisation physique" width="800" height="516" loading="lazy">
 
 **Le Problème :**
 - ❌ Données en Europe, mais accessibles aux États-Unis
@@ -160,7 +160,7 @@ Utiliser AWS, Google Cloud, ou Azure avec des données personnelles européennes
 
 Plusieurs autorités de protection des données (CNIL en France, EDPB au niveau européen) ont averti que ces transferts ne sont pas conformes au RGPD.
 
-![RGPD et Cloud Act incompatibles](/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg)
+<img src="/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg" alt="RGPD et Cloud Act incompatibles" width="800" height="468" loading="lazy">
 
 **Le Problème :**
 - ❌ Impossible d'être conforme RGPD avec un hébergeur US
@@ -222,7 +222,7 @@ Vos clients vous confient :
 
 **Vous avez perdu le contrôle.**
 
-![Perte de souveraineté des données](/assets/images/blog/2026-01-13-sovereignty-loss.svg)
+<img src="/assets/images/blog/2026-01-13-sovereignty-loss.svg" alt="Perte de souveraineté des données" width="800" height="468" loading="lazy">
 
 **Le Problème :**
 - ❌ Données sous juridiction étrangère
@@ -268,7 +268,7 @@ Un client B2B vous demande où sont hébergées ses données. Vous répondez « 
 
 **Deal perdu.**
 
-![Perte de deal à cause de l'hébergement US](/assets/images/blog/2026-01-13-deal-lost-hosting.svg)
+<img src="/assets/images/blog/2026-01-13-deal-lost-hosting.svg" alt="Perte de deal à cause de l'hébergement US" width="800" height="421" loading="lazy">
 
 **Le Problème :**
 - ❌ Clients B2B exigent souveraineté des données
@@ -467,7 +467,7 @@ Sinra a fait le choix de la **souveraineté des données** dès le départ.
    - SecNumCloud (ANSSI) = référentiel français le plus exigeant
    - ISO 27001 = standard international sécurité
 
-![Données Sinra hébergées chez OVH France](/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg)
+<img src="/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg" alt="Données Sinra hébergées chez OVH France" width="800" height="468" loading="lazy">
 
 **Citation Thomas (fondateur Sinra) :**
 > « Dès le départ, on voulait que les données de nos clients restent en France. Pas pour une raison marketing, mais parce que c'est la bonne chose à faire. OVH nous permet de garantir la souveraineté des données tout en ayant une infrastructure fiable et performante. »
@@ -615,7 +615,7 @@ Budget serré.
 **Citation CTO TechCorp :**
 > « Migrer vers OVH a été la meilleure décision tech de l'année. On a économisé €16k, gagné 2 gros deals qu'on aurait perdus, et on dort mieux sachant que nos données sont vraiment en France. »
 
-![TechCorp : métriques avant/après migration OVH](/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg)
+<img src="/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg" alt="TechCorp : métriques avant/après migration OVH" width="800" height="468" loading="lazy">
 
 ---
 

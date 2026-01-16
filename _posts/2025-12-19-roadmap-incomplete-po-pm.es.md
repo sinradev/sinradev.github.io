@@ -155,7 +155,7 @@ Faltan 3 semanas para el deadline. El CTO te pregunta:
 
 **Resultado:** Ves los árboles (issues), no el bosque (release).
 
-![Comparación Roadmap Excel vs Sinra](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-comparison.svg "Excel Obsoleto vs Sinra en Tiempo Real")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-comparison.svg" alt="Comparación Roadmap Excel vs Sinra" width="800" height="400" loading="lazy">
 
 ---
 
@@ -280,7 +280,7 @@ Los **releases** en Sinra te permiten agrupar múltiples características y obte
 
 **Tiempo de respuesta:** 10 segundos en lugar de 30 minutos de discusión.
 
-![Carga en Tiempo Real por Desarrollador](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-workload.svg "Visibilidad Completa de la Carga de Trabajo del Desarrollador")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-workload.svg" alt="Carga en Tiempo Real por Desarrollador" width="800" height="450" loading="lazy">
 
 ---
 
@@ -322,7 +322,7 @@ Pruebas       [▒▒▒▒▒▒▒▒▒▒▒▒] 0% 🚨 No iniciado
 - ✅ Sin riesgo de olvidar una sub-parte crítica
 - ✅ Respuesta instantánea a preguntas de la dirección ("¿Dónde estamos en SSO?" → "58%, backend retrasado, pruebas no iniciadas")
 
-![Progreso de Características con Alertas](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-feature-progress.svg "Visibilidad Granular de Cada Característica")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-feature-progress.svg" alt="Progreso de Características con Alertas" width="700" height="500" loading="lazy">
 
 ---
 
@@ -481,7 +481,7 @@ Release "Email Campaigns v2" programado para finales de marzo.
 **Cita CTO:**
 > "La visibilidad en tiempo real de la carga de los devs cambia todo. Podemos reequilibrar antes de que un dev esté sobrecargado y otro subutilizado. Y la vista Gantt finalmente alinea Product e Ingeniería en la misma roadmap."
 
-![Resultados TechFlow Antes/Después de Sinra](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-before-after.svg "Impacto Medible en KPIs de PO/PM")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-before-after.svg" alt="Resultados TechFlow Antes/Después de Sinra" width="800" height="500" loading="lazy">
 
 ---
 

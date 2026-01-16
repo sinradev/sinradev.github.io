@@ -323,7 +323,7 @@ Un equipo pasó 2 semanas reimplementando una funcionalidad según una spec de N
 
 **Resultado :** Cada herramienta hace una cosa bien, pero **ninguna vincula el trabajo al contexto**.
 
-![Comunicación Dispersa](/assets/images/dispersed-communication.svg "El Contexto Fragmentado Entre Las Herramientas")
+<img src="/assets/images/dispersed-communication.svg" alt="Comunicación Dispersa" width="800" height="500" loading="lazy">
 
 ---
 
@@ -391,7 +391,7 @@ El commentary es un espacio de discusión rico adjunto a cada issue y funcionali
 
 **Diferencia Clave :** Las discusiones no flotan en Discord - **viven con el trabajo**.
 
-![Commentary Centralizado](/assets/images/centralized-commentary.svg "El Commentary: Discusiones Adjuntas al Trabajo")
+<img src="/assets/images/centralized-commentary.svg" alt="Commentary Centralizado" width="800" height="500" loading="lazy">
 
 ---
 
@@ -601,7 +601,7 @@ Porque **la discusión y la documentación están en el mismo lugar**.
 
 No sincronizas - discutes **en el contexto del trabajo**.
 
-![Workflow Centralizado](/assets/images/centralized-workflow.svg "De la Dispersión a la Centralización")
+<img src="/assets/images/centralized-workflow.svg" alt="Workflow Centralizado" width="900" height="500" loading="lazy">
 
 ---
 
@@ -657,7 +657,7 @@ Un dev reimplementó una funcionalidad mal según una spec de Notion obsoleta. E
 **Cita del Product Manager :**
 > « Fin del 'creo que lo hablamos en Discord pero no recuerdo dónde'. Todo está ahí, con contexto. Puedo onboardear nuevas personas mostrándoles 3-4 funcionalidades clave y entienden todo. »
 
-![Antes y Después Sinra](/assets/images/before-after-sinra-communication.svg "CloudBridge: Antes y Después de Sinra")
+<img src="/assets/images/before-after-sinra-communication.svg" alt="Antes y Después Sinra" width="900" height="550" loading="lazy">
 
 ---
 

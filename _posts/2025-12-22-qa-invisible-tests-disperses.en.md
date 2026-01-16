@@ -86,7 +86,7 @@ Your QA maintains an Excel file with all test cases:
 **Real Result:**
 A team discovers 3 weeks after a release that a critical feature had **no test case** defined - it was in an old lost Excel version.
 
-![QA Scattered Across Tools](/assets/images/blog/2025-12-22-qa-invisible-fragmented-tools.svg "Excel, Jira, Notes: Fragmented QA")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-fragmented-tools.svg" alt="QA Scattered Across Tools" width="800" height="400" loading="lazy">
 
 ---
 
@@ -193,7 +193,7 @@ You're shipping a release with 12 features.
 - ❌ Marie doesn't know when features will be ready for her
 - ❌ Testing becomes a bottleneck
 
-![QA Bottleneck At End Of Sprint](/assets/images/blog/2025-12-22-qa-invisible-bottleneck.svg "Testing In Rush Mode: The Bottleneck")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-bottleneck.svg" alt="QA Bottleneck At End Of Sprint" width="800" height="400" loading="lazy">
 
 ---
 
@@ -215,7 +215,7 @@ You're shipping a release with 12 features.
 
 Devs don't know what QA tests. QA doesn't know what devs have developed.
 
-![Dev And QA Separated](/assets/images/blog/2025-12-22-qa-invisible-dev-qa-separated.svg "Two Parallel Worlds Without Communication")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-dev-qa-separated.svg" alt="Dev And QA Separated" width="800" height="400" loading="lazy">
 
 ---
 
@@ -276,7 +276,7 @@ In Sinra, **testings** (test cases) are directly linked to **capabilities** (fea
 
 **Result:** Dev and QA work in the same system, with shared visibility.
 
-![Testings Linked To Capabilities](/assets/images/blog/2025-12-22-qa-invisible-unified-workflow.svg "Sinra: Dev And QA Unified")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-unified-workflow.svg" alt="Testings Linked To Capabilities" width="800" height="450" loading="lazy">
 
 ---
 
@@ -357,7 +357,7 @@ In Sinra, **testings** (test cases) are directly linked to **capabilities** (fea
 - ✅ Complete history (failed → bug → fix → passed)
 - ✅ Real-time Dev ↔ QA synchronization
 
-![Complete Test History](/assets/images/blog/2025-12-22-qa-invisible-test-history.svg "Total Traceability: Failed → Bug → Fix → Passed")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-test-history.svg" alt="Complete Test History" width="800" height="400" loading="lazy">
 
 ---
 
@@ -388,7 +388,7 @@ In Sinra, **testings** (test cases) are directly linked to **capabilities** (fea
 
 **Response time:** 30 seconds instead of 2 hours.
 
-![QA Progression Dashboard](/assets/images/blog/2025-12-22-qa-invisible-release-dashboard.svg "Real-Time Visibility Per Release")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-release-dashboard.svg" alt="QA Progression Dashboard" width="800" height="500" loading="lazy">
 
 ---
 
@@ -521,7 +521,7 @@ Release "Patient Portal v3.2" shipped with feature "Export medical record PDF".
 **Quote from CTO:**
 > "No more Friday nights wondering if we can ship Monday. I open Sinra, I see QA progression in real-time, and I make fact-based decisions. Game changer."
 
-![HealthTech Before/After Sinra](/assets/images/blog/2025-12-22-qa-invisible-before-after.svg "Measurable Impact: Invisible QA vs Unified QA")
+<img src="/assets/images/blog/2025-12-22-qa-invisible-before-after.svg" alt="HealthTech Before/After Sinra" width="800" height="450" loading="lazy">
 
 ---
 

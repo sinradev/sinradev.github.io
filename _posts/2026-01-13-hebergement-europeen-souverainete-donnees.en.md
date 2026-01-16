@@ -59,7 +59,7 @@ DPO: "Exactly."
 
 CTO: "We need to change hosts. Now."
 
-![Data in Europe but accessible from the US](/assets/images/blog/2026-01-13-cloud-act-contradiction.svg)
+<img src="/assets/images/blog/2026-01-13-cloud-act-contradiction.svg" alt="Data in Europe but accessible from the US" width="800" height="421" loading="lazy">
 
 ---
 
@@ -107,7 +107,7 @@ Amazon is **legally obligated** to comply with the Cloud Act, even if the data i
 
 **You have no control.**
 
-![Cloud Act bypasses physical location](/assets/images/blog/2026-01-13-cloud-act-flow.svg)
+<img src="/assets/images/blog/2026-01-13-cloud-act-flow.svg" alt="Cloud Act bypasses physical location" width="800" height="516" loading="lazy">
 
 **The Problem:**
 - ❌ Data in Europe, but accessible to the US
@@ -160,7 +160,7 @@ Using AWS, Google Cloud, or Azure with European personal data is **legally risky
 
 Several data protection authorities (CNIL in France, EDPB at European level) have warned that these transfers are not GDPR compliant.
 
-![GDPR and Cloud Act incompatible](/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg)
+<img src="/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg" alt="GDPR and Cloud Act incompatible" width="800" height="468" loading="lazy">
 
 **The Problem:**
 - ❌ Impossible to be GDPR compliant with US host
@@ -222,7 +222,7 @@ Your customers entrust you with:
 
 **You have lost control.**
 
-![Loss of data sovereignty](/assets/images/blog/2026-01-13-sovereignty-loss.svg)
+<img src="/assets/images/blog/2026-01-13-sovereignty-loss.svg" alt="Loss of data sovereignty" width="800" height="468" loading="lazy">
 
 **The Problem:**
 - ❌ Data under foreign jurisdiction
@@ -268,7 +268,7 @@ A B2B customer asks where their data is hosted. You answer "Europe". They insist
 
 **Deal lost.**
 
-![Lost deal due to US hosting](/assets/images/blog/2026-01-13-deal-lost-hosting.svg)
+<img src="/assets/images/blog/2026-01-13-deal-lost-hosting.svg" alt="Lost deal due to US hosting" width="800" height="421" loading="lazy">
 
 **The Problem:**
 - ❌ B2B clients demand data sovereignty
@@ -467,7 +467,7 @@ Sinra made the choice of **data sovereignty** from the start.
    - SecNumCloud (ANSSI) = most demanding French standard
    - ISO 27001 = international security standard
 
-![Sinra data hosted at OVH France](/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg)
+<img src="/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg" alt="Sinra data hosted at OVH France" width="800" height="468" loading="lazy">
 
 **Quote from Thomas Milcent (Sinra founder):**
 > "From the start, we wanted our customers' data to remain in France. Not for marketing reasons, but because it's the right thing to do. OVH allows us to guarantee data sovereignty while having reliable and performant infrastructure."
@@ -615,7 +615,7 @@ Tight budget.
 **Quote from TechCorp CTO:**
 > "Migrating to OVH was the best tech decision of the year. We saved €16k, won 2 big deals we would have lost, and we sleep better knowing our data is truly in France."
 
-![TechCorp: metrics before/after OVH migration](/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg)
+<img src="/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg" alt="TechCorp: metrics before/after OVH migration" width="800" height="468" loading="lazy">
 
 ---
 

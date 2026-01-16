@@ -63,7 +63,7 @@ CTO: "Ah. Nobody explained the context. OK, approved. It'll take 2 days to provi
 - **Real time needed after unblocking:** 4 days
 - **Time wasted due to hidden dependencies:** 17 days
 
-![Timeline: feature blocked 3 weeks, but only 4 days of real work](/assets/images/blog/2025-12-28-dependances-cachees-blocked-timeline.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-blocked-timeline.svg" alt="Timeline: feature blocked 3 weeks, but only 4 days of real work" width="800" height="400" loading="lazy">
 
 ---
 
@@ -138,7 +138,7 @@ Feature: **"Mobile push notifications"**
 
 Mobile → Backend → Infra (Redis) → Infra (Firebase) → Security → Mobile (APNs)
 
-![Progressive discovery of dependency chain over 23 days](/assets/images/blog/2025-12-28-dependances-cachees-chain-progressive.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-chain-progressive.svg" alt="Progressive discovery of dependency chain over 23 days" width="800" height="450" loading="lazy">
 
 **The Problem:**
 - ❌ Chain discovered progressively (not anticipated)
@@ -192,7 +192,7 @@ Frontend completes the integration.
 - **Real time needed with clear coordination:** 1.5 weeks
 - **Time wasted due to poor coordination:** 2.5 weeks
 
-![Teams waiting for each other: total deadlock](/assets/images/blog/2025-12-28-dependances-cachees-teams-waiting.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-teams-waiting.svg" alt="Teams waiting for each other: total deadlock" width="800" height="450" loading="lazy">
 
 **The Problem:**
 - ❌ Contradictory assumptions (everyone thinks the other is doing the work)
@@ -509,7 +509,7 @@ Blocks: [INFRA-567] S3 Bucket
 
 **Gain:** 11 days saved thanks to anticipation.
 
-![Comparison: traditional approach (17 days) vs Sinra (6 days)](/assets/images/blog/2025-12-28-dependances-cachees-traditional-vs-sinra.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-traditional-vs-sinra.svg" alt="Comparison: traditional approach (17 days) vs Sinra (6 days)" width="800" height="450" loading="lazy">
 
 ---
 
@@ -563,7 +563,7 @@ Q2 Release
 - Ping CTO to unblock Feature B
 - Follow up with design to unblock Feature D
 
-![Complete graphical view of dependencies in Sinra](/assets/images/blog/2025-12-28-dependances-cachees-dependency-graph.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-dependency-graph.svg" alt="Complete graphical view of dependencies in Sinra" width="800" height="450" loading="lazy">
 
 **Benefit:** No hidden dependencies. Everyone sees the blockers.
 
@@ -713,7 +713,7 @@ Frontend integrates in 2 days.
 **Product Manager Quote:**
 > "Releases don't slip anymore. We know exactly which features have dependencies, and we unblock them proactively. No more surprises 5 days before release."
 
-![Quantum: metrics before/after Sinra](/assets/images/blog/2025-12-28-dependances-cachees-quantum-before-after.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-quantum-before-after.svg" alt="Quantum: metrics before/after Sinra" width="800" height="450" loading="lazy">
 
 ---
 

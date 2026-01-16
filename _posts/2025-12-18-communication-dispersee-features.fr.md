@@ -322,7 +322,7 @@ Une équipe a passé 2 semaines à réimplémenter une fonctionnalité selon une
 
 **Résultat :** Chaque outil fait une chose bien, mais **aucun ne relie le travail au contexte**.
 
-![Communication Dispersée](/assets/images/dispersed-communication.svg "Le Contexte Fragmenté Entre Les Outils")
+<img src="/assets/images/dispersed-communication.svg" alt="Communication Dispersée" width="800" height="500" loading="lazy">
 
 ---
 
@@ -390,7 +390,7 @@ Le commentary est un espace de discussion riche attaché à chaque issue et fonc
 
 **Différence Clé :** Les discussions ne flottent pas dans Discord - elles **vivent avec le travail**.
 
-![Commentary Centralisé](/assets/images/centralized-commentary.svg "Le Commentary : Discussions Attachées au Travail")
+<img src="/assets/images/centralized-commentary.svg" alt="Commentary Centralisé" width="800" height="500" loading="lazy">
 
 ---
 
@@ -600,7 +600,7 @@ Parce que **la discussion et la documentation sont au même endroit**.
 
 Vous ne synchronisez pas - vous discutez **dans le contexte du travail**.
 
-![Workflow Centralisé](/assets/images/centralized-workflow.svg "De la Dispersion à la Centralisation")
+<img src="/assets/images/centralized-workflow.svg" alt="Workflow Centralisé" width="900" height="500" loading="lazy">
 
 ---
 
@@ -656,7 +656,7 @@ Un dev a réimplémenté une fonctionnalité mal selon une spec Notion obsolète
 **Citation Product Manager :**
 > « Fini le 'je crois qu'on en a parlé dans Discord mais je sais plus où'. Tout est là, avec le contexte. Je peux onboard des nouveaux en leur montrant 3-4 fonctionnalités clés et ils comprennent tout. »
 
-![Avant Après Sinra](/assets/images/before-after-sinra-communication.svg "CloudBridge : Avant et Après Sinra")
+<img src="/assets/images/before-after-sinra-communication.svg" alt="Avant Après Sinra" width="900" height="550" loading="lazy">
 
 ---
 

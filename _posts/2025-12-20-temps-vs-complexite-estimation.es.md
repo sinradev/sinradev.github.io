@@ -62,7 +62,7 @@ Los **story points** (puntos de complejidad) son una abstracción inventada por 
 
 **Resultado:** Creas una capa de abstracción innecesaria que oculta la realidad.
 
-![Planning Poker vs Estimación de Tiempo](/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg "Planning Poker: 20 min de debate vs Estimación de Tiempo: 2 min")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg" alt="Planning Poker vs Estimación de Tiempo" width="800" height="450" loading="lazy">
 
 ---
 
@@ -81,7 +81,7 @@ La gestión **siempre** convertirá los puntos a tiempo:
 
 En lugar de decir directamente « 5 días », dices « 20 puntos » que se transforman en « 5 días » en la cabeza de todos de todas formas.
 
-![Ciclo de Conversión Inútil](/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg "El Ciclo Mentiroso de los Story Points")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg" alt="Ciclo de Conversión Inútil" width="700" height="500" loading="lazy">
 
 ---
 
@@ -291,7 +291,7 @@ Sabes **exactamente** cuántos días de trabajo están asignados a cada persona.
 
 Si no puedes estimar en días, **descompón**.
 
-![Descomposición Forzada por El Tiempo](/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg "El Tiempo Fuerza La Descomposición en Issues Estimables")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg" alt="Descomposición Forzada por El Tiempo" width="800" height="500" loading="lazy">
 
 ---
 
@@ -668,7 +668,7 @@ En lugar de « 13 puntos », descomposición en:
 **Cita Del Product Manager:**
 > « Con los puntos, nunca sabía cuándo íbamos a entregar. Ahora puedo decir 'en 3 semanas' con 80% de confianza. Los stakeholders lo aman. »
 
-![Resultados TechFlow Antes/Después](/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg "Impacto Medible: Story Points vs Tiempo")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg" alt="Resultados TechFlow Antes/Después" width="800" height="500" loading="lazy">
 
 ---
 

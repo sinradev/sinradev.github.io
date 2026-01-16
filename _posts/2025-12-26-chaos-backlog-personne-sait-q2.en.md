@@ -68,7 +68,7 @@ PM: "We'll... clean up the backlog this week and get back to you."
 
 **Spoiler:** The backlog will never really be sorted. The chaos will continue.
 
-![Infinite backlog growth over 2 years](/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Infinite backlog growth over 2 years" width="800" height="400" loading="lazy">
 
 ---
 
@@ -114,7 +114,7 @@ In a survey of 150 tech teams:
 
 **Result:** The backlog is a graveyard of dead ideas that nobody dares to delete.
 
-![Infinite backlog growth over 2 years](/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Infinite backlog growth over 2 years" width="800" height="400" loading="lazy">
 
 ---
 
@@ -210,7 +210,7 @@ Team analyzed over 1 month:
 
 **Result:** "Urgent" becomes noise. The team ignores urgent requests because they change too fast.
 
-![Changing priorities: A typical week](/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg" alt="Changing priorities: A typical week" width="800" height="450" loading="lazy">
 
 ---
 
@@ -251,7 +251,7 @@ Nobody remembers the blocked issue.
 
 **Result:** Blocked issues die slowly, without anyone noticing.
 
-![38 blocked issues forgotten](/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg" alt="38 blocked issues forgotten" width="800" height="450" loading="lazy">
 
 ---
 
@@ -337,7 +337,7 @@ Because a flat list doesn't reflect the reality of work:
 
 **Result:** Everything becomes a soup of disconnected issues.
 
-![Flat backlog vs structured releases](/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg" alt="Flat backlog vs structured releases" width="800" height="450" loading="lazy">
 
 ---
 
@@ -488,7 +488,7 @@ Instead of a list of 94 issues, **8 clear capabilities**:
 
 **Total:** 10 weeks → **Perfectly aligned with real capacity**.
 
-![Capacity planning: Reality vs Hope](/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg" alt="Capacity planning: Reality vs Hope" width="800" height="450" loading="lazy">
 
 **Step 3:** Create issues under each capability
 
@@ -758,7 +758,7 @@ June 28, 2025
 **Product Manager Quote:**
 > "I can finally answer the CEO when he asks 'what are we shipping in Q2'. Before, I'd stammer. Now I show him the release with 6 clear capabilities. He's delighted."
 
-![Vertigo: Before vs After Sinra](/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg" alt="Vertigo: Before vs After Sinra" width="800" height="450" loading="lazy">
 
 ---
 

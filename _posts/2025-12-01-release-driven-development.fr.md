@@ -49,7 +49,7 @@ Sinra résout cela avec le **release-driven development** : organiser le travail
 
 Au lieu : **On décide ce que "fini" signifie avant de commencer à construire.**
 
-![Timeline Release-Driven](/assets/images/release-driven-timeline.svg "Comment Fonctionne le Release-Driven Development")
+<img src="/assets/images/release-driven-timeline.svg" alt="Timeline Release-Driven" width="900" height="400" loading="lazy">
 
 ---
 
@@ -80,7 +80,7 @@ Au lieu : **On décide ce que "fini" signifie avant de commencer à construire.*
 
 Ça ne fonctionne pas.
 
-![Chaos Feature-Driven](/assets/images/feature-driven-chaos.svg "Le Problème avec le Développement Feature-First")
+<img src="/assets/images/feature-driven-chaos.svg" alt="Chaos Feature-Driven" width="800" height="500" loading="lazy">
 
 ---
 
@@ -118,7 +118,7 @@ Au lieu : **On décide ce que "fini" signifie avant de commencer à construire.*
 
 Ça fonctionne.
 
-![Succès Release-Driven](/assets/images/release-driven-success.svg "Le Pouvoir de la Planification Release-First")
+<img src="/assets/images/release-driven-success.svg" alt="Succès Release-Driven" width="800" height="500" loading="lazy">
 
 ---
 
@@ -154,7 +154,7 @@ Une vue. Temps réel. Accessible à tous.
 **Quand QA demande :** "Qu'est-ce qui doit être testé ?"
 **Réponse :** Release 2.3 montre 14 issues non testées à travers 2 capabilities.
 
-![Vue Release Unifiée](/assets/images/unified-release-view.svg "Tout le Monde Voit la Même Vérité")
+<img src="/assets/images/unified-release-view.svg" alt="Vue Release Unifiée" width="900" height="550" loading="lazy">
 
 ---
 
@@ -184,7 +184,7 @@ Quand le Product veut ajouter une fonctionnalité :
 
 Les décisions de capacité deviennent **pilotées par les données, pas politiques**.
 
-![Tableau de Bord Capacité](/assets/images/capacity-dashboard.svg "Capacité vs. Charge de Travail Temps Réel")
+<img src="/assets/images/capacity-dashboard.svg" alt="Tableau de Bord Capacité" width="800" height="400" loading="lazy">
 
 ---
 
@@ -217,7 +217,7 @@ Les équipes rapportent :
 - 90% plus haute confiance d'équipe
 - 100% communication stakeholder plus claire
 
-![Préparation Release](/assets/images/release-readiness.svg "Confiance de Déploiement Par la Planification")
+<img src="/assets/images/release-readiness.svg" alt="Préparation Release" width="700" height="500" loading="lazy">
 
 ---
 
