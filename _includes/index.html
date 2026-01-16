@@ -71,7 +71,7 @@
         <div class="feature-icon">
           <picture>
             <source srcset="{{ feature.image | replace: '.png', '.webp' | replace: '.jpg', '.webp' | relative_url }}" type="image/webp">
-            <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}" loading="lazy">
+            <img src="{{ feature.image | relative_url }}" alt="{{ feature.alt }}" loading="lazy" width="1024" height="1024">
           </picture>
         </div>
         <div>
@@ -104,7 +104,7 @@
   </section>
 </div>
 
-<script src="{{ '/assets/js/solar-system.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/solar-system.js' | relative_url }}" defer></script>
 <script>
   var openNavBtn = document.getElementById("open-nav");
   if (openNavBtn) {

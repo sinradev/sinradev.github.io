@@ -32,15 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"></noscript>
     <!-- DaisyUI CSS - Required for variables, navbar and component styling -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/assets/css/theme.css">
     <link rel="stylesheet" href="/assets/css/layout.css">
-    <link rel="stylesheet" href="/assets/css/blog.css">
-    <link rel="stylesheet" href="/assets/css/plan.css">
-    <link rel="stylesheet" href="/assets/css/contact.css">
-    <link rel="stylesheet" href="/assets/css/comparison.css">
+    <link rel="stylesheet" href="/assets/css/blog.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/plan.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/contact.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/comparison.css" media="print" onload="this.media='all'">
     {%- comment -%}I18n_Headers tag removed - using custom language-alternates.html instead{%- endcomment -%}
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96">
@@ -53,13 +54,17 @@
   <body id="{{ page.name | split: "." | first }}">
   {% include blackfriday-banner.html %}
   {% include header.html %}
-  {{ content }}
+  <main>
+    {{ content }}
+  </main>
   {% include footer.html %}
 
-  <!-- Swiper JS -->
-  <script src="/assets/js/swiper-bundle.min.js"></script>
+  <!-- Swiper JS - Only load on pages that need it -->
+  {% if page.load_swiper %}
+  <script src="/assets/js/swiper-bundle.min.js" defer></script>
+  {% endif %}
   <!-- Modern JavaScript -->
-  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/script.js" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>

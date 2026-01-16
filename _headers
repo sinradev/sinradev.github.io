@@ -1,0 +1,32 @@
+# Cache configuration for static assets
+# This file is used by Netlify and other modern hosting platforms
+
+# Cache images for 1 year (immutable content)
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache CSS and JS for 1 year (versioned files)
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache fonts for 1 year
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages - cache for 1 hour, revalidate
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Root HTML
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

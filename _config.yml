@@ -58,7 +58,7 @@ languages: ["en", "fr", "es"]
 default_lang: "en"
 exclude_from_localization: ["assets", "javascript", "images", "css"]
 parallel_localization: true
-include: ['_pages']
+include: ['_pages', '_headers']
 exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock', 'Gemfile', 'vendor/bundle/', 'specs']
 jekyll-archives:
   enabled:
