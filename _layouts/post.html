@@ -74,7 +74,10 @@ layout: default
   <!-- Post Featured Image -->
   {% if page.featured_image %}
   <div class="post-featured-image">
-    <img src="{{ page.featured_image }}" alt="{{ page.title }}" loading="lazy">
+    <picture>
+      <source srcset="{{ page.featured_image | replace: '.png', '.webp' | replace: '.jpg', '.webp' }}" type="image/webp">
+      <img src="{{ page.featured_image }}" alt="{{ page.title }}" loading="lazy" width="1200" height="630">
+    </picture>
   </div>
   {% endif %}
 
