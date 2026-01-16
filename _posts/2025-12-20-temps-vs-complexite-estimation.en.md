@@ -62,7 +62,7 @@ Product Owner: "But... what are the points for then?"
 
 **Result:** You create an unnecessary layer of abstraction that hides reality.
 
-![Planning Poker vs Time Estimation](/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg "Planning Poker: 20 min debate vs Time Estimation: 2 min")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg" alt="Planning Poker vs Time Estimation" width="800" height="450" loading="lazy">
 
 ---
 
@@ -81,7 +81,7 @@ Management will **always** convert points to time:
 
 Instead of saying directly "5 days", you say "20 points" which everyone converts to "5 days" in their heads anyway.
 
-![Useless Conversion Cycle](/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg "The Lying Cycle of Story Points")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg" alt="Useless Conversion Cycle" width="700" height="500" loading="lazy">
 
 ---
 
@@ -291,7 +291,7 @@ You know **exactly** how many days of work are assigned to each person.
 
 If you can't estimate in days, **decompose**.
 
-![Forced Decomposition by Time](/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg "Time Forces Decomposition Into Estimable Issues")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg" alt="Forced Decomposition by Time" width="800" height="500" loading="lazy">
 
 ---
 
@@ -668,7 +668,7 @@ Instead of "13 points", decomposed into:
 **Product Manager Quote:**
 > "With points, I never knew when we'd ship. Now I can say 'in 3 weeks' with 80% confidence. Stakeholders love it."
 
-![TechFlow Before/After Results](/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg "Measurable Impact: Story Points vs Time")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg" alt="TechFlow Before/After Results" width="800" height="500" loading="lazy">
 
 ---
 

@@ -20,7 +20,7 @@ Une startup SaaS lançant un nouveau processeur de paiement a besoin de *spécif
 
 Le problème n'est pas les méthodologies - c'est que les managers sont forcés de choisir tout-ou-rien.
 
-![Dilemme Faux Choix](/assets/images/false-choice-dilemma.svg "Le Faux Choix Binaire")
+<img src="/assets/images/false-choice-dilemma.svg" alt="Dilemme Faux Choix" width="1200" height="400" loading="lazy">
 
 ---
 
@@ -38,7 +38,7 @@ La vraie capacité reste invisible jusqu'à 60% du développement. Vous planifie
 
 Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patient. Ils ont découvert des problèmes d'intégration au mois 4 - mais ils avaient déjà promis le lancement aux administrateurs hospitaliers. Les 2 derniers mois: mode panique, features coupées, tests coupés, qualité coupée.
 
-![Diagramme V-Model Waterfall](/assets/images/vmodel-waterfall-diagram.svg "Approche V-Model / Waterfall")
+<img src="/assets/images/vmodel-waterfall-diagram.svg" alt="Diagramme V-Model Waterfall" width="1000" height="500" loading="lazy">
 
 ---
 
@@ -56,7 +56,7 @@ Exemple: Une équipe santé a estimé 6 mois pour construire un dashboard patien
 
 Exemple: Une agence a pris l'approche "pure Agile" pour une refonte de CMS. Pas de spécifications. Juste "construis un dashboard." 3 mois et 5 cycles plus tard, le client réalise que le design est faux. Backend entièrement reconstruit. L'équipe avait optimisé pour la vélocité, pas la valeur.
 
-![Diagramme Agile Itératif](/assets/images/agile-iterative-diagram.svg "Approche Agile / Itérative")
+<img src="/assets/images/agile-iterative-diagram.svg" alt="Diagramme Agile Itératif" width="1000" height="500" loading="lazy">
 
 ---
 
@@ -88,7 +88,7 @@ Les équipes performantes ne choisissent pas entre V-Model et Agile - elles **ut
 
 C'est ce qui fonctionne. **Pas Agile. Pas Waterfall. Les deux.**
 
-![Phases Méthodologie Hybride](/assets/images/hybrid-methodology-phases.svg "Pourquoi la Méthodologie Hybride Gagne")
+<img src="/assets/images/hybrid-methodology-phases.svg" alt="Phases Méthodologie Hybride" width="1200" height="500" loading="lazy">
 
 ---
 
@@ -166,7 +166,7 @@ La méthodologie hybride ne fonctionne *que si* vous pouvez voir:
 
 Sans visibilité, hybride devient de l'imprévisibilité.
 
-![Workflow d'Implémentation](/assets/images/implementation-workflow.svg "Implémenter une Méthodologie Hybride")
+<img src="/assets/images/implementation-workflow.svg" alt="Workflow d'Implémentation" width="1200" height="600" loading="lazy">
 
 ---
 

@@ -52,7 +52,7 @@ Sinra resuelve esto con **desarrollo orientado a releases**: organizar el trabaj
 
 En su lugar: **Decidimos qué significa "terminado" antes de comenzar a construir.**
 
-![Cronología Orientada a Release](/assets/images/release-driven-timeline.svg "Cómo Funciona el Desarrollo Orientado a Releases")
+<img src="/assets/images/release-driven-timeline.svg" alt="Cronología Orientada a Release" width="900" height="400" loading="lazy">
 
 ---
 
@@ -86,7 +86,7 @@ En su lugar: **Decidimos qué significa "terminado" antes de comenzar a construi
 
 No funciona.
 
-![Caos Orientado a Funcionalidades](/assets/images/feature-driven-chaos.svg "El Problema con el Desarrollo Funcionalidad-Primero")
+<img src="/assets/images/feature-driven-chaos.svg" alt="Caos Orientado a Funcionalidades" width="800" height="500" loading="lazy">
 
 ---
 
@@ -128,7 +128,7 @@ No funciona.
 
 Funciona.
 
-![Éxito Orientado a Release](/assets/images/release-driven-success.svg "El Poder de la Planificación Release-Primero")
+<img src="/assets/images/release-driven-success.svg" alt="Éxito Orientado a Release" width="800" height="500" loading="lazy">
 
 ---
 
@@ -166,7 +166,7 @@ Una vista. Tiempo real. Accesible para todos.
 **Cuando QA pregunta:** "¿Qué necesita probarse?"
 **Respuesta:** Release 2.3 muestra 14 issues no probados en 2 capabilities.
 
-![Vista de Release Unificada](/assets/images/unified-release-view.svg "Todos Ven la Misma Verdad")
+<img src="/assets/images/unified-release-view.svg" alt="Vista de Release Unificada" width="900" height="550" loading="lazy">
 
 ---
 
@@ -198,7 +198,7 @@ Cuando Producto quiere agregar una funcionalidad:
 
 Las decisiones de capacidad se vuelven **basadas en datos, no políticas**.
 
-![Dashboard de Capacidad](/assets/images/capacity-dashboard.svg "Capacidad en Tiempo Real vs. Carga de Trabajo")
+<img src="/assets/images/capacity-dashboard.svg" alt="Dashboard de Capacidad" width="800" height="400" loading="lazy">
 
 ---
 
@@ -234,7 +234,7 @@ Los equipos reportan:
 - 90% mayor confianza del equipo
 - 100% más clara comunicación con stakeholders
 
-![Preparación de Release](/assets/images/release-readiness.svg "Confianza en Despliegue a Través de Planificación")
+<img src="/assets/images/release-readiness.svg" alt="Preparación de Release" width="700" height="500" loading="lazy">
 
 ---
 

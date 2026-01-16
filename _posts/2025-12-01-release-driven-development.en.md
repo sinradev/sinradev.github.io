@@ -52,7 +52,7 @@ Sinra solves this with **release-driven development**: organizing work around co
 
 Instead: **We decide what "done" means before we start building.**
 
-![Release-Driven Timeline](/assets/images/release-driven-timeline.svg "How Release-Driven Development Works")
+<img src="/assets/images/release-driven-timeline.svg" alt="Release-Driven Timeline" width="900" height="400" loading="lazy">
 
 ---
 
@@ -86,7 +86,7 @@ Instead: **We decide what "done" means before we start building.**
 
 It doesn't work.
 
-![Feature-Driven Chaos](/assets/images/feature-driven-chaos.svg "The Problem with Feature-First Development")
+<img src="/assets/images/feature-driven-chaos.svg" alt="Feature-Driven Chaos" width="800" height="500" loading="lazy">
 
 ---
 
@@ -128,7 +128,7 @@ It doesn't work.
 
 It works.
 
-![Release-Driven Success](/assets/images/release-driven-success.svg "The Power of Release-First Planning")
+<img src="/assets/images/release-driven-success.svg" alt="Release-Driven Success" width="800" height="500" loading="lazy">
 
 ---
 
@@ -166,7 +166,7 @@ One view. Real-time. Accessible to everyone.
 **When QA asks:** "What needs testing?"
 **Answer:** Release 2.3 shows 14 untested issues across 2 capabilities.
 
-![Unified Release View](/assets/images/unified-release-view.svg "Everyone Sees the Same Truth")
+<img src="/assets/images/unified-release-view.svg" alt="Unified Release View" width="900" height="550" loading="lazy">
 
 ---
 
@@ -198,7 +198,7 @@ When Product wants to add a feature:
 
 Capacity decisions become **data-driven, not political**.
 
-![Capacity Dashboard](/assets/images/capacity-dashboard.svg "Real-Time Capacity vs. Workload")
+<img src="/assets/images/capacity-dashboard.svg" alt="Capacity Dashboard" width="800" height="400" loading="lazy">
 
 ---
 
@@ -234,7 +234,7 @@ Teams report:
 - 90% higher team confidence
 - 100% clearer stakeholder communication
 
-![Release Readiness](/assets/images/release-readiness.svg "Deployment Confidence Through Planning")
+<img src="/assets/images/release-readiness.svg" alt="Release Readiness" width="700" height="500" loading="lazy">
 
 ---
 

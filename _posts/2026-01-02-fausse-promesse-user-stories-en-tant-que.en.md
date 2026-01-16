@@ -73,7 +73,7 @@ Dev 1 (aside): "The story said 'As a user, I want to log out'. But it didn't say
 
 Dev 2: "Welcome to the world of user stories."
 
-![Vague user story generating 45 minutes of questions](/assets/images/blog/2026-01-02-user-stories-vague-meeting.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-vague-meeting.svg" alt="Vague user story generating 45 minutes of questions" width="800" height="400" loading="lazy">
 
 ---
 
@@ -128,7 +128,7 @@ Dev: "OK... but concretely, what do I do?"
 
 **Result:** 3 clarification meetings before being able to start coding.
 
-![User story generating 15 unanswered questions](/assets/images/blog/2026-01-02-user-stories-questions-unanswered.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-questions-unanswered.svg" alt="User story generating 15 unanswered questions" width="800" height="450" loading="lazy">
 
 **The Problem:**
 - ❌ User story describes the "what" (user need)
@@ -190,7 +190,7 @@ Your team spends 4 hours per week in "backlog grooming" to transform vague user 
 
 **The team is exhausted.**
 
-![4 hours of grooming for 8 user stories](/assets/images/blog/2026-01-02-user-stories-grooming-marathon.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-grooming-marathon.svg" alt="4 hours of grooming for 8 user stories" width="800" height="400" loading="lazy">
 
 **The Problem:**
 - ❌ 4h of grooming per week (20% of team time)
@@ -261,7 +261,7 @@ to be informed of new messages.
 
 **Gap between the story (2 lines) and the real implementation (50+ tasks).**
 
-![User story 2 lines vs 50 real tasks](/assets/images/blog/2026-01-02-user-stories-gap-reality.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-gap-reality.svg" alt="User story 2 lines vs 50 real tasks" width="800" height="500" loading="lazy">
 
 **The Problem:**
 - ❌ User story: 2 vague lines
@@ -345,7 +345,7 @@ PO: "Let's add debounce then."
 
 **But the team spent 3 grooming sessions (3h total) on this single story.**
 
-![Story re-groomed 3 times before being developable](/assets/images/blog/2026-01-02-user-stories-regrooming-loop.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-regrooming-loop.svg" alt="Story re-groomed 3 times before being developable" width="800" height="450" loading="lazy">
 
 **The Problem:**
 - ❌ Story created too vague
@@ -416,7 +416,7 @@ Dev: "..."
 
 **2 days of development to redo.**
 
-![Developer guesses, codes 2 days, everything needs to be redone](/assets/images/blog/2026-01-02-user-stories-developer-guesses.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-developer-guesses.svg" alt="Developer guesses, codes 2 days, everything needs to be redone" width="800" height="400" loading="lazy">
 
 **The Problem:**
 - ❌ Story too vague
@@ -745,7 +745,7 @@ Release: Q1 2026
 - ✅ No questions
 - ✅ Code directly
 
-![Vague user story vs detailed Sinra issue](/assets/images/blog/2026-01-02-user-stories-vs-sinra-issue.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-vs-sinra-issue.svg" alt="Vague user story vs detailed Sinra issue" width="800" height="450" loading="lazy">
 
 ---
 
@@ -804,7 +804,7 @@ Sinra uses **capabilities** to group related issues.
 - See the "big picture" (capability)
 - Work on clear tasks (issues)
 
-![Capability grouping 5 actionable issues](/assets/images/blog/2026-01-02-user-stories-capability-breakdown.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-capability-breakdown.svg" alt="Capability grouping 5 actionable issues" width="800" height="450" loading="lazy">
 
 ---
 
@@ -950,7 +950,7 @@ Assigned: Dev 3
 **Product Manager quote:**
 > "At first, I found it tedious to write detailed issues. Then I realized: I was spending the same time in grooming answering questions. Now, I document once, clearly, and the team develops without questions."
 
-![Lumio: before/after Sinra metrics](/assets/images/blog/2026-01-02-user-stories-lumio-before-after.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-lumio-before-after.svg" alt="Lumio: before/after Sinra metrics" width="800" height="500" loading="lazy">
 
 ---
 

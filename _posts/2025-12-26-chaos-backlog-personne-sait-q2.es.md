@@ -68,7 +68,7 @@ PM: "Vamos a... limpiar el backlog esta semana y te respondemos."
 
 **Spoiler:** El backlog nunca será realmente ordenado. El caos continuará.
 
-![Crecimiento infinito del backlog en 2 años](/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Crecimiento infinito del backlog en 2 años" width="800" height="400" loading="lazy">
 
 ---
 
@@ -114,7 +114,7 @@ En una encuesta a 150 equipos tech:
 
 **Resultado:** El backlog es un cementerio de ideas muertas que nadie se atreve a eliminar.
 
-![Crecimiento infinito del backlog en 2 años](/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Crecimiento infinito del backlog en 2 años" width="800" height="400" loading="lazy">
 
 ---
 
@@ -210,7 +210,7 @@ Equipo analizado durante 1 mes:
 
 **Resultado:** "Urgente" se convierte en ruido. El equipo ignora las solicitudes urgentes porque cambian demasiado rápido.
 
-![Prioridades cambiantes: Una semana típica](/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg" alt="Prioridades cambiantes: Una semana típica" width="800" height="450" loading="lazy">
 
 ---
 
@@ -251,7 +251,7 @@ Nadie recuerda la issue bloqueada.
 
 **Resultado:** Las issues bloqueadas mueren lentamente, sin que nadie se dé cuenta.
 
-![38 issues bloqueadas olvidadas](/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg" alt="38 issues bloqueadas olvidadas" width="800" height="450" loading="lazy">
 
 ---
 
@@ -337,7 +337,7 @@ Porque una lista plana no refleja la realidad del trabajo:
 
 **Resultado:** Todo se convierte en una sopa de issues desconectadas.
 
-![Backlog plano vs estructura por releases](/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg" alt="Backlog plano vs estructura por releases" width="800" height="450" loading="lazy">
 
 ---
 
@@ -488,7 +488,7 @@ En lugar de una lista de 94 issues, **8 capabilities claras**:
 
 **Total:** 10 semanas → **Perfectamente alineado con capacidad real**.
 
-![Planificación de capacidad: Realidad vs Esperanza](/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg" alt="Planificación de capacidad: Realidad vs Esperanza" width="800" height="450" loading="lazy">
 
 **Paso 3:** Crear issues bajo cada capability
 
@@ -758,7 +758,7 @@ Buffer: 2 semanas
 **Cita Product Manager:**
 > "Finalmente puedo responder al CEO cuando pregunta 'qué entregamos en Q2'. Antes, balbuceba. Ahora le muestro el release con 6 capabilities claras. Está encantado."
 
-![Vertigo: Antes vs Después de Sinra](/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg" alt="Vertigo: Antes vs Después de Sinra" width="800" height="450" loading="lazy">
 
 ---
 

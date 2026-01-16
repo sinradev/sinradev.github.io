@@ -20,7 +20,7 @@ Una startup SaaS lanzando un nuevo procesador de pagos necesita _especificación
 
 El problema no son las metodologías, es que los gerentes se ven obligados a elegir todo o nada.
 
-![Dilema de Falsa Opción](/assets/images/false-choice-dilemma.svg "La Falsa Opción Binaria")
+<img src="/assets/images/false-choice-dilemma.svg" alt="Dilema de Falsa Opción" width="1200" height="400" loading="lazy">
 
 ---
 
@@ -39,7 +39,7 @@ La capacidad real permanece invisible hasta el 60% del desarrollo. Planifica con
 
 Ejemplo: Un equipo de salud estimó 6 meses para construir un dashboard de pacientes. Descubrieron problemas de integración en el mes 4, pero ya habían prometido la puesta en marcha a los administradores del hospital. Los últimos 2 meses fueron modo pánico: recortando funcionalidades, recortando pruebas, recortando calidad.
 
-![Diagrama V-Model Waterfall](/assets/images/vmodel-waterfall-diagram.svg "Enfoque V-Model / Waterfall")
+<img src="/assets/images/vmodel-waterfall-diagram.svg" alt="Diagrama V-Model Waterfall" width="1000" height="500" loading="lazy">
 
 ---
 
@@ -58,7 +58,7 @@ Más de 10 horas por semana en reuniones de standup. Repriorización constante. 
 
 Ejemplo: Una agencia tomó un enfoque "Agile puro" para una reconstrucción de CMS. Sin especificaciones. Solo "construye un dashboard". 3 meses y 5 cycles después, el cliente se dio cuenta de que el diseño estaba mal. Backend completo reconstruido. El equipo había optimizado para velocidad, no para valor.
 
-![Diagrama Agile Iterativo](/assets/images/agile-iterative-diagram.svg "Enfoque Agile / Iterativo")
+<img src="/assets/images/agile-iterative-diagram.svg" alt="Diagrama Agile Iterativo" width="1000" height="500" loading="lazy">
 
 ---
 
@@ -93,7 +93,7 @@ Los equipos de alto rendimiento no eligen entre V-Model y Agile, **usan ambos pa
 
 Esto es lo que funciona. **No Agile. No Waterfall. Ambos.**
 
-![Fases de Metodología Híbrida](/assets/images/hybrid-methodology-phases.svg "Por Qué Gana la Metodología Híbrida")
+<img src="/assets/images/hybrid-methodology-phases.svg" alt="Fases de Metodología Híbrida" width="1200" height="500" loading="lazy">
 
 ---
 
@@ -181,7 +181,7 @@ La metodología híbrida _solo funciona_ si puede ver:
 
 Sin visibilidad, híbrido se convierte en imprevisibilidad.
 
-![Flujo de Trabajo de Implementación](/assets/images/implementation-workflow.svg "Implementando Metodología Híbrida")
+<img src="/assets/images/implementation-workflow.svg" alt="Flujo de Trabajo de Implementación" width="1200" height="600" loading="lazy">
 
 ---
 

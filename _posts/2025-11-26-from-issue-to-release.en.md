@@ -70,7 +70,7 @@ Each issue has:
 
 **Issues are the atomic unit of work.** Everything starts here.
 
-![Issue Structure](/assets/images/issue-structure.svg "How Issues Work in Sinra")
+<img src="/assets/images/issue-structure.svg" alt="Issue Structure" width="800" height="450" loading="lazy">
 
 ---
 
@@ -100,7 +100,7 @@ Because it's concrete. A capability describes what your product can do. "2FA cap
 - Blockers and dependencies
 - Release readiness
 
-![Capability Hierarchy](/assets/images/capability-hierarchy.svg "Issues Grouped into Capabilities")
+<img src="/assets/images/capability-hierarchy.svg" alt="Capability Hierarchy" width="800" height="500" loading="lazy">
 
 ---
 
@@ -126,7 +126,7 @@ In Release 2.1 view, you see:
 - Testing status
 - Deployment readiness
 
-![Release View](/assets/images/release-view.svg "Capabilities Grouped into Releases")
+<img src="/assets/images/release-view.svg" alt="Release View" width="800" height="500" loading="lazy">
 
 ---
 
@@ -200,7 +200,7 @@ Let's trace the 2FA feature through the system:
 - Documentation complete
 - Deployment successful
 
-![Complete Workflow](/assets/images/issue-to-release-workflow.svg "Full Journey from Issue to Release")
+<img src="/assets/images/issue-to-release-workflow.svg" alt="Complete Workflow" width="900" height="500" loading="lazy">
 
 ---
 

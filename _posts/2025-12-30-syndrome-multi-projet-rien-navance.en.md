@@ -53,7 +53,7 @@ Manager: "OK. I'll look into that."
 
 Manager: "Shit."
 
-![Dev 1 assigned to 4 simultaneous projects with 180% overallocation](/assets/images/blog/2025-12-30-syndrome-multi-projet-developer-overload.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-developer-overload.svg" alt="Dev 1 assigned to 4 simultaneous projects with 180% overallocation" width="800" height="450" loading="lazy">
 
 ---
 
@@ -100,7 +100,7 @@ Team of 8 developers. 6 active projects.
 
 **No project finished.**
 
-![6 active projects, none finished after 4 weeks](/assets/images/blog/2025-12-30-syndrome-multi-projet-nothing-finishes.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-nothing-finishes.svg" alt="6 active projects, none finished after 4 weeks" width="800" height="450" loading="lazy">
 
 **The Problem:**
 - ❌ Developers fragmented across multiple projects
@@ -158,7 +158,7 @@ Your developer spends their day switching between 3, 4 different projects. Resul
 
 **5:00 PM:** End of day. Dev 1 realizes they've **finished nothing**.
 
-![Typical day with 6 context switches and 60% time lost](/assets/images/blog/2025-12-30-syndrome-multi-projet-context-switching.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-context-switching.svg" alt="Typical day with 6 context switches and 60% time lost" width="800" height="450" loading="lazy">
 
 **The Problem:**
 - ❌ 5-6 context switches per day
@@ -174,7 +174,7 @@ Research (Gerald Weinberg, *Quality Software Management*):
 - **3 projects:** 20% productivity per project (40% lost in switching)
 - **4+ projects:** <10% productivity per project (60%+ lost in switching)
 
-![Productivity loss by number of projects](/assets/images/blog/2025-12-30-syndrome-multi-projet-productivity-loss.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-productivity-loss.svg" alt="Productivity loss by number of projects" width="800" height="450" loading="lazy">
 
 **Result:** Context switching destroys productivity.
 
@@ -565,7 +565,7 @@ Dev 5: 3 projects (Project B, D, E) 🚨 Overallocated
 - Remove Dev 3 from 2 projects
 - Remove Dev 5 from 1 project
 
-![Sinra allocation view with overload alerts](/assets/images/blog/2025-12-30-syndrome-multi-projet-allocation-view.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-allocation-view.svg" alt="Sinra allocation view with overload alerts" width="800" height="450" loading="lazy">
 
 **Benefit:** Impossible not to see the overload.
 
@@ -695,7 +695,7 @@ Each project now has **full-time** developers.
 **Product Manager Quote:**
 > "Projects finally get finished. Before, everything was late. Now, we deliver on time. The difference? Each dev is focused on a single project."
 
-![Nexus: metrics before/after Sinra](/assets/images/blog/2025-12-30-syndrome-multi-projet-nexus-before-after.svg)
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-nexus-before-after.svg" alt="Nexus: metrics before/after Sinra" width="800" height="450" loading="lazy">
 
 ---
 

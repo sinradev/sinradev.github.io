@@ -82,7 +82,7 @@ Lead Dev: "Uh... good question. Maybe the 'Auth System Overview'? Or the 'Quick 
 
 **Result:** Alex spent 2 hours reading obsolete documentation to eventually learn by reading the code.
 
-![Multiple versions: Nobody knows which is correct](/assets/images/blog/2025-12-24-documentation-morte-multiple-versions.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-multiple-versions.svg" alt="Multiple versions: Nobody knows which is correct" width="800" height="500" loading="lazy">
 
 ---
 
@@ -118,7 +118,7 @@ You write a beautiful technical spec in Notion 6 months ago. The code evolves. T
 **Real Result:**
 An internal study at a 50-person tech scale-up revealed that **73% of their Confluence documentation was over 6 months old and no longer matched the current code**.
 
-![Timeline of documentation obsolescence over 6 months](/assets/images/blog/2025-12-24-documentation-morte-obsolescence-timeline.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-obsolescence-timeline.svg" alt="Timeline of documentation obsolescence over 6 months" width="800" height="400" loading="lazy">
 
 ---
 
@@ -300,7 +300,7 @@ Information scattered across:
 
 Nobody knows where to look. Nobody knows which info is correct. Everyone maintains their own mental version of "how it really works".
 
-![Documentation scattered across 6 tools](/assets/images/blog/2025-12-24-documentation-morte-scattered-tools.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-scattered-tools.svg" alt="Documentation scattered across 6 tools" width="800" height="450" loading="lazy">
 
 ---
 
@@ -366,7 +366,7 @@ Let's revisit the authentication example.
 
 **Result:** Notion doc frozen, code evolves, total desynchronization.
 
-![Traditional approach vs Sinra](/assets/images/blog/2025-12-24-documentation-morte-traditional-vs-sinra.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-traditional-vs-sinra.svg" alt="Traditional approach vs Sinra" width="800" height="450" loading="lazy">
 
 ---
 
@@ -546,7 +546,7 @@ Developer searches: "OAuth2 refresh tokens"
 
 **With Notion + GitHub + Jira separated:** 30 minutes (3 searches in 3 tools).
 
-![Siloed search vs unified search](/assets/images/blog/2025-12-24-documentation-morte-search-comparison.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-search-comparison.svg" alt="Siloed search vs unified search" width="800" height="400" loading="lazy">
 
 ---
 
@@ -606,7 +606,7 @@ New developer implements "CSV Export" feature based on 8-month-old Notion spec.
 **Product Manager Quote:**
 > "No more 6 contradictory versions of a spec. We have one capability with description + commentary. It's THE source of truth. If it changes, we update the capability. Simple."
 
-![DataFlow: Before vs After Sinra](/assets/images/blog/2025-12-24-documentation-morte-before-after.svg)
+<img src="/assets/images/blog/2025-12-24-documentation-morte-before-after.svg" alt="DataFlow: Before vs After Sinra" width="800" height="450" loading="lazy">
 
 ---
 

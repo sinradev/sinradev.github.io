@@ -112,7 +112,7 @@ Dans une enquête auprès de 150 équipes tech :
 
 **Résultat :** Le backlog est un cimetière d'idées mortes que personne n'ose supprimer.
 
-![Croissance infinie du backlog sur 2 ans](/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Croissance infinie du backlog sur 2 ans" width="800" height="400" loading="lazy">
 
 ---
 
@@ -208,7 +208,7 @@ PM : « Oui, mais... tout est urgent. »
 
 **Résultat :** « Urgent » devient du bruit. L'équipe ignore les demandes urgentes parce qu'elles changent trop vite.
 
-![Priorités changeantes : Une semaine typique](/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg" alt="Priorités changeantes : Une semaine typique" width="800" height="450" loading="lazy">
 
 ---
 
@@ -249,7 +249,7 @@ Personne ne se souvient de l'issue bloquée.
 
 **Résultat :** Les issues bloquées meurent lentement, sans que personne ne s'en rende compte.
 
-![38 issues bloquées oubliées](/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg" alt="38 issues bloquées oubliées" width="800" height="450" loading="lazy">
 
 ---
 
@@ -335,7 +335,7 @@ Parce qu'une liste plate ne reflète pas la réalité du travail :
 
 **Résultat :** Tout devient une soupe d'issues déconnectées.
 
-![Backlog plat vs structure par releases](/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg" alt="Backlog plat vs structure par releases" width="800" height="450" loading="lazy">
 
 ---
 
@@ -486,7 +486,7 @@ Au lieu d'une liste de 94 issues, **8 capabilities claires** :
 
 **Total :** 10 semaines → **Parfaitement aligné avec capacité réelle**.
 
-![Planification de capacité : Réalité vs Espoir](/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg" alt="Planification de capacité : Réalité vs Espoir" width="800" height="450" loading="lazy">
 
 **Étape 3 :** Créer issues sous chaque capability
 
@@ -756,7 +756,7 @@ Buffer : 2 semaines
 **Citation Product Manager :**
 > « Je peux enfin répondre au CEO quand il demande 'qu'est-ce qu'on livre en Q2'. Avant, je bafouillais. Maintenant, je lui montre la release avec 6 capabilities claires. Il est ravi. »
 
-![Vertigo : Avant vs Après Sinra](/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg)
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg" alt="Vertigo : Avant vs Après Sinra" width="800" height="450" loading="lazy">
 
 ---
 

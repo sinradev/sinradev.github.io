@@ -20,7 +20,7 @@ A SaaS startup launching a new payment processor needs _specification upfront_ (
 
 The problem isn't the methodologies - it's that managers are forced to choose all-or-nothing.
 
-![False Choice Dilemma](/assets/images/false-choice-dilemma.svg "The False Binary Choice")
+<img src="/assets/images/false-choice-dilemma.svg" alt="False Choice Dilemma" width="1200" height="400" loading="lazy">
 
 ---
 
@@ -39,7 +39,7 @@ Real capacity stays invisible until 60% through development. You plan on Friday'
 
 Example: A healthcare team estimated 6 months to build a patient dashboard. They discovered integration issues at month 4 - but they'd already promised go-live to hospital administrators. The last 2 months were panic mode: cutting features, cutting tests, cutting quality.
 
-![V-Model Waterfall Diagram](/assets/images/vmodel-waterfall-diagram.svg "V-Model / Waterfall Approach")
+<img src="/assets/images/vmodel-waterfall-diagram.svg" alt="V-Model Waterfall Diagram" width="1000" height="500" loading="lazy">
 
 ---
 
@@ -58,7 +58,7 @@ Example: A healthcare team estimated 6 months to build a patient dashboard. They
 
 Example: An agency took an "pure Agile" approach to a CMS rebuild. No specifications. Just "build a dashboard." 3 months and 5 cycles later, the client realized the design was wrong. Entire backend rebuilt. The team had optimized for velocity, not value.
 
-![Agile Iterative Diagram](/assets/images/agile-iterative-diagram.svg "Agile / Iterative Approach")
+<img src="/assets/images/agile-iterative-diagram.svg" alt="Agile Iterative Diagram" width="1000" height="500" loading="lazy">
 
 ---
 
@@ -93,7 +93,7 @@ High-performing teams don't choose between V-Model and Agile - they **use both f
 
 This is what works. **Not Agile. Not Waterfall. Both.**
 
-![Hybrid Methodology Phases](/assets/images/hybrid-methodology-phases.svg "Why Hybrid Methodology Wins")
+<img src="/assets/images/hybrid-methodology-phases.svg" alt="Hybrid Methodology Phases" width="1200" height="500" loading="lazy">
 
 ---
 
@@ -181,7 +181,7 @@ Hybrid methodology _only works_ if you can see:
 
 Without visibility, hybrid becomes unpredictability.
 
-![Implementation Workflow](/assets/images/implementation-workflow.svg "Implementing Hybrid Methodology")
+<img src="/assets/images/implementation-workflow.svg" alt="Implementation Workflow" width="1200" height="600" loading="lazy">
 
 ---
 

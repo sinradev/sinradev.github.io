@@ -155,7 +155,7 @@ Your roadmap is a nice Gantt in Excel or a colorful Notion board. Each feature h
 
 **Result:** You see the trees (issues), not the forest (release).
 
-![Roadmap Comparison Excel vs Sinra](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-comparison.svg "Obsolete Excel vs Real-Time Sinra")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-comparison.svg" alt="Roadmap Comparison Excel vs Sinra" width="800" height="400" loading="lazy">
 
 ---
 
@@ -280,7 +280,7 @@ Billing                           [▒▒▒▒▒▒▒▒▒▒▒▒]
 
 **Response time:** 10 seconds instead of 30 minutes of discussion.
 
-![Real-Time Workload by Developer](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-workload.svg "Complete Visibility of Developer Workload")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-workload.svg" alt="Real-Time Workload by Developer" width="800" height="450" loading="lazy">
 
 ---
 
@@ -322,7 +322,7 @@ Tests         [▒▒▒▒▒▒▒▒▒▒▒▒] 0% 🚨 Not started
 - ✅ No risk of forgetting a critical sub-part
 - ✅ Instant response to management questions ("Where are we on SSO?" → "58%, backend behind, tests not started")
 
-![Feature Progress with Alerts](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-feature-progress.svg "Granular Visibility of Each Feature")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-feature-progress.svg" alt="Feature Progress with Alerts" width="700" height="500" loading="lazy">
 
 ---
 
@@ -481,7 +481,7 @@ The Sinra **backlog** lets you manage your unplanned issues and features, and es
 **CTO Quote:**
 > "Real-time visibility of dev workload changes everything. We can rebalance before a dev gets overloaded and another underutilized. And the Gantt view finally aligns Product and Engineering on the same roadmap."
 
-![TechFlow Results Before/After Sinra](/assets/images/blog/2025-12-19-roadmap-incomplete-pm-before-after.svg "Measurable Impact on PO/PM KPIs")
+<img src="/assets/images/blog/2025-12-19-roadmap-incomplete-pm-before-after.svg" alt="TechFlow Results Before/After Sinra" width="800" height="500" loading="lazy">
 
 ---
 

@@ -75,7 +75,7 @@ Chaque issue a :
 
 **Les issues sont l'unité atomique du travail.** Tout commence ici.
 
-![Structure Issue](/assets/images/issue-structure.svg "Comment Fonctionnent les Issues dans Sinra")
+<img src="/assets/images/issue-structure.svg" alt="Structure Issue" width="800" height="450" loading="lazy">
 
 ---
 
@@ -103,7 +103,7 @@ Parce que c'est concret. Une capability décrit ce que votre produit peut faire.
 - Les blocages et dépendances
 - La préparation pour la release
 
-![Hiérarchie Capability](/assets/images/capability-hierarchy.svg "Issues Regroupées dans des Capabilities")
+<img src="/assets/images/capability-hierarchy.svg" alt="Hiérarchie Capability" width="800" height="500" loading="lazy">
 
 ---
 
@@ -127,7 +127,7 @@ Dans la vue Release 2.1, vous voyez :
 - Statut des tests
 - Préparation du déploiement
 
-![Vue Release](/assets/images/release-view.svg "Capabilities Regroupées dans des Releases")
+<img src="/assets/images/release-view.svg" alt="Vue Release" width="800" height="500" loading="lazy">
 
 ---
 
@@ -189,7 +189,7 @@ Traçons la fonctionnalité 2FA à travers le système :
 - Documentation complète
 - Déploiement réussi
 
-![Workflow Complet](/assets/images/issue-to-release-workflow.svg "Parcours Complet d'Issue à Release")
+<img src="/assets/images/issue-to-release-workflow.svg" alt="Workflow Complet" width="900" height="500" loading="lazy">
 
 ---
 

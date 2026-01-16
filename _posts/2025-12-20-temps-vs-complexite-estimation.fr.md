@@ -62,7 +62,7 @@ Les **story points** (points de complexité) sont une abstraction inventée par 
 
 **Résultat :** Vous créez une couche d'abstraction inutile qui masque la réalité.
 
-![Planning Poker vs Estimation Temps](/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg "Planning Poker : 20 min de débat vs Estimation Temps : 2 min")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg" alt="Planning Poker vs Estimation Temps" width="800" height="450" loading="lazy">
 
 ---
 
@@ -81,7 +81,7 @@ Le management convertira **toujours** les points en temps :
 
 Au lieu de dire directement « 5 jours », vous dites « 20 points » qui se transforment en « 5 jours » dans la tête de tout le monde.
 
-![Cycle de Conversion Inutile](/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg "Le Cycle Mensonger des Story Points")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg" alt="Cycle de Conversion Inutile" width="700" height="500" loading="lazy">
 
 ---
 
@@ -291,7 +291,7 @@ Vous savez **exactement** combien de jours de travail sont assignés à chaque p
 
 Si vous ne pouvez pas estimer en jours, **décomposez**.
 
-![Décomposition Forcée par le Temps](/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg "Le Temps Force La Décomposition en Issues Estimables")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg" alt="Décomposition Forcée par le Temps" width="800" height="500" loading="lazy">
 
 ---
 
@@ -668,7 +668,7 @@ Au lieu de « 13 points », décomposition :
 **Citation Product Manager :**
 > « Avec les points, je ne savais jamais quand on allait livrer. Maintenant, je peux dire "dans 3 semaines" avec 80% de confiance. Les stakeholders adorent. »
 
-![Résultats TechFlow Avant/Après](/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg "Impact Mesurable : Story Points vs Temps")
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg" alt="Résultats TechFlow Avant/Après" width="800" height="500" loading="lazy">
 
 ---
 

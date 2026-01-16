@@ -63,7 +63,7 @@ CTO : « Ah. Personne ne m'a expliqué le contexte. OK, approuvé. Ça prendra 2
 - **Temps réel nécessaire après déblocage :** 4 jours
 - **Temps perdu à cause de dépendances cachées :** 17 jours
 
-![Chronologie : feature bloquée 3 semaines, mais seulement 4 jours de travail réel](/assets/images/blog/2025-12-28-dependances-cachees-blocked-timeline.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-blocked-timeline.svg" alt="Chronologie : feature bloquée 3 semaines, mais seulement 4 jours de travail réel" width="800" height="400" loading="lazy">
 
 ---
 
@@ -138,7 +138,7 @@ Feature : **« Notifications push mobiles »**
 
 Mobile → Backend → Infra (Redis) → Infra (Firebase) → Sécurité → Mobile (APNs)
 
-![Découverte progressive de la chaîne de dépendances sur 23 jours](/assets/images/blog/2025-12-28-dependances-cachees-chain-progressive.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-chain-progressive.svg" alt="Découverte progressive de la chaîne de dépendances sur 23 jours" width="800" height="450" loading="lazy">
 
 **Le Problème :**
 - ❌ Chaîne découverte progressivement (pas anticipée)
@@ -192,7 +192,7 @@ Frontend termine l'intégration.
 - **Temps réel nécessaire si coordination claire :** 1.5 semaines
 - **Temps perdu à cause de mauvaise coordination :** 2.5 semaines
 
-![Équipes qui s'attendent mutuellement : deadlock total](/assets/images/blog/2025-12-28-dependances-cachees-teams-waiting.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-teams-waiting.svg" alt="Équipes qui s'attendent mutuellement : deadlock total" width="800" height="450" loading="lazy">
 
 **Le Problème :**
 - ❌ Assumptions contradictoires (chacun pense que l'autre fait le travail)
@@ -509,7 +509,7 @@ Bloque : [INFRA-567] Bucket S3
 
 **Gain :** 11 jours économisés grâce à l'anticipation.
 
-![Comparaison : approche traditionnelle (17 jours) vs Sinra (6 jours)](/assets/images/blog/2025-12-28-dependances-cachees-traditional-vs-sinra.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-traditional-vs-sinra.svg" alt="Comparaison : approche traditionnelle (17 jours) vs Sinra (6 jours)" width="800" height="450" loading="lazy">
 
 ---
 
@@ -563,7 +563,7 @@ Release Q2
 - Pinger CTO pour débloquer Feature B
 - Relancer design pour débloquer Feature D
 
-![Vue graphique complète des dépendances dans Sinra](/assets/images/blog/2025-12-28-dependances-cachees-dependency-graph.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-dependency-graph.svg" alt="Vue graphique complète des dépendances dans Sinra" width="800" height="450" loading="lazy">
 
 **Bénéfice :** Pas de dépendances cachées. Tout le monde voit les blocages.
 
@@ -713,7 +713,7 @@ Frontend intègre en 2 jours.
 **Citation Product Manager :**
 > « Les releases ne glissent plus. On sait exactement quelles features ont des dépendances, et on les débloque proactivement. Fini les surprises à J-5 de la release. »
 
-![Quantum : métriques avant/après Sinra](/assets/images/blog/2025-12-28-dependances-cachees-quantum-before-after.svg)
+<img src="/assets/images/blog/2025-12-28-dependances-cachees-quantum-before-after.svg" alt="Quantum : métriques avant/après Sinra" width="800" height="450" loading="lazy">
 
 ---
 

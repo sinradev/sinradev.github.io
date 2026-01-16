@@ -73,7 +73,7 @@ Dev 1 (en aparté) : « La story disait « En tant qu'utilisateur, je veux me d�
 
 Dev 2 : « Bienvenue dans le monde des user stories. »
 
-![User story vague générant 45 minutes de questions](/assets/images/blog/2026-01-02-user-stories-vague-meeting.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-vague-meeting.svg" alt="User story vague générant 45 minutes de questions" width="800" height="400" loading="lazy">
 
 ---
 
@@ -128,7 +128,7 @@ Dev : « OK... mais concrètement, je fais quoi ? »
 
 **Résultat :** 3 réunions de clarification avant de pouvoir commencer à coder.
 
-![User story générant 15 questions sans réponses](/assets/images/blog/2026-01-02-user-stories-questions-unanswered.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-questions-unanswered.svg" alt="User story générant 15 questions sans réponses" width="800" height="450" loading="lazy">
 
 **Le Problème :**
 - ❌ User story décrit le « quoi » (besoin utilisateur)
@@ -190,7 +190,7 @@ Votre équipe passe 4 heures par semaine en « backlog grooming » pour transfor
 
 **L'équipe est épuisée.**
 
-![4 heures de grooming pour 8 user stories](/assets/images/blog/2026-01-02-user-stories-grooming-marathon.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-grooming-marathon.svg" alt="4 heures de grooming pour 8 user stories" width="800" height="400" loading="lazy">
 
 **Le Problème :**
 - ❌ 4h de grooming par semaine (20% du temps de l'équipe)
@@ -261,7 +261,7 @@ afin d'être informé des nouveaux messages.
 
 **Écart entre la story (2 lignes) et l'implémentation réelle (50+ tâches).**
 
-![User story 2 lignes vs 50 tâches réelles](/assets/images/blog/2026-01-02-user-stories-gap-reality.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-gap-reality.svg" alt="User story 2 lignes vs 50 tâches réelles" width="800" height="500" loading="lazy">
 
 **Le Problème :**
 - ❌ User story : 2 lignes vagues
@@ -345,7 +345,7 @@ PO : « On met un debounce alors. »
 
 **Mais l'équipe a passé 3 sessions de grooming (3h au total) sur cette seule story.**
 
-![Story regroomée 3 fois avant d'être développable](/assets/images/blog/2026-01-02-user-stories-regrooming-loop.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-regrooming-loop.svg" alt="Story regroomée 3 fois avant d'être développable" width="800" height="450" loading="lazy">
 
 **Le Problème :**
 - ❌ Story créée trop vague
@@ -416,7 +416,7 @@ Dev : « ... »
 
 **2 jours de développement à refaire.**
 
-![Développeur devine, code 2 jours, tout est à refaire](/assets/images/blog/2026-01-02-user-stories-developer-guesses.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-developer-guesses.svg" alt="Développeur devine, code 2 jours, tout est à refaire" width="800" height="400" loading="lazy">
 
 **Le Problème :**
 - ❌ Story trop vague
@@ -745,7 +745,7 @@ Release : Q1 2026
 - ✅ Pas de questions
 - ✅ Code directement
 
-![User story vague vs issue Sinra détaillée](/assets/images/blog/2026-01-02-user-stories-vs-sinra-issue.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-vs-sinra-issue.svg" alt="User story vague vs issue Sinra détaillée" width="800" height="450" loading="lazy">
 
 ---
 
@@ -804,7 +804,7 @@ Sinra utilise **capabilities** pour regrouper des issues liées.
 - Voir la « big picture » (capability)
 - Travailler sur des tâches claires (issues)
 
-![Capability regroupant 5 issues actionnables](/assets/images/blog/2026-01-02-user-stories-capability-breakdown.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-capability-breakdown.svg" alt="Capability regroupant 5 issues actionnables" width="800" height="450" loading="lazy">
 
 ---
 
@@ -950,7 +950,7 @@ Assigné : Dev 3
 **Citation Product Manager :**
 > « Au début, j'ai trouvé fastidieux d'écrire des issues détaillées. Puis j'ai réalisé : je passais le même temps en grooming à répondre aux questions. Maintenant, je documente une fois, clairement, et l'équipe développe sans questions. »
 
-![Lumio : métriques avant/après Sinra](/assets/images/blog/2026-01-02-user-stories-lumio-before-after.svg)
+<img src="/assets/images/blog/2026-01-02-user-stories-lumio-before-after.svg" alt="Lumio : métriques avant/après Sinra" width="800" height="500" loading="lazy">
 
 ---
 
