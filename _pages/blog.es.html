@@ -24,7 +24,7 @@ heading: "Insights y Estrategias de Gestión de Proyectos"
         <div class="post-meta">
           <span class="date">{{ post.date | date: "%-d de %B de %Y" }}</span>
           {% if post.category %}
-            <span class="category">{{ post.category }}</span>
+            <a href="/category/{{ post.category | slugify }}/" class="category">{{ post.category }}</a>
           {% endif %}
         </div>
         <h2 class="post-title">

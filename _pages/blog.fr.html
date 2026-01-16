@@ -24,7 +24,7 @@ heading: "Conseils et Stratégies de Gestion de Projet"
         <div class="post-meta">
           <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
           {% if post.category %}
-            <span class="category">{{ post.category }}</span>
+            <a href="/category/{{ post.category | slugify }}/" class="category">{{ post.category }}</a>
           {% endif %}
         </div>
         <h2 class="post-title">

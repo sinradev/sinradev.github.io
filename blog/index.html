@@ -32,7 +32,7 @@ lang: en
             <div class="post-meta">
               <span class="date">{{ post.date | date: site.data[page_lang].strings.blog.date_format }}</span>
               {% if post.category %}
-                <span class="category">{{ post.category }}</span>
+                <a href="/category/{{ post.category | slugify }}/" class="category">{{ post.category }}</a>
               {% endif %}
             </div>
             <h2 class="post-title">

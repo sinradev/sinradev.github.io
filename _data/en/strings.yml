@@ -46,6 +46,7 @@ blog:
   read_more: Read more →
   previous: "← Previous"
   next: "Next →"
+  category_description: Browse all posts in this category
   ready_to_transform: Ready to Transform Your Project Management?
   cta_description: Apply these insights with Sinra - the unified platform for modern teams.
   start_free_trial: Start Free Trial

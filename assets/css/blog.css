@@ -40,6 +40,14 @@
   margin-bottom: 60px;
 }
 
+/* Category Posts Grid - More spacing for category pages */
+.category-posts .posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
 .blog-posts li {
   margin: 0;
 }
@@ -132,6 +140,14 @@ hr {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.post-meta .category:hover {
+  background: rgba(199, 146, 233, 0.2);
+  color: #d9ade8;
+  transform: translateY(-1px);
 }
 
 /* Post Title */
@@ -529,6 +545,14 @@ hr {
   font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.related-post-card .category:hover {
+  background: rgba(255, 152, 0, 0.2);
+  color: #ffa726;
+  transform: translateY(-1px);
 }
 
 .related-post-card h4 {
