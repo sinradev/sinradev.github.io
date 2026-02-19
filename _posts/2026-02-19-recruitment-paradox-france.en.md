@@ -3,6 +3,7 @@ layout: post
 title: "The French Recruitment Paradox: 4 Interviews, 1 Test, Zero Trust"
 categories: Work Culture Recruitment
 lang: en
+featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png
 ---
 
 You've probably heard this question before: "Why in France is hiring like auditioning for a Spielberg film, but for a €2,500/month job?"

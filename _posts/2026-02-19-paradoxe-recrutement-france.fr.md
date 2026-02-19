@@ -3,6 +3,7 @@ layout: post
 title: "Le paradoxe du recrutement français : 4 entretiens, 1 test, zéro confiance"
 categories: Work Culture Recruitment
 lang: fr
+featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png
 ---
 
 On vous pose la question souvent : « Pourquoi en France, recruter, c'est comme passer des auditions pour un film de Spielberg, mais pour un CDI à 2 500 euros par mois ? »

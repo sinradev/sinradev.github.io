@@ -3,6 +3,7 @@ layout: post
 title: "¿Por qué el full remote se convirtió en tabú ? Del COVID a la obligación del retorno a la oficina"
 categories: Work Culture Remote
 lang: es
+featured_image: /assets/images/blog/2026-02-19-full-remote-tabou-featured.png
 ---
 
 ¿Recuerdas 2020-2021 ? El trabajo completamente remoto era la promesa del futuro del trabajo. Las empresas de repente descubrieron que sus empleados podían ser productivos desde casa. Los desplazamientos desaparecieron. Los costos inmobiliarios se desplomaron. El talento podría venir de cualquier lugar del mundo. Fue una revolución.

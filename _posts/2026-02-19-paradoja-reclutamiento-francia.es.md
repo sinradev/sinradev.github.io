@@ -3,6 +3,7 @@ layout: post
 title: "La paradoja del reclutamiento francés : 4 entrevistas, 1 test, cero confianza"
 categories: Work Culture Recruitment
 lang: es
+featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png
 ---
 
 Probablemente has escuchado esta pregunta a menudo : « ¿Por qué en Francia, contratar es como auditar para una película de Spielberg, pero para un CDI a 2.500 euros al mes ? »

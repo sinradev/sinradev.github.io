@@ -3,6 +3,7 @@ layout: post
 title: "Why Full Remote Became Taboo? From COVID Revolution to Mandatory Office Returns"
 categories: Work Culture Remote
 lang: en
+featured_image: /assets/images/blog/2026-02-19-full-remote-tabou-featured.png
 ---
 
 Do you remember 2020-2021? Full remote was the promise of the future of work. Companies suddenly discovered their employees could be productive from home. Commutes disappeared. Real estate costs plummeted. Talent could come from anywhere in the world. It was a revolution.
