@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Full Remote Became Taboo? From COVID Revolution to Mandatory Office Returns"
-categories: Work Remote Culture Company
+categories: Work Culture Remote
 lang: en
 ---
 

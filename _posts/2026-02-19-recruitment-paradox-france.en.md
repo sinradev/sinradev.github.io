@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The French Recruitment Paradox: 4 Interviews, 1 Test, Zero Trust"
-categories: Recruitment Startup France Culture
+categories: Work Culture Recruitment
 lang: en
 ---
 

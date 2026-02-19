@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pourquoi le full remote est devenu tabou ? De la révolution COVID au retour au bureau obligatoire"
-categories: Travail Remote Culture Entreprise
+categories: Work Culture Remote
 lang: fr
 ---
 

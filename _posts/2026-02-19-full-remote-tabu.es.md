@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "¿Por qué el full remote se convirtió en tabú ? Del COVID a la obligación del retorno a la oficina"
-categories: Trabajo Remoto Cultura Empresa
+categories: Work Culture Remote
 lang: es
 ---
 

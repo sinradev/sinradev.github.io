@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La paradoja del reclutamiento francés : 4 entrevistas, 1 test, cero confianza"
-categories: Reclutamiento Startup Francia Cultura
+categories: Work Culture Recruitment
 lang: es
 ---
 
