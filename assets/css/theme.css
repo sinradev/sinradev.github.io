@@ -410,7 +410,7 @@ header.navbar .dropdown ul li > a.active {
   left: -40%;
   bottom: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
   background: transparent !important;
 }
 
