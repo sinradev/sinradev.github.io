@@ -76,7 +76,7 @@ nav a:hover::after {
     display: block;
   }
 
-  nav {
+  header nav {
     position: fixed;
     top: 100%;
     left: 0;
@@ -89,7 +89,7 @@ nav a:hover::after {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 
-  body.nav-open nav {
+  body.nav-open header nav {
     transform: translateY(0);
   }
 }
