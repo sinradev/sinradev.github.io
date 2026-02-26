@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Le paradoxe du recrutement français : 4 entretiens, 1 test, zéro confiance"
-categories: Work Culture Recruitment
+category: Work Culture
 lang: fr
 featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png
 ---

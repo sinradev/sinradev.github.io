@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "¿Por qué en 2026 todavía imprimimos PDFs, los llenamos a mano y los escaneamos de vuelta?"
-categories: Work Culture Administration
+categories: Outils
 lang: es
 featured_image: /assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png
 ---

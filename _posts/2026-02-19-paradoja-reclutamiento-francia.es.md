@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La paradoja del reclutamiento francés : 4 entrevistas, 1 test, cero confianza"
-categories: Work Culture Recruitment
+categories: Work Culture
 lang: es
 featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png
 ---

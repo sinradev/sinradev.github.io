@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why in 2026 are we still printing PDFs, filling them by hand, and scanning them back?"
-categories: Work Culture Administration
+categories: Outils
 lang: en
 featured_image: /assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png
 ---

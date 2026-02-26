@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pourquoi en 2026 on demande encore d'imprimer un PDF, le remplir à la main et le rescanner ?"
-categories: Work Culture Administration
+category: Outils
 lang: fr
 featured_image: /assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png
 ---
