@@ -6,7 +6,7 @@ lang: es
 featured_image: /assets/images/blog/2026-03-23-developers-the-voice-featured.png
 ---
 
-Si eres desarrollador, probablemente ya lo hayas sentido: postularte a un puesto es como audicionar para The Voice. Salvo que no tienes una, dos ni tres oportunidades — tienes cinco. Cinco entrevistas. Más pruebas técnicas. Más verificación de referencias. Y al final, aunque llegues a la final, todavía hay rondas eliminatorias que no sabías que existían.
+Si eres desarrollador, probablemente ya lo hayas sentido: postularte a un puesto es como audicionar para The Voice. Salvo que no tienes una, dos ni tres oportunidades: tienes cinco. Cinco entrevistas. Más pruebas técnicas. Más verificación de referencias. Y al final, aunque llegues a la final, todavía hay rondas eliminatorias que no sabías que existían.
 
 Bienvenido al proceso de reclutamiento tech moderno, donde las empresas han decidido que la confianza es un lujo que no pueden permitirse.
 
@@ -15,7 +15,7 @@ Bienvenido al proceso de reclutamiento tech moderno, donde las empresas han deci
 Piensa en The Voice. Imagina que para participar en el show:
 
 **Ronda 1 (Las audiciones a ciegas)** = Entrevista de RRHH / llamada telefónica
-Grabas un vídeo presentándote. El reclutador lo escucha, te hace preguntas genéricas. «Háblame de ti. ¿Por qué esta empresa?» Sabes que el 90% de los candidatos son eliminados aquí. Tienes que ser perfecto, entusiasta, sonriente — aunque lleves tres meses buscando trabajo y estés agotado por dentro.
+Grabas un vídeo presentándote. El reclutador lo escucha, te hace preguntas genéricas. «Háblame de ti. ¿Por qué esta empresa?» Sabes que el 90% de los candidatos son eliminados aquí. Tienes que ser perfecto, entusiasta, sonriente, aunque lleves tres meses buscando trabajo y estés agotado por dentro.
 
 **Ronda 2 (Las sillas se giran)** = Entrevista técnica con un ingeniero
 Ahora un ingeniero te hace preguntas de verdad. No solo «háblame de ti», sino «implementa una función en O(n log n) para invertir un array de objetos anidados». Tienes 30 minutos. Sin Google. Sin StackOverflow. Solo tú, tu cerebro estresado y un IDE lleno de errores de sintaxis.
@@ -89,7 +89,7 @@ Lo más insidioso es la inflación progresiva de expectativas.
 
 **Ronda 2:** «¿Tienes O(n log n)? Bien, pero explícame también la complejidad espacial y demuestra que es óptimo.»
 
-**Ronda 3:** «Vale, dominas los algoritmos. Pero ahora te damos un caso práctico. No solo codifiques — piensa en escalabilidad, mantenibilidad, testabilidad, y diseña una arquitectura que soporte 10.000 peticiones por segundo.»
+**Ronda 3:** «Vale, dominas los algoritmos. Pero ahora te damos un caso práctico. No solo codifiques: piensa en escalabilidad, mantenibilidad, testabilidad, y diseña una arquitectura que soporte 10.000 peticiones por segundo.»
 
 **Ronda 4:** «Genial, tienes la arquitectura. Ahora dime cómo llegarías a producción. ¿Monitoring? ¿Logging? ¿Alertas? ¿Cómo depuras un incidente en producción a las 3am?»
 
@@ -141,7 +141,7 @@ Cuanto más largo es el proceso, más favorece a los candidatos con tiempo y ene
 Si necesitas llamar a mi antiguo jefe para verificar que soy bueno, asumes que he tenido jefes anteriores en empresas «buenas». ¿Un recién graduado? Sin referencias. ¿Un inmigrante que trabajó en el extranjero? Sus referencias no hablan el idioma. ¿Un autodidacta que acaba de terminar un bootcamp? Sin historial. El proceso filtra estructuralmente los perfiles no convencionales.
 
 **5. La sobrevaloración del perfil**
-Cada empresa recluta para el perfil que le habría gustado tener, no para el que realmente necesita. Un puesto de Senior Dev acaba exigiendo experiencia de Principal Engineer. Tests de algoritmos complejos para un puesto que nunca los usará. Preguntas de diseño de sistemas de nivel CTO para un puesto donde simplemente programarás features. ¿Resultado? El 90% de los candidatos están sobrecualificados o son rechazados por no tener «experiencia de CTO». Y los pocos que son contratados acaban frustrados — han sobreactuado un papel durante el proceso que la realidad no puede igualar.
+Cada empresa recluta para el perfil que le habría gustado tener, no para el que realmente necesita. Un puesto de Senior Dev acaba exigiendo experiencia de Principal Engineer. Tests de algoritmos complejos para un puesto que nunca los usará. Preguntas de diseño de sistemas de nivel CTO para un puesto donde simplemente programarás features. ¿Resultado? El 90% de los candidatos están sobrecualificados o son rechazados por no tener «experiencia de CTO». Y los pocos que son contratados acaban frustrados: han sobreactuado un papel durante el proceso que la realidad no puede igualar.
 
 ## La trampa de las cinco entrevistas
 
