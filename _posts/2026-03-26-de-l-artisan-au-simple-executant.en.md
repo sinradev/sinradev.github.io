@@ -1,8 +1,12 @@
 ---
 layout: post
 title: "From Craftsman to Simple Executor: How the Developer Lost Their Status"
-categories: Career Culture
+subtitle: "The decline of developer status and why AI replacement is inevitable"
+description: "How the tech industry transformed developers from craftsmen to interchangeable executors, and why AI is the logical consequence of this devaluation."
 lang: en
+category: Career
+excerpt: "A decade ago, developers were craftsmen. Today, they are code-producing machines. And with AI arriving, it's finally clear why: the industry already decided you were replaceable."
+permalink: /career/:year/:month/:day/from-craftsman-to-executor.html
 featured_image: /assets/images/blog/2026-03-26-artisan-executant-featured.png
 ---
 

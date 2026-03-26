@@ -1,8 +1,12 @@
 ---
 layout: post
 title: "Del artesano al simple ejecutor: cómo el desarrollador perdió su estatus"
-categories: Carrera Cultura
+subtitle: "El declive del estatus del desarrollador y por qué el reemplazo por IA es inevitable"
+description: "Cómo la industria tech transformó a los desarrolladores de artesanos a ejecutores intercambiables, y por qué la IA es la consecuencia lógica de esta devaluación."
 lang: es
+category: Carrera
+excerpt: "Hace una década, los desarrolladores eran artesanos. Hoy son máquinas productoras de código. Y con la IA llegando, finalmente está claro por qué: la industria ya decidió que eras reemplazable."
+permalink: /carrera/:year/:month/:day/del-artesano-al-ejecutor.html
 featured_image: /assets/images/blog/2026-03-26-artisan-executant-featured.png
 ---
 
