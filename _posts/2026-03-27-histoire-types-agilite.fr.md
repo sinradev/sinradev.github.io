@@ -310,18 +310,6 @@ Quel framework pour votre équipe?
 
 ---
 
-## Articles Similaires
-
-Si cet article vous a intéressé, découvrez d'autres perspectives sur la gestion de projet et l'agilité :
-
-- [« Pourquoi Nous Avons Abandonné les 'Sprints' pour les 'Cycles' »](/philosophie/2025/11/21/why-we-abandoned-sprints-for-cycles.html)
-- [« De l'Issue à la Release: Comment Structurer Vraiment le Travail »](/philosophie/2025/11/26/from-issue-to-release.html)
-- [« Release-Driven Development: Quand la Release Devient le Moteur »](/philosophie/2025/12/01/release-driven-development.html)
-- [« La Fausse Promesse Des User Stories »](/planning/2026/01/02/fausse-promesse-user-stories-en-tant-que.html)
-- [« Le Chaos du Backlog Infini: Personne Ne Sait Quoi Faire »](/planning/2025/12/26/chaos-backlog-personne-sait-q2.html)
-
----
-
 ## Conclusion: Choisissez Votre Chemin
 
 L'Agilité en 2001 était une révolution. En 2026, c'est devenu mainstream. Mais tout le monde la pratique différemment.
@@ -341,3 +329,15 @@ Et souvent, c'est un **hybride** : un peu de Scrum (les rituels), un peu de Kanb
 L'important : **itérez. Écoutez votre équipe. Ajustez régulièrement.**
 
 Parce que c'est ça, vraiment, l'Agilité.
+
+---
+
+## Si vous voulez allez un peu plus loin...
+
+Découvrez d'autres perspectives sur la gestion de projet et l'agilité :
+
+- [« Pourquoi Nous Avons Abandonné les 'Sprints' pour les 'Cycles' »](/philosophie/2025/11/21/why-we-abandoned-sprints-for-cycles.html)
+- [« De l'Issue à la Release: Comment Structurer Vraiment le Travail »](/philosophie/2025/11/26/from-issue-to-release.html)
+- [« Release-Driven Development: Quand la Release Devient le Moteur »](/philosophie/2025/12/01/release-driven-development.html)
+- [« La Fausse Promesse Des User Stories »](/planning/2026/01/02/fausse-promesse-user-stories-en-tant-que.html)
+- [« Le Chaos du Backlog Infini: Personne Ne Sait Quoi Faire »](/planning/2025/12/26/chaos-backlog-personne-sait-q2.html)
