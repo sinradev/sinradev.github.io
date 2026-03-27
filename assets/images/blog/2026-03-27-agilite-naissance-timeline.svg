@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Timeline line -->
+  <line x1="50" y1="150" x2="950" y2="150" stroke="#8b9cbf" stroke-width="2"/>
+
+  <!-- 1990s: Crisis in software -->
+  <circle cx="100" cy="150" r="12" fill="#ff6b9d"/>
+  <rect x="50" y="60" width="100" height="70" rx="4" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="1"/>
+  <text x="100" y="85" text-anchor="middle" font-size="12" font-weight="bold" fill="#ff6b9d">1990s</text>
+  <text x="100" y="105" text-anchor="middle" font-size="10" fill="#8b9cbf">Crise logicielle</text>
+  <text x="100" y="120" text-anchor="middle" font-size="9" fill="#8b9cbf">Projets qui</text>
+  <text x="100" y="132" text-anchor="middle" font-size="9" fill="#8b9cbf">échouent</text>
+
+  <!-- 2001: Agile Manifesto -->
+  <circle cx="350" cy="150" r="12" fill="#a6f079"/>
+  <rect x="300" y="40" width="100" height="90" rx="4" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="1"/>
+  <text x="350" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">2001</text>
+  <text x="350" y="85" text-anchor="middle" font-size="10" fill="#8b9cbf">Manifeste Agile</text>
+  <text x="350" y="100" text-anchor="middle" font-size="9" fill="#8b9cbf">17 experts réunis</text>
+  <text x="350" y="113" text-anchor="middle" font-size="9" fill="#8b9cbf">Itération & retours</text>
+  <text x="350" y="126" text-anchor="middle" font-size="9" fill="#8b9cbf">rapides</text>
+
+  <!-- 2000s: Frameworks boom -->
+  <circle cx="600" cy="150" r="12" fill="#c792e9"/>
+  <rect x="550" y="40" width="100" height="90" rx="4" fill="#c792e9" opacity="0.2" stroke="#c792e9" stroke-width="1"/>
+  <text x="600" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#c792e9">2000-2010</text>
+  <text x="600" y="85" text-anchor="middle" font-size="10" fill="#8b9cbf">Boom des frameworks</text>
+  <text x="600" y="100" text-anchor="middle" font-size="9" fill="#8b9cbf">Scrum, XP, Lean</text>
+  <text x="600" y="113" text-anchor="middle" font-size="9" fill="#8b9cbf">Kanban, Crystal</text>
+  <text x="600" y="126" text-anchor="middle" font-size="9" fill="#8b9cbf">DSDM, FDD</text>
+
+  <!-- Today: Evolution -->
+  <circle cx="850" cy="150" r="12" fill="#6ecf00"/>
+  <rect x="800" y="50" width="100" height="80" rx="4" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="1"/>
+  <text x="850" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">2015+</text>
+  <text x="850" y="95" text-anchor="middle" font-size="10" fill="#8b9cbf">Hybrides et variantes</text>
+  <text x="850" y="110" text-anchor="middle" font-size="9" fill="#8b9cbf">Shape Up, SAFe</text>
+  <text x="850" y="123" text-anchor="middle" font-size="9" fill="#8b9cbf">Adaptations locales</text>
+
+  <!-- Arrows showing progression -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b9cbf"/>
+    </marker>
+  </defs>
+  <path d="M 130 150 L 320 150" stroke="#8b9cbf" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 380 150 L 570 150" stroke="#8b9cbf" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 630 150 L 820 150" stroke="#8b9cbf" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+  <!-- Bottom text -->
+  <text x="500" y="250" text-anchor="middle" font-size="14" fill="#8b9cbf">
+    L'agilité est née d'une frustration : les méthodes classiques ne fonctionnaient pas
+  </text>
+  <text x="500" y="280" text-anchor="middle" font-size="12" fill="#8b9cbf" opacity="0.8">
+    Le Manifeste Agile a catalysé une révolution vers l'itération rapide et l'adaptation continue
+  </text>
+</svg>

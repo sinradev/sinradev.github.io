@@ -1,0 +1,113 @@
+<svg viewBox="0 0 1000 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-size="26" font-weight="bold" fill="#c792e9">
+    Kanban: Flux Continu
+  </text>
+
+  <!-- Subtitle -->
+  <text x="500" y="65" text-anchor="middle" font-size="13" fill="#8b9cbf">
+    Pas d'itérations fixes, travail qui coule continuellement
+  </text>
+
+  <!-- Kanban Board Example -->
+  <!-- To Do Column -->
+  <rect x="50" y="100" width="170" height="280" rx="4" fill="#ff6b9d" opacity="0.1" stroke="#ff6b9d" stroke-width="2"/>
+  <text x="135" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#ff6b9d">À FAIRE</text>
+  <text x="135" y="145" text-anchor="middle" font-size="10" fill="#8b9cbf">(WIP: 5)</text>
+
+  <!-- Cards in To Do -->
+  <rect x="65" y="160" width="140" height="35" rx="3" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="1"/>
+  <text x="135" y="173" text-anchor="middle" font-size="9" fill="#8b9cbf">Ajouter login</text>
+  <text x="135" y="187" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">User story</text>
+
+  <rect x="65" y="205" width="140" height="35" rx="3" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="1"/>
+  <text x="135" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">Refactor API</text>
+  <text x="135" y="232" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">Bug fix</text>
+
+  <rect x="65" y="250" width="140" height="35" rx="3" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="1"/>
+  <text x="135" y="263" text-anchor="middle" font-size="9" fill="#8b9cbf">Update docs</text>
+  <text x="135" y="277" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">Documentation</text>
+
+  <!-- In Progress Column -->
+  <rect x="250" y="100" width="170" height="280" rx="4" fill="#a6f079" opacity="0.1" stroke="#a6f079" stroke-width="2"/>
+  <text x="335" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#a6f079">EN COURS</text>
+  <text x="335" y="145" text-anchor="middle" font-size="10" fill="#8b9cbf">(WIP: 3)</text>
+
+  <!-- Cards in Progress -->
+  <rect x="265" y="160" width="140" height="35" rx="3" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="1"/>
+  <text x="335" y="173" text-anchor="middle" font-size="9" fill="#8b9cbf">Design DB</text>
+  <text x="335" y="187" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">60% completé</text>
+
+  <rect x="265" y="205" width="140" height="35" rx="3" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="1"/>
+  <text x="335" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">Feature: Payment</text>
+  <text x="335" y="232" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">80% completé</text>
+
+  <!-- Review Column -->
+  <rect x="450" y="100" width="170" height="280" rx="4" fill="#c792e9" opacity="0.1" stroke="#c792e9" stroke-width="2"/>
+  <text x="535" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#c792e9">REVIEW</text>
+  <text x="535" y="145" text-anchor="middle" font-size="10" fill="#8b9cbf">(WIP: 2)</text>
+
+  <!-- Cards in Review -->
+  <rect x="465" y="160" width="140" height="35" rx="3" fill="#c792e9" opacity="0.2" stroke="#c792e9" stroke-width="1"/>
+  <text x="535" y="173" text-anchor="middle" font-size="9" fill="#8b9cbf">API endpoint</text>
+  <text x="535" y="187" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">Code review</text>
+
+  <!-- Done Column -->
+  <rect x="650" y="100" width="170" height="280" rx="4" fill="#6ecf00" opacity="0.1" stroke="#6ecf00" stroke-width="2"/>
+  <text x="735" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#6ecf00">TERMINÉ</text>
+  <text x="735" y="145" text-anchor="middle" font-size="10" fill="#8b9cbf">→ Production</text>
+
+  <!-- Cards Done -->
+  <rect x="665" y="160" width="140" height="35" rx="3" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="1"/>
+  <text x="735" y="173" text-anchor="middle" font-size="9" fill="#8b9cbf">Auth system</text>
+  <text x="735" y="187" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">Live</text>
+
+  <rect x="665" y="205" width="140" height="35" rx="3" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="1"/>
+  <text x="735" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">Email service</text>
+  <text x="735" y="232" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.7">Live</text>
+
+  <!-- Backlog (Optional) -->
+  <rect x="850" y="100" width="130" height="280" rx="4" fill="#8b9cbf" opacity="0.08" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="915" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#8b9cbf" opacity="0.7">BACKLOG</text>
+  <text x="915" y="150" text-anchor="middle" font-size="9" fill="#8b9cbf" opacity="0.6">(Illimité)</text>
+
+  <!-- Flow arrows -->
+  <defs>
+    <marker id="arrowFlow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b9cbf"/>
+    </marker>
+  </defs>
+  <path d="M 220 240 L 250 240" stroke="#8b9cbf" stroke-width="2" marker-end="url(#arrowFlow)" fill="none"/>
+  <path d="M 420 240 L 450 240" stroke="#8b9cbf" stroke-width="2" marker-end="url(#arrowFlow)" fill="none"/>
+  <path d="M 620 240 L 650 240" stroke="#8b9cbf" stroke-width="2" marker-end="url(#arrowFlow)" fill="none"/>
+
+  <!-- Key principles -->
+  <text x="500" y="410" text-anchor="middle" font-size="13" font-weight="bold" fill="#a6f079">
+    Principes Kanban
+  </text>
+  <text x="200" y="435" text-anchor="middle" font-size="11" fill="#8b9cbf">
+    1. Limites WIP (Work In Progress)
+  </text>
+  <text x="500" y="435" text-anchor="middle" font-size="11" fill="#8b9cbf">
+    2. Flux continu sans itérations
+  </text>
+  <text x="800" y="435" text-anchor="middle" font-size="11" fill="#8b9cbf">
+    3. Amélioration continue
+  </text>
+</svg>

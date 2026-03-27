@@ -1,0 +1,102 @@
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-size="26" font-weight="bold" fill="#ff6b9d">
+    Shape Up: Cycles Structurés
+  </text>
+
+  <!-- Subtitle -->
+  <text x="500" y="65" text-anchor="middle" font-size="13" fill="#8b9cbf">
+    Créé par Basecamp, pour une meilleure maîtrise des projets
+  </text>
+
+  <!-- Cycle Timeline: 6 weeks -->
+  <rect x="80" y="100" width="820" height="50" rx="4" fill="#ff6b9d" opacity="0.15" stroke="#ff6b9d" stroke-width="2"/>
+  <text x="500" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="#ff6b9d">Un Cycle = 6 Semaines</text>
+  <text x="500" y="145" text-anchor="middle" font-size="11" fill="#8b9cbf">Période fixe avec des limites claires</text>
+
+  <!-- Phase 1: Shaping -->
+  <rect x="80" y="190" width="180" height="150" rx="6" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="170" cy="220" r="20" fill="#ff6b9d" opacity="0.3"/>
+  <path d="M 165 220 L 165 235 M 160 228 L 160 235" stroke="#ff6b9d" stroke-width="1.5"/>
+  <text x="170" y="265" text-anchor="middle" font-size="13" font-weight="bold" fill="#ff6b9d">1. Shaping</text>
+  <text x="170" y="285" text-anchor="middle" font-size="10" fill="#8b9cbf">(1-2 semaines avant)</text>
+  <text x="170" y="302" text-anchor="middle" font-size="9" fill="#8b9cbf">Dessiner les features</text>
+  <text x="170" y="315" text-anchor="middle" font-size="9" fill="#8b9cbf">Définir le scope</text>
+  <text x="170" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">Créer des mockups</text>
+
+  <!-- Phase 2: Pitching -->
+  <rect x="290" y="190" width="180" height="150" rx="6" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="1.5" stroke-dasharray="3,3" filter="url(#glow)"/>
+  <circle cx="380" cy="220" r="15" fill="#ff6b9d" opacity="0.3"/>
+  <circle cx="375" cy="220" r="3" fill="#ff6b9d"/>
+  <circle cx="385" cy="220" r="3" fill="#ff6b9d"/>
+  <text x="380" y="265" text-anchor="middle" font-size="13" font-weight="bold" fill="#ff6b9d">2. Pitching</text>
+  <text x="380" y="285" text-anchor="middle" font-size="10" fill="#8b9cbf">(Début du cycle)</text>
+  <text x="380" y="302" text-anchor="middle" font-size="9" fill="#8b9cbf">Présenter au stakeholders</text>
+  <text x="380" y="315" text-anchor="middle" font-size="9" fill="#8b9cbf">Valider l'intérêt</text>
+  <text x="380" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">Engager l'équipe</text>
+
+  <!-- Phase 3: Building -->
+  <rect x="500" y="190" width="180" height="150" rx="6" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="2" filter="url(#glow)"/>
+  <rect x="525" y="215" width="20" height="20" rx="2" fill="#ff6b9d" opacity="0.3"/>
+  <rect x="555" y="215" width="20" height="20" rx="2" fill="#ff6b9d" opacity="0.3"/>
+  <rect x="525" y="240" width="20" height="20" rx="2" fill="#ff6b9d" opacity="0.3"/>
+  <rect x="555" y="240" width="20" height="20" rx="2" fill="#ff6b9d" opacity="0.3"/>
+  <text x="590" y="265" text-anchor="middle" font-size="13" font-weight="bold" fill="#ff6b9d">3. Building</text>
+  <text x="590" y="285" text-anchor="middle" font-size="10" fill="#8b9cbf">(6 semaines)</text>
+  <text x="590" y="302" text-anchor="middle" font-size="9" fill="#8b9cbf">Développer la feature</text>
+  <text x="590" y="315" text-anchor="middle" font-size="9" fill="#8b9cbf">Faire des ajustements</text>
+  <text x="590" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">Tester continuellement</text>
+
+  <!-- Phase 4: Cooldown -->
+  <rect x="710" y="190" width="180" height="150" rx="6" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="800" cy="225" r="15" fill="#ff6b9d" opacity="0.3"/>
+  <path d="M 785 220 L 815 220 L 815 235 L 785 235 Z" stroke="#ff6b9d" stroke-width="1" fill="none"/>
+  <text x="800" y="268" text-anchor="middle" font-size="13" font-weight="bold" fill="#ff6b9d">4. Cooldown</text>
+  <text x="800" y="288" text-anchor="middle" font-size="10" fill="#8b9cbf">(Entre cycles)</text>
+  <text x="800" y="305" text-anchor="middle" font-size="9" fill="#8b9cbf">Pause / Bugs fixes</text>
+  <text x="800" y="318" text-anchor="middle" font-size="9" fill="#8b9cbf">Préparer le prochain</text>
+  <text x="800" y="331" text-anchor="middle" font-size="9" fill="#8b9cbf">cycle</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff6b9d"/>
+    </marker>
+  </defs>
+  <path d="M 260 265 L 290 265" stroke="#ff6b9d" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 470 265 L 500 265" stroke="#ff6b9d" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <path d="M 680 265 L 710 265" stroke="#ff6b9d" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+  <!-- Comparison with Scrum -->
+  <text x="500" y="390" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
+    Shape Up vs Scrum
+  </text>
+
+  <rect x="80" y="410" width="380" height="70" rx="4" fill="#a6f079" opacity="0.1" stroke="#a6f079" stroke-width="1"/>
+  <text x="270" y="432" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Shape Up</text>
+  <text x="270" y="450" text-anchor="middle" font-size="10" fill="#8b9cbf">Design amont = moins de</text>
+  <text x="270" y="465" text-anchor="middle" font-size="10" fill="#8b9cbf">changements en route</text>
+  <text x="270" y="475" text-anchor="middle" font-size="9" fill="#8b9cbf" opacity="0.8">Rôles moins rigides</text>
+
+  <rect x="540" y="410" width="380" height="70" rx="4" fill="#c792e9" opacity="0.1" stroke="#c792e9" stroke-width="1"/>
+  <text x="730" y="432" text-anchor="middle" font-size="11" font-weight="bold" fill="#c792e9">Scrum</text>
+  <text x="730" y="450" text-anchor="middle" font-size="10" fill="#8b9cbf">Itérations courtes</text>
+  <text x="730" y="465" text-anchor="middle" font-size="10" fill="#8b9cbf">Feedback plus rapide</text>
+  <text x="730" y="475" text-anchor="middle" font-size="9" fill="#8b9cbf" opacity="0.8">Structure très définie</text>
+</svg>

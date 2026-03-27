@@ -1,0 +1,101 @@
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#a6f079">
+    Les 4 Valeurs du Manifeste Agile (2001)
+  </text>
+
+  <!-- Card 1: Individuals and Interactions -->
+  <rect x="50" y="100" width="200" height="280" rx="8" fill="#a6f079" opacity="0.15" stroke="#a6f079" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="150" cy="140" r="30" fill="#a6f079" opacity="0.3"/>
+  <circle cx="135" cy="140" r="8" fill="#a6f079"/>
+  <circle cx="165" cy="140" r="8" fill="#a6f079"/>
+  <text x="150" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
+    Individus &
+  </text>
+  <text x="150" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
+    Interactions
+  </text>
+  <text x="150" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
+  <text x="150" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">processus et outils</text>
+  <text x="150" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Communication</text>
+  <text x="150" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">directe > docs</text>
+  <text x="150" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Collaboration ></text>
+  <text x="150" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">règles strictes</text>
+
+  <!-- Card 2: Working Software -->
+  <rect x="275" y="100" width="200" height="280" rx="8" fill="#c792e9" opacity="0.15" stroke="#c792e9" stroke-width="2" filter="url(#glow)"/>
+  <rect x="310" y="125" width="35" height="50" rx="3" fill="#c792e9" opacity="0.4"/>
+  <circle cx="335" cy="145" r="4" fill="#c792e9"/>
+  <text x="375" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#c792e9">
+    Logiciel
+  </text>
+  <text x="375" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#c792e9">
+    Fonctionnel
+  </text>
+  <text x="375" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
+  <text x="375" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">documentation complète</text>
+  <text x="375" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Code qui marche ></text>
+  <text x="375" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">specs parfaites</text>
+  <text x="375" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Déploiement régulier ></text>
+  <text x="375" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">à la fin du projet</text>
+
+  <!-- Card 3: Customer Collaboration -->
+  <rect x="500" y="100" width="200" height="280" rx="8" fill="#ff6b9d" opacity="0.15" stroke="#ff6b9d" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="560" cy="145" r="8" fill="#ff6b9d"/>
+  <circle cx="600" cy="145" r="8" fill="#ff6b9d"/>
+  <path d="M 560 155 L 570 165 L 580 155" stroke="#ff6b9d" stroke-width="1.5" fill="none"/>
+  <path d="M 600 155 L 610 165 L 620 155" stroke="#ff6b9d" stroke-width="1.5" fill="none"/>
+  <text x="600" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#ff6b9d">
+    Collaboration avec
+  </text>
+  <text x="600" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#ff6b9d">
+    le Client
+  </text>
+  <text x="600" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
+  <text x="600" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">contrats rigides</text>
+  <text x="600" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Feedback continu ></text>
+  <text x="600" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">révisions ponctuelles</text>
+  <text x="600" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Adapter le produit ></text>
+  <text x="600" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">suivre la spec</text>
+
+  <!-- Card 4: Responding to Change -->
+  <rect x="725" y="100" width="200" height="280" rx="8" fill="#6ecf00" opacity="0.15" stroke="#6ecf00" stroke-width="2" filter="url(#glow)"/>
+  <path d="M 795 130 L 825 130 M 795 150 L 825 150 M 795 170 L 825 170" stroke="#6ecf00" stroke-width="2"/>
+  <path d="M 825 140 L 815 145 L 825 150" stroke="#6ecf00" stroke-width="1.5" fill="none"/>
+  <text x="825" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#6ecf00">
+    Répondre aux
+  </text>
+  <text x="825" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#6ecf00">
+    Changements
+  </text>
+  <text x="825" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
+  <text x="825" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">suivre un plan</text>
+  <text x="825" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Flexibilité ></text>
+  <text x="825" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">planification rigide</text>
+  <text x="825" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Ajuster le cap ></text>
+  <text x="825" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">tenir coûte que coûte</text>
+
+  <!-- Bottom note -->
+  <text x="500" y="430" text-anchor="middle" font-size="13" fill="#8b9cbf">
+    Ces 4 valeurs ont révolutionné la façon de développer des logiciels
+  </text>
+  <text x="500" y="455" text-anchor="middle" font-size="11" fill="#8b9cbf" opacity="0.8">
+    Mais chaque framework les interprète différemment
+  </text>
+</svg>

@@ -1,0 +1,106 @@
+<svg viewBox="0 0 1000 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="550" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-size="26" font-weight="bold" fill="#a6f079">
+    Scrum: Structure et Rituels
+  </text>
+
+  <!-- Sprint timeline -->
+  <rect x="50" y="70" width="900" height="60" rx="4" fill="#a6f079" opacity="0.15" stroke="#a6f079" stroke-width="2"/>
+  <text x="500" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">Sprint = 2 à 4 semaines</text>
+  <text x="500" y="118" text-anchor="middle" font-size="11" fill="#8b9cbf">Période de travail fixe avec objectifs clairs</text>
+
+  <!-- Sprint Planning -->
+  <rect x="60" y="170" width="160" height="120" rx="6" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="140" cy="190" r="18" fill="#a6f079" opacity="0.3"/>
+  <circle cx="135" cy="190" r="3" fill="#a6f079"/>
+  <circle cx="145" cy="190" r="3" fill="#a6f079"/>
+  <text x="140" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Sprint Planning</text>
+  <text x="140" y="250" text-anchor="middle" font-size="9" fill="#8b9cbf">Lundi matin</text>
+  <text x="140" y="265" text-anchor="middle" font-size="9" fill="#8b9cbf">2-4h de réunion</text>
+  <text x="140" y="280" text-anchor="middle" font-size="9" fill="#8b9cbf">Définir les tâches</text>
+
+  <!-- Daily Standup -->
+  <rect x="245" y="170" width="160" height="120" rx="6" fill="#c792e9" opacity="0.2" stroke="#c792e9" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="315" cy="195" r="4" fill="#c792e9"/>
+  <circle cx="305" cy="195" r="4" fill="#c792e9"/>
+  <circle cx="325" cy="195" r="4" fill="#c792e9"/>
+  <line x1="300" y1="205" x2="330" y2="205" stroke="#c792e9" stroke-width="1"/>
+  <text x="325" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#c792e9">Daily Standup</text>
+  <text x="325" y="260" text-anchor="middle" font-size="9" fill="#8b9cbf">Tous les jours</text>
+  <text x="325" y="275" text-anchor="middle" font-size="9" fill="#8b9cbf">15 minutes</text>
+  <text x="325" y="280" text-anchor="middle" font-size="8" fill="#8b9cbf">(Fait, à faire,</text>
+  <text x="325" y="290" text-anchor="middle" font-size="8" fill="#8b9cbf">blocages)</text>
+
+  <!-- Sprint Review -->
+  <rect x="430" y="170" width="160" height="120" rx="6" fill="#ff6b9d" opacity="0.2" stroke="#ff6b9d" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="510" cy="185" r="6" fill="#ff6b9d" opacity="0.4"/>
+  <circle cx="495" cy="195" r="3" fill="#ff6b9d"/>
+  <circle cx="525" cy="195" r="3" fill="#ff6b9d"/>
+  <text x="510" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#ff6b9d">Sprint Review</text>
+  <text x="510" y="260" text-anchor="middle" font-size="9" fill="#8b9cbf">Fin du sprint</text>
+  <text x="510" y="275" text-anchor="middle" font-size="9" fill="#8b9cbf">1-2h de réunion</text>
+  <text x="510" y="280" text-anchor="middle" font-size="8" fill="#8b9cbf">(Démo du travail</text>
+  <text x="510" y="290" text-anchor="middle" font-size="8" fill="#8b9cbf">réalisé)</text>
+
+  <!-- Retrospective -->
+  <rect x="615" y="170" width="160" height="120" rx="6" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="1.5" filter="url(#glow)"/>
+  <path d="M 680 180 L 700 200 M 700 180 L 680 200" stroke="#6ecf00" stroke-width="2"/>
+  <circle cx="685" cy="210" r="3" fill="#6ecf00"/>
+  <circle cx="715" cy="210" r="3" fill="#6ecf00"/>
+  <text x="695" y="245" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Rétrospective</text>
+  <text x="695" y="265" text-anchor="middle" font-size="9" fill="#8b9cbf">Fin du sprint</text>
+  <text x="695" y="280" text-anchor="middle" font-size="9" fill="#8b9cbf">1-1.5h de réunion</text>
+  <text x="695" y="290" text-anchor="middle" font-size="8" fill="#8b9cbf">(Améliorations)</text>
+
+  <!-- Backlog Refinement -->
+  <rect x="800" y="170" width="160" height="120" rx="6" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" stroke-width="1.5" filter="url(#glow)"/>
+  <rect x="825" y="185" width="25" height="25" rx="2" fill="#8b5cf6" opacity="0.3"/>
+  <rect x="860" y="185" width="25" height="25" rx="2" fill="#8b5cf6" opacity="0.3"/>
+  <text x="880" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#8b5cf6">Refinement</text>
+  <text x="880" y="260" text-anchor="middle" font-size="9" fill="#8b9cbf">Entre les sprints</text>
+  <text x="880" y="275" text-anchor="middle" font-size="9" fill="#8b9cbf">1-2h par semaine</text>
+  <text x="880" y="280" text-anchor="middle" font-size="8" fill="#8b9cbf">(Clarifier les</text>
+  <text x="880" y="290" text-anchor="middle" font-size="8" fill="#8b9cbf">prochaines issues)</text>
+
+  <!-- Rôles -->
+  <text x="500" y="330" text-anchor="middle" font-size="16" font-weight="bold" fill="#a6f079">Les 3 Rôles Scrum</text>
+
+  <!-- Product Owner -->
+  <rect x="100" y="360" width="180" height="100" rx="6" fill="#a6f079" opacity="0.15" stroke="#a6f079" stroke-width="1.5"/>
+  <circle cx="190" cy="385" r="12" fill="#a6f079" opacity="0.3"/>
+  <text x="190" y="430" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Product Owner</text>
+  <text x="190" y="450" text-anchor="middle" font-size="9" fill="#8b9cbf">Priorise les besoins</text>
+  <text x="190" y="463" text-anchor="middle" font-size="9" fill="#8b9cbf">Valide le travail</text>
+
+  <!-- Scrum Master -->
+  <rect x="410" y="360" width="180" height="100" rx="6" fill="#c792e9" opacity="0.15" stroke="#c792e9" stroke-width="1.5"/>
+  <circle cx="500" cy="385" r="12" fill="#c792e9" opacity="0.3"/>
+  <text x="500" y="430" text-anchor="middle" font-size="12" font-weight="bold" fill="#c792e9">Scrum Master</text>
+  <text x="500" y="450" text-anchor="middle" font-size="9" fill="#8b9cbf">Facilite le processus</text>
+  <text x="500" y="463" text-anchor="middle" font-size="9" fill="#8b9cbf">Lève les blocages</text>
+
+  <!-- Développement Team -->
+  <rect x="720" y="360" width="180" height="100" rx="6" fill="#ff6b9d" opacity="0.15" stroke="#ff6b9d" stroke-width="1.5"/>
+  <circle cx="800" cy="378" r="6" fill="#ff6b9d" opacity="0.3"/>
+  <circle cx="785" cy="390" r="6" fill="#ff6b9d" opacity="0.3"/>
+  <circle cx="815" cy="390" r="6" fill="#ff6b9d" opacity="0.3"/>
+  <text x="810" y="433" text-anchor="middle" font-size="12" font-weight="bold" fill="#ff6b9d">Équipe de Dev</text>
+  <text x="810" y="453" text-anchor="middle" font-size="9" fill="#8b9cbf">Livrer le produit</text>
+  <text x="810" y="466" text-anchor="middle" font-size="9" fill="#8b9cbf">Auto-organisée</text>
+</svg>
