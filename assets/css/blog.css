@@ -343,6 +343,13 @@ hr {
   letter-spacing: -0.3px;
 }
 
+/* Strong text styling */
+.post-content strong,
+.post-content b {
+  color: #a6f079;
+  font-weight: 700;
+}
+
 .post-content ul,
 .post-content ol {
   margin: 20px 0 20px 20px;
