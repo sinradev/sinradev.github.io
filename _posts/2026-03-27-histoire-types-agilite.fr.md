@@ -310,30 +310,11 @@ Quel framework pour votre équipe?
 
 ---
 
-## L'Agilité et SINRA: Où Est la Différence?
+## Articles Similaires
 
-Toute cette discussion sur Scrum, Kanban, etc. C'est important. Mais il y a un problème qu'aucun de ces frameworks n'a vraiment résolu.
+Si cet article vous a intéressé, découvrez d'autres perspectives sur la gestion de projet et l'agilité :
 
-Lisez notre article [« Pourquoi Nous Avons Abandonné les 'Sprints' pour les 'Cycles' »](/philosophie/2025/11/21/why-we-abandoned-sprints-for-cycles.html) : la terminologie des frameworks agiles est souvent **vague et abstraite**.
-
-- **User stories** « en tant que utilisateur, je veux... » = trop vague
-- **Sprints** = course contre la montre = burnout
-- **Epics** = terme abstrait qu'on ne sait pas démontrer
-- **Vélocité** = métrique souvent trompeuse
-
-**SINRA utilise une terminologie concrète :**
-
-- **Issues** au lieu de « user stories »
-- **Capabilities** au lieu de « epics »
-- **Cycles** au lieu de « sprints »
-- **Releases** au lieu de versions floues
-
-Et SINRA ajoute une structure qui même l'Agilité n'a pas : une **hiérarchie claire issue-to-capability-to-release**. Chaque issue contribue à une capability. Chaque capability va dans une release. Et chaque release répond à des objectifs business clairs.
-
-C'est Agile (itération rapide, feedback régulier), mais avec du **concret** au-dessus.
-
-Si vous avez aimé cet article et réfléchissez à comment structurer votre travail, consultez aussi :
-
+- [« Pourquoi Nous Avons Abandonné les 'Sprints' pour les 'Cycles' »](/philosophie/2025/11/21/why-we-abandoned-sprints-for-cycles.html)
 - [« De l'Issue à la Release: Comment Structurer Vraiment le Travail »](/philosophie/2025/11/26/from-issue-to-release.html)
 - [« Release-Driven Development: Quand la Release Devient le Moteur »](/philosophie/2025/12/01/release-driven-development.html)
 - [« La Fausse Promesse Des User Stories »](/planning/2026/01/02/fausse-promesse-user-stories-en-tant-que.html)
@@ -352,7 +333,6 @@ Il n'y a pas « un seul » Agile. Il y a :
 - **Shape Up** si vous voulez du design solide
 - **XP** si la qualité du code est vitale
 - **Lean** si vous voulez une philosophie générale
-- **SINRA** si vous voulez du concret, une hiérarchie claire, et une terminologie qui signifie vraiment quelque chose
 
 Le meilleur framework pour votre équipe n'est pas le plus populaire. C'est celui qui **correspond à votre contexte, votre taille, votre culture, votre produit**.
 
