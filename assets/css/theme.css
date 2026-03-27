@@ -109,7 +109,7 @@ body {
 }
 
 a {
-  color: unset;
+  color: var(--primary);
   text-decoration: unset;
 }
 
