@@ -124,7 +124,7 @@ Un équipe support logiciel. Ils reçoivent des tickets bugs continuellement. Pa
 
 **Inconvénients :**
 
-- Manque de structure peut causer du chaos si mal implémenté
+- Manque de structure peut devenir désorganisé et confus si mal implémenté
 - Nécessite une discipline forte (les WIP limits, ça se respecte!)
 - Pas de moments de respiration naturels
 - Feedback moins régulier qu'avec des sprints
