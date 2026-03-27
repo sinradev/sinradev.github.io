@@ -1,122 +1,82 @@
-<svg viewBox="0 0 1000 550" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1117"/>
+      <stop offset="100%" stop-color="#161929"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
   </defs>
+  <rect width="1000" height="480" fill="url(#bg)"/>
+  <circle cx="500" cy="280" r="200" fill="#6ecf00" opacity="0.025" filter="url(#blur)"/>
 
-  <rect width="1000" height="550" fill="url(#bgGrad)"/>
+  <!-- Header -->
+  <text x="500" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569" letter-spacing="3">FRAMEWORK</text>
+  <text x="500" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#f1f5f9">Extreme Programming</text>
+  <text x="500" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#475569">Qualité maximale du code · Pratiques radicales</text>
 
-  <!-- Title -->
-  <text x="500" y="35" text-anchor="middle" font-size="26" font-weight="bold" fill="#6ecf00">
-    XP (Extreme Programming)
-  </text>
+  <!-- Grid of 6 practices -->
+  <!-- Row 1 -->
+  <g>
+    <rect x="40" y="112" width="290" height="110" rx="12" fill="#6ecf00" fill-opacity="0.04" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.2"/>
+    <circle cx="75" cy="149" r="18" fill="#6ecf00" fill-opacity="0.1"/>
+    <!-- Icon: two people -->
+    <circle cx="70" cy="146" r="5" fill="none" stroke="#6ecf00" stroke-width="1.5"/>
+    <circle cx="82" cy="146" r="5" fill="none" stroke="#6ecf00" stroke-width="1.5"/>
+    <path d="M64 158 Q76 154 82 158" stroke="#6ecf00" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="104" y="142" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#6ecf00">Pair Programming</text>
+    <text x="60" y="176" font-family="Inter, sans-serif" font-size="10" fill="#64748b">2 devs sur 1 ordinateur.</text>
+    <text x="60" y="193" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Conducteur + Navigateur.</text>
+  </g>
+  <g>
+    <rect x="355" y="112" width="290" height="110" rx="12" fill="#6ecf00" fill-opacity="0.04" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.2"/>
+    <circle cx="390" cy="149" r="18" fill="#6ecf00" fill-opacity="0.1"/>
+    <!-- Icon: test check -->
+    <path d="M383 146 L387 150 L397 140" stroke="#6ecf00" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="419" y="142" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#6ecf00">Test Driven Dev</text>
+    <text x="375" y="176" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Tests d'abord, code ensuite.</text>
+    <text x="375" y="193" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Red → Green → Refactor.</text>
+  </g>
+  <g>
+    <rect x="670" y="112" width="290" height="110" rx="12" fill="#6ecf00" fill-opacity="0.04" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.2"/>
+    <circle cx="705" cy="149" r="18" fill="#6ecf00" fill-opacity="0.1"/>
+    <!-- Icon: arrows loop -->
+    <path d="M698 143 Q705 138 712 143" stroke="#6ecf00" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M712 155 Q705 160 698 155" stroke="#6ecf00" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="734" y="142" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#6ecf00">Intégration Continue</text>
+    <text x="690" y="176" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Push chaque jour.</text>
+    <text x="690" y="193" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Tests auto à chaque merge.</text>
+  </g>
 
-  <!-- Subtitle -->
-  <text x="500" y="65" text-anchor="middle" font-size="13" fill="#8b9cbf">
-    Des pratiques de développement rigide pour la qualité du code
-  </text>
+  <!-- Row 2 -->
+  <g>
+    <rect x="40" y="242" width="290" height="110" rx="12" fill="#a6f079" fill-opacity="0.03" stroke="#a6f079" stroke-width="1" stroke-opacity="0.15"/>
+    <circle cx="75" cy="279" r="18" fill="#a6f079" fill-opacity="0.1"/>
+    <!-- Icon: shared -->
+    <circle cx="69" cy="276" r="4" fill="#a6f079" opacity="0.8"/>
+    <circle cx="81" cy="276" r="4" fill="#a6f079" opacity="0.8"/>
+    <line x1="73" y1="276" x2="77" y2="276" stroke="#a6f079" stroke-width="1.5"/>
+    <text x="104" y="272" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#a6f079">Collective Ownership</text>
+    <text x="60" y="306" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Tout le monde peut toucher</text>
+    <text x="60" y="323" font-family="Inter, sans-serif" font-size="10" fill="#64748b">tout le code. Pas de silos.</text>
+  </g>
+  <g>
+    <rect x="355" y="242" width="290" height="110" rx="12" fill="#a6f079" fill-opacity="0.03" stroke="#a6f079" stroke-width="1" stroke-opacity="0.15"/>
+    <circle cx="390" cy="279" r="18" fill="#a6f079" fill-opacity="0.1"/>
+    <!-- Icon: wrench/clean -->
+    <path d="M385 274 L395 284 M387 272 L384 275 M393 281 L396 284" stroke="#a6f079" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="419" y="272" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#a6f079">Refactoring</text>
+    <text x="375" y="306" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Nettoyer le code en continu</text>
+    <text x="375" y="323" font-family="Inter, sans-serif" font-size="10" fill="#64748b">sans changer son comportement.</text>
+  </g>
+  <g>
+    <rect x="670" y="242" width="290" height="110" rx="12" fill="#a6f079" fill-opacity="0.03" stroke="#a6f079" stroke-width="1" stroke-opacity="0.15"/>
+    <circle cx="705" cy="279" r="18" fill="#a6f079" fill-opacity="0.1"/>
+    <!-- Icon: simple shape -->
+    <circle cx="705" cy="279" r="7" fill="none" stroke="#a6f079" stroke-width="1.5"/>
+    <text x="734" y="272" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#a6f079">Simple Design</text>
+    <text x="690" y="306" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Aussi simple que possible.</text>
+    <text x="690" y="323" font-family="Inter, sans-serif" font-size="10" fill="#64748b">YAGNI. Pas d'over-engineering.</text>
+  </g>
 
-  <!-- Core Practice: Pair Programming -->
-  <rect x="50" y="100" width="180" height="140" rx="6" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="105" cy="135" r="8" fill="#6ecf00" opacity="0.3"/>
-  <circle cx="135" cy="135" r="8" fill="#6ecf00" opacity="0.3"/>
-  <line x1="110" y1="145" x2="130" y2="145" stroke="#6ecf00" stroke-width="1.5"/>
-  <text x="140" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Pair</text>
-  <text x="140" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Programming</text>
-  <text x="140" y="205" text-anchor="middle" font-size="9" fill="#8b9cbf">2 devs sur 1</text>
-  <text x="140" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">ordinateur</text>
-  <text x="140" y="228" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.8">Conducteur + Navigateur</text>
-
-  <!-- TDD -->
-  <rect x="260" y="100" width="180" height="140" rx="6" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="320" cy="130" r="6" fill="#6ecf00" opacity="0.3"/>
-  <circle cx="335" cy="130" r="6" fill="#6ecf00" opacity="0.3"/>
-  <path d="M 312 145 L 345 145" stroke="#6ecf00" stroke-width="1.5"/>
-  <path d="M 320 155 L 335 155" stroke="#6ecf00" stroke-width="1.5"/>
-  <text x="350" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">TDD (Test</text>
-  <text x="350" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Driven Dev)</text>
-  <text x="350" y="205" text-anchor="middle" font-size="9" fill="#8b9cbf">Tests d'abord</text>
-  <text x="350" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">Puis le code</text>
-  <text x="350" y="228" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.8">Red-Green-Refactor</text>
-
-  <!-- Continuous Integration -->
-  <rect x="470" y="100" width="180" height="140" rx="6" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="530" cy="135" r="6" fill="#6ecf00" opacity="0.3"/>
-  <rect x="545" y="128" width="20" height="14" rx="2" fill="#6ecf00" opacity="0.3"/>
-  <path d="M 540 145 L 560 145" stroke="#6ecf00" stroke-width="1.5"/>
-  <text x="560" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Continuous</text>
-  <text x="560" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Integration</text>
-  <text x="560" y="205" text-anchor="middle" font-size="9" fill="#8b9cbf">Push tous les jours</text>
-  <text x="560" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">Build automatique</text>
-  <text x="560" y="228" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.8">Tests continus</text>
-
-  <!-- Code Review / Collective Code Ownership -->
-  <rect x="680" y="100" width="180" height="140" rx="6" fill="#6ecf00" opacity="0.2" stroke="#6ecf00" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="735" cy="130" r="6" fill="#6ecf00" opacity="0.3"/>
-  <circle cx="755" cy="130" r="6" fill="#6ecf00" opacity="0.3"/>
-  <circle cx="775" cy="130" r="6" fill="#6ecf00" opacity="0.3"/>
-  <path d="M 735 145 L 775 145" stroke="#6ecf00" stroke-width="1.5"/>
-  <text x="770" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Collective Code</text>
-  <text x="770" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">Ownership</text>
-  <text x="770" y="205" text-anchor="middle" font-size="9" fill="#8b9cbf">Tout le monde</text>
-  <text x="770" y="218" text-anchor="middle" font-size="9" fill="#8b9cbf">peut toucher le code</text>
-  <text x="770" y="228" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.8">Partagé, pas silos</text>
-
-  <!-- Refactoring -->
-  <rect x="50" y="280" width="180" height="140" rx="6" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="2" filter="url(#glow)"/>
-  <rect x="90" y="315" width="20" height="35" rx="2" fill="#a6f079" opacity="0.3"/>
-  <rect x="115" y="310" width="20" height="40" rx="2" fill="#a6f079" opacity="0.3"/>
-  <rect x="140" y="320" width="20" height="30" rx="2" fill="#a6f079" opacity="0.3"/>
-  <text x="140" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Refactoring</text>
-  <text x="140" y="395" text-anchor="middle" font-size="9" fill="#8b9cbf">Nettoyer le code</text>
-  <text x="140" y="408" text-anchor="middle" font-size="9" fill="#8b9cbf">Sans changer le comportement</text>
-  <text x="140" y="418" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.8">Continuellement</text>
-
-  <!-- Simple Design -->
-  <rect x="260" y="280" width="180" height="140" rx="6" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="320" cy="320" r="20" fill="#a6f079" opacity="0.2"/>
-  <circle cx="320" cy="320" r="12" fill="none" stroke="#a6f079" stroke-width="1.5"/>
-  <text x="350" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Simple Design</text>
-  <text x="350" y="395" text-anchor="middle" font-size="9" fill="#8b9cbf">« Simple as possible »</text>
-  <text x="350" y="408" text-anchor="middle" font-size="9" fill="#8b9cbf">Pas d'overengineering</text>
-  <text x="350" y="418" text-anchor="middle" font-size="8" fill="#8b9cbf" opacity="0.8">YAGNI - You Ain't</text>
-
-  <!-- Frequent Releases -->
-  <rect x="470" y="280" width="180" height="140" rx="6" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="2" filter="url(#glow)"/>
-  <rect x="510" y="315" width="30" height="30" rx="3" fill="#a6f079" opacity="0.3"/>
-  <rect x="550" y="315" width="30" height="30" rx="3" fill="#a6f079" opacity="0.3"/>
-  <path d="M 535 340 L 545 350" stroke="#a6f079" stroke-width="1"/>
-  <text x="560" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Frequent</text>
-  <text x="560" y="392" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Releases</text>
-  <text x="560" y="415" text-anchor="middle" font-size="9" fill="#8b9cbf">Deploy plusieurs fois</text>
-  <text x="560" y="428" text-anchor="middle" font-size="9" fill="#8b9cbf">par semaine / jour</text>
-
-  <!-- Communication -->
-  <rect x="680" y="280" width="180" height="140" rx="6" fill="#a6f079" opacity="0.2" stroke="#a6f079" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="740" cy="320" r="8" fill="#a6f079" opacity="0.3"/>
-  <circle cx="750" cy="320" r="8" fill="#a6f079" opacity="0.3"/>
-  <path d="M 740 330 L 750 330" stroke="#a6f079" stroke-width="1.5"/>
-  <path d="M 740 340 L 745 345" stroke="#a6f079" stroke-width="1.5"/>
-  <path d="M 750 340 L 745 345" stroke="#a6f079" stroke-width="1.5"/>
-  <text x="770" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Communication</text>
-  <text x="770" y="392" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">& Feedback</text>
-  <text x="770" y="415" text-anchor="middle" font-size="9" fill="#8b9cbf">Retours clients</text>
-  <text x="770" y="428" text-anchor="middle" font-size="9" fill="#8b9cbf">rapides et réguliers</text>
-
-  <!-- Philosophy text -->
-  <text x="500" y="480" text-anchor="middle" font-size="13" font-weight="bold" fill="#6ecf00">
-    XP pousse l'agilité vers ses extrêmes : qualité du code maximale
-  </text>
-  <text x="500" y="510" text-anchor="middle" font-size="11" fill="#8b9cbf">
-    C'est très demandant pour l'équipe mais produit un code très robuste et maintenable
-  </text>
+  <text x="500" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#334155" letter-spacing="2">XP POUSSE L'AGILITÉ VERS SES EXTRÊMES POUR UNE QUALITÉ MAXIMALE</text>
 </svg>

@@ -1,202 +1,100 @@
-<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1117"/>
+      <stop offset="100%" stop-color="#161929"/>
     </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="20"/></filter>
   </defs>
+  <rect width="1000" height="560" fill="url(#bg)"/>
+  <circle cx="500" cy="320" r="280" fill="#8b5cf6" opacity="0.02" filter="url(#blur)"/>
 
-  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+  <!-- Header -->
+  <text x="500" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569" letter-spacing="3">COMPARAISON</text>
+  <text x="500" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#f1f5f9">Quel Framework Choisir?</text>
 
-  <!-- Title -->
-  <text x="600" y="35" text-anchor="middle" font-size="26" font-weight="bold" fill="#a6f079">
-    Comparaison: Quel Framework pour Votre Équipe?
-  </text>
-
-  <!-- Table headers -->
-  <rect x="20" y="70" width="150" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="95" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Framework</text>
-
-  <rect x="170" y="70" width="120" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="230" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Itération</text>
-
-  <rect x="290" y="70" width="140" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="360" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Structure</text>
-
-  <rect x="430" y="70" width="140" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="500" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Complexité</text>
-
-  <rect x="570" y="70" width="140" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="640" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Équipe</text>
-
-  <rect x="710" y="70" width="160" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="790" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Meilleur pour</text>
-
-  <rect x="870" y="70" width="310" height="40" fill="#8b9cbf" opacity="0.2"/>
-  <text x="1025" y="98" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6f079">Attention</text>
+  <!-- Table header -->
+  <rect x="30" y="90" width="940" height="36" rx="8" fill="#1e293b"/>
+  <text x="100" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="1">FRAMEWORK</text>
+  <text x="260" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="1">ITÉRATION</text>
+  <text x="400" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="1">COMPLEXITÉ</text>
+  <text x="540" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="1">ÉQUIPE</text>
+  <text x="780" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="1">MEILLEUR POUR</text>
 
   <!-- Row 1: Scrum -->
-  <rect x="20" y="120" width="150" height="70" fill="#a6f079" opacity="0.08" stroke="#a6f079" stroke-width="1"/>
-  <text x="95" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">Scrum</text>
-  <text x="95" y="170" text-anchor="middle" font-size="9" fill="#8b9cbf">Le plus populaire</text>
-
-  <rect x="170" y="120" width="120" height="70" fill="#a6f079" opacity="0.08"/>
-  <text x="230" y="150" text-anchor="middle" font-size="11" fill="#8b9cbf">2-4 semaines</text>
-  <text x="230" y="168" text-anchor="middle" font-size="9" fill="#8b9cbf">(Sprints)</text>
-
-  <rect x="290" y="120" width="140" height="70" fill="#a6f079" opacity="0.08"/>
-  <text x="360" y="150" text-anchor="middle" font-size="11" fill="#8b9cbf">Très structuré</text>
-  <text x="360" y="168" text-anchor="middle" font-size="9" fill="#8b9cbf">3 rôles définis</text>
-
-  <rect x="430" y="120" width="140" height="70" fill="#a6f079" opacity="0.08"/>
-  <text x="500" y="150" text-anchor="middle" font-size="11" fill="#8b9cbf">Moyenne</text>
-  <text x="500" y="168" text-anchor="middle" font-size="9" fill="#8b9cbf">À apprendre</text>
-
-  <rect x="570" y="120" width="140" height="70" fill="#a6f079" opacity="0.08"/>
-  <text x="640" y="150" text-anchor="middle" font-size="11" fill="#8b9cbf">6-15 devs</text>
-  <text x="640" y="168" text-anchor="middle" font-size="9" fill="#8b9cbf">Idéal</text>
-
-  <rect x="710" y="120" width="160" height="70" fill="#a6f079" opacity="0.08"/>
-  <text x="790" y="145" text-anchor="middle" font-size="10" fill="#8b9cbf">Projets medium</text>
-  <text x="790" y="160" text-anchor="middle" font-size="10" fill="#8b9cbf">avec client</text>
-  <text x="790" y="175" text-anchor="middle" font-size="10" fill="#8b9cbf">engagé</text>
-
-  <rect x="870" y="120" width="310" height="70" fill="#a6f079" opacity="0.08"/>
-  <text x="1025" y="140" text-anchor="middle" font-size="9" fill="#8b9cbf">Nécessite une adoption</text>
-  <text x="1025" y="153" text-anchor="middle" font-size="9" fill="#8b9cbf">stricte. Formation requise.</text>
-  <text x="1025" y="166" text-anchor="middle" font-size="9" fill="#8b9cbf">Prise de décision lente</text>
-  <text x="1025" y="179" text-anchor="middle" font-size="9" fill="#8b9cbf">avec beaucoup d'équipes</text>
+  <rect x="30" y="134" width="940" height="64" rx="8" fill="#a6f079" fill-opacity="0.03" stroke="#a6f079" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="100" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#a6f079">Scrum</text>
+  <text x="100" y="178" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Le plus populaire</text>
+  <text x="260" y="167" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">2-4 semaines</text>
+  <!-- Complexity dots: high -->
+  <circle cx="378" cy="167" r="5" fill="#a6f079"/>
+  <circle cx="396" cy="167" r="5" fill="#a6f079"/>
+  <circle cx="414" cy="167" r="5" fill="#a6f079" opacity="0.3"/>
+  <text x="540" y="167" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">6-15 devs</text>
+  <text x="780" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Projets medium, client engagé</text>
+  <text x="780" y="178" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">structure claire recherchée</text>
 
   <!-- Row 2: Kanban -->
-  <rect x="20" y="200" width="150" height="70" fill="#c792e9" opacity="0.08" stroke="#c792e9" stroke-width="1"/>
-  <text x="95" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#c792e9">Kanban</text>
-  <text x="95" y="250" text-anchor="middle" font-size="9" fill="#8b9cbf">Flux continu</text>
-
-  <rect x="170" y="200" width="120" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="230" y="230" text-anchor="middle" font-size="11" fill="#8b9cbf">Aucune</text>
-  <text x="230" y="248" text-anchor="middle" font-size="9" fill="#8b9cbf">(Continu)</text>
-
-  <rect x="290" y="200" width="140" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="360" y="230" text-anchor="middle" font-size="11" fill="#8b9cbf">Peu structuré</text>
-  <text x="360" y="248" text-anchor="middle" font-size="9" fill="#8b9cbf">Flexible</text>
-
-  <rect x="430" y="200" width="140" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="500" y="230" text-anchor="middle" font-size="11" fill="#8b9cbf">Basse</text>
-  <text x="500" y="248" text-anchor="middle" font-size="9" fill="#8b9cbf">Facile à commencer</text>
-
-  <rect x="570" y="200" width="140" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="640" y="230" text-anchor="middle" font-size="11" fill="#8b9cbf">N'importe quelle taille</text>
-  <text x="640" y="248" text-anchor="middle" font-size="9" fill="#8b9cbf">Scalable</text>
-
-  <rect x="710" y="200" width="160" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="790" y="145" text-anchor="middle" font-size="10" fill="#8b9cbf">Support produits,</text>
-  <text x="790" y="160" text-anchor="middle" font-size="10" fill="#8b9cbf">maintenance,</text>
-  <text x="790" y="175" text-anchor="middle" font-size="10" fill="#8b9cbf">equipes DevOps</text>
-
-  <rect x="870" y="200" width="310" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="1025" y="130" text-anchor="middle" font-size="9" fill="#8b9cbf">Pas de structure peut</text>
-  <text x="1025" y="143" text-anchor="middle" font-size="9" fill="#8b9cbf">causer du chaos. Nécessite</text>
-  <text x="1025" y="156" text-anchor="middle" font-size="9" fill="#8b9cbf">discipline. WIP limits</text>
-  <text x="1025" y="169" text-anchor="middle" font-size="9" fill="#8b9cbf">essentielles.</text>
+  <rect x="30" y="206" width="940" height="64" rx="8" fill="#c792e9" fill-opacity="0.03" stroke="#c792e9" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="100" y="232" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#c792e9">Kanban</text>
+  <text x="100" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Flux continu</text>
+  <text x="260" y="239" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">Aucune</text>
+  <!-- Complexity dots: low -->
+  <circle cx="378" cy="239" r="5" fill="#c792e9"/>
+  <circle cx="396" cy="239" r="5" fill="#c792e9" opacity="0.3"/>
+  <circle cx="414" cy="239" r="5" fill="#c792e9" opacity="0.3"/>
+  <text x="540" y="239" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">Toute taille</text>
+  <text x="780" y="234" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Support, maintenance, DevOps</text>
+  <text x="780" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">travail continu et variable</text>
 
   <!-- Row 3: Shape Up -->
-  <rect x="20" y="280" width="150" height="70" fill="#ff6b9d" opacity="0.08" stroke="#ff6b9d" stroke-width="1"/>
-  <text x="95" y="310" text-anchor="middle" font-size="12" font-weight="bold" fill="#ff6b9d">Shape Up</text>
-  <text x="95" y="330" text-anchor="middle" font-size="9" fill="#8b9cbf">Par Basecamp</text>
-
-  <rect x="170" y="280" width="120" height="70" fill="#ff6b9d" opacity="0.08"/>
-  <text x="230" y="310" text-anchor="middle" font-size="11" fill="#8b9cbf">6 semaines</text>
-  <text x="230" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">Fixe</text>
-
-  <rect x="290" y="280" width="140" height="70" fill="#ff6b9d" opacity="0.08"/>
-  <text x="360" y="310" text-anchor="middle" font-size="11" fill="#8b9cbf">Structuré avec</text>
-  <text x="360" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">phases claires</text>
-
-  <rect x="430" y="280" width="140" height="70" fill="#ff6b9d" opacity="0.08"/>
-  <text x="500" y="310" text-anchor="middle" font-size="11" fill="#8b9cbf">Moyenne</text>
-  <text x="500" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">Nécessite design</text>
-
-  <rect x="570" y="280" width="140" height="70" fill="#ff6b9d" opacity="0.08"/>
-  <text x="640" y="310" text-anchor="middle" font-size="11" fill="#8b9cbf">8-12 devs</text>
-  <text x="640" y="328" text-anchor="middle" font-size="9" fill="#8b9cbf">Optimal</text>
-
-  <rect x="710" y="280" width="160" height="70" fill="#ff6b9d" opacity="0.08"/>
-  <text x="790" y="305" text-anchor="middle" font-size="10" fill="#8b9cbf">Produits SaaS,</text>
-  <text x="790" y="320" text-anchor="middle" font-size="10" fill="#8b9cbf">digital, besoin de</text>
-  <text x="790" y="335" text-anchor="middle" font-size="10" fill="#8b9cbf">design solide</text>
-
-  <rect x="870" y="280" width="310" height="70" fill="#ff6b9d" opacity="0.08"/>
-  <text x="1025" y="300" text-anchor="middle" font-size="9" fill="#8b9cbf">Demande design très amont.</text>
-  <text x="1025" y="313" text-anchor="middle" font-size="9" fill="#8b9cbf">Rôles flexibles = peut être</text>
-  <text x="1025" y="326" text-anchor="middle" font-size="9" fill="#8b9cbf">confus si mal implémenté.</text>
-  <text x="1025" y="339" text-anchor="middle" font-size="9" fill="#8b9cbf">Moins documenté</text>
+  <rect x="30" y="278" width="940" height="64" rx="8" fill="#ff6b9d" fill-opacity="0.03" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="100" y="304" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#ff6b9d">Shape Up</text>
+  <text x="100" y="322" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Basecamp</text>
+  <text x="260" y="311" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">6 semaines</text>
+  <!-- Complexity dots: medium -->
+  <circle cx="378" cy="311" r="5" fill="#ff6b9d"/>
+  <circle cx="396" cy="311" r="5" fill="#ff6b9d"/>
+  <circle cx="414" cy="311" r="5" fill="#ff6b9d" opacity="0.3"/>
+  <text x="540" y="311" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">8-12 devs</text>
+  <text x="780" y="306" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">SaaS, produits digitaux</text>
+  <text x="780" y="322" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">besoin de design solide amont</text>
 
   <!-- Row 4: XP -->
-  <rect x="20" y="360" width="150" height="70" fill="#6ecf00" opacity="0.08" stroke="#6ecf00" stroke-width="1"/>
-  <text x="95" y="390" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ecf00">XP</text>
-  <text x="95" y="410" text-anchor="middle" font-size="9" fill="#8b9cbf">Hardcore coding</text>
-
-  <rect x="170" y="360" width="120" height="70" fill="#6ecf00" opacity="0.08"/>
-  <text x="230" y="390" text-anchor="middle" font-size="11" fill="#8b9cbf">1-2 semaines</text>
-  <text x="230" y="408" text-anchor="middle" font-size="9" fill="#8b9cbf">(Itérations)</text>
-
-  <rect x="290" y="360" width="140" height="70" fill="#6ecf00" opacity="0.08"/>
-  <text x="360" y="390" text-anchor="middle" font-size="11" fill="#8b9cbf">Strict sur les</text>
-  <text x="360" y="408" text-anchor="middle" font-size="9" fill="#8b9cbf">pratiques</text>
-
-  <rect x="430" y="360" width="140" height="70" fill="#6ecf00" opacity="0.08"/>
-  <text x="500" y="390" text-anchor="middle" font-size="11" fill="#8b9cbf">Haute</text>
-  <text x="500" y="408" text-anchor="middle" font-size="9" fill="#8b9cbf">Discipline requise</text>
-
-  <rect x="570" y="360" width="140" height="70" fill="#6ecf00" opacity="0.08"/>
-  <text x="640" y="390" text-anchor="middle" font-size="11" fill="#8b9cbf">3-8 devs</text>
-  <text x="640" y="408" text-anchor="middle" font-size="9" fill="#8b9cbf">Petit &amp; expert</text>
-
-  <rect x="710" y="360" width="160" height="70" fill="#6ecf00" opacity="0.08"/>
-  <text x="790" y="385" text-anchor="middle" font-size="10" fill="#8b9cbf">Code critique,</text>
-  <text x="790" y="400" text-anchor="middle" font-size="10" fill="#8b9cbf">besoin de</text>
-  <text x="790" y="415" text-anchor="middle" font-size="10" fill="#8b9cbf">qualité maximum</text>
-
-  <rect x="870" y="360" width="310" height="70" fill="#6ecf00" opacity="0.08"/>
-  <text x="1025" y="380" text-anchor="middle" font-size="9" fill="#8b9cbf">Burnout possible. Très</text>
-  <text x="1025" y="393" text-anchor="middle" font-size="9" fill="#8b9cbf">demandant mentalement.</text>
-  <text x="1025" y="406" text-anchor="middle" font-size="9" fill="#8b9cbf">Pair programming = coûts</text>
-  <text x="1025" y="419" text-anchor="middle" font-size="9" fill="#8b9cbf">doublés</text>
+  <rect x="30" y="350" width="940" height="64" rx="8" fill="#6ecf00" fill-opacity="0.03" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="100" y="376" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#6ecf00">XP</text>
+  <text x="100" y="394" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Extreme Programming</text>
+  <text x="260" y="383" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">1-2 semaines</text>
+  <!-- Complexity dots: very high -->
+  <circle cx="378" cy="383" r="5" fill="#6ecf00"/>
+  <circle cx="396" cy="383" r="5" fill="#6ecf00"/>
+  <circle cx="414" cy="383" r="5" fill="#6ecf00"/>
+  <text x="540" y="383" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">3-8 devs experts</text>
+  <text x="780" y="378" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Code critique, haute qualité</text>
+  <text x="780" y="394" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">finance, healthcare, infra</text>
 
   <!-- Row 5: Lean -->
-  <rect x="20" y="440" width="150" height="70" fill="#c792e9" opacity="0.08" stroke="#c792e9" stroke-width="1"/>
-  <text x="95" y="470" text-anchor="middle" font-size="12" font-weight="bold" fill="#c792e9">Lean Software</text>
-  <text x="95" y="485" text-anchor="middle" font-size="9" fill="#8b9cbf">Dev</text>
+  <rect x="30" y="422" width="940" height="64" rx="8" fill="#8b9cbf" fill-opacity="0.03" stroke="#8b9cbf" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="100" y="448" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#8b9cbf">Lean</text>
+  <text x="100" y="466" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Philosophie</text>
+  <text x="260" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">Variable</text>
+  <!-- Complexity dots: low -->
+  <circle cx="378" cy="455" r="5" fill="#8b9cbf"/>
+  <circle cx="396" cy="455" r="5" fill="#8b9cbf" opacity="0.3"/>
+  <circle cx="414" cy="455" r="5" fill="#8b9cbf" opacity="0.3"/>
+  <text x="540" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e2e8f0">Toute taille</text>
+  <text x="780" y="450" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Optimisation globale</text>
+  <text x="780" y="466" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">réduction du gaspillage</text>
 
-  <rect x="170" y="440" width="120" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="230" y="470" text-anchor="middle" font-size="11" fill="#8b9cbf">Variable</text>
-  <text x="230" y="488" text-anchor="middle" font-size="9" fill="#8b9cbf">(Flexible)</text>
-
-  <rect x="290" y="440" width="140" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="360" y="470" text-anchor="middle" font-size="11" fill="#8b9cbf">Peu structuré</text>
-  <text x="360" y="488" text-anchor="middle" font-size="9" fill="#8b9cbf">Principes généraux</text>
-
-  <rect x="430" y="440" width="140" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="500" y="470" text-anchor="middle" font-size="11" fill="#8b9cbf">Basse</text>
-  <text x="500" y="488" text-anchor="middle" font-size="9" fill="#8b9cbf">Souple</text>
-
-  <rect x="570" y="440" width="140" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="640" y="470" text-anchor="middle" font-size="11" fill="#8b9cbf">N'importe quelle</text>
-  <text x="640" y="488" text-anchor="middle" font-size="9" fill="#8b9cbf">taille</text>
-
-  <rect x="710" y="440" width="160" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="790" y="465" text-anchor="middle" font-size="10" fill="#8b9cbf">Optimisation du</text>
-  <text x="790" y="480" text-anchor="middle" font-size="10" fill="#8b9cbf">flux général,</text>
-  <text x="790" y="495" text-anchor="middle" font-size="10" fill="#8b9cbf">gaspillage</text>
-
-  <rect x="870" y="440" width="310" height="70" fill="#c792e9" opacity="0.08"/>
-  <text x="1025" y="460" text-anchor="middle" font-size="9" fill="#8b9cbf">Très généraliste. Doit être</text>
-  <text x="1025" y="473" text-anchor="middle" font-size="9" fill="#8b9cbf">adapté à votre contexte.</text>
-  <text x="1025" y="486" text-anchor="middle" font-size="9" fill="#8b9cbf">Risque de devenir du simple</text>
-  <text x="1025" y="499" text-anchor="middle" font-size="9" fill="#8b9cbf">bon sens sans structure</text>
-
-  <!-- Legend at bottom -->
-  <text x="600" y="650" text-anchor="middle" font-size="11" fill="#8b9cbf">
-    💡 Conseil: La plupart des équipes commencent par Scrum (le plus structuré), puis évoluent vers Kanban ou Shape Up selon leur contexte
-  </text>
+  <!-- Legend -->
+  <text x="340" y="517" font-family="Inter, sans-serif" font-size="9" fill="#475569">Complexité :</text>
+  <circle cx="420" cy="513" r="4" fill="#64748b"/>
+  <text x="428" y="517" font-family="Inter, sans-serif" font-size="9" fill="#475569">faible</text>
+  <circle cx="468" cy="513" r="4" fill="#64748b"/>
+  <circle cx="480" cy="513" r="4" fill="#64748b"/>
+  <text x="488" y="517" font-family="Inter, sans-serif" font-size="9" fill="#475569">moyenne</text>
+  <circle cx="542" cy="513" r="4" fill="#64748b"/>
+  <circle cx="554" cy="513" r="4" fill="#64748b"/>
+  <circle cx="566" cy="513" r="4" fill="#64748b"/>
+  <text x="574" y="517" font-family="Inter, sans-serif" font-size="9" fill="#475569">élevée</text>
 </svg>

@@ -1,101 +1,100 @@
-<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1117"/>
+      <stop offset="100%" stop-color="#161929"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#a6f079" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c792e9" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#c792e9" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b9d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff6b9d" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ecf00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#6ecf00" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
   </defs>
 
-  <rect width="1000" height="500" fill="url(#bgGrad)"/>
+  <rect width="1000" height="480" fill="url(#bg)"/>
 
-  <!-- Title -->
-  <text x="500" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#a6f079">
-    Les 4 Valeurs du Manifeste Agile (2001)
-  </text>
+  <!-- Subtle glows -->
+  <circle cx="150" cy="280" r="100" fill="#a6f079" opacity="0.04" filter="url(#blur)"/>
+  <circle cx="380" cy="280" r="100" fill="#c792e9" opacity="0.04" filter="url(#blur)"/>
+  <circle cx="620" cy="280" r="100" fill="#ff6b9d" opacity="0.04" filter="url(#blur)"/>
+  <circle cx="855" cy="280" r="100" fill="#6ecf00" opacity="0.04" filter="url(#blur)"/>
 
-  <!-- Card 1: Individuals and Interactions -->
-  <rect x="50" y="100" width="200" height="280" rx="8" fill="#a6f079" opacity="0.15" stroke="#a6f079" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="150" cy="140" r="30" fill="#a6f079" opacity="0.3"/>
-  <circle cx="135" cy="140" r="8" fill="#a6f079"/>
-  <circle cx="165" cy="140" r="8" fill="#a6f079"/>
-  <text x="150" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
-    Individus &amp;
-  </text>
-  <text x="150" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
-    Interactions
-  </text>
-  <text x="150" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
-  <text x="150" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">processus et outils</text>
-  <text x="150" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Communication</text>
-  <text x="150" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">directe > docs</text>
-  <text x="150" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Collaboration ></text>
-  <text x="150" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">règles strictes</text>
+  <!-- Header -->
+  <text x="500" y="46" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569" letter-spacing="3" font-weight="500">MANIFESTE AGILE · 2001</text>
+  <text x="500" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">4 Valeurs Fondamentales</text>
 
-  <!-- Card 2: Working Software -->
-  <rect x="275" y="100" width="200" height="280" rx="8" fill="#c792e9" opacity="0.15" stroke="#c792e9" stroke-width="2" filter="url(#glow)"/>
-  <rect x="310" y="125" width="35" height="50" rx="3" fill="#c792e9" opacity="0.4"/>
-  <circle cx="335" cy="145" r="4" fill="#c792e9"/>
-  <text x="375" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#c792e9">
-    Logiciel
-  </text>
-  <text x="375" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#c792e9">
-    Fonctionnel
-  </text>
-  <text x="375" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
-  <text x="375" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">documentation complète</text>
-  <text x="375" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Code qui marche ></text>
-  <text x="375" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">specs parfaites</text>
-  <text x="375" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Déploiement régulier ></text>
-  <text x="375" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">à la fin du projet</text>
+  <!-- Card 1 -->
+  <rect x="30" y="110" width="205" height="340" rx="16" fill="url(#card1)" stroke="#a6f079" stroke-width="1" stroke-opacity="0.2"/>
+  <!-- Icon: people -->
+  <circle cx="132" cy="163" r="16" fill="#a6f079" opacity="0.12"/>
+  <circle cx="126" cy="160" r="6" fill="none" stroke="#a6f079" stroke-width="1.5"/>
+  <circle cx="140" cy="160" r="6" fill="none" stroke="#a6f079" stroke-width="1.5"/>
+  <path d="M118 175 Q126 170 132 175 Q138 170 146 175" stroke="#a6f079" stroke-width="1.5" fill="none"/>
+  <text x="132" y="204" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#a6f079">Individus</text>
+  <text x="132" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#a6f079">&amp; Interactions</text>
+  <text x="132" y="252" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">plutôt que</text>
+  <text x="132" y="268" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#334155">processus et outils</text>
+  <line x1="72" y1="295" x2="192" y2="295" stroke="#a6f079" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="132" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Communication directe</text>
+  <text x="132" y="337" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">plutôt que procédures</text>
+  <text x="132" y="354" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Collaboration active</text>
+  <text x="132" y="371" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">plutôt que hiérarchie</text>
+  <text x="132" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#a6f079" opacity="0.5" letter-spacing="1">VALEUR 1</text>
 
-  <!-- Card 3: Customer Collaboration -->
-  <rect x="500" y="100" width="200" height="280" rx="8" fill="#ff6b9d" opacity="0.15" stroke="#ff6b9d" stroke-width="2" filter="url(#glow)"/>
-  <circle cx="560" cy="145" r="8" fill="#ff6b9d"/>
-  <circle cx="600" cy="145" r="8" fill="#ff6b9d"/>
-  <path d="M 560 155 L 570 165 L 580 155" stroke="#ff6b9d" stroke-width="1.5" fill="none"/>
-  <path d="M 600 155 L 610 165 L 620 155" stroke="#ff6b9d" stroke-width="1.5" fill="none"/>
-  <text x="600" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#ff6b9d">
-    Collaboration avec
-  </text>
-  <text x="600" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#ff6b9d">
-    le Client
-  </text>
-  <text x="600" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
-  <text x="600" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">contrats rigides</text>
-  <text x="600" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Feedback continu ></text>
-  <text x="600" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">révisions ponctuelles</text>
-  <text x="600" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Adapter le produit ></text>
-  <text x="600" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">suivre la spec</text>
+  <!-- Card 2 -->
+  <rect x="258" y="110" width="205" height="340" rx="16" fill="url(#card2)" stroke="#c792e9" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="360" cy="163" r="16" fill="#c792e9" opacity="0.12"/>
+  <rect x="350" y="153" width="8" height="12" rx="1.5" fill="none" stroke="#c792e9" stroke-width="1.5"/>
+  <rect x="362" y="156" width="8" height="12" rx="1.5" fill="none" stroke="#c792e9" stroke-width="1.5"/>
+  <path d="M350 170 L374 170" stroke="#c792e9" stroke-width="1.5" opacity="0.5"/>
+  <text x="360" y="204" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#c792e9">Logiciel</text>
+  <text x="360" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#c792e9">Fonctionnel</text>
+  <text x="360" y="252" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">plutôt que</text>
+  <text x="360" y="268" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#334155">documentation exhaustive</text>
+  <line x1="300" y1="295" x2="420" y2="295" stroke="#c792e9" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="360" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Déployer tôt</text>
+  <text x="360" y="337" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Livrer souvent</text>
+  <text x="360" y="354" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Mesurer ce qui marche</text>
+  <text x="360" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#c792e9" opacity="0.5" letter-spacing="1">VALEUR 2</text>
 
-  <!-- Card 4: Responding to Change -->
-  <rect x="725" y="100" width="200" height="280" rx="8" fill="#6ecf00" opacity="0.15" stroke="#6ecf00" stroke-width="2" filter="url(#glow)"/>
-  <path d="M 795 130 L 825 130 M 795 150 L 825 150 M 795 170 L 825 170" stroke="#6ecf00" stroke-width="2"/>
-  <path d="M 825 140 L 815 145 L 825 150" stroke="#6ecf00" stroke-width="1.5" fill="none"/>
-  <text x="825" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#6ecf00">
-    Répondre aux
-  </text>
-  <text x="825" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#6ecf00">
-    Changements
-  </text>
-  <text x="825" y="235" text-anchor="middle" font-size="11" fill="#8b9cbf">plutôt que</text>
-  <text x="825" y="250" text-anchor="middle" font-size="10" fill="#8b9cbf">suivre un plan</text>
-  <text x="825" y="280" text-anchor="middle" font-size="10" fill="#8b9cbf">Flexibilité ></text>
-  <text x="825" y="295" text-anchor="middle" font-size="10" fill="#8b9cbf">planification rigide</text>
-  <text x="825" y="310" text-anchor="middle" font-size="10" fill="#8b9cbf">Ajuster le cap ></text>
-  <text x="825" y="325" text-anchor="middle" font-size="10" fill="#8b9cbf">tenir coûte que coûte</text>
+  <!-- Card 3 -->
+  <rect x="487" y="110" width="205" height="340" rx="16" fill="url(#card3)" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="589" cy="163" r="16" fill="#ff6b9d" opacity="0.12"/>
+  <path d="M581 157 Q589 152 597 157 Q601 163 597 169 Q589 174 581 169 Q577 163 581 157Z" fill="none" stroke="#ff6b9d" stroke-width="1.5"/>
+  <text x="589" y="204" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ff6b9d">Collaboration</text>
+  <text x="589" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ff6b9d">avec le Client</text>
+  <text x="589" y="252" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">plutôt que</text>
+  <text x="589" y="268" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#334155">négociation de contrat</text>
+  <line x1="529" y1="295" x2="649" y2="295" stroke="#ff6b9d" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="589" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Feedback continu</text>
+  <text x="589" y="337" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Ajustements réguliers</text>
+  <text x="589" y="354" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Partenariat actif</text>
+  <text x="589" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#ff6b9d" opacity="0.5" letter-spacing="1">VALEUR 3</text>
 
-  <!-- Bottom note -->
-  <text x="500" y="430" text-anchor="middle" font-size="13" fill="#8b9cbf">
-    Ces 4 valeurs ont révolutionné la façon de développer des logiciels
-  </text>
-  <text x="500" y="455" text-anchor="middle" font-size="11" fill="#8b9cbf" opacity="0.8">
-    Mais chaque framework les interprète différemment
-  </text>
+  <!-- Card 4 -->
+  <rect x="715" y="110" width="255" height="340" rx="16" fill="url(#card4)" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="843" cy="163" r="16" fill="#6ecf00" opacity="0.12"/>
+  <path d="M835 157 L851 157 M835 163 L845 163 M835 169 L851 169" stroke="#6ecf00" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M849 161 L853 163 L849 165" stroke="#6ecf00" stroke-width="1.5" fill="none"/>
+  <text x="843" y="204" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#6ecf00">Répondre</text>
+  <text x="843" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#6ecf00">au Changement</text>
+  <text x="843" y="252" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">plutôt que</text>
+  <text x="843" y="268" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#334155">suivre un plan figé</text>
+  <line x1="755" y1="295" x2="930" y2="295" stroke="#6ecf00" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="843" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">S'adapter au marché</text>
+  <text x="843" y="337" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Pivoter si nécessaire</text>
+  <text x="843" y="354" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Flexibilité &gt; rigidité</text>
+  <text x="843" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#6ecf00" opacity="0.5" letter-spacing="1">VALEUR 4</text>
 </svg>
