@@ -26,7 +26,7 @@
   <circle cx="135" cy="140" r="8" fill="#a6f079"/>
   <circle cx="165" cy="140" r="8" fill="#a6f079"/>
   <text x="150" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
-    Individus &
+    Individus &amp;
   </text>
   <text x="150" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#a6f079">
     Interactions

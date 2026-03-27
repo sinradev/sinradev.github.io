@@ -25,7 +25,7 @@
   <text x="350" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6f079">2001</text>
   <text x="350" y="85" text-anchor="middle" font-size="10" fill="#8b9cbf">Manifeste Agile</text>
   <text x="350" y="100" text-anchor="middle" font-size="9" fill="#8b9cbf">17 experts réunis</text>
-  <text x="350" y="113" text-anchor="middle" font-size="9" fill="#8b9cbf">Itération & retours</text>
+  <text x="350" y="113" text-anchor="middle" font-size="9" fill="#8b9cbf">Itération &amp; retours</text>
   <text x="350" y="126" text-anchor="middle" font-size="9" fill="#8b9cbf">rapides</text>
 
   <!-- 2000s: Frameworks boom -->
