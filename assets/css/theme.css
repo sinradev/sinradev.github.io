@@ -108,6 +108,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
 /* GitHub-style Container System */
 .container {
   max-width: 1200px;
