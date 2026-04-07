@@ -17,3 +17,97 @@
     text-decoration: underline;
   }
 }
+
+@layer components {
+  /* Hero atmospheric gradients */
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  /* Section top-dividers */
+  .index-section {
+    position: relative;
+  }
+
+  .index-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, oklch(26.346% 0.018 262.177), transparent);
+  }
+
+  /* Feature card hover shimmer */
+  .feature {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .feature::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .feature:hover::after {
+    opacity: 1;
+  }
+
+  /* Testimonials subtle glow */
+  .testimonial-section {
+    position: relative;
+  }
+
+  .testimonial-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Bottom CTA gradients */
+  .bottom-cta {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bottom-cta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(circle at 30% 70%, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+  }
+}

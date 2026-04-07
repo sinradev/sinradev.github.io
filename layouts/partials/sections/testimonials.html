@@ -1,7 +1,7 @@
 {{ $lang := .Language.Lang }}
 {{ $strings := index hugo.Data $lang "strings" }}
 {{ $testimonials := index hugo.Data $lang "testimonials" }}
-<section class="testimonials py-20 bg-base-100">
+<section class="testimonial-section testimonials py-20 bg-base-100">
   <div class="container mx-auto px-6 max-w-6xl">
     <h2 class="text-3xl font-bold text-center mb-12">{{ i18n "testimonial" }}</h2>
     <div class="testimonial-carousel swiper">
