@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product Management on Sinra</title>
+    <link>http://localhost:1313/categories/product-management/</link>
+    <description>Recent content in Product Management on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Incomplete Roadmap: When PO/PMs Lose Control of Their Planning</title>
+      <link>http://localhost:1313/product-management/2025/12/19/roadmap-incomplete-po-pm.html</link>
+      <pubDate>Fri, 19 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/product-management/2025/12/19/roadmap-incomplete-po-pm.html</guid>
+      <description>&lt;p&gt;url: /product-management/2025/12/19/roadmap-incomplete-po-pm.html&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-daily-life-of-a-product-owner&#34;&gt;The Daily Life of a Product Owner&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Monday morning, quarterly planning meeting.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;You present your roadmap to management:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;We&amp;rsquo;ll ship SSO authentication in February, the analytics dashboard in March, and the public API in April.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wednesday, week 3.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;A developer asks you:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;The SSO feature, what exactly does it include? Because we have 3 different interpretations on the team.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You check your Notion notes. The spec says &amp;ldquo;SSO Authentication&amp;rdquo; but the details are&amp;hellip; vague.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

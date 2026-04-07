@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reclutamiento Cultura on Sinra</title>
+    <link>http://localhost:1313/es/categories/reclutamiento-cultura/</link>
+    <description>Recent content in Reclutamiento Cultura on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/categories/reclutamiento-cultura/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Los desarrolladores se han convertido en candidatos de The Voice: por qué el reclutamiento tech ha perdido la cabeza</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-23-desarrolladores-the-voice-reclutamiento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-23-desarrolladores-the-voice-reclutamiento/</guid>
+      <description>&lt;p&gt;Si eres desarrollador, probablemente ya lo hayas sentido: postularte a un puesto es como audicionar para The Voice. Salvo que no tienes una, dos ni tres oportunidades: tienes cinco. Cinco entrevistas. Más pruebas técnicas. Más verificación de referencias. Y al final, aunque llegues a la final, todavía hay rondas eliminatorias que no sabías que existían.&lt;/p&gt;&#xA;&lt;p&gt;Bienvenido al proceso de reclutamiento tech moderno, donde las empresas han decidido que la confianza es un lujo que no pueden permitirse.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background gradient (blue theme for Europe/security) -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decorative circles (subtle, lighter blue) -->
+  <circle cx="150" cy="120" r="120" fill="#60a5fa" opacity="0.3"/>
+  <circle cx="1050" cy="480" r="150" fill="#60a5fa" opacity="0.3"/>
+  <circle cx="900" cy="100" r="80" fill="#93c5fd" opacity="0.2"/>
+  <circle cx="200" cy="550" r="100" fill="#93c5fd" opacity="0.2"/>
+
+  <!-- Main title (centered, white, bold) -->
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Hébergement Européen
+  </text>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    vs Américain:
+  </text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Souveraineté des Données
+  </text>
+
+  <!-- Bottom branding -->
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#ffffff" opacity="0.9">
+    Sinra Blog
+  </text>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planning on Sinra</title>
+    <link>http://localhost:1313/fr/categories/planning/</link>
+    <description>Recent content in Planning on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 02 Jan 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/categories/planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La Fausse Promesse Des User Stories : Pourquoi « En Tant Que » Ne Dit Pas Quoi Faire</title>
+      <link>http://localhost:1313/fr/blog/posts/2026-01-02-fausse-promesse-user-stories-en-tant-que/</link>
+      <pubDate>Fri, 02 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2026-01-02-fausse-promesse-user-stories-en-tant-que/</guid>
+      <description>&lt;h2 id=&#34;la-user-story-qui-ne-dit-rien&#34;&gt;La User Story Qui Ne Dit Rien&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lundi matin. Sprint planning. Équipe de 6 développeurs.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Product Owner : « OK, on passe à la story suivante. »&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Le PO lit la story :&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;USER-347: En tant qu&amp;#39;utilisateur, je veux pouvoir me déconnecter&#xA;de l&amp;#39;application afin de sécuriser mon compte.&#xA;&#xA;Critères d&amp;#39;acceptation :&#xA;- L&amp;#39;utilisateur peut se déconnecter&#xA;- La session est terminée après déconnexion&#xA;- L&amp;#39;utilisateur est redirigé vers la page de login&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;PO : « Voilà. C&amp;rsquo;est clair. Questions ? »&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Le Chaos Du Backlog : Quand Personne Ne Sait Ce Qui Est Prévu Pour Q2</title>
+      <link>http://localhost:1313/fr/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/</link>
+      <pubDate>Fri, 26 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/</guid>
+      <description>&lt;h2 id=&#34;la-réunion-de-planification-q2&#34;&gt;La Réunion De Planification Q2&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lundi matin. Réunion de planification trimestrielle.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;CEO : « OK équipe, qu&amp;rsquo;est-ce qu&amp;rsquo;on livre en Q2 ? »&lt;/p&gt;&#xA;&lt;p&gt;Product Manager : « Laisse-moi regarder le backlog&amp;hellip; »&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ouvre Jira.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Backlog : 537 issues&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Filtres disponibles :&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Priority: P0 (12 issues), P1 (47 issues), P2 (89 issues), P3 (145 issues), P4 (244 issues)&lt;/li&gt;&#xA;&lt;li&gt;Status: To Do (412), In Progress (67), Blocked (38), Waiting (20)&lt;/li&gt;&#xA;&lt;li&gt;Labels: 87 labels différents (urgent, bug, feature, tech-debt, nice-to-have, critical, MVP, v2, Q1, Q2, maybe, someday, etc.)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;PM, dépassé :&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

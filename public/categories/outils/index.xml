@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outils on Sinra</title>
+    <link>http://localhost:1313/categories/outils/</link>
+    <description>Recent content in Outils on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/categories/outils/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why in 2026 are we still printing PDFs, filling them by hand, and scanning them back?</title>
+      <link>http://localhost:1313/blog/posts/2026-02-25-pdf-forms-archaic-admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2026-02-25-pdf-forms-archaic-admin/</guid>
+      <description>&lt;ol start=&#34;2026&#34;&gt;&#xA;&lt;li&gt;We have generative AI. Autonomous vehicles are starting to drive. Voice interfaces understand nuance and context. Mobile applications do things we thought impossible five years ago.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;And yet.&lt;/p&gt;&#xA;&lt;p&gt;I receive an email from my insurance company. A PDF attachment. To file a claim. It clearly states: &amp;ldquo;Print, sign by hand, scan and send back to us&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;The PDF format. Not modifiable. Not digitally fillable. Just a digital image of a piece of paper that doesn&amp;rsquo;t even exist anymore.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

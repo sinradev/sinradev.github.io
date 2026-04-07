@@ -1,0 +1,21 @@
+{{ $footerData := index hugo.Data .Language.Lang "footer" }}
+<footer class="footer bg-base-200 text-base-content p-10">
+  {{ if $footerData }}
+  {{ range $footerData }}
+  <nav>
+    {{ range .links }}
+    <a href="{{ if (hasPrefix .link "http") }}{{ .link }}{{ else }}{{ relLangURL .link }}{{ end }}"
+       {{ if eq .target "_blank" }}target="_blank" rel="noopener noreferrer"{{ end }}
+       class="link link-hover">
+      {{ .name }}
+    </a>
+    {{ end }}
+  </nav>
+  {{ end }}
+  {{ end }}
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; {{ now.Year }} Sinra</p>
+  </aside>
+</footer>

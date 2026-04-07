@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dependencies on Sinra</title>
+    <link>http://localhost:1313/categories/dependencies/</link>
+    <description>Recent content in Dependencies on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/dependencies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hidden Dependencies: Why Your Features Are Always Blocked</title>
+      <link>http://localhost:1313/dependencies/2025/12/28/dependances-cachees-features-bloquees.html</link>
+      <pubDate>Sun, 28 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/dependencies/2025/12/28/dependances-cachees-features-bloquees.html</guid>
+      <description>&lt;p&gt;url: /dependencies/2025/12/28/dependances-cachees-features-bloquees.html&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-feature-blocked-for-3-weeks&#34;&gt;The Feature Blocked For 3 Weeks&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Monday morning. Daily standup.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Scrum Master: &amp;ldquo;Dev 1, status on the &amp;lsquo;Export PDF&amp;rsquo; feature?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Still blocked.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;Blocked for how long already?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;3 weeks.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;3 weeks?! Why is it blocked?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;I&amp;rsquo;m waiting for the PDF generation API from the backend team.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;OK, and the backend team, where are they at?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;SM goes to see the backend team.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

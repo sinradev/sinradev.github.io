@@ -1,0 +1,66 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f7fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="24" fill="#2d3748" text-anchor="middle" font-weight="bold">IA Analyse le Code Source</text>
+
+  <!-- Codebase -->
+  <rect x="50" y="80" width="200" height="320" rx="8" fill="#2d3748"/>
+  <text x="150" y="65" font-family="Arial, sans-serif" font-size="16" fill="#2d3748" text-anchor="middle" font-weight="bold">Codebase</text>
+  <rect x="70" y="100" width="160" height="15" rx="3" fill="#48bb78"/>
+  <text x="80" y="112" font-family="monospace" font-size="10" fill="#ffffff">app/models/user.rb</text>
+  <rect x="70" y="125" width="160" height="15" rx="3" fill="#4299e1"/>
+  <text x="80" y="137" font-family="monospace" font-size="10" fill="#ffffff">app/services/*.rb</text>
+  <rect x="70" y="150" width="160" height="15" rx="3" fill="#ed8936"/>
+  <text x="80" y="162" font-family="monospace" font-size="10" fill="#ffffff">app/controllers/*.rb</text>
+  <line x1="70" y1="180" x2="220" y2="180" stroke="#a0aec0" stroke-width="1"/>
+  <line x1="70" y1="195" x2="200" y2="195" stroke="#a0aec0" stroke-width="1"/>
+  <line x1="70" y1="210" x2="180" y2="210" stroke="#a0aec0" stroke-width="1"/>
+  <line x1="70" y1="240" x2="210" y2="240" stroke="#a0aec0" stroke-width="1"/>
+  <line x1="70" y1="255" x2="190" y2="255" stroke="#a0aec0" stroke-width="1"/>
+  <line x1="70" y1="285" x2="205" y2="285" stroke="#a0aec0" stroke-width="1"/>
+  <line x1="70" y1="300" x2="175" y2="300" stroke="#a0aec0" stroke-width="1"/>
+  <text x="150" y="340" font-family="monospace" font-size="12" fill="#48bb78" text-anchor="middle">200k lines</text>
+  <text x="150" y="365" font-family="monospace" font-size="12" fill="#4299e1" text-anchor="middle">Ruby on Rails</text>
+
+  <!-- AI Brain -->
+  <circle cx="400" cy="240" r="70" fill="#667eea"/>
+  <circle cx="400" cy="240" r="50" fill="#764ba2"/>
+  <text x="400" y="255" font-family="Arial, sans-serif" font-size="36" fill="#ffffff" text-anchor="middle" font-weight="bold">AI</text>
+  <text x="400" y="335" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle">Analyse en 5 min</text>
+
+  <!-- Analysis Output -->
+  <rect x="550" y="80" width="200" height="320" rx="8" fill="#ffffff" stroke="#667eea" stroke-width="2"/>
+  <text x="650" y="65" font-family="Arial, sans-serif" font-size="16" fill="#2d3748" text-anchor="middle" font-weight="bold">Analyse</text>
+
+  <text x="565" y="110" font-family="Arial, sans-serif" font-size="12" fill="#2d3748" font-weight="bold">Architecture:</text>
+  <text x="565" y="130" font-family="monospace" font-size="10" fill="#4a5568">• Devise auth</text>
+  <text x="565" y="145" font-family="monospace" font-size="10" fill="#4a5568">• Email+password only</text>
+
+  <text x="565" y="175" font-family="Arial, sans-serif" font-size="12" fill="#2d3748" font-weight="bold">Contraintes:</text>
+  <text x="565" y="195" font-family="monospace" font-size="10" fill="#e53e3e">✗ No MFA support</text>
+  <text x="565" y="210" font-family="monospace" font-size="10" fill="#e53e3e">✗ Refactoring needed</text>
+
+  <text x="565" y="240" font-family="Arial, sans-serif" font-size="12" fill="#2d3748" font-weight="bold">Options:</text>
+  <text x="565" y="260" font-family="monospace" font-size="9" fill="#48bb78">1. MVP: TOTP (1 week)</text>
+  <text x="565" y="275" font-family="monospace" font-size="9" fill="#4299e1">2. Full: 4 methods (4 weeks)</text>
+
+  <text x="565" y="305" font-family="Arial, sans-serif" font-size="12" fill="#2d3748" font-weight="bold">Impact:</text>
+  <text x="565" y="325" font-family="monospace" font-size="10" fill="#4a5568">12 files to modify</text>
+  <text x="565" y="340" font-family="monospace" font-size="10" fill="#4a5568">3 new dependencies</text>
+  <text x="565" y="355" font-family="monospace" font-size="10" fill="#4a5568">Security tests needed</text>
+
+  <!-- Arrows -->
+  <path d="M 260 240 L 320 240" stroke="#667eea" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 480 240 L 540 240" stroke="#667eea" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
+    </marker>
+  </defs>
+
+  <!-- Bottom text -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="14" fill="#718096" text-anchor="middle">IA détecte l'architecture, contraintes, et propose des options réalistes</text>
+</svg>

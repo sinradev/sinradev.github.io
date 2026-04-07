@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dim">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba | Sinra</title>
+
+
+<link rel="canonical" href="https://sinra.dev/documentation/2025/12/24/documentacion-muerta-notion-confluence.html" />
+
+
+
+<meta name="description" content="Los equipos crean documentación hermosa en Notion/Confluence. Seis meses después, el 70% está obsoleto y nadie sabe qué versión es correcta. Descubre cómo Sinra integra documentación y trabajo en un sistema unificado." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="https://sinra.dev/documentation/2025/12/24/dead-documentation-notion-confluence.html" />
+<link rel="alternate" hreflang="x-default" href="https://sinra.dev/documentation/2025/12/24/dead-documentation-notion-confluence.html" />
+
+<link rel="alternate" hreflang="fr" href="https://sinra.dev/documentation/2025/12/24/documentation-morte-notion-confluence.html" />
+
+
+<link rel="alternate" hreflang="es" href="https://sinra.dev/documentation/2025/12/24/documentacion-muerta-notion-confluence.html" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba" />
+<meta property="og:description" content="Los equipos crean documentación hermosa en Notion/Confluence. Seis meses después, el 70% está obsoleto y nadie sabe qué versión es correcta. Descubre cómo Sinra integra documentación y trabajo en un sistema unificado." />
+<meta property="og:url"         content="https://sinra.dev/documentation/2025/12/24/documentacion-muerta-notion-confluence.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+
+<meta property="og:image" content="https://sinra.dev/assets/images/blog/2025-12-24-documentation-morte-featured.png" />
+
+<meta property="article:published_time" content="2025-12-24T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Documentation" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba" />
+<meta name="twitter:description" content="Los equipos crean documentación hermosa en Notion/Confluence. Seis meses después, el 70% está obsoleto y nadie sabe qué versión es correcta. Descubre cómo Sinra integra documentación y trabajo en un sistema unificado." />
+<meta name="twitter:image" content="https://sinra.dev/assets/images/blog/2025-12-24-documentation-morte-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"https://sinra.dev/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="https://sinra.dev/css/main.min.44db2c597706ca94c93130c4d6e008b3e83d1ec8b59b9639a45b1b03abd9cb4d.css" integrity="sha256-RNssWXcGypTJMTDE1uAIs&#43;g9Hsi1m5Y5pFsbA6vZy00=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Alternar menú de navegación">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/es/about/"
+             class=""
+             >
+            Acerca de
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/pricing/"
+             class=""
+             >
+            Precios
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/contact/"
+             class=""
+             >
+            Contacto
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Iniciar sesión
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Registrarse
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/es/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/es/about/"
+           class=""
+           >
+          Acerca de
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/pricing/"
+           class=""
+           >
+          Precios
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/contact/"
+           class=""
+           >
+          Contacto
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Iniciar sesión
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Registrarse
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        ES
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="https://sinra.dev/documentation/2025/12/24/dead-documentation-notion-confluence.html" >
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://sinra.dev/documentation/2025/12/24/documentation-morte-notion-confluence.html" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://sinra.dev/documentation/2025/12/24/documentacion-muerta-notion-confluence.html" class="active">
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-12-24-documentation-morte-featured.png" alt="Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/es/categories/documentation/" class="badge badge-primary badge-outline">Documentation</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Entre specs obsoletas, docs contradictorios y versiones múltiples, nadie sabe qué información es fiable : Sinra unifica contexto y trabajo</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2025-12-24">December 24, 2025</time>
+      <span>Por el Equipo de Sinra</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="el-primer-día-del-nuevo-desarrollador">El Primer Día Del Nuevo Desarrollador</h2>
+<p><strong>Lunes 9am. Alex se une al equipo de ingeniería.</strong></p>
+<p>Lead Developer: &ldquo;¡Bienvenido Alex! Para entender nuestra arquitectura, empieza leyendo la documentación.&rdquo;</p>
+<p><strong>Alex abre Notion.</strong></p>
+<p><strong>Búsqueda: &ldquo;Authentication&rdquo;</strong></p>
+<p><strong>Resultados encontrados: 8 documentos</strong></p>
+<ol>
+<li><code>RFC-042: Arquitectura de Autenticación</code> (creado hace 8 meses)</li>
+<li><code>Spec Técnica: Implementación SSO</code> (creado hace 6 meses)</li>
+<li><code>Documentación API Auth v2</code> (creado hace 4 meses)</li>
+<li><code>Migración JWT → OAuth2</code> (creado hace 3 meses)</li>
+<li><code>Guía: Cómo autenticar usuarios</code> (creado hace 2 meses)</li>
+<li><code>Auth System Overview [DRAFT]</code> (creado hace 1 mes)</li>
+<li><code>Authentication Best Practices</code> (creado hace 2 semanas)</li>
+<li><code>Auth Quick Start</code> (creado ayer)</li>
+</ol>
+<p><strong>Alex, perplejo:</strong></p>
+<blockquote>
+<p>&ldquo;¿Cuál debo leer? ¿Cuál está actualizado?&rdquo;</p>
+</blockquote>
+<p><strong>Abre RFC-042 (el más antiguo).</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># RFC-042: Arquitectura de Autenticación
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Status: Approved ✅
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Implementaremos JWT tokens para autenticación.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Arquitectura:
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Backend: Node.js + Express + JWT
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Tokens almacenados en localStorage
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Duración: 24h
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Sin refresh tokens (para simplificar)
+</span></span></code></pre></div><p><strong>Alex lee todo el documento (30 minutos).</strong></p>
+<p><strong>Luego, abre el código actual:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// auth.service.ts
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AuthService</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Using OAuth2 with refresh tokens
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">login</span>(<span style="color:#a6e22e">provider</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;google&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;microsoft&#39;</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">oauth2Provider</span>.<span style="color:#a6e22e">authenticate</span>(<span style="color:#a6e22e">provider</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Alex, confundido:</strong></p>
+<blockquote>
+<p>&ldquo;¡El doc dice JWT, el código hace OAuth2! El doc dice sin refresh tokens, el código los tiene. El doc dice localStorage, el código usa httpOnly cookies. ¡Nada coincide!&rdquo;</p>
+</blockquote>
+<p><strong>Le pregunta al Lead Developer:</strong></p>
+<p>Alex: &ldquo;¿El doc RFC-042 dice que usamos JWT, pero el código hace OAuth2?&rdquo;</p>
+<p>Lead Dev: &ldquo;Ah sí, cambiamos hace 4 meses. Mira mejor el doc &lsquo;Migración JWT → OAuth2&rsquo;.&rdquo;</p>
+<p>Alex: &ldquo;¿Pero cuál es la versión actual?&rdquo;</p>
+<p>Lead Dev: &ldquo;Eh&hellip; buena pregunta. ¿Tal vez el &lsquo;Auth System Overview&rsquo;? ¿O el &lsquo;Quick Start&rsquo;? De hecho, no estoy seguro. Lee el código, será más fiable.&rdquo;</p>
+<p><strong>Resultado:</strong> Alex pasó 2 horas leyendo documentación obsoleta para finalmente aprender leyendo el código.</p>
+<img src="/assets/images/blog/2025-12-24-documentation-morte-multiple-versions.svg" alt="Versiones múltiples: Nadie sabe cuál es correcta" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="el-problema-de-la-documentación-muerta">El Problema De La Documentación Muerta</h2>
+<p>La mayoría de equipos tech crean documentación. Luego muere lentamente, sin que nadie se dé cuenta.</p>
+<h3 id="los-cinco-síntomas-de-la-documentación-muerta">Los Cinco Síntomas De La Documentación Muerta</h3>
+<h4 id="1-documentación-obsoleta-desconectada-del-código-real">1. Documentación Obsoleta (Desconectada Del Código Real)</h4>
+<p><strong>El Escenario:</strong>
+Escribes una spec técnica hermosa en Notion hace 6 meses. El código evoluciona. La spec queda congelada.</p>
+<p><strong>Cronología típica:</strong></p>
+<p><strong>Mes 1:</strong> Spec creada, perfectamente alineada con el código.</p>
+<p><strong>Mes 2:</strong> Pequeño cambio en el código (añadido un parámetro). Spec no actualizada (&ldquo;lo haré luego&rdquo;).</p>
+<p><strong>Mes 3:</strong> Refactoring mayor (cambio de arquitectura). Spec no actualizada (&ldquo;muy ocupado, deadline&rdquo;).</p>
+<p><strong>Mes 4:</strong> Nuevo miembro lee la spec, no entiende por qué el código es diferente.</p>
+<p><strong>Mes 6:</strong> La spec está oficialmente obsoleta. Nadie la lee más. Se convierte en un artefacto histórico.</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Documentación congelada mientras el código evoluciona</li>
+<li>❌ Sin incentivo para mantenerla actualizada</li>
+<li>❌ Desincronización progresiva y silenciosa</li>
+<li>❌ Nadie sabe cuándo la doc se volvió obsoleta</li>
+</ul>
+<p><strong>Resultado Real:</strong>
+Un estudio interno en una scale-up tech de 50 personas reveló que <strong>el 73% de su documentación Confluence tenía más de 6 meses y ya no correspondía al código actual</strong>.</p>
+<img src="/assets/images/blog/2025-12-24-documentation-morte-obsolescence-timeline.svg" alt="Cronología de la obsolescencia de documentación en 6 meses" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="2-versiones-múltiples-nadie-sabe-cuál-es-correcta">2. Versiones Múltiples (Nadie Sabe Cuál Es Correcta)</h4>
+<p><strong>El Escenario:</strong>
+Buscas &ldquo;How does authentication work?&rdquo; en Notion.</p>
+<p><strong>Encuentras:</strong></p>
+<ul>
+<li><code>Auth Architecture v1</code> (8 meses)</li>
+<li><code>Auth Architecture v2 [FINAL]</code> (6 meses)</li>
+<li><code>Auth Architecture v2.1</code> (4 meses)</li>
+<li><code>Auth Overview [Updated]</code> (2 meses)</li>
+<li><code>Authentication Guide</code> (1 semana)</li>
+</ul>
+<p><strong>Pregunta:</strong> ¿Cuál es la correcta?</p>
+<p><strong>Respuesta:</strong> Ni idea.</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Nadie elimina las versiones antiguas</li>
+<li>❌ Sin sistema de versionado claro</li>
+<li>❌ Los títulos no reflejan el estado real (&ldquo;FINAL&rdquo; nunca es final)</li>
+<li>❌ Imposible saber qué doc refleja el código actual</li>
+</ul>
+<p><strong>Escenario Real:</strong></p>
+<p><strong>Desarrollador 1:</strong> &ldquo;Lee el doc &lsquo;Auth v2 FINAL&rsquo;.&rdquo;</p>
+<p><strong>Desarrollador 2:</strong> &ldquo;No, ese está obsoleto. Lee &lsquo;Auth Overview Updated&rsquo;.&rdquo;</p>
+<p><strong>Desarrollador 3:</strong> &ldquo;Espera, el más reciente es &lsquo;Authentication Guide&rsquo; creado la semana pasada.&rdquo;</p>
+<p><strong>Lead Developer:</strong> &ldquo;Honestamente, solo lee el código.&rdquo;</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="3-docs-contradictorios-cada-doc-dice-algo-diferente">3. Docs Contradictorios (Cada Doc Dice Algo Diferente)</h4>
+<p><strong>El Escenario:</strong>
+Tres documentos diferentes describen la misma feature. Cada uno dice algo ligeramente diferente.</p>
+<p><strong>Doc A (Notion):</strong> &ldquo;Los tokens expiran después de 1 hora.&rdquo;</p>
+<p><strong>Doc B (Confluence):</strong> &ldquo;Los tokens expiran después de 24 horas.&rdquo;</p>
+<p><strong>Código actual:</strong> <code>TOKEN_EXPIRY = 12 * 60 * 60</code> (12 horas)</p>
+<p><strong>Ninguno es correcto.</strong></p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Documentación fragmentada entre herramientas (Notion + Confluence + GitHub Wiki + Google Docs)</li>
+<li>❌ Cada doc creado independientemente, nunca sincronizado</li>
+<li>❌ Imposible saber qué info es correcta</li>
+<li>❌ Las contradicciones crean confusión y bugs</li>
+</ul>
+<p><strong>Ejemplo Real:</strong></p>
+<p>Un desarrollador implementa una feature basada en Doc A (&ldquo;tokens 1h&rdquo;). QA prueba basándose en Doc B (&ldquo;tokens 24h&rdquo;). El código hace 12h. Todos piensan que hay un bug, pero es solo que los docs mienten.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="4-actualizaremos-el-doc-después-spoiler-nunca-se-hace">4. &ldquo;Actualizaremos El Doc Después&rdquo; (Spoiler: Nunca Se Hace)</h4>
+<p><strong>El Escenario:</strong></p>
+<p><strong>Viernes 5pm, fin de sprint.</strong></p>
+<p>Dev: &ldquo;Terminé la feature SSO.&rdquo;</p>
+<p>Lead: &ldquo;¡Genial! ¿Actualizaste la documentación?&rdquo;</p>
+<p>Dev: &ldquo;Eh&hellip; no, no tuve tiempo. Lo haré el lunes.&rdquo;</p>
+<p><strong>Lunes por la mañana.</strong></p>
+<p>Dev: (3 nuevas issues asignadas, 2 bugs urgentes, 1 reunión improvisada)</p>
+<p>&ldquo;Mierda, olvidé el doc. Lo haré luego.&rdquo;</p>
+<p><strong>2 semanas después.</strong></p>
+<p>Dev: (olvidó completamente)</p>
+<p><strong>3 meses después.</strong></p>
+<p>Nuevo dev: &ldquo;¿Cómo funciona el SSO?&rdquo;</p>
+<p>Dev antiguo: &ldquo;Eh&hellip; mira el código, el doc está obsoleto.&rdquo;</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Documentar nunca es urgente</li>
+<li>❌ Sin accountability (nadie verifica)</li>
+<li>❌ Workflow separado (código → commit → &hellip; ¿doc? ¿quizás?)</li>
+<li>❌ Incentivo para documentar = cero</li>
+</ul>
+<p><strong>Estadística Real:</strong></p>
+<p>En una encuesta a 200 desarrolladores:</p>
+<ul>
+<li>92% dicen &ldquo;actualizaré el doc después&rdquo;</li>
+<li>8% realmente actualizan</li>
+<li>Retraso promedio entre cambio de código y actualización de doc: <strong>nunca</strong></li>
+</ul>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="5-onboarding-pesadillesco-nueva-persona-perdida">5. Onboarding Pesadillesco (Nueva Persona Perdida)</h4>
+<p><strong>El Escenario:</strong></p>
+<p><strong>Nuevo desarrollador, Día 1.</strong></p>
+<p>Lead: &ldquo;Lee estos 40 documentos de Notion para entender la arquitectura.&rdquo;</p>
+<p><strong>Nuevo desarrollador pasa 3 días leyendo.</strong></p>
+<p><strong>Día 4:</strong></p>
+<p>Nuevo dev: &ldquo;Leí toda la doc. ¿Puedo empezar a codear?&rdquo;</p>
+<p>Lead: &ldquo;Genial, ¿qué feature quieres atacar?&rdquo;</p>
+<p>Nuevo dev: &ldquo;La API de pagos. El doc dice que usamos Stripe con webhooks.&rdquo;</p>
+<p>Lead: &ldquo;Ah no, migramos a Adyen hace 2 meses. El doc está obsoleto.&rdquo;</p>
+<p>Nuevo dev: &ldquo;&hellip;&rdquo;</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Onboarding basado en docs obsoletos = tiempo perdido</li>
+<li>❌ Nueva persona no puede distinguir docs válidos vs obsoletos</li>
+<li>❌ Frustración masiva (&ldquo;Leí durante 3 días para nada&rdquo;)</li>
+<li>❌ Pérdida de confianza en la documentación</li>
+</ul>
+<p><strong>Resultado:</strong> Los nuevos desarrolladores abandonan rápidamente los docs y aprenden preguntando 100 preguntas a sus colegas.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="por-qué-la-documentación-muere">Por Qué La Documentación Muere</h2>
+<h3 id="razón-1-documentación-separada-del-trabajo">Razón 1: Documentación Separada Del Trabajo</h3>
+<p><strong>El Problema:</strong></p>
+<p>Los equipos usan:</p>
+<ul>
+<li><strong>GitHub</strong> para el código</li>
+<li><strong>Jira/Linear</strong> para las issues</li>
+<li><strong>Notion/Confluence</strong> para la documentación</li>
+</ul>
+<p><strong>Workflow típico:</strong></p>
+<ol>
+<li>Desarrollador trabaja en una feature en Jira</li>
+<li>Código en GitHub</li>
+<li>Merge del PR</li>
+<li>✅ ¡Feature terminada!</li>
+<li>&hellip; ¿Documentación? &ldquo;Ah sí, debo actualizarla en Notion. Luego.&rdquo;</li>
+</ol>
+<p><strong>Resultado:</strong> La documentación es una reflexión tardía (afterthought), desconectada del flujo natural de trabajo.</p>
+<p><strong>Nadie actualiza porque:</strong></p>
+<ul>
+<li>Está en una herramienta separada (cambio de contexto)</li>
+<li>No es parte del proceso de review (PR mergeado sin doc)</li>
+<li>Sin recordatorio automático (&ldquo;Olvidaste el doc&rdquo;)</li>
+</ul>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="razón-2-sin-single-source-of-truth">Razón 2: Sin Single Source Of Truth</h3>
+<p><strong>El Problema:</strong></p>
+<p>Información dispersa entre:</p>
+<ul>
+<li>Notion: Specs técnicas</li>
+<li>Confluence: Decisiones de arquitectura</li>
+<li>GitHub Wiki: Guías de setup</li>
+<li>Google Docs: Requerimientos de producto</li>
+<li>Slack: Decisiones rápidas (perdidas después de 90 días)</li>
+<li>Email: Aprobaciones de stakeholders</li>
+</ul>
+<p><strong>Resultado:</strong> <strong>6 fuentes de verdad</strong> = <strong>0 fuente de verdad</strong>.</p>
+<p>Nadie sabe dónde buscar. Nadie sabe qué info es correcta. Cada uno mantiene su propia versión mental de &ldquo;cómo funciona realmente&rdquo;.</p>
+<img src="/assets/images/blog/2025-12-24-documentation-morte-scattered-tools.svg" alt="Documentación dispersa entre 6 herramientas" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="razón-3-sin-dueño-everybodys-responsibility--nobodys-responsibility">Razón 3: Sin Dueño (Everybody&rsquo;s Responsibility = Nobody&rsquo;s Responsibility)</h3>
+<p><strong>El Problema:</strong></p>
+<p>Lead: &ldquo;¿Quién es responsable de mantener los docs actualizados?&rdquo;</p>
+<p><strong>Respuesta A:</strong> &ldquo;El equipo.&rdquo;</p>
+<p><strong>Respuesta B:</strong> &ldquo;El desarrollador que hace el cambio.&rdquo;</p>
+<p><strong>Respuesta C:</strong> &ldquo;El tech lead.&rdquo;</p>
+<p><strong>Realidad:</strong> Nadie.</p>
+<p><strong>¿Por qué?</strong></p>
+<p>Porque &ldquo;responsabilidad colectiva&rdquo; = sin accountability individual.</p>
+<p>Desarrollador: &ldquo;Olvidé actualizar el doc, pero no es crítico.&rdquo;</p>
+<p>Tech Lead: &ldquo;Pensé que el dev actualizaría el doc.&rdquo;</p>
+<p>Nuevo dev (6 meses después): &ldquo;¿Por qué este doc está obsoleto?&rdquo;</p>
+<p>Todos: 🤷</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="el-enfoque-sinra-documentación-viva-integrada-al-trabajo">El Enfoque Sinra: Documentación Viva Integrada Al Trabajo</h2>
+<p>Sinra elimina la documentación muerta al <strong>integrar contexto y trabajo en un sistema unificado</strong>.</p>
+<h3 id="el-concepto-pages--commentary--documentación-viva">El Concepto: Pages + Commentary = Documentación Viva</h3>
+<p>En Sinra, la documentación no vive en una herramienta separada. Vive <strong>con el trabajo</strong>.</p>
+<p><strong>Tres mecanismos:</strong></p>
+<ol>
+<li><strong>Pages</strong>: Documentación estructurada organizada por categorías</li>
+<li><strong>Commentary</strong>: Contexto y decisiones capturados directamente en issues y capabilities</li>
+<li><strong>Búsqueda unificada</strong>: Encuentra código, contexto y documentación en un lugar</li>
+</ol>
+<p><strong>Resultado:</strong> Imposible desincronizar (sin docs externos que mantener).</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="anatomía-de-una-feature-con-documentación-sinra">Anatomía De Una Feature Con Documentación Sinra</h3>
+<p>Retomemos el ejemplo de la autenticación.</p>
+<h4 id="enfoque-tradicional-notion--código">Enfoque Tradicional (Notion + Código)</h4>
+<p><strong>Paso 1:</strong> Escribir spec en Notion (&ldquo;RFC-042: Arquitectura Auth&rdquo;)</p>
+<p><strong>Paso 2:</strong> Codear en GitHub</p>
+<p><strong>Paso 3:</strong> Mergear el PR</p>
+<p><strong>Paso 4:</strong> &ldquo;Actualizaré el doc de Notion luego&rdquo; → nunca se hace</p>
+<p><strong>Resultado:</strong> Doc de Notion congelado, código evoluciona, desincronización total.</p>
+<img src="/assets/images/blog/2025-12-24-documentation-morte-traditional-vs-sinra.svg" alt="Enfoque tradicional vs Sinra" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="enfoque-sinra-documentación-integrada">Enfoque Sinra (Documentación Integrada)</h4>
+<p><strong>Paso 1:</strong> Crear capability &ldquo;Autenticación SSO&rdquo;</p>
+<p><strong>Descripción de la capability:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Autenticación SSO
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Permitir a los usuarios iniciar sesión vía Google y Microsoft OAuth2.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Arquitectura
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Flujo OAuth2 (no JWT)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Tokens en httpOnly cookies (no localStorage)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Refresh tokens con rotación
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Duración de sesión: 12h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Decisiones clave
+</span></span></span><span style="display:flex;"><span>[Ver commentary abajo]
+</span></span></code></pre></div><p><strong>Paso 2:</strong> Commentary de la capability (contexto capturado en tiempo real)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>@lead: ¿Por qué OAuth2 y no JWT?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@architect: JWT requiere gestionar manualmente la revocación (complejo).
+</span></span><span style="display:flex;"><span>OAuth2 con refresh tokens ofrece revocación nativa vía el proveedor.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@dev1: ¿Y por qué httpOnly cookies en lugar de localStorage?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@architect: localStorage vulnerable a ataques XSS. httpOnly cookies
+</span></span><span style="display:flex;"><span>protegen mejor contra robo de tokens.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@lead: Aprobado. Adelante.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Decisión final: OAuth2 + refresh tokens + httpOnly cookies.
+</span></span><span style="display:flex;"><span>Razón: Seguridad y simplicidad de revocación.
+</span></span></code></pre></div><p><strong>Paso 3:</strong> Issues creadas bajo la capability</p>
+<ul>
+<li><code>[AUTH-120] Implement Google OAuth2 backend</code></li>
+<li><code>[AUTH-121] Implement Microsoft OAuth2 backend</code></li>
+<li><code>[AUTH-122] Setup httpOnly cookie management</code></li>
+<li><code>[AUTH-123] Implement refresh token rotation</code></li>
+</ul>
+<p><strong>Paso 4:</strong> Desarrollo con commentary por issue</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[Issue AUTH-120: Implement Google OAuth2 backend]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@dev1: Estoy usando la lib <span style="color:#e6db74">`passport-google-oauth20`</span>. Config:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Client ID/Secret almacenados en env vars
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Redirect URL: <span style="color:#e6db74">`/auth/google/callback`</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Scopes: profile, email
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@architect: ✅ Perfecto. Asegúrate de validar el state param para CSRF.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@dev1: ✅ Hecho. Code review listo.
+</span></span></code></pre></div><p><strong>Paso 5:</strong> Código mergeado → Commentary preservado</p>
+<p><strong>6 meses después</strong>, nuevo desarrollador:</p>
+<blockquote>
+<p>&ldquo;¿Cómo funciona auth?&rdquo;</p>
+</blockquote>
+<p><strong>Respuesta:</strong> Abre la capability &ldquo;Autenticación SSO&rdquo;</p>
+<p><strong>Ve:</strong></p>
+<ul>
+<li>✅ Descripción actual de la arquitectura</li>
+<li>✅ Commentary explicando <strong>por qué</strong> OAuth2 (no solo <strong>qué</strong>)</li>
+<li>✅ Decisiones técnicas con justificaciones</li>
+<li>✅ Issues relacionadas con detalles de implementación</li>
+<li>✅ Historial completo de discusiones</li>
+</ul>
+<p><strong>Tiempo para entender:</strong> 15 minutos en lugar de 3 días.</p>
+<p><strong>Fiabilidad:</strong> 100% (porque contexto capturado en el momento del trabajo, no después).</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="los-tres-pilares-de-la-documentación-viva-sinra">Los Tres Pilares De La Documentación Viva Sinra</h3>
+<h4 id="1-pages-documentación-estructurada-por-categorías">1. Pages: Documentación Estructurada Por Categorías</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Las <strong>pages</strong> de Sinra permiten crear documentación estructurada, organizada por <strong>categorías</strong>.</p>
+<p><strong>Casos de uso:</strong></p>
+<ul>
+<li>Guías de arquitectura</li>
+<li>Documentación de API</li>
+<li>Instrucciones de setup</li>
+<li>Best practices</li>
+<li>Runbooks</li>
+</ul>
+<p><strong>Diferencia con Notion:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspecto</strong></th>
+          <th><strong>Notion/Confluence</strong></th>
+          <th><strong>Sinra Pages</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Enlace con trabajo</strong></td>
+          <td>❌ Separado</td>
+          <td>✅ Integrado (puede enlazar issues, capabilities)</td>
+      </tr>
+      <tr>
+          <td><strong>Búsqueda</strong></td>
+          <td>Siloed</td>
+          <td>Unificada (encuentra pages + issues + commentary)</td>
+      </tr>
+      <tr>
+          <td><strong>Actualización</strong></td>
+          <td>Manual (olvidada)</td>
+          <td>Incentivada (en el mismo sistema)</td>
+      </tr>
+      <tr>
+          <td><strong>Versionado</strong></td>
+          <td>Confuso</td>
+          <td>Claro (vinculado a releases)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Ejemplo: Page &ldquo;Authentication Setup&rdquo;</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Authentication Setup
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Overview
+</span></span></span><span style="display:flex;"><span>Nuestro sistema usa OAuth2 con Google y Microsoft como proveedores.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Quick Start
+</span></span></span><span style="display:flex;"><span>[Enlace a issues AUTH-120, AUTH-121]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Architecture Decisions
+</span></span></span><span style="display:flex;"><span>[Enlace a commentary de la capability Autenticación SSO]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Common Issues
+</span></span></span><span style="display:flex;"><span>[Enlace a bugs resueltos con tag #auth]
+</span></span></code></pre></div><p><strong>Beneficio:</strong> La page no está aislada. <strong>Apunta al contexto real</strong> (issues, commentary, bugs).</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="2-commentary-contexto-capturado-en-el-momento-del-trabajo">2. Commentary: Contexto Capturado En El Momento Del Trabajo</h4>
+<p><strong>El Concepto:</strong></p>
+<p>El <strong>commentary</strong> (ya explicado en el post &ldquo;Comunicación Dispersa&rdquo;) captura:</p>
+<ul>
+<li>Decisiones técnicas</li>
+<li>Justificaciones (&ldquo;por qué&rdquo;)</li>
+<li>Discusiones de equipo</li>
+<li>Cambios de enfoque</li>
+</ul>
+<p><strong>Diferencia con documentación tradicional:</strong></p>
+<p><strong>Doc tradicional (Notion):</strong></p>
+<blockquote>
+<p>&ldquo;Usamos OAuth2.&rdquo;</p>
+</blockquote>
+<p><strong>Commentary Sinra:</strong></p>
+<blockquote>
+<p>&ldquo;Usamos OAuth2 en lugar de JWT porque [razones detalladas]. Discusión completa: [enlace]. Enfoques alternativos considerados: JWT (rechazado por revocación compleja), Session cookies (rechazado porque no es stateless).&rdquo;</p>
+</blockquote>
+<p><strong>Resultado:</strong> El doc no es solo <strong>qué</strong>, sino <strong>por qué</strong> y <strong>cómo llegamos ahí</strong>.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h4 id="3-búsqueda-unificada-encuentra-todo-en-un-lugar">3. Búsqueda Unificada: Encuentra Todo En Un Lugar</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Sinra ofrece <strong>búsqueda unificada</strong> que encuentra:</p>
+<ul>
+<li>Pages de documentación</li>
+<li>Issues</li>
+<li>Capabilities</li>
+<li>Commentary</li>
+<li>Bugs</li>
+</ul>
+<p><strong>Escenario:</strong></p>
+<p>Desarrollador busca: &ldquo;OAuth2 refresh tokens&rdquo;</p>
+<p><strong>Resultados:</strong></p>
+<ol>
+<li><strong>Page</strong>: &ldquo;Authentication Setup&rdquo; → menciona refresh tokens</li>
+<li><strong>Capability</strong>: &ldquo;Autenticación SSO&rdquo; → describe arquitectura de refresh tokens</li>
+<li><strong>Issue</strong>: AUTH-123 &ldquo;Implement refresh token rotation&rdquo; → implementación detallada</li>
+<li><strong>Commentary</strong>: Discusión sobre por qué rotación es obligatoria</li>
+<li><strong>Bug</strong>: AUTH-247 &ldquo;Refresh token expiry bug&rdquo; → caso edge resuelto</li>
+</ol>
+<p><strong>Tiempo para encontrar info:</strong> &lt; 1 minuto.</p>
+<p><strong>Con Notion + GitHub + Jira separados:</strong> 30 minutos (3 búsquedas en 3 herramientas).</p>
+<img src="/assets/images/blog/2025-12-24-documentation-morte-search-comparison.svg" alt="Búsqueda siloed vs búsqueda unificada" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="ejemplo-real-dataflow-saas-analytics">Ejemplo Real: DataFlow (SaaS Analytics)</h2>
+<p><strong>DataFlow (equipo de 15 personas, plataforma analytics)</strong></p>
+<p><em>Nota: DataFlow es una empresa real que hemos anonimizado bajo un nombre ficticio para proteger su confidencialidad.</em></p>
+<h3 id="antes-de-sinra-documentación-muerta">Antes de Sinra: Documentación Muerta</h3>
+<p><strong>Stack de docs:</strong></p>
+<ul>
+<li>Notion: Specs técnicas (200+ páginas)</li>
+<li>Confluence: Decisiones de arquitectura (50+ páginas)</li>
+<li>GitHub Wiki: Guías de setup (30+ páginas)</li>
+<li>Google Docs: Specs de producto (100+ docs)</li>
+</ul>
+<p><strong>Problemas Encontrados:</strong></p>
+<ul>
+<li><strong>73% de docs obsoletos</strong> (auditoría interna reveló)</li>
+<li><strong>Onboarding: 2 semanas</strong> (nuevo dev pasa 10 días leyendo docs obsoletos)</li>
+<li><strong>Versiones múltiples</strong>: Cada feature tiene 3-5 docs contradictorios</li>
+<li><strong>Sin actualizaciones</strong>: &ldquo;Actualizaremos el doc después&rdquo; = nunca se hace</li>
+<li><strong>Frustración del equipo</strong>: &ldquo;Nadie lee los docs de todas formas&rdquo;</li>
+</ul>
+<p><strong>Incidente Revelador:</strong></p>
+<p>Nuevo desarrollador implementa feature &ldquo;Exportar CSV&rdquo; basándose en spec de Notion de hace 8 meses.</p>
+<p><strong>Spec decía:</strong> &ldquo;CSV delimitado por coma, codificación UTF-8&rdquo;</p>
+<p><strong>Código actual hacía:</strong> &ldquo;CSV delimitado por tab, codificación UTF-16 (para soporte internacional de Excel)&rdquo;</p>
+<p><strong>Resultado:</strong> Feature reimplementada incorrectamente. 1 semana perdida rehaciendo.</p>
+<p><strong>¿Por qué?</strong> Spec obsoleta, nunca actualizada después del cambio de implementación 6 meses antes.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="después-de-sinra-documentación-viva">Después de Sinra: Documentación Viva</h3>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>Cada feature documentada en <strong>descripción de capability</strong> + <strong>commentary</strong></li>
+<li>Pages de Sinra para guías de setup y arquitectura</li>
+<li>Búsqueda unificada para encontrar contexto</li>
+<li>Cero docs externos (todo en Sinra)</li>
+</ol>
+<p><strong>Resultados (Después de 5 Meses):</strong></p>
+<ul>
+<li><strong>0% docs obsoletos</strong> (imposible, porque integrado con el trabajo)</li>
+<li><strong>Onboarding: 3 días</strong> (lecturas dirigidas a capabilities clave)</li>
+<li><strong>Versión única</strong>: Capability = fuente única de verdad</li>
+<li><strong>Actualización automática</strong>: Commentary capturado durante el trabajo (no después)</li>
+<li><strong>Moral del equipo</strong>: &ldquo;¡Por fin docs fiables!&rdquo;</li>
+</ul>
+<p><strong>Cita Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;Antes, decía a los nuevos &lsquo;olvida los docs, lee el código&rsquo;. Ahora digo &rsquo;lee estas 5 capabilities y su commentary, entenderás todo&rsquo;. Onboarding dividido por 3.&rdquo;</p>
+</blockquote>
+<p><strong>Cita Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;Se acabaron las 6 versiones contradictorias de una spec. Tenemos una capability con descripción + commentary. Es LA fuente de verdad. Si cambia, actualizamos la capability. Simple.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2025-12-24-documentation-morte-before-after.svg" alt="DataFlow: Antes vs Después de Sinra" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="notion--confluence--github-wiki-vs-sinra-comparación">Notion + Confluence + GitHub Wiki vs. Sinra: Comparación</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspecto</strong></th>
+          <th><strong>Stack Multi-Docs</strong></th>
+          <th><strong>Sinra Integrado</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ubicación doc</strong></td>
+          <td>4-6 herramientas separadas</td>
+          <td>1 sistema unificado</td>
+      </tr>
+      <tr>
+          <td><strong>Sincronización código</strong></td>
+          <td>❌ Manual (olvidada)</td>
+          <td>✅ Integrada (en el trabajo)</td>
+      </tr>
+      <tr>
+          <td><strong>Obsolescencia</strong></td>
+          <td>Frecuente (70%+)</td>
+          <td>Rara (contexto vivo)</td>
+      </tr>
+      <tr>
+          <td><strong>Versiones múltiples</strong></td>
+          <td>Sí (confusión)</td>
+          <td>No (fuente única)</td>
+      </tr>
+      <tr>
+          <td><strong>Búsqueda</strong></td>
+          <td>Siloed por herramienta</td>
+          <td>Unificada (todo)</td>
+      </tr>
+      <tr>
+          <td><strong>Onboarding</strong></td>
+          <td>1-2 semanas</td>
+          <td>2-3 días</td>
+      </tr>
+      <tr>
+          <td><strong>Actualización</strong></td>
+          <td>&ldquo;Después&rdquo; = nunca</td>
+          <td>Capturada durante trabajo</td>
+      </tr>
+      <tr>
+          <td><strong>Dueño</strong></td>
+          <td>Difuso (nadie)</td>
+          <td>Claro (adjunto a capability)</td>
+      </tr>
+      <tr>
+          <td><strong>Fiabilidad</strong></td>
+          <td>30-40%</td>
+          <td>90%+</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="las-cinco-señales-de-que-tu-documentación-está-muerta">Las Cinco Señales De Que Tu Documentación Está Muerta</h2>
+<h3 id="señal-1-dices-olvida-los-docs-lee-el-código">Señal 1: Dices &ldquo;Olvida Los Docs, Lee El Código&rdquo;</h3>
+<p>Si aconsejas sistemáticamente a los nuevos no leer la documentación, tus docs están muertos.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="señal-2-nadie-sabe-qué-versión-es-correcta">Señal 2: Nadie Sabe Qué Versión Es Correcta</h3>
+<p>Si tienes 5 documentos para la misma feature y nadie sabe cuál está actualizado, tus docs están muertos.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="señal-3-el-doc-dice-una-cosa-el-código-hace-otra">Señal 3: El Doc Dice Una Cosa, El Código Hace Otra</h3>
+<p>Si tu documentación contradice el código actual, tus docs están muertos (y son peligrosos).</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="señal-4-onboarding-toma-2-semanas">Señal 4: Onboarding Toma 2+ Semanas</h3>
+<p>Si los nuevos pasan 2 semanas leyendo docs solo para reaprender todo leyendo código, tus docs están muertos.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="señal-5-actualizaré-el-doc-después">Señal 5: &ldquo;Actualizaré El Doc Después&rdquo;</h3>
+<p>Si esta frase se dice después de cada feature, tu documentación está condenada a morir.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="cómo-usar-sinra-para-documentación-viva">Cómo Usar Sinra Para Documentación Viva</h2>
+<h3 id="paso-1-crear-pages-para-guías-estructuradas">Paso 1: Crear Pages Para Guías Estructuradas</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Crear pages de Sinra para setup, arquitectura, best practices</li>
+<li>Organizar por categorías (Setup, Arquitectura, API, etc.)</li>
+<li>Enlazar pages a capabilities e issues relevantes</li>
+</ul>
+<p><strong>Resultado:</strong> Documentación estructurada accesible y vinculada al trabajo.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="paso-2-capturar-contexto-en-commentary">Paso 2: Capturar Contexto En Commentary</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Discutir decisiones técnicas en commentary de capabilities</li>
+<li>Explicar <strong>por qué</strong>, no solo <strong>qué</strong></li>
+<li>Etiquetar personas relevantes</li>
+</ul>
+<p><strong>Resultado:</strong> Contexto preservado en el momento del trabajo.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="paso-3-usar-descripción-de-capability-como-spec">Paso 3: Usar Descripción De Capability Como Spec</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Descripción de capability = spec corta y actual</li>
+<li>Enlazar a issues de implementación</li>
+<li>Actualizar descripción si arquitectura cambia</li>
+</ul>
+<p><strong>Resultado:</strong> Fuente única de verdad por feature.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h3 id="paso-4-búsqueda-unificada-para-encontrar-info">Paso 4: Búsqueda Unificada Para Encontrar Info</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Usar búsqueda de Sinra en lugar de buscar en 5 herramientas</li>
+<li>Encuentra pages, capabilities, issues, commentary en un lugar</li>
+</ul>
+<p><strong>Resultado:</strong> Respuestas instantáneas, no 30 min de búsqueda.</p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="puntos-de-acción-resucita-tu-documentación">Puntos de Acción: Resucita Tu Documentación</h2>
+<ol>
+<li><strong>Crea tus primeras pages de Sinra.</strong> Migra tus 5 guías más importantes de Notion.</li>
+<li><strong>Captura contexto en commentary.</strong> Próxima decisión técnica → escribe en capability, no en Notion.</li>
+<li><strong>Usa capabilities como specs.</strong> Descripción + Commentary = documentación viva.</li>
+<li><strong>Abandona Notion para nuevas features.</strong> Todo nuevo trabajo documentado en Sinra.</li>
+<li><strong>Onboarding con Sinra.</strong> Muestra 5 capabilities clave, no 40 docs de Notion.</li>
+</ol>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<h2 id="el-punto-clave">El Punto Clave</h2>
+<p><strong>La documentación muerta mata la productividad.</strong></p>
+<p>Entre <strong>specs obsoletas</strong>, <strong>versiones múltiples</strong>, <strong>docs contradictorios</strong> y <strong>onboarding pesadillesco</strong>, nadie confía en la documentación.</p>
+<p><strong>Sinra integra documentación y trabajo en un sistema unificado.</strong></p>
+<p>Las pages estructuran, el commentary captura el contexto, la búsqueda unifica todo.</p>
+<p><strong>El resultado:</strong></p>
+<ul>
+<li>✅ Documentación viva (actualizada con el trabajo)</li>
+<li>✅ Fuente única de verdad (sin versiones múltiples)</li>
+<li>✅ Contexto preservado (por qué, no solo qué)</li>
+<li>✅ Búsqueda unificada (encuentra todo en un lugar)</li>
+<li>✅ Onboarding rápido (3 días en lugar de 2 semanas)</li>
+</ul>
+<p><strong>Finalmente tienes documentación fiable.</strong></p>
+<p><strong>Tu yo futuro te lo agradecerá.</strong></p>
+<hr>
+<p>url: /documentation/2025/12/24/documentacion-muerta-notion-confluence.html</p>
+<p><strong>¿Listo para resucitar tu documentación?</strong> <a href="https://app.sinra.dev/users/sign_up">Inicia una prueba gratuita de Sinra →</a></p>
+<p>Descubre gestión de proyectos donde la documentación vive con el trabajo, no en un cementerio de Notion.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">¿Listo para Transformar su Gestión de Proyectos?</h2>
+      <p class="text-base-content/70 mb-6">Aplique estos insights con Sinra, la plataforma unificada para equipos modernos.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Iniciar Prueba Gratuita
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="https://sinra.dev/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">El QA Invisible: Cuando Los Tests Están …</span>
+        <span class="md:hidden">← Anterior</span>
+      </a>
+      
+
+      
+      <a href="https://sinra.dev/planning/2025/12/26/caos-backlog-nadie-sabe-q2.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">El Caos Del Backlog: Cuando Nadie Sabe …</span>
+        <span class="md:hidden">Siguiente →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/es/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/es/pricing/"
+       
+       class="link link-hover">
+      Precios
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/es/about/"
+       
+       class="link link-hover">
+      Acerca de
+    </a>
+    
+    <a href="/es/contact/"
+       
+       class="link link-hover">
+      Contacto
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Iniciar sesión
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Registrarse
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

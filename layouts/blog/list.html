@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="blog-list-page">
+  <section class="blog-hero py-16 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ i18n "blog_page_title" }}</h1>
+      <p class="text-lg text-base-content/80">{{ i18n "blog_page_description" }}</p>
+    </div>
+  </section>
+
+  <section class="blog-posts py-12 bg-base-200">
+    <div class="container mx-auto px-6 max-w-5xl">
+      {{ if .Paginator.Pages }}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range .Paginator.Pages }}
+        <article class="bg-base-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+          {{ with .Params.featured_image }}
+          <a href="{{ $.Permalink }}">
+            <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-48 object-cover" loading="lazy" width="600" height="315" />
+          </a>
+          {{ end }}
+          <div class="p-6">
+            {{ with .Params.categories }}
+            <div class="mb-2">
+              {{ range . }}<span class="badge badge-primary badge-sm badge-outline">{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+            <h2 class="text-xl font-bold mb-2">
+              <a href="{{ .Permalink }}" class="hover:text-primary transition-colors">{{ .Title }}</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4 line-clamp-3">{{ .Params.excerpt | default .Summary }}</p>
+            <div class="flex items-center justify-between text-xs text-base-content/50">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+              <a href="{{ .Permalink }}" class="link link-primary">{{ i18n "blog_read_more" }}</a>
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      {{/* Pagination */}}
+      <div class="flex justify-center items-center gap-4 mt-12">
+        {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="btn btn-outline btn-sm">{{ i18n "blog_newer_posts" }}</a>
+        {{ end }}
+        <span class="text-sm text-base-content/60">{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
+        {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="btn btn-outline btn-sm">{{ i18n "blog_older_posts" }}</a>
+        {{ end }}
+      </div>
+
+      {{ else }}
+      <p class="text-center text-base-content/70 py-16">{{ i18n "blog_no_posts" }}</p>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>From Notion To Sinra: When Your Technical Glossary Becomes Alive Through @Mentions | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/documentation/2026/01/17/living-glossary-page-mentions-sinra.html" />
+
+
+
+<meta name="description" content="Teams create technical glossaries in Notion. Six months later, nobody uses them and everyone reinvents definitions. Discover how Sinra&#39;s @page mentions transform your glossary into a living source integrated with work." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/documentation/2026/01/17/living-glossary-page-mentions-sinra.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/documentation/2026/01/17/living-glossary-page-mentions-sinra.html" />
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="From Notion To Sinra: When Your Technical Glossary Becomes Alive Through @Mentions" />
+<meta property="og:description" content="Teams create technical glossaries in Notion. Six months later, nobody uses them and everyone reinvents definitions. Discover how Sinra&#39;s @page mentions transform your glossary into a living source integrated with work." />
+<meta property="og:url"         content="http://localhost:1313/documentation/2026/01/17/living-glossary-page-mentions-sinra.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2026-01-17-glossaire-vivant-featured.png" />
+
+<meta property="article:published_time" content="2026-01-17T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Documentation" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="From Notion To Sinra: When Your Technical Glossary Becomes Alive Through @Mentions" />
+<meta name="twitter:description" content="Teams create technical glossaries in Notion. Six months later, nobody uses them and everyone reinvents definitions. Discover how Sinra&#39;s @page mentions transform your glossary into a living source integrated with work." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2026-01-17-glossaire-vivant-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2026-01-17-glossaire-vivant-featured.png" alt="From Notion To Sinra: When Your Technical Glossary Becomes Alive Through @Mentions" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/documentation/" class="badge badge-primary badge-outline">Documentation</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">From Notion To Sinra: When Your Technical Glossary Becomes Alive Through @Mentions</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Between obsolete definitions, scattered vocabulary and documentation isolated from work, nobody speaks the same language: Sinra connects glossary and execution via @pages</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2026-01-17">January 17, 2026</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="whats-a-release-candidate-here">&ldquo;What&rsquo;s A Release Candidate Here?&rdquo;</h2>
+<p><strong>Tuesday afternoon. Release planning meeting.</strong></p>
+<p>Product Manager: &ldquo;We&rsquo;ll create a release candidate on Friday for staging testing.&rdquo;</p>
+<p><strong>New developer (joined 2 weeks ago) raises hand:</strong></p>
+<p>Dev: &ldquo;Sorry, what exactly is a release candidate in our workflow?&rdquo;</p>
+<p>PM: &ldquo;Good question! We have a glossary in Notion. Check the Release Management Vocabulary page.&rdquo;</p>
+<p><strong>The developer opens Notion.</strong></p>
+<p><strong>Search: &ldquo;Release Candidate&rdquo;</strong></p>
+<p><strong>Result 1:</strong> <code>Engineering Glossary v1</code> (created 12 months ago)</p>
+<blockquote>
+<p><strong>Release Candidate (RC):</strong> Version tested internally, ready for production deployment without additional modifications.</p>
+</blockquote>
+<p><strong>Result 2:</strong> <code>Product Vocabulary 2025</code> (created 6 months ago)</p>
+<blockquote>
+<p><strong>RC (Release Candidate):</strong> Stable build deployed to staging environment for QA validation. May still receive hotfixes.</p>
+</blockquote>
+<p><strong>Result 3:</strong> <code>Developer Onboarding Guide</code> (created 3 months ago)</p>
+<blockquote>
+<p><strong>Release Candidate:</strong> Feature-complete version deployed for beta user testing. Code freeze except critical bugs.</p>
+</blockquote>
+<p><strong>The developer, puzzled:</strong></p>
+<blockquote>
+<p>&ldquo;Uh&hellip; I have three different definitions. Which one is correct?&rdquo;</p>
+</blockquote>
+<p>PM: &ldquo;Ah yes, the glossary hasn&rsquo;t been updated since we changed our process.&rdquo;</p>
+<p>Dev: &ldquo;When was that?&rdquo;</p>
+<p>PM: &ldquo;4 months ago.&rdquo;</p>
+<p>Dev: &ldquo;And the correct definition is which one?&rdquo;</p>
+<p>PM: &ldquo;Actually, now we call it a staging release. We don&rsquo;t really use the term release candidate anymore.&rdquo;</p>
+<p><strong>The developer closes Notion.</strong></p>
+<p>Dev: &ldquo;So your glossary is obsolete and you use terms that aren&rsquo;t even in it?&rdquo;</p>
+<p>PM: &ldquo;&hellip; Yes.&rdquo;</p>
+<img src="/assets/images/blog/2026-01-17-glossaire-contradictoire.svg" alt="Three contradictory definitions in the Notion glossary" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="the-problem-of-dead-glossaries">The Problem Of Dead Glossaries</h2>
+<p>Most tech teams create a glossary or vocabulary wiki. Notion, Confluence, Google Docs, GitHub Wiki.</p>
+<p><strong>Noble objective:</strong> Create a single source of truth for business and technical vocabulary.</p>
+<p><strong>Result 6 months later:</strong> Dead, obsolete glossary that nobody consults.</p>
+<h3 id="the-five-symptoms-of-a-dead-glossary">The Five Symptoms Of A Dead Glossary</h3>
+<h4 id="1-obsolete-definitions-vocabulary-evolves-glossary-doesnt">1. Obsolete Definitions (Vocabulary Evolves, Glossary Doesn&rsquo;t)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>You create a glossary with 50 carefully written definitions.</p>
+<p><strong>Months 1-2:</strong> Everyone consults it. &ldquo;Super useful!&rdquo;</p>
+<p><strong>Month 3:</strong> Team changes methodology. Terms evolve. Glossary isn&rsquo;t updated.</p>
+<p><strong>Month 6:</strong> 60% of definitions are obsolete or inaccurate.</p>
+<p><strong>Month 12:</strong> Nobody consults the glossary. Everyone has their own interpretation of terms.</p>
+<p><strong>Real Example:</strong></p>
+<p><strong>Term:</strong> &ldquo;Sprint&rdquo;</p>
+<p><strong>Glossary definition (8 months old):</strong></p>
+<blockquote>
+<p>2-week iteration with fixed objectives and Scrum ceremonies.</p>
+</blockquote>
+<p><strong>Current reality:</strong>
+Team abandoned Scrum to adopt 4-week &ldquo;cycles&rdquo; with flexible planning.</p>
+<p><strong>Result:</strong> New member reads &ldquo;sprint&rdquo; in glossary, thinks team does Scrum. Total confusion.</p>
+<img src="/assets/images/blog/2026-01-17-glossaire-obsolescence.svg" alt="Timeline of glossary obsolescence" width="800" height="400" loading="lazy">
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Vocabulary evolves with methodology</li>
+<li>❌ Glossary frozen, never updated</li>
+<li>❌ Progressive desynchronization</li>
+<li>❌ Loss of trust in glossary</li>
+</ul>
+<p><strong>Quote Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;We created a beautiful glossary in Notion. Now it mainly serves to show what we no longer do.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="2-scattered-vocabulary-each-tool-has-its-own-jargon">2. Scattered Vocabulary (Each Tool Has Its Own Jargon)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>Your team uses multiple tools. Each tool imposes its own vocabulary.</p>
+<p><strong>Typical stack:</strong></p>
+<ul>
+<li><strong>Jira:</strong> Epic, Story, Subtask, Sprint, Backlog</li>
+<li><strong>Notion:</strong> Database, Page, Block, Relation</li>
+<li><strong>GitHub:</strong> Issue, PR, Project, Milestone</li>
+<li><strong>Your business glossary:</strong> Capability, Feature, Task, Release</li>
+</ul>
+<p><strong>Result:</strong> 4 different vocabularies describing the same thing.</p>
+<p><strong>Concrete Example:</strong></p>
+<p>PM writes in Notion:</p>
+<blockquote>
+<p>&ldquo;We&rsquo;ll create a <strong>capability</strong> &ldquo;SSO Authentication&rdquo; with 5 <strong>tasks</strong> assigned to the next <strong>release</strong>.&rdquo;</p>
+</blockquote>
+<p>Dev translates in Jira:</p>
+<blockquote>
+<p>&ldquo;I created an <strong>epic</strong> &ldquo;SSO Authentication&rdquo; with 5 <strong>stories</strong> in <strong>sprint</strong> 42.&rdquo;</p>
+</blockquote>
+<p>QA translates in Slack:</p>
+<blockquote>
+<p>&ldquo;I&rsquo;m testing the <strong>feature</strong> &ldquo;SSO&rdquo; for <strong>milestone</strong> v2.4.&rdquo;</p>
+</blockquote>
+<p><strong>Nobody speaks the same language.</strong></p>
+<img src="/assets/images/blog/2026-01-17-vocabulaire-disperse.svg" alt="Vocabulary fragmented across tools" width="800" height="450" loading="lazy">
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Each tool imposes its jargon</li>
+<li>❌ Constant mental translation (capability = epic = feature?)</li>
+<li>❌ Business glossary disconnected from work tools</li>
+<li>❌ Confusion in conversations</li>
+</ul>
+<p><strong>Quote Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;When I say capability, devs think epic, QA thinks feature, and stakeholders think project. We&rsquo;re never talking about the same thing.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="3-glossary-isolated-from-work-documentation--execution">3. Glossary Isolated From Work (Documentation ≠ Execution)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>You have a beautiful glossary in Notion. But it&rsquo;s <strong>isolated from daily work</strong>.</p>
+<p><strong>Typical workflow:</strong></p>
+<ol>
+<li><strong>Write glossary</strong> in Notion (1 day, well done)</li>
+<li><strong>Create issues</strong> in Jira (Jira vocabulary, not glossary vocabulary)</li>
+<li><strong>Discuss features</strong> in Slack (everyone uses their own terms)</li>
+<li><strong>Code</strong> in GitHub (comments with technical jargon)</li>
+</ol>
+<p><strong>The Notion glossary never appears in the workflow.</strong></p>
+<p><strong>Result:</strong> Glossary = dead documentation, never consulted during work.</p>
+<p><strong>Real Example:</strong></p>
+<p><strong>Term defined in Notion glossary:</strong> &ldquo;Capability&rdquo;</p>
+<blockquote>
+<p>A high-level feature grouping multiple technical issues.</p>
+</blockquote>
+<p><strong>Usage in Jira:</strong> &ldquo;Epic&rdquo;</p>
+<p><strong>Usage in Slack:</strong> &ldquo;Feature&rdquo;</p>
+<p><strong>Usage in GitHub PR:</strong> &ldquo;Module&rdquo;</p>
+<p><strong>The glossary has no impact on vocabulary used daily.</strong></p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Glossary separated from work tools</li>
+<li>❌ No incentive to use defined vocabulary</li>
+<li>❌ Everyone uses their own terms</li>
+<li>❌ Glossary becomes obsolete because disconnected from reality</li>
+</ul>
+<p><strong>Quote QA Engineer:</strong></p>
+<blockquote>
+<p>&ldquo;We have a glossary? I didn&rsquo;t even know. I just use the terms I see in issues.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="4-contradictory-definitions-multiple-versions-no-authority">4. Contradictory Definitions (Multiple Versions, No Authority)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>Your team grows. Multiple people create definitions. Result: contradictory versions.</p>
+<p><strong>Example:</strong></p>
+<p><strong>Term:</strong> &ldquo;Hotfix&rdquo;</p>
+<p><strong>Definition A (Engineering Glossary):</strong></p>
+<blockquote>
+<p>Urgent fix deployed to production without going through the normal release cycle.</p>
+</blockquote>
+<p><strong>Definition B (Ops Guide):</strong></p>
+<blockquote>
+<p>Critical patch deployed on a maintenance branch to correct a blocking bug.</p>
+</blockquote>
+<p><strong>Definition C (QA Process):</strong></p>
+<blockquote>
+<p>Minor change deployed directly to production after quick validation (&lt; 2h).</p>
+</blockquote>
+<p><strong>Three definitions, three interpretations.</strong></p>
+<p><strong>Question:</strong> Which is correct?</p>
+<p><strong>Answer:</strong> No idea. Nobody defined an official version.</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Multiple definition sources</li>
+<li>❌ No &ldquo;official&rdquo; version</li>
+<li>❌ Impossible to know which definition is correct</li>
+<li>❌ Sterile debates about the &ldquo;true&rdquo; meaning of terms</li>
+</ul>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="5-unused-glossary-too-much-friction-to-consult">5. Unused Glossary (Too Much Friction To Consult)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>You&rsquo;re working on an issue in Jira. You see the term &ldquo;staging release.&rdquo;</p>
+<p><strong>To consult the glossary, you must:</strong></p>
+<ol>
+<li>Open a new tab</li>
+<li>Go to Notion</li>
+<li>Search for &ldquo;Glossary&rdquo;</li>
+<li>Find the right page (there are 3)</li>
+<li>Search for &ldquo;staging release&rdquo; in the page</li>
+<li>Read the definition</li>
+<li>Return to Jira</li>
+</ol>
+<p><strong>Total time:</strong> 2-3 minutes.</p>
+<p><strong>Result:</strong> You don&rsquo;t do it. You guess or ask a colleague.</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Too much friction to consult glossary</li>
+<li>❌ Context switching (Jira → Notion → Jira)</li>
+<li>❌ No direct link from work to definition</li>
+<li>❌ Nobody consults glossary in practice</li>
+</ul>
+<p><strong>Quote Developer:</strong></p>
+<blockquote>
+<p>&ldquo;The glossary is in Notion. I work in Jira and GitHub. I never go look in Notion while coding.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> Glossary ignored, vocabulary fragmented, permanent confusion.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="why-glossaries-die">Why Glossaries Die</h2>
+<h3 id="reason-1-glossary-separated-from-work-workflow">Reason 1: Glossary Separated From Work Workflow</h3>
+<p><strong>The Problem:</strong></p>
+<p>The glossary lives in one tool (Notion, Confluence).</p>
+<p>Work happens in other tools (Jira, Linear, GitHub).</p>
+<p><strong>Result:</strong> The glossary is never used during daily work.</p>
+<p><strong>Typical workflow:</strong></p>
+<ol>
+<li>PM writes spec in Notion (with glossary terms)</li>
+<li>Dev creates issues in Jira (with Jira jargon)</li>
+<li>QA tests feature (with their own terms)</li>
+<li>The glossary never appears</li>
+</ol>
+<p><strong>Nobody consults the glossary because it&rsquo;s elsewhere.</strong></p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="reason-2-no-incentive-to-keep-glossary-updated">Reason 2: No Incentive To Keep Glossary Updated</h3>
+<p><strong>The Problem:</strong></p>
+<p>Maintaining a glossary = manual work, not urgent, invisible.</p>
+<p><strong>Scenario:</strong></p>
+<p>Your team changes process. &ldquo;We no longer do sprints, we do cycles.&rdquo;</p>
+<p><strong>Who updates the glossary?</strong></p>
+<p><strong>Answer A:</strong> The PM. (&ldquo;I don&rsquo;t have time.&rdquo;)</p>
+<p><strong>Answer B:</strong> The lead dev. (&ldquo;It&rsquo;s not my job.&rdquo;)</p>
+<p><strong>Answer C:</strong> Nobody.</p>
+<p><strong>6 months later:</strong> The glossary still says &ldquo;sprint&rdquo;. New member thinks you do Scrum. Confusion.</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Updating glossary is never urgent</li>
+<li>❌ No accountability</li>
+<li>❌ Vocabulary evolves faster than glossary</li>
+<li>❌ Progressive desynchronization</li>
+</ul>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="reason-3-impossible-to-link-definitions-and-real-work">Reason 3: Impossible To Link Definitions And Real Work</h3>
+<p><strong>The Problem:</strong></p>
+<p>In Notion, you can create a beautiful glossary.</p>
+<p>But you cannot <strong>directly link a definition to an issue or capability</strong>.</p>
+<p><strong>Example:</strong></p>
+<p>You create an issue in Jira: &ldquo;Implement staging release for v2.4.&rdquo;</p>
+<p>You want the team to understand what a &ldquo;staging release&rdquo; is according to your definition.</p>
+<p><strong>In Notion:</strong> You can copy-paste the definition into the Jira description. (Redundancy, loss of synchronization if definition changes.)</p>
+<p><strong>In Jira:</strong> You can put a link to the Notion page. (But nobody clicks.)</p>
+<p><strong>Result:</strong> No direct link between vocabulary and work.</p>
+<img src="/assets/images/blog/2026-01-17-notion-glossaire-isole.svg" alt="Notion glossary isolated from work" width="800" height="450" loading="lazy">
+<p><strong>Quote CTO:</strong></p>
+<blockquote>
+<p>&ldquo;We spent 3 days creating a perfect glossary. Now nobody uses it because it&rsquo;s not integrated with our work tools.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="the-sinra-approach-living-glossary-with-page-mentions">The Sinra Approach: Living Glossary With @Page Mentions</h2>
+<p>Sinra solves the dead glossary problem with a simple mechanism: <strong>@page mentions</strong>.</p>
+<h3 id="the-concept-pages--mentions--glossary-integrated-with-work">The Concept: Pages + @Mentions = Glossary Integrated With Work</h3>
+<p>In Sinra, you create your glossary in <strong>pages</strong> (equivalent to Notion pages, but integrated with the tool).</p>
+<p><strong>Then, you can mention these pages directly in your issues and capabilities with @pages.</strong></p>
+<p><strong>Result:</strong> The glossary becomes <strong>part of the work</strong>, not external documentation.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="anatomy-of-a-living-sinra-glossary">Anatomy Of A Living Sinra Glossary</h3>
+<p>Here&rsquo;s how it works in practice.</p>
+<h4 id="step-1-create-pages-for-your-glossary">Step 1: Create Pages For Your Glossary</h4>
+<p><strong>In Sinra, you create pages organized by categories.</strong></p>
+<p><strong>Example: Category &ldquo;Release Vocabulary&rdquo;</strong></p>
+<p><strong>Page 1: Staging Release</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Staging Release
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Definition:**</span>
+</span></span><span style="display:flex;"><span>Feature-complete version deployed to staging environment for QA tests and business validation before production.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Criteria:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Code freeze (no new features)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> All automated tests pass
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Mandatory QA validation
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Duration in staging: 2-3 days minimum
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Difference with Production Release:**</span>
+</span></span><span style="display:flex;"><span>Staging release can still receive hotfixes for bugs discovered in QA.
+</span></span><span style="display:flex;"><span>Production release only receives critical patches.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Workflow:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Merge all features into <span style="color:#e6db74">`release-staging`</span> branch
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Automatic deployment to staging environment
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> QA tests
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> If validated → promotion to Production Release
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> If bugs → hotfixes → return to step 3
+</span></span></code></pre></div><p><strong>Page 2: Production Release</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Production Release
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Definition:**</span>
+</span></span><span style="display:flex;"><span>Version validated in staging, deployed to production and accessible to end users.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Criteria:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Complete QA validation in staging
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Product Manager approval
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Regression tests passed
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Monitoring and rollback plan ready
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Workflow:**</span>
+</span></span><span style="display:flex;"><span>Validated Staging Release → Git tag <span style="color:#e6db74">`v2.4.0`</span> → Production deployment
+</span></span></code></pre></div><p><strong>Page 3: Hotfix</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Hotfix
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Definition:**</span>
+</span></span><span style="display:flex;"><span>Urgent fix applied directly to a Production Release to correct a critical bug without waiting for the next cycle.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Hotfix criteria:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Blocking bug (crash, data loss, security)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Significant user impact
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> No workaround
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Workflow:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Create <span style="color:#e6db74">`hotfix/bug-description`</span> branch from production tag
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Fix + tests
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Accelerated review
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> Direct production deployment
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Merge into main branch for future integration
+</span></span></code></pre></div><p><strong>Sinra Category:</strong> &ldquo;Release Vocabulary&rdquo;</p>
+<p><strong>Result:</strong> You have a structured glossary, organized by categories, in Sinra.</p>
+<img src="/assets/images/blog/2026-01-17-sinra-pages-glossaire.svg" alt="Sinra pages organized by categories" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="step-2-mention-pages-in-issues-and-capabilities-with-pages">Step 2: Mention Pages In Issues And Capabilities With @pages</h4>
+<p><strong>Here&rsquo;s the key difference between Notion and Sinra:</strong></p>
+<p><strong>In Notion:</strong> Your glossary is in a page. Your issues are in Jira. No direct link.</p>
+<p><strong>In Sinra:</strong> Your issues and capabilities can <strong>directly mention glossary pages with @pages</strong>.</p>
+<p><strong>Example: Capability &ldquo;v2.4 Deployment&rdquo;</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Capability: v2.4 Deployment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Objective:**</span>
+</span></span><span style="display:flex;"><span>Deploy version 2.4 with new authentication and permissions features.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Workflow:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Create a @page:staging-release for QA tests
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> QA validation for 2-3 days
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> If validated, promote to @page:production-release
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> In case of critical post-deployment bug, apply a @page:hotfix
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Assigned issues:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [DEPLOY-120] Prepare staging release v2.4
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [DEPLOY-121] QA staging tests
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [DEPLOY-122] Production deployment v2.4
+</span></span></code></pre></div><p><strong>Result:</strong></p>
+<p>When a team member reads this capability, they see <strong>@page:staging-release</strong>.</p>
+<p><strong>By clicking the mention, they access directly the &ldquo;Staging Release&rdquo; page with the complete definition.</strong></p>
+<p><strong>No need to:</strong></p>
+<ul>
+<li>Open another tool</li>
+<li>Search in an external glossary</li>
+<li>Guess what &ldquo;staging release&rdquo; means</li>
+</ul>
+<p><strong>The definition is one click away.</strong></p>
+<img src="/assets/images/blog/2026-01-17-sinra-mention-pages.svg" alt="@page mentions in a Sinra capability" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="step-3-use-glossary-in-issues">Step 3: Use Glossary In Issues</h4>
+<p><strong>Same principle for issues.</strong></p>
+<p><strong>Example: Issue &ldquo;Prepare staging release v2.4&rdquo;</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># [DEPLOY-120] Prepare staging release v2.4
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Description:**</span>
+</span></span><span style="display:flex;"><span>Create a @page:staging-release for version 2.4 according to defined workflow.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Checklist:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Merge all validated features into <span style="color:#e6db74">`release-staging`</span> branch
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Verify all automated tests pass
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Deploy to staging environment
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Notify QA for validation
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Document changes since last release
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Vocabulary reference:**</span>
+</span></span><span style="display:flex;"><span>See @page:staging-release for complete workflow and validation criteria.
+</span></span></code></pre></div><p><strong>Result:</strong></p>
+<p>A developer who has never done a staging release can:</p>
+<ol>
+<li>Read the issue</li>
+<li>See @page:staging-release</li>
+<li>Click to access the complete definition</li>
+<li>Understand exactly what they need to do</li>
+</ol>
+<p><strong>No confusion. No questions to ask. Everything is documented and accessible.</strong></p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="step-4-glossary-evolves-with-work">Step 4: Glossary Evolves With Work</h4>
+<p><strong>Here&rsquo;s the magic of @page mentions:</strong></p>
+<p>When you <strong>update a page</strong> in the glossary, <strong>all @pages links automatically point to the updated version</strong>.</p>
+<p><strong>Example:</strong></p>
+<p><strong>Month 1:</strong> You define &ldquo;staging release&rdquo; with a 2-day workflow in staging.</p>
+<p><strong>Month 6:</strong> You change the workflow: now 3 days minimum in staging for more tests.</p>
+<p><strong>You update the &ldquo;Staging Release&rdquo; page in Sinra.</strong></p>
+<p><strong>Result:</strong></p>
+<ul>
+<li>All capabilities mentioning @page:staging-release point to the new definition</li>
+<li>All issues mentioning @page:staging-release point to the new definition</li>
+<li>No need to search and update 50 different places</li>
+<li><strong>Single source of truth</strong></li>
+</ul>
+<p><strong>Difference with Notion:</strong></p>
+<p><strong>In Notion:</strong></p>
+<ul>
+<li>You update the definition in the glossary</li>
+<li>But copy-pasted links in Jira/Linear remain obsolete</li>
+<li>You must manually update all places where you copied the definition</li>
+</ul>
+<p><strong>In Sinra:</strong></p>
+<ul>
+<li>You update the page</li>
+<li>All @pages automatically point to the updated version</li>
+<li>Automatic synchronization</li>
+</ul>
+<img src="/assets/images/blog/2026-01-17-sinra-glossaire-sync.svg" alt="Sinra glossary automatically synchronized via @mentions" width="800" height="400" loading="lazy">
+<p><strong>Quote Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;Before, when we changed a definition in our Notion glossary, we had to update 10 different places in Jira. With Sinra, we update the page, and all @pages point to the new version. It&rsquo;s automatic.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="the-three-pillars-of-sinras-living-glossary">The Three Pillars Of Sinra&rsquo;s Living Glossary</h3>
+<h4 id="1-pages-documentation-structured-by-categories">1. Pages: Documentation Structured By Categories</h4>
+<p><strong>The Concept:</strong></p>
+<p>Sinra <strong>pages</strong> allow you to create your glossary, organized by <strong>categories</strong>.</p>
+<p><strong>Category examples:</strong></p>
+<ul>
+<li>Release Management Vocabulary</li>
+<li>Technical Vocabulary (API, Architecture, etc.)</li>
+<li>QA Process</li>
+<li>Development Workflow</li>
+<li>Business Acronyms</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Structured glossary easy to navigate</li>
+<li>Customizable categories for your business</li>
+<li>Unified search (finds pages + issues + capabilities)</li>
+</ul>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="2-mentions-direct-link-between-glossary-and-work">2. @Mentions: Direct Link Between Glossary And Work</h4>
+<p><strong>The Concept:</strong></p>
+<p>You can <strong>mention a page</strong> directly in an issue or capability with <code>@page:page-name</code>.</p>
+<p><strong>Result:</strong></p>
+<ul>
+<li>Clickable link to definition</li>
+<li>No need to leave Sinra to consult glossary</li>
+<li>Glossary integrated in daily workflow</li>
+</ul>
+<p><strong>Difference with Notion:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Notion</strong></th>
+          <th><strong>Sinra</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Glossary</strong></td>
+          <td>✅ Yes (pages)</td>
+          <td>✅ Yes (pages)</td>
+      </tr>
+      <tr>
+          <td><strong>Link to glossary from issue</strong></td>
+          <td>⚠️ Copy Notion URL into Jira (friction)</td>
+          <td>✅ @page:term (integrated)</td>
+      </tr>
+      <tr>
+          <td><strong>Auto synchronization</strong></td>
+          <td>❌ No (copy-paste)</td>
+          <td>✅ Yes (dynamic link)</td>
+      </tr>
+      <tr>
+          <td><strong>Workflow</strong></td>
+          <td>Siloed (Notion ≠ Jira)</td>
+          <td>Unified (everything in Sinra)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h4 id="3-single-source-of-truth-one-page-one-definition">3. Single Source Of Truth: One Page, One Definition</h4>
+<p><strong>The Concept:</strong></p>
+<p>Each term has <strong>one single page</strong> in the Sinra glossary.</p>
+<p><strong>Result:</strong></p>
+<ul>
+<li>No contradictory versions</li>
+<li>Everyone points to same definition</li>
+<li>Centralized updates</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><strong>Term:</strong> &ldquo;Hotfix&rdquo;</p>
+<p><strong>Sinra Page:</strong> <code>/pages/release-vocabulary/hotfix</code></p>
+<p><strong>Mentioned in:</strong></p>
+<ul>
+<li>Capability &ldquo;Production Deployment v2.4&rdquo;: @page:hotfix</li>
+<li>Issue &ldquo;Fix critical auth bug&rdquo;: @page:hotfix</li>
+<li>Page &ldquo;Ops Workflow&rdquo;: @page:hotfix</li>
+</ul>
+<p><strong>All links point to the same page.</strong></p>
+<p><strong>If you update the &ldquo;hotfix&rdquo; definition, all @pages instantly reflect the change.</strong></p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="real-example-devstream-cicd-saas">Real Example: DevStream (CI/CD SaaS)</h2>
+<p><strong>DevStream (team of 25 people, CI/CD platform for startups)</strong></p>
+<p><em>Note: DevStream is a real company that we&rsquo;ve anonymized under a fictitious name to protect their confidentiality.</em></p>
+<h3 id="before-sinra-dead-notion-glossary">Before Sinra: Dead Notion Glossary</h3>
+<p><strong>Configuration:</strong></p>
+<ul>
+<li>Technical glossary in Notion (120 defined terms)</li>
+<li>Issues in Linear</li>
+<li>Discussions in Discord</li>
+<li>Documentation in Confluence</li>
+</ul>
+<p><strong>Problems Encountered:</strong></p>
+<p><strong>Problem 1: Obsolete glossary</strong></p>
+<p>60% of definitions were no longer current after 6 months.</p>
+<p>Example: Glossary defined &ldquo;pipeline&rdquo; as &ldquo;sequence of jobs executed sequentially.&rdquo;</p>
+<p>Reality: They had moved to parallel pipelines 4 months earlier.</p>
+<p><strong>Problem 2: Scattered vocabulary</strong></p>
+<p>Each tool imposed its jargon:</p>
+<ul>
+<li>Notion: Capability, Feature, Task</li>
+<li>Linear: Epic, Issue, Subtask</li>
+<li>Confluence: Requirement, Spec, Deliverable</li>
+</ul>
+<p><strong>Result:</strong> Nobody spoke the same language.</p>
+<p><strong>Problem 3: Glossary never used</strong></p>
+<p>Internal statistics:</p>
+<ul>
+<li>12% of team consulted glossary at least once per month</li>
+<li>88% never opened it</li>
+</ul>
+<p><strong>Reason:</strong> Too much friction (Notion ≠ Linear).</p>
+<p><strong>Quote Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;We spent a week creating a perfect glossary. Now it serves as a museum showing the vocabulary we used 8 months ago.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="after-sinra-living-glossary-with-pages">After Sinra: Living Glossary With @Pages</h3>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>
+<p><strong>Migration of Notion glossary to Sinra pages</strong> (2 days)</p>
+<ul>
+<li>Category &ldquo;Technical Vocabulary&rdquo;</li>
+<li>Category &ldquo;Release Process&rdquo;</li>
+<li>Category &ldquo;CI/CD Workflow&rdquo;</li>
+</ul>
+</li>
+<li>
+<p><strong>Use of @pages in issues and capabilities</strong></p>
+</li>
+</ol>
+<p><strong>Example: Capability &ldquo;Multi-Stage Pipeline&rdquo;</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Capability: Multi-Stage Pipeline
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Objective:**</span>
+</span></span><span style="display:flex;"><span>Allow users to define @page:pipeline with multiple stages (build, test, deploy) executed in parallel.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Architecture:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Each @page:stage can have multiple @page:jobs
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Stages execute sequentially
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Jobs in same stage execute in parallel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Issues:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [PIPE-301] Implement parallel job execution
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [PIPE-302] Add dependency management between stages
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [PIPE-303] UI to visualize multi-stage pipeline
+</span></span></code></pre></div><p><strong>Result:</strong></p>
+<p>Developer implementing PIPE-301:</p>
+<ol>
+<li>Reads capability</li>
+<li>Sees @page:pipeline, @page:stage, @page:jobs</li>
+<li>Clicks to access exact definitions</li>
+<li>Understands architecture without asking questions</li>
+</ol>
+<p><strong>Time to understand:</strong> 10 minutes (instead of 1 hour of questions to team).</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<p><strong>Results (After 4 Months):</strong></p>
+<p><strong>Metric 1: Glossary usage</strong></p>
+<ul>
+<li><strong>Before:</strong> 12% of team consulted glossary</li>
+<li><strong>After:</strong> 89% of team uses @pages regularly</li>
+<li><strong>Reason:</strong> Integrated in workflow (no need to leave Sinra)</li>
+</ul>
+<p><strong>Metric 2: Unified vocabulary</strong></p>
+<ul>
+<li><strong>Before:</strong> 3 different terms for same thing (capability = epic = requirement)</li>
+<li><strong>After:</strong> 1 single vocabulary (defined in Sinra pages)</li>
+</ul>
+<p><strong>Metric 3: Obsolete definitions</strong></p>
+<ul>
+<li><strong>Before:</strong> 60% obsolete definitions after 6 months</li>
+<li><strong>After:</strong> Only 5% (easy update because integrated with work)</li>
+</ul>
+<p><strong>Metric 4: Onboarding</strong></p>
+<ul>
+<li><strong>Before:</strong> 2 weeks for new dev to understand vocabulary</li>
+<li><strong>After:</strong> 3 days (targeted reading on key pages via @mentions in capabilities)</li>
+</ul>
+<p><strong>Quote DevStream Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;Before, our Notion glossary was dead. Now, with Sinra @pages, the glossary is alive. When we create an issue, we mention technical terms with @page. Everyone has the same definition.&rdquo;</p>
+</blockquote>
+<p><strong>Quote New Developer:</strong></p>
+<blockquote>
+<p>&ldquo;When I joined DevStream, I read 5 main capabilities. Each technical term had a @page. I clicked, read definitions, understood everything in 2 days. At my old company, it would have taken 2 weeks.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2026-01-17-devstream-before-after.svg" alt="DevStream: Before vs After Sinra" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="notion-vs-sinra-glossary-comparison">Notion vs Sinra: Glossary Comparison</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Notion Glossary</strong></th>
+          <th><strong>Sinra Glossary (Pages + @Mentions)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Create glossary</strong></td>
+          <td>✅ Yes (pages)</td>
+          <td>✅ Yes (pages by categories)</td>
+      </tr>
+      <tr>
+          <td><strong>Link from issue</strong></td>
+          <td>⚠️ External URL (friction)</td>
+          <td>✅ @page:term (integrated)</td>
+      </tr>
+      <tr>
+          <td><strong>Auto synchronization</strong></td>
+          <td>❌ No (static copy-paste)</td>
+          <td>✅ Yes (dynamic link)</td>
+      </tr>
+      <tr>
+          <td><strong>Workflow integration</strong></td>
+          <td>❌ Separated (Notion ≠ Jira/Linear)</td>
+          <td>✅ Unified (everything in Sinra)</td>
+      </tr>
+      <tr>
+          <td><strong>Unified search</strong></td>
+          <td>❌ Siloed</td>
+          <td>✅ Finds pages + issues + capabilities</td>
+      </tr>
+      <tr>
+          <td><strong>Update definition</strong></td>
+          <td>⚠️ Manual everywhere it&rsquo;s copied</td>
+          <td>✅ Automatic (all @pages updated)</td>
+      </tr>
+      <tr>
+          <td><strong>Real usage</strong></td>
+          <td>⚠️ 10-20% team</td>
+          <td>✅ 80-90% team</td>
+      </tr>
+      <tr>
+          <td><strong>Unified vocabulary</strong></td>
+          <td>❌ Each tool imposes its jargon</td>
+          <td>✅ Vocabulary defined in Sinra pages</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="the-five-signs-your-glossary-is-dead">The Five Signs Your Glossary Is Dead</h2>
+<h3 id="sign-1-nobody-consults-it-during-work">Sign 1: Nobody Consults It During Work</h3>
+<p>If your team works without ever opening the glossary, it&rsquo;s dead.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="sign-2-everyone-uses-their-own-terms">Sign 2: Everyone Uses Their Own Terms</h3>
+<p>If PM says &ldquo;capability,&rdquo; dev says &ldquo;epic,&rdquo; and QA says &ldquo;feature,&rdquo; your glossary has no impact.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="sign-3-definitions-are-obsolete">Sign 3: Definitions Are Obsolete</h3>
+<p>If your glossary describes a workflow you no longer follow, it&rsquo;s obsolete.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="sign-4-new-members-ask-100-questions-about-vocabulary">Sign 4: New Members Ask 100 Questions About Vocabulary</h3>
+<p>If onboarding consists of orally explaining business terms because the glossary isn&rsquo;t reliable, it&rsquo;s dead.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="sign-5-glossary-is-in-a-different-tool-than-work">Sign 5: Glossary Is In A Different Tool Than Work</h3>
+<p>If your glossary is in Notion/Confluence and your work in Jira/Linear/GitHub, it&rsquo;s disconnected.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="how-to-use-sinra-to-create-a-living-glossary">How To Use Sinra To Create A Living Glossary</h2>
+<h3 id="step-1-create-pages-by-categories">Step 1: Create Pages By Categories</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Create categories (Technical Vocabulary, Release Process, QA Workflow, etc.)</li>
+<li>Create one page per important term</li>
+<li>Define clearly: definition, criteria, workflow, examples</li>
+</ul>
+<p><strong>Result:</strong> Structured glossary in Sinra.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="step-2-use-pages-in-issues-and-capabilities">Step 2: Use @Pages In Issues And Capabilities</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>When you create an issue or capability, mention technical terms with @page:term</li>
+<li>Clickable link to complete definition</li>
+</ul>
+<p><strong>Result:</strong> Glossary integrated in daily work.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="step-3-update-pages-when-vocabulary-evolves">Step 3: Update Pages When Vocabulary Evolves</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Vocabulary changes? Update the concerned page</li>
+<li>All @pages automatically point to updated version</li>
+</ul>
+<p><strong>Result:</strong> Single source of truth, always up to date.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h3 id="step-4-use-unified-search-to-find-definitions">Step 4: Use Unified Search To Find Definitions</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Search for a term in Sinra</li>
+<li>Results: glossary page + issues using it + related capabilities</li>
+</ul>
+<p><strong>Result:</strong> Complete context in one place.</p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="action-points-transform-your-dead-glossary-into-living-glossary">Action Points: Transform Your Dead Glossary Into Living Glossary</h2>
+<ol>
+<li><strong>Audit your current glossary.</strong> How many definitions are obsolete? How many people consult it?</li>
+<li><strong>Migrate the 10 most important terms to Sinra pages.</strong> Category &ldquo;Business Vocabulary.&rdquo;</li>
+<li><strong>Use @pages in your next capabilities.</strong> Mention technical terms with @page.</li>
+<li><strong>Measure usage.</strong> How many people click on @pages?</li>
+<li><strong>Expand progressively.</strong> Add other terms as you go.</li>
+</ol>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="the-key-point">The Key Point</h2>
+<p><strong>Glossaries die because they&rsquo;re separated from work.</strong></p>
+<p>Between <strong>obsolete definitions</strong>, <strong>scattered vocabulary</strong>, <strong>isolated documentation</strong>, and <strong>friction to consult</strong>, nobody speaks the same language.</p>
+<p><strong>Sinra transforms your glossary into living documentation with @page mentions.</strong></p>
+<p><strong>The result:</strong></p>
+<ul>
+<li>✅ Glossary integrated in workflow (not in separate tool)</li>
+<li>✅ @pages create direct links between definitions and work</li>
+<li>✅ Single source of truth (one page, one definition)</li>
+<li>✅ Automatic synchronization (update = all @pages updated)</li>
+<li>✅ Unified vocabulary (whole team speaks same language)</li>
+</ul>
+<p><strong>Your glossary finally becomes useful.</strong></p>
+<p><strong>Your team finally speaks the same language.</strong></p>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<h2 id="discover-also-the-invisible-problems-series">Discover also the &ldquo;Invisible Problems&rdquo; series</h2>
+<ul>
+<li><strong><a href="/documentation/2025/12/24/documentation-morte-notion-confluence.html">Dead Documentation</a></strong> - 127 obsolete Confluence pages: how to make documentation alive</li>
+<li><strong><a href="/qa/2025/12/22/qa-invisible-tests-disperses.html">Invisible QA</a></strong> - 847 tests in Excel: how to make QA visible with Sinra Testings</li>
+<li><strong><a href="/planning/2025/12/26/chaos-backlog-personne-sait-q2.html">Backlog Chaos</a></strong> - 537 chaotic issues: how to organize work by releases and cycles</li>
+<li><strong><a href="/dependencies/2025/12/28/dependances-cachees-features-bloquees.html">Hidden Dependencies</a></strong> - 47% features blocked: how to make dependencies visible</li>
+<li><strong><a href="/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html">Multi-Project Syndrome</a></strong> - Developers on 4 simultaneous projects: how to limit active projects</li>
+</ul>
+<hr>
+<p>url: /documentation/2026/01/17/living-glossary-page-mentions-sinra.html</p>
+<p><strong>Ready to create a living glossary?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free Sinra trial →</a></p>
+<p>Discover project management where your business vocabulary is integrated with work, not isolated in a dead wiki.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">Where Are Your Data? European vs …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/specifications/2026/01/23/ai-specs-generation-source-code.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">Generating Specs via AI from Source …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Backlog Chaos: When Nobody Knows What&#39;s Planned For Q2 | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/planning/2025/12/26/backlog-chaos-nobody-knows-q2.html" />
+
+
+
+<meta name="description" content="Teams accumulate 500&#43; issues in a chaotic backlog. Priorities change every week. Nobody knows what will be delivered in Q2. Discover how Sinra structures work with releases, cycles and capabilities to eliminate chaos." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/planning/2025/12/26/backlog-chaos-nobody-knows-q2.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/planning/2025/12/26/backlog-chaos-nobody-knows-q2.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Backlog Chaos: When Nobody Knows What&#39;s Planned For Q2" />
+<meta property="og:description" content="Teams accumulate 500&#43; issues in a chaotic backlog. Priorities change every week. Nobody knows what will be delivered in Q2. Discover how Sinra structures work with releases, cycles and capabilities to eliminate chaos." />
+<meta property="og:url"         content="http://localhost:1313/planning/2025/12/26/backlog-chaos-nobody-knows-q2.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2025-12-26-chaos-backlog-featured.png" />
+
+<meta property="article:published_time" content="2025-12-26T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Planning" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Backlog Chaos: When Nobody Knows What&#39;s Planned For Q2" />
+<meta name="twitter:description" content="Teams accumulate 500&#43; issues in a chaotic backlog. Priorities change every week. Nobody knows what will be delivered in Q2. Discover how Sinra structures work with releases, cycles and capabilities to eliminate chaos." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2025-12-26-chaos-backlog-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/planning/2025/12/26/backlog-chaos-nobody-knows-q2.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-12-26-chaos-backlog-featured.png" alt="Backlog Chaos: When Nobody Knows What&#39;s Planned For Q2" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/planning/" class="badge badge-primary badge-outline">Planning</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Backlog Chaos: When Nobody Knows What&#39;s Planned For Q2</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Between infinite backlogs, changing priorities and &#39;last-minute urgent&#39;, planning is impossible: Sinra organizes work by releases and cycles</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2025-12-26">December 26, 2025</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="the-q2-planning-meeting">The Q2 Planning Meeting</h2>
+<p><strong>Monday morning. Quarterly planning meeting.</strong></p>
+<p>CEO: &ldquo;OK team, what are we shipping in Q2?&rdquo;</p>
+<p>Product Manager: &ldquo;Let me check the backlog&hellip;&rdquo;</p>
+<p><strong>Opens Jira.</strong></p>
+<p><strong>Backlog: 537 issues</strong></p>
+<p><strong>Available filters:</strong></p>
+<ul>
+<li>Priority: P0 (12 issues), P1 (47 issues), P2 (89 issues), P3 (145 issues), P4 (244 issues)</li>
+<li>Status: To Do (412), In Progress (67), Blocked (38), Waiting (20)</li>
+<li>Labels: 87 different labels (urgent, bug, feature, tech-debt, nice-to-have, critical, MVP, v2, Q1, Q2, maybe, someday, etc.)</li>
+</ul>
+<p><strong>PM, overwhelmed:</strong></p>
+<blockquote>
+<p>&ldquo;Uh&hellip; I have 537 issues here. I don&rsquo;t know which ones are for Q2.&rdquo;</p>
+</blockquote>
+<p>CEO: &ldquo;Don&rsquo;t we have a plan?&rdquo;</p>
+<p>PM: &ldquo;We marked some issues with the &lsquo;Q2&rsquo; label, but&hellip;&rdquo;</p>
+<p><strong>Filters by label &ldquo;Q2&rdquo;:</strong></p>
+<p><strong>Result: 94 issues</strong></p>
+<p>CEO: &ldquo;So we&rsquo;re shipping 94 features in Q2?&rdquo;</p>
+<p>PM: &ldquo;No, some are bugs, others are marked &lsquo;maybe&rsquo;, others depend on Q3 features&hellip;&rdquo;</p>
+<p>CTO: &ldquo;Plus, half of these issues don&rsquo;t have estimates. We don&rsquo;t know how long they&rsquo;ll take.&rdquo;</p>
+<p>CEO: &ldquo;And what are the developers currently working on?&rdquo;</p>
+<p><strong>PM looks at the 67 &ldquo;In Progress&rdquo; issues:</strong></p>
+<ul>
+<li>23 issues haven&rsquo;t been touched in 2+ weeks</li>
+<li>15 issues are marked &ldquo;Blocked&rdquo; but nobody knows why</li>
+<li>12 issues were started but aren&rsquo;t in the Q1 plan</li>
+<li>8 issues are &ldquo;urgent&rdquo; that appeared last week</li>
+<li>9 issues&hellip; nobody remembers why they were started</li>
+</ul>
+<p><strong>PM:</strong></p>
+<blockquote>
+<p>&ldquo;Honestly, I don&rsquo;t know exactly. The backlog is a mess.&rdquo;</p>
+</blockquote>
+<p>CEO: &ldquo;So we can&rsquo;t tell the board what we&rsquo;re shipping in Q2?&rdquo;</p>
+<p><strong>Awkward silence.</strong></p>
+<p>PM: &ldquo;We&rsquo;ll&hellip; clean up the backlog this week and get back to you.&rdquo;</p>
+<p><strong>Spoiler:</strong> The backlog will never really be sorted. The chaos will continue.</p>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Infinite backlog growth over 2 years" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="the-problem-of-backlog-chaos">The Problem Of Backlog Chaos</h2>
+<p>Most tech teams live with a chaotic backlog. An infinite pile of unstructured issues, with no clear plan.</p>
+<h3 id="the-five-symptoms-of-chaotic-backlog">The Five Symptoms Of Chaotic Backlog</h3>
+<h4 id="1-infinite-backlog-500-unsorted-issues">1. Infinite Backlog (500+ Unsorted Issues)</h4>
+<p><strong>The Scenario:</strong>
+Your Jira backlog contains 500+ issues accumulated over 2 years. Nobody knows what&rsquo;s in it.</p>
+<p><strong>How it happens:</strong></p>
+<p><strong>Year 1:</strong> Backlog starts with 20 issues. Manageable.</p>
+<p><strong>Year 1, Month 3:</strong> &ldquo;Let&rsquo;s add this idea to the backlog.&rdquo; → 45 issues.</p>
+<p><strong>Year 1, Month 6:</strong> &ldquo;The client requested this, let&rsquo;s put it in the backlog.&rdquo; → 89 issues.</p>
+<p><strong>Year 1, Month 12:</strong> &ldquo;We can&rsquo;t do this now, backlog.&rdquo; → 156 issues.</p>
+<p><strong>Year 2, Month 6:</strong> &ldquo;The backlog is at 347 issues. We should clean it up.&rdquo;</p>
+<p><strong>Nobody cleans it.</strong></p>
+<p><strong>Year 2, Month 12:</strong> <strong>537 issues.</strong></p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Backlog becomes a landfill (everything goes in, nothing comes out)</li>
+<li>❌ 80% of issues will never be done</li>
+<li>❌ Impossible to distinguish &ldquo;really important&rdquo; vs &ldquo;random idea from 2022&rdquo;</li>
+<li>❌ Cognitive cost: impossible to navigate 537 issues</li>
+</ul>
+<p><strong>Real Statistic:</strong></p>
+<p>In a survey of 150 tech teams:</p>
+<ul>
+<li>Average backlog size: <strong>423 issues</strong></li>
+<li>% of issues older than 12+ months: <strong>62%</strong></li>
+<li>% of issues that will actually be done: <strong>18%</strong></li>
+</ul>
+<p><strong>Result:</strong> The backlog is a graveyard of dead ideas that nobody dares to delete.</p>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-infinite-growth.svg" alt="Infinite backlog growth over 2 years" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="2-nobody-knows-whats-planned-when-is-it-for">2. Nobody Knows What&rsquo;s Planned (&ldquo;When Is It For?&rdquo;)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>Stakeholder: &ldquo;Feature X, when is it for?&rdquo;</p>
+<p>PM: &ldquo;Uh&hellip; let me check.&rdquo;</p>
+<p><strong>Searches in the backlog.</strong></p>
+<p><strong>Issue found:</strong></p>
+<ul>
+<li>Title: &ldquo;Implement feature X&rdquo;</li>
+<li>Priority: P2</li>
+<li>Labels: feature, maybe, Q2, nice-to-have</li>
+<li>Assignee: None</li>
+<li>Sprint: None</li>
+<li>Estimation: None</li>
+</ul>
+<p>PM: &ldquo;It&rsquo;s&hellip; in the backlog. Marked Q2. But I don&rsquo;t know exactly when.&rdquo;</p>
+<p>Stakeholder: &ldquo;Q2 starts in 3 weeks. Is it in the next release?&rdquo;</p>
+<p>PM: &ldquo;Uh&hellip; maybe? I need to check with the team.&rdquo;</p>
+<p><strong>1 week later.</strong></p>
+<p>PM (after discussion with team): &ldquo;Actually, feature X is pushed to Q3. We don&rsquo;t have capacity in Q2.&rdquo;</p>
+<p>Stakeholder: &ldquo;But the label said Q2!&rdquo;</p>
+<p>PM: &ldquo;Yes, but&hellip; priorities have changed.&rdquo;</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ No concrete plan (just vague labels)</li>
+<li>❌ Impossible to know when an issue will be done</li>
+<li>❌ Implicit promises never kept (label &ldquo;Q2&rdquo; ≠ commitment)</li>
+<li>❌ Stakeholder frustration (&ldquo;You always say Q2, but it never happens&rdquo;)</li>
+</ul>
+<p><strong>Result:</strong> Nobody trusts the backlog. We live sprint by sprint, with no visibility.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="3-changing-priorities-urgent-every-week">3. Changing Priorities (&ldquo;Urgent&rdquo; Every Week)</h4>
+<p><strong>The Scenario:</strong></p>
+<p><strong>Monday, sprint planning.</strong></p>
+<p>PM: &ldquo;This week, absolute priority: feature A.&rdquo;</p>
+<p>Team: &ldquo;OK, we&rsquo;ll start.&rdquo;</p>
+<p><strong>Wednesday.</strong></p>
+<p>PM: &ldquo;The CEO wants feature B urgently. Stop feature A, do B.&rdquo;</p>
+<p>Team: &ldquo;But&hellip; we&rsquo;re in the middle of A.&rdquo;</p>
+<p>PM: &ldquo;Sorry, B is critical. We&rsquo;ll resume A after.&rdquo;</p>
+<p><strong>Friday.</strong></p>
+<p>PM: &ldquo;Actually, VIP client requests feature C immediately. Pause B, do C.&rdquo;</p>
+<p>Team: &ldquo;Seriously?&rdquo;</p>
+<p>PM: &ldquo;It&rsquo;s urgent.&rdquo;</p>
+<p><strong>Next week, retrospective.</strong></p>
+<p>Dev 1: &ldquo;We started 3 features, finished 0.&rdquo;</p>
+<p>Dev 2: &ldquo;Because priorities change every 2 days.&rdquo;</p>
+<p>PM: &ldquo;Yes, but&hellip; everything is urgent.&rdquo;</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ &ldquo;Urgent&rdquo; loses meaning (if everything is urgent, nothing is urgent)</li>
+<li>❌ Permanent context switching (starting without finishing)</li>
+<li>❌ No feature completed (everything is &ldquo;in progress&rdquo;)</li>
+<li>❌ Team morale plummeting (frustration of never finishing)</li>
+</ul>
+<p><strong>Real Statistic:</strong></p>
+<p>Team analyzed over 1 month:</p>
+<ul>
+<li><strong>17 &ldquo;urgent&rdquo; received</strong></li>
+<li><strong>4 &ldquo;urgent&rdquo; actually handled</strong></li>
+<li><strong>0 &ldquo;urgent&rdquo; finished in announced sprint</strong></li>
+<li><strong>13 &ldquo;urgent&rdquo; forgotten or reclassified after 1 week</strong></li>
+</ul>
+<p><strong>Result:</strong> &ldquo;Urgent&rdquo; becomes noise. The team ignores urgent requests because they change too fast.</p>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-priority-chaos.svg" alt="Changing priorities: A typical week" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="4-blocked-issues-forgotten-blocked--graveyard">4. Blocked Issues Forgotten (&ldquo;Blocked&rdquo; = Graveyard)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>Dev: &ldquo;I can&rsquo;t make progress on this issue. It&rsquo;s blocked by an external dependency.&rdquo;</p>
+<p>PM: &ldquo;OK, mark it &lsquo;Blocked&rsquo;. We&rsquo;ll come back to it.&rdquo;</p>
+<p><strong>The issue is marked &ldquo;Blocked&rdquo;.</strong></p>
+<p><strong>3 weeks later.</strong></p>
+<p>Nobody remembers the blocked issue.</p>
+<p><strong>3 months later.</strong></p>
+<p><strong>Someone filters by &ldquo;Blocked&rdquo; in the backlog:</strong></p>
+<p><strong>Result: 38 blocked issues</strong></p>
+<ul>
+<li>12 blocked by dependencies that no longer exist</li>
+<li>9 blocked by people who left the company</li>
+<li>7 blocked by decisions that were made (but nobody unblocked the issue)</li>
+<li>10 blocked for vague reasons (&ldquo;waiting for clarification&rdquo; for 4 months)</li>
+</ul>
+<p><strong>PM:</strong></p>
+<blockquote>
+<p>&ldquo;We have 38 blocked issues and nobody&rsquo;s tracking them. Half could be unblocked now.&rdquo;</p>
+</blockquote>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ &ldquo;Blocked&rdquo; = oblivion (marked and forgotten)</li>
+<li>❌ No systematic tracking of blockers</li>
+<li>❌ Lost work (issues that could be unblocked remain in stasis)</li>
+<li>❌ Waste (invested effort then abandoned)</li>
+</ul>
+<p><strong>Result:</strong> Blocked issues die slowly, without anyone noticing.</p>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-blocked-forgotten.svg" alt="38 blocked issues forgotten" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="5-backlog-grooming--waste-of-time-well-sort-it-someday">5. Backlog Grooming = Waste Of Time (&ldquo;We&rsquo;ll Sort It&hellip; Someday&rdquo;)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>PM: &ldquo;We need to do backlog grooming. The backlog is a mess.&rdquo;</p>
+<p><strong>Backlog grooming meeting scheduled: 2 hours.</strong></p>
+<p><strong>Meeting starts.</strong></p>
+<p>PM: &ldquo;OK, we have 537 issues. Let&rsquo;s start with the oldest.&rdquo;</p>
+<p><strong>Issue #1 (created 18 months ago):</strong></p>
+<p>Title: &ldquo;Add dark mode&rdquo;</p>
+<p>PM: &ldquo;Do we still want this?&rdquo;</p>
+<p>Designer: &ldquo;Maybe. But not priority.&rdquo;</p>
+<p>PM: &ldquo;OK, we keep it in the backlog.&rdquo;</p>
+<p><strong>Issue #2 (created 16 months ago):</strong></p>
+<p>Title: &ldquo;Improve search performance&rdquo;</p>
+<p>PM: &ldquo;Is this still relevant?&rdquo;</p>
+<p>Dev: &ldquo;Yes, but it requires a big refactoring.&rdquo;</p>
+<p>PM: &ldquo;When do we do it?&rdquo;</p>
+<p>Dev: &ldquo;Not now. Maybe Q3?&rdquo;</p>
+<p>PM: &ldquo;OK, we keep it.&rdquo;</p>
+<p><strong>After 2 hours:</strong></p>
+<ul>
+<li><strong>Issues sorted: 23 out of 537</strong></li>
+<li><strong>Issues deleted: 2</strong></li>
+<li><strong>Issues clearly prioritized: 0</strong></li>
+</ul>
+<p><strong>Dev:</strong></p>
+<blockquote>
+<p>&ldquo;We just spent 2 hours for nothing. The backlog is still just as chaotic.&rdquo;</p>
+</blockquote>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Ineffective backlog grooming (sorting without decisions)</li>
+<li>❌ Fear of deleting (&ldquo;we might need it someday&rdquo;)</li>
+<li>❌ No clear criteria (we keep everything &ldquo;just in case&rdquo;)</li>
+<li>❌ Sorting solves nothing (backlog remains unmanageable)</li>
+</ul>
+<p><strong>Result:</strong> Backlog grooming becomes a useless chore that everyone avoids.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="why-backlogs-become-chaotic">Why Backlogs Become Chaotic</h2>
+<h3 id="reason-1-backlog--infinite-list-without-structure">Reason 1: Backlog = Infinite List Without Structure</h3>
+<p><strong>The Problem:</strong></p>
+<p>Traditional backlogs (Jira, Linear, etc.) are <strong>flat lists</strong>:</p>
+<ul>
+<li>One column of 500+ issues</li>
+<li>Some filters (priority, labels, sprints)</li>
+<li>No grouping by objective or release</li>
+</ul>
+<p><strong>Result:</strong> Impossible to answer:</p>
+<ul>
+<li>&ldquo;What are we shipping in Q2?&rdquo;</li>
+<li>&ldquo;Which features are related?&rdquo;</li>
+<li>&ldquo;When will this issue be done?&rdquo;</li>
+</ul>
+<p><strong>Why it doesn&rsquo;t work:</strong></p>
+<p>Because a flat list doesn&rsquo;t reflect the reality of work:</p>
+<ul>
+<li>Work is organized by <strong>releases</strong> (deliverable versions)</li>
+<li>Issues are grouped by <strong>capabilities</strong> (high-level features)</li>
+<li>Planning is done by <strong>cycles</strong> (defined time periods)</li>
+</ul>
+<p><strong>But Jira/Linear don&rsquo;t model that.</strong></p>
+<p><strong>Result:</strong> Everything becomes a soup of disconnected issues.</p>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-flat-vs-structured.svg" alt="Flat backlog vs structured releases" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="reason-2-everything-to-backlog--endless-dump">Reason 2: &ldquo;Everything To Backlog&rdquo; = Endless Dump</h3>
+<p><strong>The Problem:</strong></p>
+<p>Typical mentality:</p>
+<ul>
+<li>CEO idea → backlog</li>
+<li>Client request → backlog</li>
+<li>Bug found → backlog</li>
+<li>Technical improvement → backlog</li>
+<li>Random dev idea → backlog</li>
+</ul>
+<p><strong>Result:</strong> <strong>Everything</strong> goes into the backlog. Nothing comes out (except what gets done).</p>
+<p><strong>Why it&rsquo;s toxic:</strong></p>
+<p>Because 80% of issues will <strong>never</strong> be done. But they stay there, creating:</p>
+<ul>
+<li><strong>Cognitive noise</strong> (impossible to find the important in the pile)</li>
+<li><strong>False promises</strong> (stakeholders think &ldquo;in the backlog&rdquo; = &ldquo;will be done&rdquo;)</li>
+<li><strong>Guilt</strong> (&ldquo;We should do all these issues but we never have time&rdquo;)</li>
+</ul>
+<p><strong>Analogy:</strong></p>
+<p>The backlog is like a garage where we pile everything &ldquo;just in case&rdquo;. After 2 years, it&rsquo;s so full we can&rsquo;t even get in. But nobody throws anything away.</p>
+<p><strong>Result:</strong> The backlog becomes a permanent mental burden.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="reason-3-no-defined-capacity--infinite-promises">Reason 3: No Defined Capacity = Infinite Promises</h3>
+<p><strong>The Problem:</strong></p>
+<p>PM: &ldquo;We&rsquo;ll do feature X in Q2.&rdquo;</p>
+<p><strong>Q2 arrives.</strong></p>
+<p>PM: &ldquo;Actually, we didn&rsquo;t have time. We&rsquo;re pushing it to Q3.&rdquo;</p>
+<p><strong>Why?</strong></p>
+<p>Because <strong>nobody calculated the team&rsquo;s real capacity</strong>.</p>
+<p><strong>Typical scenario:</strong></p>
+<p><strong>Q2 = 12 weeks</strong></p>
+<p><strong>Team&rsquo;s real capacity:</strong> 10 weeks of effective work</p>
+<ul>
+<li>2 weeks lost: holidays, vacations, meetings, urgent bugs, interruptions</li>
+</ul>
+<p><strong>Issues planned for Q2:</strong> 15 weeks of estimated work</p>
+<p><strong>Mathematical result:</strong> <strong>Impossible to finish everything.</strong></p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Planning based on hope (&ldquo;we&rsquo;ll do it all&rdquo;), not reality</li>
+<li>❌ No capacity limit (we accept more work than we can do)</li>
+<li>❌ Guaranteed disappointment (we always deliver less than promised)</li>
+<li>❌ Destroyed credibility (stakeholders no longer believe deadlines)</li>
+</ul>
+<p><strong>Result:</strong> The team promises too much, delivers little, and loses trust.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="the-sinra-approach-releases-cycles-and-capabilities">The Sinra Approach: Releases, Cycles And Capabilities</h2>
+<p>Sinra eliminates backlog chaos by <strong>structuring work by releases, cycles and capabilities</strong> instead of an infinite flat list.</p>
+<h3 id="the-concept-releases--capabilities--issues">The Concept: Releases → Capabilities → Issues</h3>
+<p>In Sinra, work doesn&rsquo;t live in a chaotic backlog. It&rsquo;s <strong>organized by releases</strong>.</p>
+<p><strong>Three levels of structure:</strong></p>
+<ol>
+<li><strong>Releases</strong>: Deliverable product versions (v1.5, Q2 2025, etc.)</li>
+<li><strong>Capabilities</strong>: High-level features grouped in a release</li>
+<li><strong>Issues</strong>: Individual tasks under each capability</li>
+</ol>
+<p><strong>Result:</strong> Clear answer to &ldquo;What are we shipping in Q2?&rdquo; → &ldquo;Q2 release with these 8 capabilities.&rdquo;</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="anatomy-of-a-sinra-release">Anatomy Of A Sinra Release</h3>
+<p>Let&rsquo;s revisit the opening example.</p>
+<h4 id="traditional-approach-chaotic-jira-backlog">Traditional Approach (Chaotic Jira Backlog)</h4>
+<p><strong>Q2 planning:</strong></p>
+<ul>
+<li>537 issues in the backlog</li>
+<li>94 issues marked with &ldquo;Q2&rdquo; label</li>
+<li>No idea of real capacity</li>
+<li>Impossible to know what will be delivered</li>
+</ul>
+<p><strong>Result:</strong> Total chaos.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="sinra-approach-structured-release">Sinra Approach (Structured Release)</h4>
+<p><strong>Step 1:</strong> Create release &ldquo;Q2 2025&rdquo;</p>
+<p><strong>Release description:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Release Q2 2025
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Objective: Improve user onboarding and data export.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Team capacity
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 12 weeks (April-June)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 3 full-time developers
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Real capacity: 10 weeks of effective work (2 week buffer for unforeseen)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Target delivery date
+</span></span></span><span style="display:flex;"><span>June 30, 2025
+</span></span></code></pre></div><p><strong>Step 2:</strong> Define capabilities for Q2</p>
+<p>Instead of a list of 94 issues, <strong>8 clear capabilities</strong>:</p>
+<ol>
+<li><strong>Interactive onboarding</strong> (3 weeks estimated)</li>
+<li><strong>Improved CSV export</strong> (1.5 weeks)</li>
+<li><strong>Google SSO authentication</strong> (2 weeks)</li>
+<li><strong>Analytics dashboard</strong> (2.5 weeks)</li>
+<li><strong>Email notifications</strong> (1 week)</li>
+<li><strong>API webhooks</strong> (2 weeks)</li>
+<li><strong>Mobile responsive</strong> (2 weeks)</li>
+<li><strong>Database performance</strong> (1.5 weeks)</li>
+</ol>
+<p><strong>Total estimated:</strong> 15.5 weeks of work</p>
+<p><strong>Available capacity:</strong> 10 weeks</p>
+<p><strong>Immediate problem visible:</strong> <strong>Overloaded by 5.5 weeks.</strong></p>
+<p><strong>Decision:</strong> Remove 3 capabilities (least priority) to Q3.</p>
+<p><strong>Capabilities kept for Q2 (after adjustment):</strong></p>
+<ol>
+<li><strong>Interactive onboarding</strong> (3 wks)</li>
+<li><strong>Improved CSV export</strong> (1.5 wks)</li>
+<li><strong>Google SSO authentication</strong> (2 wks)</li>
+<li><strong>Analytics dashboard</strong> (2.5 wks)</li>
+<li><strong>Email notifications</strong> (1 wk)</li>
+</ol>
+<p><strong>Total:</strong> 10 weeks → <strong>Perfectly aligned with real capacity</strong>.</p>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-capacity-planning.svg" alt="Capacity planning: Reality vs Hope" width="800" height="450" loading="lazy">
+<p><strong>Step 3:</strong> Create issues under each capability</p>
+<p><strong>Capability &ldquo;Interactive onboarding&rdquo;:</strong></p>
+<ul>
+<li><code>[ONBOARD-10] Design onboarding flow (3 days)</code></li>
+<li><code>[ONBOARD-11] Implement step 1: Welcome screen (2 days)</code></li>
+<li><code>[ONBOARD-12] Implement step 2: Profile setup (3 days)</code></li>
+<li><code>[ONBOARD-13] Implement step 3: First project (2 days)</code></li>
+<li><code>[ONBOARD-14] Add progress indicators (1 day)</code></li>
+<li><code>[ONBOARD-15] Analytics tracking (1 day)</code></li>
+<li><code>[ONBOARD-16] E2E tests (2 days)</code></li>
+</ul>
+<p><strong>Total:</strong> 14 days of work (≈ 3 weeks with buffer)</p>
+<p><strong>Step 4:</strong> Plan by cycles (2-week sprints)</p>
+<p><strong>Cycle 1 (wks 1-2 April):</strong></p>
+<ul>
+<li>Capability: Interactive onboarding (phase 1)</li>
+<li>Capability: CSV export (start)</li>
+</ul>
+<p><strong>Cycle 2 (wks 3-4 April):</strong></p>
+<ul>
+<li>Capability: Interactive onboarding (end)</li>
+<li>Capability: CSV export (end)</li>
+</ul>
+<p><strong>Cycle 3 (wks 1-2 May):</strong></p>
+<ul>
+<li>Capability: Google SSO authentication</li>
+</ul>
+<p><strong>Cycle 4 (wks 3-4 May):</strong></p>
+<ul>
+<li>Capability: Analytics dashboard (phase 1)</li>
+</ul>
+<p><strong>Cycle 5 (wks 1-2 June):</strong></p>
+<ul>
+<li>Capability: Analytics dashboard (end)</li>
+<li>Capability: Email notifications</li>
+</ul>
+<p><strong>Cycle 6 (wks 3-4 June):</strong></p>
+<ul>
+<li>Buffer / polish / bugs</li>
+</ul>
+<p><strong>Result:</strong></p>
+<ul>
+<li>✅ Clear plan for Q2 (5 precise capabilities)</li>
+<li>✅ Capacity respected (10 weeks of work for 10 weeks available)</li>
+<li>✅ Total visibility (each stakeholder knows what will be delivered)</li>
+<li>✅ Realistic (no overload, no impossible promises)</li>
+</ul>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="the-three-pillars-of-sinra-planning">The Three Pillars Of Sinra Planning</h3>
+<h4 id="1-releases-group-by-deliverable-versions">1. Releases: Group By Deliverable Versions</h4>
+<p><strong>The Concept:</strong></p>
+<p>A Sinra <strong>release</strong> is a deliverable product version with:</p>
+<ul>
+<li>Target delivery date</li>
+<li>Included capabilities (high-level features)</li>
+<li>Defined team capacity</li>
+</ul>
+<p><strong>Difference with Jira backlog:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Jira Backlog</strong></th>
+          <th><strong>Sinra Release</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Structure</strong></td>
+          <td>Infinite flat list</td>
+          <td>Grouped by deliverable version</td>
+      </tr>
+      <tr>
+          <td><strong>Visibility</strong></td>
+          <td>❌ &ldquo;We&rsquo;ll see&rdquo;</td>
+          <td>✅ &ldquo;We ship this on June 30&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Capacity</strong></td>
+          <td>Ignored</td>
+          <td>Calculated and respected</td>
+      </tr>
+      <tr>
+          <td><strong>Promises</strong></td>
+          <td>Vague</td>
+          <td>Clear and achievable</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Example: Release &ldquo;Mobile App v2.0&rdquo;</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Release: Mobile App v2.0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Objective: Launch mobile app with core features.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Included capabilities
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Mobile authentication
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Offline sync
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Push notifications
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> User profile
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Search
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Delivery date
+</span></span></span><span style="display:flex;"><span>August 15, 2025
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Capacity
+</span></span></span><span style="display:flex;"><span>2 mobile devs × 8 weeks = 16 weeks available
+</span></span><span style="display:flex;"><span>Estimated: 14 weeks of work
+</span></span><span style="display:flex;"><span>Buffer: 2 weeks
+</span></span></code></pre></div><p><strong>Benefit:</strong> Everyone knows exactly what will be delivered and when.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="2-capabilities-high-level-features-not-micro-tasks">2. Capabilities: High-Level Features (Not Micro-Tasks)</h4>
+<p><strong>The Concept:</strong></p>
+<p>Instead of 94 disparate issues, group work into <strong>capabilities</strong> (understandable features).</p>
+<p><strong>Capabilities = What the user sees</strong>, not technical details.</p>
+<p><strong>Examples:</strong></p>
+<p><strong>❌ Bad (flat issues):</strong></p>
+<ul>
+<li>&ldquo;Add login button&rdquo;</li>
+<li>&ldquo;Create user table&rdquo;</li>
+<li>&ldquo;Implement JWT tokens&rdquo;</li>
+<li>&ldquo;Add password reset flow&rdquo;</li>
+<li>&ldquo;Design login screen&rdquo;</li>
+</ul>
+<p><strong>✅ Good (capability):</strong></p>
+<p><strong>Capability: User Authentication</strong></p>
+<ul>
+<li>Description: Allow users to create account and login.</li>
+<li>Issues: The 5 technical tasks above.</li>
+</ul>
+<p><strong>Why it&rsquo;s better:</strong></p>
+<p>Because stakeholders don&rsquo;t think in terms of &ldquo;JWT tokens&rdquo;. They think in terms of &ldquo;Authentication&rdquo;.</p>
+<p><strong>Result:</strong> Clear communication with stakeholders.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h4 id="3-cycles-defined-time-not-infinite-sprints">3. Cycles: Defined Time (Not Infinite Sprints)</h4>
+<p><strong>The Concept:</strong></p>
+<p>Sinra uses <strong>cycles</strong> to organize work in defined periods (2 weeks, 3 weeks, etc.).</p>
+<p><strong>Difference with Jira sprints:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Jira Sprints</strong></th>
+          <th><strong>Sinra Cycles</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Planning</strong></td>
+          <td>Sprint by sprint</td>
+          <td>Multiple cycles ahead visible</td>
+      </tr>
+      <tr>
+          <td><strong>Link with releases</strong></td>
+          <td>❌ Disconnected</td>
+          <td>✅ Linked (cycle X delivers capability Y of release Z)</td>
+      </tr>
+      <tr>
+          <td><strong>Long-term visibility</strong></td>
+          <td>None</td>
+          <td>Clear (we see entire Q2)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Example: Cycles for Q2 Release</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Cycle 1 (Apr 1-14): Onboarding capability (phase 1)
+</span></span><span style="display:flex;"><span>Cycle 2 (Apr 15-28): Onboarding capability (end) + CSV export
+</span></span><span style="display:flex;"><span>Cycle 3 (May 1-14): Google SSO
+</span></span><span style="display:flex;"><span>Cycle 4 (May 15-28): Analytics dashboard (phase 1)
+</span></span><span style="display:flex;"><span>Cycle 5 (Jun 1-14): Analytics dashboard (end) + Notifications
+</span></span><span style="display:flex;"><span>Cycle 6 (Jun 15-28): Buffer / polish
+</span></span></code></pre></div><p><strong>Benefit:</strong> Total visibility on the next 3 months (not just the next 2 weeks).</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="real-example-vertigo-saas-project-management">Real Example: Vertigo (SaaS Project Management)</h2>
+<p><strong>Vertigo (12-person team, project management tool)</strong></p>
+<p><em>Note: Vertigo is a real company that we&rsquo;ve anonymized under a fictional name to protect their confidentiality.</em></p>
+<h3 id="before-sinra-chaotic-backlog">Before Sinra: Chaotic Backlog</h3>
+<p><strong>Jira backlog state:</strong></p>
+<ul>
+<li><strong>487 issues</strong> accumulated</li>
+<li><strong>73 issues</strong> marked &ldquo;Q2&rdquo; (but nobody really knows what will be done)</li>
+<li><strong>12 different priorities</strong> (P0 to P4, urgent, critical, high, medium, low, etc.)</li>
+<li><strong>0 visibility</strong> on what will be delivered and when</li>
+</ul>
+<p><strong>Problems Encountered:</strong></p>
+<p><strong>Problem 1: Nobody knows what we&rsquo;re shipping</strong></p>
+<p>CEO: &ldquo;What are we shipping in Q2?&rdquo;</p>
+<p>PM: &ldquo;Uh&hellip; we have 73 issues marked Q2, but I don&rsquo;t know how many we can actually do.&rdquo;</p>
+<p>CEO: &ldquo;So we can&rsquo;t promise anything to the board?&rdquo;</p>
+<p>PM: &ldquo;Not really, no.&rdquo;</p>
+<p><strong>Problem 2: Changing priorities every week</strong></p>
+<p><strong>Monday:</strong> &ldquo;Feature A is absolute priority.&rdquo;</p>
+<p><strong>Wednesday:</strong> &ldquo;Actually, do feature B urgently.&rdquo;</p>
+<p><strong>Friday:</strong> &ldquo;VIP client wants feature C immediately.&rdquo;</p>
+<p><strong>Result:</strong> Team started 3 features per week, finished 0.</p>
+<p><strong>Problem 3: Forgotten blocked issues</strong></p>
+<p><strong>41 issues marked &ldquo;Blocked&rdquo;</strong>, including:</p>
+<ul>
+<li>15 blocked for 3+ months</li>
+<li>9 blocked for reasons that no longer exist</li>
+<li>12 blocked with no documented reason</li>
+</ul>
+<p>Nobody tracked them. They died slowly.</p>
+<p><strong>Problem 4: Useless backlog grooming</strong></p>
+<p><strong>2 hours of backlog grooming per week.</strong></p>
+<p><strong>Result:</strong> Sorted 20 issues out of 487. No decisions made. Backlog still chaotic.</p>
+<p><strong>Team morale:</strong> Exhausted. &ldquo;We never know what we&rsquo;re doing or why.&rdquo;</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="after-sinra-structured-releases">After Sinra: Structured Releases</h3>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li><strong>Create releases per quarter</strong> (Q2, Q3, etc.)</li>
+<li><strong>Define 6-8 capabilities per release</strong> (not 73 issues)</li>
+<li><strong>Calculate real capacity</strong> (10 effective weeks per quarter)</li>
+<li><strong>Plan cycles ahead</strong> (3-month visibility)</li>
+<li><strong>Abandon 80% of backlog</strong> (keep only what will be done in next 6 months)</li>
+</ol>
+<p><strong>Release Q2 2025 (example):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Release Q2 2025
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Objective: Improve collaboration and notifications.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Capabilities (6)
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Real-time collaboration
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Improved email notifications
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> PDF report export
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> Mobile responsive
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Slack integration
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">6.</span> Performance dashboard
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Capacity
+</span></span></span><span style="display:flex;"><span>3 devs × 10 effective weeks = 30 weeks available
+</span></span><span style="display:flex;"><span>Estimated: 28 weeks of work
+</span></span><span style="display:flex;"><span>Buffer: 2 weeks
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Delivery date
+</span></span></span><span style="display:flex;"><span>June 28, 2025
+</span></span></code></pre></div><p><strong>Results (After 6 Months):</strong></p>
+<p><strong>Metric 1: Visibility</strong></p>
+<ul>
+<li><strong>Before:</strong> &ldquo;I don&rsquo;t know what we&rsquo;re shipping in Q2&rdquo;</li>
+<li><strong>After:</strong> &ldquo;We&rsquo;re shipping 6 precise capabilities on June 28&rdquo;</li>
+</ul>
+<p><strong>Metric 2: Credibility</strong></p>
+<ul>
+<li><strong>Before:</strong> 30% of promises kept</li>
+<li><strong>After:</strong> 95% of capabilities delivered on time</li>
+</ul>
+<p><strong>Metric 3: Focus</strong></p>
+<ul>
+<li><strong>Before:</strong> 3 features started per week, 0 finished</li>
+<li><strong>After:</strong> 1 capability at a time, finished before moving to next</li>
+</ul>
+<p><strong>Metric 4: Morale</strong></p>
+<ul>
+<li><strong>Before:</strong> Team exhausted, frustrated</li>
+<li><strong>After:</strong> &ldquo;Finally we know where we&rsquo;re going&rdquo;</li>
+</ul>
+<p><strong>Metric 5: Backlog</strong></p>
+<ul>
+<li><strong>Before:</strong> 487 chaotic issues</li>
+<li><strong>After:</strong> 47 issues (what will be done in next 6 months), rest archived</li>
+</ul>
+<p><strong>Lead Developer Quote:</strong></p>
+<blockquote>
+<p>&ldquo;Before, every Monday we&rsquo;d wonder &lsquo;what&rsquo;s the priority this week?&rsquo;. Now we know exactly what we&rsquo;re shipping in Q2, Q3. We can finally plan and finish what we start.&rdquo;</p>
+</blockquote>
+<p><strong>Product Manager Quote:</strong></p>
+<blockquote>
+<p>&ldquo;I can finally answer the CEO when he asks &lsquo;what are we shipping in Q2&rsquo;. Before, I&rsquo;d stammer. Now I show him the release with 6 clear capabilities. He&rsquo;s delighted.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2025-12-26-chaos-backlog-vertigo-before-after.svg" alt="Vertigo: Before vs After Sinra" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="jira-backlog-vs-sinra-releases-comparison">Jira Backlog vs. Sinra Releases: Comparison</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Jira Backlog</strong></th>
+          <th><strong>Sinra Releases</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Structure</strong></td>
+          <td>Infinite flat list</td>
+          <td>Grouped by deliverable releases</td>
+      </tr>
+      <tr>
+          <td><strong>Q2 visibility</strong></td>
+          <td>❌ Vague (approximate labels)</td>
+          <td>✅ Clear (defined capabilities)</td>
+      </tr>
+      <tr>
+          <td><strong>Capacity</strong></td>
+          <td>Ignored</td>
+          <td>Calculated and respected</td>
+      </tr>
+      <tr>
+          <td><strong>Priorities</strong></td>
+          <td>Changing every week</td>
+          <td>Stable (defined by release)</td>
+      </tr>
+      <tr>
+          <td><strong>Blocked issues</strong></td>
+          <td>Forgotten</td>
+          <td>Tracked and resolved</td>
+      </tr>
+      <tr>
+          <td><strong>Backlog grooming</strong></td>
+          <td>Ineffective (sorting without decisions)</td>
+          <td>Unnecessary (no infinite backlog)</td>
+      </tr>
+      <tr>
+          <td><strong>Promises</strong></td>
+          <td>Not kept (overload)</td>
+          <td>Kept (realistic planning)</td>
+      </tr>
+      <tr>
+          <td><strong>Team morale</strong></td>
+          <td>Frustrated</td>
+          <td>Motivated</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="the-five-signs-your-backlog-is-chaotic">The Five Signs Your Backlog Is Chaotic</h2>
+<h3 id="sign-1-you-cant-answer-what-are-we-shipping-in-q2">Sign 1: You Can&rsquo;t Answer &ldquo;What Are We Shipping In Q2?&rdquo;</h3>
+<p>If you have to filter 500 issues for 30 minutes to find a vague answer, your backlog is chaotic.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="sign-2-backlog--300-issues">Sign 2: Backlog &gt; 300 Issues</h3>
+<p>If your backlog contains 300+ issues, 80% will never be done. It&rsquo;s a disguised graveyard.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="sign-3-urgent-every-week">Sign 3: &ldquo;Urgent&rdquo; Every Week</h3>
+<p>If you receive 3+ &ldquo;urgent&rdquo; per week that change priorities, nobody&rsquo;s controlling the chaos.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="sign-4-blocked-issues-forgotten">Sign 4: Blocked Issues Forgotten</h3>
+<p>If you have 20+ issues marked &ldquo;Blocked&rdquo; for months, your backlog is a dump.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="sign-5-backlog-grooming--waste-of-time">Sign 5: Backlog Grooming = Waste Of Time</h3>
+<p>If your backlog grooming sessions never reduce backlog size, stop wasting your time.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="how-to-use-sinra-to-eliminate-chaos">How To Use Sinra To Eliminate Chaos</h2>
+<h3 id="step-1-create-releases-per-quarter">Step 1: Create Releases Per Quarter</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Create Q2, Q3, Q4 releases</li>
+<li>Define target delivery date</li>
+<li>Calculate team&rsquo;s real capacity</li>
+</ul>
+<p><strong>Result:</strong> Clear structure (deliverable releases, not infinite backlog).</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="step-2-define-6-8-capabilities-per-release">Step 2: Define 6-8 Capabilities Per Release</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Identify the 6-8 most important capabilities for each release</li>
+<li>Estimate each capability</li>
+<li>Verify total respects capacity</li>
+</ul>
+<p><strong>Result:</strong> Realistic and achievable plan.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="step-3-plan-cycles-ahead">Step 3: Plan Cycles Ahead</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Organize capabilities by cycles (2-3 weeks)</li>
+<li>Assign capabilities to cycles</li>
+<li>See 3 months ahead visibility</li>
+</ul>
+<p><strong>Result:</strong> Team knows what to do for 3 months (not just 2 weeks).</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h3 id="step-4-abandon-infinite-backlog">Step 4: Abandon Infinite Backlog</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Keep only issues for next 6 months</li>
+<li>Archive the rest (&ldquo;maybe someday&rdquo; → trash)</li>
+<li>Accept that 80% of ideas will never be done</li>
+</ul>
+<p><strong>Result:</strong> Manageable backlog, not a dump.</p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="action-points-exit-chaos">Action Points: Exit Chaos</h2>
+<ol>
+<li><strong>Create your first Q2 release.</strong> Define 6-8 clear capabilities.</li>
+<li><strong>Calculate your real capacity.</strong> How many weeks of effective work do you have?</li>
+<li><strong>Plan cycles ahead.</strong> Organize capabilities by 2-3 week cycles.</li>
+<li><strong>Archive 80% of backlog.</strong> Keep only what will be done in 6 months.</li>
+<li><strong>Communicate the plan.</strong> Show releases and capabilities to stakeholders.</li>
+</ol>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<h2 id="the-key-point">The Key Point</h2>
+<p><strong>Backlog chaos kills productivity.</strong></p>
+<p>Between <strong>500+ unsorted issues</strong>, <strong>changing priorities</strong>, <strong>forgotten blocked issues</strong>, and <strong>impossible promises</strong>, nobody knows what will be delivered.</p>
+<p><strong>Sinra structures work by releases, cycles and capabilities.</strong></p>
+<p>Releases group, capabilities clarify, cycles plan.</p>
+<p><strong>The result:</strong></p>
+<ul>
+<li>✅ Total visibility (we know what we&rsquo;re shipping in Q2)</li>
+<li>✅ Promises kept (capacity respected)</li>
+<li>✅ Stable priorities (no changes every week)</li>
+<li>✅ Focus (finish what we start)</li>
+<li>✅ Morale restored (team knows where it&rsquo;s going)</li>
+</ul>
+<p><strong>You finally have a clear plan.</strong></p>
+<p><strong>Your stakeholders thank you.</strong></p>
+<hr>
+<p>url: /planning/2025/12/26/backlog-chaos-nobody-knows-q2.html</p>
+<p><strong>Ready to eliminate chaos?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free Sinra trial →</a></p>
+<p>Discover project management where work is structured by releases, not buried in a chaotic backlog.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/documentation/2025/12/24/dead-documentation-notion-confluence.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">Dead Documentation: Why Your …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/dependencies/2025/12/28/dependances-cachees-features-bloquees.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">Hidden Dependencies: Why Your Features …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

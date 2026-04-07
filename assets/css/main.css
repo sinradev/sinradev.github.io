@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@source "../../layouts/**/*.html";
+@source "../../content/**/*.md";
+
+@plugin "daisyui" {
+  themes: dim;
+  logs: false;
+}
+
+/* Custom overrides — only what DaisyUI Dim does not cover */
+
+@layer base {
+  a {
+    color: unset;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

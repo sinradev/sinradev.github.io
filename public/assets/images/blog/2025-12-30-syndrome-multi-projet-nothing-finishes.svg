@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    6 Projets Actifs : Aucun Terminé (Semaine 4)
+  </text>
+
+  <!-- Project A -->
+  <g>
+    <rect x="50" y="70" width="220" height="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="6"/>
+    <rect x="50" y="70" width="132" height="50" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="92" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projet A
+    </text>
+    <text x="250" y="92" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      60%
+    </text>
+    <text x="70" y="108" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      Devait finir semaine 2 • En retard 2 sem
+    </text>
+  </g>
+
+  <!-- Project B -->
+  <g>
+    <rect x="50" y="140" width="220" height="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="6"/>
+    <rect x="50" y="140" width="99" height="50" fill="#e67e22" opacity="0.3" stroke="#e67e22" stroke-width="2" rx="6"/>
+    <text x="70" y="162" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projet B
+    </text>
+    <text x="250" y="162" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#e67e22">
+      45%
+    </text>
+    <text x="70" y="178" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      Devait finir semaine 3 • En retard 1 sem
+    </text>
+  </g>
+
+  <!-- Project C -->
+  <g>
+    <rect x="50" y="210" width="220" height="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="6"/>
+    <rect x="50" y="210" width="121" height="50" fill="#9b59b6" opacity="0.3" stroke="#9b59b6" stroke-width="2" rx="6"/>
+    <text x="70" y="232" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projet C
+    </text>
+    <text x="250" y="232" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#9b59b6">
+      55%
+    </text>
+    <text x="70" y="248" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      Devait finir semaine 3 • En retard 1 sem
+    </text>
+  </g>
+
+  <!-- Project D -->
+  <g>
+    <rect x="50" y="280" width="220" height="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="6"/>
+    <rect x="50" y="280" width="154" height="50" fill="#27ae60" opacity="0.3" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="70" y="302" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projet D
+    </text>
+    <text x="250" y="302" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#27ae60">
+      70%
+    </text>
+    <text x="70" y="318" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      Seul dev à temps plein • Meilleure progression
+    </text>
+  </g>
+
+  <!-- Project E -->
+  <g>
+    <rect x="50" y="350" width="220" height="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="6"/>
+    <rect x="50" y="350" width="66" height="50" fill="#f39c12" opacity="0.3" stroke="#f39c12" stroke-width="2" rx="6"/>
+    <text x="70" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projet E
+    </text>
+    <text x="250" y="372" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#f39c12">
+      30%
+    </text>
+    <text x="70" y="388" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      Devs fragmentés sur 3 autres projets
+    </text>
+  </g>
+
+  <!-- Project F -->
+  <g>
+    <rect x="320" y="70" width="220" height="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="6"/>
+    <rect x="320" y="70" width="55" height="50" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="340" y="92" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projet F
+    </text>
+    <text x="520" y="92" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      25%
+    </text>
+    <text x="340" y="108" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      Devs à 30-50% seulement
+    </text>
+  </g>
+
+  <!-- Summary box -->
+  <rect x="320" y="140" width="460" height="260" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="6"/>
+  <text x="550" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Résultat après 4 semaines :
+  </text>
+
+  <text x="330" y="200" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#2c3e50">
+    ❌ Aucun projet terminé
+  </text>
+  <text x="330" y="220" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#2c3e50">
+    ❌ Tous les projets avancent lentement
+  </text>
+  <text x="330" y="240" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#2c3e50">
+    ❌ 5 projets en retard (sauf Projet D avec dev dédié)
+  </text>
+  <text x="330" y="260" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#2c3e50">
+    ❌ Impossible de livrer quoi que ce soit
+  </text>
+
+  <text x="550" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+    Pourquoi ?
+  </text>
+
+  <text x="330" y="315" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#7f8c8d">
+    • 8 développeurs fragmentés sur 6 projets
+  </text>
+  <text x="330" y="335" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#7f8c8d">
+    • Chaque dev sur 2-3 projets en moyenne
+  </text>
+  <text x="330" y="355" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#7f8c8d">
+    • Context switching permanent (60% temps perdu)
+  </text>
+  <text x="330" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#7f8c8d">
+    • Seul Projet D avec dev dédié progresse bien
+  </text>
+
+  <!-- Bottom impact -->
+  <rect x="50" y="415" width="730" height="25" fill="#e74c3c" rx="4"/>
+  <text x="415" y="432" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    ⚠️ Multi-projet = Rien ne se termine • Solution : 1 dev = 1 projet à la fois
+  </text>
+</svg>

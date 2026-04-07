@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technologie Avenir on Sinra</title>
+    <link>http://localhost:1313/fr/categories/technologie-avenir/</link>
+    <description>Recent content in Technologie Avenir on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/categories/technologie-avenir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La tech va devoir ralentir : ressources épuisées, applications obèses, et le retour du bas niveau</title>
+      <link>http://localhost:1313/fr/blog/posts/2026-03-23-tech-doit-ralentir-ressources-langages-bas-niveau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2026-03-23-tech-doit-ralentir-ressources-langages-bas-niveau/</guid>
+      <description>&lt;p&gt;On nous a vendu l&amp;rsquo;idée que la technologie est infinie. Des serveurs partout. Des applications plus grosses, plus riches, plus rapides. De l&amp;rsquo;IA pour tout. Du cloud illimité. Ajoutez de la RAM, ajoutez des cœurs, ajoutez des datacenters.&lt;/p&gt;&#xA;&lt;p&gt;Sauf que les ressources qui font tourner tout ça, elles, ne sont pas infinies.&lt;/p&gt;&#xA;&lt;p&gt;Et ce que personne ne veut dire clairement dans l&amp;rsquo;industrie tech, c&amp;rsquo;est que nous allons devoir ralentir. Pas parce que nous le voulons. Parce que nous n&amp;rsquo;aurons pas le choix.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

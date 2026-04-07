@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Approche Traditionnelle vs Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- TRADITIONAL APPROACH -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ Approche Traditionnelle
+    </text>
+
+    <!-- Work -->
+    <rect x="80" y="90" width="240" height="60" fill="#3498db" opacity="0.3" stroke="#3498db" stroke-width="2" rx="8"/>
+    <text x="200" y="115" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      💼 Travail
+    </text>
+    <text x="200" y="133" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">
+      GitHub + Jira
+    </text>
+
+    <!-- Separation gap -->
+    <text x="200" y="180" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#e74c3c">
+      ⚠️
+    </text>
+    <rect x="80" y="195" width="240" height="30" fill="#e74c3c" opacity="0.2" rx="4"/>
+    <text x="200" y="215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      SÉPARATION
+    </text>
+
+    <!-- Documentation -->
+    <rect x="80" y="240" width="240" height="60" fill="#f39c12" opacity="0.3" stroke="#f39c12" stroke-width="2" rx="8"/>
+    <text x="200" y="265" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      📄 Documentation
+    </text>
+    <text x="200" y="283" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f8c8d">
+      Notion + Confluence
+    </text>
+
+    <!-- Problems -->
+    <rect x="50" y="320" width="300" height="90" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="6"/>
+    <text x="200" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Conséquences :
+    </text>
+    <text x="60" y="360" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      • Doc séparée = jamais mise à jour
+    </text>
+    <text x="60" y="375" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      • Désynchronisation progressive
+    </text>
+    <text x="60" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      • "Je mettrai la doc à jour" = jamais
+    </text>
+    <text x="60" y="405" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      • 70%+ docs obsolètes
+    </text>
+  </g>
+
+  <!-- SINRA APPROACH -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ Approche Sinra
+    </text>
+
+    <!-- Unified box -->
+    <rect x="460" y="90" width="280" height="210" fill="#27ae60" opacity="0.1" stroke="#27ae60" stroke-width="3" rx="12"/>
+    <text x="600" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      🎯 Système Unifié
+    </text>
+
+    <!-- Work component -->
+    <rect x="480" y="130" width="240" height="50" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="6"/>
+    <text x="600" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+      Issues + Capabilities
+    </text>
+    <text x="600" y="168" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="white" opacity="0.9">
+      Le travail réel
+    </text>
+
+    <!-- Integration symbol -->
+    <text x="600" y="203" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#27ae60">
+      ⚡
+    </text>
+
+    <!-- Documentation component -->
+    <rect x="480" y="210" width="240" height="50" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="6"/>
+    <text x="600" y="232" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+      Pages + Commentary
+    </text>
+    <text x="600" y="248" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="white" opacity="0.9">
+      Doc intégrée au travail
+    </text>
+
+    <text x="600" y="285" font-family="Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#27ae60">
+      = Documentation vivante
+    </text>
+
+    <!-- Benefits -->
+    <rect x="450" y="320" width="300" height="90" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="6"/>
+    <text x="600" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Bénéfices :
+    </text>
+    <text x="460" y="360" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      ✅ Doc capturée pendant le travail
+    </text>
+    <text x="460" y="375" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      ✅ Impossible de désynchroniser
+    </text>
+    <text x="460" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      ✅ Recherche unifiée (tout en 1 endroit)
+    </text>
+    <text x="460" y="405" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#2c3e50">
+      ✅ 0% docs obsolètes
+    </text>
+  </g>
+</svg>

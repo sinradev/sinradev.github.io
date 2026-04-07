@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product Management on Sinra</title>
+    <link>http://localhost:1313/fr/categories/product-management/</link>
+    <description>Recent content in Product Management on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 19 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/categories/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La Roadmap Incomplète : Quand Les PO/PM Perdent Le Contrôle De Leur Planification</title>
+      <link>http://localhost:1313/fr/blog/posts/2025-12-19-roadmap-incomplete-po-pm/</link>
+      <pubDate>Fri, 19 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2025-12-19-roadmap-incomplete-po-pm/</guid>
+      <description>&lt;h2 id=&#34;le-quotidien-dun-product-owner&#34;&gt;Le Quotidien d&amp;rsquo;un Product Owner&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lundi matin, réunion de planification trimestrielle.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Vous présentez votre roadmap au management :&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;« On livrera l&amp;rsquo;authentification SSO en février, le tableau de bord analytics en mars, et l&amp;rsquo;API publique en avril. »&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mercredi, semaine 3.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Un développeur vous demande :&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;« La feature SSO, elle inclut quoi exactement ? Parce qu&amp;rsquo;on a 3 interprétations différentes dans l&amp;rsquo;équipe. »&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Vous consultez vos notes Notion. La spec dit « Authentification SSO » mais les détails sont&amp;hellip; vagues.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

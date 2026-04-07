@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outils on Sinra</title>
+    <link>http://localhost:1313/fr/categories/outils/</link>
+    <description>Recent content in Outils on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/categories/outils/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pourquoi en 2026 on demande encore d&#39;imprimer un PDF, le remplir à la main et le rescanner ?</title>
+      <link>http://localhost:1313/fr/blog/posts/2026-02-25-formulaires-pdf-archaic-admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2026-02-25-formulaires-pdf-archaic-admin/</guid>
+      <description>&lt;ol start=&#34;2026&#34;&gt;&#xA;&lt;li&gt;Nous avons l&amp;rsquo;IA générative. Les véhicules autonomes commencent à rouler. Les interfaces vocales comprennent nuances et contexte. Les applications mobile font des choses qu&amp;rsquo;on croyait impossible il y a 5 ans.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Et pourtant.&lt;/p&gt;&#xA;&lt;p&gt;Je reçois un email de mon assurance. Un formulaire PDF en pièce jointe. Pour déclarer un sinistre. Il me dit clairement : « À imprimer, signer à la main, scanner et nous renvoyer ».&lt;/p&gt;&#xA;&lt;p&gt;Le format PDF. Pas modifiable. Pas remplissable électroniquement. Juste une image numérique d&amp;rsquo;un papier qui n&amp;rsquo;existe même plus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

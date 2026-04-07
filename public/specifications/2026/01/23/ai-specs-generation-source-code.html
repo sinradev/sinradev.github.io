@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Generating Specs via AI from Source Code: When AI Analyzes Your Codebase to Create Realistic Specifications | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/specifications/2026/01/23/ai-specs-generation-source-code.html" />
+
+
+
+<meta name="description" content="Product Owners create ambitious specs without knowing technical constraints. The dev team discovers impossibility after 2 weeks. Discover how AI generates realistic specs by analyzing your source code with human supervision." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/specifications/2026/01/23/ai-specs-generation-source-code.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/specifications/2026/01/23/ai-specs-generation-source-code.html" />
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Generating Specs via AI from Source Code: When AI Analyzes Your Codebase to Create Realistic Specifications" />
+<meta property="og:description" content="Product Owners create ambitious specs without knowing technical constraints. The dev team discovers impossibility after 2 weeks. Discover how AI generates realistic specs by analyzing your source code with human supervision." />
+<meta property="og:url"         content="http://localhost:1313/specifications/2026/01/23/ai-specs-generation-source-code.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2026-01-23-specs-ia-featured.svg" />
+
+<meta property="article:published_time" content="2026-01-23T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Specifications" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Generating Specs via AI from Source Code: When AI Analyzes Your Codebase to Create Realistic Specifications" />
+<meta name="twitter:description" content="Product Owners create ambitious specs without knowing technical constraints. The dev team discovers impossibility after 2 weeks. Discover how AI generates realistic specs by analyzing your source code with human supervision." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2026-01-23-specs-ia-featured.svg" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2026-01-23-specs-ia-featured.svg" alt="Generating Specs via AI from Source Code: When AI Analyzes Your Codebase to Create Realistic Specifications" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/specifications/" class="badge badge-primary badge-outline">Specifications</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Generating Specs via AI from Source Code: When AI Analyzes Your Codebase to Create Realistic Specifications</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Between specs disconnected from reality, obsolete documentation and technical misunderstandings, PO/PMs write in a vacuum: AI analyzes code to generate specifications aligned with existing systems</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2026-01-23">January 23, 2026</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="add-multi-factor-authentication">&ldquo;Add Multi-Factor Authentication&rdquo;</h2>
+<p><strong>Monday morning. Release planning meeting.</strong></p>
+<p>Product Manager: &ldquo;For the next release, we&rsquo;re adding multi-factor authentication. It&rsquo;s a priority customer request.&rdquo;</p>
+<p><strong>The PM opens Notion and starts writing the spec:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Capability: Multi-Factor Authentication (MFA)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Objective:**</span>
+</span></span><span style="display:flex;"><span>Allow users to secure their accounts with multiple authentication methods.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Supported methods:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> SMS with 6-digit code
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Authenticator app (TOTP)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Hardware security key (FIDO2)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Email with confirmation link
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**User Stories:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> As a user, I want to enable MFA in my settings
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> As a user, I want to choose my preferred method
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> As a user, I want to configure multiple backup methods
+</span></span></code></pre></div><p>PM: &ldquo;Spec done. Estimate?&rdquo;</p>
+<p><strong>Lead Developer (who hasn&rsquo;t read the current authentication code yet):</strong></p>
+<p>Dev Lead: &ldquo;I&rsquo;d say 1 sprint, maybe 2. I&rsquo;ll assign to the team.&rdquo;</p>
+<p><strong>3 days later.</strong></p>
+<p><strong>Developer opens the authentication module source code.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># app/models/user.rb</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationRecord</span>
+</span></span><span style="display:flex;"><span>  devise <span style="color:#e6db74">:database_authenticatable</span>, <span style="color:#e6db74">:registerable</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Current authentication: email + password ONLY</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Architecture: only 1 auth method supported by devise</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># No multi-provider system</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p><strong>Developer escalates to Lead:</strong></p>
+<p>Dev: &ldquo;We have a problem. Our current authentication architecture only supports one method: email + password.&rdquo;</p>
+<p>Dev Lead: &ldquo;So what?&rdquo;</p>
+<p>Dev: &ldquo;To support MFA, we need to completely refactor the authentication system. Devise doesn&rsquo;t natively handle multiple simultaneous methods. We need to create a provider system, manage partial authentication states, implement the MFA flow&hellip;&rdquo;</p>
+<p>Dev Lead: &ldquo;Estimated time?&rdquo;</p>
+<p>Dev: &ldquo;3 weeks minimum. Plus 1 week of testing. The spec mentions 4 different methods. Each requires specific integration.&rdquo;</p>
+<p><strong>Lead Developer goes back to the PM.</strong></p>
+<p>Dev Lead: &ldquo;Your MFA spec&hellip; We can&rsquo;t do this in 2 sprints.&rdquo;</p>
+<p>PM: &ldquo;Why? It&rsquo;s just adding an option in settings.&rdquo;</p>
+<p>Dev Lead: &ldquo;No. It&rsquo;s refactoring the entire authentication architecture. The current code only supports one method. Your spec asks for 4. We need to rework everything.&rdquo;</p>
+<p>PM: &ldquo;But&hellip; I validated this spec with customers. It&rsquo;s promised for the release.&rdquo;</p>
+<p>Dev Lead: &ldquo;Should&rsquo;ve analyzed the code before writing the spec.&rdquo;</p>
+<p>PM: &ldquo;I don&rsquo;t know how to code. How am I supposed to know your architecture doesn&rsquo;t support this?&rdquo;</p>
+<p><strong>Awkward silence.</strong></p>
+<img src="/assets/images/blog/2026-01-23-spec-deconnectee.svg" alt="Spec disconnected from technical reality" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="the-problem-of-specs-disconnected-from-technical-reality">The Problem of Specs Disconnected from Technical Reality</h2>
+<p>Most Product Owners and Product Managers write specs without knowing the real state of the code.</p>
+<p><strong>Legitimate goal:</strong> Define user needs and features to develop.</p>
+<p><strong>Frequent result:</strong> Technically impossible specs, underestimated, or requiring major unanticipated refactorings.</p>
+<h3 id="the-five-symptoms-of-disconnected-specs">The Five Symptoms of Disconnected Specs</h3>
+<h4 id="1-impossible-specs-current-architecture-doesnt-allow-it">1. Impossible Specs (Current Architecture Doesn&rsquo;t Allow It)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>PM writes an ambitious spec based on user needs.</p>
+<p><strong>Week 1:</strong> Spec validated by business. &ldquo;Great feature!&rdquo;</p>
+<p><strong>Week 2:</strong> Dev team starts technical analysis. &ldquo;This is impossible with our current architecture.&rdquo;</p>
+<p><strong>Week 3:</strong> Debate on how to refactor existing code. &ldquo;This will take 6 weeks, not 2.&rdquo;</p>
+<p><strong>Week 4:</strong> PM has to announce delay to customers. &ldquo;Sorry, we underestimated the complexity.&rdquo;</p>
+<p><strong>Real Example:</strong></p>
+<p><strong>PM Spec:</strong> &ldquo;Allow users to export their data in CSV, JSON, and Excel formats.&rdquo;</p>
+<p><strong>Current code:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># app/services/export_service.rb</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExportService</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">export_to_csv</span>(data)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># CSV export only</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># No multi-format handling</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># No abstraction to add other formats</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p><strong>Reality:</strong> The export service is coupled to CSV format. To support JSON and Excel, the service needs complete refactoring, creating an abstraction, implementing each formatter.</p>
+<p><strong>Time estimated by PM:</strong> 3 days.</p>
+<p><strong>Real time:</strong> 2 weeks (refactoring + 3 formats + tests).</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ PM doesn&rsquo;t know current architecture</li>
+<li>❌ Spec written without analyzing existing code</li>
+<li>❌ Massive underestimation</li>
+<li>❌ Dev frustration (&ldquo;Another unrealistic spec&rdquo;)</li>
+</ul>
+<p><strong>Quote from Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;PMs write specs as if we&rsquo;re starting from scratch. But we have 200,000 lines of code with a specific architecture. Their specs never account for that.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="2-underestimated-specs-its-just-adding-a-button">2. Underestimated Specs (&ldquo;It&rsquo;s Just Adding a Button&rdquo;)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>PM thinks a feature is simple. &ldquo;It&rsquo;s just adding an export button.&rdquo;</p>
+<p><strong>Hidden technical reality:</strong></p>
+<ul>
+<li>Permissions: who can export?</li>
+<li>Limits: large exports crash the server</li>
+<li>Background jobs: asynchronous processing needed</li>
+<li>Notifications: email when export is ready</li>
+<li>Security: no access to other users&rsquo; data</li>
+<li>Tests: 15 edge cases to cover</li>
+</ul>
+<p><strong>PM estimation:</strong> 1 day.</p>
+<p><strong>Dev estimation after code analysis:</strong> 1 week.</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ PM sees user interface, not technical complexity</li>
+<li>❌ Specs don&rsquo;t mention hidden constraints</li>
+<li>❌ Misalignment between expectations and reality</li>
+</ul>
+<p><strong>Quote from Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;I thought it was simple. How am I supposed to know I need to handle 15 edge cases if I don&rsquo;t read the code?&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="3-specs-contradicting-existing-code-architectural-conflicts">3. Specs Contradicting Existing Code (Architectural Conflicts)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>PM writes a spec that conflicts with current architecture.</p>
+<p><strong>Example:</strong></p>
+<p><strong>PM Spec:</strong> &ldquo;Users can create custom workflows with if/else conditions.&rdquo;</p>
+<p><strong>Current code:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># app/models/workflow.rb</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Workflow</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationRecord</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Workflows = fixed linear sequence of steps</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># No conditions</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># No branches</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Rigid architecture</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p><strong>Result:</strong> The spec asks for a conditional workflow system. Current code only handles linear sequences. Complete overhaul needed.</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Spec ignorant of architectural constraints</li>
+<li>❌ Conflict between PM vision and technical reality</li>
+<li>❌ Unplanned refactorings</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="4-vague-specs-improve-performance">4. Vague Specs (&ldquo;Improve Performance&rdquo;)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>PM writes generic spec without technical context.</p>
+<p><strong>PM Spec:</strong> &ldquo;Improve dashboard page performance.&rdquo;</p>
+<p><strong>Unanswered questions:</strong></p>
+<ul>
+<li>Which parts of the page are slow?</li>
+<li>What&rsquo;s the current load time?</li>
+<li>What&rsquo;s the performance target?</li>
+<li>Which SQL queries are problematic?</li>
+</ul>
+<p><strong>Dev team must analyze code to understand:</strong></p>
+<ul>
+<li>Profiling: identify bottlenecks</li>
+<li>Measurement: load time, number of SQL queries, render time</li>
+<li>Hypotheses: caching? N+1 queries? Lazy loading?</li>
+</ul>
+<p><strong>Time wasted:</strong> 2 days of analysis before even starting.</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Spec without technical context</li>
+<li>❌ Dev must do analysis PM could have done with help</li>
+<li>❌ Time wasted understanding the real problem</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="5-specs-without-migration-context-what-about-existing-data">5. Specs Without Migration Context (&ldquo;What About Existing Data?&rdquo;)</h4>
+<p><strong>The Scenario:</strong></p>
+<p>PM writes spec for new feature. Forgets existing data.</p>
+<p><strong>Example:</strong></p>
+<p><strong>PM Spec:</strong> &ldquo;Add &lsquo;Payment Status&rsquo; field on orders. Possible values: Paid, Pending, Failed.&rdquo;</p>
+<p><strong>Forgotten question:</strong> What do we do with the 50,000 existing orders in the database?</p>
+<p><strong>Technical reality:</strong></p>
+<ul>
+<li>Data migration needed</li>
+<li>Backward compatibility logic (old code not handling new field)</li>
+<li>Deployment strategy (deploy code before or after migration?)</li>
+</ul>
+<p><strong>PM estimation:</strong> 1 day (add a field).</p>
+<p><strong>Dev estimation:</strong> 1 week (migration + backward compatibility + safe deployment).</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Spec ignores existing data and legacy code</li>
+<li>❌ Underestimation of migration impacts</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="why-specs-stay-disconnected-from-reality">Why Specs Stay Disconnected from Reality</h2>
+<h3 id="reason-1-pms-dont-read-code-and-thats-normal">Reason 1: PMs Don&rsquo;t Read Code (And That&rsquo;s Normal)</h3>
+<p><strong>The Problem:</strong></p>
+<p>Product Managers aren&rsquo;t developers. They can&rsquo;t read 200,000 lines of code to understand architecture.</p>
+<p><strong>Result:</strong> They write specs based on user understanding, not technical reality.</p>
+<p><strong>Quote from Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;I understand user needs. But I don&rsquo;t code. How am I supposed to know our authentication system only supports one method?&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="reason-2-devs-discover-constraints-too-late">Reason 2: Devs Discover Constraints Too Late</h3>
+<p><strong>The Problem:</strong></p>
+<p>Dev team discovers technical constraints <strong>after</strong> the spec is written and validated.</p>
+<p><strong>Typical workflow:</strong></p>
+<ol>
+<li><strong>Week 1:</strong> PM writes spec (no technical analysis)</li>
+<li><strong>Week 2:</strong> Spec validated by business</li>
+<li><strong>Week 3:</strong> Dev starts analyzing code (&ldquo;Oh, this is impossible&rdquo;)</li>
+<li><strong>Week 4:</strong> Debate on how to refactor</li>
+<li><strong>Week 6:</strong> Partial delivery, far from initial spec</li>
+</ol>
+<p><strong>Frustration on both sides:</strong></p>
+<ul>
+<li>PM: &ldquo;Why are you telling me this now?&rdquo;</li>
+<li>Dev: &ldquo;Why did you write this spec without consulting us?&rdquo;</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="reason-3-no-automated-source-code-analysis">Reason 3: No Automated Source Code Analysis</h3>
+<p><strong>The Problem:</strong></p>
+<p>There&rsquo;s no tool to automatically analyze code and generate technical constraints for a spec.</p>
+<p><strong>Current workflow:</strong></p>
+<ol>
+<li>PM writes spec (business vision)</li>
+<li>Dev reads spec</li>
+<li>Dev manually analyzes code</li>
+<li>Dev reports constraints</li>
+<li>PM adapts spec</li>
+<li>Back to step 2 (multiple iterations)</li>
+</ol>
+<p><strong>Time wasted:</strong> 1-2 weeks of back-and-forth.</p>
+<p><strong>Question:</strong> What if AI could analyze the source code <strong>before</strong> writing the spec?</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="the-ai-approach-analyze-code-to-generate-realistic-specs">The AI Approach: Analyze Code to Generate Realistic Specs</h2>
+<p><strong>The Concept:</strong></p>
+<p>Use AI to analyze your codebase and generate specifications aligned with existing architecture.</p>
+<h3 id="how-it-works">How It Works</h3>
+<h4 id="step-1-ai-analyzes-source-code">Step 1: AI Analyzes Source Code</h4>
+<p><strong>Input:</strong> Your codebase (files, architecture, dependencies).</p>
+<p><strong>AI Analysis:</strong></p>
+<ul>
+<li>Identify existing modules (authentication, payments, exports, etc.)</li>
+<li>Map architecture (services, models, controllers, jobs)</li>
+<li>Detect technical constraints (only one export format? linear workflows?)</li>
+<li>Identify code patterns (how features are currently implemented)</li>
+</ul>
+<p><strong>Output:</strong> Technical map of your codebase.</p>
+<p><strong>Example:</strong></p>
+<p><strong>AI analyzes authentication module:</strong></p>
+<pre tabindex="0"><code>Code analysis: app/models/user.rb, app/controllers/sessions_controller.rb
+
+Detected architecture:
+- Gem used: Devise
+- Authentication method: database_authenticatable (email + password only)
+- Constraint: Devise doesn&#39;t natively support multiple simultaneous authentication methods
+- Possible extensions: devise-two-factor (third-party gem for basic MFA)
+
+Conclusion:
+To implement MFA with multiple methods (SMS, TOTP, FIDO2), complete refactoring needed:
+1. Create authentication provider system
+2. Manage partial authentication states (email validated, awaiting MFA)
+3. Implement each provider (SMS, TOTP, FIDO2)
+4. Security tests (MFA bypass, timing attacks, etc.)
+
+Estimation: 3-4 weeks (refactoring + implementation + tests)
+</code></pre><p><strong>Result:</strong> AI understands current architecture and identifies technical constraints.</p>
+<img src="/assets/images/blog/2026-01-23-ia-analyse-code.svg" alt="AI analyzes source code" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="step-2-pm-describes-business-objective">Step 2: PM Describes Business Objective</h4>
+<p><strong>PM Input:</strong> &ldquo;I want to add multi-factor authentication to secure user accounts.&rdquo;</p>
+<p><strong>AI combines:</strong></p>
+<ul>
+<li>Business objective (MFA for security)</li>
+<li>Technical constraints (current Devise architecture)</li>
+</ul>
+<p><strong>AI generates realistic spec:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Capability: Multi-Factor Authentication (MFA)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Business objective:**</span>
+</span></span><span style="display:flex;"><span>Secure user accounts with MFA.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Identified technical constraint:**</span>
+</span></span><span style="display:flex;"><span>Current architecture (Devise) only supports email + password.
+</span></span><span style="display:flex;"><span>For MFA, refactoring needed.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Approach proposed by AI:**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Option 1 (Quick, Limited):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Use <span style="color:#e6db74">`devise-two-factor`</span> gem
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> TOTP support only (no SMS, no FIDO2)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Time: 1 week
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Limitation: only 1 MFA method supported
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Option 2 (Complete, Long):
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Refactor authentication system
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Create multiple providers (SMS, TOTP, FIDO2)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Support backup methods
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Time: 4 weeks
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Advantage: Flexible architecture for future methods
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**AI Recommendation:**</span>
+</span></span><span style="display:flex;"><span>Option 1 for MVP. Option 2 for complete version in next release.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Generated issues:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [AUTH-101] Analyze devise-two-factor security
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [AUTH-102] Implement TOTP with devise-two-factor
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [AUTH-103] MFA settings UI
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [AUTH-104] Security tests (bypass, timing attacks)
+</span></span></code></pre></div><p><strong>Result:</strong> Realistic spec, aligned with architecture, with explicit options and trade-offs.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="step-3-human-supervision-popmdev-validate">Step 3: Human Supervision (PO/PM/Dev Validate)</h4>
+<p><strong>IMPORTANT:</strong> AI <strong>doesn&rsquo;t replace</strong> humans. It <strong>assists</strong>.</p>
+<p><strong>Validation workflow:</strong></p>
+<ol>
+<li><strong>AI generates spec</strong> based on code analysis</li>
+<li><strong>PM reads spec</strong> (&ldquo;OK, AI detected technical constraints&rdquo;)</li>
+<li><strong>Dev validates technical analysis</strong> (&ldquo;Yes, correct. Devise doesn&rsquo;t natively support multi-method MFA&rdquo;)</li>
+<li><strong>PM chooses approach</strong> (&ldquo;We&rsquo;ll do Option 1 for MVP&rdquo;)</li>
+<li><strong>Dev refines estimations</strong> (&ldquo;1 week confirmed, I know devise-two-factor&rdquo;)</li>
+</ol>
+<p><strong>Human keeps control:</strong></p>
+<ul>
+<li>✅ PM chooses approach (quick vs complete)</li>
+<li>✅ Dev validates technical analysis</li>
+<li>✅ Team decides priorities</li>
+</ul>
+<p><strong>AI provides:</strong></p>
+<ul>
+<li>✅ Automatic code analysis</li>
+<li>✅ Technical constraint detection</li>
+<li>✅ Realistic spec generation</li>
+<li>✅ Time savings (2 days analysis → 10 minutes)</li>
+</ul>
+<p><strong>Quote from Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;AI analyzed the authentication code in 2 minutes. Before, I&rsquo;d ask a dev to do this analysis, it took 2 days. Now I have technical constraints before writing the spec.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2026-01-23-supervision-humaine.svg" alt="Human supervision of AI" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="the-three-pillars-of-ai-generated-specs">The Three Pillars of AI-Generated Specs</h3>
+<h4 id="1-automatic-source-code-analysis">1. Automatic Source Code Analysis</h4>
+<p><strong>The Concept:</strong></p>
+<p>AI scans your codebase to identify:</p>
+<ul>
+<li>Current architecture (patterns, frameworks, gems/packages)</li>
+<li>Technical constraints (only one format? linear workflows?)</li>
+<li>Dependencies (which parts of code are impacted by a change)</li>
+<li>Complexity (estimated time based on existing structure)</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>No need to manually read 200,000 lines of code</li>
+<li>Automatic detection of hidden constraints</li>
+<li>Technical mapping in minutes</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="2-spec-generation-aligned-with-existing-code">2. Spec Generation Aligned with Existing Code</h4>
+<p><strong>The Concept:</strong></p>
+<p>AI generates a spec that:</p>
+<ul>
+<li>Respects current architecture (or proposes refactoring if needed)</li>
+<li>Identifies impacts (which files to modify, which dependencies to check)</li>
+<li>Proposes multiple approaches (quick vs complete, MVP vs final version)</li>
+</ul>
+<p><strong>Result:</strong></p>
+<ul>
+<li>Realistic specs (no impossible promises)</li>
+<li>Explicit trade-offs (time vs features)</li>
+<li>Estimations based on real code (not intuitions)</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="3-mandatory-human-supervision">3. Mandatory Human Supervision</h4>
+<p><strong>The Concept:</strong></p>
+<p>AI assists. Human decides.</p>
+<p><strong>AI doesn&rsquo;t:</strong></p>
+<ul>
+<li>❌ Choose technical approach for you</li>
+<li>❌ Write code automatically without validation</li>
+<li>❌ Make business decisions (MVP vs complete)</li>
+</ul>
+<p><strong>Human keeps control:</strong></p>
+<ul>
+<li>✅ Validate AI&rsquo;s technical analysis</li>
+<li>✅ Choose approach (quick, complete, hybrid)</li>
+<li>✅ Adjust priorities based on business</li>
+<li>✅ Revise generated spec if needed</li>
+</ul>
+<p><strong>Key principle:</strong></p>
+<blockquote>
+<p><strong>Master AI and never be passive.</strong></p>
+</blockquote>
+<p>You use AI to save time on technical analysis. You remain master of decisions.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="real-example-techops-platform-saas-monitoring">Real Example: TechOps Platform (SaaS Monitoring)</h2>
+<p><strong>TechOps Platform (30-person team, infrastructure monitoring platform)</strong></p>
+<p><em>Note: TechOps Platform is a real company we&rsquo;ve anonymized with a fictitious name to protect their confidentiality.</em></p>
+<h3 id="before-ai-disconnected-specs-endless-back-and-forth">Before AI: Disconnected Specs, Endless Back-and-Forth</h3>
+<p><strong>Configuration:</strong></p>
+<ul>
+<li>Specs written in Notion by PMs</li>
+<li>Manual technical analysis by lead devs</li>
+<li>Back-and-forth: 1-2 weeks per spec</li>
+</ul>
+<p><strong>Problem Encountered:</strong></p>
+<p><strong>PM Spec:</strong> &ldquo;Allow users to export metrics in Prometheus, Grafana JSON, and CSV formats.&rdquo;</p>
+<p><strong>Dev analysis (after 3 days):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># app/services/metrics_exporter.rb</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MetricsExporter</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">export</span>(metrics)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># CSV export only</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># No abstraction for multi-format</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Prometheus and Grafana JSON = complex formats (time series, labels, metadata)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p><strong>Dev conclusion:</strong> &ldquo;Need to refactor service, create formatter system, implement Prometheus and Grafana JSON. 3 weeks minimum.&rdquo;</p>
+<p><strong>PM:</strong> &ldquo;But I promised this to customers for the release in 2 weeks.&rdquo;</p>
+<p><strong>Result:</strong> Release delayed by 4 weeks.</p>
+<p><strong>Quote from TechOps Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;We wrote ambitious specs without knowing if they were technically feasible. Dev team discovered impossibilities after validation. It was frustrating for everyone.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="after-ai-code-analysis-before-spec">After AI: Code Analysis Before Spec</h3>
+<p><strong>Workflow with AI:</strong></p>
+<ol>
+<li>
+<p><strong>PM describes objective:</strong> &ldquo;I want to enable metrics export to Prometheus and Grafana.&rdquo;</p>
+</li>
+<li>
+<p><strong>AI analyzes code:</strong></p>
+</li>
+</ol>
+<pre tabindex="0"><code>Analysis: app/services/metrics_exporter.rb
+
+Detected architecture:
+- CSV export only
+- No abstraction for multi-format
+- Metrics stored as time series in PostgreSQL
+
+Constraint:
+Prometheus and Grafana JSON require:
+- Time series → specific format conversion
+- Labels and metadata handling
+- Export service refactoring
+
+Possible approaches:
+
+Option 1 (Quick):
+- Use `prometheus-client` gem for Prometheus export
+- Implement Grafana JSON manually (simple format)
+- Keep existing CSV export
+- Time: 1 week
+
+Option 2 (Complete):
+- Refactor `MetricsExporter` into formatter system
+- Implement Prometheus, Grafana JSON, CSV as formatters
+- Extensible architecture for future formats
+- Time: 3 weeks
+</code></pre><ol start="3">
+<li><strong>AI generates spec:</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Capability: Multi-Format Export (Prometheus, Grafana JSON, CSV)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Objective:**</span>
+</span></span><span style="display:flex;"><span>Enable metrics export to Prometheus and Grafana.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Technical constraint:**</span>
+</span></span><span style="display:flex;"><span>Current export = CSV only. Refactoring needed.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Recommended approach (Option 1 - MVP):**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Prometheus export via <span style="color:#e6db74">`prometheus-client`</span> gem
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Grafana JSON export (simple format)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Keep existing CSV export
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Time: 1 week
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Issues:**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [EXPORT-201] Implement Prometheus export
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [EXPORT-202] Implement Grafana JSON export
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [EXPORT-203] Export format selection UI
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [EXPORT-204] Format tests (Prometheus, Grafana, CSV)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Future approach (Option 2 - Extensible architecture):**</span>
+</span></span><span style="display:flex;"><span>Refactor into formatter system to ease adding new formats.
+</span></span><span style="display:flex;"><span>Planned for Q2 release.
+</span></span></code></pre></div><ol start="4">
+<li>
+<p><strong>PM validates spec</strong> (&ldquo;OK, MVP in 1 week, complete version later&rdquo;)</p>
+</li>
+<li>
+<p><strong>Dev confirms estimation</strong> (&ldquo;1 week confirmed&rdquo;)</p>
+</li>
+</ol>
+<p><strong>Total time:</strong> 30 minutes (instead of 2 weeks back-and-forth).</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<p><strong>Results (After 6 Months):</strong></p>
+<p><strong>Metric 1: Technical analysis time</strong></p>
+<ul>
+<li><strong>Before:</strong> 2 weeks back-and-forth PM ↔ Dev to understand constraints</li>
+<li><strong>After:</strong> 30 minutes (AI analyzes code automatically)</li>
+</ul>
+<p><strong>Metric 2: Unrealistic specs</strong></p>
+<ul>
+<li><strong>Before:</strong> 40% of specs required unanticipated refactorings</li>
+<li><strong>After:</strong> 5% (AI detects technical constraints upfront)</li>
+</ul>
+<p><strong>Metric 3: Dev team satisfaction</strong></p>
+<ul>
+<li><strong>Before:</strong> Constant frustration (&ldquo;PMs write impossible specs&rdquo;)</li>
+<li><strong>After:</strong> Smooth collaboration (&ldquo;Specs are realistic&rdquo;)</li>
+</ul>
+<p><strong>Metric 4: Time-to-market</strong></p>
+<ul>
+<li><strong>Before:</strong> Releases delayed by 30% on average (technical surprises)</li>
+<li><strong>After:</strong> 95% of releases delivered on time</li>
+</ul>
+<p><strong>Quote from TechOps Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;Before, we wasted 2 weeks per spec explaining why it was impossible. Now AI analyzes code in 5 minutes and generates a realistic spec. We go straight to implementation.&rdquo;</p>
+</blockquote>
+<p><strong>Quote from TechOps Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;I don&rsquo;t code. But with AI, I can write realistic technical specs. AI analyzes code, tells me what&rsquo;s feasible, and I choose the approach. It&rsquo;s revolutionary.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2026-01-23-techops-before-after.svg" alt="TechOps: Before vs After AI" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="master-ai-never-be-passive">Master AI, Never Be Passive</h2>
+<p><strong>Fundamental principle:</strong></p>
+<p>AI is an <strong>assistant</strong>, not a <strong>decision-maker</strong>.</p>
+<h3 id="what-ai-does-well">What AI Does Well</h3>
+<p>✅ <strong>Analyze 200,000 lines of code in minutes</strong></p>
+<ul>
+<li>Identify current architecture</li>
+<li>Detect technical constraints</li>
+<li>Map dependencies</li>
+</ul>
+<p>✅ <strong>Generate realistic specs based on code</strong></p>
+<ul>
+<li>Propose multiple approaches (quick vs complete)</li>
+<li>Estimate complexity based on existing structure</li>
+<li>Identify impacts (which files to modify)</li>
+</ul>
+<p>✅ <strong>Save time on technical analysis</strong></p>
+<ul>
+<li>2 weeks back-and-forth → 30 minutes</li>
+<li>No need to read code manually</li>
+<li>Automatic detection of hidden constraints</li>
+</ul>
+<h3 id="what-ai-cant-do-and-shouldnt-do">What AI Can&rsquo;t Do (And Shouldn&rsquo;t Do)</h3>
+<p>❌ <strong>Make business decisions for you</strong></p>
+<ul>
+<li>Choose between quick MVP or complete version</li>
+<li>Define business priorities</li>
+<li>Decide trade-offs (time vs features)</li>
+</ul>
+<p>❌ <strong>Write code without supervision</strong></p>
+<ul>
+<li>AI can generate code, but humans must validate</li>
+<li>Risks: bugs, security flaws, unmaintainable code</li>
+<li>Principle: AI proposes, human validates and adjusts</li>
+</ul>
+<p>❌ <strong>Understand complete business context</strong></p>
+<ul>
+<li>AI analyzes code, not business constraints</li>
+<li>Example: &ldquo;We must deliver in 2 weeks for priority customer&rdquo;</li>
+<li>Only humans know these constraints</li>
+</ul>
+<h3 id="golden-rules-to-master-ai">Golden Rules to Master AI</h3>
+<h4 id="rule-1-always-validate-technical-analysis">Rule 1: Always Validate Technical Analysis</h4>
+<p><strong>Never blindly accept AI conclusions.</strong></p>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>AI analyzes code and generates spec</li>
+<li><strong>Dev validates technical analysis</strong> (&ldquo;Did AI correctly understand the architecture?&rdquo;)</li>
+<li>If validation ✅ → continue</li>
+<li>If error ❌ → correct AI analysis</li>
+</ol>
+<p><strong>Example:</strong></p>
+<p>AI says: &ldquo;Your system already supports MFA via Devise.&rdquo;</p>
+<p>Dev checks: &ldquo;No, Devise is configured in basic mode. No MFA.&rdquo;</p>
+<p><strong>Correction needed.</strong></p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="rule-2-human-chooses-approach">Rule 2: Human Chooses Approach</h4>
+<p><strong>AI proposes multiple options. Human decides.</strong></p>
+<p><strong>Example:</strong></p>
+<p>AI proposes:</p>
+<ul>
+<li>Option 1: Quick MVP (1 week)</li>
+<li>Option 2: Complete version (4 weeks)</li>
+</ul>
+<p><strong>PM decides:</strong> &ldquo;We&rsquo;ll do Option 1 now, Option 2 in next release.&rdquo;</p>
+<p><strong>AI doesn&rsquo;t choose. You choose.</strong></p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="rule-3-never-production-code-without-human-review">Rule 3: Never Production Code Without Human Review</h4>
+<p><strong>If AI generates code, humans must review it.</strong></p>
+<p><strong>Risks of unreviewed AI code:</strong></p>
+<ul>
+<li>Subtle bugs</li>
+<li>Security flaws (injection, XSS, etc.)</li>
+<li>Unmaintainable code</li>
+<li>Non-compliance with team conventions</li>
+</ul>
+<p><strong>Rule:</strong> AI accelerates. Human guarantees quality.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="rule-4-supervise-dont-submit">Rule 4: Supervise, Don&rsquo;t Submit</h4>
+<p><strong>You master AI. AI doesn&rsquo;t master you.</strong></p>
+<p><strong>Incorrect mindset:</strong></p>
+<blockquote>
+<p>&ldquo;AI said we need to refactor. So we refactor.&rdquo;</p>
+</blockquote>
+<p><strong>Correct mindset:</strong></p>
+<blockquote>
+<p>&ldquo;AI identified that refactoring would be needed for this feature. Let&rsquo;s analyze if it&rsquo;s a priority. Maybe an MVP without refactoring is enough.&rdquo;</p>
+</blockquote>
+<p><strong>Human keeps strategic control.</strong></p>
+<img src="/assets/images/blog/2026-01-23-maitriser-ia.svg" alt="Master AI, don't be passive" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="sinra-integrates-ai-to-facilitate-spec-creation">Sinra Integrates AI to Facilitate Spec Creation</h2>
+<p><strong>At Sinra, we&rsquo;re integrating AI to assist PO/PM/Dev in creating realistic specifications.</strong></p>
+<h3 id="objective-specs-aligned-with-real-code">Objective: Specs Aligned with Real Code</h3>
+<p><strong>The Concept:</strong></p>
+<p>When you create a capability or issue in Sinra, AI can:</p>
+<ol>
+<li><strong>Analyze your codebase</strong> (architecture, constraints, dependencies)</li>
+<li><strong>Generate realistic spec</strong> (aligned with existing code)</li>
+<li><strong>Propose multiple approaches</strong> (MVP vs complete)</li>
+<li><strong>Identify impacts</strong> (which files to modify, which dependencies to check)</li>
+</ol>
+<p><strong>Result:</strong> Realistic technical specs, even if you don&rsquo;t code.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="ai-features-being-integrated">AI Features Being Integrated</h3>
+<h4 id="feature-1-automatic-code-analysis-for-capabilities">Feature 1: Automatic Code Analysis for Capabilities</h4>
+<p><strong>Use Case:</strong></p>
+<p>You create a capability &ldquo;Add Prometheus export&rdquo;.</p>
+<p><strong>AI:</strong></p>
+<ol>
+<li>Analyzes your current export code</li>
+<li>Detects constraints (&ldquo;CSV export only, refactoring needed&rdquo;)</li>
+<li>Generates spec with possible approaches (quick vs complete)</li>
+</ol>
+<p><strong>You validate and adjust.</strong></p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="feature-2-technical-issue-generation-from-capability">Feature 2: Technical Issue Generation from Capability</h4>
+<p><strong>Use Case:</strong></p>
+<p>You have a capability &ldquo;Multi-Factor Authentication&rdquo;.</p>
+<p><strong>AI:</strong></p>
+<ol>
+<li>Analyzes current authentication code</li>
+<li>Generates necessary technical issues:
+<ul>
+<li>[AUTH-101] Refactor authentication system for multiple providers</li>
+<li>[AUTH-102] Implement TOTP provider</li>
+<li>[AUTH-103] Implement SMS provider</li>
+<li>[AUTH-104] MFA settings UI</li>
+<li>[AUTH-105] Security tests</li>
+</ul>
+</li>
+</ol>
+<p><strong>You validate and assign.</strong></p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h4 id="feature-3-impact-and-dependency-detection">Feature 3: Impact and Dependency Detection</h4>
+<p><strong>Use Case:</strong></p>
+<p>You modify &ldquo;Payments&rdquo; module.</p>
+<p><strong>AI:</strong></p>
+<ol>
+<li>Detects all code parts depending on Payments module</li>
+<li>Identifies potential impacts (&ldquo;Modifying this service impacts 12 files&rdquo;)</li>
+<li>Generates issues to handle impacts</li>
+</ol>
+<p><strong>You avoid regressions.</strong></p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="human-supervision-always-present">Human Supervision Always Present</h3>
+<p><strong>IMPORTANT:</strong> Sinra AI <strong>assists</strong>. You <strong>decide</strong>.</p>
+<p><strong>Sinra workflow with AI:</strong></p>
+<ol>
+<li><strong>You create capability</strong> (&ldquo;Prometheus export&rdquo;)</li>
+<li><strong>AI analyzes code</strong> (detects technical constraints)</li>
+<li><strong>AI generates spec</strong> (with options and estimations)</li>
+<li><strong>You read and validate</strong> (&ldquo;OK, I choose Option 1&rdquo;)</li>
+<li><strong>Dev reviews technical analysis</strong> (&ldquo;Correct&rdquo;)</li>
+<li><strong>You create issues</strong> (manually or via AI)</li>
+<li><strong>Team implements</strong> (code reviewed by humans)</li>
+</ol>
+<p><strong>AI accelerates. You master.</strong></p>
+<p><strong>Quote from Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;Sinra + AI is like having a developer who analyzes code for me and tells me what&rsquo;s feasible. But I remain master of my decisions.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="five-signs-your-specs-are-disconnected-from-code">Five Signs Your Specs Are Disconnected from Code</h2>
+<h3 id="sign-1-devs-often-say-its-impossible">Sign 1: Devs Often Say &ldquo;It&rsquo;s Impossible&rdquo;</h3>
+<p>If dev team frequently responds &ldquo;It&rsquo;s technically impossible with our architecture&rdquo;, your specs ignore real code.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="sign-2-estimations-systematically-doubled">Sign 2: Estimations Systematically Doubled</h3>
+<p>If your initial estimates are always doubled after technical analysis, your specs underestimate complexity.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="sign-3-discovering-refactorings-after-validation">Sign 3: Discovering Refactorings After Validation</h3>
+<p>If you discover refactoring needs after validating spec, you analyze too late.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="sign-4-endless-pm--dev-back-and-forth">Sign 4: Endless PM ↔ Dev Back-and-Forth</h3>
+<p>If you spend 2 weeks discussing technical feasibility, you lack automated analysis.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h3 id="sign-5-releases-delayed-by-technical-surprises">Sign 5: Releases Delayed by &ldquo;Technical Surprises&rdquo;</h3>
+<p>If your releases are delayed by unanticipated technical constraints, your specs are disconnected from code.</p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="action-points-generate-realistic-specs-via-ai">Action Points: Generate Realistic Specs via AI</h2>
+<ol>
+<li><strong>Identify a capability to specify.</strong> Choose a complex feature.</li>
+<li><strong>Ask AI to analyze related code.</strong> (With Sinra or AI assistant of your choice)</li>
+<li><strong>Read generated technical analysis.</strong> Verify with a dev it&rsquo;s correct.</li>
+<li><strong>Choose approach.</strong> Quick MVP or complete version? You decide.</li>
+<li><strong>Generate technical issues.</strong> Manually or via AI.</li>
+<li><strong>Implement with human supervision.</strong> Code reviewed by team.</li>
+</ol>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="the-key-point">The Key Point</h2>
+<p><strong>Specs disconnected from code generate frustration, delays, and waste.</strong></p>
+<p>Between <strong>impossible specs</strong>, <strong>underestimations</strong>, <strong>surprise refactorings</strong>, and <strong>endless back-and-forth</strong>, PO/PM and Dev don&rsquo;t speak the same technical language.</p>
+<p><strong>AI analyzes source code to generate realistic specs aligned with existing architecture.</strong></p>
+<p><strong>The result:</strong></p>
+<ul>
+<li>✅ Automatic code analysis (architecture, constraints, dependencies)</li>
+<li>✅ Realistic specs (no impossible promises)</li>
+<li>✅ Explicit trade-offs (quick vs complete)</li>
+<li>✅ Human supervision (you master AI, never passive)</li>
+<li>✅ Time savings (2 weeks → 30 minutes)</li>
+</ul>
+<p><strong>Sinra integrates AI to facilitate realistic technical spec creation.</strong></p>
+<p><strong>With human supervision. Always.</strong></p>
+<p><strong>Master AI and never be passive.</strong></p>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<h2 id="also-discover-the-invisible-problems-series">Also discover the &ldquo;Invisible Problems&rdquo; series</h2>
+<ul>
+<li><strong><a href="/documentation/2025/12/24/documentation-morte-notion-confluence.html">Dead Documentation</a></strong> - 127 obsolete Confluence pages: how to make documentation alive</li>
+<li><strong><a href="/documentation/2026/01/17/glossaire-vivant-mentions-pages-sinra.html">Living Glossary</a></strong> - Dead glossaries in Notion: how to use @pages for unified vocabulary</li>
+<li><strong><a href="/qa/2025/12/22/qa-invisible-tests-disperses.html">Invisible QA</a></strong> - 847 tests in Excel: how to make QA visible with Sinra Testings</li>
+<li><strong><a href="/planning/2025/12/26/chaos-backlog-personne-sait-q2.html">Backlog Chaos</a></strong> - 537 chaotic issues: how to organize work by releases and cycles</li>
+</ul>
+<hr>
+<p>url: /specifications/2026/01/23/ai-specs-generation-source-code.html</p>
+<p><strong>Ready to create realistic specs with AI?</strong> <a href="https://app.sinra.dev/users/sign_up">Discover Sinra →</a></p>
+<p>Discover project management where your specifications are aligned with your code, not disconnected from reality.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/documentation/2026/01/17/living-glossary-page-mentions-sinra.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">From Notion To Sinra: When Your …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/blog/posts/2026-02-26-ai-speed-mastery-loss/" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">AI in Development: The Speed Gain That …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

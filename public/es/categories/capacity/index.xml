@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capacity on Sinra</title>
+    <link>http://localhost:1313/es/categories/capacity/</link>
+    <description>Recent content in Capacity on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 30 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/categories/capacity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/</link>
+      <pubDate>Tue, 30 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/</guid>
+      <description>&lt;h2 id=&#34;el-dev-en-4-proyectos-simultáneos&#34;&gt;El Dev En 4 Proyectos Simultáneos&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. One-on-one con un desarrollador.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;Hola Dev 1, ¿cómo estás?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Francamente, no muy bien.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;¿Por qué?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Estoy en demasiados proyectos a la vez.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;¿Cuántos proyectos?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;4.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;¿¡4 proyectos!? ¿Cuáles?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Proyecto A (refactor auth), Proyecto B (nueva API), Proyecto C (migración DB), Proyecto D (bug fixes prod).&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;OK, ¿y cuál es el problema?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .capacity-title { font: bold 18px sans-serif; fill: #1a1a1a; }
+      .capacity-label { font: 14px sans-serif; fill: #4a5568; }
+      .capacity-value { font: bold 24px sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="capacity-title">Real-Time Capacity vs. Workload</text>
+
+  <!-- Capacity Card -->
+  <g>
+    <rect x="50" y="70" width="320" height="150" rx="10" fill="#f7fafc" stroke="#4299e1" stroke-width="2"/>
+    <text x="210" y="105" text-anchor="middle" class="capacity-title">Team Capacity</text>
+    <text x="210" y="155" text-anchor="middle" class="capacity-value" fill="#4299e1">45 issues</text>
+    <text x="210" y="185" text-anchor="middle" class="capacity-label">6 developers × 6 weeks</text>
+  </g>
+
+  <!-- Workload Card -->
+  <g>
+    <rect x="430" y="70" width="320" height="150" rx="10" fill="#f7fafc" stroke="#ed8936" stroke-width="2"/>
+    <text x="590" y="105" text-anchor="middle" class="capacity-title">Current Workload</text>
+    <text x="590" y="155" text-anchor="middle" class="capacity-value" fill="#ed8936">42 issues</text>
+    <text x="590" y="185" text-anchor="middle" class="capacity-label">Assigned to Release 2.3</text>
+  </g>
+
+  <!-- Utilization Bar -->
+  <text x="50" y="270" class="capacity-title">Capacity Utilization</text>
+  <rect x="50" y="285" width="700" height="40" rx="20" fill="#e2e8f0"/>
+  <rect x="50" y="285" width="653" height="40" rx="20" fill="#48bb78"/>
+  <text x="400" y="312" text-anchor="middle" style="font: bold 18px sans-serif; fill: white;">93% Utilized</text>
+
+  <!-- Status -->
+  <g>
+    <circle cx="400" cy="360" r="8" fill="#48bb78"/>
+    <text x="420" y="365" class="capacity-label">Safe margin - Team is working within capacity</text>
+  </g>
+</svg>

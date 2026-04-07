@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Methodology on Sinra</title>
+    <link>http://localhost:1313/es/categories/methodology/</link>
+    <description>Recent content in Methodology on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 03 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/categories/methodology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La Trampa de la Flexibilidad: Por Qué las Herramientas &#39;Todo-en-Uno&#39; Ralentizan a Sus Equipos</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-03-tools-flexibility-trap/</link>
+      <pubDate>Wed, 03 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-03-tools-flexibility-trap/</guid>
+      <description>&lt;h2 id=&#34;la-promesa-de-flexibilidad&#34;&gt;La Promesa de Flexibilidad&lt;/h2&gt;&#xA;&lt;p&gt;Probablemente has escuchado estas promesas de marketing:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Jira:&lt;/strong&gt; &amp;ldquo;Se adapta a cualquier flujo de trabajo&amp;rdquo;&#xA;&lt;strong&gt;Notion:&lt;/strong&gt; &amp;ldquo;Personaliza todo a tus necesidades&amp;rdquo;&#xA;&lt;strong&gt;Linear:&lt;/strong&gt; &amp;ldquo;Da forma a la herramienta a tu manera de trabajar&amp;rdquo;&#xA;&lt;strong&gt;Airtable:&lt;/strong&gt; &amp;ldquo;Construye la app perfecta para tu equipo&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;¿Suena genial, verdad?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Excepto que en realidad, esto es lo que sucede:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Semana 1:&lt;/strong&gt; Configuración inicial&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;15 tipos de issues personalizados&lt;/li&gt;&#xA;&lt;li&gt;47 campos personalizados&lt;/li&gt;&#xA;&lt;li&gt;12 flujos de trabajo diferentes&lt;/li&gt;&#xA;&lt;li&gt;8 dashboards&lt;/li&gt;&#xA;&lt;li&gt;Más de 200 configuraciones&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Semana 2:&lt;/strong&gt; Debates del equipo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Desarrollo Orientado a Releases: Retomando el Control de Sus Despliegues</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-01-release-driven-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-01-release-driven-development/</guid>
+      <description>&lt;h2 id=&#34;la-crisis-de-despliegue&#34;&gt;La Crisis de Despliegue&lt;/h2&gt;&#xA;&lt;p&gt;Pregunte a la mayoría de los equipos de desarrollo: &lt;strong&gt;&amp;quot;¿Cuándo es su próximo despliegue?&amp;quot;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Respuestas comunes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Cuando terminemos el sprint&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Cuando las funcionalidades estén listas&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Desplegamos continuamente&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;No estoy seguro, Producto decide&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Traducción: No sabemos.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;El problema no es que los equipos envíen mal. Es que &lt;strong&gt;los despliegues se tratan como consecuencias del desarrollo&lt;/strong&gt;, no como principios organizadores.&lt;/p&gt;&#xA;&lt;p&gt;Construyes funcionalidades. Luego descubres cómo desplegarlas. Luego descubres problemas:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>V-Model vs Agile: Por Qué las Falsas Opciones Matan Proyectos</title>
+      <link>http://localhost:1313/es/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/</guid>
+      <description>&lt;h2 id=&#34;el-mito-de-la-opción-binaria&#34;&gt;El Mito de la Opción Binaria&lt;/h2&gt;&#xA;&lt;p&gt;Durante décadas, se les ha dicho a los equipos: &lt;strong&gt;Elija su camino. V-Model o Agile. Elija uno.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Pero la realidad es más complicada.&lt;/p&gt;&#xA;&lt;p&gt;Una startup SaaS lanzando un nuevo procesador de pagos necesita &lt;em&gt;especificación por adelantado&lt;/em&gt; (disciplina V-Model). Pero también necesitan &lt;em&gt;flexibilidad de cycles&lt;/em&gt; cuando los requisitos de seguridad cambian a mitad del proyecto (capacidad de respuesta Agile). Un equipo de salud construyendo un sistema regulatorio necesita &lt;em&gt;puertas de etapa y rastros de evidencia&lt;/em&gt; (V-Model). Pero también necesitan &lt;em&gt;bucles de retroalimentación rápidos&lt;/em&gt; de los clínicos (Agile).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

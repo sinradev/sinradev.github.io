@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dependencies on Sinra</title>
+    <link>http://localhost:1313/es/categories/dependencies/</link>
+    <description>Recent content in Dependencies on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 28 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/categories/dependencies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependencias Ocultas: Por Qué Tus Features Siempre Están Bloqueadas</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-28-dependances-cachees-features-bloquees/</link>
+      <pubDate>Sun, 28 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-28-dependances-cachees-features-bloquees/</guid>
+      <description>&lt;h2 id=&#34;la-feature-bloqueada-durante-3-semanas&#34;&gt;La Feature Bloqueada Durante 3 Semanas&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. Daily standup.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Scrum Master: &amp;ldquo;Dev 1, ¿estado de la feature &amp;lsquo;Export PDF&amp;rsquo;?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Sigue bloqueada.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;¿Bloqueada desde cuándo?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;3 semanas.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;¿¡3 semanas!? ¿Por qué está bloqueada?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Estoy esperando la API de generación de PDF del equipo backend.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;OK, y el equipo backend, ¿cómo va?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;SM va a ver al equipo backend.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;La API PDF, ¿para cuándo estará lista?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

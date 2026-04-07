@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Sinra</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Mar 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Methodology</title>
+      <link>http://localhost:1313/categories/methodology/</link>
+      <pubDate>Fri, 27 Mar 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/methodology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development Productivity</title>
+      <link>http://localhost:1313/categories/development-productivity/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/development-productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Specifications</title>
+      <link>http://localhost:1313/categories/specifications/</link>
+      <pubDate>Fri, 23 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/specifications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/categories/documentation/</link>
+      <pubDate>Sat, 17 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/documentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/categories/security/</link>
+      <pubDate>Tue, 13 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planning</title>
+      <link>http://localhost:1313/categories/planning/</link>
+      <pubDate>Fri, 02 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capacity</title>
+      <link>http://localhost:1313/categories/capacity/</link>
+      <pubDate>Tue, 30 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/capacity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependencies</title>
+      <link>http://localhost:1313/categories/dependencies/</link>
+      <pubDate>Sun, 28 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/dependencies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quality Assurance</title>
+      <link>http://localhost:1313/categories/quality-assurance/</link>
+      <pubDate>Mon, 22 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/quality-assurance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product Management</title>
+      <link>http://localhost:1313/categories/product-management/</link>
+      <pubDate>Fri, 19 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/product-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>http://localhost:1313/categories/career/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/career/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outils</title>
+      <link>http://localhost:1313/categories/outils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/outils/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy</title>
+      <link>http://localhost:1313/categories/philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product Guide</title>
+      <link>http://localhost:1313/categories/product-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/product-guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recruitment Culture</title>
+      <link>http://localhost:1313/categories/recruitment-culture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/recruitment-culture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Future</title>
+      <link>http://localhost:1313/categories/technology-future/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/technology-future/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work Culture</title>
+      <link>http://localhost:1313/categories/work-culture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/work-culture/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

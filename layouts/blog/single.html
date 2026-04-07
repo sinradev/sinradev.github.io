@@ -1,0 +1,70 @@
+{{ define "main" }}
+<article class="blog-post">
+  {{/* Hero with featured image */}}
+  {{ with .Params.featured_image }}
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="{{ . }}" alt="{{ $.Title }}" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  {{ end }}
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    {{/* Category badge */}}
+    {{ with .Params.categories }}
+    <div class="mb-4">
+      {{ range . }}
+      <a href="{{ relLangURL (printf "categories/%s/" (. | urlize)) }}" class="badge badge-primary badge-outline">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Title & subtitle */}}
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+    <p class="text-xl text-base-content/80 mb-6">{{ . }}</p>
+    {{ end }}
+
+    {{/* Meta */}}
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <span>{{ i18n "blog_by_author" }}</span>
+    </div>
+
+    {{/* Content */}}
+    <div class="prose prose-lg max-w-none text-base-content">
+      {{ .Content }}
+    </div>
+
+    {{/* CTA */}}
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">{{ i18n "blog_ready_to_transform" }}</h2>
+      <p class="text-base-content/70 mb-6">{{ i18n "blog_cta_description" }}</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        {{ i18n "blog_start_free_trial" }}
+      </a>
+    </div>
+
+    {{/* Prev/Next navigation */}}
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">{{ .Title | truncate 40 }}</span>
+        <span class="md:hidden">{{ i18n "blog_previous" }}</span>
+      </a>
+      {{ else }}<div></div>{{ end }}
+
+      {{ with .NextInSection }}
+      <a href="{{ .Permalink }}" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">{{ .Title | truncate 40 }}</span>
+        <span class="md:hidden">{{ i18n "blog_next" }}</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      {{ else }}<div></div>{{ end }}
+    </nav>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Sinra</title>
+    <link>http://localhost:1313/categories/security/</link>
+    <description>Recent content in Security on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Jan 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Where Are Your Data? European vs American Hosting and Why It Matters</title>
+      <link>http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html</link>
+      <pubDate>Tue, 13 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html</guid>
+      <description>&lt;p&gt;url: /security/2026/01/13/european-american-hosting-data-sovereignty.html&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-data-is-in-europe-right&#34;&gt;&amp;ldquo;Our Data Is In Europe&amp;hellip; Right?&amp;rdquo;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wednesday afternoon. Security meeting with the IT team.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;CTO: &amp;ldquo;We need to prepare our GDPR audit. First question: where is our data hosted?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;DevOps: &amp;ldquo;In the cloud.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;CTO: &amp;ldquo;Yes, but where exactly?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;DevOps: &amp;ldquo;Region eu-west-1. Paris.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;CTO: &amp;ldquo;Perfect. So our data is in France.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;DevOps: &amp;ldquo;Uh&amp;hellip; technically, yes.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;CTO: &amp;ldquo;What do you mean &amp;rsquo;technically&amp;rsquo;?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;DevOps: &amp;ldquo;The servers are physically in Paris. But the host is American.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Blog Sinra - Conseils en Gestion de Projet | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/fr/blog/" />
+
+
+
+<meta name="description" content="Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA et montée en charge des équipes. Conseils pour les leaders techniques et chefs de projet." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/blog/" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="Blog Sinra - Conseils en Gestion de Projet" />
+<meta property="og:description" content="Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA et montée en charge des équipes. Conseils pour les leaders techniques et chefs de projet." />
+<meta property="og:url"         content="http://localhost:1313/fr/blog/" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/og-image.png" />
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Blog Sinra - Conseils en Gestion de Projet" />
+<meta name="twitter:description" content="Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA et montée en charge des équipes. Conseils pour les leaders techniques et chefs de projet." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/og-image.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Basculer le menu de navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/fr/about/"
+             class=""
+             >
+            À propos
+          </a>
+        </li>
+        
+        <li>
+          <a href="/fr/pricing/"
+             class=""
+             >
+            Tarifs
+          </a>
+        </li>
+        
+        <li>
+          <a href="/fr/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/fr/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Se connecter
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            S&#39;enregistrer
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/fr/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/fr/about/"
+           class=""
+           >
+          À propos
+        </a>
+      </li>
+      
+      <li>
+        <a href="/fr/pricing/"
+           class=""
+           >
+          Tarifs
+        </a>
+      </li>
+      
+      <li>
+        <a href="/fr/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/fr/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Se connecter
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          S&#39;enregistrer
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        FR
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/blog/" >
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/" class="active">
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<div class="blog-list-page">
+  <section class="blog-hero py-16 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Blog Sinra - Conseils en Gestion de Projet</h1>
+      <p class="text-lg text-base-content/80">Apprenez les stratégies modernes de gestion de projet, planification des releases, intégration QA et montée en charge des équipes. Conseils pour les leaders techniques et chefs de projet.</p>
+    </div>
+  </section>
+
+  <section class="blog-posts py-12 bg-base-200">
+    <div class="container mx-auto px-6 max-w-5xl">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <article class="bg-base-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+          
+          <a href="http://localhost:1313/fr/blog/">
+            <img src="/assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png" alt="Blog Sinra - Conseils en Gestion de Projet" class="w-full h-48 object-cover" loading="lazy" width="600" height="315" />
+          </a>
+          
+          <div class="p-6">
+            
+            <div class="mb-2">
+              <span class="badge badge-primary badge-sm badge-outline">Outils</span>
+            </div>
+            
+            <h2 class="text-xl font-bold mb-2">
+              <a href="http://localhost:1313/fr/blog/posts/2026-02-25-formulaires-pdf-archaic-admin/" class="hover:text-primary transition-colors">Pourquoi en 2026 on demande encore d&#39;imprimer un PDF, le remplir à la main et le rescanner ?</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4 line-clamp-3"><ol start="2026">
+<li>Nous avons l&rsquo;IA générative. Les véhicules autonomes commencent à rouler. Les interfaces vocales comprennent nuances et contexte. Les applications mobile font des choses qu&rsquo;on croyait impossible il y a 5 ans.</li>
+</ol>
+<p>Et pourtant.</p>
+<p>Je reçois un email de mon assurance. Un formulaire PDF en pièce jointe. Pour déclarer un sinistre. Il me dit clairement : « À imprimer, signer à la main, scanner et nous renvoyer ».</p>
+<p>Le format PDF. Pas modifiable. Pas remplissable électroniquement. Juste une image numérique d&rsquo;un papier qui n&rsquo;existe même plus.</p></p>
+            <div class="flex items-center justify-between text-xs text-base-content/50">
+              <time datetime="0001-01-01">January 1, 0001</time>
+              <a href="http://localhost:1313/fr/blog/posts/2026-02-25-formulaires-pdf-archaic-admin/" class="link link-primary">Lire la suite →</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-base-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+          
+          <a href="http://localhost:1313/fr/blog/">
+            <img src="/assets/images/blog/2026-02-19-full-remote-tabou-featured.png" alt="Blog Sinra - Conseils en Gestion de Projet" class="w-full h-48 object-cover" loading="lazy" width="600" height="315" />
+          </a>
+          
+          <div class="p-6">
+            
+            <div class="mb-2">
+              <span class="badge badge-primary badge-sm badge-outline">Work Culture</span>
+            </div>
+            
+            <h2 class="text-xl font-bold mb-2">
+              <a href="http://localhost:1313/fr/blog/posts/2026-02-19-full-remote-tabou/" class="hover:text-primary transition-colors">Pourquoi le full remote est devenu tabou ? De la révolution COVID au retour au bureau obligatoire</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4 line-clamp-3"><p>Vous vous souvenez de 2020-2021 ? Le full remote était la promesse du futur du travail. Les entreprises découvraient soudainement que leurs employés pouvaient être productifs de chez eux. Les trajets disparaissaient. Les coûts immobiliers chutaient. Les talents pouvaient venir de n&rsquo;importe où dans le monde. C&rsquo;était une révolution.</p>
+<p>Aujourd&rsquo;hui, en 2026, le pendule a complètement basculé. Les offres d&rsquo;emploi crient « hybride 3 jours au bureau » ou carrément « on-site only ». Les recruteurs vous demandent : « Tu peux venir au bureau, hein ? » comme si vous aviez posé une question étrange. Le full remote ? C&rsquo;est devenu presque toxique de le demander.</p></p>
+            <div class="flex items-center justify-between text-xs text-base-content/50">
+              <time datetime="0001-01-01">January 1, 0001</time>
+              <a href="http://localhost:1313/fr/blog/posts/2026-02-19-full-remote-tabou/" class="link link-primary">Lire la suite →</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-base-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+          
+          <a href="http://localhost:1313/fr/blog/">
+            <img src="/assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png" alt="Blog Sinra - Conseils en Gestion de Projet" class="w-full h-48 object-cover" loading="lazy" width="600" height="315" />
+          </a>
+          
+          <div class="p-6">
+            
+            <div class="mb-2">
+              <span class="badge badge-primary badge-sm badge-outline">Philosophie</span>
+            </div>
+            
+            <h2 class="text-xl font-bold mb-2">
+              <a href="http://localhost:1313/fr/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/" class="hover:text-primary transition-colors">Pourquoi Nous Avons Abandonné les &#39;Sprints&#39; pour les &#39;Cycles&#39;</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4 line-clamp-3">Les mots comptent. Quand nous avons choisi &#39;cycles&#39; au lieu de &#39;sprints&#39;, ce n&#39;était pas du rebranding - c&#39;était rejeter la mentalité de course d&#39;Agile et adopter des périodes de travail time-boxed qui respectent la réalité.</p>
+            <div class="flex items-center justify-between text-xs text-base-content/50">
+              <time datetime="0001-01-01">January 1, 0001</time>
+              <a href="http://localhost:1313/fr/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/" class="link link-primary">Lire la suite →</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-base-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+          
+          <a href="http://localhost:1313/fr/blog/">
+            <img src="/assets/images/blog/2025-12-01-release-driven-development-featured.png" alt="Blog Sinra - Conseils en Gestion de Projet" class="w-full h-48 object-cover" loading="lazy" width="600" height="315" />
+          </a>
+          
+          <div class="p-6">
+            
+            <div class="mb-2">
+              <span class="badge badge-primary badge-sm badge-outline">Méthodologie</span>
+            </div>
+            
+            <h2 class="text-xl font-bold mb-2">
+              <a href="http://localhost:1313/fr/blog/posts/2025-12-01-release-driven-development/" class="hover:text-primary transition-colors">Release-Driven Development : Reprendre le Contrôle de Vos Déploiements</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4 line-clamp-3">La plupart des équipes traitent les déploiements comme des réflexions après coup. Sinra fait des releases le principe organisateur - améliorant la visibilité, la planification de capacité et l&#39;exécution dès le premier jour.</p>
+            <div class="flex items-center justify-between text-xs text-base-content/50">
+              <time datetime="0001-01-01">January 1, 0001</time>
+              <a href="http://localhost:1313/fr/blog/posts/2025-12-01-release-driven-development/" class="link link-primary">Lire la suite →</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-base-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow">
+          
+          <a href="http://localhost:1313/fr/blog/">
+            <img src="/assets/images/blog/2024-11-13-vmodel-vs-agile-featured.png" alt="Blog Sinra - Conseils en Gestion de Projet" class="w-full h-48 object-cover" loading="lazy" width="600" height="315" />
+          </a>
+          
+          <div class="p-6">
+            
+            <div class="mb-2">
+              <span class="badge badge-primary badge-sm badge-outline">Méthodologie</span>
+            </div>
+            
+            <h2 class="text-xl font-bold mb-2">
+              <a href="http://localhost:1313/fr/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/" class="hover:text-primary transition-colors">V-Model vs Agile: Pourquoi les Faux Choix Tuent les Projets</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4 line-clamp-3">La plupart des équipes font face à un faux choix: V-Model ou Agile. Mais les meilleurs projets utilisent les deux. Découvrez pourquoi les méthodologies hybrides gagnent et comment les implémenter.</p>
+            <div class="flex items-center justify-between text-xs text-base-content/50">
+              <time datetime="0001-01-01">January 1, 0001</time>
+              <a href="http://localhost:1313/fr/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/" class="link link-primary">Lire la suite →</a>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+
+      
+      <div class="flex justify-center items-center gap-4 mt-12">
+        
+        <a href="/fr/blog/page/2/" class="btn btn-outline btn-sm">Publications plus récentes</a>
+        
+        <span class="text-sm text-base-content/60">3 / 3</span>
+        
+      </div>
+
+      
+    </div>
+  </section>
+</div>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/fr/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/fr/pricing/"
+       
+       class="link link-hover">
+      Tarifs
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/fr/about/"
+       
+       class="link link-hover">
+      À propos
+    </a>
+    
+    <a href="/fr/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

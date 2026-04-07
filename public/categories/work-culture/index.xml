@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work Culture on Sinra</title>
+    <link>http://localhost:1313/categories/work-culture/</link>
+    <description>Recent content in Work Culture on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/categories/work-culture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The French Recruitment Paradox: 4 Interviews, 1 Test, Zero Trust</title>
+      <link>http://localhost:1313/blog/posts/2026-02-19-recruitment-paradox-france/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2026-02-19-recruitment-paradox-france/</guid>
+      <description>&lt;p&gt;You&amp;rsquo;ve probably heard this question before: &amp;ldquo;Why in France is hiring like auditioning for a Spielberg film, but for a €2,500/month job?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the paradox: France has some of the most protective employment laws in the world. Trial periods can last for months. Employers can legally test the relationship before committing. Yet French startups have created an obstacle course: 4 interviews, 1 technical test, reference verification, sometimes even a case study to complete at home.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Full Remote Became Taboo? From COVID Revolution to Mandatory Office Returns</title>
+      <link>http://localhost:1313/blog/posts/2026-02-19-full-remote-taboo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/2026-02-19-full-remote-taboo/</guid>
+      <description>&lt;p&gt;Do you remember 2020-2021? Full remote was the promise of the future of work. Companies suddenly discovered their employees could be productive from home. Commutes disappeared. Real estate costs plummeted. Talent could come from anywhere in the world. It was a revolution.&lt;/p&gt;&#xA;&lt;p&gt;Today, in 2026, the pendulum has swung completely. Job postings scream &amp;ldquo;hybrid 3 days in office&amp;rdquo; or flatly &amp;ldquo;on-site only.&amp;rdquo; Recruiters ask you: &amp;ldquo;You can come to the office, right?&amp;rdquo; as if you&amp;rsquo;d asked something strange. Full remote? It&amp;rsquo;s become almost toxic to request.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

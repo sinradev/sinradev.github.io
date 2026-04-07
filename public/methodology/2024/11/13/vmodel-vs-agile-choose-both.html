@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>V-Model vs Agile: Why False Choices Kill Projects | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/methodology/2024/11/13/vmodel-vs-agile-choose-both.html" />
+
+
+
+<meta name="description" content="Discover why forcing teams into V-Model or Agile creates project failures. Explore hybrid methodologies that combine the best of both approaches without compromises." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/methodology/2024/11/13/vmodel-vs-agile-choose-both.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/methodology/2024/11/13/vmodel-vs-agile-choose-both.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="V-Model vs Agile: Why False Choices Kill Projects" />
+<meta property="og:description" content="Discover why forcing teams into V-Model or Agile creates project failures. Explore hybrid methodologies that combine the best of both approaches without compromises." />
+<meta property="og:url"         content="http://localhost:1313/methodology/2024/11/13/vmodel-vs-agile-choose-both.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2024-11-13-vmodel-vs-agile-featured.png" />
+
+<meta property="article:published_time" content="0001-01-01T00:00:00Z" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Methodology" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="V-Model vs Agile: Why False Choices Kill Projects" />
+<meta name="twitter:description" content="Discover why forcing teams into V-Model or Agile creates project failures. Explore hybrid methodologies that combine the best of both approaches without compromises." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2024-11-13-vmodel-vs-agile-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/methodology/2024/11/13/vmodel-vs-agile-choose-both.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2024-11-13-vmodel-vs-agile-featured.png" alt="V-Model vs Agile: Why False Choices Kill Projects" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/methodology/" class="badge badge-primary badge-outline">Methodology</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">V-Model vs Agile: Why False Choices Kill Projects</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Stop choosing between methodologies. Learn why the best teams use both.</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="0001-01-01">January 1, 0001</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="the-myth-of-the-binary-choice">The Myth of the Binary Choice</h2>
+<p>For decades, teams have been told: <strong>Choose your lane. V-Model or Agile. Pick one.</strong></p>
+<p>But reality is messier.</p>
+<p>A SaaS startup launching a new payment processor needs <em>specification upfront</em> (V-Model discipline). But they also need <em>cycle flexibility</em> when security requirements change mid-project (Agile responsiveness). A healthcare team building a regulatory system needs <em>stage gates and evidence trails</em> (V-Model). But they also need <em>fast feedback loops</em> from clinicians (Agile).</p>
+<p>The problem isn&rsquo;t the methodologies - it&rsquo;s that managers are forced to choose all-or-nothing.</p>
+<img src="/assets/images/false-choice-dilemma.svg" alt="False Choice Dilemma" width="1200" height="400" loading="lazy">
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="the-v-model-promise-and-its-blindness">The V-Model Promise (And Its Blindness)</h2>
+<p><strong>When V-Model Works:</strong></p>
+<ul>
+<li>Heavy regulation (healthcare, fintech, defense)</li>
+<li>Well-understood requirements upfront (fixed scope, fixed timeline)</li>
+<li>Parallel development + testing dependencies</li>
+<li>Multi-phase deployments requiring sign-offs</li>
+<li>Long project cycles (18+ months)</li>
+</ul>
+<p><strong>The V-Model Trap:</strong>
+Real capacity stays invisible until 60% through development. You plan on Friday&rsquo;s estimates and ship on Wednesday&rsquo;s reality. By then, you&rsquo;ve already committed to dates that can&rsquo;t be met.</p>
+<p>Example: A healthcare team estimated 6 months to build a patient dashboard. They discovered integration issues at month 4 - but they&rsquo;d already promised go-live to hospital administrators. The last 2 months were panic mode: cutting features, cutting tests, cutting quality.</p>
+<img src="/assets/images/vmodel-waterfall-diagram.svg" alt="V-Model Waterfall Diagram" width="1000" height="500" loading="lazy">
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="the-agile-promise-and-its-unpredictability">The Agile Promise (And Its Unpredictability)</h2>
+<p><strong>When Agile Works:</strong></p>
+<ul>
+<li>Uncertain requirements (new product, emerging market)</li>
+<li>Fast feedback loops matter (consumer apps, iterative design)</li>
+<li>Small teams (&lt;10 people)</li>
+<li>Continuous deployment possible</li>
+<li>Changes are cheap</li>
+</ul>
+<p><strong>The Agile Trap:</strong>
+10+ hours per week in standup meetings. Constant reprioritization. Features half-built because requirements changed again. Teams repeating work because decisions live in Slack threads instead of shared specs.</p>
+<p>Example: An agency took an &ldquo;pure Agile&rdquo; approach to a CMS rebuild. No specifications. Just &ldquo;build a dashboard.&rdquo; 3 months and 5 cycles later, the client realized the design was wrong. Entire backend rebuilt. The team had optimized for velocity, not value.</p>
+<img src="/assets/images/agile-iterative-diagram.svg" alt="Agile Iterative Diagram" width="1000" height="500" loading="lazy">
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="why-hybrid-methodologies-win">Why Hybrid Methodologies Win</h2>
+<p><strong>The Real Pattern:</strong>
+High-performing teams don&rsquo;t choose between V-Model and Agile - they <strong>use both for different parts of the work</strong>.</p>
+<p><strong>Specification Phase (V-Model):</strong></p>
+<ul>
+<li>Write detailed requirements</li>
+<li>Plan dependencies</li>
+<li>Get stakeholder sign-off</li>
+<li>Define acceptance criteria</li>
+<li>Plan test cases upfront</li>
+</ul>
+<p><strong>Development Phase (Agile):</strong></p>
+<ul>
+<li>Build in cycles</li>
+<li>Get weekly feedback</li>
+<li>Adjust implementation details</li>
+<li>Fast feedback loops</li>
+<li>Continuous testing</li>
+</ul>
+<p><strong>Deployment Phase (V-Model):</strong></p>
+<ul>
+<li>Stage gates</li>
+<li>Release checklists</li>
+<li>Verification before go-live</li>
+<li>Compliance documentation</li>
+<li>Deployment coordination</li>
+</ul>
+<p>This is what works. <strong>Not Agile. Not Waterfall. Both.</strong></p>
+<img src="/assets/images/hybrid-methodology-phases.svg" alt="Hybrid Methodology Phases" width="1200" height="500" loading="lazy">
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="the-healthconnect-case-study-regulated--agile">The HealthConnect Case Study: Regulated + Agile</h2>
+<p>HealthConnect Systems manages patient data for 50+ healthcare providers. They&rsquo;re under HIPAA compliance requirements (regulatory approval needed). But patients expect new features quarterly (Agile speed).</p>
+<p><strong>Their Hybrid Approach:</strong></p>
+<ol>
+<li><strong>Phase 1 (V-Model):</strong> Product team + compliance team write detailed specification. Security requirements, audit trails, data governance. 4-week phase.</li>
+<li><strong>Phase 2 (Agile):</strong> Engineering builds in 2-week cycles. Continuous QA testing. Daily security reviews. Adjust implementation as needed.</li>
+<li><strong>Phase 3 (V-Model):</strong> Release gates. Compliance checklist. Audit trail verification. Go-live sign-off.</li>
+</ol>
+<p><strong>The Result:</strong></p>
+<ul>
+<li>Zero compliance incidents</li>
+<li>3-month feature cycle (vs 8+ months traditional V-Model)</li>
+<li>Test coverage 95%+ (vs 40% in pure Agile teams)</li>
+<li>On-time delivery every release</li>
+</ul>
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="how-to-implement-hybrid-methodology">How to Implement Hybrid Methodology</h2>
+<h3 id="1-define-your-boundaries">1. Define Your Boundaries</h3>
+<p>Not all work is equal. Some needs upfront planning; some needs flexibility.</p>
+<p><strong>Heavy V-Model:</strong></p>
+<ul>
+<li>Security features</li>
+<li>Compliance/audit requirements</li>
+<li>Major architectural changes</li>
+<li>Data migrations</li>
+<li>Hardware dependencies</li>
+</ul>
+<p><strong>Heavy Agile:</strong></p>
+<ul>
+<li>UI/UX refinements</li>
+<li>Performance optimizations</li>
+<li>Experimental features</li>
+<li>Client feedback iterations</li>
+</ul>
+<p><strong>Hybrid Balance:</strong></p>
+<ul>
+<li>Feature development</li>
+<li>Integration work</li>
+<li>Testing &amp; QA</li>
+<li>Deployment coordination</li>
+</ul>
+<h3 id="2-create-parallel-workflows">2. Create Parallel Workflows</h3>
+<p><strong>Specification Track (V-Model):</strong></p>
+<ul>
+<li>Detailed requirements written</li>
+<li>Acceptance criteria defined</li>
+<li>Dependencies identified</li>
+<li>Test cases planned</li>
+<li>Regulatory reviews completed</li>
+</ul>
+<p><strong>Development Track (Agile):</strong></p>
+<ul>
+<li>Cycle-based implementation</li>
+<li>Continuous testing</li>
+<li>Code review gates</li>
+<li>Daily feedback loops</li>
+<li>Adaptive design</li>
+</ul>
+<p><strong>Merge Point:</strong></p>
+<ul>
+<li>Development freezes</li>
+<li>Release testing begins</li>
+<li>Stage gate approvals</li>
+<li>Deployment readiness verification</li>
+</ul>
+<h3 id="3-use-real-time-visibility">3. Use Real-Time Visibility</h3>
+<p>Hybrid methodology <em>only works</em> if you can see:</p>
+<ul>
+<li>What&rsquo;s specified vs. what&rsquo;s building</li>
+<li>Which features are tested vs. untested</li>
+<li>Capacity constraints across both tracks</li>
+<li>Dependency risks between phases</li>
+<li>Release readiness in real-time</li>
+</ul>
+<p>Without visibility, hybrid becomes unpredictability.</p>
+<img src="/assets/images/implementation-workflow.svg" alt="Implementation Workflow" width="1200" height="600" loading="lazy">
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="the-methodological-decision-matrix">The Methodological Decision Matrix</h2>
+<p>Use this framework to decide what methodology fits each initiative:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Factor</th>
+          <th>Heavy V-Model</th>
+          <th>Hybrid</th>
+          <th>Heavy Agile</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Requirements clarity</strong></td>
+          <td>100% known</td>
+          <td>80% known</td>
+          <td>50% known</td>
+      </tr>
+      <tr>
+          <td><strong>Regulatory needs</strong></td>
+          <td>Strict audit required</td>
+          <td>Compliance + speed</td>
+          <td>Best-effort</td>
+      </tr>
+      <tr>
+          <td><strong>Feedback cycles</strong></td>
+          <td>Quarterly or longer</td>
+          <td>Monthly</td>
+          <td>Weekly or daily</td>
+      </tr>
+      <tr>
+          <td><strong>Change frequency</strong></td>
+          <td>Rare</td>
+          <td>Moderate</td>
+          <td>Constant</td>
+      </tr>
+      <tr>
+          <td><strong>Team size</strong></td>
+          <td>Large (20+)</td>
+          <td>Medium (8-15)</td>
+          <td>Small (2-6)</td>
+      </tr>
+      <tr>
+          <td><strong>Risk tolerance</strong></td>
+          <td>Low</td>
+          <td>Moderate</td>
+          <td>High</td>
+      </tr>
+      <tr>
+          <td><strong>Time to market</strong></td>
+          <td>6+ months</td>
+          <td>3-6 months</td>
+          <td>1-3 months</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="sinra-built-for-hybrid-from-day-one">Sinra: Built for Hybrid from Day One</h2>
+<p>Most tools force you to pick: Jira for Agile or Azure DevOps for Waterfall.</p>
+<p>Sinra is different. Neither workflow is privileged.</p>
+<ul>
+<li><strong>Specification phase:</strong> Write requirements, plan test cases, assign testers. All before development starts.</li>
+<li><strong>Development phase:</strong> Cycle-based tracking, continuous QA, adaptive planning. Change when you need to.</li>
+<li><strong>Release phase:</strong> Deployment checklists, stage gates, compliance verification. Ship with confidence.</li>
+</ul>
+<p>One platform. Unified visibility. No switching between tools. Real capacity planning across all phases.</p>
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="action-items-adopting-hybrid-methodology">Action Items: Adopting Hybrid Methodology</h2>
+<ol>
+<li><strong>Audit your current process.</strong> Are you forcing all work into Agile? Or stuck in pure Waterfall?</li>
+<li><strong>Identify boundaries.</strong> What work needs upfront specification? What needs cycle flexibility?</li>
+<li><strong>Create workflows.</strong> Design parallel tracks for your team structure.</li>
+<li><strong>Get real visibility.</strong> Ensure you can see progress across both specifications and development.</li>
+<li><strong>Measure outcomes.</strong> Track quality, cycle time, and on-time delivery.</li>
+</ol>
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>Stop choosing between V-Model and Agile. The best teams use both.</p>
+<p>The question isn&rsquo;t &ldquo;V-Model or Agile?&rdquo; The question is: <strong>&ldquo;How do we apply the right methodology to each phase of our work?&rdquo;</strong></p>
+<p>Teams that answer that question ship faster, with higher quality, and fewer surprises.</p>
+<hr>
+<p>url: /methodology/2024/11/13/vmodel-vs-agile-choose-both.html</p>
+<p><strong>Ready to implement hybrid methodology?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free trial of Sinra →</a></p>
+<p>See how unified project management eliminates the false choice between discipline and flexibility.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/blog/posts/2026-02-19-full-remote-taboo/" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">Why Full Remote Became Taboo? From COVID …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/blog/posts/2026-02-19-recruitment-paradox-france/" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">The French Recruitment Paradox: 4 …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

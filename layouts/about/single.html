@@ -1,0 +1,112 @@
+{{ define "main" }}
+{{ $lang := .Language.Lang }}
+{{ $s := index hugo.Data $lang "strings" }}
+{{ $about := $s.about }}
+
+<div class="about-page">
+  {{/* Hero */}}
+  <section class="about-hero py-20 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">{{ $about.innovative_solution }}</h1>
+      <p class="text-xl text-base-content/80 max-w-3xl mx-auto">{{ $about.result_deep_reflexion }}</p>
+    </div>
+  </section>
+
+  {{/* Problem Statement */}}
+  <section class="problem-statement py-16 bg-base-200">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-6">{{ $about.problem_title }}</h2>
+      <p class="text-lg text-base-content/80">{{ $about.problem_description }}</p>
+    </div>
+  </section>
+
+  {{/* Challenges Grid */}}
+  <section class="challenges py-16 bg-base-100">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{/* Agile Challenge */}}
+        <div class="challenge-card bg-base-200 rounded-2xl p-8 shadow">
+          <div class="flex items-center gap-4 mb-6">
+            <picture>
+              <source srcset="/assets/images/agile-methodology.webp" type="image/webp" />
+              <img src="/assets/images/agile-methodology.png" alt="Agile Methodology" loading="lazy" width="64" height="64" class="rounded-xl" />
+            </picture>
+            <h3 class="text-xl font-bold">{{ $about.agile_pitfalls }}</h3>
+          </div>
+          <h4 class="font-semibold text-primary mb-3">{{ $about.time_consuming }}</h4>
+          <p class="text-base-content/80 mb-4">{{ $about.agile_environment }}</p>
+          <ul class="space-y-2">
+            <li class="flex gap-2 text-sm"><span class="text-warning">•</span>{{ $about.meeting_overload }}</li>
+            <li class="flex gap-2 text-sm"><span class="text-warning">•</span>{{ $about.constant_reprioritization }}</li>
+            <li class="flex gap-2 text-sm"><span class="text-warning">•</span>{{ $about.efficiency_loss }}</li>
+          </ul>
+        </div>
+
+        {{/* Waterfall Challenge */}}
+        <div class="challenge-card bg-base-200 rounded-2xl p-8 shadow">
+          <div class="flex items-center gap-4 mb-6">
+            <picture>
+              <source srcset="/assets/images/waterfall-methodology.webp" type="image/webp" />
+              <img src="/assets/images/waterfall-methodology.png" alt="Waterfall Methodology" loading="lazy" width="64" height="64" class="rounded-xl" />
+            </picture>
+            <h3 class="text-xl font-bold">{{ $about.waterfall_pitfalls }}</h3>
+          </div>
+          <h4 class="font-semibold text-primary mb-3">{{ $about.loss_of_control }}</h4>
+          <p class="text-base-content/80 mb-4">{{ $about.waterfall_methodology }}</p>
+          <ul class="space-y-2">
+            <li class="flex gap-2 text-sm"><span class="text-warning">•</span>{{ $about.deadline_pressure }}</li>
+            <li class="flex gap-2 text-sm"><span class="text-warning">•</span>{{ $about.rigid_schedule }}</li>
+            <li class="flex gap-2 text-sm"><span class="text-warning">•</span>{{ $about.quality_compromise }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Sinra Approach */}}
+  <section class="sinra-approach py-16 bg-base-200">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-6 text-center">{{ $about.design_to }}</h2>
+      <p class="text-lg text-base-content/80 text-center mb-12">{{ $about.sinra_combines }}</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-base-100 rounded-xl p-6 shadow">
+          <h3 class="font-bold text-lg mb-2">{{ $about.clear_planning }}</h3>
+          <p class="text-base-content/70 text-sm">{{ $about.clear_planning_desc }}</p>
+        </div>
+        <div class="bg-base-100 rounded-xl p-6 shadow">
+          <h3 class="font-bold text-lg mb-2">{{ $about.global_vision }}</h3>
+          <p class="text-base-content/70 text-sm">{{ $about.global_vision_desc }}</p>
+        </div>
+        <div class="bg-base-100 rounded-xl p-6 shadow">
+          <h3 class="font-bold text-lg mb-2">{{ $about.enhanced_control }}</h3>
+          <p class="text-base-content/70 text-sm">{{ $about.enhanced_control_desc }}</p>
+        </div>
+        <div class="bg-base-100 rounded-xl p-6 shadow">
+          <h3 class="font-bold text-lg mb-2">{{ $about.release_mastery }}</h3>
+          <p class="text-base-content/70 text-sm">{{ $about.release_mastery_desc }}</p>
+        </div>
+        <div class="bg-base-100 rounded-xl p-6 shadow">
+          <h3 class="font-bold text-lg mb-2">{{ $about.release_planning }}</h3>
+          <p class="text-base-content/70 text-sm">{{ $about.release_planning_desc }}</p>
+        </div>
+        <div class="bg-base-100 rounded-xl p-6 shadow">
+          <h3 class="font-bold text-lg mb-2">{{ $about.deployment_readiness }}</h3>
+          <p class="text-base-content/70 text-sm">{{ $about.deployment_readiness_desc }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* CTA */}}
+  <section class="py-16 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-4">{{ $about.ready_to_transform }}</h2>
+      <p class="text-base-content/70 mb-8">{{ $about.ready_to_transform_desc }}</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        {{ $about.learn_more }}
+      </a>
+    </div>
+  </section>
+</div>
+{{ end }}

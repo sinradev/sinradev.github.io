@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    Grooming Marathon : 4 Heures Pour 8 User Stories
+  </text>
+
+  <!-- Timeline -->
+  <line x1="80" y1="100" x2="720" y2="100" stroke="#cbd5e1" stroke-width="3"/>
+
+  <!-- Time markers -->
+  <text x="80" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#64748b">14h00</text>
+  <text x="240" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#64748b">15h00</text>
+  <text x="400" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#64748b">16h00</text>
+  <text x="560" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#64748b">17h00</text>
+  <text x="720" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#64748b">18h00</text>
+
+  <!-- Story blocks -->
+  <!-- Story 1 -->
+  <rect x="80" y="110" width="100" height="60" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="130" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#991b1b">Story 1</text>
+  <text x="130" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f1d1d">Rechercher</text>
+  <text x="130" y="162" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f1d1d">40 min</text>
+
+  <!-- Story 2 -->
+  <rect x="190" y="110" width="100" height="60" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="240" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#991b1b">Story 2</text>
+  <text x="240" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f1d1d">Exporter</text>
+  <text x="240" y="162" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f1d1d">40 min</text>
+
+  <!-- Story 3 -->
+  <rect x="300" y="110" width="100" height="60" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="350" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#991b1b">Story 3</text>
+  <text x="350" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f1d1d">Partager</text>
+  <text x="350" y="162" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f1d1d">35 min</text>
+
+  <!-- Story 4 -->
+  <rect x="410" y="110" width="70" height="60" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="445" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">Story 4</text>
+  <text x="445" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#78350f">30 min</text>
+
+  <!-- Story 5 -->
+  <rect x="490" y="110" width="70" height="60" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="525" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">Story 5</text>
+  <text x="525" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#78350f">30 min</text>
+
+  <!-- Story 6 -->
+  <rect x="570" y="110" width="70" height="60" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="605" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">Story 6</text>
+  <text x="605" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1e3a8a">25 min</text>
+
+  <!-- Story 7 -->
+  <rect x="650" y="110" width="70" height="60" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="685" y="130" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">Story 7</text>
+  <text x="685" y="148" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1e3a8a">20 min</text>
+
+  <!-- Activities -->
+  <text x="130" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Lire story</text>
+  <text x="130" y="215" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">15 questions</text>
+  <text x="130" y="230" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Clarifier</text>
+  <text x="130" y="245" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Découper</text>
+
+  <text x="240" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Formats export</text>
+  <text x="240" y="215" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Sync/Async</text>
+  <text x="240" y="230" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Filtres</text>
+  <text x="240" y="245" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Découper</text>
+
+  <text x="350" y="200" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Email/Lien/</text>
+  <text x="350" y="215" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Réseaux</text>
+  <text x="350" y="230" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">Permissions</text>
+
+  <!-- Stats boxes -->
+  <rect x="100" y="280" width="250" height="90" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+  <text x="225" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#991b1b">
+    ⏱️ 4h00 de Grooming
+  </text>
+  <text x="225" y="328" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f1d1d">
+    8 personnes × 4h = 32h cumulées
+  </text>
+  <text x="225" y="348" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f1d1d">
+    20% du temps de l'équipe
+  </text>
+  <text x="225" y="363" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7f1d1d">
+    (sur une semaine de 40h)
+  </text>
+
+  <rect x="380" y="280" width="320" height="90" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="540" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    📊 Résultat
+  </text>
+  <text x="540" y="328" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350f">
+    • 8 stories groomées
+  </text>
+  <text x="540" y="348" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#78350f">
+    • Équipe épuisée avant même de coder
+  </text>
+  <text x="540" y="363" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#78350f">
+    • Et on recommence la semaine suivante...
+  </text>
+</svg>

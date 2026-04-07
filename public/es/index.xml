@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinra - Organizar. Priorizar. Entregar. on Sinra</title>
+    <link>http://localhost:1313/es/</link>
+    <description>Recent content in Sinra - Organizar. Priorizar. Entregar. on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 27 Mar 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Historia y Tipos de Agilidad: Cómo Trabajar Realmente Mejor</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-27-histoire-types-agilite/</link>
+      <pubDate>Fri, 27 Mar 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-27-histoire-types-agilite/</guid>
+      <description>&lt;h2 id=&#34;la-agilidad-una-revolución-nacida-de-la-frustración&#34;&gt;La Agilidad: Una Revolución Nacida de la Frustración&lt;/h2&gt;&#xA;&lt;p&gt;Antes de 2001, había un problema importante en el desarrollo de software. Los proyectos fracasaban.&lt;/p&gt;&#xA;&lt;p&gt;Los equipos pasaban meses, a veces años, escribiendo especificaciones detalladas. Planificando cada detalle en un waterfall rígido. Pidiendo un producto completo, luego esperando 18 meses para entregarlo.&lt;/p&gt;&#xA;&lt;p&gt;Y sin falta, cuando la versión finalmente salía?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;No correspondía con lo que el cliente necesitaba.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;El mercado había cambiado. Las prioridades habían cambiado. Las tecnologías habían cambiado. Pero el producto estaba congelado, entregado, obsoleto antes de ni siquiera ver la luz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La IA en el desarrollo: La ganancia de velocidad que oculta una pérdida de maestría</title>
+      <link>http://localhost:1313/es/blog/posts/2026-02-26-ia-velocidad-perdida-maestria/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-02-26-ia-velocidad-perdida-maestria/</guid>
+      <description>&lt;p&gt;Trabajar con IA promete una maravilla: desarrollar más rápido. Y es verdad. Las líneas de código se escriben más rápidamente, las funcionalidades toman forma en horas en lugar de días. Pero esta promesa oculta un precio invisible, frecuentemente ignorado o minimizado: &lt;strong&gt;la pérdida progresiva de maestría&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;la-paradoja-de-la-productividad&#34;&gt;La paradoja de la productividad&lt;/h2&gt;&#xA;&lt;p&gt;Celebramos la ganancia de velocidad. Cinco funcionalidades escritas en una semana en lugar de tres: es medible. Cuantificable. Pero ¿cómo se mide la pérdida de maestría? ¿Cómo se contabiliza lo que ya no comprendes realmente?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Generar Especificaciones Via IA A Partir Del Código Fuente: Cuando La IA Analiza Tu Codebase Para Crear Specs Realistas</title>
+      <link>http://localhost:1313/es/blog/posts/2026-01-23-generacion-specs-ia-codigo-fuente/</link>
+      <pubDate>Fri, 23 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-01-23-generacion-specs-ia-codigo-fuente/</guid>
+      <description>&lt;h2 id=&#34;añadan-autenticación-multi-factor&#34;&gt;&amp;ldquo;Añadan Autenticación Multi-Factor&amp;rdquo;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. Reunión de planificación de release.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Product Manager: &amp;ldquo;Para el próximo release, vamos a añadir autenticación multi-factor. Es una solicitud prioritaria de clientes.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;El PM abre Notion y comienza a escribir la spec:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# Capability: Autenticación Multi-Factor (MFA)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;**Objetivo:**&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Permitir a los usuarios asegurar su cuenta con múltiples métodos de autenticación.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;**Métodos soportados:**&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; SMS con código de 6 dígitos&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Aplicación authenticator (TOTP)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Llave de seguridad física (FIDO2)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Email con enlace de confirmación&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;**User Stories:**&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Como usuario, quiero activar MFA en mis ajustes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Como usuario, quiero elegir mi método preferido&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Como usuario, quiero configurar múltiples métodos de respaldo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PM: &amp;ldquo;Spec terminada. ¿Estimación?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De Notion A Sinra: Cuando Tu Glosario Técnico Cobra Vida Con @Menciones</title>
+      <link>http://localhost:1313/es/blog/posts/2026-01-17-glosario-vivo-menciones-paginas-sinra/</link>
+      <pubDate>Sat, 17 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-01-17-glosario-vivo-menciones-paginas-sinra/</guid>
+      <description>&lt;h2 id=&#34;qué-es-una-release-candidate-aquí&#34;&gt;&amp;ldquo;¿Qué Es Una Release Candidate Aquí?&amp;rdquo;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Martes por la tarde. Reunión de planificación de release.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Product Manager: &amp;ldquo;Vamos a crear una release candidate el viernes para pruebas en staging.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;El nuevo desarrollador (llegó hace 2 semanas) levanta la mano:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Dev: &amp;ldquo;Disculpa, ¿qué es exactamente una release candidate en nuestro flujo de trabajo?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;PM: &amp;ldquo;¡Buena pregunta! Tenemos un glosario en Notion. Consulta la página Vocabulario de Gestión de Releases.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;El desarrollador abre Notion.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>¿Dónde Están Tus Datos? Alojamiento Europeo vs Americano y Por Qué Importa</title>
+      <link>http://localhost:1313/es/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/</link>
+      <pubDate>Tue, 13 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/</guid>
+      <description>&lt;h2 id=&#34;nuestros-datos-están-en-europa-verdad&#34;&gt;«Nuestros Datos Están En Europa&amp;hellip; ¿Verdad?»&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Miércoles por la tarde. Reunión de seguridad con el equipo IT.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;CTO: «Tenemos que preparar nuestra auditoría RGPD. Primera pregunta: ¿dónde están alojados nuestros datos?»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «En la nube.»&lt;/p&gt;&#xA;&lt;p&gt;CTO: «Sí, ¿pero dónde exactamente?»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «Región eu-west-1. París.»&lt;/p&gt;&#xA;&lt;p&gt;CTO: «Perfecto. Entonces nuestros datos están en Francia.»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «Eh&amp;hellip; técnicamente, sí.»&lt;/p&gt;&#xA;&lt;p&gt;CTO: «¿Cómo que &amp;ldquo;técnicamente&amp;rdquo;?»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «Los servidores están físicamente en París. Pero el proveedor es americano.»&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer</title>
+      <link>http://localhost:1313/es/blog/posts/2026-01-02-fausse-promesse-user-stories-en-tant-que/</link>
+      <pubDate>Fri, 02 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-01-02-fausse-promesse-user-stories-en-tant-que/</guid>
+      <description>&lt;h2 id=&#34;la-user-story-que-no-dice-nada&#34;&gt;La User Story Que No Dice Nada&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. Sprint planning. Equipo de 6 desarrolladores.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Product Owner: « OK, pasemos a la siguiente story. »&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;El PO lee la story:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;USER-347: Como usuario, quiero poder desconectarme de la aplicación&#xA;para asegurar mi cuenta.&#xA;&#xA;Criterios de aceptación:&#xA;- El usuario puede desconectarse&#xA;- La sesión termina después de desconectarse&#xA;- El usuario es redirigido a la página de login&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;PO: « Ahí está. Es claro. ¿Preguntas? »&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/</link>
+      <pubDate>Tue, 30 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/</guid>
+      <description>&lt;h2 id=&#34;el-dev-en-4-proyectos-simultáneos&#34;&gt;El Dev En 4 Proyectos Simultáneos&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. One-on-one con un desarrollador.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;Hola Dev 1, ¿cómo estás?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Francamente, no muy bien.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;¿Por qué?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Estoy en demasiados proyectos a la vez.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;¿Cuántos proyectos?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;4.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;¿¡4 proyectos!? ¿Cuáles?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Proyecto A (refactor auth), Proyecto B (nueva API), Proyecto C (migración DB), Proyecto D (bug fixes prod).&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Manager: &amp;ldquo;OK, ¿y cuál es el problema?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dependencias Ocultas: Por Qué Tus Features Siempre Están Bloqueadas</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-28-dependances-cachees-features-bloquees/</link>
+      <pubDate>Sun, 28 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-28-dependances-cachees-features-bloquees/</guid>
+      <description>&lt;h2 id=&#34;la-feature-bloqueada-durante-3-semanas&#34;&gt;La Feature Bloqueada Durante 3 Semanas&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. Daily standup.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Scrum Master: &amp;ldquo;Dev 1, ¿estado de la feature &amp;lsquo;Export PDF&amp;rsquo;?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Sigue bloqueada.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;¿Bloqueada desde cuándo?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;3 semanas.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;¿¡3 semanas!? ¿Por qué está bloqueada?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: &amp;ldquo;Estoy esperando la API de generación de PDF del equipo backend.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;OK, y el equipo backend, ¿cómo va?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;SM va a ver al equipo backend.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;SM: &amp;ldquo;La API PDF, ¿para cuándo estará lista?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El Caos Del Backlog: Cuando Nadie Sabe Qué Está Planificado Para Q2</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/</link>
+      <pubDate>Fri, 26 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-26-chaos-backlog-personne-sait-q2/</guid>
+      <description>&lt;h2 id=&#34;la-reunión-de-planificación-q2&#34;&gt;La Reunión De Planificación Q2&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana. Reunión de planificación trimestral.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;CEO: &amp;ldquo;OK equipo, ¿qué entregamos en Q2?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Product Manager: &amp;ldquo;Déjame revisar el backlog&amp;hellip;&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Abre Jira.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Backlog: 537 issues&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Filtros disponibles:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Priority: P0 (12 issues), P1 (47 issues), P2 (89 issues), P3 (145 issues), P4 (244 issues)&lt;/li&gt;&#xA;&lt;li&gt;Status: To Do (412), In Progress (67), Blocked (38), Waiting (20)&lt;/li&gt;&#xA;&lt;li&gt;Labels: 87 etiquetas diferentes (urgent, bug, feature, tech-debt, nice-to-have, critical, MVP, v2, Q1, Q2, maybe, someday, etc.)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;PM, abrumado:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Documentación Muerta: Por Qué Tu Confluence/Notion Se Derrumba</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-24-documentation-morte-notion-confluence/</link>
+      <pubDate>Wed, 24 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-24-documentation-morte-notion-confluence/</guid>
+      <description>&lt;h2 id=&#34;el-primer-día-del-nuevo-desarrollador&#34;&gt;El Primer Día Del Nuevo Desarrollador&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes 9am. Alex se une al equipo de ingeniería.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lead Developer: &amp;ldquo;¡Bienvenido Alex! Para entender nuestra arquitectura, empieza leyendo la documentación.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Alex abre Notion.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Búsqueda: &amp;ldquo;Authentication&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Resultados encontrados: 8 documentos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;RFC-042: Arquitectura de Autenticación&lt;/code&gt; (creado hace 8 meses)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Spec Técnica: Implementación SSO&lt;/code&gt; (creado hace 6 meses)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Documentación API Auth v2&lt;/code&gt; (creado hace 4 meses)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Migración JWT → OAuth2&lt;/code&gt; (creado hace 3 meses)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Guía: Cómo autenticar usuarios&lt;/code&gt; (creado hace 2 meses)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Auth System Overview [DRAFT]&lt;/code&gt; (creado hace 1 mes)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Authentication Best Practices&lt;/code&gt; (creado hace 2 semanas)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Auth Quick Start&lt;/code&gt; (creado ayer)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;Alex, perplejo:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El QA Invisible: Cuando Los Tests Están Dispersos Entre Jira, Excel Y La Memoria Del QA</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-22-qa-invisible-tests-disperses/</link>
+      <pubDate>Mon, 22 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-22-qa-invisible-tests-disperses/</guid>
+      <description>&lt;h2 id=&#34;el-viernes-antes-del-release&#34;&gt;El Viernes Antes Del Release&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Viernes 15:00. Release programado para el lunes por la mañana.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;El CTO entra en la oficina de QA:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Marie, ¿estamos listos para lanzar el lunes? ¿Todos los tests pasaron?&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Marie (QA Lead) abre su laptop:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Paso 1:&lt;/strong&gt; Abrir Excel&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Archivo: &lt;code&gt;Test_Cases_Release_v2.3_FINAL_v4.xlsx&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;87 test cases listados&lt;/li&gt;&#xA;&lt;li&gt;Columnas: ID, Descripción, Prioridad, Estado (Passed/Failed/Not Run)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Paso 2:&lt;/strong&gt; Contar manualmente&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;62 tests marcados &amp;ldquo;Passed&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;18 tests marcados &amp;ldquo;Not Run&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;7 tests marcados &amp;ldquo;Failed&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Paso 3:&lt;/strong&gt; Verificar Jira&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tiempo vs Complejidad: Por Qué Sinra Abandona Los Story Points</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-20-temps-vs-complexite-estimation/</link>
+      <pubDate>Sat, 20 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-20-temps-vs-complexite-estimation/</guid>
+      <description>&lt;h2 id=&#34;el-planning-poker-que-sale-mal&#34;&gt;El Planning Poker Que Sale Mal&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana, reunión de planificación de sprint.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Product Owner: « Vamos a estimar la feature &amp;lsquo;Notificaciones Push&amp;rsquo;. »&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;El equipo saca las tarjetas de planning poker.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Desarrollador 1: « Creo que es un 5. »&lt;/p&gt;&#xA;&lt;p&gt;Desarrollador 2: « No, claramente es un 8. Hay gestión de permisos en iOS, Android, web&amp;hellip; »&lt;/p&gt;&#xA;&lt;p&gt;Desarrollador 3: « Espera, ¿contamos solo el backend o también el frontend? »&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: « Euh&amp;hellip; ¿ambos? »&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Roadmap Incompleta: Cuando PO/PM Pierden El Control de Su Planificación</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-19-roadmap-incomplete-po-pm/</link>
+      <pubDate>Fri, 19 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-19-roadmap-incomplete-po-pm/</guid>
+      <description>&lt;h2 id=&#34;la-vida-diaria-de-un-product-owner&#34;&gt;La Vida Diaria de un Product Owner&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana, reunión de planificación trimestral.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Presentas tu roadmap a la dirección:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Lanzaremos la autenticación SSO en febrero, el panel de análisis en marzo y la API pública en abril.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Miércoles, semana 3.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Un desarrollador te pregunta:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;La característica SSO, ¿qué incluye exactamente? Porque tenemos 3 interpretaciones diferentes en el equipo.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Consultas tus notas en Notion. La especificación dice &amp;ldquo;Autenticación SSO&amp;rdquo; pero los detalles son&amp;hellip; vagos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Comunicación Dispersa: Por Qué Sus Decisiones Desaparecen Entre Notion, Linear y Discord</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-18-comunicacion-dispersa-features/</link>
+      <pubDate>Thu, 18 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-18-comunicacion-dispersa-features/</guid>
+      <description>&lt;h2 id=&#34;el-escenario-familiar&#34;&gt;El Escenario Familiar&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana, 10h34.&lt;/strong&gt; Un desarrollador te pregunta :&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;« ¿Por qué decidimos cambiar el enfoque de autenticación en la feature de permisos de usuario? »&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Sabes que tuvieron esa discusión. Pero ¿dónde?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intento 1 :&lt;/strong&gt; Discord&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Buscas « autenticación » en #engineering&lt;/li&gt;&#xA;&lt;li&gt;Encuentras 47 menciones en los últimos 3 meses&lt;/li&gt;&#xA;&lt;li&gt;Ninguna corresponde a esta feature específica&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intento 2 :&lt;/strong&gt; Notion&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Abres la spec « Permisos de Usuario v2 »&lt;/li&gt;&#xA;&lt;li&gt;La spec describe el qué, no el por qué&lt;/li&gt;&#xA;&lt;li&gt;Sin rastro de la decisión de arquitectura&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intento 3 :&lt;/strong&gt; Linear&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Trampa de la Flexibilidad: Por Qué las Herramientas &#39;Todo-en-Uno&#39; Ralentizan a Sus Equipos</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-03-tools-flexibility-trap/</link>
+      <pubDate>Wed, 03 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-03-tools-flexibility-trap/</guid>
+      <description>&lt;h2 id=&#34;la-promesa-de-flexibilidad&#34;&gt;La Promesa de Flexibilidad&lt;/h2&gt;&#xA;&lt;p&gt;Probablemente has escuchado estas promesas de marketing:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Jira:&lt;/strong&gt; &amp;ldquo;Se adapta a cualquier flujo de trabajo&amp;rdquo;&#xA;&lt;strong&gt;Notion:&lt;/strong&gt; &amp;ldquo;Personaliza todo a tus necesidades&amp;rdquo;&#xA;&lt;strong&gt;Linear:&lt;/strong&gt; &amp;ldquo;Da forma a la herramienta a tu manera de trabajar&amp;rdquo;&#xA;&lt;strong&gt;Airtable:&lt;/strong&gt; &amp;ldquo;Construye la app perfecta para tu equipo&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;¿Suena genial, verdad?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Excepto que en realidad, esto es lo que sucede:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Semana 1:&lt;/strong&gt; Configuración inicial&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;15 tipos de issues personalizados&lt;/li&gt;&#xA;&lt;li&gt;47 campos personalizados&lt;/li&gt;&#xA;&lt;li&gt;12 flujos de trabajo diferentes&lt;/li&gt;&#xA;&lt;li&gt;8 dashboards&lt;/li&gt;&#xA;&lt;li&gt;Más de 200 configuraciones&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Semana 2:&lt;/strong&gt; Debates del equipo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>¿Por qué el full remote se convirtió en tabú ? Del COVID a la obligación del retorno a la oficina</title>
+      <link>http://localhost:1313/es/blog/posts/2026-02-19-full-remote-tabu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-02-19-full-remote-tabu/</guid>
+      <description>&lt;p&gt;¿Recuerdas 2020-2021 ? El trabajo completamente remoto era la promesa del futuro del trabajo. Las empresas de repente descubrieron que sus empleados podían ser productivos desde casa. Los desplazamientos desaparecieron. Los costos inmobiliarios se desplomaron. El talento podría venir de cualquier lugar del mundo. Fue una revolución.&lt;/p&gt;&#xA;&lt;p&gt;Hoy, en 2026, el péndulo ha oscilado completamente. Las ofertas de empleo gritan « híbrido 3 días en la oficina » o simplemente « solo en la oficina ». Los reclutadores te preguntan : « Puedes venir a la oficina, ¿verdad ? » como si hubieras hecho una pregunta extraña. ¿Trabajo totalmente remoto ? Se ha vuelto casi tóxico de solicitar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>¿Por qué en 2026 todavía imprimimos PDFs, los llenamos a mano y los escaneamos de vuelta?</title>
+      <link>http://localhost:1313/es/blog/posts/2026-02-25-formularios-pdf-administrativos-arcaicos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-02-25-formularios-pdf-administrativos-arcaicos/</guid>
+      <description>&lt;ol start=&#34;2026&#34;&gt;&#xA;&lt;li&gt;Tenemos IA generativa. Los vehículos autónomos ya conducen. Las interfaces de voz entienden matices y contexto. Las aplicaciones móviles hacen cosas que parecían imposibles hace cinco años.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Y sin embargo.&lt;/p&gt;&#xA;&lt;p&gt;Recibo un correo de mi aseguradora. Un PDF adjunto. Para reportar un siniestro. Dice claramente: « Imprime, firma a mano, escanea y nos reenvia ».&lt;/p&gt;&#xA;&lt;p&gt;El formato PDF. No modificable. No rellenable electrónicamente. Solo una imagen digital de un papel que ni siquiera existe.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De Issue a Release: Cómo Sinra Estructura Su Trabajo</title>
+      <link>http://localhost:1313/es/blog/posts/2025-11-26-from-issue-to-release/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-11-26-from-issue-to-release/</guid>
+      <description>&lt;h2 id=&#34;el-problema-perdido-en-la-traducción&#34;&gt;El Problema: Perdido en la Traducción&lt;/h2&gt;&#xA;&lt;p&gt;La mayoría de las herramientas de gestión de proyectos te obligan a pensar en abstracciones:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;User stories&amp;rdquo; que no son realmente historias&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Epics&amp;rdquo; que no se sienten épicos&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Backlogs&amp;rdquo; que se convierten en cementerios&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Increments&amp;rdquo; que nadie entiende&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;¿El resultado?&lt;/strong&gt; Los equipos pasan más tiempo traduciendo conceptos que haciendo trabajo.&lt;/p&gt;&#xA;&lt;p&gt;Sinra adopta un enfoque diferente: &lt;strong&gt;jerarquía concreta que refleja cómo realmente sucede el trabajo&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Del artesano al simple ejecutor: cómo el desarrollador perdió su estatus</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-26-de-l-artisan-au-simple-executant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-26-de-l-artisan-au-simple-executant/</guid>
+      <description>&lt;p&gt;Hace una década, la programación era un oficio. Diseñabas sistemas, resolvías problemas complejos, tomabas decisiones arquitectónicas. Te pagaban por tu juicio, tu experiencia, tu capacidad de navegar restricciones e imaginar soluciones originales.&lt;/p&gt;&#xA;&lt;p&gt;Hoy eres un ejecutor. Un productor de código. Un número en la velocidad del equipo.&lt;/p&gt;&#xA;&lt;p&gt;Y la IA que llega ahora simplemente hace evidente lo que la industria ha decidido silenciosamente: puesto que ya eres solo una máquina para producir código, por qué no usar una máquina de verdad?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Desarrollo Orientado a Releases: Retomando el Control de Sus Despliegues</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-01-release-driven-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-01-release-driven-development/</guid>
+      <description>&lt;h2 id=&#34;la-crisis-de-despliegue&#34;&gt;La Crisis de Despliegue&lt;/h2&gt;&#xA;&lt;p&gt;Pregunte a la mayoría de los equipos de desarrollo: &lt;strong&gt;&amp;quot;¿Cuándo es su próximo despliegue?&amp;quot;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Respuestas comunes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Cuando terminemos el sprint&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Cuando las funcionalidades estén listas&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Desplegamos continuamente&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;No estoy seguro, Producto decide&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Traducción: No sabemos.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;El problema no es que los equipos envíen mal. Es que &lt;strong&gt;los despliegues se tratan como consecuencias del desarrollo&lt;/strong&gt;, no como principios organizadores.&lt;/p&gt;&#xA;&lt;p&gt;Construyes funcionalidades. Luego descubres cómo desplegarlas. Luego descubres problemas:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La paradoja del reclutamiento francés : 4 entrevistas, 1 test, cero confianza</title>
+      <link>http://localhost:1313/es/blog/posts/2026-02-19-paradoja-reclutamiento-francia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-02-19-paradoja-reclutamiento-francia/</guid>
+      <description>&lt;p&gt;Probablemente has escuchado esta pregunta a menudo : « ¿Por qué en Francia, contratar es como auditar para una película de Spielberg, pero para un CDI a 2.500 euros al mes ? »&lt;/p&gt;&#xA;&lt;p&gt;Aquí está la paradoja : Francia tiene una de las legislaciones más protectoras en materia de empleo. Los períodos de prueba pueden extenderse durante varios meses. El empleador puede legalmente probar la relación antes de comprometerse. Y sin embargo, las startups francesas han creado un recorrido del combate : 4 entrevistas, 1 test técnico, verificación de referencias, a veces incluso un caso práctico para completar en casa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La tech tendrá que desacelerar: recursos agotados, aplicaciones obesas y el regreso del bajo nivel</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-23-tech-debe-desacelerar-recursos-lenguajes-bajo-nivel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-23-tech-debe-desacelerar-recursos-lenguajes-bajo-nivel/</guid>
+      <description>&lt;p&gt;Nos han vendido la idea de que la tecnología es infinita. Servidores en todas partes. Aplicaciones más grandes, más ricas, más rápidas. IA para todo. Cloud ilimitado. Añade RAM, añade núcleos, añade centros de datos.&lt;/p&gt;&#xA;&lt;p&gt;Salvo que los recursos que hacen funcionar todo esto no son infinitos.&lt;/p&gt;&#xA;&lt;p&gt;Y lo que nadie en la industria tech quiere decir claramente es que vamos a tener que desacelerar. No porque queramos. Porque no tendremos elección.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Los desarrolladores se han convertido en candidatos de The Voice: por qué el reclutamiento tech ha perdido la cabeza</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-23-desarrolladores-the-voice-reclutamiento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-23-desarrolladores-the-voice-reclutamiento/</guid>
+      <description>&lt;p&gt;Si eres desarrollador, probablemente ya lo hayas sentido: postularte a un puesto es como audicionar para The Voice. Salvo que no tienes una, dos ni tres oportunidades: tienes cinco. Cinco entrevistas. Más pruebas técnicas. Más verificación de referencias. Y al final, aunque llegues a la final, todavía hay rondas eliminatorias que no sabías que existían.&lt;/p&gt;&#xA;&lt;p&gt;Bienvenido al proceso de reclutamiento tech moderno, donde las empresas han decidido que la confianza es un lujo que no pueden permitirse.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Por Qué Abandonamos &#39;Sprints&#39; por &#39;Cycles&#39;</title>
+      <link>http://localhost:1313/es/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/</guid>
+      <description>&lt;h2 id=&#34;las-palabras-dan-forma-a-cómo-trabajamos&#34;&gt;Las Palabras Dan Forma a Cómo Trabajamos&lt;/h2&gt;&#xA;&lt;p&gt;En la gestión de proyectos de software, el lenguaje no es neutral.&lt;/p&gt;&#xA;&lt;p&gt;Cuando llamas a un período de trabajo de dos semanas un &lt;strong&gt;&amp;ldquo;sprint&amp;rdquo;&lt;/strong&gt;, estás invocando imágenes: corredores empujándose hasta el agotamiento, líneas de meta que deben cruzarse, una carrera contra el tiempo. La metáfora es atlética, urgente, insostenible.&lt;/p&gt;&#xA;&lt;p&gt;Cuando construimos Sinra, rechazamos esa metáfora por completo.&lt;/p&gt;&#xA;&lt;p&gt;Los llamamos &lt;strong&gt;cycles&lt;/strong&gt; (ciclos), períodos concretos con límites de tiempo para organizar el trabajo. No porque &amp;ldquo;cycle&amp;rdquo; suene más genial. Porque &lt;em&gt;significa algo diferente&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>V-Model vs Agile: Por Qué las Falsas Opciones Matan Proyectos</title>
+      <link>http://localhost:1313/es/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2024-11-13-vmodel-vs-agile-choose-both/</guid>
+      <description>&lt;h2 id=&#34;el-mito-de-la-opción-binaria&#34;&gt;El Mito de la Opción Binaria&lt;/h2&gt;&#xA;&lt;p&gt;Durante décadas, se les ha dicho a los equipos: &lt;strong&gt;Elija su camino. V-Model o Agile. Elija uno.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Pero la realidad es más complicada.&lt;/p&gt;&#xA;&lt;p&gt;Una startup SaaS lanzando un nuevo procesador de pagos necesita &lt;em&gt;especificación por adelantado&lt;/em&gt; (disciplina V-Model). Pero también necesitan &lt;em&gt;flexibilidad de cycles&lt;/em&gt; cuando los requisitos de seguridad cambian a mitad del proyecto (capacidad de respuesta Agile). Un equipo de salud construyendo un sistema regulatorio necesita &lt;em&gt;puertas de etapa y rastros de evidencia&lt;/em&gt; (V-Model). Pero también necesitan &lt;em&gt;bucles de retroalimentación rápidos&lt;/em&gt; de los clínicos (Agile).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

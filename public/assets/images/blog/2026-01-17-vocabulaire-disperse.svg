@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">
+    Vocabulaire Fragmenté Entre Outils
+  </text>
+
+  <!-- Central concept -->
+  <g transform="translate(340, 200)">
+    <ellipse cx="60" cy="25" rx="80" ry="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="60" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#78350f" text-anchor="middle">
+      Même concept,
+    </text>
+    <text x="60" y="48" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#78350f" text-anchor="middle">
+      4 noms différents
+    </text>
+  </g>
+
+  <!-- Jira -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="160" height="100" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="80" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">
+      Jira
+    </text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="12" fill="#1e40af" text-anchor="middle">
+      Epic
+    </text>
+    <text x="80" y="68" font-family="Arial, sans-serif" font-size="12" fill="#1e40af" text-anchor="middle">
+      Story
+    </text>
+    <text x="80" y="86" font-family="Arial, sans-serif" font-size="12" fill="#1e40af" text-anchor="middle">
+      Sprint
+    </text>
+  </g>
+  <path d="M 240 130 L 340 200" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Notion -->
+  <g transform="translate(560, 80)">
+    <rect x="0" y="0" width="160" height="100" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+    <text x="80" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#be185d" text-anchor="middle">
+      Notion
+    </text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="12" fill="#be185d" text-anchor="middle">
+      Database
+    </text>
+    <text x="80" y="68" font-family="Arial, sans-serif" font-size="12" fill="#be185d" text-anchor="middle">
+      Page
+    </text>
+    <text x="80" y="86" font-family="Arial, sans-serif" font-size="12" fill="#be185d" text-anchor="middle">
+      Block
+    </text>
+  </g>
+  <path d="M 560 130 L 460 200" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- GitHub -->
+  <g transform="translate(80, 280)">
+    <rect x="0" y="0" width="160" height="100" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="80" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4338ca" text-anchor="middle">
+      GitHub
+    </text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="12" fill="#4338ca" text-anchor="middle">
+      Issue
+    </text>
+    <text x="80" y="68" font-family="Arial, sans-serif" font-size="12" fill="#4338ca" text-anchor="middle">
+      PR
+    </text>
+    <text x="80" y="86" font-family="Arial, sans-serif" font-size="12" fill="#4338ca" text-anchor="middle">
+      Milestone
+    </text>
+  </g>
+  <path d="M 240 330 L 340 260" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Your Glossary -->
+  <g transform="translate(560, 280)">
+    <rect x="0" y="0" width="160" height="100" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+    <text x="80" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">
+      Votre Glossaire
+    </text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="12" fill="#065f46" text-anchor="middle">
+      Capability
+    </text>
+    <text x="80" y="68" font-family="Arial, sans-serif" font-size="12" fill="#065f46" text-anchor="middle">
+      Task
+    </text>
+    <text x="80" y="86" font-family="Arial, sans-serif" font-size="12" fill="#065f46" text-anchor="middle">
+      Release
+    </text>
+  </g>
+  <path d="M 560 330 L 460 260" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Footer note -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    Résultat : Personne ne parle le même langage
+  </text>
+</svg>

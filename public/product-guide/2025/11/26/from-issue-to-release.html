@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>From Issue to Release: How Sinra Structures Your Work | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/product-guide/2025/11/26/from-issue-to-release.html" />
+
+
+
+<meta name="description" content="Follow a feature through Sinra&#39;s hierarchy - from individual issues to capabilities to releases - and discover how concrete structure creates clarity instead of complexity." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/product-guide/2025/11/26/from-issue-to-release.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/product-guide/2025/11/26/from-issue-to-release.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2025-11-26-from-issue-to-release/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2025-11-26-from-issue-to-release/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="From Issue to Release: How Sinra Structures Your Work" />
+<meta property="og:description" content="Follow a feature through Sinra&#39;s hierarchy - from individual issues to capabilities to releases - and discover how concrete structure creates clarity instead of complexity." />
+<meta property="og:url"         content="http://localhost:1313/product-guide/2025/11/26/from-issue-to-release.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2025-11-26-from-issue-to-release-featured.png" />
+
+<meta property="article:published_time" content="0001-01-01T00:00:00Z" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Product Guide" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="From Issue to Release: How Sinra Structures Your Work" />
+<meta name="twitter:description" content="Follow a feature through Sinra&#39;s hierarchy - from individual issues to capabilities to releases - and discover how concrete structure creates clarity instead of complexity." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2025-11-26-from-issue-to-release-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/product-guide/2025/11/26/from-issue-to-release.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2025-11-26-from-issue-to-release/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2025-11-26-from-issue-to-release/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-11-26-from-issue-to-release-featured.png" alt="From Issue to Release: How Sinra Structures Your Work" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/product-guide/" class="badge badge-primary badge-outline">Product Guide</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">From Issue to Release: How Sinra Structures Your Work</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">A practical guide through the journey of a feature from conception to delivery</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="0001-01-01">January 1, 0001</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="the-problem-lost-in-translation">The Problem: Lost in Translation</h2>
+<p>Most project management tools force you to think in abstractions:</p>
+<ul>
+<li>&ldquo;User stories&rdquo; that aren&rsquo;t actually stories</li>
+<li>&ldquo;Epics&rdquo; that don&rsquo;t feel epic</li>
+<li>&ldquo;Backlogs&rdquo; that become graveyards</li>
+<li>&ldquo;Increments&rdquo; that nobody understands</li>
+</ul>
+<p><strong>The result?</strong> Teams spend more time translating concepts than doing work.</p>
+<p>Sinra takes a different approach: <strong>concrete hierarchy that mirrors how work actually happens</strong>.</p>
+<p>Let&rsquo;s follow a real feature from start to finish.</p>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="the-feature-two-factor-authentication">The Feature: Two-Factor Authentication</h2>
+<p>Your team decides to add two-factor authentication (2FA) to your SaaS product.</p>
+<p>In traditional tools, you might create:</p>
+<ul>
+<li>A &ldquo;user story&rdquo; for 2FA</li>
+<li>Multiple &ldquo;sub-tasks&rdquo;</li>
+<li>An &ldquo;epic&rdquo; to group them</li>
+<li>Tags to track testing</li>
+<li>Custom fields for release targeting</li>
+</ul>
+<p><strong>In Sinra, the structure is simpler and more direct.</strong></p>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="level-1-issues-the-building-blocks">Level 1: Issues (The Building Blocks)</h2>
+<p><strong>Issues are individual work items.</strong> Bugs, tasks, features - anything a person does is an issue.</p>
+<p>For 2FA, you create these issues:</p>
+<p><strong>Backend Issues:</strong></p>
+<ol>
+<li>&ldquo;Implement TOTP token generation&rdquo;</li>
+<li>&ldquo;Create 2FA enrollment API endpoint&rdquo;</li>
+<li>&ldquo;Add 2FA verification to login flow&rdquo;</li>
+<li>&ldquo;Generate backup codes on enrollment&rdquo;</li>
+</ol>
+<p><strong>Frontend Issues:</strong> 5. &ldquo;Build 2FA setup page UI&rdquo; 6. &ldquo;Add QR code scanner component&rdquo; 7. &ldquo;Create backup codes download interface&rdquo; 8. &ldquo;Update login form with 2FA input&rdquo;</p>
+<p><strong>Testing Issues:</strong> 9. &ldquo;Write unit tests for TOTP validation&rdquo; 10. &ldquo;Test 2FA enrollment flow&rdquo; 11. &ldquo;Test 2FA login verification&rdquo; 12. &ldquo;Test backup code recovery&rdquo;</p>
+<p>Each issue has:</p>
+<ul>
+<li>A clear title (what needs to be done)</li>
+<li>A description (context and requirements)</li>
+<li>An assignee (who&rsquo;s doing it)</li>
+<li>A status (writing → development → review → testing → done)</li>
+<li>Labels (backend, frontend, security, etc.)</li>
+</ul>
+<p><strong>Issues are the atomic unit of work.</strong> Everything starts here.</p>
+<img src="/assets/images/issue-structure.svg" alt="Issue Structure" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="level-2-capabilities-grouping-related-work">Level 2: Capabilities (Grouping Related Work)</h2>
+<p><strong>Capabilities are features or initiatives tracked in your releases.</strong> They organize work at a higher level than issues.</p>
+<p>For 2FA, you create a capability called:
+<strong>&ldquo;Two-Factor Authentication&rdquo;</strong></p>
+<p>This capability includes:</p>
+<ul>
+<li>All 12 issues listed above</li>
+<li>Acceptance criteria for the feature</li>
+<li>Dependencies (e.g., requires SMS provider integration)</li>
+<li>Target release (e.g., Release 2.1)</li>
+</ul>
+<p><strong>Why &ldquo;capability&rdquo; instead of &ldquo;epic&rdquo;?</strong></p>
+<p>Because it&rsquo;s concrete. A capability describes what your product can do. &ldquo;2FA capability&rdquo; means your product can do two-factor authentication. No metaphor required.</p>
+<p><strong>Capabilities let you see:</strong></p>
+<ul>
+<li>Progress across all related issues</li>
+<li>Who&rsquo;s working on what parts</li>
+<li>Testing coverage</li>
+<li>Blockers and dependencies</li>
+<li>Release readiness</li>
+</ul>
+<img src="/assets/images/capability-hierarchy.svg" alt="Capability Hierarchy" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="level-3-releases-defining-what-ships">Level 3: Releases (Defining What Ships)</h2>
+<p><strong>Releases are versions of your product.</strong> They&rsquo;re concrete, numbered, and shipped.</p>
+<p>You assign the 2FA capability to <strong>Release 2.1</strong>.</p>
+<p>Release 2.1 might include:</p>
+<ul>
+<li><strong>Two-Factor Authentication</strong> (new capability)</li>
+<li><strong>Password reset improvements</strong> (existing capability)</li>
+<li><strong>Bug fixes for login page</strong> (individual issues)</li>
+</ul>
+<p><strong>Releases answer the critical question: &ldquo;What are we shipping, and when?&rdquo;</strong></p>
+<p>In Release 2.1 view, you see:</p>
+<ul>
+<li>All capabilities assigned to this release</li>
+<li>Progress on each capability</li>
+<li>Individual issues not grouped in capabilities</li>
+<li>Testing status</li>
+<li>Deployment readiness</li>
+</ul>
+<img src="/assets/images/release-view.svg" alt="Release View" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="the-complete-hierarchy-in-action">The Complete Hierarchy in Action</h2>
+<p>Let&rsquo;s trace the 2FA feature through the system:</p>
+<h3 id="week-1-2-planning">Week 1-2: Planning</h3>
+<p><strong>Action:</strong> Product team defines the 2FA capability</p>
+<ul>
+<li>Write requirements in the capability description</li>
+<li>Create 12 issues (backend, frontend, testing)</li>
+<li>Assign issues to developers and QA engineers</li>
+<li>Set target release: 2.1</li>
+<li>Add to current cycle</li>
+</ul>
+<p><strong>Visibility:</strong> Everyone sees:</p>
+<ul>
+<li>What issues exist</li>
+<li>Who&rsquo;s assigned to what</li>
+<li>What the acceptance criteria are</li>
+<li>When it&rsquo;s expected to ship</li>
+</ul>
+<h3 id="week-3-4-development">Week 3-4: Development</h3>
+<p><strong>Action:</strong> Team starts building</p>
+<ul>
+<li>Backend developer marks &ldquo;Implement TOTP&rdquo; as in_progress</li>
+<li>Frontend developer marks &ldquo;Build 2FA setup page&rdquo; as in_progress</li>
+<li>Issues move from writing → development → review</li>
+<li>Commentary captures design decisions and blockers</li>
+<li>QA engineer prepares test cases</li>
+</ul>
+<p><strong>Visibility:</strong> Real-time progress shows:</p>
+<ul>
+<li>Which issues are in development vs. done</li>
+<li>Overall capability completion percentage</li>
+<li>Blockers (e.g., &ldquo;Waiting on SMS provider API keys&rdquo;)</li>
+<li>Capacity vs. workload</li>
+</ul>
+<h3 id="week-5-testing">Week 5: Testing</h3>
+<p><strong>Action:</strong> QA starts verification</p>
+<ul>
+<li>Test issues move to in_progress</li>
+<li>Bugs found become new issues linked to the capability</li>
+<li>Regression tests run on staging</li>
+<li>Documentation updated</li>
+</ul>
+<p><strong>Visibility:</strong> Testing dashboard shows:</p>
+<ul>
+<li>Test coverage for 2FA capability</li>
+<li>Pass/fail status</li>
+<li>Remaining test cases</li>
+<li>Bug fix progress</li>
+</ul>
+<h3 id="week-6-release">Week 6: Release</h3>
+<p><strong>Action:</strong> Deploy Release 2.1</p>
+<ul>
+<li>All 2FA issues marked complete</li>
+<li>Capability marked ready for release</li>
+<li>Release 2.1 deployed to production</li>
+<li>Monitoring confirms successful rollout</li>
+</ul>
+<p><strong>Visibility:</strong> Release view confirms:</p>
+<ul>
+<li>All planned capabilities shipped</li>
+<li>All tests passed</li>
+<li>Documentation complete</li>
+<li>Deployment successful</li>
+</ul>
+<img src="/assets/images/issue-to-release-workflow.svg" alt="Complete Workflow" width="900" height="500" loading="lazy">
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="why-this-hierarchy-works">Why This Hierarchy Works</h2>
+<h3 id="1-mirrors-reality">1. Mirrors Reality</h3>
+<p>Work doesn&rsquo;t happen in &ldquo;user stories&rdquo; or &ldquo;epics.&rdquo; It happens in tasks (issues), grouped into features (capabilities), shipped in versions (releases).</p>
+<h3 id="2-no-translation-required">2. No Translation Required</h3>
+<p>A developer doesn&rsquo;t need to decode what an &ldquo;epic&rdquo; means. They see a capability called &ldquo;Two-Factor Authentication&rdquo; and immediately understand what&rsquo;s being built.</p>
+<h3 id="3-multi-level-visibility">3. Multi-Level Visibility</h3>
+<ul>
+<li><strong>Individual contributors</strong> see their assigned issues</li>
+<li><strong>Team leads</strong> see capability progress</li>
+<li><strong>Product managers</strong> see release readiness</li>
+<li><strong>Executives</strong> see delivery timeline</li>
+</ul>
+<p>Everyone gets the view they need without custom dashboards.</p>
+<h3 id="4-flexible-granularity">4. Flexible Granularity</h3>
+<p>Not everything needs to be a capability. Small features can be standalone issues assigned directly to releases. Large initiatives can have 50+ issues grouped in a capability. The structure adapts to your work.</p>
+<h3 id="5-testing-is-first-class">5. Testing is First-Class</h3>
+<p>Test issues live alongside development issues. QA engineers see what needs testing in real-time, not after development is &ldquo;done.&rdquo;</p>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="comparison-sinra-vs-traditional-tools">Comparison: Sinra vs. Traditional Tools</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Concept</strong></th>
+          <th><strong>Traditional Tools</strong></th>
+          <th><strong>Sinra</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Work item</strong></td>
+          <td>User story, task, bug (different types)</td>
+          <td>Issue (unified)</td>
+      </tr>
+      <tr>
+          <td><strong>Grouping</strong></td>
+          <td>Epic, theme, initiative (vague)</td>
+          <td>Capability (concrete feature)</td>
+      </tr>
+      <tr>
+          <td><strong>Version</strong></td>
+          <td>Increment, sprint goal, milestone (ambiguous)</td>
+          <td>Release (numbered version)</td>
+      </tr>
+      <tr>
+          <td><strong>Testing</strong></td>
+          <td>Separate test cases or custom fields</td>
+          <td>Test issues (same as dev issues)</td>
+      </tr>
+      <tr>
+          <td><strong>Visibility</strong></td>
+          <td>Custom dashboards, velocity charts</td>
+          <td>Real-time progress on capabilities &amp; releases</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="real-world-example-e-commerce-team">Real-World Example: E-Commerce Team</h2>
+<p><strong>PayFast (8-person team building payment platform)</strong></p>
+<h3 id="before-sinra-using-jira">Before Sinra (Using Jira)</h3>
+<p><strong>Problem:</strong> Tracking a feature meant:</p>
+<ul>
+<li>Creating an epic</li>
+<li>Writing 20 user stories</li>
+<li>Linking sub-tasks</li>
+<li>Tagging for release</li>
+<li>Building custom dashboard to see progress</li>
+</ul>
+<p>Result: <strong>3+ hours per week maintaining structure</strong></p>
+<h3 id="after-sinra">After Sinra</h3>
+<p><strong>Solution:</strong> Tracking the same feature:</p>
+<ul>
+<li>Create 1 capability: &ldquo;Subscription Billing&rdquo;</li>
+<li>Create 18 issues (dev, design, QA)</li>
+<li>Assign to Release 3.2</li>
+<li>View progress in real-time</li>
+</ul>
+<p>Result: <strong>15 minutes to set up, zero maintenance</strong></p>
+<p><strong>Team feedback:</strong></p>
+<blockquote>
+<p>&ldquo;We stopped spending time managing Jira and started shipping features. The hierarchy just makes sense.&rdquo;</p>
+<ul>
+<li>Lead Developer, PayFast</li>
+</ul>
+</blockquote>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="how-to-structure-your-first-feature-in-sinra">How to Structure Your First Feature in Sinra</h2>
+<h3 id="step-1-define-the-capability">Step 1: Define the Capability</h3>
+<p>Ask: &ldquo;What feature or initiative are we building?&rdquo;</p>
+<ul>
+<li>Example: &ldquo;API Rate Limiting&rdquo;</li>
+<li>Write a brief description and acceptance criteria</li>
+<li>Assign to a target release</li>
+</ul>
+<h3 id="step-2-break-down-into-issues">Step 2: Break Down into Issues</h3>
+<p>Ask: &ldquo;What individual tasks are needed?&rdquo;</p>
+<ul>
+<li>Backend issues (implement rate limit middleware, add Redis caching)</li>
+<li>Frontend issues (show rate limit status in dashboard)</li>
+<li>Testing issues (test rate limit enforcement, test reset logic)</li>
+</ul>
+<h3 id="step-3-assign-owners-and-labels">Step 3: Assign Owners and Labels</h3>
+<ul>
+<li>Assign issues to team members</li>
+<li>Add labels (backend, frontend, security, etc.)</li>
+<li>Set dependencies if needed</li>
+</ul>
+<h3 id="step-4-track-progress">Step 4: Track Progress</h3>
+<ul>
+<li>Issues move through statuses as work progresses</li>
+<li>Capability completion updates automatically</li>
+<li>Release readiness becomes visible in real-time</li>
+</ul>
+<h3 id="step-5-ship-the-release">Step 5: Ship the Release</h3>
+<ul>
+<li>When all capability issues are done, mark capability complete</li>
+<li>Deploy the release</li>
+<li>Review what shipped and plan the next one</li>
+</ul>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="common-questions">Common Questions</h2>
+<p><strong>Q: Do I always need capabilities?</strong>
+No. Small bug fixes or standalone tasks can be issues directly assigned to a release. Capabilities are for grouping related work.</p>
+<p><strong>Q: Can an issue belong to multiple capabilities?</strong>
+No. Each issue belongs to one capability (or none). If work spans multiple features, consider if it&rsquo;s actually one capability with broader scope.</p>
+<p><strong>Q: How do I handle dependencies between issues?</strong>
+Sinra tracks dependencies between issues and capabilities. Mark dependencies, and the system highlights blockers in your workflow.</p>
+<p><strong>Q: What if priorities change mid-release?</strong>
+Move issues between capabilities or releases as needed. Sinra doesn&rsquo;t force rigid sprint commitments - adapt when reality changes.</p>
+<p><strong>Q: How do I see what my team is working on right now?</strong>
+Filter by current cycle + team + in_progress status. You&rsquo;ll see exactly what&rsquo;s active.</p>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="the-sinra-advantage-clarity-by-design">The Sinra Advantage: Clarity by Design</h2>
+<p>Most tools inherit Agile jargon and force teams to adapt their thinking.</p>
+<p>Sinra does the opposite: <strong>the structure mirrors how work actually happens.</strong></p>
+<ul>
+<li><strong>Issues</strong> = individual work items</li>
+<li><strong>Capabilities</strong> = grouped features</li>
+<li><strong>Releases</strong> = product versions</li>
+</ul>
+<p>No metaphors. No translation. No cognitive overhead.</p>
+<p>When your tool speaks the same language as your team, work flows faster.</p>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="action-items-structuring-your-work-in-sinra">Action Items: Structuring Your Work in Sinra</h2>
+<ol>
+<li><strong>Identify your next feature.</strong> What are you building?</li>
+<li><strong>Create a capability.</strong> Name it concretely (not &ldquo;Epic: User Mgmt&rdquo; but &ldquo;User Role Permissions&rdquo;)</li>
+<li><strong>Break it into issues.</strong> Development, design, testing - everything a person does</li>
+<li><strong>Assign to a release.</strong> What version will this ship in?</li>
+<li><strong>Start building.</strong> Track progress in real-time, adjust as needed</li>
+</ol>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p><strong>Traditional tools make you think in abstractions. Sinra makes you think in concrete terms.</strong></p>
+<p>Issues → Capabilities → Releases.</p>
+<p>That&rsquo;s it. That&rsquo;s the hierarchy.</p>
+<p>Simple, clear, and aligned with how teams actually build software.</p>
+<hr>
+<p>url: /product-guide/2025/11/26/from-issue-to-release.html</p>
+<p><strong>Ready to structure your work clearly?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free trial of Sinra →</a></p>
+<p>Experience project management built on concrete structure, not confusing jargon.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/methodology/2025/12/01/release-driven-development.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">Release-Driven Development: Taking Back …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/career/2026/03/26/from-craftsman-to-executor.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">From Craftsman to Simple Executor: How …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

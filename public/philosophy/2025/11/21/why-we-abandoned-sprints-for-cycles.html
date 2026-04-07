@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Why We Abandoned &#39;Sprints&#39; for &#39;Cycles&#39; | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html" />
+
+
+
+<meta name="description" content="Discover why Sinra uses &#39;cycles&#39; instead of &#39;sprints&#39; and how this reflects a deeper philosophical shift from Agile jargon to concrete, meaningful project management terminology." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Why We Abandoned &#39;Sprints&#39; for &#39;Cycles&#39;" />
+<meta property="og:description" content="Discover why Sinra uses &#39;cycles&#39; instead of &#39;sprints&#39; and how this reflects a deeper philosophical shift from Agile jargon to concrete, meaningful project management terminology." />
+<meta property="og:url"         content="http://localhost:1313/philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png" />
+
+<meta property="article:published_time" content="0001-01-01T00:00:00Z" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Philosophy" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Why We Abandoned &#39;Sprints&#39; for &#39;Cycles&#39;" />
+<meta name="twitter:description" content="Discover why Sinra uses &#39;cycles&#39; instead of &#39;sprints&#39; and how this reflects a deeper philosophical shift from Agile jargon to concrete, meaningful project management terminology." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2025-11-21-why-we-abandoned-sprints-for-cycles/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-11-21-why-we-abandoned-sprints-featured.png" alt="Why We Abandoned &#39;Sprints&#39; for &#39;Cycles&#39;" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/philosophy/" class="badge badge-primary badge-outline">Philosophy</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Why We Abandoned &#39;Sprints&#39; for &#39;Cycles&#39;</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">How concrete naming reveals a fundamentally different approach to project management</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="0001-01-01">January 1, 0001</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="words-shape-how-we-work">Words Shape How We Work</h2>
+<p>In software project management, language isn&rsquo;t neutral.</p>
+<p>When you call a two-week work period a <strong>&ldquo;sprint&rdquo;</strong>, you&rsquo;re invoking imagery: runners pushing to exhaustion, finish lines that must be crossed, a race against time. The metaphor is athletic, urgent, unsustainable.</p>
+<p>When we built Sinra, we rejected that metaphor entirely.</p>
+<p>We call them <strong>cycles</strong> - concrete, time-boxed periods for organizing work. Not because &ldquo;cycle&rdquo; sounds cooler. Because it <em>means something different</em>.</p>
+<p>This wasn&rsquo;t a branding decision. It was philosophical.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="the-problem-with-sprint-thinking">The Problem with &ldquo;Sprint&rdquo; Thinking</h2>
+<p><strong>The Agile Promise:</strong>
+&ldquo;Sprints&rdquo; were meant to create focus - short bursts of productive work with clear goals and fast delivery.</p>
+<p><strong>The Reality:</strong>
+Teams treat every two weeks like a race to the finish line. Product owners pack sprints to capacity. Developers cut corners to &ldquo;make the sprint commitment.&rdquo; Quality suffers. Burnout becomes routine. The sprint ends - and another sprint begins. And another. And another.</p>
+<p>It never stops.</p>
+<p>The metaphor trains teams to think work is a perpetual race. There&rsquo;s always another sprint. The finish line is a mirage.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="what-makes-cycles-different">What Makes &ldquo;Cycles&rdquo; Different</h2>
+<p><strong>Cycles are time-boxed periods for organizing work.</strong></p>
+<p>Not races. Not commitments to deliver everything. Not promises to run until you&rsquo;re exhausted.</p>
+<p><strong>They&rsquo;re periods of time with natural boundaries:</strong></p>
+<ul>
+<li>A beginning</li>
+<li>An end</li>
+<li>Work planned within capacity</li>
+<li>Adjustments made when reality changes</li>
+</ul>
+<p><strong>The cycle isn&rsquo;t about speed - it&rsquo;s about structure.</strong></p>
+<p>A cycle acknowledges that work takes time. That estimates are imperfect. That plans change. That people aren&rsquo;t machines optimized for velocity.</p>
+<p>When you plan a cycle, you&rsquo;re not asking: <em>&ldquo;How fast can we go?&rdquo;</em></p>
+<p>You&rsquo;re asking: <em>&ldquo;What can we realistically accomplish in this period?&rdquo;</em></p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="the-philosophical-shift-from-velocity-to-capacity">The Philosophical Shift: From Velocity to Capacity</h2>
+<p>Agile culture obsesses over <strong>velocity</strong> - story points completed per sprint. Teams compete to increase velocity. Managers pressure teams to commit to more. The system optimizes for output.</p>
+<p>But velocity is a vanity metric.</p>
+<p><strong>What actually matters:</strong></p>
+<ul>
+<li>Did we deliver value?</li>
+<li>Did we maintain quality?</li>
+<li>Did we make sustainable progress?</li>
+<li>Did we learn from what we built?</li>
+</ul>
+<p>Sinra replaces velocity with <strong>capacity planning</strong>:</p>
+<ul>
+<li>How much work can this team realistically handle?</li>
+<li>What are the constraints (people, time, dependencies)?</li>
+<li>Are we overcommitting or underutilizing?</li>
+</ul>
+<p>Capacity planning respects reality. Velocity chases numbers.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="the-language-of-concrete-reality">The Language of Concrete Reality</h2>
+<p>This pattern repeats throughout Sinra:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Agile Jargon</strong></th>
+          <th><strong>Sinra Concrete Terms</strong></th>
+          <th><strong>Why It Matters</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>User stories</td>
+          <td>Issues</td>
+          <td>Stories are abstractions. Issues are real work.</td>
+      </tr>
+      <tr>
+          <td>Epics</td>
+          <td>Capabilities</td>
+          <td>Epics are vague. Capabilities describe actual features.</td>
+      </tr>
+      <tr>
+          <td>Sprint</td>
+          <td>Cycle</td>
+          <td>Sprints imply races. Cycles are neutral time periods.</td>
+      </tr>
+      <tr>
+          <td>Increment</td>
+          <td>Release</td>
+          <td>Increments are ambiguous. Releases are concrete versions.</td>
+      </tr>
+      <tr>
+          <td>Backlog grooming</td>
+          <td>Planning</td>
+          <td>&ldquo;Grooming&rdquo; is jargon. Planning is clear.</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Every choice prioritizes clarity over jargon.</strong></p>
+<p>When a developer asks, &ldquo;What am I working on this cycle?&rdquo;, they see:</p>
+<ul>
+<li><strong>Issues:</strong> Individual work items (bugs, tasks, features)</li>
+<li><strong>Capabilities:</strong> Higher-level features being built</li>
+<li><strong>Releases:</strong> The product version being prepared</li>
+</ul>
+<p>No translation required. No metaphors. No cognitive overhead.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="the-agile-trap-perpetual-motion-without-progress">The Agile Trap: Perpetual Motion Without Progress</h2>
+<p>Agile teams often fall into this pattern:</p>
+<ol>
+<li>Sprint planning Monday morning</li>
+<li>Daily standups all week</li>
+<li>Sprint review Friday afternoon</li>
+<li>Sprint retrospective Friday evening</li>
+<li>Next sprint planning Monday morning</li>
+</ol>
+<p><strong>Repeat forever.</strong></p>
+<p>The machinery of Agile - standups, planning, reviews, retrospectives - becomes the work itself. Teams spend 10+ hours per week in meetings <em>about</em> work instead of <em>doing</em> work.</p>
+<p>The sprint cadence creates urgency without purpose. You&rsquo;re always sprinting, but where are you going?</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="cycles-without-the-overhead">Cycles Without the Overhead</h2>
+<p>Sinra&rsquo;s cycle model eliminates the ceremony:</p>
+<p><strong>At the start of a cycle:</strong></p>
+<ul>
+<li>Review available capacity</li>
+<li>Assign issues and capabilities</li>
+<li>Set realistic expectations</li>
+<li>Align on priorities</li>
+</ul>
+<p><strong>During the cycle:</strong></p>
+<ul>
+<li>Build. Test. Ship.</li>
+<li>Update progress in real-time</li>
+<li>Adjust when blockers appear</li>
+<li>Collaborate asynchronously via commentary</li>
+</ul>
+<p><strong>At the end of a cycle:</strong></p>
+<ul>
+<li>Review what shipped</li>
+<li>Carry forward unfinished work</li>
+<li>Learn from capacity mismatches</li>
+<li>Plan the next cycle</li>
+</ul>
+<p>No mandatory standups. No sprint commitments. No velocity pressure.</p>
+<p>Just structured work periods with clear boundaries.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="case-study-from-sprint-exhaustion-to-sustainable-cycles">Case Study: From Sprint Exhaustion to Sustainable Cycles</h2>
+<p><strong>CloudSync Engineering Team (12 developers):</strong></p>
+<p><strong>Before (Agile Sprints):</strong></p>
+<ul>
+<li>2-week sprints with 100% capacity allocation</li>
+<li>Daily 30-minute standups (30 hours/week team time)</li>
+<li>Sprint planning: 4 hours every 2 weeks</li>
+<li>Sprint reviews: 2 hours every 2 weeks</li>
+<li>Sprint retrospectives: 1.5 hours every 2 weeks</li>
+<li><strong>Total overhead: 37.5 hours/week for a 12-person team</strong></li>
+<li>Constant pressure to &ldquo;make the commitment&rdquo;</li>
+<li>40% of sprint goals missed</li>
+<li>Team morale: low</li>
+</ul>
+<p><strong>After (Sinra Cycles):</strong></p>
+<ul>
+<li>3-week cycles with 80% capacity allocation</li>
+<li>Async progress updates (no standups)</li>
+<li>Cycle planning: 2 hours every 3 weeks</li>
+<li>Lightweight retrospective: 1 hour every 3 weeks</li>
+<li><strong>Total overhead: 3 hours/cycle (1 hour/week)</strong></li>
+<li>Work planned within realistic capacity</li>
+<li>90% of cycle goals achieved</li>
+<li>Team morale: high</li>
+</ul>
+<p><strong>The Result:</strong></p>
+<ul>
+<li>35+ hours/week recovered for actual work</li>
+<li>Higher completion rates</li>
+<li>Better quality (more time for testing)</li>
+<li>Lower burnout</li>
+</ul>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="why-this-matters-for-your-team">Why This Matters for Your Team</h2>
+<p>Most teams inherit Agile terminology without questioning it. &ldquo;Sprints&rdquo; sound normal because everyone uses them.</p>
+<p>But language shapes behavior.</p>
+<p>When you call work periods &ldquo;sprints,&rdquo; you create a culture of urgency, velocity, and exhaustion.</p>
+<p>When you call them &ldquo;cycles,&rdquo; you create a culture of structure, capacity, and sustainability.</p>
+<p><strong>The shift isn&rsquo;t semantic - it&rsquo;s cultural.</strong></p>
+<p>Teams using Sinra report:</p>
+<ul>
+<li>Less pressure to overcommit</li>
+<li>More realistic planning</li>
+<li>Better work-life balance</li>
+<li>Clearer expectations</li>
+<li>Higher completion rates</li>
+</ul>
+<p>Not because cycles are magical. Because they&rsquo;re <em>honest</em>.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="the-broader-pattern-jargon-vs-clarity">The Broader Pattern: Jargon vs. Clarity</h2>
+<p>Sinra&rsquo;s naming philosophy extends beyond cycles:</p>
+<p><strong>Agile uses metaphors and jargon:</strong></p>
+<ul>
+<li>Sprints (athletic race)</li>
+<li>Velocity (speed)</li>
+<li>Burndown charts (exhaustion imagery)</li>
+<li>User stories (narrative framing)</li>
+<li>Backlog grooming (maintenance metaphor)</li>
+</ul>
+<p><strong>Sinra uses concrete terms:</strong></p>
+<ul>
+<li>Cycles (time periods)</li>
+<li>Capacity (realistic work volume)</li>
+<li>Progress tracking (neutral)</li>
+<li>Issues (actual work)</li>
+<li>Planning (clear process)</li>
+</ul>
+<p><strong>The goal:</strong> Minimize cognitive overhead. Maximize clarity.</p>
+<p>When your tools use plain language, your team spends less time decoding jargon and more time doing work.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="how-to-transition-from-sprints-to-cycles">How to Transition from Sprints to Cycles</h2>
+<p>If your team is stuck in sprint culture, here&rsquo;s how to shift:</p>
+<h3 id="1-rename-the-period">1. Rename the Period</h3>
+<p>Stop calling them &ldquo;sprints.&rdquo; Start calling them &ldquo;cycles.&rdquo; The language change alone shifts mindset.</p>
+<h3 id="2-plan-for-capacity-not-velocity">2. Plan for Capacity, Not Velocity</h3>
+<p>Don&rsquo;t ask: &ldquo;How many story points can we complete?&rdquo;
+Ask: &ldquo;Given our team&rsquo;s capacity, what can we realistically finish?&rdquo;</p>
+<h3 id="3-eliminate-sprint-ceremony">3. Eliminate Sprint Ceremony</h3>
+<ul>
+<li>Replace daily standups with async updates</li>
+<li>Simplify planning meetings (2 hours max)</li>
+<li>Skip the sprint review (use real-time visibility instead)</li>
+<li>Make retrospectives lightweight (1 hour, focus on blockers)</li>
+</ul>
+<h3 id="4-allocate-below-100-capacity">4. Allocate Below 100% Capacity</h3>
+<p>Leave buffer for interruptions, bug fixes, and learning. Aim for 70-80% capacity utilization.</p>
+<h3 id="5-measure-completion-rate-not-velocity">5. Measure Completion Rate, Not Velocity</h3>
+<p>Track: &ldquo;Did we finish what we planned?&rdquo; Not: &ldquo;How fast did we go?&rdquo;</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p><strong>&ldquo;Sprint&rdquo; is a metaphor that creates urgency without direction.</strong></p>
+<p><strong>&ldquo;Cycle&rdquo; is a concrete term that creates structure without pressure.</strong></p>
+<p>Language matters. The words you use shape how your team thinks about work.</p>
+<p>Sinra chose cycles because we believe work should be sustainable, structured, and realistic - not a perpetual race.</p>
+<hr>
+<p>url: /philosophy/2025/11/21/why-we-abandoned-sprints-for-cycles.html</p>
+<p><strong>Ready to escape sprint culture?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free trial of Sinra →</a></p>
+<p>Experience project management built on concrete terms, not Agile jargon.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      <div></div>
+
+      
+      <a href="http://localhost:1313/blog/posts/2026-02-25-pdf-forms-archaic-admin/" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">Why in 2026 are we still printing PDFs, …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

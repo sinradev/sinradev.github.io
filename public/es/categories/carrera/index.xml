@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carrera on Sinra</title>
+    <link>http://localhost:1313/es/categories/carrera/</link>
+    <description>Recent content in Carrera on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/es/categories/carrera/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Del artesano al simple ejecutor: cómo el desarrollador perdió su estatus</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-26-de-l-artisan-au-simple-executant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-26-de-l-artisan-au-simple-executant/</guid>
+      <description>&lt;p&gt;Hace una década, la programación era un oficio. Diseñabas sistemas, resolvías problemas complejos, tomabas decisiones arquitectónicas. Te pagaban por tu juicio, tu experiencia, tu capacidad de navegar restricciones e imaginar soluciones originales.&lt;/p&gt;&#xA;&lt;p&gt;Hoy eres un ejecutor. Un productor de código. Un número en la velocidad del equipo.&lt;/p&gt;&#xA;&lt;p&gt;Y la IA que llega ahora simplemente hace evidente lo que la industria ha decidido silenciosamente: puesto que ya eres solo una máquina para producir código, por qué no usar una máquina de verdad?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

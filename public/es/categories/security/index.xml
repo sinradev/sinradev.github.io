@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Sinra</title>
+    <link>http://localhost:1313/es/categories/security/</link>
+    <description>Recent content in Security on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 13 Jan 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Dónde Están Tus Datos? Alojamiento Europeo vs Americano y Por Qué Importa</title>
+      <link>http://localhost:1313/es/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/</link>
+      <pubDate>Tue, 13 Jan 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/</guid>
+      <description>&lt;h2 id=&#34;nuestros-datos-están-en-europa-verdad&#34;&gt;«Nuestros Datos Están En Europa&amp;hellip; ¿Verdad?»&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Miércoles por la tarde. Reunión de seguridad con el equipo IT.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;CTO: «Tenemos que preparar nuestra auditoría RGPD. Primera pregunta: ¿dónde están alojados nuestros datos?»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «En la nube.»&lt;/p&gt;&#xA;&lt;p&gt;CTO: «Sí, ¿pero dónde exactamente?»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «Región eu-west-1. París.»&lt;/p&gt;&#xA;&lt;p&gt;CTO: «Perfecto. Entonces nuestros datos están en Francia.»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «Eh&amp;hellip; técnicamente, sí.»&lt;/p&gt;&#xA;&lt;p&gt;CTO: «¿Cómo que &amp;ldquo;técnicamente&amp;rdquo;?»&lt;/p&gt;&#xA;&lt;p&gt;DevOps: «Los servidores están físicamente en París. Pero el proveedor es americano.»&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

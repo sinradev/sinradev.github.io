@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Career on Sinra</title>
+    <link>http://localhost:1313/categories/career/</link>
+    <description>Recent content in Career on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/categories/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Craftsman to Simple Executor: How the Developer Lost Their Status</title>
+      <link>http://localhost:1313/career/2026/03/26/from-craftsman-to-executor.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/career/2026/03/26/from-craftsman-to-executor.html</guid>
+      <description>&lt;p&gt;url: /career/2026/03/26/from-craftsman-to-executor.html&lt;/p&gt;&#xA;&lt;p&gt;A decade ago, programming was a craft. You designed systems, solved complex problems, made architectural decisions. You were paid for your judgment, your experience, your ability to navigate constraints and imagine original solutions.&lt;/p&gt;&#xA;&lt;p&gt;Today, you are an executor. A code producer. A number in a team&amp;rsquo;s velocity.&lt;/p&gt;&#xA;&lt;p&gt;And the AI arriving now simply makes obvious what the industry has silently decided: since you are already just a machine for producing code, why not use a real machine?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

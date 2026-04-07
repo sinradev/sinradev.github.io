@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality Assurance on Sinra</title>
+    <link>http://localhost:1313/fr/categories/quality-assurance/</link>
+    <description>Recent content in Quality Assurance on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 22 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/categories/quality-assurance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le QA Invisible : Quand Les Tests Sont Dispersés Entre Jira, Excel Et La Mémoire de QA</title>
+      <link>http://localhost:1313/fr/blog/posts/2025-12-22-qa-invisible-tests-disperses/</link>
+      <pubDate>Mon, 22 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2025-12-22-qa-invisible-tests-disperses/</guid>
+      <description>&lt;h2 id=&#34;le-vendredi-avant-la-release&#34;&gt;Le Vendredi Avant La Release&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Vendredi 15h00. Release prévue lundi matin.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Le CTO entre dans le bureau QA :&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;« Marie, on est bons pour livrer lundi ? Tous les tests sont passés ? »&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Marie (QA Lead) ouvre son laptop :&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Étape 1 :&lt;/strong&gt; Ouvrir Excel&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fichier : &lt;code&gt;Test_Cases_Release_v2.3_FINAL_v4.xlsx&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;87 test cases listés&lt;/li&gt;&#xA;&lt;li&gt;Colonnes : ID, Description, Priorité, Statut (Passed/Failed/Not Run)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Étape 2 :&lt;/strong&gt; Compter manuellement&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;62 tests marqués « Passed »&lt;/li&gt;&#xA;&lt;li&gt;18 tests marqués « Not Run »&lt;/li&gt;&#xA;&lt;li&gt;7 tests marqués « Failed »&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Étape 3 :&lt;/strong&gt; Vérifier Jira&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

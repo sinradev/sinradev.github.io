@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $lang := .Language.Lang }}
+{{ $compData := index hugo.Data $lang "comparisons" }}
+{{ $hub := $compData.comparison_hub }}
+
+<div class="comparison-hub">
+  <section class="comparison-intro py-20 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ $hub.title }}</h1>
+      <p class="text-xl text-base-content/80 mb-2">{{ $hub.subtitle }}</p>
+      <p class="text-base-content/70">{{ $hub.description }}</p>
+    </div>
+  </section>
+
+  <section class="comparison-table-section py-16 bg-base-200">
+    <div class="container mx-auto px-6 max-w-7xl">
+      {{ partial "sections/comparison-table.html" $hub }}
+    </div>
+  </section>
+
+  <section class="comparison-cta py-16 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-4">Want to learn more?</h2>
+      <p class="text-base-content/70 mb-8">Dive deeper into specific comparisons:</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="{{ relLangURL "compare/asana/" }}" class="btn btn-outline">Sinra vs Asana</a>
+        <a href="{{ relLangURL "compare/jira/" }}" class="btn btn-outline">Sinra vs Jira</a>
+        <a href="{{ relLangURL "compare/monday/" }}" class="btn btn-outline">Sinra vs Monday</a>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

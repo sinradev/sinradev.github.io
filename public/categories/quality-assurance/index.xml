@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality Assurance on Sinra</title>
+    <link>http://localhost:1313/categories/quality-assurance/</link>
+    <description>Recent content in Quality Assurance on Sinra</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Dec 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/quality-assurance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Invisible QA: When Tests Are Scattered Between Jira, Excel And QA&#39;s Memory</title>
+      <link>http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</link>
+      <pubDate>Mon, 22 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</guid>
+      <description>&lt;p&gt;url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-friday-before-release&#34;&gt;The Friday Before Release&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Friday 3:00 PM. Release scheduled for Monday morning.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The CTO enters the QA office:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Marie, are we good to ship Monday? All tests passed?&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Marie (QA Lead) opens her laptop:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open Excel&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;File: &lt;code&gt;Test_Cases_Release_v2.3_FINAL_v4.xlsx&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;87 test cases listed&lt;/li&gt;&#xA;&lt;li&gt;Columns: ID, Description, Priority, Status (Passed/Failed/Not Run)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Count manually&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;62 tests marked &amp;ldquo;Passed&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;18 tests marked &amp;ldquo;Not Run&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;7 tests marked &amp;ldquo;Failed&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Check Jira&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Métier on Sinra</title>
+    <link>http://localhost:1313/fr/categories/m%C3%A9tier/</link>
+    <description>Recent content in Métier on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/categories/m%C3%A9tier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>De l&#39;artisan au simple exécutant : comment le développeur a perdu son statut</title>
+      <link>http://localhost:1313/fr/blog/posts/2026-03-26-de-l-artisan-au-simple-executant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2026-03-26-de-l-artisan-au-simple-executant/</guid>
+      <description>&lt;p&gt;Il y a une dizaine d&amp;rsquo;années, programmer était un métier d&amp;rsquo;artisan. Vous conceviez des systèmes, vous résolvez des problèmes complexes, vous preniez des décisions architecturales. On vous payait pour votre jugement, votre expérience, votre capacité à naviguer les contraintes et à imaginer des solutions originales.&lt;/p&gt;&#xA;&lt;p&gt;Aujourd&amp;rsquo;hui, vous êtes un exécutant. Un producteur de code. Un numéro dans une vélocité d&amp;rsquo;équipe.&lt;/p&gt;&#xA;&lt;p&gt;Et l&amp;rsquo;IA qui arrive maintenant ne fait que rendre évident ce que l&amp;rsquo;industrie a silencieusement décidé: puisque vous n&amp;rsquo;êtes déjà qu&amp;rsquo;une machine à produire, pourquoi pas une vraie machine ?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

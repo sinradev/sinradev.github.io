@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dim">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer | Sinra</title>
+
+
+<link rel="canonical" href="https://sinra.dev/planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html" />
+
+
+
+<meta name="description" content="Las user stories en formato Agile son demasiado vagas. Resultado: desarrolladores perdidos, 4h de grooming por semana, brecha entre « lo que está escrito » y « lo que hay que hacer ». Descubre cómo Sinra usa issues directas y accionables." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="https://sinra.dev/planning/2026/01/02/false-promise-user-stories-as-a-user.html" />
+<link rel="alternate" hreflang="x-default" href="https://sinra.dev/planning/2026/01/02/false-promise-user-stories-as-a-user.html" />
+
+<link rel="alternate" hreflang="fr" href="https://sinra.dev/planning/2026/01/02/fausse-promesse-user-stories-en-tant-que.html" />
+
+
+<link rel="alternate" hreflang="es" href="https://sinra.dev/planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer" />
+<meta property="og:description" content="Las user stories en formato Agile son demasiado vagas. Resultado: desarrolladores perdidos, 4h de grooming por semana, brecha entre « lo que está escrito » y « lo que hay que hacer ». Descubre cómo Sinra usa issues directas y accionables." />
+<meta property="og:url"         content="https://sinra.dev/planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+
+<meta property="og:image" content="https://sinra.dev/assets/images/blog/2026-01-02-user-stories-featured.png" />
+
+<meta property="article:published_time" content="2026-01-02T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Planning" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer" />
+<meta name="twitter:description" content="Las user stories en formato Agile son demasiado vagas. Resultado: desarrolladores perdidos, 4h de grooming por semana, brecha entre « lo que está escrito » y « lo que hay que hacer ». Descubre cómo Sinra usa issues directas y accionables." />
+<meta name="twitter:image" content="https://sinra.dev/assets/images/blog/2026-01-02-user-stories-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"https://sinra.dev/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="https://sinra.dev/css/main.min.44db2c597706ca94c93130c4d6e008b3e83d1ec8b59b9639a45b1b03abd9cb4d.css" integrity="sha256-RNssWXcGypTJMTDE1uAIs&#43;g9Hsi1m5Y5pFsbA6vZy00=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Alternar menú de navegación">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/es/about/"
+             class=""
+             >
+            Acerca de
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/pricing/"
+             class=""
+             >
+            Precios
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/contact/"
+             class=""
+             >
+            Contacto
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Iniciar sesión
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Registrarse
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/es/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/es/about/"
+           class=""
+           >
+          Acerca de
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/pricing/"
+           class=""
+           >
+          Precios
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/contact/"
+           class=""
+           >
+          Contacto
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Iniciar sesión
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Registrarse
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        ES
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="https://sinra.dev/planning/2026/01/02/false-promise-user-stories-as-a-user.html" >
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://sinra.dev/planning/2026/01/02/fausse-promesse-user-stories-en-tant-que.html" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://sinra.dev/planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html" class="active">
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2026-01-02-user-stories-featured.png" alt="La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/es/categories/planning/" class="badge badge-primary badge-outline">Planning</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">La Falsa Promesa De Las User Stories: Por Qué « Como Usuario » No Dice Qué Hacer</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Entre formato impuesto « Como usuario, quiero... », stories vagas y 3 reuniones para entender qué codificar realmente, nadie sabe qué hacer : Sinra usa issues directas</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2026-01-02">January 2, 2026</time>
+      <span>Por el Equipo de Sinra</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="la-user-story-que-no-dice-nada">La User Story Que No Dice Nada</h2>
+<p><strong>Lunes por la mañana. Sprint planning. Equipo de 6 desarrolladores.</strong></p>
+<p>Product Owner: « OK, pasemos a la siguiente story. »</p>
+<p><strong>El PO lee la story:</strong></p>
+<pre tabindex="0"><code>USER-347: Como usuario, quiero poder desconectarme de la aplicación
+para asegurar mi cuenta.
+
+Criterios de aceptación:
+- El usuario puede desconectarse
+- La sesión termina después de desconectarse
+- El usuario es redirigido a la página de login
+</code></pre><p>PO: « Ahí está. Es claro. ¿Preguntas? »</p>
+<p>Dev 1: « Eh&hellip; sí. Concretamente, ¿qué hago? »</p>
+<p>PO: « Agregas un botón de desconexión. »</p>
+<p>Dev 1: « OK. ¿Pero dónde? ¿En el header? ¿En un menú dropdown? ¿En la configuración del usuario? »</p>
+<p>PO: « Ah&hellip; buena pregunta. Diría&hellip; en el header. »</p>
+<p>Dev 2: « ¿Y del lado del backend, cómo lo hacemos? ¿Invalidamos solo el token JWT? ¿Eliminamos el refresh token? ¿Guardamos el historial de sesión? »</p>
+<p>PO: « Eh&hellip; no sé. Ustedes son los desarrolladores, ¿no? »</p>
+<p>Dev 3: « ¿Y si el usuario tiene múltiples sesiones activas? ¿Desconectamos solo la sesión actual o todas las sesiones? »</p>
+<p>PO: « Buena pregunta. No sé. »</p>
+<p>Dev 1: « ¿Y mostramos una confirmación antes de desconectar? ¿O desconectamos directamente? »</p>
+<p>PO: « Debería haber una confirmación, creo. »</p>
+<p>Dev 2: « ¿Y si la API está caída durante la desconexión? ¿Desconectamos igual del lado del front? »</p>
+<p>PO: « Eh&hellip; »</p>
+<p>Dev 3: « ¿Y rastreamos el evento de desconexión en Analytics? »</p>
+<p>PO: « Probablemente sí. »</p>
+<p>Dev 1: « ¿Y a nivel de diseño, tenemos una maqueta? »</p>
+<p>PO: « No, todavía no. »</p>
+<p><strong>45 minutos después:</strong></p>
+<p>PO: « OK, voy a aclarar todo esto con el diseñador y el equipo. Volveremos a esta story en el próximo planning. »</p>
+<p><strong>La story vuelve al backlog.</strong></p>
+<p>Dev 1 (aparte): « La story decía &ldquo;Como usuario, quiero desconectarme&rdquo;. Pero no decía <strong>cómo</strong>, <strong>dónde</strong>, ni <strong>qué hacer exactamente</strong>. »</p>
+<p>Dev 2: « Bienvenido al mundo de las user stories. »</p>
+<img src="/assets/images/blog/2026-01-02-user-stories-vague-meeting.svg" alt="User story vaga generando 45 minutos de preguntas" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="el-problema-de-las-user-stories">El Problema De Las User Stories</h2>
+<p>Las <strong>user stories</strong> en formato Agile (« Como X, quiero Y para Z ») se supone que describen la necesidad del usuario.</p>
+<p><strong>Pero nunca dicen qué hacer concretamente.</strong></p>
+<p><strong>Resultado catastrófico:</strong></p>
+<ul>
+<li>Stories demasiado vagas para ser desarrolladas</li>
+<li>3-4 reuniones de aclaración por story</li>
+<li>Sesiones de grooming interminables</li>
+<li>Brecha masiva entre « lo que está escrito » y « lo que hay que codificar realmente »</li>
+<li>Desarrolladores perdidos</li>
+</ul>
+<h3 id="los-cinco-síntomas-del-síndrome-de-user-story-vaga">Los Cinco Síntomas Del Síndrome De User Story Vaga</h3>
+<h4 id="1--ok-pero-concretamente-qué-hago--la-story-no-dice-qué-desarrollar">1. « OK Pero Concretamente, ¿Qué Hago? » (La Story No Dice Qué Desarrollar)</h4>
+<p><strong>El Escenario:</strong>
+Lees una user story. Describe una necesidad del usuario en 2 frases. Pero no sabes qué codificar.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p><strong>User story típica:</strong></p>
+<pre tabindex="0"><code>USER-521: Como administrador, quiero gestionar los permisos de usuarios
+para asegurar el acceso a datos sensibles.
+
+Criterios de aceptación:
+- Los administradores pueden modificar permisos
+- Los cambios se guardan
+- Los usuarios sin permiso no pueden acceder a los datos
+</code></pre><p><strong>El desarrollador lee la story:</strong></p>
+<p>Dev: « OK&hellip; pero concretamente, ¿qué hago? »</p>
+<p><strong>Las preguntas que surgen:</strong></p>
+<ol>
+<li><strong>Interfaz:</strong> ¿Tabla con checkboxes? ¿Dropdown? ¿Toggle switches? ¿Modal?</li>
+<li><strong>Granularidad:</strong> ¿Permisos por rol? ¿Por usuario? ¿Por grupo? ¿Por recurso?</li>
+<li><strong>Backend:</strong> ¿Nuevo modelo de permisos? ¿Migración de BD? ¿API REST o GraphQL?</li>
+<li><strong>Validación:</strong> ¿Quién puede modificar qué permisos? ¿Solo super admin?</li>
+<li><strong>UI/UX:</strong> ¿Página dedicada? ¿Sección en configuración? ¿Edición inline?</li>
+<li><strong>Scope:</strong> ¿Solo lectura/escritura? ¿O permisos granulares (create, read, update, delete, admin)?</li>
+</ol>
+<p><strong>Ninguna de estas preguntas tiene respuesta en la user story.</strong></p>
+<p><strong>Resultado:</strong> 3 reuniones de aclaración antes de poder empezar a codificar.</p>
+<img src="/assets/images/blog/2026-01-02-user-stories-questions-unanswered.svg" alt="User story generando 15 preguntas sin respuestas" width="800" height="450" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ User story describe el « qué » (necesidad del usuario)</li>
+<li>❌ Pero no el « cómo » (solución técnica)</li>
+<li>❌ Brecha masiva entre story y código</li>
+<li>❌ Desarrolladores bloqueados</li>
+</ul>
+<p><strong>Cita de desarrollador:</strong></p>
+<blockquote>
+<p>« Leo la user story. Entiendo la necesidad. Pero no sé qué codificar. La story dice &ldquo;gestionar permisos&rdquo;, pero no dice si es un CRUD completo, un simple toggle, o una matriz de permisos compleja. »</p>
+</blockquote>
+<p><strong>Resultado:</strong> Las user stories no son accionables.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="2-grooming-interminable-4h-por-semana-para-transformar-stories-en-tareas">2. Grooming Interminable (4h Por Semana Para Transformar Stories En Tareas)</h4>
+<p><strong>El Escenario:</strong>
+Tu equipo pasa 4 horas por semana en « backlog grooming » para transformar las user stories vagas en tareas desarrollables.</p>
+<p><strong>Cronología típica de una sesión de grooming:</strong></p>
+<p><strong>14h00:</strong> Comienza el grooming. 8 stories para hacer grooming.</p>
+<p><strong>14h05:</strong> Story 1: « Como usuario, quiero buscar productos. »</p>
+<p><strong>Preguntas:</strong></p>
+<ul>
+<li>¿Búsqueda de texto completo o por filtros?</li>
+<li>¿Qué campos son buscables?</li>
+<li>¿Resultados paginados? ¿Cuántos por página?</li>
+<li>¿Autocompletado? ¿Sugerencias?</li>
+<li>¿Búsqueda en tiempo real o con botón submit?</li>
+</ul>
+<p><strong>14h45:</strong> 40 minutos después, story finalmente aclarada. Dividida en 5 sub-tareas.</p>
+<p><strong>14h50:</strong> Story 2: « Como admin, quiero exportar reportes. »</p>
+<p><strong>Preguntas:</strong></p>
+<ul>
+<li>¿Formato: CSV? ¿Excel? ¿PDF? ¿JSON?</li>
+<li>¿Qué reportes? ¿Ventas? ¿Usuarios? ¿Analytics?</li>
+<li>¿Exportación síncrona o asíncrona?</li>
+<li>¿Filtros antes de exportar?</li>
+<li>¿Email con archivo o descarga directa?</li>
+</ul>
+<p><strong>15h30:</strong> Story aclarada. Dividida en 4 sub-tareas.</p>
+<p><strong>15h35:</strong> Story 3: « Como usuario, quiero compartir contenido. »</p>
+<p><strong>Preguntas:</strong></p>
+<ul>
+<li>¿Compartir por email? ¿Link público? ¿Redes sociales?</li>
+<li>¿Permisos: quién puede compartir? ¿Quién puede ver?</li>
+<li>¿Vista previa del contenido compartido?</li>
+<li>¿Tracking: saber quién hizo clic en el link?</li>
+</ul>
+<p><strong>16h15:</strong> Story aclarada.</p>
+<p><strong>16h20:</strong> Story 4&hellip;</p>
+<p><strong>18h00:</strong> Fin del grooming. <strong>4 horas para hacer grooming de 8 stories.</strong></p>
+<p><strong>El equipo está agotado.</strong></p>
+<img src="/assets/images/blog/2026-01-02-user-stories-grooming-marathon.svg" alt="4 horas de grooming para 8 user stories" width="800" height="400" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ 4h de grooming por semana (20% del tiempo del equipo)</li>
+<li>❌ Las stories deben ser « creadas » luego « refinadas » luego « divididas »</li>
+<li>❌ Tiempo perdido aclarando lo que debería haber estado claro desde el principio</li>
+<li>❌ Equipo agotado antes de codificar</li>
+</ul>
+<p><strong>Estadística Real:</strong></p>
+<p>Estudio sobre 67 equipos Agile:</p>
+<ul>
+<li><strong>Tiempo promedio de grooming:</strong> 4.2h por semana</li>
+<li><strong>Porcentaje de stories modificadas después del grooming:</strong> 78%</li>
+<li><strong>Número promedio de aclaraciones por story:</strong> 3.4</li>
+</ul>
+<p><strong>Cita de Scrum Master:</strong></p>
+<blockquote>
+<p>« Pasamos nuestros viernes por la tarde haciendo grooming del backlog. Leemos stories vagas, hacemos 15 preguntas, aclaramos, dividimos. Luego la semana siguiente, volvemos a empezar. Es agotador. »</p>
+</blockquote>
+<p><strong>Resultado:</strong> El grooming consume el 20% del tiempo del equipo.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="3-la-brecha-entre--lo-que-está-escrito--y--lo-que-hay-que-hacer-realmente-">3. La Brecha Entre « Lo Que Está Escrito » Y « Lo Que Hay Que Hacer Realmente »</h4>
+<p><strong>El Escenario:</strong>
+La user story dice una cosa. Pero lo que realmente hay que desarrollar es completamente diferente.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p><strong>Lo que está escrito (user story):</strong></p>
+<pre tabindex="0"><code>USER-892: Como usuario, quiero recibir notificaciones
+para estar informado de los nuevos mensajes.
+</code></pre><p><strong>Lo que REALMENTE hay que hacer (después de aclaración):</strong></p>
+<ol>
+<li>
+<p><strong>Backend:</strong></p>
+<ul>
+<li>Crear tabla <code>notifications</code> (id, user_id, message_id, content, read, created_at)</li>
+<li>Crear API POST <code>/notifications</code> para crear una notificación</li>
+<li>Crear API GET <code>/notifications</code> para listar notificaciones</li>
+<li>Crear API PATCH <code>/notifications/:id/read</code> para marcar como leída</li>
+<li>Agregar trigger en <code>messages</code> para crear notificación automáticamente</li>
+<li>Implementar sistema de batching (máx 1 notif por minuto para evitar spam)</li>
+</ul>
+</li>
+<li>
+<p><strong>Frontend:</strong></p>
+<ul>
+<li>Crear componente NotificationBell con badge de count</li>
+<li>Crear dropdown NotificationList</li>
+<li>Implementar polling cada 30s o WebSocket para tiempo real</li>
+<li>Agregar sonido de notificación (con permiso del navegador)</li>
+<li>Agregar página /notifications para ver historial completo</li>
+<li>Implementar « marcar todo como leído »</li>
+</ul>
+</li>
+<li>
+<p><strong>Diseño:</strong></p>
+<ul>
+<li>Maquetas para campana de notificación, dropdown, lista</li>
+<li>Estados vacío, 1 notif, 10+ notifs</li>
+<li>Animaciones (pulse del badge, slide-in)</li>
+</ul>
+</li>
+<li>
+<p><strong>Infraestructura:</strong></p>
+<ul>
+<li>Setup Redis para caché de notificaciones</li>
+<li>Setup job queue para envío asíncrono</li>
+<li>Monitoreo: tasa de entrega, latencia</li>
+</ul>
+</li>
+<li>
+<p><strong>Tests:</strong></p>
+<ul>
+<li>Tests unitarios backend (7 archivos)</li>
+<li>Tests E2E frontend (4 escenarios)</li>
+<li>Tests de rendimiento (10k notificaciones)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Brecha entre la story (2 líneas) y la implementación real (50+ tareas).</strong></p>
+<img src="/assets/images/blog/2026-01-02-user-stories-gap-reality.svg" alt="User story 2 líneas vs 50 tareas reales" width="800" height="500" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ User story: 2 líneas vagas</li>
+<li>❌ Implementación real: 50 tareas concretas</li>
+<li>❌ Brecha descubierta solo durante el desarrollo</li>
+<li>❌ Estimaciones completamente equivocadas</li>
+</ul>
+<p><strong>Cita de desarrollador:</strong></p>
+<blockquote>
+<p>« La story decía &ldquo;recibir notificaciones&rdquo;. Parecía simple. Luego nos dimos cuenta de que había que crear toda la infraestructura, el componente UI, los permisos del navegador, el polling, el caching&hellip; La story tomó 3 semanas en lugar de 2 días. »</p>
+</blockquote>
+<p><strong>Resultado:</strong> Las user stories ocultan la complejidad real.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="4--habría-que-re-groomear-esta-story--stories-retrabajadas-3-veces">4. « Habría Que Re-Groomear Esta Story » (Stories Retrabajadas 3 Veces)</h4>
+<p><strong>El Escenario:</strong>
+Una story es groomeada. Luego re-groomeada. Luego re-re-groomeada. Porque nunca es lo suficientemente clara.</p>
+<p><strong>Cronología típica de una story:</strong></p>
+<p><strong>Semana 1: Creación de la story</strong></p>
+<p>PO crea la story:</p>
+<pre tabindex="0"><code>USER-234: Como usuario, quiero filtrar los resultados.
+</code></pre><p><strong>Semana 2: Primer grooming</strong></p>
+<p>Equipo: « ¿Filtrar cómo? ¿Por qué? »</p>
+<p>PO: « Ah sí, hay que precisar. »</p>
+<p><strong>Story actualizada:</strong></p>
+<pre tabindex="0"><code>USER-234: Como usuario, quiero filtrar los resultados
+por categoría, precio y fecha para encontrar lo que busco.
+
+Criterios de aceptación:
+- Filtros disponibles: categoría, precio, fecha
+- Los resultados se actualizan cuando se aplica un filtro
+</code></pre><p><strong>Semana 3: Segundo grooming</strong></p>
+<p>Dev: « OK pero técnicamente, ¿cómo lo hacemos? ¿Dropdown? ¿Checkboxes? ¿Range slider para el precio? »</p>
+<p>PO: « Eh&hellip; buena pregunta. Le preguntaré al diseñador. »</p>
+<p><strong>Story actualizada:</strong></p>
+<pre tabindex="0"><code>USER-234: Como usuario, quiero filtrar los resultados
+con dropdowns (categoría, fecha) y un range slider (precio).
+</code></pre><p><strong>Semana 4: Tercer grooming</strong></p>
+<p>Dev: « ¿Y los filtros se combinan con AND u OR? »</p>
+<p>PO: « ¿Cómo? »</p>
+<p>Dev: « Si selecciono Categoría=Electrónica Y Precio=0-100, ¿quiero los productos que son electrónica Y en este rango de precio? ¿O electrónica O en este rango? »</p>
+<p>PO: « Ah&hellip; AND. »</p>
+<p>Dev: « ¿Y cuando cambiamos un filtro, recargamos toda la página o solo los resultados? »</p>
+<p>PO: « Solo los resultados. »</p>
+<p>Dev: « Entonces hacemos una petición API en cada cambio de filtro? Puede ser muchas peticiones. »</p>
+<p>PO: « Pongamos un debounce entonces. »</p>
+<p><strong>Story actualizada por 3ª vez.</strong></p>
+<p><strong>Semana 5: Story finalmente desarrollable</strong></p>
+<p><strong>Pero el equipo pasó 3 sesiones de grooming (3h en total) en esta única story.</strong></p>
+<img src="/assets/images/blog/2026-01-02-user-stories-regrooming-loop.svg" alt="Story re-groomeada 3 veces antes de ser desarrollable" width="800" height="450" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Story creada demasiado vaga</li>
+<li>❌ Groomeada 3 veces</li>
+<li>❌ 3h de reuniones para una story</li>
+<li>❌ Frustración: « ¿Por qué no está claro desde el principio? »</li>
+</ul>
+<p><strong>Cita de Scrum Master:</strong></p>
+<blockquote>
+<p>« Tenemos stories que son groomeadas, luego re-groomeadas en el siguiente sprint porque todavía no son lo suficientemente claras. Luego las re-groomeamos una 3ª vez. En ese momento, hemos pasado más tiempo haciendo grooming que desarrollando. »</p>
+</blockquote>
+<p><strong>Resultado:</strong> Las stories son retrabajadas en bucle.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="5-el-desarrollador-adivina--el-po-no-está-disponible-lo-hago-a-sentimiento-">5. El Desarrollador Adivina (« El PO No Está Disponible, Lo Hago A Sentimiento »)</h4>
+<p><strong>El Escenario:</strong>
+La user story es vaga. El PO no está disponible. El desarrollador adivina y codifica lo que piensa que es correcto.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p><strong>User story:</strong></p>
+<pre tabindex="0"><code>USER-445: Como usuario, quiero editar mi perfil.
+</code></pre><p><strong>El desarrollador lee la story:</strong></p>
+<p>Dev: « OK, editar el perfil. ¿Pero qué campos? »</p>
+<p><strong>El dev mira los criterios de aceptación:</strong></p>
+<pre tabindex="0"><code>Criterios de aceptación:
+- El usuario puede editar su perfil
+- Los cambios se guardan
+</code></pre><p>Dev: « Eso no me ayuda. »</p>
+<p><strong>El dev intenta contactar al PO:</strong></p>
+<p>Slack: « @PO: USER-445, ¿qué campos son editables en el perfil? »</p>
+<p><strong>2 horas después. Sin respuesta.</strong></p>
+<p>Dev: « Bueno, el PO está ocupado. Voy a hacerlo a sentimiento. »</p>
+<p><strong>El dev adivina:</strong></p>
+<ul>
+<li>Campos editables: Nombre, Email, Foto de perfil, Bio</li>
+<li>Página dedicada /profile/edit con formulario</li>
+<li>Botones « Guardar » y « Cancelar »</li>
+<li>Validación: email válido, nombre no vacío</li>
+</ul>
+<p><strong>El dev codifica durante 2 días.</strong></p>
+<p><strong>Sprint Review:</strong></p>
+<p>PO: « Ah no, no es eso. La edición debía ser inline, no en una página dedicada. Y también había que poder editar el número de teléfono y la dirección. »</p>
+<p>Dev: « Pero la story no lo decía. »</p>
+<p>PO: « Era implícito. »</p>
+<p>Dev: « &hellip; »</p>
+<p><strong>2 días de desarrollo para rehacer.</strong></p>
+<img src="/assets/images/blog/2026-01-02-user-stories-developer-guesses.svg" alt="Desarrollador adivina, codifica 2 días, todo está por rehacer" width="800" height="400" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Story demasiado vaga</li>
+<li>❌ PO no disponible</li>
+<li>❌ Desarrollador adivina</li>
+<li>❌ 2 días de trabajo perdidos</li>
+<li>❌ Refactorización completa necesaria</li>
+</ul>
+<p><strong>Cita de desarrollador:</strong></p>
+<blockquote>
+<p>« Las user stories son tan vagas que a menudo tengo que adivinar qué hacer. Luego en review, me dicen que no es eso. He perdido tiempo codificando algo que nunca se usará. »</p>
+</blockquote>
+<p><strong>Estadística Real:</strong></p>
+<p>Encuesta sobre 140 desarrolladores:</p>
+<ul>
+<li><strong>67%</strong> declaran haber tenido que « adivinar » lo que había que desarrollar al menos una vez por sprint</li>
+<li><strong>42%</strong> han rehecho trabajo porque su interpretación era equivocada</li>
+</ul>
+<p><strong>Resultado:</strong> Las stories vagas crean desperdicio.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="por-qué-las-user-stories-persisten">Por Qué Las User Stories Persisten</h2>
+<h3 id="razón-1--es-el-método-agile--dogma-scrum">Razón 1: « Es El Método Agile » (Dogma Scrum)</h3>
+<p><strong>El Problema:</strong></p>
+<p>Los equipos usan user stories porque <strong>« así se hace en Agile »</strong>.</p>
+<p><strong>Scrum impone el formato:</strong></p>
+<pre tabindex="0"><code>Como &lt;rol&gt;, quiero &lt;acción&gt; para &lt;beneficio&gt;.
+</code></pre><p><strong>Pero este formato nunca describe la solución técnica.</strong></p>
+<p><strong>Ejemplo:</strong></p>
+<p>Story Scrum estándar:</p>
+<pre tabindex="0"><code>Como usuario, quiero restablecer mi contraseña
+para recuperar el acceso a mi cuenta.
+</code></pre><p><strong>Lo que no dice:</strong></p>
+<ul>
+<li>Proceso: ¿Email con link? ¿Código de 6 dígitos? ¿Pregunta secreta?</li>
+<li>UI: ¿Página dedicada? ¿Modal? ¿Flujo en varios pasos?</li>
+<li>Seguridad: ¿El token expira después de cuánto tiempo? ¿Hash de la contraseña?</li>
+<li>Casos especiales: ¿Qué pasa si el email no existe? ¿Si el token expiró?</li>
+</ul>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Formato impuesto que no conviene a la claridad técnica</li>
+<li>❌ Equipos siguen el formato por dogmatismo</li>
+<li>❌ Stories permanecen vagas « porque es Agile »</li>
+</ul>
+<p><strong>Cita de desarrollador:</strong></p>
+<blockquote>
+<p>« Nos dijeron que en Agile, se escriben user stories. Entonces las escribimos. Aunque sean vagas. Aunque no nos ayuden. Porque &ldquo;es el método&rdquo;. »</p>
+</blockquote>
+<p><strong>Resultado:</strong> El dogma Scrum mantiene las stories vagas.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="razón-2--detallaremos-durante-el-grooming--aclaración-diferida">Razón 2: « Detallaremos Durante El Grooming » (Aclaración Diferida)</h3>
+<p><strong>El Problema:</strong></p>
+<p>Los PO escriben stories vagas con la idea de que <strong>« detallaremos durante el grooming »</strong>.</p>
+<p><strong>Pero el grooming se convierte en una sesión de especificación diferida.</strong></p>
+<p><strong>Lo que pasa:</strong></p>
+<p><strong>Creación de la story (5 minutos):</strong></p>
+<p>PO escribe:</p>
+<pre tabindex="0"><code>USER-567: Como usuario, quiero ver mi historial de compras.
+</code></pre><p>PO piensa: « Detallaremos durante el grooming. »</p>
+<p><strong>Grooming (45 minutos):</strong></p>
+<p>Equipo hace 20 preguntas:</p>
+<ul>
+<li>¿Qué campos mostrar?</li>
+<li>¿Orden cronológico?</li>
+<li>¿Paginación?</li>
+<li>¿Filtros por fecha?</li>
+<li>¿Exportación posible?</li>
+<li>¿Detalles de cada compra clicables?</li>
+</ul>
+<p><strong>El PO responde cada pregunta.</strong></p>
+<p><strong>¿Pero por qué no escribir todo eso directamente en la story?</strong></p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Story creada voluntariamente vaga</li>
+<li>❌ Grooming = sesión de especificación</li>
+<li>❌ Tiempo perdido aclarando lo que debería haber estado claro</li>
+<li>❌ Equipo entero movilizado (8 personas × 45 min = 6h de tiempo acumulado)</li>
+</ul>
+<p><strong>Cita de PO:</strong></p>
+<blockquote>
+<p>« Creo stories de alto nivel. Las detallamos en equipo durante el grooming. Es más colaborativo. »</p>
+</blockquote>
+<p><strong>Realidad:</strong></p>
+<p>Es solo tiempo perdido. El PO podría haber escrito una descripción clara desde el principio.</p>
+<p><strong>Resultado:</strong> La aclaración se difiere al grooming.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="razón-3-confusión-entre--necesidad-del-usuario--y--tarea-del-desarrollador-">Razón 3: Confusión Entre « Necesidad Del Usuario » Y « Tarea Del Desarrollador »</h3>
+<p><strong>El Problema:</strong></p>
+<p>Las user stories se supone que describen la <strong>necesidad del usuario</strong>, no la <strong>solución técnica</strong>.</p>
+<p><strong>Pero los desarrolladores necesitan saber qué codificar, no solo la necesidad.</strong></p>
+<p><strong>Ejemplo:</strong></p>
+<p><strong>Necesidad del usuario (user story):</strong></p>
+<pre tabindex="0"><code>Como usuario, quiero ser notificado de los nuevos mensajes.
+</code></pre><p><strong>Lo que el desarrollador necesita (especificación):</strong></p>
+<pre tabindex="0"><code>Issue: Implementar sistema de notificaciones para mensajes
+
+Backend:
+- Crear tabla notifications (id, user_id, message_id, read, created_at)
+- API POST /notifications para crear una notificación
+- API GET /notifications?user_id=X para listar
+- API PATCH /notifications/:id/read para marcar como leída
+- Trigger: crear notificación automáticamente cuando nuevo mensaje
+
+Frontend:
+- Icono de campana en header con badge count (número de no leídas)
+- Dropdown al hacer clic: lista de las 10 últimas notificaciones
+- Clic en notificación: marcar como leída + redirección al mensaje
+- Polling cada 30s para refresh del count
+
+Diseño:
+- Maqueta: /designs/notifications-bell.png
+</code></pre><p><strong>El primero describe el « por qué ». El segundo describe el « qué ».</strong></p>
+<p><strong>Los desarrolladores necesitan el segundo, no el primero.</strong></p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ User story describe la necesidad (para product)</li>
+<li>❌ Desarrollador necesita la solución (para codificar)</li>
+<li>❌ Confusión entre los dos</li>
+<li>❌ Stories vagas porque no apuntan a los desarrolladores</li>
+</ul>
+<p><strong>Cita de desarrollador:</strong></p>
+<blockquote>
+<p>« Las user stories están escritas para el product owner, no para mí. Describen la necesidad del usuario, pero no puedo codificar una necesidad. Puedo codificar una solución. »</p>
+</blockquote>
+<p><strong>Resultado:</strong> Las stories no están escritas para los desarrolladores.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="el-enfoque-sinra-issues-directas-y-accionables">El Enfoque Sinra: Issues Directas Y Accionables</h2>
+<p>Sinra abandona las user stories a favor de <strong>issues directas</strong> que describen exactamente qué hacer.</p>
+<h3 id="el-concepto-issue--descripción-clara-de-qué-desarrollar">El Concepto: Issue = Descripción Clara De Qué Desarrollar</h3>
+<p>En Sinra, una <strong>issue</strong> es una tarea accionable que dice exactamente qué hacer.</p>
+<p><strong>Sin formato impuesto. Solo una descripción clara.</strong></p>
+<p><strong>Ejemplo de issue Sinra:</strong></p>
+<pre tabindex="0"><code>Título: Agregar botón logout en header con confirmación
+
+Descripción:
+Agregar un botón « Desconexión » en el header de la aplicación.
+
+Comportamiento:
+- Botón « Desconexión » visible solo para usuarios conectados
+- Posición: header, a la derecha, después del icono de notificaciones
+- Al hacer clic: mostrar modal de confirmación
+  - Mensaje: « ¿Realmente quieres desconectarte? »
+  - Botones: « Cancelar » y « Desconexión »
+- Si « Desconexión »:
+  - Llamada API DELETE /auth/session
+  - Eliminación del token JWT de localStorage
+  - Redirección a /login
+
+API:
+- Endpoint: DELETE /auth/session
+- Invalidar el refresh token en BD
+- Log del evento (user_id, timestamp)
+
+Diseño:
+- Maqueta: /designs/header-logout.png
+- Modal: componente existente &lt;ConfirmModal&gt;
+
+Tests:
+- Test E2E: clic logout → modal → confirm → redirección /login
+- Test unitario: invalidación token
+
+Estimación: 1 día
+</code></pre><p><strong>Diferencia con user story:</strong></p>
+<p><strong>User story:</strong></p>
+<blockquote>
+<p>Como usuario, quiero desconectarme para asegurar mi cuenta.</p>
+</blockquote>
+<p><strong>Issue Sinra:</strong></p>
+<blockquote>
+<p>Describe exactamente <strong>dónde</strong>, <strong>cómo</strong>, <strong>qué</strong>, <strong>con qué diseño</strong>, <strong>qué tests</strong>.</p>
+</blockquote>
+<p><strong>Resultado:</strong> El desarrollador sabe exactamente qué hacer.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="anatomía-de-una-issue-sinra-vs-user-story-agile">Anatomía De Una Issue Sinra vs. User Story Agile</h3>
+<p>Retomemos el ejemplo de las notificaciones.</p>
+<h4 id="user-story-agile-vaga">User Story Agile (Vaga)</h4>
+<pre tabindex="0"><code>USER-892: Como usuario, quiero recibir notificaciones
+para estar informado de los nuevos mensajes.
+
+Criterios de aceptación:
+- El usuario recibe una notificación cuando hay un nuevo mensaje
+- El usuario puede ver sus notificaciones
+- El usuario puede marcar una notificación como leída
+</code></pre><p><strong>Problema:</strong> Ningún detalle sobre el « cómo ».</p>
+<p><strong>Resultado:</strong> 45 minutos de grooming + 3 reuniones de aclaración.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="issue-sinra-clara">Issue Sinra (Clara)</h4>
+<pre tabindex="0"><code>Título: Sistema de notificaciones para nuevos mensajes
+
+Descripción:
+Implementar un sistema de notificaciones que alerte al usuario
+cuando recibe un nuevo mensaje.
+
+Backend:
+- Crear tabla `notifications`
+  - Campos: id, user_id, message_id, content, read (boolean), created_at
+- Crear API:
+  - POST /notifications (admin only, para creación manual si es necesario)
+  - GET /notifications?user_id=X&amp;read=false (listar no leídas)
+  - PATCH /notifications/:id/read (marcar como leída)
+  - GET /notifications/count?user_id=X (count no leídas)
+- Trigger automático:
+  - Cuando mensaje creado → crear notificación para destinatario
+  - Batching: máx 1 notificación por minuto por usuario (evitar spam)
+- Indexar: user_id, read, created_at
+
+Frontend:
+- Icono de campana en header (componente &lt;NotificationBell&gt;)
+  - Badge rojo con count de no leídas
+  - Mostrar badge solo si count &gt; 0
+- Al hacer clic: dropdown con lista de notificaciones
+  - Mostrar 10 últimas notificaciones
+  - Formato: « [Remitente] te envió un mensaje » + timestamp relativo
+  - Clic en notificación:
+    - Marcar como leída (PATCH /notifications/:id/read)
+    - Redirección a /messages/:message_id
+  - Link « Ver todo » → /notifications
+- Polling:
+  - Fetch count cada 30 segundos
+  - Update badge si count cambia
+- Página /notifications:
+  - Lista completa de notificaciones (paginada, 20 por página)
+  - Botón « Marcar todo como leído »
+
+Diseño:
+- Maqueta: /designs/notifications-ui.fig
+- Icono: Bell icon (Heroicons)
+- Color badge: red-500
+- Animación: pulse en nuevo count
+
+Tests:
+- Backend:
+  - Test creación notificación automática cuando mensaje enviado
+  - Test batching (sin spam)
+  - Test API GET/PATCH
+- Frontend:
+  - Test E2E: nuevo mensaje → badge aparece → clic → modal → clic notif → redirección
+  - Test polling (mock API)
+
+Dependencias:
+- Require: API /messages funcional
+- Bloquea: Notificación push (future issue)
+
+Estimación: 3 días (1 backend, 1.5 frontend, 0.5 tests)
+
+Asignado: Dev 2
+Proyecto: Messaging V2
+Release: Q1 2026
+</code></pre><p><strong>Diferencia:</strong></p>
+<p><strong>User story:</strong> 5 líneas vagas.</p>
+<p><strong>Issue Sinra:</strong> Especificación completa. Accionable inmediatamente.</p>
+<p><strong>Resultado:</strong></p>
+<ul>
+<li>✅ Desarrollador sabe exactamente qué hacer</li>
+<li>✅ No se necesita grooming</li>
+<li>✅ Sin preguntas</li>
+<li>✅ Codificar directamente</li>
+</ul>
+<img src="/assets/images/blog/2026-01-02-user-stories-vs-sinra-issue.svg" alt="User story vaga vs issue Sinra detallada" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="los-tres-pilares-de-las-issues-sinra">Los Tres Pilares De Las Issues Sinra</h3>
+<h4 id="1-sin-formato-impuesto-descripción-clara-eso-es-todo">1. Sin Formato Impuesto (Descripción Clara, Eso Es Todo)</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Sinra no impone un formato « Como&hellip; quiero&hellip; para&hellip; ».</p>
+<p><strong>Solo una regla: la descripción debe ser clara y accionable.</strong></p>
+<p><strong>Beneficio:</strong> Flexibilidad para escribir lo que es útil, no lo que es dogmático.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="2-issues-técnicas-no-necesidades-de-usuario-decir-exactamente-qué-hacer">2. Issues Técnicas, No Necesidades De Usuario (Decir Exactamente Qué Hacer)</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Una issue Sinra describe <strong>la solución técnica</strong>, no la necesidad del usuario.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><strong>Malo (necesidad):</strong></p>
+<blockquote>
+<p>El usuario quiere ver su historial.</p>
+</blockquote>
+<p><strong>Bueno (solución):</strong></p>
+<blockquote>
+<p>Crear página /history con tabla paginada (20 por página) mostrando: fecha, acción, usuario. API GET /history?user_id=X. Filtros por fecha (date picker). Diseño: /designs/history.png.</p>
+</blockquote>
+<p><strong>Beneficio:</strong> El desarrollador sabe exactamente qué codificar.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h4 id="3-capabilities-para-agrupar-las-issues-organizar-sin-perder-claridad">3. Capabilities Para Agrupar Las Issues (Organizar Sin Perder Claridad)</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Sinra usa <strong>capabilities</strong> para agrupar issues relacionadas.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><strong>Capability:</strong> Sistema de notificaciones</p>
+<p><strong>Issues asociadas:</strong></p>
+<ol>
+<li>Crear tabla y API notifications (3d)</li>
+<li>Agregar icono de campana en header con badge (1.5d)</li>
+<li>Implementar página /notifications (2d)</li>
+<li>Agregar polling para refresh auto (0.5d)</li>
+<li>Tests E2E notificaciones (1d)</li>
+</ol>
+<p><strong>Total: 8 días</strong></p>
+<p><strong>Beneficio:</strong></p>
+<ul>
+<li>Ver el « big picture » (capability)</li>
+<li>Trabajar en tareas claras (issues)</li>
+</ul>
+<img src="/assets/images/blog/2026-01-02-user-stories-capability-breakdown.svg" alt="Capability agrupando 5 issues accionables" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="ejemplo-real-lumio-aplicación-móvil">Ejemplo Real: Lumio (Aplicación Móvil)</h2>
+<p><strong>Lumio (equipo de 8 desarrolladores, app móvil B2C)</strong></p>
+<p><em>Nota: Lumio es una empresa real que hemos anonimizado bajo un nombre ficticio para proteger su confidencialidad.</em></p>
+<h3 id="antes-de-sinra-user-stories-vagas">Antes De Sinra: User Stories Vagas</h3>
+<p><strong>Problemas Encontrados:</strong></p>
+<p><strong>Problema 1: Grooming interminable</strong></p>
+<p>Equipo pasa <strong>4h30 por semana</strong> en backlog grooming.</p>
+<p><strong>Flujo típico:</strong></p>
+<ul>
+<li>Leer story vaga</li>
+<li>Hacer 15 preguntas</li>
+<li>Aclarar</li>
+<li>Dividir en sub-tareas</li>
+</ul>
+<p><strong>Problema 2: Brecha story / realidad</strong></p>
+<p><strong>Ejemplo:</strong></p>
+<p>Story:</p>
+<blockquote>
+<p>Como usuario, quiero compartir contenido.</p>
+</blockquote>
+<p><strong>Realidad (después de aclaración):</strong></p>
+<ul>
+<li>Compartir por: Email, SMS, Facebook, Twitter, Instagram, Copiar link</li>
+<li>Con preview card (imagen + título + descripción)</li>
+<li>Tracking: quién hizo clic en el link</li>
+<li>Deep linking para abrir en la app</li>
+<li>12 días de desarrollo en lugar de los 2 estimados</li>
+</ul>
+<p><strong>Problema 3: Desarrolladores adivinan</strong></p>
+<p><strong>64% de los desarrolladores</strong> declaran haber tenido que « adivinar » al menos una vez por sprint.</p>
+<p><strong>Resultado:</strong> Refactorización del 30% del código en review.</p>
+<p><strong>Problema 4: Stories re-groomeadas</strong></p>
+<p><strong>38% de las stories</strong> son re-groomeadas al menos una vez.</p>
+<p>Algunas stories groomeadas 3 veces antes de ser desarrollables.</p>
+<p><strong>Problema 5: Frustración</strong></p>
+<p>Encuesta interna:</p>
+<ul>
+<li><strong>72% de los devs</strong> frustrados por las stories vagas</li>
+<li><strong>« ¿Por qué no podemos simplemente decir claramente qué hay que hacer? »</strong></li>
+</ul>
+<p><strong>Moral del equipo:</strong> Agotado por las reuniones de aclaración.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="después-de-sinra-issues-directas">Después De Sinra: Issues Directas</h3>
+<p><strong>Flujo de trabajo:</strong></p>
+<ol>
+<li>
+<p><strong>Product escribe una issue clara</strong> (no user story)</p>
+<ul>
+<li>Título explícito</li>
+<li>Descripción detallada: qué, dónde, cómo</li>
+<li>Referencia al diseño si es necesario</li>
+<li>Criterios de test</li>
+</ul>
+</li>
+<li>
+<p><strong>Desarrollador lee la issue</strong> → sabe exactamente qué hacer</p>
+</li>
+<li>
+<p><strong>No se necesita grooming</strong> (issue ya clara)</p>
+</li>
+<li>
+<p><strong>Desarrollo directo</strong></p>
+</li>
+</ol>
+<p><strong>Cambio principal:</strong></p>
+<p><strong>Antes (user story vaga):</strong></p>
+<pre tabindex="0"><code>Como usuario, quiero filtrar los restaurantes.
+</code></pre><p><strong>Después (issue Sinra clara):</strong></p>
+<pre tabindex="0"><code>Título: Agregar filtros de restaurantes (cocina, precio, distancia)
+
+Descripción:
+Agregar 3 filtros en /restaurants:
+- Cocina: dropdown con opciones (Francesa, Italiana, Japonesa, Otra)
+- Precio: range slider (€-€€€€, valores 1-4)
+- Distancia: range slider (0-10km)
+
+Comportamiento:
+- Filtros en sidebar izquierda
+- Al cambiar: petición API GET /restaurants?cuisine=X&amp;price=Y&amp;distance=Z
+- Resultados actualizados en tiempo real (debounce 300ms)
+- Mostrar count resultados: « 24 restaurantes encontrados »
+- Botón reset para limpiar todos los filtros
+
+API:
+- Endpoint existente: GET /restaurants ya soporta query params
+- No se necesitan cambios en backend
+
+Diseño:
+- Maqueta: /designs/filters.fig
+- Componentes: &lt;Dropdown&gt;, &lt;RangeSlider&gt; (existentes)
+
+Tests:
+- Test E2E: seleccionar filtro → resultados actualizados
+- Test debounce
+
+Estimación: 1.5 días
+Asignado: Dev 3
+</code></pre><p><strong>Resultados (Después De 3 Meses):</strong></p>
+<p><strong>Métrica 1: Tiempo de grooming</strong></p>
+<ul>
+<li><strong>Antes:</strong> 4.5h por semana</li>
+<li><strong>Después:</strong> 0.5h por semana (90% de reducción)</li>
+</ul>
+<p><strong>Métrica 2: Stories re-groomeadas</strong></p>
+<ul>
+<li><strong>Antes:</strong> 38% de las stories</li>
+<li><strong>Después:</strong> 3% de las issues (solo en caso de cambio de scope)</li>
+</ul>
+<p><strong>Métrica 3: Desarrolladores que adivinan</strong></p>
+<ul>
+<li><strong>Antes:</strong> 64% adivina al menos 1 vez por sprint</li>
+<li><strong>Después:</strong> 8%</li>
+</ul>
+<p><strong>Métrica 4: Código rehecho</strong></p>
+<ul>
+<li><strong>Antes:</strong> 30% del código</li>
+<li><strong>Después:</strong> 5%</li>
+</ul>
+<p><strong>Métrica 5: Tiempo de desarrollo</strong></p>
+<ul>
+<li><strong>Antes:</strong> 15% más lento (debido a aclaraciones)</li>
+<li><strong>Después:</strong> Baseline (sin tiempo perdido)</li>
+</ul>
+<p><strong>Cita de Lead Developer:</strong></p>
+<blockquote>
+<p>« Antes, pasábamos nuestros viernes haciendo grooming del backlog. Leíamos stories vagas, hacíamos 20 preguntas, dividíamos. Ahora, las issues están claras desde el principio. Codificamos directamente. »</p>
+</blockquote>
+<p><strong>Cita de Product Manager:</strong></p>
+<blockquote>
+<p>« Al principio, encontré tedioso escribir issues detalladas. Luego me di cuenta: pasaba el mismo tiempo en grooming respondiendo preguntas. Ahora, documento una vez, claramente, y el equipo desarrolla sin preguntas. »</p>
+</blockquote>
+<img src="/assets/images/blog/2026-01-02-user-stories-lumio-before-after.svg" alt="Lumio: métricas antes/después Sinra" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="jira-vs-sinra-comparación-user-stories">Jira vs. Sinra: Comparación User Stories</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspecto</strong></th>
+          <th><strong>Jira (User Stories)</strong></th>
+          <th><strong>Sinra (Issues Directas)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Formato</strong></td>
+          <td>❌ Impuesto (Como&hellip;)</td>
+          <td>✅ Libre (descripción clara)</td>
+      </tr>
+      <tr>
+          <td><strong>Claridad</strong></td>
+          <td>❌ Vaga (necesidad, no solución)</td>
+          <td>✅ Precisa (qué, dónde, cómo)</td>
+      </tr>
+      <tr>
+          <td><strong>Grooming</strong></td>
+          <td>❌ 4h+ por semana</td>
+          <td>✅ Mínimo (&lt;1h)</td>
+      </tr>
+      <tr>
+          <td><strong>Accionable</strong></td>
+          <td>❌ Requiere aclaración</td>
+          <td>✅ Desarrollable inmediatamente</td>
+      </tr>
+      <tr>
+          <td><strong>Brecha story/código</strong></td>
+          <td>❌ Masiva (2 líneas → 50 tareas)</td>
+          <td>✅ Mínima (issue = spec)</td>
+      </tr>
+      <tr>
+          <td><strong>Desarrolladores adivinan</strong></td>
+          <td>❌ 64% adivinan</td>
+          <td>✅ 8% adivinan</td>
+      </tr>
+      <tr>
+          <td><strong>Refactorización en review</strong></td>
+          <td>❌ 30% del código</td>
+          <td>✅ 5%</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="las-cinco-señales-de-que-tus-user-stories-son-demasiado-vagas">Las Cinco Señales De Que Tus User Stories Son Demasiado Vagas</h2>
+<h3 id="señal-1-pasas-4h-por-semana-en-grooming">Señal 1: Pasas 4h+ Por Semana En Grooming</h3>
+<p>Si pasas 4 horas o más cada semana aclarando stories, son demasiado vagas.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="señal-2--ok-pero-concretamente-qué-hago--es-una-frase-recurrente">Señal 2: « OK Pero Concretamente, ¿Qué Hago? » Es Una Frase Recurrente</h3>
+<p>Si tus desarrolladores hacen esta pregunta en cada story, es porque las stories no dicen qué hacer.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="señal-3-re-groomeas-las-mismas-stories-varias-veces">Señal 3: Re-Groomeas Las Mismas Stories Varias Veces</h3>
+<p>Si el 30%+ de tus stories son groomeadas 2-3 veces antes de ser desarrollables, es un problema de claridad.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="señal-4-los-desarrolladores-adivinan-y-el-código-se-rehace-en-review">Señal 4: Los Desarrolladores Adivinan Y El Código Se Rehace En Review</h3>
+<p>Si el 30%+ del código se rehace porque los devs adivinaron mal, es porque las stories carecen de detalles.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="señal-5-la-brecha-entre-estimación-y-realidad-es-masiva">Señal 5: La Brecha Entre Estimación Y Realidad Es Masiva</h3>
+<p>Si tus stories estimadas en 2 días toman regularmente 10 días, es porque la complejidad real estaba oculta.</p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="cómo-usar-sinra-para-escribir-issues-claras">Cómo Usar Sinra Para Escribir Issues Claras</h2>
+<h3 id="paso-1-abandonar-el-formato--como-">Paso 1: Abandonar El Formato « Como »</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Dejar de imponer el formato user story</li>
+<li>Escribir una descripción clara y libre</li>
+<li>Foco: decir exactamente qué hay que desarrollar</li>
+</ul>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="paso-2-describir-la-solución-no-la-necesidad">Paso 2: Describir La Solución, No La Necesidad</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>No escribir: « El usuario quiere X »</li>
+<li>Escribir: « Crear página Y con comportamiento Z, diseño W, API V »</li>
+<li>Resultado: Issue accionable</li>
+</ul>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="paso-3-incluir-todos-los-detalles-técnicos">Paso 3: Incluir Todos Los Detalles Técnicos</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Backend: API, BD, modelos</li>
+<li>Frontend: Componentes, comportamiento, UX</li>
+<li>Diseño: Maqueta, assets</li>
+<li>Tests: Escenarios E2E, tests unitarios</li>
+<li>Resultado: Desarrollador sabe exactamente qué hacer</li>
+</ul>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="paso-4-usar-capabilities-para-agrupar">Paso 4: Usar Capabilities Para Agrupar</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Crear capability para feature grande</li>
+<li>Dividir en issues técnicas claras</li>
+<li>Cada issue: individualmente accionable</li>
+<li>Resultado: Visión global + tareas precisas</li>
+</ul>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h3 id="paso-5-eliminar-el-grooming-o-reducirlo-a-1h">Paso 5: Eliminar El Grooming (O Reducirlo A &lt;1h)</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Si issue clara desde el principio → sin grooming</li>
+<li>Grooming solo para preguntas excepcionales</li>
+<li>Resultado: 90% de reducción del tiempo de grooming</li>
+</ul>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="puntos-de-acción-eliminar-las-user-stories-vagas">Puntos De Acción: Eliminar Las User Stories Vagas</h2>
+<ol>
+<li><strong>Audita tus stories actuales.</strong> ¿Cuántas requieren &gt;30 min de aclaración?</li>
+<li><strong>Mide el tiempo de grooming.</strong> ¿Cuántas horas por semana?</li>
+<li><strong>Prueba las issues Sinra.</strong> Escribe 5 issues detalladas en lugar de user stories.</li>
+<li><strong>Compara.</strong> ¿Se necesita grooming? ¿Desarrollador bloqueado?</li>
+<li><strong>Adopta Sinra.</strong> Issues directas, capabilities para agrupar.</li>
+</ol>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="el-punto-clave">El Punto Clave</h2>
+<p><strong>Las user stories en formato Agile son demasiado vagas.</strong></p>
+<p>Entre <strong>formato impuesto</strong>, <strong>descripción de la necesidad en lugar de la solución</strong>, <strong>grooming interminable</strong>, y <strong>desarrolladores que adivinan</strong>, nadie sabe realmente qué hacer.</p>
+<p><strong>Sinra usa issues directas y accionables.</strong></p>
+<p>Sin formato impuesto. Descripción clara: qué, dónde, cómo, diseño, tests.</p>
+<p><strong>El resultado:</strong></p>
+<ul>
+<li>✅ Grooming reducido en 90% (4.5h → 0.5h)</li>
+<li>✅ Issues accionables inmediatamente (sin aclaración)</li>
+<li>✅ Desarrolladores ya no adivinan (8% en lugar de 64%)</li>
+<li>✅ Refactorización reducida (5% en lugar de 30%)</li>
+<li>✅ Estimaciones precisas (complejidad visible desde el principio)</li>
+</ul>
+<p><strong>Tus desarrolladores saben exactamente qué hacer.</strong></p>
+<p><strong>Tu backlog es accionable.</strong></p>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<h2 id="descubre-también-la-serie--problemas-invisibles-">Descubre también la serie « Problemas Invisibles »</h2>
+<ul>
+<li><strong><a href="/qa/2025/12/22/qa-invisible-tests-disperses.html">El QA Invisible</a></strong> - 847 tests en Excel: cómo hacer el QA visible con Sinra Testings</li>
+<li><strong><a href="/documentation/2025/12/24/documentation-morte-notion-confluence.html">La Documentación Muerta</a></strong> - 127 páginas Confluence obsoletas: cómo hacer la documentación viva</li>
+<li><strong><a href="/planning/2025/12/26/chaos-backlog-personne-sait-q2.html">El Caos Del Backlog</a></strong> - 537 issues caóticas: cómo organizar el trabajo por releases y cycles</li>
+<li><strong><a href="/dependencies/2025/12/28/dependances-cachees-features-bloquees.html">Las Dependencias Ocultas</a></strong> - 47% de las features bloqueadas: cómo hacer las dependencias visibles</li>
+<li><strong><a href="/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html">El Síndrome Multi-Proyecto</a></strong> - Desarrolladores en 4 proyectos simultáneos: cómo limitar los proyectos activos</li>
+</ul>
+<hr>
+<p>url: /planning/2026/01/02/falsa-promesa-user-stories-como-usuario.html</p>
+<p><strong>¿Listo para abandonar las user stories vagas?</strong> <a href="https://app.sinra.dev/users/sign_up">Inicia una prueba gratuita de Sinra →</a></p>
+<p>Descubre una gestión de proyectos donde las issues dicen exactamente qué hacer, no solo la necesidad del usuario.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">¿Listo para Transformar su Gestión de Proyectos?</h2>
+      <p class="text-base-content/70 mb-6">Aplique estos insights con Sinra, la plataforma unificada para equipos modernos.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Iniciar Prueba Gratuita
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="https://sinra.dev/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">El Síndrome Multi-Proyecto: Por Qué Nada …</span>
+        <span class="md:hidden">← Anterior</span>
+      </a>
+      
+
+      
+      <a href="https://sinra.dev/security/2026/01/13/alojamiento-europeo-americano-soberania-datos.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">¿Dónde Están Tus Datos? Alojamiento …</span>
+        <span class="md:hidden">Siguiente →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/es/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/es/pricing/"
+       
+       class="link link-hover">
+      Precios
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/es/about/"
+       
+       class="link link-hover">
+      Acerca de
+    </a>
+    
+    <a href="/es/contact/"
+       
+       class="link link-hover">
+      Contacto
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Iniciar sesión
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Registrarse
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

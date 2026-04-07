@@ -1,0 +1,35 @@
+{{ $lang := .Language.Lang }}
+{{ $strings := index hugo.Data $lang "strings" }}
+{{ $testimonials := index hugo.Data $lang "testimonials" }}
+<section class="testimonials py-20 bg-base-100">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h2 class="text-3xl font-bold text-center mb-12">{{ i18n "testimonial" }}</h2>
+    <div class="testimonial-carousel swiper">
+      <div class="swiper-wrapper">
+        {{ range $testimonials }}
+        <div class="swiper-slide">
+          <blockquote class="bg-base-200 rounded-xl p-8 shadow text-center max-w-3xl mx-auto">
+            <div class="text-base-content/80 mb-4">{{ .body | safeHTML }}</div>
+            <p class="font-semibold text-primary">{{ .author }}</p>
+          </blockquote>
+        </div>
+        {{ end }}
+      </div>
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof Swiper !== 'undefined') {
+    new Swiper('.testimonial-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      centeredSlides: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true }
+    });
+  }
+});
+</script>

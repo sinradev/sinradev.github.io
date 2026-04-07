@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Where Are Your Data? European vs American Hosting and Why It Matters | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html" />
+
+
+
+<meta name="description" content="American cloud hosting exposes your data to the Cloud Act and compromises your GDPR compliance. Discover why Sinra chose OVH, a French hosting provider, to guarantee your data sovereignty." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Where Are Your Data? European vs American Hosting and Why It Matters" />
+<meta property="og:description" content="American cloud hosting exposes your data to the Cloud Act and compromises your GDPR compliance. Discover why Sinra chose OVH, a French hosting provider, to guarantee your data sovereignty." />
+<meta property="og:url"         content="http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2026-01-13-cloud-sovereignty-featured.png" />
+
+<meta property="article:published_time" content="2026-01-13T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Security" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Where Are Your Data? European vs American Hosting and Why It Matters" />
+<meta name="twitter:description" content="American cloud hosting exposes your data to the Cloud Act and compromises your GDPR compliance. Discover why Sinra chose OVH, a French hosting provider, to guarantee your data sovereignty." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2026-01-13-cloud-sovereignty-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/security/2026/01/13/european-american-hosting-data-sovereignty.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2026-01-13-hebergement-europeen-souverainete-donnees/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2026-01-13-cloud-sovereignty-featured.png" alt="Where Are Your Data? European vs American Hosting and Why It Matters" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/security/" class="badge badge-primary badge-outline">Security</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Where Are Your Data? European vs American Hosting and Why It Matters</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Between Cloud Act allowing US access to data, uncertain GDPR compliance, and compromised digital sovereignty, your project data isn&#39;t where you think: Sinra chose OVH</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2026-01-13">January 13, 2026</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="our-data-is-in-europe-right">&ldquo;Our Data Is In Europe&hellip; Right?&rdquo;</h2>
+<p><strong>Wednesday afternoon. Security meeting with the IT team.</strong></p>
+<p>CTO: &ldquo;We need to prepare our GDPR audit. First question: where is our data hosted?&rdquo;</p>
+<p>DevOps: &ldquo;In the cloud.&rdquo;</p>
+<p>CTO: &ldquo;Yes, but where exactly?&rdquo;</p>
+<p>DevOps: &ldquo;Region eu-west-1. Paris.&rdquo;</p>
+<p>CTO: &ldquo;Perfect. So our data is in France.&rdquo;</p>
+<p>DevOps: &ldquo;Uh&hellip; technically, yes.&rdquo;</p>
+<p>CTO: &ldquo;What do you mean &rsquo;technically&rsquo;?&rdquo;</p>
+<p>DevOps: &ldquo;The servers are physically in Paris. But the host is American.&rdquo;</p>
+<p>CTO: &ldquo;So what?&rdquo;</p>
+<p>DevOps: &ldquo;So the US Cloud Act allows the US government to request access to the data&hellip; even if it&rsquo;s stored in Europe.&rdquo;</p>
+<p>CTO: &ldquo;Wait. Our data is in France, but the US can access it?&rdquo;</p>
+<p>DevOps: &ldquo;Yes. Because the company hosting it is under US jurisdiction.&rdquo;</p>
+<p>CTO: &ldquo;&hellip;&rdquo;</p>
+<p><strong>DPO (Data Protection Officer) intervenes:</strong></p>
+<p>DPO: &ldquo;This is a problem for our GDPR compliance. GDPR requires that personal data of European citizens be protected. If a foreign government can access it without GDPR guarantees, we&rsquo;re in violation.&rdquo;</p>
+<p>CTO: &ldquo;But our customers trusted us. They believe their data is secure.&rdquo;</p>
+<p>DPO: &ldquo;It is&hellip; except if the US government decides it wants access.&rdquo;</p>
+<p>CTO: &ldquo;Has this happened before?&rdquo;</p>
+<p>DevOps: &ldquo;Yes. Microsoft, Google, Amazon have all had to comply with the Cloud Act and transmit data hosted in Europe to US authorities.&rdquo;</p>
+<p>CTO: &ldquo;So we tell our customers their data is in Europe, but in reality, it&rsquo;s accessible from the United States.&rdquo;</p>
+<p>DPO: &ldquo;Exactly.&rdquo;</p>
+<p>CTO: &ldquo;We need to change hosts. Now.&rdquo;</p>
+<img src="/assets/images/blog/2026-01-13-cloud-act-contradiction.svg" alt="Data in Europe but accessible from the US" width="800" height="421" loading="lazy">
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="the-problem-with-american-cloud-hosting">The Problem With American Cloud Hosting</h2>
+<p>Major American cloud providers (AWS, Google Cloud, Microsoft Azure) dominate the market.</p>
+<p><strong>But they pose a critical problem: data sovereignty.</strong></p>
+<p><strong>Catastrophic result:</strong></p>
+<ul>
+<li>Data technically in Europe, but under US jurisdiction</li>
+<li>Cloud Act allows US authorities to access data</li>
+<li>GDPR compliance compromised</li>
+<li>Loss of control over your own data</li>
+<li>Legal and reputational risk at stake</li>
+</ul>
+<h3 id="the-five-dangers-of-american-hosting-for-your-data">The Five Dangers Of American Hosting For Your Data</h3>
+<h4 id="1-the-cloud-act-your-european-data-accessible-from-the-united-states">1. The Cloud Act: Your European Data Accessible From The United States</h4>
+<p><strong>The Scenario:</strong>
+Your data is physically stored in France. But your host is an American company. The US government can legally demand access to this data.</p>
+<p><strong>What is the Cloud Act?</strong></p>
+<p>The <strong>CLOUD Act</strong> (Clarifying Lawful Overseas Use of Data Act) is a US law from 2018 that allows US authorities (FBI, NSA, etc.) to request access to data held by US companies, <strong>regardless of the physical location of that data</strong>.</p>
+<p><strong>Concrete example:</strong></p>
+<p>Your company uses AWS region eu-west-1 (Paris).</p>
+<p>Your customer data (names, emails, projects, documents) is stored on servers physically located in Paris.</p>
+<p><strong>You think: &ldquo;My data is in France, it&rsquo;s protected by GDPR.&rdquo;</strong></p>
+<p><strong>Reality:</strong></p>
+<p>The FBI conducts an investigation and asks Amazon (US company) for access to certain data.</p>
+<p>Amazon is <strong>legally obligated</strong> to comply with the Cloud Act, even if the data is in Europe.</p>
+<p><strong>Amazon transmits the data to US authorities.</strong></p>
+<p><strong>Your customers are not informed.</strong></p>
+<p><strong>You have no control.</strong></p>
+<img src="/assets/images/blog/2026-01-13-cloud-act-flow.svg" alt="Cloud Act bypasses physical location" width="800" height="516" loading="lazy">
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Data in Europe, but accessible to the US</li>
+<li>❌ No prior notification</li>
+<li>❌ No possible recourse</li>
+<li>❌ GDPR violation (data transferred outside EU without guarantees)</li>
+</ul>
+<p><strong>Quote from IT lawyer:</strong></p>
+<blockquote>
+<p>&ldquo;The Cloud Act creates a legal fiction: your data is &lsquo;in Europe&rsquo; on paper, but under US jurisdiction in reality.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> You have lost sovereignty over your data.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h4 id="2-gdpr-vs-cloud-act-an-impossible-legal-conflict">2. GDPR vs Cloud Act: An Impossible Legal Conflict</h4>
+<p><strong>The Scenario:</strong>
+You use an American host with servers in Europe. You try to be GDPR compliant. But GDPR and the Cloud Act are incompatible.</p>
+<p><strong>The Conflict:</strong></p>
+<p><strong>GDPR (European law):</strong></p>
+<ul>
+<li>Personal data of European citizens must remain in the EU</li>
+<li>Any transfer outside the EU requires guarantees (standard contractual clauses, Privacy Shield, etc.)</li>
+<li>Citizens have the right to know where their data is and who accesses it</li>
+</ul>
+<p><strong>Cloud Act (US law):</strong></p>
+<ul>
+<li>US authorities can access data held by US companies, even if it&rsquo;s outside the United States</li>
+<li>No obligation to notify users</li>
+<li>No GDPR guarantees</li>
+</ul>
+<p><strong>Result: You cannot comply with both simultaneously.</strong></p>
+<p><strong>Real example:</strong></p>
+<p><strong>Schrems II case (2020):</strong></p>
+<p>The Court of Justice of the European Union (CJEU) invalidated the Privacy Shield (EU-US agreement on data transfers) in July 2020.</p>
+<p><strong>Reason:</strong></p>
+<p>Privacy Shield did not sufficiently protect Europeans&rsquo; data against US surveillance (notably via the Cloud Act and FISA 702).</p>
+<p><strong>Quote from the ruling:</strong></p>
+<blockquote>
+<p>&ldquo;US surveillance programs (FISA 702) are not limited to what is strictly necessary and do not provide legal remedies for data subjects.&rdquo;</p>
+</blockquote>
+<p><strong>Consequence:</strong></p>
+<p>Using AWS, Google Cloud, or Azure with European personal data is <strong>legally risky</strong>.</p>
+<p>Several data protection authorities (CNIL in France, EDPB at European level) have warned that these transfers are not GDPR compliant.</p>
+<img src="/assets/images/blog/2026-01-13-rgpd-cloud-act-conflict.svg" alt="GDPR and Cloud Act incompatible" width="800" height="468" loading="lazy">
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Impossible to be GDPR compliant with US host</li>
+<li>❌ Risk of GDPR fines (up to 4% of global revenue)</li>
+<li>❌ Legal risk for the company</li>
+<li>❌ Loss of customer trust</li>
+</ul>
+<p><strong>Real Statistic:</strong></p>
+<p>Since Schrems II ruling:</p>
+<ul>
+<li><strong>101 complaints</strong> filed against companies using US cloud services</li>
+<li><strong>23 decisions</strong> by European regulators against transfers to the US</li>
+<li><strong>€1.2 billion</strong> in GDPR fines related to data transfers (2020-2025)</li>
+</ul>
+<p><strong>Quote from DPO:</strong></p>
+<blockquote>
+<p>&ldquo;We use AWS. We know we&rsquo;re not 100% GDPR compliant. But migrating to a European host is expensive. We just hope not to be audited.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> GDPR compliance compromised.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h4 id="3-loss-of-sovereignty-you-no-longer-control-your-data">3. Loss Of Sovereignty: You No Longer Control Your Data</h4>
+<p><strong>The Scenario:</strong>
+You built your SaaS product. You have hundreds of customers. Their data is critical. But you don&rsquo;t control where it goes.</p>
+<p><strong>What is data sovereignty?</strong></p>
+<p><strong>Data sovereignty</strong> is the principle that data must remain under the control of its owner and under the jurisdiction of its country of origin.</p>
+<p><strong>Concrete example:</strong></p>
+<p>You&rsquo;re a French scale-up. You develop a project management tool (like Sinra).</p>
+<p>Your customers entrust you with:</p>
+<ul>
+<li>Business data (projects, roadmaps, strategies)</li>
+<li>Personal data (names, emails, activity logs)</li>
+<li>Internal documents (specifications, contracts, designs)</li>
+</ul>
+<p><strong>You use AWS eu-west-1.</strong></p>
+<p><strong>What your customers believe:</strong></p>
+<blockquote>
+<p>&ldquo;My data is in France, it&rsquo;s secure.&rdquo;</p>
+</blockquote>
+<p><strong>The reality:</strong></p>
+<ol>
+<li>
+<p><strong>US jurisdiction:</strong></p>
+<ul>
+<li>Amazon (AWS) is a US company</li>
+<li>Subject to Cloud Act, FISA 702, Patriot Act</li>
+<li>Can be forced to transmit your data to US authorities</li>
+</ul>
+</li>
+<li>
+<p><strong>Internal access:</strong></p>
+<ul>
+<li>AWS engineers (based in the US) technically have access to data</li>
+<li>No transparency on who accesses what</li>
+</ul>
+</li>
+<li>
+<p><strong>Data transfers:</strong></p>
+<ul>
+<li>Logs, backups, metadata can be replicated to US servers</li>
+<li>No control over these transfers</li>
+</ul>
+</li>
+</ol>
+<p><strong>You have lost control.</strong></p>
+<img src="/assets/images/blog/2026-01-13-sovereignty-loss.svg" alt="Loss of data sovereignty" width="800" height="468" loading="lazy">
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Data under foreign jurisdiction</li>
+<li>❌ Possible access by foreign government</li>
+<li>❌ No transparency</li>
+<li>❌ Loss of customer trust</li>
+</ul>
+<p><strong>Quote from French startup CEO:</strong></p>
+<blockquote>
+<p>&ldquo;We were asked: &lsquo;Where is our data?&rsquo; We answered: &lsquo;In France.&rsquo; Then we realized Amazon could access it from the US. We had to change our commercial pitch. It was embarrassing.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> You no longer control your data.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h4 id="4-reputation-risk-where-do-you-host-our-data">4. Reputation Risk: &ldquo;Where Do You Host Our Data?&rdquo;</h4>
+<p><strong>The Scenario:</strong>
+A B2B customer asks where their data is hosted. You answer &ldquo;Europe&rdquo;. They insist: &ldquo;But with whom?&rdquo; You say &ldquo;AWS&rdquo;. They frown.</p>
+<p><strong>Evolution of customer sensitivity:</strong></p>
+<p><strong>Before 2018:</strong> Customers didn&rsquo;t ask questions about hosting.</p>
+<p><strong>Since 2018 (GDPR + Schrems II):</strong> B2B customers demand guarantees.</p>
+<p><strong>Typical questions during client security audit:</strong></p>
+<ol>
+<li>&ldquo;Where is our data hosted?&rdquo;</li>
+<li>&ldquo;European or American host?&rdquo;</li>
+<li>&ldquo;Can our data be accessible by foreign governments?&rdquo;</li>
+<li>&ldquo;Are you GDPR compliant on data transfers?&rdquo;</li>
+<li>&ldquo;Do you have ISO 27001 certification? HDS?&rdquo;</li>
+</ol>
+<p><strong>If you answer &ldquo;AWS&rdquo; or &ldquo;Google Cloud&rdquo;:</strong></p>
+<p><strong>Client reaction (2019):</strong> &ldquo;OK, no problem.&rdquo;</p>
+<p><strong>Client reaction (2026):</strong> &ldquo;That&rsquo;s an American host. Is our data subject to the Cloud Act?&rdquo;</p>
+<p><strong>You answer:</strong> &ldquo;Technically yes, but servers are in Europe&hellip;&rdquo;</p>
+<p><strong>Client:</strong> &ldquo;That&rsquo;s not enough. We can&rsquo;t sign with you.&rdquo;</p>
+<p><strong>Deal lost.</strong></p>
+<img src="/assets/images/blog/2026-01-13-deal-lost-hosting.svg" alt="Lost deal due to US hosting" width="800" height="421" loading="lazy">
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ B2B clients demand data sovereignty</li>
+<li>❌ European public procurement often excludes US hosts</li>
+<li>❌ Regulated sectors (health, finance, defense) refuse American cloud</li>
+<li>❌ Loss of commercial deals</li>
+</ul>
+<p><strong>Real example:</strong></p>
+<p><strong>Health Data Hub (France, 2020):</strong></p>
+<p>The French government created the Health Data Hub platform to centralize health data.</p>
+<p><strong>Initial host:</strong> Microsoft Azure.</p>
+<p><strong>Reaction:</strong></p>
+<ul>
+<li>General outcry</li>
+<li>CNIL issues reservations</li>
+<li>Council of State seized</li>
+<li>Public debate on health data sovereignty</li>
+</ul>
+<p><strong>Result (2023):</strong></p>
+<p>The Health Data Hub progressively migrates to European hosts certified HDS (Health Data Hosting).</p>
+<p><strong>Quote from Health Minister (2023):</strong></p>
+<blockquote>
+<p>&ldquo;French citizens&rsquo; health data must remain under French sovereignty.&rdquo;</p>
+</blockquote>
+<p><strong>Real Statistic:</strong></p>
+<p>Survey of 340 European B2B companies (2025):</p>
+<ul>
+<li><strong>62%</strong> state that hosting location is a selection criterion</li>
+<li><strong>41%</strong> refuse providers hosted in US or on American cloud</li>
+<li><strong>78%</strong> of European public procurement require European hosting</li>
+</ul>
+<p><strong>Quote from Purchasing Director (large French company):</strong></p>
+<blockquote>
+<p>&ldquo;We no longer sign with SaaS hosted on AWS or Google Cloud. Too many legal and reputational risks.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> American hosting becomes a commercial barrier.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h4 id="5-european-alternatives-exist-but-few-know-them">5. European Alternatives Exist (But Few Know Them)</h4>
+<p><strong>The Scenario:</strong>
+You want to migrate to a European host. But you think there&rsquo;s no credible alternative to AWS/GCP/Azure.</p>
+<p><strong>False.</strong></p>
+<p><strong>European hosts exist and are competitive:</strong></p>
+<p><strong>1. OVHcloud (France)</strong></p>
+<ul>
+<li>French company (founded in 1999)</li>
+<li><strong>32 datacenters worldwide</strong> (16 in Europe)</li>
+<li><strong>1.6 million customers</strong></li>
+<li>Certifications: ISO 27001, HDS (Health Data Hosting), SecNumCloud (ANSSI)</li>
+<li>Jurisdiction: 100% French (no Cloud Act)</li>
+<li>Price: <strong>30-40% cheaper</strong> than AWS on certain services</li>
+</ul>
+<p><strong>2. Scaleway (France, Iliad group)</strong></p>
+<ul>
+<li>Subsidiary of Iliad (Free)</li>
+<li>Datacenters in Paris and Amsterdam</li>
+<li>French sovereign cloud</li>
+<li>Certifications: ISO 27001, HDS</li>
+</ul>
+<p><strong>3. Hetzner (Germany)</strong></p>
+<ul>
+<li>Datacenters in Germany and Finland</li>
+<li>European jurisdiction</li>
+<li>Very competitive prices</li>
+</ul>
+<p><strong>4. Aruba (Italy)</strong></p>
+<ul>
+<li>Italian cloud leader</li>
+<li>Datacenters in Italy, Czech Republic</li>
+<li>European certifications</li>
+</ul>
+<p><strong>AWS vs OVHcloud comparison:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Criterion</strong></th>
+          <th><strong>AWS (eu-west-1)</strong></th>
+          <th><strong>OVHcloud (France)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Jurisdiction</strong></td>
+          <td>❌ American (Cloud Act)</td>
+          <td>✅ French (GDPR)</td>
+      </tr>
+      <tr>
+          <td><strong>Sovereignty</strong></td>
+          <td>❌ Data accessible US</td>
+          <td>✅ Data under FR control</td>
+      </tr>
+      <tr>
+          <td><strong>GDPR</strong></td>
+          <td>⚠️ Schrems II risk</td>
+          <td>✅ GDPR compliant</td>
+      </tr>
+      <tr>
+          <td><strong>HDS Certification</strong></td>
+          <td>❌ No</td>
+          <td>✅ Yes (health data)</td>
+      </tr>
+      <tr>
+          <td><strong>Price</strong></td>
+          <td>High</td>
+          <td>30-40% cheaper</td>
+      </tr>
+      <tr>
+          <td><strong>French support</strong></td>
+          <td>⚠️ Limited</td>
+          <td>✅ Native</td>
+      </tr>
+      <tr>
+          <td><strong>FR public market</strong></td>
+          <td>❌ Often excluded</td>
+          <td>✅ Eligible</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Lack of awareness of European alternatives</li>
+<li>❌ Belief that AWS/GCP/Azure are the only credible options</li>
+<li>❌ Inertia: &ldquo;We&rsquo;ve always done it this way&rdquo;</li>
+</ul>
+<p><strong>Quote from DevOps (after migration to OVHcloud):</strong></p>
+<blockquote>
+<p>&ldquo;We thought migrating from AWS to OVH would be complicated. Actually, it took us 2 weeks. And now we sleep better: our data is truly in France, under French jurisdiction.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> European alternatives are viable.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="why-companies-hesitate-to-leave-awsgcpazure">Why Companies Hesitate To Leave AWS/GCP/Azure</h2>
+<h3 id="reason-1-weve-always-done-it-this-way-inertia">Reason 1: &ldquo;We&rsquo;ve Always Done It This Way&rdquo; (Inertia)</h3>
+<p><strong>The Problem:</strong></p>
+<p>Companies deployed on AWS 5-10 years ago.</p>
+<p><strong>Migration = effort.</strong></p>
+<p>So they stay, even though they know it&rsquo;s problematic.</p>
+<p><strong>Quote from CTO:</strong></p>
+<blockquote>
+<p>&ldquo;We know AWS poses a sovereignty problem. But migrating to OVH means redoing the entire infrastructure. We don&rsquo;t have time.&rdquo;</p>
+</blockquote>
+<p><strong>Reality:</strong></p>
+<p>Migration takes 2-4 weeks for average infrastructure.</p>
+<p>The cost of not migrating (GDPR risk, lost deals) is often higher.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="reason-2-aws-has-more-services-lock-in">Reason 2: &ldquo;AWS Has More Services&rdquo; (Lock-In)</h3>
+<p><strong>The Problem:</strong></p>
+<p>AWS offers 200+ services.</p>
+<p>Companies use proprietary services (Lambda, RDS, S3, etc.).</p>
+<p><strong>Migration = rewrite.</strong></p>
+<p><strong>Reality:</strong></p>
+<p>80% of companies only use 5-10 basic services (compute, storage, DB).</p>
+<p>These services exist at all hosts.</p>
+<p><strong>Quote from DevOps (after migration):</strong></p>
+<blockquote>
+<p>&ldquo;We used EC2, RDS, S3. OVH has equivalents: instances, managed DB, Object Storage. We just changed APIs.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="reason-3-we-dont-know-the-alternatives-lack-of-awareness">Reason 3: &ldquo;We Don&rsquo;t Know The Alternatives&rdquo; (Lack of awareness)</h3>
+<p><strong>The Problem:</strong></p>
+<p>Tech teams know AWS by heart.</p>
+<p>They don&rsquo;t know OVH, Scaleway, Hetzner.</p>
+<p><strong>Result:</strong> They think there&rsquo;s no alternative.</p>
+<p><strong>Reality:</strong></p>
+<p>OVHcloud has complete documentation, compatible APIs, responsive support.</p>
+<p>The learning curve is low.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="the-sinra-approach-100-french-hosting-at-ovhcloud">The Sinra Approach: 100% French Hosting At OVHcloud</h2>
+<p>Sinra made the choice of <strong>data sovereignty</strong> from the start.</p>
+<p><strong>Hosting at OVHcloud, datacenters in France.</strong></p>
+<h3 id="the-concept-your-data-stays-in-france-under-french-jurisdiction">The Concept: Your Data Stays In France, Under French Jurisdiction</h3>
+<p><strong>At Sinra:</strong></p>
+<ul>
+<li><strong>Host:</strong> OVHcloud (French company)</li>
+<li><strong>Datacenters:</strong> Gravelines (Northern France) and Strasbourg</li>
+<li><strong>Jurisdiction:</strong> 100% French (no Cloud Act)</li>
+<li><strong>Certifications:</strong> ISO 27001, HDS, SecNumCloud (ANSSI)</li>
+<li><strong>GDPR:</strong> Full compliance (no transfer outside EU)</li>
+</ul>
+<p><strong>What this means for your data:</strong></p>
+<ol>
+<li>
+<p><strong>Guaranteed sovereignty:</strong></p>
+<ul>
+<li>Your projects, issues, capabilities, releases, documentation = in France</li>
+<li>No possible access by foreign authorities</li>
+<li>Full control over your data</li>
+</ul>
+</li>
+<li>
+<p><strong>GDPR compliance:</strong></p>
+<ul>
+<li>No transfer to the United States</li>
+<li>No Schrems II risk</li>
+<li>Simplified GDPR audits</li>
+</ul>
+</li>
+<li>
+<p><strong>Transparency:</strong></p>
+<ul>
+<li>You know exactly where your data is (city, datacenter)</li>
+<li>You can visit OVH datacenters if needed (visit program)</li>
+</ul>
+</li>
+<li>
+<p><strong>Security:</strong></p>
+<ul>
+<li>HDS certification (Health Data Hosting) = maximum security level</li>
+<li>SecNumCloud (ANSSI) = most demanding French standard</li>
+<li>ISO 27001 = international security standard</li>
+</ul>
+</li>
+</ol>
+<img src="/assets/images/blog/2026-01-13-sinra-ovh-hosting.svg" alt="Sinra data hosted at OVH France" width="800" height="468" loading="lazy">
+<p><strong>Quote from Thomas Milcent (Sinra founder):</strong></p>
+<blockquote>
+<p>&ldquo;From the start, we wanted our customers&rsquo; data to remain in France. Not for marketing reasons, but because it&rsquo;s the right thing to do. OVH allows us to guarantee data sovereignty while having reliable and performant infrastructure.&rdquo;</p>
+</blockquote>
+<p><strong>Result:</strong> Your project data never leaves French territory.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="the-three-pillars-of-sinra-hosting">The Three Pillars Of Sinra Hosting</h3>
+<h4 id="1-sovereignty-french-host-french-datacenters-french-jurisdiction">1. Sovereignty: French Host, French Datacenters, French Jurisdiction</h4>
+<p><strong>The Concept:</strong></p>
+<p>Everything is in France.</p>
+<p><strong>Technical details:</strong></p>
+<ul>
+<li><strong>Host:</strong> OVHcloud SAS (French company, headquarters in Roubaix)</li>
+<li><strong>Datacenters:</strong>
+<ul>
+<li>Production: Gravelines (North, France)</li>
+<li>Backup: Strasbourg (East, France)</li>
+</ul>
+</li>
+<li><strong>Jurisdiction:</strong> French law only</li>
+<li><strong>Capital:</strong> 100% European (no US shareholders)</li>
+</ul>
+<p><strong>Result:</strong></p>
+<p>No foreign authority (US, China, etc.) can access your data.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h4 id="2-compliance-gdpr-iso-27001-hds-secnumcloud">2. Compliance: GDPR, ISO 27001, HDS, SecNumCloud</h4>
+<p><strong>The Concept:</strong></p>
+<p>OVHcloud has the most demanding certifications.</p>
+<p><strong>OVHcloud certifications:</strong></p>
+<ol>
+<li><strong>ISO 27001:</strong> Information systems security (international standard)</li>
+<li><strong>HDS (Health Data Hosting):</strong> French certification for hosting medical data (maximum security level)</li>
+<li><strong>SecNumCloud:</strong> ANSSI standard (National Agency for Information Systems Security) = most demanding in France</li>
+<li><strong>GDPR:</strong> Full compliance (European host, no transfer outside EU)</li>
+</ol>
+<p><strong>What this means for you:</strong></p>
+<ul>
+<li>Simplified security audits (you can rely on OVH certifications)</li>
+<li>Guaranteed GDPR compliance</li>
+<li>Public procurement: eligible (unlike AWS/GCP/Azure often excluded)</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h4 id="3-transparency-you-know-exactly-where-your-data-is">3. Transparency: You Know Exactly Where Your Data Is</h4>
+<p><strong>The Concept:</strong></p>
+<p>With AWS, you don&rsquo;t really know where your data is (region yes, but exact datacenter, logs, backups?).</p>
+<p>With OVH, total transparency.</p>
+<p><strong>What Sinra guarantees:</strong></p>
+<ul>
+<li><strong>Exact location:</strong> Gravelines + Strasbourg (France)</li>
+<li><strong>No replication outside EU:</strong> All backups stay in France</li>
+<li><strong>Logs:</strong> Stored in France</li>
+<li><strong>Support:</strong> French team (no offshore outsourcing)</li>
+</ul>
+<p><strong>Result:</strong></p>
+<p>You can tell your customers, with full confidence: &ldquo;Your data is in France, at OVH, and never leaves French territory.&rdquo;</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="real-example-techcorp-aws--ovh-migration">Real Example: TechCorp (AWS → OVH Migration)</h2>
+<p><strong>TechCorp (60 developers, B2B SaaS for healthcare)</strong></p>
+<p><em>Note: TechCorp is a real company that we anonymized under a fictitious name to protect their confidentiality.</em></p>
+<h3 id="before-aws-eu-west-1-paris">Before: AWS eu-west-1 (Paris)</h3>
+<p><strong>Configuration:</strong></p>
+<ul>
+<li>AWS hosting Paris region</li>
+<li>Services: EC2, RDS (PostgreSQL), S3</li>
+<li>Cost: €4,200/month</li>
+</ul>
+<p><strong>Problems Encountered:</strong></p>
+<p><strong>Problem 1: Client audit</strong></p>
+<p>Client (large French pharmaceutical group) asks:</p>
+<blockquote>
+<p>&ldquo;Is our patient data subject to the Cloud Act?&rdquo;</p>
+</blockquote>
+<p>TechCorp answers:</p>
+<blockquote>
+<p>&ldquo;Servers are in Paris, but AWS is American&hellip; so technically yes.&rdquo;</p>
+</blockquote>
+<p><strong>Client refuses to sign.</strong></p>
+<p><strong>Problem 2: HDS certification</strong></p>
+<p>TechCorp wants to obtain HDS certification (mandatory to host health data in France).</p>
+<p><strong>Problem:</strong> AWS doesn&rsquo;t offer HDS in France.</p>
+<p><strong>Problem 3: Cost</strong></p>
+<p>€4,200/month for average infrastructure.</p>
+<p>Tight budget.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="after-ovhcloud-gravelines-france">After: OVHcloud (Gravelines, France)</h3>
+<p><strong>Migration (2 weeks):</strong></p>
+<ol>
+<li><strong>Week 1:</strong> Provision OVH infrastructure (instances, DB, Object Storage)</li>
+<li><strong>Week 2:</strong> Data migration + tests + DNS switch</li>
+</ol>
+<p><strong>OVH configuration:</strong></p>
+<ul>
+<li>Public Cloud instances (EC2 equivalent)</li>
+<li>Managed PostgreSQL (RDS equivalent)</li>
+<li>Object Storage (S3 equivalent)</li>
+<li>Cost: €2,800/month (<strong>33% cheaper</strong>)</li>
+</ul>
+<p><strong>Results (After 6 Months):</strong></p>
+<p><strong>Metric 1: Cost</strong></p>
+<ul>
+<li><strong>Before:</strong> €4,200/month</li>
+<li><strong>After:</strong> €2,800/month</li>
+<li><strong>Savings:</strong> €1,400/month = €16,800/year</li>
+</ul>
+<p><strong>Metric 2: Commercial deals</strong></p>
+<ul>
+<li><strong>Before:</strong> 2 deals lost due to US hosting</li>
+<li><strong>After:</strong> 0 deal lost (commercial argument: &ldquo;Hosted at OVH, France&rdquo;)</li>
+</ul>
+<p><strong>Metric 3: HDS certification</strong></p>
+<ul>
+<li><strong>Before:</strong> Not eligible</li>
+<li><strong>After:</strong> Obtained (OVH HDS certified)</li>
+</ul>
+<p><strong>Metric 4: GDPR compliance</strong></p>
+<ul>
+<li><strong>Before:</strong> Schrems II risk</li>
+<li><strong>After:</strong> 100% compliant</li>
+</ul>
+<p><strong>Quote from TechCorp CTO:</strong></p>
+<blockquote>
+<p>&ldquo;Migrating to OVH was the best tech decision of the year. We saved €16k, won 2 big deals we would have lost, and we sleep better knowing our data is truly in France.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2026-01-13-techcorp-aws-ovh-migration.svg" alt="TechCorp: metrics before/after OVH migration" width="800" height="468" loading="lazy">
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="aws-vs-ovh-comparison-for-a-french-saas">AWS vs OVH: Comparison For A French SaaS</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>AWS (eu-west-1)</strong></th>
+          <th><strong>OVHcloud (France)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Jurisdiction</strong></td>
+          <td>❌ American (Cloud Act)</td>
+          <td>✅ French (GDPR only)</td>
+      </tr>
+      <tr>
+          <td><strong>Sovereignty</strong></td>
+          <td>❌ Data accessible US</td>
+          <td>✅ 100% France</td>
+      </tr>
+      <tr>
+          <td><strong>GDPR</strong></td>
+          <td>⚠️ Schrems II risk</td>
+          <td>✅ Compliant</td>
+      </tr>
+      <tr>
+          <td><strong>HDS Certification</strong></td>
+          <td>❌ Not available</td>
+          <td>✅ Yes</td>
+      </tr>
+      <tr>
+          <td><strong>SecNumCloud (ANSSI)</strong></td>
+          <td>❌ No</td>
+          <td>✅ Yes</td>
+      </tr>
+      <tr>
+          <td><strong>Price (avg infra)</strong></td>
+          <td>€4,200/month</td>
+          <td>€2,800/month (-33%)</td>
+      </tr>
+      <tr>
+          <td><strong>French support</strong></td>
+          <td>⚠️ Limited</td>
+          <td>✅ Native</td>
+      </tr>
+      <tr>
+          <td><strong>FR public market</strong></td>
+          <td>❌ Often excluded</td>
+          <td>✅ Eligible</td>
+      </tr>
+      <tr>
+          <td><strong>Transparency</strong></td>
+          <td>⚠️ Low (replicated logs?)</td>
+          <td>✅ Total</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="the-five-signs-you-should-change-hosts">The Five Signs You Should Change Hosts</h2>
+<h3 id="sign-1-your-b2b-customers-ask-where-is-our-data">Sign 1: Your B2B Customers Ask &ldquo;Where Is Our Data?&rdquo;</h3>
+<p>If your customers ask this question and are dissatisfied with the answer &ldquo;AWS Europe&rdquo;, it&rsquo;s a signal.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="sign-2-you-lost-a-deal-because-of-hosting">Sign 2: You Lost A Deal Because Of Hosting</h3>
+<p>If a prospect refuses to sign because you&rsquo;re hosted on an American cloud, it&rsquo;s time to migrate.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="sign-3-you-target-public-markets-or-regulated-sectors-health-finance">Sign 3: You Target Public Markets Or Regulated Sectors (Health, Finance)</h3>
+<p>European public markets and regulated sectors often require sovereign European hosting.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="sign-4-your-dpo-alerts-you-to-gdpr-risk">Sign 4: Your DPO Alerts You To GDPR Risk</h3>
+<p>If your Data Protection Officer has concerns about your GDPR compliance due to hosting, listen.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="sign-5-youre-paying-too-much-for-your-cloud-infrastructure">Sign 5: You&rsquo;re Paying Too Much For Your Cloud Infrastructure</h3>
+<p>AWS is often 30-40% more expensive than OVH on equivalent services.</p>
+<p>If your cloud bill is exploding, compare with OVH.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="how-to-check-where-your-data-really-is">How To Check Where Your Data Really Is</h2>
+<h3 id="step-1-identify-your-host">Step 1: Identify Your Host</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Who hosts your application? (AWS, GCP, Azure, OVH, other?)</li>
+<li>What is the company&rsquo;s nationality?</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="step-2-check-jurisdiction">Step 2: Check Jurisdiction</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>If host is American → subject to Cloud Act (even if servers in Europe)</li>
+<li>If host is European → check capital structure (US shareholders?)</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="step-3-audit-data-transfers">Step 3: Audit Data Transfers</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Logs: where are they stored?</li>
+<li>Backups: replicated outside EU?</li>
+<li>Support: offshore teams (access to data?)?</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="step-4-assess-gdpr-risk">Step 4: Assess GDPR Risk</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Can your personal data be transferred to the US?</li>
+<li>Do you have standard contractual clauses (SCC)?</li>
+<li>Schrems II: are you compliant?</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="step-5-compare-with-european-host">Step 5: Compare With European Host</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Simulate migration to OVH/Scaleway/Hetzner</li>
+<li>Compare: cost, certifications, sovereignty</li>
+<li>Decide</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="why-sinra-chose-ovhcloud">Why Sinra Chose OVHcloud</h2>
+<p><strong>Three reasons:</strong></p>
+<h3 id="reason-1-data-sovereignty">Reason 1: Data Sovereignty</h3>
+<p><strong>We wanted our customers&rsquo; data to remain in France.</strong></p>
+<p>No Cloud Act. No foreign access. Full control.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="reason-2-gdpr-compliance-and-certifications">Reason 2: GDPR Compliance And Certifications</h3>
+<p><strong>OVH has the most demanding certifications (HDS, SecNumCloud).</strong></p>
+<p>Our customers can easily audit their GDPR compliance.</p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h3 id="reason-3-value-for-money">Reason 3: Value For Money</h3>
+<p><strong>OVH is 30-40% cheaper than AWS on the services we use.</strong></p>
+<p>For a startup, every euro counts.</p>
+<p><strong>Quote from Thomas (Sinra founder):</strong></p>
+<blockquote>
+<p>&ldquo;OVH allows us to guarantee sovereignty, compliance, and performance, while controlling our costs. It was obvious.&rdquo;</p>
+</blockquote>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="action-points-assess-your-hosting">Action Points: Assess Your Hosting</h2>
+<ol>
+<li><strong>Identify where your data is.</strong> Host? Datacenters? Jurisdiction?</li>
+<li><strong>Assess GDPR risk.</strong> Cloud Act? Schrems II? Transfers outside EU?</li>
+<li><strong>Ask your customers.</strong> Is data sovereignty a criterion for them?</li>
+<li><strong>Compare with OVH.</strong> Cost? Certifications? Migration?</li>
+<li><strong>Decide.</strong> Migrate or accept the risk?</li>
+</ol>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="the-key-point">The Key Point</h2>
+<p><strong>American cloud hosting exposes your data to the Cloud Act and compromises your GDPR compliance.</strong></p>
+<p>Between <strong>US jurisdiction</strong>, <strong>possible access by foreign authorities</strong>, <strong>Schrems II risk</strong>, and <strong>lost commercial deals</strong>, your data isn&rsquo;t where you think.</p>
+<p><strong>Sinra chose OVHcloud, a French host, to guarantee your data sovereignty.</strong></p>
+<p><strong>The result:</strong></p>
+<ul>
+<li>✅ Data in France, under French jurisdiction (no Cloud Act)</li>
+<li>✅ Full GDPR compliance (no transfer outside EU)</li>
+<li>✅ HDS, SecNumCloud, ISO 27001 certifications</li>
+<li>✅ Transparency: you know exactly where your data is</li>
+<li>✅ Controlled cost (30-40% cheaper than AWS)</li>
+</ul>
+<p><strong>Your project data stays in France.</strong></p>
+<p><strong>You control your digital sovereignty.</strong></p>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<h2 id="also-discover-the-invisible-problems-series">Also Discover the &ldquo;Invisible Problems&rdquo; Series</h2>
+<ul>
+<li><strong><a href="/qa/2025/12/22/qa-invisible-tests-disperses.html">Invisible QA</a></strong> - 847 tests in Excel: how to make QA visible with Sinra Testings</li>
+<li><strong><a href="/documentation/2025/12/24/documentation-morte-notion-confluence.html">Dead Documentation</a></strong> - 127 obsolete Confluence pages: how to make documentation alive</li>
+<li><strong><a href="/planning/2025/12/26/chaos-backlog-personne-sait-q2.html">Backlog Chaos</a></strong> - 537 chaotic issues: how to organize work by releases and cycles</li>
+<li><strong><a href="/dependencies/2025/12/28/dependances-cachees-features-bloquees.html">Hidden Dependencies</a></strong> - 47% of features blocked: how to make dependencies visible</li>
+<li><strong><a href="/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html">Multi-Project Syndrome</a></strong> - Developers on 4 simultaneous projects: how to limit active projects</li>
+<li><strong><a href="/planning/2026/01/02/fausse-promesse-user-stories-en-tant-que.html">The False Promise Of User Stories</a></strong> - User stories too vague: how to use direct issues</li>
+</ul>
+<hr>
+<p>url: /security/2026/01/13/european-american-hosting-data-sovereignty.html</p>
+<p><strong>Your data deserves to be sovereign.</strong> <a href="https://app.sinra.dev/users/sign_up">Discover Sinra, hosted at OVH France →</a></p>
+<p>A project management tool where your data stays in France, under your control.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/planning/2026/01/02/false-promise-user-stories-as-a-user.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">The False Promise of User Stories: Why …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/documentation/2026/01/17/living-glossary-page-mentions-sinra.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">From Notion To Sinra: When Your …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

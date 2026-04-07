@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .hierarchy-title { font: bold 18px sans-serif; fill: #1a1a1a; }
+      .hierarchy-label { font: 14px sans-serif; fill: #4a5568; }
+      .hierarchy-box { fill: #f7fafc; stroke: #4299e1; stroke-width: 2; }
+      .hierarchy-arrow { stroke: #718096; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#718096" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="hierarchy-title">Issues Grouped into Capabilities</text>
+
+  <!-- Capability Box -->
+  <rect x="250" y="60" width="300" height="80" rx="8" class="hierarchy-box"/>
+  <text x="400" y="90" text-anchor="middle" class="hierarchy-title">Capability</text>
+  <text x="400" y="115" text-anchor="middle" class="hierarchy-label">Two-Factor Authentication</text>
+
+  <!-- Arrow -->
+  <path d="M 400 150 L 400 180" class="hierarchy-arrow"/>
+
+  <!-- Issues Group -->
+  <g>
+    <rect x="50" y="200" width="180" height="60" rx="5" class="hierarchy-box"/>
+    <text x="140" y="225" text-anchor="middle" class="hierarchy-label">Issue #1</text>
+    <text x="140" y="245" text-anchor="middle" style="font: 12px sans-serif; fill: #718096;">Implement TOTP</text>
+
+    <rect x="260" y="200" width="180" height="60" rx="5" class="hierarchy-box"/>
+    <text x="350" y="225" text-anchor="middle" class="hierarchy-label">Issue #2</text>
+    <text x="350" y="245" text-anchor="middle" style="font: 12px sans-serif; fill: #718096;">Create 2FA endpoint</text>
+
+    <rect x="470" y="200" width="180" height="60" rx="5" class="hierarchy-box"/>
+    <text x="560" y="225" text-anchor="middle" class="hierarchy-label">Issue #3</text>
+    <text x="560" y="245" text-anchor="middle" style="font: 12px sans-serif; fill: #718096;">Build setup UI</text>
+  </g>
+
+  <!-- More Issues -->
+  <g>
+    <rect x="50" y="280" width="180" height="60" rx="5" class="hierarchy-box"/>
+    <text x="140" y="305" text-anchor="middle" class="hierarchy-label">Issue #4</text>
+    <text x="140" y="325" text-anchor="middle" style="font: 12px sans-serif; fill: #718096;">Add QR scanner</text>
+
+    <rect x="260" y="280" width="180" height="60" rx="5" class="hierarchy-box"/>
+    <text x="350" y="305" text-anchor="middle" class="hierarchy-label">Issue #5</text>
+    <text x="350" y="325" text-anchor="middle" style="font: 12px sans-serif; fill: #718096;">Test enrollment</text>
+
+    <rect x="470" y="280" width="180" height="60" rx="5" class="hierarchy-box"/>
+    <text x="560" y="305" text-anchor="middle" class="hierarchy-label">Issue #6</text>
+    <text x="560" y="325" text-anchor="middle" style="font: 12px sans-serif; fill: #718096;">Test verification</text>
+  </g>
+
+  <!-- Progress indicator -->
+  <text x="400" y="390" text-anchor="middle" class="hierarchy-label">6 of 12 issues complete</text>
+  <rect x="250" y="400" width="300" height="20" rx="10" fill="#e2e8f0"/>
+  <rect x="250" y="400" width="150" height="20" rx="10" fill="#48bb78"/>
+  <text x="400" y="445" text-anchor="middle" style="font: bold 16px sans-serif; fill: #48bb78;">50% Complete</text>
+</svg>

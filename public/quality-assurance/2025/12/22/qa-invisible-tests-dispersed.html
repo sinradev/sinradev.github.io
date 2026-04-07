@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Invisible QA: When Tests Are Scattered Between Jira, Excel And QA&#39;s Memory | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" />
+
+
+
+<meta name="description" content="Teams test without visibility: test cases in Excel, bugs in Jira, QA results in memory. Impossible to know what&#39;s been tested, what remains, and if the release can ship. Discover how Sinra unifies QA and development." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2025-12-22-qa-invisible-tests-disperses/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2025-12-22-qa-invisible-tests-disperses/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Invisible QA: When Tests Are Scattered Between Jira, Excel And QA&#39;s Memory" />
+<meta property="og:description" content="Teams test without visibility: test cases in Excel, bugs in Jira, QA results in memory. Impossible to know what&#39;s been tested, what remains, and if the release can ship. Discover how Sinra unifies QA and development." />
+<meta property="og:url"         content="http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2025-12-22-qa-invisible-featured.png" />
+
+<meta property="article:published_time" content="2025-12-22T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Quality Assurance" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Invisible QA: When Tests Are Scattered Between Jira, Excel And QA&#39;s Memory" />
+<meta name="twitter:description" content="Teams test without visibility: test cases in Excel, bugs in Jira, QA results in memory. Impossible to know what&#39;s been tested, what remains, and if the release can ship. Discover how Sinra unifies QA and development." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2025-12-22-qa-invisible-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2025-12-22-qa-invisible-tests-disperses/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2025-12-22-qa-invisible-tests-disperses/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-12-22-qa-invisible-featured.png" alt="Invisible QA: When Tests Are Scattered Between Jira, Excel And QA&#39;s Memory" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/quality-assurance/" class="badge badge-primary badge-outline">Quality Assurance</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Invisible QA: When Tests Are Scattered Between Jira, Excel And QA&#39;s Memory</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Between obsolete Excel test cases, disconnected Jira bugs, and lost results, nobody knows if the release is ready: Sinra centralizes everything</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2025-12-22">December 22, 2025</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="the-friday-before-release">The Friday Before Release</h2>
+<p><strong>Friday 3:00 PM. Release scheduled for Monday morning.</strong></p>
+<p>The CTO enters the QA office:</p>
+<blockquote>
+<p>&ldquo;Marie, are we good to ship Monday? All tests passed?&rdquo;</p>
+</blockquote>
+<p>Marie (QA Lead) opens her laptop:</p>
+<p><strong>Step 1:</strong> Open Excel</p>
+<ul>
+<li>File: <code>Test_Cases_Release_v2.3_FINAL_v4.xlsx</code></li>
+<li>87 test cases listed</li>
+<li>Columns: ID, Description, Priority, Status (Passed/Failed/Not Run)</li>
+</ul>
+<p><strong>Step 2:</strong> Count manually</p>
+<ul>
+<li>62 tests marked &ldquo;Passed&rdquo;</li>
+<li>18 tests marked &ldquo;Not Run&rdquo;</li>
+<li>7 tests marked &ldquo;Failed&rdquo;</li>
+</ul>
+<p><strong>Step 3:</strong> Check Jira</p>
+<ul>
+<li>14 open bugs</li>
+<li>8 bugs &ldquo;In Progress&rdquo;</li>
+<li>3 bugs &ldquo;Resolved&rdquo; (but not closed)</li>
+</ul>
+<p><strong>Step 4:</strong> Consult her notes</p>
+<ul>
+<li>Post-it: &ldquo;Test SSO feature with Microsoft OAuth&rdquo;</li>
+<li>Email: &ldquo;Don&rsquo;t forget to retest bug AUTH-247&rdquo;</li>
+<li>Slack message: &ldquo;@marie is the pagination bug fixed?&rdquo;</li>
+</ul>
+<p><strong>30 minutes later.</strong></p>
+<p>Marie answers:</p>
+<blockquote>
+<p>&ldquo;Uh&hellip; I think we&rsquo;re good. There are 18 non-critical tests I didn&rsquo;t have time to do. The 7 failed ones are known bugs being fixed. Should be fine.&rdquo;</p>
+</blockquote>
+<p>CTO: &ldquo;Should be?&rdquo;</p>
+<p>Marie: &ldquo;Yes&hellip; well, unless I forgot something.&rdquo;</p>
+<p><strong>The CTO has a choice:</strong></p>
+<ul>
+<li>✅ Ship Monday (with 18 untested cases and 7 active bugs)</li>
+<li>❌ Delay the release (and disappoint customers)</li>
+</ul>
+<p><strong>The CTO chooses:</strong> Ship. &ldquo;We&rsquo;ll see.&rdquo;</p>
+<p><strong>Monday 10:00 AM:</strong> Critical bug in production. Microsoft OAuth SSO feature doesn&rsquo;t work.</p>
+<p><strong>Cause:</strong> Marie had forgotten to test it (it was on a lost post-it).</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="the-problem-of-invisible-qa">The Problem Of Invisible QA</h2>
+<p>Most tech teams manage their tests this way: <strong>QA scattered across disconnected tools, without global visibility</strong>.</p>
+<h3 id="the-five-symptoms-of-invisible-qa">The Five Symptoms Of Invisible QA</h3>
+<h4 id="1-test-cases-in-excel-disconnected-from-development">1. Test Cases In Excel (Disconnected From Development)</h4>
+<p><strong>The Scenario:</strong>
+Your QA maintains an Excel file with all test cases:</p>
+<ul>
+<li><code>Test_Cases_v1.xlsx</code></li>
+<li><code>Test_Cases_v2_FINAL.xlsx</code></li>
+<li><code>Test_Cases_v2.3_FINAL_v4.xlsx</code> (the real file&hellip; or not?)</li>
+</ul>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ Excel is <strong>not linked to features</strong> being developed</li>
+<li>❌ Impossible to know which tests cover which feature</li>
+<li>❌ No sync with code (feature added = test forgotten)</li>
+<li>❌ Multiple Excel versions (nobody knows which is current)</li>
+</ul>
+<p><strong>Real Result:</strong>
+A team discovers 3 weeks after a release that a critical feature had <strong>no test case</strong> defined - it was in an old lost Excel version.</p>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-fragmented-tools.svg" alt="QA Scattered Across Tools" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="2-bugs-in-jira-but-no-link-with-tests">2. Bugs In Jira (But No Link With Tests)</h4>
+<p><strong>The Scenario:</strong>
+Bugs are tracked in Jira:</p>
+<ul>
+<li><code>[BUG-423] Pagination broken on user list</code></li>
+<li><code>[BUG-424] SSO Microsoft OAuth fails with 500 error</code></li>
+<li><code>[BUG-425] Export PDF crashes on large datasets</code></li>
+</ul>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ No link between the bug and the test case that detected it</li>
+<li>❌ Impossible to know if the bug was retested after fix</li>
+<li>❌ No global view &ldquo;how many bugs block the release?&rdquo;</li>
+<li>❌ QA must manually cross-reference Excel (tests) and Jira (bugs)</li>
+</ul>
+<p><strong>Real Scenario:</strong></p>
+<p><strong>Marie (QA):</strong> &ldquo;Is bug AUTH-247 fixed?&rdquo;</p>
+<p><strong>Dev:</strong> &ldquo;Yes, closed yesterday.&rdquo;</p>
+<p><strong>Marie:</strong> &ldquo;Ok.&rdquo;</p>
+<p><strong>2 weeks later:</strong> Bug AUTH-247 reappears in prod.</p>
+<p><strong>Why?</strong> Marie never retested. She thought &ldquo;closed&rdquo; = &ldquo;QA validated&rdquo;. The dev thought closing the bug = automatic QA.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="3-lost-test-results-no-history">3. Lost Test Results (No History)</h4>
+<p><strong>The Scenario:</strong>
+Marie manually tests a feature. She finds a bug, reports it in Jira, then&hellip; forgets she had already tested that feature.</p>
+<p><strong>3 weeks later:</strong></p>
+<p>Dev: &ldquo;Marie, did you retest feature X after my fix?&rdquo;</p>
+<p>Marie: &ldquo;Uh&hellip; I think so? Wait, let me check.&rdquo;</p>
+<p><strong>Marie searches:</strong></p>
+<ul>
+<li>Excel: no trace of date/result</li>
+<li>Jira: bug closed but no QA comment</li>
+<li>Notes: nothing</li>
+<li>Memory: &ldquo;I think I tested it but I&rsquo;m not sure.&rdquo;</li>
+</ul>
+<p><strong>Marie retests.</strong> (Time wasted: 30 minutes for something she had already done)</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ No history of test executions</li>
+<li>❌ Impossible to know &ldquo;who tested what when&rdquo;</li>
+<li>❌ Duplicate tests (same test executed twice by mistake)</li>
+<li>❌ Forgotten tests (&ldquo;I thought someone had already tested it&rdquo;)</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="4-invisible-qa-coverage">4. Invisible QA Coverage</h4>
+<p><strong>The Scenario:</strong>
+You&rsquo;re shipping a release with 12 features.</p>
+<p><strong>CTO&rsquo;s question:</strong> &ldquo;What&rsquo;s our test coverage for this release?&rdquo;</p>
+<p><strong>Response process:</strong></p>
+<ol>
+<li>List the 12 features</li>
+<li>Open Excel, count how many test cases per feature</li>
+<li>Count how many tests &ldquo;Passed&rdquo; vs &ldquo;Not Run&rdquo;</li>
+<li>Mentally reconstruct coverage</li>
+</ol>
+<p><strong>Time needed:</strong> 1-2 hours.</p>
+<p><strong>Reliability:</strong> 60% (you probably forgot something).</p>
+<p><strong>Final answer:</strong> &ldquo;I&rsquo;d say we&rsquo;re at 70-80% coverage.&rdquo;</p>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ No automatic coverage view</li>
+<li>❌ Impossible to know &ldquo;Is Feature X well tested?&rdquo;</li>
+<li>❌ Shipping decisions based on intuition, not data</li>
+<li>❌ No reliable QA metrics</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="5-qa-bottleneck-at-end-of-sprint">5. QA Bottleneck At End Of Sprint</h4>
+<p><strong>The Scenario:</strong>
+<strong>Monday-Wednesday:</strong> Devs code.</p>
+<p><strong>Thursday-Friday:</strong> &ldquo;Marie, here are 8 features to test for Monday&rsquo;s release.&rdquo;</p>
+<p><strong>Marie:</strong> &ldquo;8 features in 2 days?!&rdquo;</p>
+<p><strong>Result:</strong></p>
+<ul>
+<li>Marie tests in rush mode</li>
+<li>50% of tests are superficial (not thorough)</li>
+<li>30% of tests are not executed (no time)</li>
+<li>Bugs found Friday evening → no time to fix before Monday</li>
+</ul>
+<p><strong>The Problem:</strong></p>
+<ul>
+<li>❌ QA is treated as a &ldquo;final phase&rdquo; instead of continuous process</li>
+<li>❌ No real-time visibility on what&rsquo;s ready to test</li>
+<li>❌ Marie doesn&rsquo;t know when features will be ready for her</li>
+<li>❌ Testing becomes a bottleneck</li>
+</ul>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-bottleneck.svg" alt="QA Bottleneck At End Of Sprint" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="why-qa-becomes-invisible">Why QA Becomes Invisible</h2>
+<h3 id="reason-1-dev-and-qa-tools-are-separated">Reason 1: Dev And QA Tools Are Separated</h3>
+<p><strong>Devs Use:</strong></p>
+<ul>
+<li>Jira/Linear to track issues</li>
+<li>GitHub for code</li>
+<li>CI/CD for automated tests</li>
+</ul>
+<p><strong>QA Uses:</strong></p>
+<ul>
+<li>Excel for test cases</li>
+<li>Jira to report bugs</li>
+<li>Personal notes for tracking</li>
+</ul>
+<p><strong>Result:</strong> Two parallel worlds that never communicate.</p>
+<p>Devs don&rsquo;t know what QA tests. QA doesn&rsquo;t know what devs have developed.</p>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-dev-qa-separated.svg" alt="Dev And QA Separated" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="reason-2-test-cases-are-not-linked-to-features">Reason 2: Test Cases Are Not Linked To Features</h3>
+<p><strong>The Problem:</strong>
+In Excel, you have:</p>
+<ul>
+<li><code>TC-001: Test user login with valid credentials</code></li>
+<li><code>TC-002: Test user login with invalid credentials</code></li>
+<li><code>TC-003: Test SSO Google OAuth</code></li>
+</ul>
+<p>But <strong>no information on</strong>:</p>
+<ul>
+<li>Which feature these tests cover</li>
+<li>Which release requires these tests</li>
+<li>Which developer implemented the tested feature</li>
+<li>If the feature changed since test creation</li>
+</ul>
+<p><strong>Result:</strong> Test cases float in a void, disconnected from actual work.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="reason-3-no-real-time-visibility">Reason 3: No Real-Time Visibility</h3>
+<p><strong>The Problem:</strong>
+The CTO asks: &ldquo;Where are we on release testing?&rdquo;</p>
+<p><strong>Today, QA must:</strong></p>
+<ol>
+<li>Open Excel</li>
+<li>Count manually</li>
+<li>Check Jira for bugs</li>
+<li>Consult notes</li>
+<li>Mentally reconstruct global state</li>
+</ol>
+<p><strong>There&rsquo;s no real-time view</strong> showing:</p>
+<ul>
+<li>How many tests executed vs remaining</li>
+<li>Which features are QA validated</li>
+<li>How many bugs block the release</li>
+<li>If the release can ship</li>
+</ul>
+<p><strong>Result:</strong> QA is invisible until someone explicitly asks.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="the-sinra-approach-qa-unified-with-development">The Sinra Approach: QA Unified With Development</h2>
+<p>Sinra was designed to make QA <strong>visible, linked to development, and real-time</strong>.</p>
+<h3 id="the-concept-testings-linked-to-capabilities-and-releases">The Concept: Testings Linked To Capabilities And Releases</h3>
+<p>In Sinra, <strong>testings</strong> (test cases) are directly linked to <strong>capabilities</strong> (features) and <strong>releases</strong>.</p>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>A capability is created (e.g., &ldquo;SSO Authentication&rdquo;)</li>
+<li>Development issues are added under the capability</li>
+<li><strong>Testings</strong> (test cases) are created and linked to the capability</li>
+<li>QA executes testings and records results</li>
+<li>QA progression is <strong>automatically synchronized</strong> with the release</li>
+</ol>
+<p><strong>Result:</strong> Dev and QA work in the same system, with shared visibility.</p>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-unified-workflow.svg" alt="Testings Linked To Capabilities" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="anatomy-of-a-feature-with-sinra-testings">Anatomy Of A Feature With Sinra Testings</h3>
+<h4 id="step-1-create-the-capability-sso-authentication">Step 1: Create The Capability &ldquo;SSO Authentication&rdquo;</h4>
+<p><strong>Description:</strong></p>
+<ul>
+<li>Allow users to log in via Google and Microsoft OAuth</li>
+</ul>
+<p><strong>Issues:</strong></p>
+<ul>
+<li><code>[AUTH-120] Implement Google OAuth backend</code></li>
+<li><code>[AUTH-121] Implement Microsoft OAuth backend</code></li>
+<li><code>[AUTH-122] Create SSO provider selection UI</code></li>
+<li><code>[AUTH-123] Add token and refresh management</code></li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="step-2-create-testings-for-this-capability">Step 2: Create Testings For This Capability</h4>
+<p><strong>QA Testings:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>ID</th>
+          <th>Test Case</th>
+          <th>Priority</th>
+          <th>Linked to</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>TC-AUTH-01</td>
+          <td>Login Google OAuth with valid account</td>
+          <td>High</td>
+          <td>AUTH-120</td>
+      </tr>
+      <tr>
+          <td>TC-AUTH-02</td>
+          <td>Login Google OAuth with invalid account</td>
+          <td>High</td>
+          <td>AUTH-120</td>
+      </tr>
+      <tr>
+          <td>TC-AUTH-03</td>
+          <td>Login Microsoft OAuth with valid account</td>
+          <td>High</td>
+          <td>AUTH-121</td>
+      </tr>
+      <tr>
+          <td>TC-AUTH-04</td>
+          <td>Login Microsoft OAuth with invalid account</td>
+          <td>High</td>
+          <td>AUTH-121</td>
+      </tr>
+      <tr>
+          <td>TC-AUTH-05</td>
+          <td>SSO provider selection in UI</td>
+          <td>Medium</td>
+          <td>AUTH-122</td>
+      </tr>
+      <tr>
+          <td>TC-AUTH-06</td>
+          <td>Refresh token management after expiration</td>
+          <td>High</td>
+          <td>AUTH-123</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>✅ Each test is <strong>linked to the development issue</strong></li>
+<li>✅ When issue AUTH-120 is completed, Sinra <strong>alerts QA</strong> that TC-AUTH-01 and TC-AUTH-02 are ready to test</li>
+<li>✅ No forgotten test (impossible to mark capability &ldquo;Done&rdquo; if tests not executed)</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="step-3-execute-tests-and-record-results">Step 3: Execute Tests And Record Results</h4>
+<p><strong>Marie (QA) executes tests:</strong></p>
+<p><strong>TC-AUTH-01: Login Google OAuth with valid account</strong></p>
+<ul>
+<li><strong>Result:</strong> ✅ Passed</li>
+<li><strong>Date:</strong> 2025-12-22 10:34</li>
+<li><strong>Tested by:</strong> Marie</li>
+<li><strong>Notes:</strong> Works correctly, redirection OK, token stored</li>
+</ul>
+<p><strong>TC-AUTH-03: Login Microsoft OAuth with valid account</strong></p>
+<ul>
+<li><strong>Result:</strong> ❌ Failed</li>
+<li><strong>Date:</strong> 2025-12-22 11:02</li>
+<li><strong>Tested by:</strong> Marie</li>
+<li><strong>Bug created:</strong> <code>[BUG-456] Microsoft OAuth returns 500 error</code></li>
+<li><strong>Notes:</strong> Server error during Microsoft token validation</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>✅ Complete history preserved (who, when, result, notes)</li>
+<li>✅ Bug <strong>automatically linked</strong> to test case and development issue</li>
+<li>✅ Dev receives notification: &ldquo;Bug detected on AUTH-121 by TC-AUTH-03&rdquo;</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h4 id="step-4-dev-fixes-bug-qa-retests">Step 4: Dev Fixes Bug, QA Retests</h4>
+<p><strong>Dev fixes BUG-456:</strong></p>
+<ul>
+<li>Commit: <code>Fix Microsoft OAuth token validation</code></li>
+<li>Marks bug &ldquo;Resolved&rdquo;</li>
+<li>Sinra <strong>automatically notifies Marie</strong>: &ldquo;BUG-456 resolved, retest TC-AUTH-03&rdquo;</li>
+</ul>
+<p><strong>Marie retests:</strong></p>
+<ul>
+<li><strong>TC-AUTH-03: Login Microsoft OAuth with valid account</strong></li>
+<li><strong>Result:</strong> ✅ Passed (retest)</li>
+<li><strong>Date:</strong> 2025-12-22 15:18</li>
+<li><strong>Notes:</strong> Fix validated, works correctly now</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>✅ No forgotten test (automatic notification)</li>
+<li>✅ Complete history (failed → bug → fix → passed)</li>
+<li>✅ Real-time Dev ↔ QA synchronization</li>
+</ul>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-test-history.svg" alt="Complete Test History" width="800" height="400" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="global-view-qa-progression-per-release">Global View: QA Progression Per Release</h3>
+<p><strong>Release: SaaS Platform v2.5 (Delivery: 2025-12-30)</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Capability</th>
+          <th>Total Tests</th>
+          <th>Passed</th>
+          <th>Failed</th>
+          <th>Not Run</th>
+          <th>QA Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SSO Authentication</td>
+          <td>6</td>
+          <td>6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>✅ Validated</td>
+      </tr>
+      <tr>
+          <td>Analytics Dashboard</td>
+          <td>8</td>
+          <td>5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>⚠️ In Progress</td>
+      </tr>
+      <tr>
+          <td>API Webhooks</td>
+          <td>10</td>
+          <td>0</td>
+          <td>0</td>
+          <td>10</td>
+          <td>🚨 Not Started</td>
+      </tr>
+      <tr>
+          <td>PDF Export</td>
+          <td>5</td>
+          <td>4</td>
+          <td>0</td>
+          <td>1</td>
+          <td>⚠️ In Progress</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Global QA Progression:</strong> 15/29 tests passed = <strong>52% completed</strong></p>
+<p><strong>Automatic Alerts:</strong></p>
+<ul>
+<li>🚨 <strong>API Webhooks: 0 tests executed</strong> (delivery in 8 days)</li>
+<li>⚠️ <strong>Analytics Dashboard: 1 active bug</strong> (blocks QA validation)</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>✅ Real-time view of QA state per release</li>
+<li>✅ Immediate risk identification</li>
+<li>✅ Instant answer to &ldquo;Can we ship?&rdquo;</li>
+</ul>
+<p><strong>Answer to CTO:</strong></p>
+<blockquote>
+<p>&ldquo;No, we can&rsquo;t ship Monday. API Webhooks has no tests executed, and Analytics still has 1 active bug. I recommend delaying 5 days or removing API Webhooks from the release.&rdquo;</p>
+</blockquote>
+<p><strong>Response time:</strong> 30 seconds instead of 2 hours.</p>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-release-dashboard.svg" alt="QA Progression Dashboard" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="the-five-advantages-of-sinra-unified-qa">The Five Advantages Of Sinra Unified QA</h2>
+<h3 id="1-tests-linked-to-features-not-disconnected-excel">1. Tests Linked To Features (Not Disconnected Excel)</h3>
+<p><strong>Before (Excel):</strong></p>
+<ul>
+<li>Test cases float in a void</li>
+<li>No link with developed code</li>
+<li>Features added = tests forgotten</li>
+</ul>
+<p><strong>After (Sinra):</strong></p>
+<ul>
+<li>Each testing linked to a capability</li>
+<li>Impossible to mark &ldquo;Done&rdquo; without validated tests</li>
+<li>New features = create testings automatically suggested</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="2-complete-execution-history">2. Complete Execution History</h3>
+<p><strong>Before (Notes/Memory):</strong></p>
+<ul>
+<li>&ldquo;I think I tested that last week&hellip;&rdquo;</li>
+<li>No trace of who tested what when</li>
+<li>Duplicate tests</li>
+</ul>
+<p><strong>After (Sinra):</strong></p>
+<ul>
+<li>Complete history: date, tester, result, notes</li>
+<li>&ldquo;TC-AUTH-03 tested by Marie on 12/22 at 11:02: Failed, bug BUG-456 created&rdquo;</li>
+<li>Search: &ldquo;Who tested Microsoft OAuth?&rdquo; → Instant answer</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="3-automatic-dev--qa-synchronization">3. Automatic Dev ↔ QA Synchronization</h3>
+<p><strong>Before (Separate Tools):</strong></p>
+<ul>
+<li>Dev completes issue → QA doesn&rsquo;t know it&rsquo;s ready</li>
+<li>Bug fixed → QA must guess to retest</li>
+<li>Constant desynchronization</li>
+</ul>
+<p><strong>After (Sinra):</strong></p>
+<ul>
+<li>Issue completed → QA automatically notified</li>
+<li>Bug resolved → Test case to re-execute suggested</li>
+<li>Dev and QA work in the same system</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="4-real-time-qa-coverage-visibility">4. Real-Time QA Coverage Visibility</h3>
+<p><strong>Before (Manual Calculation):</strong></p>
+<ul>
+<li>&ldquo;What&rsquo;s our coverage?&rdquo; → 2h calculation</li>
+<li>60% reliability</li>
+<li>Decisions based on intuition</li>
+</ul>
+<p><strong>After (Sinra):</strong></p>
+<ul>
+<li>Automatic view: 15/29 tests passed (52%)</li>
+<li>Per capability: SSO 100%, Webhooks 0%</li>
+<li>Decisions based on real data</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="5-qa-bottleneck-eliminated-continuous-testing">5. QA Bottleneck Eliminated (Continuous Testing)</h3>
+<p><strong>Before (QA At End Of Sprint):</strong></p>
+<ul>
+<li>Dev codes Monday-Wednesday</li>
+<li>QA tests Thursday-Friday in rush</li>
+<li>Bugs found too late</li>
+</ul>
+<p><strong>After (Sinra):</strong></p>
+<ul>
+<li>QA sees in real-time when issues are ready</li>
+<li>Continuous testing (as soon as issue completed)</li>
+<li>Bugs detected early (time to fix before release)</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="real-example-healthtech-solutions">Real Example: HealthTech Solutions</h2>
+<p><strong>HealthTech Solutions (team of 10, SaaS health platform)</strong></p>
+<p><em>Note: HealthTech Solutions is a real company we&rsquo;ve anonymized under a fictitious name to protect their confidentiality.</em></p>
+<h3 id="before-sinra-invisible-qa">Before Sinra: Invisible QA</h3>
+<p><strong>Tool stack:</strong></p>
+<ul>
+<li>Excel: Test cases (<code>Test_Cases_v12_FINAL.xlsx</code>)</li>
+<li>Jira: Bugs and development issues</li>
+<li>Personal notes: Test results</li>
+<li>Slack: Dev ↔ QA communication</li>
+</ul>
+<p><strong>Problems Encountered:</strong></p>
+<ul>
+<li><strong>Invisible coverage:</strong> Impossible to know how many tests were missing</li>
+<li><strong>Forgotten tests:</strong> 2 features shipped without any tests (discovered after prod incidents)</li>
+<li><strong>Desynchronization:</strong> QA often tested obsolete versions (dev had already changed code)</li>
+<li><strong>QA bottleneck:</strong> Marie (sole QA) overwhelmed at end of sprint</li>
+<li><strong>Lost history:</strong> &ldquo;Did I already test that?&rdquo; (no trace)</li>
+</ul>
+<p><strong>Revealing Incident:</strong>
+Release &ldquo;Patient Portal v3.2&rdquo; shipped with feature &ldquo;Export medical record PDF&rdquo;.</p>
+<p><strong>1 week after release:</strong> 12 customers report PDF export fails on records &gt;50 pages.</p>
+<p><strong>Analysis:</strong> No test case existed for &ldquo;PDF Export with large records&rdquo;. Marie had only tested with small records (5 pages).</p>
+<p><strong>Cost:</strong></p>
+<ul>
+<li>3 weeks urgent fixes</li>
+<li>12 unhappy customers</li>
+<li>Impacted reputation</li>
+</ul>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="after-sinra-unified-qa">After Sinra: Unified QA</h3>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>Each capability has testings defined from conception</li>
+<li>QA creates test cases directly in Sinra (linked to capability)</li>
+<li>When dev completes issue, Marie is automatically notified</li>
+<li>Marie executes tests, records results, creates bugs if needed</li>
+<li>Real-time view of QA progression per release</li>
+</ol>
+<p><strong>Results (After 4 Months):</strong></p>
+<ul>
+<li><strong>Visible coverage:</strong> Automatic view &ldquo;Release 78% tested&rdquo;</li>
+<li><strong>Forgotten tests:</strong> 0 (impossible to ship without validating testings)</li>
+<li><strong>Synchronization:</strong> Dev and QA aligned in real-time</li>
+<li><strong>QA bottleneck:</strong> Eliminated (continuous testing throughout sprint)</li>
+<li><strong>Complete history:</strong> &ldquo;TC-PDF-05 tested 3 times: 12/12 failed, 15/12 failed, 18/12 passed&rdquo;</li>
+</ul>
+<p><strong>Quote from Marie (QA Lead):</strong></p>
+<blockquote>
+<p>&ldquo;Before, I spent 30% of my time searching for what I had already tested and asking devs what was ready. Now, Sinra tells me exactly what to test and I can trace all my work. I test 2x more with zero stress.&rdquo;</p>
+</blockquote>
+<p><strong>Quote from CTO:</strong></p>
+<blockquote>
+<p>&ldquo;No more Friday nights wondering if we can ship Monday. I open Sinra, I see QA progression in real-time, and I make fact-based decisions. Game changer.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2025-12-22-qa-invisible-before-after.svg" alt="HealthTech Before/After Sinra" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="excel--jira-vs-sinra-qa-comparison">Excel + Jira vs. Sinra: QA Comparison</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Excel + Jira</strong></th>
+          <th><strong>Sinra Testings</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Test cases</strong></td>
+          <td>Disconnected Excel</td>
+          <td>Linked to capabilities</td>
+      </tr>
+      <tr>
+          <td><strong>Link with features</strong></td>
+          <td>❌ None</td>
+          <td>✅ Automatic</td>
+      </tr>
+      <tr>
+          <td><strong>Execution history</strong></td>
+          <td>❌ None (manual notes)</td>
+          <td>✅ Complete with dates/testers</td>
+      </tr>
+      <tr>
+          <td><strong>Dev ↔ QA synchronization</strong></td>
+          <td>❌ Manual</td>
+          <td>✅ Automatic</td>
+      </tr>
+      <tr>
+          <td><strong>Visible QA coverage</strong></td>
+          <td>❌ Manual calculation (2h)</td>
+          <td>✅ Real-time (&lt;10s)</td>
+      </tr>
+      <tr>
+          <td><strong>Missing test alerts</strong></td>
+          <td>❌ None</td>
+          <td>✅ Automatic</td>
+      </tr>
+      <tr>
+          <td><strong>Continuous testing</strong></td>
+          <td>❌ Bottleneck at sprint end</td>
+          <td>✅ Throughout sprint</td>
+      </tr>
+      <tr>
+          <td><strong>Bugs linked to tests</strong></td>
+          <td>❌ Disconnected</td>
+          <td>✅ Automatically linked</td>
+      </tr>
+      <tr>
+          <td><strong>Release visibility</strong></td>
+          <td>❌ &ldquo;I think we&rsquo;re good&rdquo;</td>
+          <td>✅ &ldquo;78% tested, 2 active bugs&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="the-five-signs-your-qa-is-invisible">The Five Signs Your QA Is Invisible</h2>
+<h3 id="sign-1-your-qa-uses-excel-for-test-cases">Sign 1: Your QA Uses Excel For Test Cases</h3>
+<p>If your test cases live in an Excel file disconnected from development, your QA is invisible.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="sign-2-you-dont-know-how-many-tests-remain-before-release">Sign 2: You Don&rsquo;t Know How Many Tests Remain Before Release</h3>
+<p>If the answer to &ldquo;How many tests remain?&rdquo; requires 1h manual calculation, your QA coverage is invisible.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="sign-3-qa-discovers-ready-features-by-chance">Sign 3: QA Discovers Ready Features By Chance</h3>
+<p>If your QA must ask &ldquo;Is this ready to test?&rdquo; instead of being automatically notified, synchronization is broken.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="sign-4-you-ship-without-knowing-if-everything-is-tested">Sign 4: You Ship Without Knowing If Everything Is Tested</h3>
+<p>If you answer &ldquo;I think so&rdquo; to &ldquo;Is everything tested?&rdquo;, you have no visibility.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="sign-5-bugs-reappear-because-qa-forgot-to-retest">Sign 5: Bugs Reappear Because QA Forgot To Retest</h3>
+<p>If &ldquo;fixed&rdquo; bugs return because QA didn&rsquo;t know to retest, your history is nonexistent.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="how-to-use-sinra-for-qa">How To Use Sinra For QA</h2>
+<h3 id="step-1-create-testings-for-each-capability">Step 1: Create Testings For Each Capability</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Each capability (feature) has a &ldquo;Testings&rdquo; section</li>
+<li>Create test cases with priority (High/Medium/Low)</li>
+<li>Link each testing to relevant development issues</li>
+</ul>
+<p><strong>Result:</strong> Test cases linked to work, not floating in Excel.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="step-2-execute-tests-and-record-results">Step 2: Execute Tests And Record Results</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>When issue completed, QA notification</li>
+<li>QA executes testing, records result (Passed/Failed)</li>
+<li>If Failed: create bug directly linked to test</li>
+</ul>
+<p><strong>Result:</strong> Complete history, traced bugs.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="step-3-track-qa-progression-per-release">Step 3: Track QA Progression Per Release</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Release view displays % tests executed</li>
+<li>Automatic alerts if tests missing</li>
+<li>Shipping decision based on real data</li>
+</ul>
+<p><strong>Result:</strong> Real-time visibility, informed decisions.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h3 id="step-4-continuous-testing-not-bottleneck-at-sprint-end">Step 4: Continuous Testing (Not Bottleneck At Sprint End)</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>QA tests as soon as issues completed</li>
+<li>Bugs detected early (time to fix)</li>
+<li>No Friday accumulation</li>
+</ul>
+<p><strong>Result:</strong> QA becomes continuous process, not final phase.</p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="action-points-make-your-qa-visible">Action Points: Make Your QA Visible</h2>
+<ol>
+<li><strong>Create your first testings in Sinra.</strong> Take 1 capability, define 5-10 test cases.</li>
+<li><strong>Link testings to development issues.</strong> Ensure Dev ↔ QA visibility.</li>
+<li><strong>Execute and record results.</strong> Build complete history.</li>
+<li><strong>Track QA progression in real-time.</strong> Use release view for visibility.</li>
+<li><strong>Adopt continuous testing.</strong> Test when ready, not at sprint end.</li>
+</ol>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<h2 id="the-key-point">The Key Point</h2>
+<p><strong>Invisible QA kills quality.</strong></p>
+<p>Between <strong>disconnected Excel test cases</strong>, <strong>unlinked Jira bugs</strong>, <strong>lost results</strong>, and <strong>unknown coverage</strong>, nobody knows if the release can ship.</p>
+<p><strong>Sinra makes QA visible and unified with development.</strong></p>
+<p>Testings are linked to capabilities, history is complete, synchronization is automatic, and progression is real-time.</p>
+<p><strong>The result:</strong></p>
+<ul>
+<li>✅ Tests linked to features (not disconnected Excel)</li>
+<li>✅ Complete execution history</li>
+<li>✅ Automatic Dev ↔ QA synchronization</li>
+<li>✅ Real-time coverage visibility</li>
+<li>✅ QA bottleneck eliminated (continuous testing)</li>
+</ul>
+<p><strong>You know exactly what&rsquo;s tested, what remains, and if you can ship.</strong></p>
+<p><strong>Your future self will thank you.</strong></p>
+<hr>
+<p>url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</p>
+<p><strong>Ready to make your QA visible?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free Sinra trial →</a></p>
+<p>Discover project management where tests are linked to development, not lost in Excel.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/methodology/2025/12/20/time-vs-complexity-estimation.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">Time vs Complexity: Why Sinra Abandons …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/documentation/2025/12/24/dead-documentation-notion-confluence.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">Dead Documentation: Why Your …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/" />
+
+
+
+<meta name="description" content="Los desarrolladores están asignados a 3, 4, 5 proyectos a la vez. Resultado: context switching permanente, nada se termina, burnout. Descubre cómo Sinra limita los proyectos activos por persona y visualiza la sobreasignación." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca" />
+<meta property="og:description" content="Los desarrolladores están asignados a 3, 4, 5 proyectos a la vez. Resultado: context switching permanente, nada se termina, burnout. Descubre cómo Sinra limita los proyectos activos por persona y visualiza la sobreasignación." />
+<meta property="og:url"         content="http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2025-12-30-syndrome-multi-projet-featured.png" />
+
+<meta property="article:published_time" content="2025-12-30T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Capacity" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca" />
+<meta name="twitter:description" content="Los desarrolladores están asignados a 3, 4, 5 proyectos a la vez. Resultado: context switching permanente, nada se termina, burnout. Descubre cómo Sinra limita los proyectos activos por persona y visualiza la sobreasignación." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2025-12-30-syndrome-multi-projet-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Alternar menú de navegación">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/es/about/"
+             class=""
+             >
+            Acerca de
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/pricing/"
+             class=""
+             >
+            Precios
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/es/contact/"
+             class=""
+             >
+            Contacto
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Iniciar sesión
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Registrarse
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/es/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/es/about/"
+           class=""
+           >
+          Acerca de
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/pricing/"
+           class=""
+           >
+          Precios
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/es/contact/"
+           class=""
+           >
+          Contacto
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Iniciar sesión
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Registrarse
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        ES
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/capacity/2025/12/30/syndrome-multi-projet-rien-navance.html" >
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2025-12-30-syndrome-multi-projet-rien-navance/" class="active">
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-featured.png" alt="El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/es/categories/capacity/" class="badge badge-primary badge-outline">Capacity</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">El Síndrome Multi-Proyecto: Por Qué Nada Avanza Nunca</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Entre desarrolladores en 4 proyectos simultáneos, context switching permanente y &#34;solo 2h para ayudarme&#34;, nadie termina nada : Sinra limita los proyectos activos y visualiza la sobrecarga</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2025-12-30">December 30, 2025</time>
+      <span>Por el Equipo de Sinra</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <h2 id="el-dev-en-4-proyectos-simultáneos">El Dev En 4 Proyectos Simultáneos</h2>
+<p><strong>Lunes por la mañana. One-on-one con un desarrollador.</strong></p>
+<p>Manager: &ldquo;Hola Dev 1, ¿cómo estás?&rdquo;</p>
+<p>Dev 1: &ldquo;Francamente, no muy bien.&rdquo;</p>
+<p>Manager: &ldquo;¿Por qué?&rdquo;</p>
+<p>Dev 1: &ldquo;Estoy en demasiados proyectos a la vez.&rdquo;</p>
+<p>Manager: &ldquo;¿Cuántos proyectos?&rdquo;</p>
+<p>Dev 1: &ldquo;4.&rdquo;</p>
+<p>Manager: &ldquo;¿¡4 proyectos!? ¿Cuáles?&rdquo;</p>
+<p>Dev 1: &ldquo;Proyecto A (refactor auth), Proyecto B (nueva API), Proyecto C (migración DB), Proyecto D (bug fixes prod).&rdquo;</p>
+<p>Manager: &ldquo;OK, ¿y cuál es el problema?&rdquo;</p>
+<p>Dev 1: &ldquo;Paso mi día cambiando entre los 4. Por la mañana, estoy en Proyecto A. Luego alguien me pide ayuda en Proyecto B. Luego un bug urgente en Proyecto D. Luego vuelvo a Proyecto A, pero he olvidado dónde estaba.&rdquo;</p>
+<p>Manager: &ldquo;¿Y en qué avanzas?&rdquo;</p>
+<p>Dev 1: &ldquo;En nada. Ningún proyecto avanza realmente. Proyecto A debía terminarse la semana pasada. Proyecto B lleva 2 semanas de retraso. Proyecto C, no lo he tocado en 10 días. Proyecto D, solo hago apaga fuegos.&rdquo;</p>
+<p>Manager: &ldquo;¿Por qué estás en 4 proyectos?&rdquo;</p>
+<p>Dev 1: &ldquo;Porque me asignaron a los 4.&rdquo;</p>
+<p>Manager: &ldquo;¿Pero por qué no te quitaron de un proyecto antes de añadirte a otro?&rdquo;</p>
+<p>Dev 1: &ldquo;No sé. Nadie me ha quitado nunca de un proyecto. Solo me los añaden.&rdquo;</p>
+<p>Manager: &ldquo;OK. Voy a mirar eso.&rdquo;</p>
+<p><strong>El manager mira Jira. Dev 1 está asignado a 47 issues repartidas en 4 proyectos.</strong></p>
+<p>Manager: &ldquo;Mierda.&rdquo;</p>
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-developer-overload.svg" alt="Dev 1 asignado a 4 proyectos simultáneos con sobreasignación 180%" width="800" height="450" loading="lazy">
+<hr>
+<h2 id="el-problema-multi-proyecto">El Problema Multi-Proyecto</h2>
+<p>Multi-proyecto es cuando los desarrolladores están asignados a <strong>múltiples proyectos en paralelo</strong> sin límites claros.</p>
+<p><strong>Resultado catastrófico:</strong></p>
+<ul>
+<li>Context switching permanente</li>
+<li>Nada se termina</li>
+<li>Burnout</li>
+<li>Todos los proyectos retrasados</li>
+</ul>
+<h3 id="los-cinco-síntomas-del-síndrome-multi-proyecto">Los Cinco Síntomas Del Síndrome Multi-Proyecto</h3>
+<h4 id="1-nada-se-termina-todo-está-en-curso-nada-está-hecho">1. Nada Se Termina (&ldquo;Todo Está En Curso, Nada Está Hecho&rdquo;)</h4>
+<p><strong>El Escenario:</strong>
+Tienes 5 proyectos activos. Cada desarrollador trabaja en 2, 3, 4 proyectos en paralelo. Resultado: todos los proyectos avanzan 10%, pero ninguno se termina.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p>Equipo de 8 desarrolladores. 6 proyectos activos.</p>
+<p><strong>Asignación típica:</strong></p>
+<ul>
+<li><strong>Dev 1:</strong> Proyecto A (40%) + Proyecto B (30%) + Proyecto D (30%)</li>
+<li><strong>Dev 2:</strong> Proyecto A (50%) + Proyecto C (50%)</li>
+<li><strong>Dev 3:</strong> Proyecto B (60%) + Proyecto E (40%)</li>
+<li><strong>Dev 4:</strong> Proyecto C (70%) + Proyecto F (30%)</li>
+<li><strong>Dev 5:</strong> Proyecto D (100%) ← único dev a tiempo completo</li>
+<li><strong>Dev 6:</strong> Proyecto E (50%) + Proyecto F (50%)</li>
+<li><strong>Dev 7:</strong> Proyecto A (30%) + Proyecto B (30%) + Proyecto C (40%)</li>
+<li><strong>Dev 8:</strong> Proyecto D (50%) + Proyecto E (50%)</li>
+</ul>
+<p><strong>Situación tras 4 semanas:</strong></p>
+<ul>
+<li><strong>Proyecto A:</strong> 60% hecho (debía terminar semana 2)</li>
+<li><strong>Proyecto B:</strong> 45% hecho (debía terminar semana 3)</li>
+<li><strong>Proyecto C:</strong> 55% hecho (debía terminar semana 3)</li>
+<li><strong>Proyecto D:</strong> 70% hecho (único proyecto con 1 dev a tiempo completo)</li>
+<li><strong>Proyecto E:</strong> 30% hecho</li>
+<li><strong>Proyecto F:</strong> 25% hecho</li>
+</ul>
+<p><strong>Ningún proyecto terminado.</strong></p>
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-nothing-finishes.svg" alt="6 proyectos activos, ninguno terminado tras 4 semanas" width="800" height="450" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Desarrolladores fragmentados en múltiples proyectos</li>
+<li>❌ Cada proyecto avanza lentamente</li>
+<li>❌ Nada se termina</li>
+<li>❌ Imposible entregar nada</li>
+</ul>
+<p><strong>Estadística Real:</strong></p>
+<p>Estudio de 95 equipos de ingeniería:</p>
+<ul>
+<li><strong>Desarrolladores en 1 proyecto:</strong> 92% de proyectos terminados a tiempo</li>
+<li><strong>Desarrolladores en 2 proyectos:</strong> 68% de proyectos terminados a tiempo</li>
+<li><strong>Desarrolladores en 3+ proyectos:</strong> 23% de proyectos terminados a tiempo</li>
+</ul>
+<p><strong>Resultado:</strong> Multi-proyecto mata la capacidad de terminar algo.</p>
+<hr>
+<h4 id="2-context-switching-permanente-qué-feature-estaba-haciendo-ya">2. Context Switching Permanente (&quot;¿Qué Feature Estaba Haciendo Ya?&quot;)</h4>
+<p><strong>El Escenario:</strong>
+Tu desarrollador pasa su día cambiando entre 3, 4 proyectos diferentes. Resultado: pérdida masiva de tiempo, fatiga cognitiva, errores.</p>
+<p><strong>Cronología típica de un día:</strong></p>
+<p><strong>9:00:</strong> Dev 1 empieza el día en Proyecto A (refactor auth).</p>
+<p><strong>9:30:</strong> Mensaje Slack: &ldquo;Dev 1, ¿puedes ayudarme 5 minutos en Proyecto B? Hay un bug.&rdquo;</p>
+<p><strong>9:35:</strong> Dev 1 cambia a Proyecto B. Checkout rama. &ldquo;Mierda, ¿qué rama ya?&rdquo;</p>
+<p><strong>10:00:</strong> Bug resuelto. Dev 1 vuelve a Proyecto A.</p>
+<p><strong>10:05:</strong> &ldquo;Eh&hellip; ¿dónde estaba ya?&rdquo;</p>
+<p><strong>10:20:</strong> Dev 1 recupera el contexto. Reanuda trabajo.</p>
+<p><strong>11:00:</strong> Standup Proyecto C. &ldquo;Dev 1, ¿puedes hacer esta issue urgente en Proyecto C?&rdquo;</p>
+<p><strong>11:15:</strong> Dev 1 cambia a Proyecto C. Checkout rama.</p>
+<p><strong>12:00:</strong> Pausa almuerzo.</p>
+<p><strong>13:00:</strong> Vuelta. &ldquo;¿En qué proyecto estaba trabajando ya?&rdquo;</p>
+<p><strong>13:30:</strong> Email: &ldquo;Proyecto D tiene un bug en prod. ¿Puedes mirar?&rdquo;</p>
+<p><strong>13:35:</strong> Dev 1 cambia a Proyecto D. &ldquo;Mierda, ni siquiera conozco este código.&rdquo;</p>
+<p><strong>15:00:</strong> Bug no resuelto. &ldquo;Voy a pedir a alguien más.&rdquo;</p>
+<p><strong>15:15:</strong> Dev 1 vuelve a Proyecto A. &ldquo;Eh&hellip; ¿cuál era mi feature ya?&rdquo;</p>
+<p><strong>16:00:</strong> Reunión Proyecto B.</p>
+<p><strong>17:00:</strong> Fin del día. Dev 1 se da cuenta de que no ha <strong>terminado nada</strong>.</p>
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-context-switching.svg" alt="Día típico con 6 context switches y 60% tiempo perdido" width="800" height="450" loading="lazy">
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ 5-6 context switches al día</li>
+<li>❌ Pérdida masiva de tiempo recuperando contexto</li>
+<li>❌ Nada sustancial logrado</li>
+<li>❌ Fatiga cognitiva</li>
+</ul>
+<p><strong>Coste del context switching:</strong></p>
+<p>Investigación (Gerald Weinberg, <em>Quality Software Management</em>):</p>
+<ul>
+<li><strong>1 proyecto:</strong> 100% productividad</li>
+<li><strong>2 proyectos:</strong> 40% productividad por proyecto (20% perdido en switching)</li>
+<li><strong>3 proyectos:</strong> 20% productividad por proyecto (40% perdido en switching)</li>
+<li><strong>4+ proyectos:</strong> &lt;10% productividad por proyecto (60%+ perdido en switching)</li>
+</ul>
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-productivity-loss.svg" alt="Pérdida de productividad según número de proyectos" width="800" height="450" loading="lazy">
+<p><strong>Resultado:</strong> El context switching destruye la productividad.</p>
+<hr>
+<h4 id="3-sin-deep-work-estoy-constantemente-interrumpido">3. Sin Deep Work (&ldquo;Estoy Constantemente Interrumpido&rdquo;)</h4>
+<p><strong>El Escenario:</strong>
+Para hacer buen trabajo, necesitas <strong>tiempo ininterrumpido</strong> (deep work). Pero cuando estás en 4 proyectos, estás constantemente interrumpido.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p>Dev 1 intenta codear una feature compleja (refactor auth).</p>
+<p><strong>Necesidad:</strong> 4 horas de deep work ininterrumpido.</p>
+<p><strong>Realidad:</strong></p>
+<p><strong>Lunes mañana:</strong></p>
+<ul>
+<li>9:00-9:30: Trabajo en auth (30 min)</li>
+<li>9:30-10:00: Interrumpido para Proyecto B (30 min)</li>
+<li>10:00-10:30: Vuelta a auth (30 min)</li>
+<li>10:30-11:00: Standup Proyecto C (30 min)</li>
+<li>11:00-12:00: Trabajo en auth (60 min)</li>
+<li>12:00-13:00: Pausa almuerzo</li>
+</ul>
+<p><strong>Lunes tarde:</strong></p>
+<ul>
+<li>13:00-14:00: Bug urgente Proyecto D (60 min)</li>
+<li>14:00-15:00: Trabajo en auth (60 min)</li>
+<li>15:00-16:00: Reunión Proyecto B (60 min)</li>
+<li>16:00-17:00: Trabajo en auth (60 min)</li>
+</ul>
+<p><strong>Tiempo total en auth:</strong> 4h30</p>
+<p><strong>Pero fragmentado en 6 sesiones de 30-60 minutos.</strong></p>
+<p><strong>Tiempo perdido recuperando contexto:</strong> 6 × 10 min = 60 min</p>
+<p><strong>Tiempo real productivo:</strong> 3h30</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Sin sesión larga ininterrumpida</li>
+<li>❌ Tiempo perdido recuperando contexto</li>
+<li>❌ Imposible hacer deep work</li>
+<li>❌ Calidad del código degradada</li>
+</ul>
+<p><strong>Cita desarrollador:</strong></p>
+<blockquote>
+<p>&ldquo;Nunca puedo concentrarme más de 60 minutos seguidos. Estoy constantemente interrumpido para otro proyecto. Resultado: solo hago código superficial. Nada complejo.&rdquo;</p>
+</blockquote>
+<p><strong>Resultado:</strong> Multi-proyecto hace el deep work imposible.</p>
+<hr>
+<h4 id="4-burnout-ya-no-sé-en-qué-trabajo">4. Burnout (&ldquo;Ya No Sé En Qué Trabajo&rdquo;)</h4>
+<p><strong>El Escenario:</strong>
+Estar en 4 proyectos a la vez es mentalmente agotador. Resultado: burnout.</p>
+<p><strong>Testimonio desarrollador:</strong></p>
+<blockquote>
+<p>&ldquo;Me despierto por la mañana y ni siquiera sé en qué proyectos estoy trabajando. Miro mi calendario: 3 standups diferentes, 2 reuniones de planning, 1 code review para un proyecto que no conozco. Estoy agotado antes incluso de empezar mi día.&rdquo;</p>
+</blockquote>
+<p><strong>Señales Del Burnout Multi-Proyecto:</strong></p>
+<ol>
+<li><strong>Confusión:</strong> &ldquo;¿En qué proyecto trabajo ya?&rdquo;</li>
+<li><strong>Fatiga permanente:</strong> &ldquo;Estoy agotado.&rdquo;</li>
+<li><strong>Sensación de ineficacia:</strong> &ldquo;Nunca termino nada.&rdquo;</li>
+<li><strong>Frustración:</strong> &ldquo;¿Por qué siempre me añaden proyectos sin quitarme nunca?&rdquo;</li>
+<li><strong>Desconexión:</strong> &ldquo;Me da igual. Solo hago el mínimo.&rdquo;</li>
+</ol>
+<p><strong>Estadística Real:</strong></p>
+<p>Encuesta a 340 desarrolladores:</p>
+<ul>
+<li><strong>Desarrolladores en 1 proyecto:</strong> 12% declaran burnout</li>
+<li><strong>Desarrolladores en 2 proyectos:</strong> 29% burnout</li>
+<li><strong>Desarrolladores en 3+ proyectos:</strong> 61% burnout</li>
+</ul>
+<p><strong>Resultado:</strong> Multi-proyecto es una causa mayor de burnout.</p>
+<hr>
+<h4 id="5-todos-los-proyectos-retrasados-nada-está-a-tiempo">5. Todos Los Proyectos Retrasados (&ldquo;Nada Está A Tiempo&rdquo;)</h4>
+<p><strong>El Escenario:</strong>
+Cuando todos están en múltiples proyectos, <strong>todos los proyectos se retrasan</strong>.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p>Equipo de 10 desarrolladores. 5 proyectos activos.</p>
+<p><strong>Planning inicial:</strong></p>
+<ul>
+<li><strong>Proyecto A:</strong> 4 semanas (deadline: 30 enero)</li>
+<li><strong>Proyecto B:</strong> 3 semanas (deadline: 23 enero)</li>
+<li><strong>Proyecto C:</strong> 6 semanas (deadline: 13 febrero)</li>
+<li><strong>Proyecto D:</strong> 2 semanas (deadline: 16 enero)</li>
+<li><strong>Proyecto E:</strong> 5 semanas (deadline: 6 febrero)</li>
+</ul>
+<p><strong>Asignación:</strong></p>
+<ul>
+<li>Cada desarrollador en 2-3 proyectos de media</li>
+</ul>
+<p><strong>Resultado tras 8 semanas:</strong></p>
+<ul>
+<li><strong>Proyecto A:</strong> Terminado semana 7 (3 semanas retraso)</li>
+<li><strong>Proyecto B:</strong> Terminado semana 6 (3 semanas retraso)</li>
+<li><strong>Proyecto C:</strong> Aún no terminado (retrasado)</li>
+<li><strong>Proyecto D:</strong> Terminado semana 4 (2 semanas retraso)</li>
+<li><strong>Proyecto E:</strong> Aún no terminado (retrasado)</li>
+</ul>
+<p><strong>5 proyectos → 5 proyectos retrasados.</strong></p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Capacidad fragmentada en 5 proyectos</li>
+<li>❌ Cada proyecto avanza lentamente</li>
+<li>❌ Todos los proyectos retrasados</li>
+<li>❌ Stakeholders descontentos</li>
+</ul>
+<p><strong>Cita PM:</strong></p>
+<blockquote>
+<p>&ldquo;Me prometieron Proyecto B para finales de enero. Estamos a mediados de febrero y aún no está hecho. ¿Por qué? Porque los devs están dispersos en 5 proyectos.&rdquo;</p>
+</blockquote>
+<p><strong>Resultado:</strong> Multi-proyecto garantiza que todos los proyectos se retrasarán.</p>
+<hr>
+<h2 id="por-qué-el-multi-proyecto-persiste">Por Qué El Multi-Proyecto Persiste</h2>
+<h3 id="razón-1-sin-límite-en-proyectos-activos">Razón 1: Sin Límite En Proyectos Activos</h3>
+<p><strong>El Problema:</strong></p>
+<p>Nadie dice nunca: &ldquo;No, no podemos empezar un nuevo proyecto hasta que Proyecto A esté terminado.&rdquo;</p>
+<p><strong>Lo que pasa:</strong></p>
+<p>Proyecto A empieza. 4 desarrolladores asignados.</p>
+<p><strong>2 semanas después:</strong></p>
+<p>Proyecto B empieza. &ldquo;Necesitamos 3 desarrolladores.&rdquo;</p>
+<p>Manager: &ldquo;OK, tomamos Dev 1, Dev 2, Dev 3.&rdquo;</p>
+<p><strong>Pero no se quita a Dev 1, Dev 2, Dev 3 del Proyecto A.</strong></p>
+<p>Resultado: Dev 1, Dev 2, Dev 3 ahora en <strong>2 proyectos</strong>.</p>
+<p><strong>2 semanas después:</strong></p>
+<p>Proyecto C empieza. &ldquo;Necesitamos 2 desarrolladores.&rdquo;</p>
+<p>Manager: &ldquo;OK, tomamos Dev 1, Dev 4.&rdquo;</p>
+<p>Resultado: Dev 1 ahora en <strong>3 proyectos</strong>.</p>
+<p><strong>2 semanas después:</strong></p>
+<p>Proyecto D empieza. &ldquo;Necesitamos 1 desarrollador.&rdquo;</p>
+<p>Manager: &ldquo;OK, tomamos Dev 1.&rdquo;</p>
+<p>Resultado: Dev 1 ahora en <strong>4 proyectos</strong>.</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Sin límite en proyectos activos</li>
+<li>❌ Se añaden proyectos sin quitar nunca</li>
+<li>❌ Desarrolladores en 3, 4, 5 proyectos simultáneos</li>
+<li>❌ Nadie termina nada</li>
+</ul>
+<p><strong>Cita desarrollador:</strong></p>
+<blockquote>
+<p>&ldquo;Me han asignado a 5 proyectos este año. No me han quitado de ninguno. Resultado: estoy en 5 proyectos a la vez.&rdquo;</p>
+</blockquote>
+<p><strong>Resultado:</strong> Sin límite en proyectos activos, los desarrolladores acaban en 4+ proyectos.</p>
+<hr>
+<h3 id="razón-2-solo-2h-para-ayudarme">Razón 2: &ldquo;Solo 2h Para Ayudarme&rdquo;</h3>
+<p><strong>El Problema:</strong></p>
+<p>Multi-proyecto a menudo empieza con: &ldquo;¿Puedes solo ayudarme 2h en Proyecto X?&rdquo;</p>
+<p><strong>Pero las &ldquo;2h&rdquo; se vuelven permanentes.</strong></p>
+<p><strong>Ejemplo real:</strong></p>
+<p>Dev 1 está a tiempo completo en Proyecto A.</p>
+<p><strong>Semana 1:</strong></p>
+<p>Manager Proyecto B: &ldquo;Dev 1, ¿puedes solo ayudarme 2h en un bug urgente en Proyecto B?&rdquo;</p>
+<p>Dev 1: &ldquo;OK, sin problema.&rdquo;</p>
+<p><strong>Semana 2:</strong></p>
+<p>Manager Proyecto B: &ldquo;Dev 1, otra cosita en Proyecto B. Solo 2h.&rdquo;</p>
+<p>Dev 1: &ldquo;OK.&rdquo;</p>
+<p><strong>Semana 3:</strong></p>
+<p>Manager Proyecto B: &ldquo;Dev 1, te necesitamos 1 día por semana en Proyecto B.&rdquo;</p>
+<p>Dev 1: &ldquo;Eh&hellip; OK.&rdquo;</p>
+<p><strong>Semana 4:</strong></p>
+<p>Manager Proyecto B: &ldquo;Dev 1, en realidad ¿puedes pasar 50% de tu tiempo en Proyecto B?&rdquo;</p>
+<p>Dev 1: &ldquo;Pero se supone que estoy a tiempo completo en Proyecto A.&rdquo;</p>
+<p>Manager Proyecto B: &ldquo;Sí, pero Proyecto B también te necesita.&rdquo;</p>
+<p><strong>Resultado:</strong> Dev 1 ahora en <strong>2 proyectos al 50% cada uno</strong>.</p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ &ldquo;Solo 2h&rdquo; se vuelve permanente</li>
+<li>❌ Desarrollador fragmentado en múltiples proyectos</li>
+<li>❌ Imposible decir no</li>
+<li>❌ Sobrecarga progresiva</li>
+</ul>
+<p><strong>Cita desarrollador:</strong></p>
+<blockquote>
+<p>&ldquo;Todo empieza con &lsquo;solo 2h para ayudarme&rsquo;. Luego se vuelve 1 día por semana. Luego 50% de mi tiempo. Nadie me quita nunca oficialmente de un proyecto.&rdquo;</p>
+</blockquote>
+<p><strong>Resultado:</strong> Las &ldquo;pequeñas peticiones&rdquo; crean multi-proyecto permanente.</p>
+<hr>
+<h3 id="razón-3-sin-visibilidad-en-la-sobreasignación">Razón 3: Sin Visibilidad En La Sobreasignación</h3>
+<p><strong>El Problema:</strong></p>
+<p>Nadie ve que Dev 1 está asignado a 4 proyectos a la vez.</p>
+<p><strong>Ejemplo real:</strong></p>
+<p>Manager Proyecto A piensa que Dev 1 está 100% en Proyecto A.</p>
+<p>Manager Proyecto B piensa que Dev 1 está 50% en Proyecto B.</p>
+<p>Manager Proyecto C piensa que Dev 1 está 30% en Proyecto C.</p>
+<p>Manager Proyecto D piensa que Dev 1 está disponible para &ldquo;unas horas&rdquo;.</p>
+<p><strong>Realidad:</strong> Dev 1 está asignado a <strong>180% de su capacidad</strong>.</p>
+<p><strong>Pero nadie lo ve.</strong></p>
+<p><strong>El Problema:</strong></p>
+<ul>
+<li>❌ Sin vista general de la asignación</li>
+<li>❌ Cada manager piensa que tiene su parte</li>
+<li>❌ Desarrollador sobreasignado a 180%</li>
+<li>❌ Nadie se da cuenta del problema</li>
+</ul>
+<p><strong>Cita manager:</strong></p>
+<blockquote>
+<p>&ldquo;Pensaba que Dev 1 estaba 100% en mi proyecto. Descubrí que también estaba en 3 otros proyectos. Nadie me lo dijo.&rdquo;</p>
+</blockquote>
+<p><strong>Resultado:</strong> Sin visibilidad en la asignación, los desarrolladores acaban sobreasignados.</p>
+<hr>
+<h2 id="el-enfoque-sinra-limitar-proyectos-activos-y-visualizar-sobrecarga">El Enfoque Sinra: Limitar Proyectos Activos Y Visualizar Sobrecarga</h2>
+<p>Sinra elimina el multi-proyecto <strong>limitando el número de proyectos activos por persona</strong> y <strong>visualizando la sobreasignación</strong>.</p>
+<h3 id="el-concepto-campo-projects-y-visualización-de-asignación">El Concepto: Campo &ldquo;Projects&rdquo; Y Visualización De Asignación</h3>
+<p>En Sinra, cada issue está asignada a un <strong>proyecto</strong>. Cada persona puede ver cuántos proyectos tiene.</p>
+<p><strong>Tres mecanismos:</strong></p>
+<ol>
+<li><strong>Campo &ldquo;Projects&rdquo;</strong>: Cada issue pertenece a un proyecto</li>
+<li><strong>Vista por proyecto</strong>: Ver todas las issues de un proyecto</li>
+<li><strong>Visualización de asignación</strong>: Ver cuántos proyectos tiene cada persona</li>
+</ol>
+<p><strong>Regla simple:</strong></p>
+<p><strong>Máximo 2 proyectos activos por persona</strong> (idealmente 1).</p>
+<p><strong>Resultado:</strong> Imposible tener desarrolladores en 4+ proyectos.</p>
+<hr>
+<h3 id="anatomía-de-una-asignación-sinra">Anatomía De Una Asignación Sinra</h3>
+<p>Revisitemos el ejemplo de Dev 1 en 4 proyectos.</p>
+<h4 id="enfoque-tradicional-multi-proyecto-invisible">Enfoque Tradicional (Multi-Proyecto Invisible)</h4>
+<p><strong>Dev 1 asignado a:</strong></p>
+<ul>
+<li>12 issues Proyecto A</li>
+<li>8 issues Proyecto B</li>
+<li>7 issues Proyecto C</li>
+<li>5 issues Proyecto D</li>
+</ul>
+<p><strong>Total: 32 issues en 4 proyectos</strong></p>
+<p><strong>Nadie ve el problema.</strong></p>
+<p><strong>Resultado:</strong> Dev 1 pasa su día cambiando. Nada se termina.</p>
+<hr>
+<h4 id="enfoque-sinra-proyectos-visibles">Enfoque Sinra (Proyectos Visibles)</h4>
+<p><strong>Paso 1:</strong> Vista de asignación de Dev 1</p>
+<pre tabindex="0"><code>Dev 1:
+- Proyecto A: 12 issues
+- Proyecto B: 8 issues
+- Proyecto C: 7 issues
+- Proyecto D: 5 issues
+
+⚠️ Alerta: Dev 1 está en 4 proyectos (límite recomendado: 2)
+</code></pre><p><strong>Paso 2:</strong> Manager ve la alerta</p>
+<p>Manager: &ldquo;Mierda, Dev 1 está en 4 proyectos. Tenemos que quitarlo de 2 proyectos.&rdquo;</p>
+<p><strong>Paso 3:</strong> Decisión de priorización</p>
+<p>Manager: &ldquo;¿Cuál es el proyecto prioritario?&rdquo;</p>
+<p>Product: &ldquo;Proyecto A.&rdquo;</p>
+<p>Manager: &ldquo;OK, mantenemos Dev 1 en Proyecto A al 100%. Quitamos Dev 1 de Proyecto B, C, D.&rdquo;</p>
+<p><strong>Paso 4:</strong> Reasignación</p>
+<ul>
+<li>Proyecto B → Asignado a Dev 5</li>
+<li>Proyecto C → Asignado a Dev 6</li>
+<li>Proyecto D → Asignado a Dev 7</li>
+</ul>
+<p><strong>Resultado:</strong> Dev 1 ahora en <strong>1 proyecto al 100%</strong>.</p>
+<p><strong>Impacto:</strong></p>
+<p><strong>Antes (4 proyectos):</strong></p>
+<ul>
+<li>Productividad por proyecto: &lt;10%</li>
+<li>Proyecto A: 3 semanas para terminar</li>
+</ul>
+<p><strong>Después (1 proyecto):</strong></p>
+<ul>
+<li>Productividad: 100%</li>
+<li>Proyecto A: 1 semana para terminar</li>
+</ul>
+<p><strong>Ganancia:</strong> 2 semanas ahorradas.</p>
+<hr>
+<h3 id="los-tres-pilares-de-la-gestión-multi-proyecto-sinra">Los Tres Pilares De La Gestión Multi-Proyecto Sinra</h3>
+<h4 id="1-campo-projects-cada-issue-pertenece-a-un-proyecto">1. Campo &ldquo;Projects&rdquo; (Cada Issue Pertenece A Un Proyecto)</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Cada issue está asignada a un <strong>proyecto</strong>.</p>
+<p><strong>Issue típica:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Title: Auth refactor
+</span></span><span style="display:flex;"><span>Assignee: Dev 1
+</span></span><span style="display:flex;"><span>Project: Proyecto A
+</span></span></code></pre></div><p><strong>Beneficio:</strong> Se puede ver cuántos proyectos tiene cada persona.</p>
+<hr>
+<h4 id="2-visualización-de-asignación-ver-la-sobrecarga">2. Visualización De Asignación (Ver La Sobrecarga)</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Sinra muestra cuántos proyectos tiene cada persona.</p>
+<p><strong>Vista de equipo:</strong></p>
+<pre tabindex="0"><code>Dev 1: 1 proyecto (Proyecto A) ✅
+Dev 2: 2 proyectos (Proyecto A, Proyecto B) ⚠️
+Dev 3: 4 proyectos (Proyecto A, B, C, D) 🚨 Sobreasignado
+Dev 4: 1 proyecto (Proyecto C) ✅
+Dev 5: 3 proyectos (Proyecto B, D, E) 🚨 Sobreasignado
+</code></pre><p><strong>Acciones inmediatas:</strong></p>
+<ul>
+<li>Quitar Dev 3 de 2 proyectos</li>
+<li>Quitar Dev 5 de 1 proyecto</li>
+</ul>
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-allocation-view.svg" alt="Vista asignación Sinra con alertas de sobrecarga" width="800" height="450" loading="lazy">
+<p><strong>Beneficio:</strong> Imposible no ver la sobrecarga.</p>
+<hr>
+<h4 id="3-límite-recomendado-máximo-2-proyectos-activos">3. Límite Recomendado (Máximo 2 Proyectos Activos)</h4>
+<p><strong>El Concepto:</strong></p>
+<p>Sinra recomienda <strong>máximo 2 proyectos activos por persona</strong> (idealmente 1).</p>
+<p><strong>Alerta automática:</strong></p>
+<pre tabindex="0"><code>⚠️ Dev 3 está en 4 proyectos (límite: 2)
+Acción recomendada: Quitar Dev 3 de 2 proyectos
+</code></pre><p><strong>Beneficio:</strong> Los managers están forzados a priorizar.</p>
+<hr>
+<h2 id="ejemplo-real-nexus-plataforma-saas">Ejemplo Real: Nexus (Plataforma SaaS)</h2>
+<p><strong>Nexus (equipo de 12 desarrolladores, plataforma SaaS B2B)</strong></p>
+<p><em>Nota: Nexus es una empresa real que hemos anonimizado bajo un nombre ficticio para proteger su confidencialidad.</em></p>
+<h3 id="antes-de-sinra-multi-proyecto-invisible">Antes De Sinra: Multi-Proyecto Invisible</h3>
+<p><strong>Problemas Encontrados:</strong></p>
+<p><strong>Problema 1: Desarrolladores en 3-4 proyectos</strong></p>
+<p>Análisis de asignación:</p>
+<ul>
+<li><strong>Dev 1-4:</strong> 3 proyectos cada uno</li>
+<li><strong>Dev 5-8:</strong> 4 proyectos cada uno</li>
+<li><strong>Dev 9-12:</strong> 2 proyectos cada uno</li>
+</ul>
+<p><strong>Media: 3 proyectos por desarrollador.</strong></p>
+<p><strong>Problema 2: Nada se termina</strong></p>
+<p>6 proyectos activos. Ninguno terminado a tiempo.</p>
+<p>Retraso medio: <strong>+5 semanas</strong> respecto al planning inicial.</p>
+<p><strong>Problema 3: Context switching permanente</strong></p>
+<p>Desarrolladores pasan <strong>60% de su tiempo</strong> cambiando entre proyectos.</p>
+<p>Tiempo real productivo: <strong>40%</strong>.</p>
+<p><strong>Problema 4: Burnout</strong></p>
+<p>Encuesta interna:</p>
+<ul>
+<li><strong>58% de desarrolladores</strong> declaran burnout</li>
+<li>Razón principal: &ldquo;Demasiados proyectos a la vez&rdquo;</li>
+</ul>
+<p><strong>Problema 5: Todos los proyectos retrasados</strong></p>
+<p>6 proyectos activos → 6 proyectos retrasados.</p>
+<p>Stakeholders descontentos.</p>
+<p><strong>Moral del equipo:</strong> Agotado. &ldquo;Nunca terminamos nada.&rdquo;</p>
+<hr>
+<h3 id="después-de-sinra-proyectos-limitados">Después De Sinra: Proyectos Limitados</h3>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li><strong>Cada issue asignada a un proyecto</strong></li>
+<li><strong>Vista de asignación por persona</strong></li>
+<li><strong>Alerta si &gt;2 proyectos</strong></li>
+<li><strong>Reasignación para respetar el límite</strong></li>
+</ol>
+<p><strong>Cambio principal:</strong></p>
+<p><strong>Regla estricta:</strong> Máximo 2 proyectos activos por desarrollador (idealmente 1).</p>
+<p><strong>Reasignación:</strong></p>
+<p><strong>Antes:</strong></p>
+<ul>
+<li>Dev 1: Proyecto A, B, C (3 proyectos)</li>
+<li>Dev 2: Proyecto A, B, D (3 proyectos)</li>
+<li>Dev 3: Proyecto C, D, E, F (4 proyectos)</li>
+</ul>
+<p><strong>Después:</strong></p>
+<ul>
+<li>Dev 1: Proyecto A (100%)</li>
+<li>Dev 2: Proyecto B (100%)</li>
+<li>Dev 3: Proyecto C (100%)</li>
+<li>Dev 4: Proyecto D (100%)</li>
+<li>Dev 5: Proyecto E (100%)</li>
+<li>Dev 6: Proyecto F (100%)</li>
+</ul>
+<p><strong>Impacto inmediato:</strong></p>
+<p>Cada proyecto ahora tiene desarrolladores <strong>a tiempo completo</strong>.</p>
+<p><strong>Resultados (Después De 4 Meses):</strong></p>
+<p><strong>Métrica 1: Proyectos por desarrollador</strong></p>
+<ul>
+<li><strong>Antes:</strong> 3 proyectos de media</li>
+<li><strong>Después:</strong> 1.2 proyectos de media</li>
+</ul>
+<p><strong>Métrica 2: Tasa de completado</strong></p>
+<ul>
+<li><strong>Antes:</strong> 23% de proyectos terminados a tiempo</li>
+<li><strong>Después:</strong> 87% de proyectos terminados a tiempo</li>
+</ul>
+<p><strong>Métrica 3: Context switching</strong></p>
+<ul>
+<li><strong>Antes:</strong> 60% del tiempo perdido en switching</li>
+<li><strong>Después:</strong> 12%</li>
+</ul>
+<p><strong>Métrica 4: Burnout</strong></p>
+<ul>
+<li><strong>Antes:</strong> 58% de devs en burnout</li>
+<li><strong>Después:</strong> 19%</li>
+</ul>
+<p><strong>Métrica 5: Retraso medio</strong></p>
+<ul>
+<li><strong>Antes:</strong> +5 semanas retraso por proyecto</li>
+<li><strong>Después:</strong> -1 semana (proyectos terminados adelantados)</li>
+</ul>
+<p><strong>Cita Lead Developer:</strong></p>
+<blockquote>
+<p>&ldquo;Antes, estaba en 4 proyectos a la vez. Pasaba mi día cambiando. Ahora, estoy en 1 proyecto a la vez. Termino cosas. Es liberador.&rdquo;</p>
+</blockquote>
+<p><strong>Cita Product Manager:</strong></p>
+<blockquote>
+<p>&ldquo;Los proyectos finalmente se terminan. Antes, todo estaba retrasado. Ahora, entregamos a tiempo. ¿La diferencia? Cada dev está enfocado en un solo proyecto.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2025-12-30-syndrome-multi-projet-nexus-before-after.svg" alt="Nexus: métricas antes/después de Sinra" width="800" height="450" loading="lazy">
+<hr>
+<h2 id="jira-vs-sinra-comparación-multi-proyecto">Jira vs. Sinra: Comparación Multi-Proyecto</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspecto</strong></th>
+          <th><strong>Jira</strong></th>
+          <th><strong>Sinra</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Campo &ldquo;Projects&rdquo;</strong></td>
+          <td>❌ Inexistente</td>
+          <td>✅ Obligatorio</td>
+      </tr>
+      <tr>
+          <td><strong>Visualización asignación</strong></td>
+          <td>❌ Ninguna</td>
+          <td>✅ Vista por persona</td>
+      </tr>
+      <tr>
+          <td><strong>Alerta sobreasignación</strong></td>
+          <td>❌ Ninguna</td>
+          <td>✅ Alerta si &gt;2 proyectos</td>
+      </tr>
+      <tr>
+          <td><strong>Límite proyectos activos</strong></td>
+          <td>❌ Ninguno</td>
+          <td>✅ Máximo 2 recomendado</td>
+      </tr>
+      <tr>
+          <td><strong>Proyectos por dev</strong></td>
+          <td>3+ (invisible)</td>
+          <td>1-2 (forzado)</td>
+      </tr>
+      <tr>
+          <td><strong>Tasa completado</strong></td>
+          <td>23% a tiempo</td>
+          <td>87% a tiempo</td>
+      </tr>
+      <tr>
+          <td><strong>Context switching</strong></td>
+          <td>60% del tiempo</td>
+          <td>12% del tiempo</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="los-cinco-signos-de-que-tienes-un-problema-multi-proyecto">Los Cinco Signos De Que Tienes Un Problema Multi-Proyecto</h2>
+<h3 id="signo-1-tus-desarrolladores-están-en-3-proyectos">Signo 1: Tus Desarrolladores Están En 3+ Proyectos</h3>
+<p>Si tus desarrolladores están asignados a 3, 4, 5 proyectos simultáneos, tienes un problema.</p>
+<hr>
+<h3 id="signo-2-nada-se-termina">Signo 2: Nada Se Termina</h3>
+<p>Si todos tus proyectos avanzan al 50% pero ninguno se termina, es multi-proyecto.</p>
+<hr>
+<h3 id="signo-3-estoy-constantemente-interrumpido-es-una-frase-recurrente">Signo 3: &ldquo;Estoy Constantemente Interrumpido&rdquo; Es Una Frase Recurrente</h3>
+<p>Si tus desarrolladores dicen que nunca pueden concentrarse, es multi-proyecto.</p>
+<hr>
+<h3 id="signo-4-todos-los-proyectos-están-retrasados">Signo 4: Todos Los Proyectos Están Retrasados</h3>
+<p>Si 80%+ de tus proyectos están retrasados, probablemente es porque los desarrolladores están fragmentados.</p>
+<hr>
+<h3 id="signo-5-alto-burnout">Signo 5: Alto Burnout</h3>
+<p>Si &gt;50% de tus desarrolladores declaran burnout, verifica cuántos proyectos tienen.</p>
+<hr>
+<h2 id="cómo-usar-sinra-para-limitar-multi-proyecto">Cómo Usar Sinra Para Limitar Multi-Proyecto</h2>
+<h3 id="paso-1-asignar-cada-issue-a-un-proyecto">Paso 1: Asignar Cada Issue A Un Proyecto</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Crear un campo &ldquo;Project&rdquo; obligatorio</li>
+<li>Asignar cada issue a un proyecto</li>
+<li>Resultado: Visibilidad en cuántos proyectos tiene cada persona</li>
+</ul>
+<hr>
+<h3 id="paso-2-visualizar-asignación">Paso 2: Visualizar Asignación</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Usar vista &ldquo;Asignación por persona&rdquo;</li>
+<li>Identificar quién está en 3+ proyectos</li>
+<li>Acciones: Reasignar para respetar el límite</li>
+</ul>
+<hr>
+<h3 id="paso-3-aplicar-la-regla-máximo-2-proyectos">Paso 3: Aplicar La Regla &ldquo;Máximo 2 Proyectos&rdquo;</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Regla estricta: Máximo 2 proyectos activos por persona (idealmente 1)</li>
+<li>Antes de empezar un nuevo proyecto, quitar desarrolladores de un proyecto existente</li>
+<li>Resultado: Desarrolladores enfocados, proyectos terminados</li>
+</ul>
+<hr>
+<h3 id="paso-4-decir-no-a-solo-2h">Paso 4: Decir No A &ldquo;Solo 2h&rdquo;</h3>
+<p><strong>Acción:</strong></p>
+<ul>
+<li>Rechazar &ldquo;solo 2h para ayudarme&rdquo; si añade un proyecto</li>
+<li>Si ayuda necesaria, quitar oficialmente a la persona de otro proyecto</li>
+<li>Resultado: Sin sobreasignación invisible</li>
+</ul>
+<hr>
+<h2 id="puntos-de-acción-eliminar-multi-proyecto">Puntos De Acción: Eliminar Multi-Proyecto</h2>
+<ol>
+<li><strong>Audita asignación actual.</strong> ¿Cuántos proyectos tiene cada desarrollador?</li>
+<li><strong>Identifica sobreasignados.</strong> ¿Quién está en 3+ proyectos?</li>
+<li><strong>Reasigna.</strong> Quita desarrolladores de proyectos no prioritarios.</li>
+<li><strong>Aplica la regla.</strong> Máximo 2 proyectos por persona.</li>
+<li><strong>Visualiza.</strong> Usa Sinra para ver asignación en tiempo real.</li>
+</ol>
+<hr>
+<h2 id="el-punto-clave">El Punto Clave</h2>
+<p><strong>Multi-proyecto mata la productividad.</strong></p>
+<p>Entre <strong>context switching permanente</strong>, <strong>nada que se termina</strong>, <strong>burnout</strong>, y <strong>todos los proyectos retrasados</strong>, nadie puede avanzar.</p>
+<p><strong>Sinra limita proyectos activos y visualiza sobrecarga.</strong></p>
+<p>Campo &ldquo;Projects&rdquo;, vista de asignación, alertas automáticas.</p>
+<p><strong>El resultado:</strong></p>
+<ul>
+<li>✅ Desarrolladores en 1-2 proyectos máx (enfoque restaurado)</li>
+<li>✅ Proyectos terminados a tiempo (87% en lugar de 23%)</li>
+<li>✅ Context switching reducido (12% en lugar de 60%)</li>
+<li>✅ Burnout dividido por 3 (19% en lugar de 58%)</li>
+<li>✅ Productividad restaurada (100% en lugar de &lt;10%)</li>
+</ul>
+<p><strong>Tus desarrolladores finalmente pueden enfocarse.</strong></p>
+<p><strong>Tus proyectos se terminan.</strong></p>
+<hr>
+<p><strong>¿Listo para eliminar multi-proyecto?</strong> <a href="https://app.sinra.dev/users/sign_up">Empieza una prueba gratuita de Sinra →</a></p>
+<p>Descubre una gestión de proyectos donde los desarrolladores están enfocados en 1-2 proyectos máx, no dispersos en 4+.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">¿Listo para Transformar su Gestión de Proyectos?</h2>
+      <p class="text-base-content/70 mb-6">Aplique estos insights con Sinra, la plataforma unificada para equipos modernos.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Iniciar Prueba Gratuita
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/es/blog/posts/2025-12-28-dependances-cachees-features-bloquees/" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">Dependencias Ocultas: Por Qué Tus …</span>
+        <span class="md:hidden">← Anterior</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/es/blog/posts/2026-01-02-fausse-promesse-user-stories-en-tant-que/" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">La Falsa Promesa De Las User Stories: …</span>
+        <span class="md:hidden">Siguiente →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/es/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/es/pricing/"
+       
+       class="link link-hover">
+      Precios
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/es/about/"
+       
+       class="link link-hover">
+      Acerca de
+    </a>
+    
+    <a href="/es/contact/"
+       
+       class="link link-hover">
+      Contacto
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Iniciar sesión
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Registrarse
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

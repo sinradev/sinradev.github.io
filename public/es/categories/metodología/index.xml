@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metodología on Sinra</title>
+    <link>http://localhost:1313/es/categories/metodolog%C3%ADa/</link>
+    <description>Recent content in Metodología on Sinra</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 27 Mar 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/categories/metodolog%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Historia y Tipos de Agilidad: Cómo Trabajar Realmente Mejor</title>
+      <link>http://localhost:1313/es/blog/posts/2026-03-27-histoire-types-agilite/</link>
+      <pubDate>Fri, 27 Mar 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2026-03-27-histoire-types-agilite/</guid>
+      <description>&lt;h2 id=&#34;la-agilidad-una-revolución-nacida-de-la-frustración&#34;&gt;La Agilidad: Una Revolución Nacida de la Frustración&lt;/h2&gt;&#xA;&lt;p&gt;Antes de 2001, había un problema importante en el desarrollo de software. Los proyectos fracasaban.&lt;/p&gt;&#xA;&lt;p&gt;Los equipos pasaban meses, a veces años, escribiendo especificaciones detalladas. Planificando cada detalle en un waterfall rígido. Pidiendo un producto completo, luego esperando 18 meses para entregarlo.&lt;/p&gt;&#xA;&lt;p&gt;Y sin falta, cuando la versión finalmente salía?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;No correspondía con lo que el cliente necesitaba.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;El mercado había cambiado. Las prioridades habían cambiado. Las tecnologías habían cambiado. Pero el producto estaba congelado, entregado, obsoleto antes de ni siquiera ver la luz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tiempo vs Complejidad: Por Qué Sinra Abandona Los Story Points</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-20-temps-vs-complexite-estimation/</link>
+      <pubDate>Sat, 20 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-20-temps-vs-complexite-estimation/</guid>
+      <description>&lt;h2 id=&#34;el-planning-poker-que-sale-mal&#34;&gt;El Planning Poker Que Sale Mal&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana, reunión de planificación de sprint.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Product Owner: « Vamos a estimar la feature &amp;lsquo;Notificaciones Push&amp;rsquo;. »&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;El equipo saca las tarjetas de planning poker.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Desarrollador 1: « Creo que es un 5. »&lt;/p&gt;&#xA;&lt;p&gt;Desarrollador 2: « No, claramente es un 8. Hay gestión de permisos en iOS, Android, web&amp;hellip; »&lt;/p&gt;&#xA;&lt;p&gt;Desarrollador 3: « Espera, ¿contamos solo el backend o también el frontend? »&lt;/p&gt;&#xA;&lt;p&gt;Dev 1: « Euh&amp;hellip; ¿ambos? »&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Comunicación Dispersa: Por Qué Sus Decisiones Desaparecen Entre Notion, Linear y Discord</title>
+      <link>http://localhost:1313/es/blog/posts/2025-12-18-comunicacion-dispersa-features/</link>
+      <pubDate>Thu, 18 Dec 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/es/blog/posts/2025-12-18-comunicacion-dispersa-features/</guid>
+      <description>&lt;h2 id=&#34;el-escenario-familiar&#34;&gt;El Escenario Familiar&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lunes por la mañana, 10h34.&lt;/strong&gt; Un desarrollador te pregunta :&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;« ¿Por qué decidimos cambiar el enfoque de autenticación en la feature de permisos de usuario? »&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Sabes que tuvieron esa discusión. Pero ¿dónde?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intento 1 :&lt;/strong&gt; Discord&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Buscas « autenticación » en #engineering&lt;/li&gt;&#xA;&lt;li&gt;Encuentras 47 menciones en los últimos 3 meses&lt;/li&gt;&#xA;&lt;li&gt;Ninguna corresponde a esta feature específica&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intento 2 :&lt;/strong&gt; Notion&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Abres la spec « Permisos de Usuario v2 »&lt;/li&gt;&#xA;&lt;li&gt;La spec describe el qué, no el por qué&lt;/li&gt;&#xA;&lt;li&gt;Sin rastro de la decisión de arquitectura&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intento 3 :&lt;/strong&gt; Linear&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

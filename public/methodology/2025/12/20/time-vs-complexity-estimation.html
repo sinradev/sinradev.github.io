@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+
+<title>Time vs Complexity: Why Sinra Abandons Story Points | Sinra</title>
+
+
+<link rel="canonical" href="http://localhost:1313/methodology/2025/12/20/time-vs-complexity-estimation.html" />
+
+
+
+<meta name="description" content="Story points create an abstraction that distances teams from reality. Discover why Sinra uses time in days to estimate work: exact capacity, reliable forecasts, forced decomposition, and universal visibility." />
+
+
+<meta name="robots" content="index, follow" />
+
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/methodology/2025/12/20/time-vs-complexity-estimation.html" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/methodology/2025/12/20/time-vs-complexity-estimation.html" />
+
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blog/posts/2025-12-20-temps-vs-complexite-estimation/" />
+
+
+<link rel="alternate" hreflang="es" href="http://localhost:1313/es/blog/posts/2025-12-20-temps-vs-complexite-estimation/" />
+
+
+
+
+
+
+
+
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Time vs Complexity: Why Sinra Abandons Story Points" />
+<meta property="og:description" content="Story points create an abstraction that distances teams from reality. Discover why Sinra uses time in days to estimate work: exact capacity, reliable forecasts, forced decomposition, and universal visibility." />
+<meta property="og:url"         content="http://localhost:1313/methodology/2025/12/20/time-vs-complexity-estimation.html" />
+<meta property="og:site_name"   content="Sinra" />
+<meta property="og:locale"      content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<meta property="og:image" content="http://localhost:1313/assets/images/blog/2025-12-20-time-vs-complexity-featured.png" />
+
+<meta property="article:published_time" content="2025-12-20T09:00:00&#43;01:00" />
+<meta property="article:author" content="Sinra" />
+
+  <meta property="article:section" content="Methodology" />
+  
+
+
+
+
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Time vs Complexity: Why Sinra Abandons Story Points" />
+<meta name="twitter:description" content="Story points create an abstraction that distances teams from reality. Discover why Sinra uses time in days to estimate work: exact capacity, reliable forecasts, forced decomposition, and universal visibility." />
+<meta name="twitter:image" content="http://localhost:1313/assets/images/blog/2025-12-20-time-vs-complexity-featured.png" />
+<meta name="twitter:site" content="@sinra_app" />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"http://localhost:1313/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/main.min.476247e94b05dbd5f6ec8c63acd24d7a353d8dfce84e059a774844dac676dfbc.css" integrity="sha256-R2JH6UsF29X27IxjrNJNejU9jfzoTgWad0hE2sZ237w=" crossorigin="anonymous" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>
+
+</head>
+<body class="min-h-screen flex flex-col bg-base-100">
+  <header class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    
+    <div class="dropdown" id="nav-dropdown">
+      <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        
+        <li>
+          <a href="/about/"
+             class=""
+             >
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/pricing/"
+             class=""
+             >
+            Pricing
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/"
+             class=""
+             >
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/contact/"
+             class=""
+             >
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_in"
+             class=""
+             target="_blank" rel="noopener noreferrer">
+            Login
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://app.sinra.dev/users/sign_up"
+             class="btn btn-accent btn-sm"
+             target="_blank" rel="noopener noreferrer">
+            Sign up
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <a href="/" class="btn btn-ghost text-xl navbar-logo">
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <span>Sinra</span>
+    </a>
+  </div>
+
+  <div class="navbar-center hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      
+      <li>
+        <a href="/about/"
+           class=""
+           >
+          About
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pricing/"
+           class=""
+           >
+          Pricing
+        </a>
+      </li>
+      
+      <li>
+        <a href="/blog/"
+           class=""
+           >
+          Blog
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact/"
+           class=""
+           >
+          Contact
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_in"
+           class=""
+           target="_blank" rel="noopener noreferrer">
+          Login
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://app.sinra.dev/users/sign_up"
+           class="btn btn-accent btn-sm"
+           target="_blank" rel="noopener noreferrer">
+          Sign up
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    
+    
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" role="button" class="btn btn-ghost btn-sm">
+        EN
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow">
+        
+        <li>
+          <a href="http://localhost:1313/methodology/2025/12/20/time-vs-complexity-estimation.html" class="active">
+            EN
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/fr/blog/posts/2025-12-20-temps-vs-complexite-estimation/" >
+            FR
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://localhost:1313/es/blog/posts/2025-12-20-temps-vs-complexite-estimation/" >
+            ES
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="flex-1">
+    
+<article class="blog-post">
+  
+  
+  <div class="featured-image w-full max-h-96 overflow-hidden">
+    <img src="/assets/images/blog/2025-12-20-time-vs-complexity-featured.png" alt="Time vs Complexity: Why Sinra Abandons Story Points" class="w-full object-cover max-h-96" width="1200" height="630" />
+  </div>
+  
+
+  <div class="container mx-auto px-6 max-w-4xl py-12">
+    
+    
+    <div class="mb-4">
+      
+      <a href="/categories/methodology/" class="badge badge-primary badge-outline">Methodology</a>
+      
+    </div>
+    
+
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Time vs Complexity: Why Sinra Abandons Story Points</h1>
+    
+    <p class="text-xl text-base-content/80 mb-6">Complexity points hide reality. Time (in days) confronts your estimates with the real world and makes planning predictable.</p>
+    
+
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300">
+      <time datetime="2025-12-20">December 20, 2025</time>
+      <span>By Sinra Team</span>
+    </div>
+
+    
+    <div class="prose prose-lg max-w-none text-base-content">
+      <p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="the-planning-poker-that-goes-wrong">The Planning Poker That Goes Wrong</h2>
+<p><strong>Monday morning, sprint planning meeting.</strong></p>
+<p>Product Owner: &ldquo;We&rsquo;re going to estimate the &quot;Push Notifications&quot; feature.&rdquo;</p>
+<p><strong>The team pulls out planning poker cards.</strong></p>
+<p>Developer 1: &ldquo;I think it&rsquo;s a 5.&rdquo;</p>
+<p>Developer 2: &ldquo;No, it&rsquo;s clearly an 8. There&rsquo;s iOS permission management, Android, web&hellip;&rdquo;</p>
+<p>Developer 3: &ldquo;Wait, are we counting just the backend or the frontend too?&rdquo;</p>
+<p>Dev 1: &ldquo;Uh&hellip; both?&rdquo;</p>
+<p>Dev 2: &ldquo;In that case it&rsquo;s a 13.&rdquo;</p>
+<p><strong>20 minutes of debate.</strong></p>
+<p>Product Owner: &ldquo;Okay, we&rsquo;ll go with 8 points.&rdquo;</p>
+<p><strong>Six weeks later.</strong></p>
+<p>Product Owner: &ldquo;Why aren&rsquo;t the notifications done? We estimated 8 points.&rdquo;</p>
+<p>Developer 1: &ldquo;Yeah, but 8 points isn&rsquo;t 8 days. We actually spent 3 weeks on it.&rdquo;</p>
+<p>Product Owner: &ldquo;But&hellip; what are the points for then?&rdquo;</p>
+<p><strong>Awkward silence.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="the-fundamental-problem-with-story-points">The Fundamental Problem With Story Points</h2>
+<p><strong>Story points</strong> (complexity points) are an abstraction invented by Agile methodologies to estimate work without talking about time.</p>
+<h3 id="the-illusion-of-abstraction">The Illusion of Abstraction</h3>
+<p><strong>The Promise:</strong></p>
+<blockquote>
+<p>&ldquo;Points measure complexity, not time. It avoids management pressure on deadlines.&rdquo;</p>
+</blockquote>
+<p><strong>The Reality:</strong></p>
+<ul>
+<li>Nobody knows what a &ldquo;5&rdquo; concretely represents</li>
+<li>Each team has its own scale (a 5 on team A ≠ 5 on team B)</li>
+<li>Points change with turnover (new dev = complete recalibration)</li>
+<li>Management always ends up converting points to time (&ldquo;your velocity is 40 points/sprint, so 10 days&rdquo;)</li>
+</ul>
+<p><strong>Result:</strong> You create an unnecessary layer of abstraction that hides reality.</p>
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-planning-poker.svg" alt="Planning Poker vs Time Estimation" width="800" height="450" loading="lazy">
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="the-four-lies-of-story-points">The Four Lies of Story Points</h3>
+<h4 id="lie-1-points-avoid-pressure-on-deadlines">Lie 1: &ldquo;Points Avoid Pressure On Deadlines&rdquo;</h4>
+<p><strong>False.</strong></p>
+<p>Management will <strong>always</strong> convert points to time:</p>
+<ul>
+<li>&ldquo;You do 40 points per sprint of 2 weeks.&rdquo;</li>
+<li>&ldquo;So 1 point = 0.25 day.&rdquo;</li>
+<li>&ldquo;This feature is 20 points, so 5 days.&rdquo;</li>
+</ul>
+<p><strong>You just added a conversion step.</strong></p>
+<p>Instead of saying directly &ldquo;5 days&rdquo;, you say &ldquo;20 points&rdquo; which everyone converts to &ldquo;5 days&rdquo; in their heads anyway.</p>
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-conversion-cycle.svg" alt="Useless Conversion Cycle" width="700" height="500" loading="lazy">
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h4 id="lie-2-points-measure-complexity-not-time">Lie 2: &ldquo;Points Measure Complexity, Not Time&rdquo;</h4>
+<p><strong>False.</strong></p>
+<p>During planning poker, the team <strong>always</strong> thinks in time:</p>
+<ul>
+<li>&ldquo;It&rsquo;s a 5&rdquo; = &ldquo;It&rsquo;ll take about 2-3 days&rdquo;</li>
+<li>&ldquo;It&rsquo;s a 13&rdquo; = &ldquo;It&rsquo;ll take a whole week&rdquo;</li>
+</ul>
+<p><strong>Nobody thinks in &ldquo;abstract complexity units&rdquo;.</strong></p>
+<p>Developers mentally convert points to time, then you convert points back to time to do planning.</p>
+<p><strong>Why not just estimate in time from the start?</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h4 id="lie-3-points-allow-you-to-compare-issues">Lie 3: &ldquo;Points Allow You To Compare Issues&rdquo;</h4>
+<p><strong>False.</strong></p>
+<p>Points create a <strong>false comparability</strong>:</p>
+<ul>
+<li>&ldquo;This issue is a 5, so it&rsquo;s half as complex as a 10.&rdquo;</li>
+</ul>
+<p>But in reality:</p>
+<ul>
+<li>A 5 might take 1 day (simple, well-defined feature)</li>
+<li>Another 5 might take 5 days (simple feature but with hidden dependencies)</li>
+</ul>
+<p><strong>Points guarantee no consistency.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h4 id="lie-4-points-auto-adjust-with-experience">Lie 4: &ldquo;Points Auto-Adjust With Experience&rdquo;</h4>
+<p><strong>False.</strong></p>
+<p>With each new team member:</p>
+<ul>
+<li>Recalibration of points</li>
+<li>&ldquo;Wait, for you what&rsquo;s a 5?&rdquo;</li>
+<li>New planning poker sessions to align the team</li>
+</ul>
+<p><strong>Points depend on the current team composition.</strong></p>
+<p>When someone leaves or joins, your entire scale becomes invalid.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="why-sinra-uses-time-in-days">Why Sinra Uses Time (In Days)</h2>
+<p>At Sinra, we abandoned story points for a simpler, more honest approach: <strong>estimating in days</strong>.</p>
+<h3 id="time-forces-you-to-face-reality">Time Forces You To Face Reality</h3>
+<p><strong>Estimation in points:</strong></p>
+<blockquote>
+<p>&ldquo;This feature is 8 points.&rdquo;</p>
+</blockquote>
+<p><strong>Question:</strong> How long does it take?
+<strong>Answer:</strong> &ldquo;It depends on velocity, the team, the sprint&hellip;&rdquo;</p>
+<p><strong>Estimation in time:</strong></p>
+<blockquote>
+<p>&ldquo;This feature will take 3 days.&rdquo;</p>
+</blockquote>
+<p><strong>Question:</strong> How long does it take?
+<strong>Answer:</strong> &ldquo;3 days.&rdquo;</p>
+<p><strong>Benefit:</strong> No abstraction. No mental conversion. You directly confront your estimate with reality.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="time-reveals-poorly-decomposed-features">Time Reveals Poorly Decomposed Features</h3>
+<p><strong>Sinra Rule:</strong> If you can&rsquo;t estimate an issue in days, <strong>it&rsquo;s too big</strong>.</p>
+<p><strong>Typical scenario:</strong></p>
+<p>Developer: &ldquo;I can&rsquo;t estimate this. It&rsquo;s between 5 and 15 days.&rdquo;</p>
+<p>Product Owner: &ldquo;Why this uncertainty?&rdquo;</p>
+<p>Developer: &ldquo;Because there are 10 different things in this issue: backend, frontend, tests, data migration, documentation&hellip;&rdquo;</p>
+<p><strong>Sinra Solution:</strong> Decompose.</p>
+<p>Create 5 separate issues:</p>
+<ul>
+<li>Backend API: 2 days</li>
+<li>Frontend UI: 1.5 days</li>
+<li>Automated tests: 1 day</li>
+<li>Data migration: 3 days</li>
+<li>Documentation: 0.5 day</li>
+</ul>
+<p><strong>Total:</strong> 8 days (with clear visibility on each component)</p>
+<p><strong>Result:</strong></p>
+<ul>
+<li>✅ Precise estimates</li>
+<li>✅ Granular tracking</li>
+<li>✅ Quick identification of blockers</li>
+</ul>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="time-enables-real-capacity-management">Time Enables Real Capacity Management</h3>
+<p><strong>With points:</strong></p>
+<ul>
+<li>&ldquo;Marc has 20 points to do this sprint.&rdquo;</li>
+<li>But how many hours does that represent? <strong>You don&rsquo;t know.</strong></li>
+</ul>
+<p><strong>With time (Sinra):</strong></p>
+<ul>
+<li>&ldquo;Marc has 6 days of work assigned this sprint (10 working days available).&rdquo;</li>
+<li>That leaves 4 days for bugs, meetings, unexpected issues.</li>
+</ul>
+<p><strong>Benefit:</strong> You know <strong>exactly</strong> how much capacity each developer has, in concrete units.</p>
+<p>You can:</p>
+<ul>
+<li>✅ Balance load between developers</li>
+<li>✅ Identify overload <strong>before</strong> it becomes a crisis</li>
+<li>✅ Make reliable forecasts (&ldquo;At this rate, we ship in 3 weeks&rdquo;)</li>
+</ul>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="time-is-universal">Time Is Universal</h3>
+<p><strong>Points:</strong></p>
+<ul>
+<li>Team A estimates in Fibonacci (1, 2, 3, 5, 8, 13&hellip;)</li>
+<li>Team B estimates in powers of 2 (1, 2, 4, 8, 16&hellip;)</li>
+<li>Management understands nothing</li>
+</ul>
+<p><strong>Time:</strong></p>
+<ul>
+<li>Everyone understands &ldquo;3 days&rdquo;</li>
+<li>The CTO understands</li>
+<li>The CEO understands</li>
+<li>The client understands</li>
+<li>The team understands</li>
+</ul>
+<p><strong>Benefit:</strong> No need to explain your estimation system. Time is a universal unit.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="time-enforces-accountability">Time Enforces Accountability</h3>
+<p><strong>With points:</strong></p>
+<blockquote>
+<p>&ldquo;I estimated 5 points, but it took longer than expected.&rdquo;</p>
+</blockquote>
+<p><strong>With time:</strong></p>
+<blockquote>
+<p>&ldquo;I estimated 2 days, but it took me 4 days.&rdquo;</p>
+</blockquote>
+<p>The difference is immediate. <strong>You confront the estimate with reality.</strong></p>
+<p>When you estimate in days:</p>
+<ul>
+<li>You&rsquo;re more cautious (&ldquo;2 days&rdquo; sounds more binding than &ldquo;5 points&rdquo;)</li>
+<li>You decompose better (&ldquo;10 days is too much, I need to cut it up&rdquo;)</li>
+<li>You learn from your mistakes (&ldquo;I underestimated by 100%, I&rsquo;ll adjust&rdquo;)</li>
+</ul>
+<p><strong>Result:</strong> Your estimates improve over time.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="time-enables-reliable-forecasts">Time Enables Reliable Forecasts</h3>
+<p><strong>With points:</strong></p>
+<ul>
+<li>Sprint 1 velocity: 35 points</li>
+<li>Sprint 2 velocity: 42 points</li>
+<li>Sprint 3 velocity: 28 points</li>
+</ul>
+<p><strong>Question:</strong> When do we ship the 60-point feature?
+<strong>Answer:</strong> &ldquo;It depends&hellip; somewhere between 1.5 and 2.5 sprints?&rdquo;</p>
+<p><strong>With time (Sinra):</strong></p>
+<ul>
+<li>Sprint 1: 7 days delivered out of 10 planned (70% capacity used)</li>
+<li>Sprint 2: 8 days delivered out of 10 planned (80%)</li>
+<li>Sprint 3: 6.5 days delivered out of 10 planned (65%)</li>
+</ul>
+<p><strong>Average:</strong> 72% capacity used</p>
+<p><strong>Feature estimated:</strong> 15 days</p>
+<p><strong>Forecast calculation:</strong> 15 days / 0.72 = 20.8 calendar days = <strong>2.1 sprints</strong></p>
+<p><strong>Benefit:</strong> Forecasts based on real, objective data.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="the-six-advantages-of-time-over-complexity">The Six Advantages of Time Over Complexity</h2>
+<h3 id="1-exact-and-visible-capacity">1. Exact and Visible Capacity</h3>
+<p><strong>Points:</strong> Fuzzy abstraction
+<strong>Time:</strong> Concrete units</p>
+<p>You know <strong>exactly</strong> how many days of work are assigned to each person.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="2-reliable-forecasts">2. Reliable Forecasts</h3>
+<p><strong>Points:</strong> Random mental conversion
+<strong>Time:</strong> Direct calculation</p>
+<p>&ldquo;15 days estimated + 70% capacity = 21 calendar days.&rdquo;</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="3-forced-decomposition">3. Forced Decomposition</h3>
+<p><strong>Points:</strong> You can estimate &ldquo;13&rdquo; without decomposing
+<strong>Time:</strong> &ldquo;10+ days&rdquo; forces you to cut</p>
+<p>If you can&rsquo;t estimate in days, <strong>decompose</strong>.</p>
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-decomposition.svg" alt="Forced Decomposition by Time" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="4-universality">4. Universality</h3>
+<p><strong>Points:</strong> Unique team scale
+<strong>Time:</strong> Understandable by everyone</p>
+<p>Management, clients, stakeholders understand &ldquo;3 days&rdquo;.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="5-comparability">5. Comparability</h3>
+<p><strong>Points:</strong> Not comparable between teams
+<strong>Time:</strong> Comparable everywhere</p>
+<p>You can compare velocity between projects and teams (&ldquo;team A delivers 6 days/sprint, team B delivers 8 days/sprint&rdquo;).</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="6-continuous-improvement">6. Continuous Improvement</h3>
+<p><strong>Points:</strong> Difficulty measuring improvement
+<strong>Time:</strong> Clear metrics</p>
+<p>&ldquo;Before we estimated with 50% error. Now 20%.&rdquo;</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="common-objections-and-answers">Common Objections (And Answers)</h2>
+<h3 id="objection-1-time-puts-too-much-pressure-on-the-team">Objection 1: &ldquo;Time Puts Too Much Pressure On The Team&rdquo;</h3>
+<p><strong>Answer:</strong> No, <strong>bad estimates</strong> create pressure.</p>
+<p>When you estimate in points:</p>
+<ul>
+<li>You create a false sense of precision</li>
+<li>Management converts points to time anyway</li>
+<li>The team is surprised when reality doesn&rsquo;t match</li>
+</ul>
+<p>When you estimate in time:</p>
+<ul>
+<li>You&rsquo;re honest from the start</li>
+<li>You can refine your estimates with experience</li>
+<li>You confront expectations with reality <strong>before</strong> you start</li>
+</ul>
+<p><strong>Pressure comes from the disconnect between expectations and reality, not from the estimation unit.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="objection-2-each-developer-works-at-a-different-pace">Objection 2: &ldquo;Each Developer Works At A Different Pace&rdquo;</h3>
+<p><strong>Answer:</strong> True. <strong>But it&rsquo;s also true with points.</strong></p>
+<p>A junior dev will estimate &ldquo;5 points&rdquo; for a task a senior will do in &ldquo;2 points&rdquo;.</p>
+<p><strong>The difference with time:</strong></p>
+<ul>
+<li>You know <strong>who</strong> is estimating</li>
+<li>You can adjust based on the assigned developer</li>
+<li>You can measure individual improvement</li>
+</ul>
+<p><strong>With Sinra:</strong></p>
+<ul>
+<li>Marc (senior) estimates 2 days → takes 2.5 days (125%)</li>
+<li>Sophie (mid-level) estimates 2 days → takes 3 days (150%)</li>
+<li>Thomas (junior) estimates 2 days → takes 4 days (200%)</li>
+</ul>
+<p>You learn each person&rsquo;s coefficient and adjust your forecasts.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="objection-3-we-cant-estimate-precisely-in-days">Objection 3: &ldquo;We Can&rsquo;t Estimate Precisely In Days&rdquo;</h3>
+<p><strong>Answer:</strong> <strong>That&rsquo;s exactly the signal that the issue is too big.</strong></p>
+<p>If you say:</p>
+<blockquote>
+<p>&ldquo;I don&rsquo;t know if it&rsquo;s 2 days or 8 days&rdquo;</p>
+</blockquote>
+<p><strong>Then decompose.</strong></p>
+<p>Create smaller issues:</p>
+<ul>
+<li>Backend: 1.5 days</li>
+<li>Frontend: 2 days</li>
+<li>Tests: 1 day</li>
+<li>Integration: 1.5 days</li>
+</ul>
+<p><strong>Total:</strong> 6 days (with better visibility)</p>
+<p><strong>Time forces decomposition. It&rsquo;s a feature, not a bug.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="objection-4-story-points-avoid-deadline-debates">Objection 4: &ldquo;Story Points Avoid Deadline Debates&rdquo;</h3>
+<p><strong>Answer:</strong> No, they <strong>postpone</strong> the debates.</p>
+<p><strong>With points:</strong></p>
+<ul>
+<li>Team estimates 40 points</li>
+<li>Management asks &ldquo;How long does that take?&rdquo;</li>
+<li>You convert: &ldquo;About 2 weeks&rdquo;</li>
+<li>Management: &ldquo;Why not 1 week?&rdquo;</li>
+</ul>
+<p><strong>With time:</strong></p>
+<ul>
+<li>Team estimates 8 days</li>
+<li>Management: &ldquo;Why not 4 days?&rdquo;</li>
+<li>You explain: &ldquo;Because there&rsquo;s X, Y, Z to do&rdquo;</li>
+</ul>
+<p><strong>The debate happens anyway. Might as well be direct.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="objection-5-points-auto-adjust-with-velocity">Objection 5: &ldquo;Points Auto-Adjust With Velocity&rdquo;</h3>
+<p><strong>Answer:</strong> False. <strong>Velocity fluctuates enormously.</strong></p>
+<p>Sprint 1 velocity: 35 points
+Sprint 2 velocity: 42 points (a dev was on vacation sprint 1)
+Sprint 3 velocity: 28 points (lots of production bugs)</p>
+<p><strong>Points don&rsquo;t adjust. You have to manually recalibrate all the time.</strong></p>
+<p><strong>With time:</strong></p>
+<ul>
+<li>Sprint 1: 7 days delivered / 10 available = 70%</li>
+<li>Sprint 2: 8 days delivered / 8 available (1 dev on vacation) = 100%</li>
+<li>Sprint 3: 6 days delivered / 10 available (bugs) = 60%</li>
+</ul>
+<p><strong>Average:</strong> 77% effective capacity</p>
+<p>You can <strong>objectively measure</strong> your real capacity.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="sinra-in-action-time-vs-complexity">Sinra In Action: Time vs Complexity</h2>
+<h3 id="real-example-pdf-export-feature">Real Example: &ldquo;PDF Export&rdquo; Feature</h3>
+<h4 id="points-approach-before-sinra">Points Approach (Before Sinra)</h4>
+<p><strong>Planning Poker:</strong></p>
+<ul>
+<li>Team debates 30 minutes</li>
+<li>Final estimate: <strong>8 points</strong></li>
+</ul>
+<p><strong>Delivery:</strong></p>
+<ul>
+<li>Real time: 12 days</li>
+<li>Why the delay? &ldquo;We underestimated the complexity of the PDF layout.&rdquo;</li>
+</ul>
+<p><strong>Retrospective:</strong></p>
+<ul>
+<li>&ldquo;We should estimate wider.&rdquo;</li>
+<li>&ldquo;Maybe 13 points next time?&rdquo;</li>
+</ul>
+<p><strong>Problem:</strong> No concrete learning. You adjust an abstraction.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h4 id="time-approach-with-sinra">Time Approach (With Sinra)</h4>
+<p><strong>Initial estimate:</strong></p>
+<ul>
+<li>Product Owner: &ldquo;How long to estimate the PDF export?&rdquo;</li>
+<li>Developer: &ldquo;I can&rsquo;t estimate that as one block. We need to decompose.&rdquo;</li>
+</ul>
+<p><strong>Decomposition:</strong></p>
+<ul>
+<li>Generate simple PDF (text): 1.5 days</li>
+<li>Add images and layout: 2 days</li>
+<li>Handle complex tables: 2.5 days</li>
+<li>Optimize performance (large documents): 1.5 days</li>
+<li>Tests and edge cases: 1.5 days</li>
+</ul>
+<p><strong>Total estimated:</strong> 9 days</p>
+<p><strong>Delivery:</strong></p>
+<ul>
+<li>Real time: 11 days</li>
+<li>Why the overage? Table layout took 3.5 days instead of 2.5.</li>
+</ul>
+<p><strong>Retrospective:</strong></p>
+<ul>
+<li>&ldquo;We systematically underestimate complex layouts.&rdquo;</li>
+<li>&ldquo;Next feature with layout: add +1 day buffer.&rdquo;</li>
+</ul>
+<p><strong>Benefit:</strong> Concrete, actionable learning.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="the-three-sinra-rules-for-estimating-in-time">The Three Sinra Rules For Estimating In Time</h2>
+<h3 id="rule-1-estimate-in-days-not-hours">Rule 1: Estimate In Days (Not Hours)</h3>
+<p><strong>Why?</strong></p>
+<ul>
+<li>Hours give a false sense of precision</li>
+<li>Nobody works 8 productive hours per day (meetings, bugs, interruptions)</li>
+<li>Days are easier to communicate</li>
+</ul>
+<p><strong>Granularity:</strong></p>
+<ul>
+<li>0.5 day (half day)</li>
+<li>1 day</li>
+<li>1.5 days</li>
+<li>2 days</li>
+<li>etc.</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li>&ldquo;3.75 days&rdquo; (too precise, unrealistic)</li>
+<li>&ldquo;0.25 day&rdquo; (too small, create a separate issue)</li>
+</ul>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="rule-2-if-you-cant-estimate-decompose">Rule 2: If You Can&rsquo;t Estimate, Decompose</h3>
+<p><strong>Warning sign:</strong></p>
+<blockquote>
+<p>&ldquo;It&rsquo;s between 3 and 10 days.&rdquo;</p>
+</blockquote>
+<p><strong>Action:</strong> Decompose into smaller issues until uncertainty disappears.</p>
+<p><strong>Goal:</strong> Each issue should be estimable with ±50% accuracy.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>❌ &ldquo;Implement notifications: 5-15 days&rdquo;</li>
+<li>✅ &ldquo;Notifications backend API: 2 days&rdquo;</li>
+<li>✅ &ldquo;Notifications frontend UI: 1.5 days&rdquo;</li>
+<li>✅ &ldquo;Mobile push notifications: 3 days&rdquo;</li>
+</ul>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="rule-3-confront-your-estimates-with-reality">Rule 3: Confront Your Estimates With Reality</h3>
+<p><strong>After each issue:</strong></p>
+<ul>
+<li>Estimated time: 2 days</li>
+<li>Real time: 3.5 days</li>
+<li>Gap: +75%</li>
+</ul>
+<p><strong>Action:</strong> Identify why.</p>
+<ul>
+<li>Unforeseen dependency?</li>
+<li>Underestimated complexity?</li>
+<li>Blocking bugs?</li>
+</ul>
+<p><strong>Adjust future estimates accordingly.</strong></p>
+<p><strong>Result:</strong> Your estimates improve sprint after sprint.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="comparison-planning-poker-vs-sinra-time-estimation">Comparison: Planning Poker vs Sinra Time Estimation</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspect</strong></th>
+          <th><strong>Planning Poker (Story Points)</strong></th>
+          <th><strong>Time Estimation (Sinra)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Unit</strong></td>
+          <td>Abstract points (1, 2, 3, 5, 8, 13&hellip;)</td>
+          <td>Days (0.5d, 1d, 1.5d, 2d&hellip;)</td>
+      </tr>
+      <tr>
+          <td><strong>Understanding</strong></td>
+          <td>Requires team calibration</td>
+          <td>Universal, immediately understood</td>
+      </tr>
+      <tr>
+          <td><strong>Conversion</strong></td>
+          <td>Points → time (mental or explicit)</td>
+          <td>Already in time</td>
+      </tr>
+      <tr>
+          <td><strong>Capacity management</strong></td>
+          <td>Abstract (&ldquo;20 points this sprint&rdquo;)</td>
+          <td>Concrete (&ldquo;8 days out of 10 available&rdquo;)</td>
+      </tr>
+      <tr>
+          <td><strong>Forecasts</strong></td>
+          <td>Based on fluctuating velocity</td>
+          <td>Based on real capacity</td>
+      </tr>
+      <tr>
+          <td><strong>Decomposition</strong></td>
+          <td>Can stay vague (&ldquo;13 points&rdquo;)</td>
+          <td>Forces decomposition (&ldquo;10+ days = too big&rdquo;)</td>
+      </tr>
+      <tr>
+          <td><strong>Comparability</strong></td>
+          <td>Not comparable between teams</td>
+          <td>Comparable universally</td>
+      </tr>
+      <tr>
+          <td><strong>Turnover</strong></td>
+          <td>Complete recalibration needed</td>
+          <td>Minimal impact</td>
+      </tr>
+      <tr>
+          <td><strong>Improvement</strong></td>
+          <td>Difficult to measure</td>
+          <td>Clear metrics</td>
+      </tr>
+      <tr>
+          <td><strong>Transparency</strong></td>
+          <td>Opaque for stakeholders</td>
+          <td>Transparent for everyone</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="the-five-signs-you-should-abandon-story-points">The Five Signs You Should Abandon Story Points</h2>
+<h3 id="sign-1-you-systematically-convert-points-to-time">Sign 1: You Systematically Convert Points To Time</h3>
+<p>If your process looks like:</p>
+<ol>
+<li>Estimate in points</li>
+<li>Multiply by your &ldquo;coefficient&rdquo; to get days</li>
+<li>Use days to plan</li>
+</ol>
+<p><strong>You&rsquo;re wasting your time. Estimate directly in days.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="sign-2-planning-poker-takes-more-than-5-minutes-per-issue">Sign 2: Planning Poker Takes More Than 5 Minutes Per Issue</h3>
+<p>If each estimate triggers a 20-minute debate (&ldquo;Is it a 5 or an 8?&rdquo;), <strong>you&rsquo;re optimizing the wrong metric</strong>.</p>
+<p><strong>The goal isn&rsquo;t a perfect estimate. It&rsquo;s an usable estimate.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="sign-3-your-forecasts-are-always-wrong">Sign 3: Your Forecasts Are Always Wrong</h3>
+<p>If you regularly say:</p>
+<blockquote>
+<p>&ldquo;We thought we&rsquo;d ship in 2 sprints, but it took 4 sprints&rdquo;</p>
+</blockquote>
+<p><strong>Your point estimates don&rsquo;t help you forecast.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="sign-4-stakeholders-dont-understand-your-velocity">Sign 4: Stakeholders Don&rsquo;t Understand Your Velocity</h3>
+<p>If management constantly asks you:</p>
+<blockquote>
+<p>&ldquo;Your velocity is 40 points/sprint. What does that actually mean?&rdquo;</p>
+</blockquote>
+<p><strong>You&rsquo;ve created an unnecessary abstraction.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="sign-5-every-new-team-member-disrupts-your-scale">Sign 5: Every New Team Member Disrupts Your Scale</h3>
+<p>If hiring a junior or senior dev forces you to recalibrate all your points, <strong>your estimation system isn&rsquo;t robust</strong>.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="real-example-techflow-switches-to-time-estimation">Real Example: TechFlow Switches To Time Estimation</h2>
+<p><strong>TechFlow (15-person team, marketing automation platform)</strong></p>
+<p><em>Note: TechFlow is a real company we&rsquo;ve anonymized with a fictional name to protect their confidentiality.</em></p>
+<h3 id="before-sinra-story-points-and-planning-poker">Before Sinra: Story Points And Planning Poker</h3>
+<p><strong>Problems:</strong></p>
+<ul>
+<li>Planning poker: 45 minutes per sprint to estimate 10-15 issues</li>
+<li>Fluctuating velocity: 32-48 points per sprint (50% variation)</li>
+<li>Wrong forecasts: 60% of releases shipped late</li>
+<li>Endless debates: &ldquo;Is it a 5 or an 8?&rdquo;</li>
+<li>Turnover: Each new dev required 2 sprints of recalibration</li>
+</ul>
+<p><strong>Revealing Incident:</strong>
+&ldquo;API Webhooks&rdquo; feature estimated at 13 points.
+Average velocity: 40 points/sprint.
+Forecast: &ldquo;1/3 of sprint = 3-4 days.&rdquo;</p>
+<p><strong>Reality:</strong> 18 days (3.5 weeks).</p>
+<p><strong>Why?</strong> The 13 points hid:</p>
+<ul>
+<li>5 different endpoints</li>
+<li>Retry + queue management</li>
+<li>Complex integration tests</li>
+<li>API documentation</li>
+</ul>
+<p><strong>Nobody knew what &ldquo;13 points&rdquo; really meant.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="after-sinra-time-estimation">After Sinra: Time Estimation</h3>
+<p><strong>Changes:</strong></p>
+<ol>
+<li>Abandoned planning poker</li>
+<li>Direct estimation in days</li>
+<li>Forced decomposition if &gt;3 days</li>
+<li>Tracked estimated vs real time</li>
+</ol>
+<p><strong>&ldquo;API Webhooks&rdquo; Feature (Time Version):</strong>
+Instead of &ldquo;13 points&rdquo;, decomposed into:</p>
+<ul>
+<li>Webhook creation endpoint: 1.5 days</li>
+<li>List/update/delete endpoints: 1 day</li>
+<li>Retry system: 2 days</li>
+<li>Queue management: 2.5 days</li>
+<li>Integration tests: 2 days</li>
+<li>OpenAPI documentation: 1 day</li>
+</ul>
+<p><strong>Total estimated:</strong> 10 days</p>
+<p><strong>Real delivery:</strong> 12 days</p>
+<p><strong>Gap:</strong> +20% (instead of +350% with points)</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="results-after-6-months">Results (After 6 Months)</h3>
+<p><strong>Before (Story Points):</strong></p>
+<ul>
+<li>Planning poker time: 45 min/sprint</li>
+<li>Estimate reliability: 40% (60% late)</li>
+<li>Velocity: Fluctuating (32-48 points)</li>
+<li>Release forecasts: Wrong 6 out of 10 times</li>
+</ul>
+<p><strong>After (Time):</strong></p>
+<ul>
+<li>Estimation time: 15 min/sprint</li>
+<li>Estimate reliability: 75% (±25% error)</li>
+<li>Capacity: Stable (7-8 days/sprint)</li>
+<li>Release forecasts: Reliable 8 out of 10 times</li>
+</ul>
+<p><strong>Lead Developer Quote:</strong></p>
+<blockquote>
+<p>&ldquo;Before, we&rsquo;d spend 45 minutes debating if it was a 5 or an 8. Now we say &lsquo;2 days&rsquo; and move on. We tripled our planning efficiency.&rdquo;</p>
+</blockquote>
+<p><strong>Product Manager Quote:</strong></p>
+<blockquote>
+<p>&ldquo;With points, I never knew when we&rsquo;d ship. Now I can say &lsquo;in 3 weeks&rsquo; with 80% confidence. Stakeholders love it.&rdquo;</p>
+</blockquote>
+<img src="/assets/images/blog/2025-12-20-temps-vs-complexite-techflow-results.svg" alt="TechFlow Before/After Results" width="800" height="500" loading="lazy">
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="how-to-switch-from-story-points-to-time">How To Switch From Story Points To Time</h2>
+<h3 id="step-1-analyze-your-historical-data">Step 1: Analyze Your Historical Data</h3>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Take your last 5 sprints</li>
+<li>For each issue: estimated points vs real time</li>
+<li>Calculate your average ratio (ex: 1 point = 0.5 day)</li>
+</ul>
+<p><strong>Benefit:</strong> You have a conversion baseline.</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="step-2-announce-the-change-to-the-team">Step 2: Announce The Change To The Team</h3>
+<p><strong>Communication:</strong></p>
+<blockquote>
+<p>&ldquo;Starting next sprint, we estimate directly in days instead of points. Why? Because it lets us plan better and make reliable forecasts.&rdquo;</p>
+</blockquote>
+<p><strong>Anticipate objections:</strong> (see Objections section above)</p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="step-3-estimate-your-first-sprint-in-time">Step 3: Estimate Your First Sprint In Time</h3>
+<p><strong>Rules:</strong></p>
+<ul>
+<li>Estimate in days (0.5d, 1d, 1.5d, 2d&hellip;)</li>
+<li>If &gt;3 days: decompose</li>
+<li>If uncertainty &gt;50%: decompose</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Issue A: 1.5 days</li>
+<li>Issue B: 2 days</li>
+<li>Issue C: decomposed into C1 (1d) + C2 (1.5d) + C3 (0.5d)</li>
+</ul>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="step-4-track-estimated-vs-real">Step 4: Track Estimated vs Real</h3>
+<p><strong>After each issue:</strong></p>
+<ul>
+<li>Estimated time: X days</li>
+<li>Real time: Y days</li>
+<li>Gap: (Y - X) / X</li>
+</ul>
+<p><strong>Learn from mistakes:</strong></p>
+<ul>
+<li>What types of issues do you underestimate?</li>
+<li>Which developers need adjustment coefficients?</li>
+</ul>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h3 id="step-5-refine-gradually">Step 5: Refine Gradually</h3>
+<p><strong>Sprint 1:</strong> Average error +40%
+<strong>Sprint 2:</strong> Average error +25%
+<strong>Sprint 3:</strong> Average error +15%</p>
+<p><strong>Your estimates naturally improve.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="action-items-adopt-time-estimation">Action Items: Adopt Time Estimation</h2>
+<ol>
+<li><strong>Calculate your current ratio</strong>: 1 point = how many days? (analyze your last 5 sprints)</li>
+<li><strong>Estimate your next sprint in days</strong>: abandon points for a test sprint</li>
+<li><strong>Decompose big issues</strong>: if &gt;3 days estimated, split into smaller issues</li>
+<li><strong>Track estimated vs real</strong>: measure your gaps and learn</li>
+<li><strong>Refine your forecasts</strong>: use your average error % to fine-tune deadlines</li>
+</ol>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<h2 id="the-key-point">The Key Point</h2>
+<p><strong>Story points create an abstraction that distances teams from reality.</strong></p>
+<p>You estimate in points, you mentally convert to time, you plan in time, then you discover reality doesn&rsquo;t match.</p>
+<p><strong>Time (in days) confronts your estimates with reality.</strong></p>
+<p>No abstraction. No conversion. No team calibration. No endless debates.</p>
+<p><strong>Just an honest estimate, verifiable, and improves with experience.</strong></p>
+<p><strong>Result:</strong></p>
+<ul>
+<li>✅ Exact and visible capacity</li>
+<li>✅ Reliable forecasts</li>
+<li>✅ Forced decomposition of complex features</li>
+<li>✅ Universality (understood by everyone)</li>
+<li>✅ Measurable continuous improvement</li>
+</ul>
+<p><strong>Time doesn&rsquo;t lie. Story points do.</strong></p>
+<hr>
+<p>url: /methodology/2025/12/20/time-vs-complexity-estimation.html</p>
+<p><strong>Ready to abandon story points and plan with real data?</strong> <a href="https://app.sinra.dev/users/sign_up">Start a free Sinra trial →</a></p>
+<p>Discover project management where estimates confront reality, not where they hide it.</p>
+
+    </div>
+
+    
+    <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Transform Your Project Management?</h2>
+      <p class="text-base-content/70 mb-6">Apply these insights with Sinra - the unified platform for modern teams.</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        Start Free Trial
+      </a>
+    </div>
+
+    
+    <nav class="flex justify-between mt-12 pt-8 border-t border-base-300">
+      
+      <a href="http://localhost:1313/product-management/2025/12/19/roadmap-incomplete-po-pm.html" class="btn btn-ghost gap-2">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="hidden md:inline">The Incomplete Roadmap: When PO/PMs Lose …</span>
+        <span class="md:hidden">← Previous</span>
+      </a>
+      
+
+      
+      <a href="http://localhost:1313/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html" class="btn btn-ghost gap-2">
+        <span class="hidden md:inline">Invisible QA: When Tests Are Scattered …</span>
+        <span class="md:hidden">Next →</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+  </main>
+  
+<footer class="footer bg-base-200 text-base-content p-10">
+  
+  
+  <nav>
+    
+    <a href="/blog/"
+       
+       class="link link-hover">
+      Blog
+    </a>
+    
+    <a href="/pricing/"
+       
+       class="link link-hover">
+      Pricing
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="/about/"
+       
+       class="link link-hover">
+      About
+    </a>
+    
+    <a href="/contact/"
+       
+       class="link link-hover">
+      Contact
+    </a>
+    
+  </nav>
+  
+  <nav>
+    
+    <a href="https://app.sinra.dev/users/sign_in"
+       target="_blank" rel="noopener noreferrer"
+       class="link link-hover">
+      Login
+    </a>
+    
+    <a href="https://app.sinra.dev/users/sign_up"
+       
+       class="link link-hover">
+      Sign Up
+    </a>
+    
+  </nav>
+  
+  
+</footer>
+<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>&copy; 2026 Sinra</p>
+  </aside>
+</footer>
+
+  <script src="/assets/js/script.js" defer></script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script>
+</body>
+</html>

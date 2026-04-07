@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work Culture on Sinra</title>
+    <link>http://localhost:1313/fr/categories/work-culture/</link>
+    <description>Recent content in Work Culture on Sinra</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/categories/work-culture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le paradoxe du recrutement français : 4 entretiens, 1 test, zéro confiance</title>
+      <link>http://localhost:1313/fr/blog/posts/2026-02-19-paradoxe-recrutement-france/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2026-02-19-paradoxe-recrutement-france/</guid>
+      <description>&lt;p&gt;On vous pose la question souvent : « Pourquoi en France, recruter, c&amp;rsquo;est comme passer des auditions pour un film de Spielberg, mais pour un CDI à 2 500 euros par mois ? »&lt;/p&gt;&#xA;&lt;p&gt;Voici le paradoxe : en France, nous avons une législation parmi les plus protectrices en matière d&amp;rsquo;emploi. Les périodes d&amp;rsquo;essai peuvent s&amp;rsquo;étendre sur plusieurs mois. L&amp;rsquo;employeur peut légalement tester la relation avant de s&amp;rsquo;engager. Et pourtant, les startups françaises ont mis en place un parcours du combattant : 4 entretiens, 1 test technique, une vérification de références, parfois même un cas pratique à préparer chez soi.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pourquoi le full remote est devenu tabou ? De la révolution COVID au retour au bureau obligatoire</title>
+      <link>http://localhost:1313/fr/blog/posts/2026-02-19-full-remote-tabou/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/blog/posts/2026-02-19-full-remote-tabou/</guid>
+      <description>&lt;p&gt;Vous vous souvenez de 2020-2021 ? Le full remote était la promesse du futur du travail. Les entreprises découvraient soudainement que leurs employés pouvaient être productifs de chez eux. Les trajets disparaissaient. Les coûts immobiliers chutaient. Les talents pouvaient venir de n&amp;rsquo;importe où dans le monde. C&amp;rsquo;était une révolution.&lt;/p&gt;&#xA;&lt;p&gt;Aujourd&amp;rsquo;hui, en 2026, le pendule a complètement basculé. Les offres d&amp;rsquo;emploi crient « hybride 3 jours au bureau » ou carrément « on-site only ». Les recruteurs vous demandent : « Tu peux venir au bureau, hein ? » comme si vous aviez posé une question étrange. Le full remote ? C&amp;rsquo;est devenu presque toxique de le demander.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
