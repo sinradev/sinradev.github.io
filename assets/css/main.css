@@ -38,7 +38,7 @@
     pointer-events: none;
   }
 
-  /* Section top-dividers */
+  /* Section top-dividers + alternating image/text layout */
   .index-section {
     position: relative;
   }
@@ -51,6 +51,12 @@
     right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, oklch(26.346% 0.018 262.177), transparent);
+  }
+
+  @media (min-width: 768px) {
+    .index-section:nth-child(even) .image {
+      order: -1;
+    }
   }
 
   /* Feature card hover shimmer */
