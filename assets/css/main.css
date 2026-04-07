@@ -53,6 +53,21 @@
     background: linear-gradient(90deg, transparent, oklch(26.346% 0.018 262.177), transparent);
   }
 
+  .index-section .image {
+    order: 1;
+    padding: 60px;
+    background:
+      radial-gradient(ellipse 300px 200px at 50% 35%, oklch(74.229% .133 311.379 / .4) 0%, oklch(74.229% .133 311.379 / .2) 40%, transparent 60%),
+      radial-gradient(ellipse 300px 200px at 40% 65%, oklch(86.133% .141 139.549 / .3) 0%, oklch(86.133% .141 139.549 / .15) 50%, transparent 65%),
+      radial-gradient(ellipse 300px 200px at 60% 65%, oklch(74.229% .133 311.379 / .3) 0%, oklch(74.229% .133 311.379 / .15) 50%, transparent 65%);
+    border-radius: var(--radius-box);
+    margin: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media (min-width: 768px) {
     .index-section:nth-child(even) .image {
       order: -1;
