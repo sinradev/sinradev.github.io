@@ -13,8 +13,8 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
       {{ range $strings.why_sinra_stats }}
       <div class="stat-card text-center bg-base-100 rounded-xl p-6 shadow">
-        <div class="text-4xl font-bold text-primary mb-2">{{ .stat }}</div>
-        <div class="text-base-content/70">{{ .label }}</div>
+        <div class="stat-number text-4xl font-bold text-primary mb-2">{{ .stat }}</div>
+        <div class="stat-label text-base-content/70">{{ .label }}</div>
       </div>
       {{ end }}
     </div>
