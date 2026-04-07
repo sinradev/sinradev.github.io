@@ -65,7 +65,7 @@
         <div class="feature-icon">
           <picture>
             <source srcset="{{ .image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
-            <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy" width="48" height="48" />
+            <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy" width="1024" height="1024" />
           </picture>
         </div>
         <h3>{{ .title | safeHTML }}</h3>
