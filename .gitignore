@@ -1,8 +1,13 @@
+# Jekyll (legacy)
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Hugo build output
+public/
+resources/
 
 # Local configuration
 CLAUDE.md
