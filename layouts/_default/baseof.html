@@ -9,7 +9,9 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  {{ if .Params.load_swiper }}
   <script src="/assets/js/swiper-bundle.min.js" defer></script>
+  {{ end }}
   <script src="/assets/js/script.js" defer></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
