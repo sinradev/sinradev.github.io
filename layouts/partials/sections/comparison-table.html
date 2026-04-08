@@ -1,0 +1,33 @@
+{{ $data := . }}
+<div class="overflow-x-auto">
+  <table class="table table-zebra w-full">
+    <thead>
+      <tr>
+        <th class="min-w-48">Feature</th>
+        {{ range $data.tools }}
+        <th class="text-center">
+          <div class="flex flex-col items-center gap-2">
+            <img src="{{ .logo }}" alt="{{ .name }}" class="h-8 w-auto" width="120" height="32" />
+            <span class="font-semibold">{{ .name }}</span>
+          </div>
+        </th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $data.dimensions }}
+      <tr class="bg-base-300">
+        <td colspan="{{ add (len $data.tools) 1 }}" class="font-bold text-primary">{{ .category }}</td>
+      </tr>
+      {{ range .rows }}
+      <tr class="comparison-row">
+        <td class="font-medium">{{ .dimension }}</td>
+        {{ range .values }}
+        <td class="text-center text-sm">{{ . }}</td>
+        {{ end }}
+      </tr>
+      {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>

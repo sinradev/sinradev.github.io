@@ -1,0 +1,34 @@
+{{ $lang := .Language.Lang }}
+{{ $strings := index hugo.Data $lang "strings" }}
+{{ $clients := index hugo.Data $lang "trusted_clients" }}
+<section class="trusted-by py-20 bg-base-200">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">{{ i18n "trusted_by_title" }}</h2>
+      <p class="text-base-content/70 max-w-2xl mx-auto">{{ i18n "trusted_by_description" }}</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+      {{ range $clients }}
+      <div class="flex items-center justify-center bg-base-300/50 rounded-xl p-8 hover:bg-base-300 transition-colors">
+        <img src="{{ .logo }}" alt="{{ .name }}" class="h-8 w-auto opacity-70 hover:opacity-100 transition-opacity" loading="lazy" width="120" height="32" />
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="stat-item">
+        <div class="text-4xl font-bold text-primary mb-2">{{ i18n "trusted_by_stat_teams" }}</div>
+        <p class="text-base-content/70">{{ i18n "trusted_by_stat_teams_label" }}</p>
+      </div>
+      <div class="stat-item">
+        <div class="text-4xl font-bold text-primary mb-2">{{ i18n "trusted_by_stat_users" }}</div>
+        <p class="text-base-content/70">{{ i18n "trusted_by_stat_users_label" }}</p>
+      </div>
+      <div class="stat-item">
+        <div class="text-4xl font-bold text-primary mb-2">{{ i18n "trusted_by_stat_satisfaction" }}</div>
+        <p class="text-base-content/70">{{ i18n "trusted_by_stat_satisfaction_label" }}</p>
+      </div>
+    </div>
+  </div>
+</section>

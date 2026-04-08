@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="py-32 text-center bg-base-100">
+  <div class="container mx-auto px-6 max-w-2xl">
+    <div class="text-6xl mb-6">✓</div>
+    <h1 class="text-4xl font-bold mb-4 text-success">{{ i18n "contact_success" }}</h1>
+    <p class="text-xl text-base-content/80 mb-8">{{ i18n "contact_success_message" }}</p>
+    <a href="{{ relLangURL "/" }}" class="btn btn-primary">{{ i18n "nav_about" }}</a>
+  </div>
+</section>
+{{ end }}

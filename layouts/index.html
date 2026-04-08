@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ partial "sections/hero.html" . }}
+{{ partial "sections/features.html" . }}
+{{ partial "sections/testimonials.html" . }}
+{{ partial "sections/trusted_by.html" . }}
+{{ partial "sections/contact-faq.html" . }}
+<section class="bottom-cta py-20 bg-base-200 text-center">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8">{{ (index hugo.Data .Language.Lang "strings").reduce_complexity | safeHTML }}</h2>
+    <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+      {{ i18n "try_sinra" }}
+    </a>
+  </div>
+</section>
+{{ end }}

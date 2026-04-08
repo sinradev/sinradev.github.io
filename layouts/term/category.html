@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{/* Term page - lists posts in a specific category */}}
+<div class="taxonomy-page">
+  <section class="py-16 bg-base-100">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl font-bold mb-4 capitalize">{{ .Title }}</h1>
+      <p class="text-base-content/70 mb-12">{{ i18n "blog_category_description" }}</p>
+
+      {{ if .Pages }}
+      <div class="space-y-8">
+        {{ range .Pages }}
+        <article class="bg-base-200 rounded-xl overflow-hidden shadow flex flex-col md:flex-row gap-6">
+          {{ with .Params.featured_image }}
+          <div class="md:w-48 shrink-0">
+            <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-40 md:h-full object-cover" loading="lazy" />
+          </div>
+          {{ end }}
+          <div class="p-6 flex flex-col justify-center">
+            {{ with .Params.categories }}
+            <div class="mb-2">
+              {{ if reflect.IsSlice . }}{{ range . }}<span class="badge badge-primary badge-sm badge-outline">{{ . }}</span>{{ end }}
+              {{ else }}<span class="badge badge-primary badge-sm badge-outline">{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+            <h2 class="text-xl font-bold mb-2">
+              <a href="{{ .Permalink }}" class="hover:text-primary transition-colors">{{ .Title }}</a>
+            </h2>
+            <p class="text-base-content/70 text-sm mb-4">{{ .Params.excerpt | default .Summary }}</p>
+            <div class="flex items-center gap-4 text-xs text-base-content/50">
+              <time>{{ .Date.Format "January 2, 2006" }}</time>
+              <span>{{ i18n "blog_by_author" }}</span>
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ else }}
+      <p class="text-base-content/70">{{ i18n "blog_no_posts" }}</p>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

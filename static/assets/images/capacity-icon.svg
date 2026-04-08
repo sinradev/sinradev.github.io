@@ -1,0 +1,32 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#E3F2FD" stroke-width="2"/>
+
+  <!-- Gauge/Capacity meter -->
+  <g transform="translate(100, 100)">
+    <!-- Gauge background arc -->
+    <path d="M -40 0 A 40 40 0 0 1 40 0" fill="none" stroke="#E0E0E0" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Gauge filled arc (75% capacity) -->
+    <path d="M -40 0 A 40 40 0 0 1 28 28" fill="none" stroke="#2196F3" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Gauge needle -->
+    <line x1="0" y1="0" x2="28" y2="28" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4" fill="#2196F3"/>
+
+    <!-- Capacity zones -->
+    <circle cx="-35" cy="8" r="3" fill="#4CAF50"/>
+    <text x="-25" y="12" font-family="Arial" font-size="7" fill="#4CAF50">Good</text>
+
+    <circle cx="30" cy="8" r="3" fill="#FF9800"/>
+    <text x="36" y="12" font-family="Arial" font-size="7" fill="#FF9800">High</text>
+
+    <!-- Team members indicator -->
+    <g transform="translate(0, 35)">
+      <circle cx="-15" cy="0" r="5" fill="none" stroke="#2196F3" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="5" fill="none" stroke="#2196F3" stroke-width="1.5"/>
+      <circle cx="15" cy="0" r="5" fill="none" stroke="#2196F3" stroke-width="1.5"/>
+      <text x="-35" y="5" font-family="Arial" font-size="7" fill="#2196F3">Team load</text>
+    </g>
+  </g>
+</svg>

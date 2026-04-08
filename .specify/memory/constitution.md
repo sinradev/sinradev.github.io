@@ -2,12 +2,11 @@
 
 ## Project Overview
 
-**Sinra Website** is a multilingual static site built with **Jekyll 4.3.4** promoting Sinra, a modern project management tool. The site features:
-- Multilingual support (EN/FR)
-- DaisyUI Dim theme
-- Plain CSS (no preprocessors)
+**Sinra Website** is a multilingual static site built with **Hugo Extended** promoting Sinra, a modern project management tool. The site features:
+- Multilingual support (EN/FR/ES) via Hugo native multilingual (EN at /, FR at /fr/, ES at /es/)
+- DaisyUI Dim theme via Tailwind CSS v4 + DaisyUI v5 (Hugo Pipes + PostCSS)
+- Go HTML templates in layouts/, data in i18n/{lang}.yaml + data/{lang}/*.yaml
 - Vanilla JavaScript
-- YAML-based data and translations
 
 ---
 
@@ -99,17 +98,17 @@ These promotional colors are **temporary** and isolated to promotion components.
 
 ### Multilingual Support
 
-- All text must support EN/FR via YAML data files in `_data/en/` and `_data/fr/`
-- Use Liquid templating: `{{ site.data[page.lang].section.key }}`
+- All text must support EN/FR/ES via i18n files in `i18n/{lang}.yaml` and data in `data/{lang}/*.yaml`
+- Use Go templates: `{{ i18n "key" }}` for labels, `{{ index hugo.Data .Language.Lang "section" }}` for structured data
 - No hardcoded strings in HTML/templates
-- French translations must maintain English tone/meaning
+- French/Spanish translations must maintain English tone/meaning
 
 ### Testing
 
-- Manual testing via `bundle exec jekyll serve`
+- Manual testing via `hugo server` (http://localhost:1313)
 - Cross-browser: Chrome, Firefox, Safari (desktop + mobile)
 - Responsive design: test at 320px, 768px, 1024px, 1440px
-- Build verification: `bundle exec jekyll build` must succeed
+- Build verification: `hugo --printPathWarnings` must produce 0 warnings
 
 ### Git Workflow
 
@@ -220,12 +219,12 @@ FR:
 ## Technology Stack
 
 **Fixed**:
-- Jekyll 4.3.4
-- Ruby 3.4.5
-- Plain CSS (from `assets/css/theme.css`)
+- Hugo Extended 0.160.0+
+- Node.js 20 + npm (for CSS build pipeline)
+- Tailwind CSS v4 + DaisyUI v5 (via Hugo Pipes + PostCSS) - single entry point `assets/css/main.css`
 - Vanilla JavaScript (no transpilation)
-- DaisyUI Dim theme variables
-- YAML for data/translations
+- DaisyUI Dim theme (`data-theme="dim"`)
+- YAML for data/translations (i18n/ + data/)
 
 **NO additions** of:
 - Build tools, minifiers, or preprocessors
@@ -276,11 +275,11 @@ All code must maintain or improve the following **minimum Lighthouse scores**:
 1. **Images**: Use WebP format with PNG/JPG fallback via `<picture>` element
 2. **Dimensions**: Always set explicit width/height on images
 3. **Lazy Loading**: Only use on below-the-fold content, NOT on LCP elements
-4. **CSS/JS**: Use jekyll-minifier for automatic production minification
+4. **CSS/JS**: Hugo `--minify` handles automatic production minification
 5. **Core Web Vitals**: Monitor LCP, FID, CLS
 
 **Tools**:
-- Local: `bundle exec jekyll serve` + manual Chrome DevTools
+- Local: `hugo server` + manual Chrome DevTools
 - CI/CD: Lighthouse CI (automated on every PR)
 - Manual: lighthouse CLI or Web Vitals extension
 
