@@ -7,6 +7,29 @@
   logs: false;
 }
 
+@plugin "@tailwindcss/typography";
+
+/* Blog prose overrides */
+.prose h2 {
+  font-size: 1.8rem;
+  margin: 35px 0 16px;
+  color: #f1f5f9;
+  font-weight: 700;
+  border-left: 4px solid #c792e9;
+  padding: 12px 16px;
+  background: rgba(166, 240, 121, 0.04);
+  border-radius: 6px;
+}
+
+.prose p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose strong {
+  color: var(--color-primary);
+}
+
 /* Custom overrides — only what DaisyUI Dim does not cover */
 
 @layer base {

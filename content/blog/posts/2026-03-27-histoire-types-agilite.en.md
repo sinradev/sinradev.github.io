@@ -1,6 +1,5 @@
 ---
 url: /methodology/2026/03/27/history-types-agility.html
-
 title: "History and Types of Agility: How to Actually Work Better"
 subtitle: "From the 2001 Agile Manifesto to modern frameworks: Scrum, Kanban, Shape Up, XP, Lean and beyond"
 description: "Discover the history of agility, its 4 core principles, and the different types of agility (Scrum, Kanban, Shape Up, XP, Lean) with clear explanations, concrete examples, and a detailed comparison to choose the right approach."
@@ -9,7 +8,6 @@ excerpt: "Agility is not one thing. It's a philosophy born in 2001 with 4 simple
 date: 2026-03-27 09:00:00 +0100
 featured_image: /assets/images/blog/2026-03-27-histoire-agilite-featured.png
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ## Agility: A Revolution Born of Frustration
 
@@ -52,7 +50,6 @@ The Agile Manifesto comes down to 4 values:
 This manifesto didn't create a single methodology. It created a **philosophy**. And different frameworks interpret it differently.
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ## The Different Types of Agility
 
@@ -95,7 +92,6 @@ You're building an e-commerce app. Sprint 1: build login system. Sprint 2: add s
 - Can cause burnout if sprints are filled to max capacity
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ### 2. Kanban: Continuous Flow
 
@@ -132,7 +128,6 @@ A software support team. They receive bug tickets continuously. No sense of "we 
 - Less frequent feedback than with sprints
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ### 3. Shape Up: Basecamp's Structured Cycle
 
@@ -169,7 +164,6 @@ You're building a SaaS product. Cycle 1 (6 weeks): initial version of features A
 - Less documented than Scrum
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ### 4. XP (Extreme Programming): Hardcore Code
 
@@ -215,7 +209,6 @@ A team builds a critical payment system. Mandatory pair programming on everythin
 - Not suitable if quality isn't critical
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ### 5. Lean Software Development: Eliminate Waste
 
@@ -256,7 +249,6 @@ A team spends 30% of time in useless meetings. 20% context switching between mul
 - Risk of becoming "common sense without structure"
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ### 6. Other Agile Frameworks
 
@@ -269,7 +261,6 @@ url: /methodology/2026/03/27/history-types-agility.html
 **Scrumban**: Hybrid Scrum + Kanban. Sprints like Scrum, but with continuous work flow like Kanban. Good transition between the two.
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ## Pros and Cons: Agility in General
 
@@ -296,7 +287,6 @@ url: /methodology/2026/03/27/history-types-agility.html
 **Possible Burnout**: Sustained pace, pressure to "maintain velocity." Teams exhaust themselves long-term.
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ## Framework Comparison
 
@@ -317,7 +307,6 @@ Which framework for your team?
 **Advice**: Most teams start with Scrum (the most structured and documented), then evolve toward Kanban or a homegrown variation based on experience.
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ## Conclusion: Choose Your Path
 
@@ -340,7 +329,6 @@ What matters: **iterate. Listen to your team. Adjust regularly.**
 Because that's what Agility really is.
 
 ---
-url: /methodology/2026/03/27/history-types-agility.html
 
 ## If you want to dig deeper...
 
