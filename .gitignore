@@ -1,8 +1,10 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Node
+node_modules/
 
 # Local configuration
 CLAUDE.md
