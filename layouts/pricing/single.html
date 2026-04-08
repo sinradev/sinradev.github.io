@@ -1,0 +1,129 @@
+{{ define "main" }}
+{{ $lang := .Language.Lang }}
+{{ $strings := index hugo.Data $lang "strings" }}
+{{ $plans := index hugo.Data $lang "pricing" }}
+{{ $faq := index hugo.Data $lang "pricing_faq" }}
+{{ $promo := index hugo.Data $lang "promotion" }}
+
+{{/* Check if promo is active */}}
+{{ $promoActive := false }}
+{{ if $promo }}
+  {{ if $promo.end_date }}
+    {{ $today := now.Format "2006-01-02" }}
+    {{ if le $today $promo.end_date }}
+      {{ $promoActive = true }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="pricing-page">
+  {{/* Hero */}}
+  <section class="pricing-hero py-20 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ i18n "pricing_title" }}</h1>
+      <p class="text-xl text-base-content/80 mb-6">{{ i18n "pricing_heading" }}</p>
+      <a href="https://app.sinra.dev/users/sign_up" class="badge badge-primary badge-lg text-lg py-4 px-6" target="_blank" rel="noopener noreferrer">
+        {{ i18n "pricing_discount_badge" }}
+      </a>
+    </div>
+  </section>
+
+  {{/* Plans */}}
+  <section class="pricing-plans py-16 bg-base-200">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range $plans }}
+        {{ $isRecommended := false }}
+        {{ range .pricing_tiers }}{{ if .recommended }}{{ $isRecommended = true }}{{ end }}{{ end }}
+        <div class="plan-card bg-base-100 rounded-2xl p-8 shadow-xl relative {{ if $isRecommended }}border-2 border-primary{{ end }}">
+          {{ if $isRecommended }}
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+            <span class="badge badge-primary badge-lg">{{ i18n "pricing_recommended" }}</span>
+          </div>
+          {{ end }}
+          <h2 class="text-2xl font-bold mb-2">{{ .name }}</h2>
+          <p class="text-base-content/70 mb-6">{{ .description }}</p>
+
+          {{/* Pricing Tiers */}}
+          <div class="pricing-tiers flex gap-4 mb-6">
+            {{ range .pricing_tiers }}
+            <div class="pricing-frame flex-1 bg-base-200 rounded-xl p-4 text-center {{ if .recommended }}ring-2 ring-primary{{ end }}">
+              <div class="text-sm text-base-content/70 mb-1">{{ .period }}</div>
+              {{ if eq .plan_type "coming_soon" }}
+              <div class="text-lg font-semibold text-base-content/70">{{ i18n "pricing_contact_sales" }}</div>
+              {{ else if and .has_black_friday $promoActive }}
+              <div>
+                <span class="line-through text-sm text-base-content/60">{{ .currency }}{{ .struck_price }}</span>
+                <div class="text-3xl font-bold text-primary">{{ .currency }}{{ .black_friday_price }}</div>
+                <div class="text-xs text-base-content/70">{{ .billing }}</div>
+                <div class="badge badge-secondary badge-sm mt-1">{{ .promo_code }}</div>
+              </div>
+              {{ else }}
+              <div class="text-3xl font-bold text-primary">{{ .currency }}{{ .price }}</div>
+              <div class="text-xs text-base-content/70">{{ .billing }}</div>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+
+          {{/* Features */}}
+          <ul class="space-y-2 mb-8">
+            {{ range .features }}
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 shrink-0 {{ if .highlight }}text-success{{ else }}text-base-content/40{{ end }}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-sm {{ if .ai_feature }}text-primary font-medium{{ else if not .highlight }}text-base-content/70{{ end }}">{{ .text }}</span>
+            </li>
+            {{ end }}
+          </ul>
+
+          {{/* CTA */}}
+          {{ with .call_to_action }}
+          {{ if .link }}
+          <a href="{{ .link }}" class="btn btn-primary w-full" target="_blank" rel="noopener noreferrer">{{ .text }}</a>
+          {{ else }}
+          <button class="btn btn-disabled w-full" disabled>{{ .text }}</button>
+          {{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{/* FAQ */}}
+  {{ if $faq }}
+  <section class="pricing-faq py-16 bg-base-100">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-12">{{ i18n "pricing_faq_title" }}</h2>
+      <div class="space-y-4">
+        {{ range $faq }}
+        <div class="collapse collapse-plus bg-base-200 rounded-xl">
+          <input type="checkbox" aria-hidden="true" tabindex="-1" />
+          <div class="collapse-title text-lg font-semibold">{{ .question }}</div>
+          <div class="collapse-content"><p class="text-base-content/80">{{ .answer }}</p></div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* CTA */}}
+  <section class="py-16 bg-base-300 text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-4">{{ i18n "pricing_ready_to_start" }}</h2>
+      <p class="text-base-content/70 mb-8">{{ i18n "pricing_ready_desc" }}</p>
+      <div class="flex justify-center gap-4">
+        <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+          {{ i18n "pricing_start_trial" }}
+        </a>
+        <a href="/{{ .Language.Lang }}/contact/" class="btn btn-default btn-outline btn-lg">
+          {{ i18n "pricing_contact_sales" }}
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

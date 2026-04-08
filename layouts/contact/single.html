@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{ $lang := .Language.Lang }}
+{{ $faq := index hugo.Data $lang "contact_faq" }}
+
+<div class="contact-page">
+  {{/* Hero */}}
+  <section class="contact-hero py-20 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ i18n "contact_heading" }}</h1>
+      <p class="text-xl text-base-content/80">{{ i18n "contact_description" }}</p>
+    </div>
+  </section>
+
+  {{/* Contact Form */}}
+  <section class="contact-content py-16 bg-base-200">
+    <div class="container mx-auto px-6 max-w-2xl">
+      <div class="bg-base-100 rounded-2xl p-8 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">{{ i18n "contact_send_message_title" }}</h2>
+        <p class="text-base-content/70 mb-8">{{ i18n "contact_send_message_desc" }}</p>
+
+        <form action="https://app.sinra.dev/contact/form" method="post" class="contact-form space-y-6" aria-label="{{ i18n "contact_title" }}">
+          <input type="hidden" name="_to" value="support@sinra.dev" />
+          <input type="text" name="_gotcha" style="display: none;" />
+
+          <div class="form-control">
+            <label class="label" for="name">
+              <span class="label-text text-base-content/80">{{ i18n "contact_full_name" }} <span aria-label="required">*</span></span>
+            </label>
+            <input type="text" name="name" id="name" placeholder="{{ i18n "contact_placeholder_name" }}" required aria-required="true" class="input input-bordered w-full" />
+          </div>
+
+          <div class="form-control">
+            <label class="label" for="email">
+              <span class="label-text text-base-content/80">{{ i18n "contact_email_label" }} <span aria-label="required">*</span></span>
+            </label>
+            <input type="email" name="email" id="email" placeholder="{{ i18n "contact_placeholder_email" }}" required aria-required="true" class="input input-bordered w-full" />
+          </div>
+
+          <div class="form-control">
+            <label class="label" for="subject">
+              <span class="label-text text-base-content/80">{{ i18n "contact_subject" }} <span aria-label="required">*</span></span>
+            </label>
+            <select name="subject" id="subject" required aria-required="true" class="select select-bordered w-full">
+              <option value="">{{ i18n "contact_placeholder_subject" }}</option>
+              <option value="general">{{ i18n "contact_subject_general" }}</option>
+              <option value="support">{{ i18n "contact_subject_support" }}</option>
+              <option value="sales">{{ i18n "contact_subject_sales" }}</option>
+              <option value="partnership">{{ i18n "contact_subject_partnership" }}</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label class="label" for="message">
+              <span class="label-text text-base-content/80">{{ i18n "contact_message" }} <span aria-label="required">*</span></span>
+            </label>
+            <textarea name="message" id="message" placeholder="{{ i18n "contact_placeholder_message" }}" rows="6" required aria-required="true" class="textarea textarea-bordered w-full"></textarea>
+          </div>
+
+          <input type="hidden" name="return_url" value="{{ absURL (relLangURL "contact/success/") }}" />
+
+          <button type="submit" class="btn btn-primary w-full gap-2">
+            <span>{{ i18n "contact_send_button" }}</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  {{/* FAQ */}}
+  {{ if $faq }}
+  <section class="contact-faq py-16 bg-base-100">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-12">{{ i18n "contact_faq_title" }}</h2>
+      <div class="space-y-4">
+        {{ range $faq }}
+        <div class="collapse collapse-plus bg-base-200 rounded-xl">
+          <input type="checkbox" aria-hidden="true" tabindex="-1" />
+          <div class="collapse-title text-lg font-semibold">{{ .question }}</div>
+          <div class="collapse-content"><p class="text-base-content/80">{{ .answer }}</p></div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</div>
+{{ end }}

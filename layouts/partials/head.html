@@ -1,0 +1,88 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a1a2e" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico" />
+
+{{/* Title */}}
+<title>{{ if .IsHome }}{{ .Title | default site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+
+{{/* Canonical */}}
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{/* Description */}}
+{{ $desc := (.Params.description | default site.Params.description) }}
+<meta name="description" content="{{ $desc }}" />
+
+{{/* Robots */}}
+<meta name="robots" content="index, follow" />
+
+{{/* Hreflang — all language versions + x-default pointing to EN root */}}
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{ if eq .Language.Lang "en" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
+{{ end }}
+
+{{/* Open Graph */}}
+{{ $ogTitle := (.Params.ogTitle | default .Title | default site.Title) }}
+{{ $ogDesc  := (.Params.ogDescription | default $desc) }}
+{{ $ogImage := (absURL (.Params.featured_image | default (absURL site.Params.ogImage))) }}
+{{ $ogType  := (cond (.IsPage) "article" "website") }}
+<meta property="og:type"        content="{{ $ogType }}" />
+<meta property="og:title"       content="{{ $ogTitle }}" />
+<meta property="og:description" content="{{ $ogDesc }}" />
+<meta property="og:url"         content="{{ .Permalink }}" />
+<meta property="og:site_name"   content="{{ site.Title }}" />
+<meta property="og:locale"      content="{{ site.Params.locale }}" />
+{{ range .Translations }}<meta property="og:locale:alternate" content="{{ .Site.Params.locale }}" />
+{{ end }}
+{{ with $ogImage }}<meta property="og:image" content="{{ . }}" />{{ end }}
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:author" content="Sinra" />
+{{ with .Params.categories }}
+  {{ if reflect.IsSlice . }}{{ range . }}<meta property="article:section" content="{{ . }}" />{{ end }}
+  {{ else }}<meta property="article:section" content="{{ . }}" />{{ end }}
+{{ end }}
+{{ end }}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="{{ $ogTitle }}" />
+<meta name="twitter:description" content="{{ $ogDesc }}" />
+{{ with $ogImage }}<meta name="twitter:image" content="{{ . }}" />{{ end }}
+{{ with site.Params.twitterHandle }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+
+{{/* JSON-LD SoftwareApplication */}}
+{{ $ld := dict
+  "@context"            "https://schema.org"
+  "@type"               site.Params.jsonld.type
+  "name"                site.Params.jsonld.name
+  "operatingSystem"     site.Params.jsonld.operatingSystem
+  "applicationCategory" site.Params.jsonld.applicationCategory
+  "url"                 site.BaseURL
+}}
+{{- $ld | jsonify | printf "<script type=\"application/ld+json\">%s</script>" | safeHTML -}}
+
+{{/* JSON-LD Organization */}}
+{{ $org := dict
+  "@context" "https://schema.org"
+  "@type"    "Organization"
+  "name"     "Sinra"
+  "url"      "https://sinra.dev/"
+  "logo"     "https://sinra.dev/assets/images/sinra-logo.svg"
+  "sameAs"   (slice "https://github.com/sinra-app")
+}}
+{{- $org | jsonify | printf "<script type=\"application/ld+json\">%s</script>" | safeHTML -}}
+
+{{/* CSS — Hugo Pipes (PostCSS + Tailwind v4 + DaisyUI v5) */}}
+{{ $css := resources.Get "css/main.css" | css.PostCSS | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $css.Permalink }}" as="style" />
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous" />
+
+{{/* Google Fonts — Inter */}}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" /></noscript>

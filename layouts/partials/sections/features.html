@@ -1,0 +1,86 @@
+{{ $lang := .Language.Lang }}
+{{ $strings := index hugo.Data $lang "strings" }}
+{{ $sections := index hugo.Data $lang "index_sections" }}
+{{ $features := index hugo.Data $lang "index_features" }}
+
+{{/* Why Sinra Section */}}
+<section class="why-sinra py-20 bg-base-200">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">{{ $strings.why_sinra_title }}</h2>
+    <p class="text-lg text-base-content/80 text-center mb-12 max-w-3xl mx-auto">{{ $strings.why_sinra_description }}</p>
+
+    {{/* Stats */}}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      {{ range $strings.why_sinra_stats }}
+      <div class="stat-card text-center bg-base-100 rounded-xl p-6 shadow">
+        <div class="stat-number text-4xl font-bold text-primary mb-2" data-target="{{ .stat }}">{{ .stat }}</div>
+        <div class="stat-label text-base-content/70">{{ .label }}</div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* Benefits */}}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {{ range $strings.why_sinra_benefits }}
+      <div class="benefit-card bg-base-100 rounded-xl p-6 shadow">
+        <h3 class="text-xl font-semibold mb-3">{{ .title }}</h3>
+        <p class="text-base-content/70">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* Index Sections */}}
+<div class="index-sections">
+  {{ range $sections }}
+  <section class="index-section py-16 odd:bg-base-100 even:bg-base-200">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="text md:w-1/2">
+          <div class="text-sm font-semibold text-primary uppercase tracking-wider mb-2">{{ .category }}</div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ .title | safeHTML }}</h2>
+          <div class="text-base-content/80 prose">{{ .body | safeHTML }}</div>
+        </div>
+        <div class="image md:w-1/2">
+          <picture>
+            {{ $webpPath := .image | replaceRE `^/assets/` "" | replaceRE `\.(png|jpg)$` ".webp" }}
+            {{ $webpRes := resources.Get $webpPath }}
+            <source srcset="{{ .image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
+            {{ if $webpRes }}
+            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $webpRes.Width }}" height="{{ $webpRes.Height }}" />
+            {{ else }}
+            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" />
+            {{ end }}
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</div>
+
+{{/* Features Grid */}}
+<section class="features py-20 bg-base-200">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">{{ $strings.features }}</h2>
+    <p class="text-center text-base-content/70 mb-12">{{ i18n "go_to_blog" }}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range $features }}
+      <div class="feature">
+        <div class="feature-icon">
+          <picture>
+            <source srcset="{{ .image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
+            <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy" width="1024" height="1024" />
+          </picture>
+        </div>
+        <h3>{{ .title | safeHTML }}</h3>
+        <p>{{ .body | safeHTML }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <div class="text-center mt-10">
+      <a href="{{ relLangURL "blog/" }}" class="btn btn-secondary">{{ i18n "go_to_blog" }}</a>
+    </div>
+  </div>
+</section>

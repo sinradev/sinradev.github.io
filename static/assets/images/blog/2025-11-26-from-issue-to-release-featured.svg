@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#grad3)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="80" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="120" fill="#ffffff" opacity="0.1"/>
+
+  <!-- Main title -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    <tspan x="600" dy="0">From Issue to Release:</tspan>
+    <tspan x="600" dy="70">How Work Actually</tspan>
+    <tspan x="600" dy="70">Flows in Sinra</tspan>
+  </text>
+
+  <!-- Sinra branding -->
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#ffffff" opacity="0.9">
+    Sinra Blog
+  </text>
+</svg>

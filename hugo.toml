@@ -1,0 +1,151 @@
+baseURL                       = 'https://sinra.dev/'
+defaultContentLanguage        = 'en'
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[params]
+  author        = "Sinra"
+  twitterHandle = "@sinra_app"
+  ogImage       = "/assets/images/og-image.png"
+
+  [params.jsonld]
+    type                = "SoftwareApplication"
+    name                = "Sinra"
+    operatingSystem     = "Web"
+    applicationCategory = "BusinessApplication"
+
+[taxonomies]
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'monthly'
+  priority   = 1.0
+  filename   = 'sitemap.xml'
+
+# ── English (default — served at /) ──────────────────────────────────────────
+[languages.en]
+  languageCode = 'en'
+  languageName = 'English'
+  title        = 'Sinra'
+  weight       = 1
+
+  [languages.en.params]
+    description = "The only project management tool built for teams combining V-Model and Agile. Complete visibility. Unified platform. Controlled quality."
+    locale      = "en_US"
+
+  [[languages.en.menus.main]]
+    name   = 'About'
+    url    = '/about/'
+    weight = 10
+  [[languages.en.menus.main]]
+    name   = 'Pricing'
+    url    = '/pricing/'
+    weight = 20
+  [[languages.en.menus.main]]
+    name   = 'Blog'
+    url    = '/blog/'
+    weight = 30
+  [[languages.en.menus.main]]
+    name   = 'Contact'
+    url    = '/contact/'
+    weight = 40
+  [[languages.en.menus.main]]
+    name   = 'Login'
+    url    = 'https://app.sinra.dev/users/sign_in'
+    weight = 50
+    [languages.en.menus.main.params]
+      external = true
+  [[languages.en.menus.main]]
+    name   = 'Sign up'
+    url    = 'https://app.sinra.dev/users/sign_up'
+    weight = 60
+    [languages.en.menus.main.params]
+      external = true
+      cta      = true
+
+# ── Français (served at /fr/) ─────────────────────────────────────────────────
+[languages.fr]
+  languageCode = 'fr'
+  languageName = 'Français'
+  title        = 'Sinra'
+  weight       = 2
+
+  [languages.fr.params]
+    description = "Le seul outil de gestion de projet conçu pour les équipes combinant V-Model et Agile. Visibilité complète. Plateforme unifiée. Qualité maîtrisée."
+    locale      = "fr_FR"
+
+  [[languages.fr.menus.main]]
+    name   = 'À propos'
+    url    = '/fr/about/'
+    weight = 10
+  [[languages.fr.menus.main]]
+    name   = 'Tarifs'
+    url    = '/fr/pricing/'
+    weight = 20
+  [[languages.fr.menus.main]]
+    name   = 'Blog'
+    url    = '/fr/blog/'
+    weight = 30
+  [[languages.fr.menus.main]]
+    name   = 'Contact'
+    url    = '/fr/contact/'
+    weight = 40
+  [[languages.fr.menus.main]]
+    name   = 'Se connecter'
+    url    = 'https://app.sinra.dev/users/sign_in'
+    weight = 50
+    [languages.fr.menus.main.params]
+      external = true
+  [[languages.fr.menus.main]]
+    name   = "S'enregistrer"
+    url    = 'https://app.sinra.dev/users/sign_up'
+    weight = 60
+    [languages.fr.menus.main.params]
+      external = true
+      cta      = true
+
+# ── Español (served at /es/) ──────────────────────────────────────────────────
+[languages.es]
+  languageCode = 'es'
+  languageName = 'Español'
+  title        = 'Sinra'
+  weight       = 3
+
+  [languages.es.params]
+    description = "La única herramienta de gestión de proyectos creada para equipos que combinan V-Model y Agile. Visibilidad completa. Plataforma unificada. Calidad controlada."
+    locale      = "es_ES"
+
+  [[languages.es.menus.main]]
+    name   = 'Acerca de'
+    url    = '/es/about/'
+    weight = 10
+  [[languages.es.menus.main]]
+    name   = 'Precios'
+    url    = '/es/pricing/'
+    weight = 20
+  [[languages.es.menus.main]]
+    name   = 'Blog'
+    url    = '/es/blog/'
+    weight = 30
+  [[languages.es.menus.main]]
+    name   = 'Contacto'
+    url    = '/es/contact/'
+    weight = 40
+  [[languages.es.menus.main]]
+    name   = 'Iniciar sesión'
+    url    = 'https://app.sinra.dev/users/sign_in'
+    weight = 50
+    [languages.es.menus.main.params]
+      external = true
+  [[languages.es.menus.main]]
+    name   = 'Registrarse'
+    url    = 'https://app.sinra.dev/users/sign_up'
+    weight = 60
+    [languages.es.menus.main.params]
+      external = true
+      cta      = true
