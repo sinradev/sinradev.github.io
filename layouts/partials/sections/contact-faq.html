@@ -7,7 +7,7 @@
     <div class="space-y-4">
       {{ range $faqs }}
       <div class="collapse collapse-plus bg-base-200 rounded-xl">
-        <input type="checkbox" />
+        <input type="checkbox" aria-hidden="true" tabindex="-1" />
         <div class="collapse-title text-lg font-semibold">
           {{ .question }}
         </div>

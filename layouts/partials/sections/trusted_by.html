@@ -11,7 +11,7 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
       {{ range $clients }}
       <div class="flex items-center justify-center bg-base-300/50 rounded-xl p-8 hover:bg-base-300 transition-colors">
-        <img src="{{ .logo }}" alt="{{ .name }}" class="h-8 opacity-70 hover:opacity-100 transition-opacity" loading="lazy" />
+        <img src="{{ .logo }}" alt="{{ .name }}" class="h-8 w-auto opacity-70 hover:opacity-100 transition-opacity" loading="lazy" width="120" height="32" />
       </div>
       {{ end }}
     </div>

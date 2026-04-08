@@ -78,6 +78,7 @@
 
 {{/* CSS — Hugo Pipes (PostCSS + Tailwind v4 + DaisyUI v5) */}}
 {{ $css := resources.Get "css/main.css" | css.PostCSS | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $css.Permalink }}" as="style" />
 <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous" />
 
 {{/* Google Fonts — Inter */}}

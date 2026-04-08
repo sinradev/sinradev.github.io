@@ -44,8 +44,14 @@
         </div>
         <div class="image md:w-1/2">
           <picture>
+            {{ $webpPath := .image | replaceRE `^/assets/` "" | replaceRE `\.(png|jpg)$` ".webp" }}
+            {{ $webpRes := resources.Get $webpPath }}
             <source srcset="{{ .image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
-            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="356" height="230" />
+            {{ if $webpRes }}
+            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $webpRes.Width }}" height="{{ $webpRes.Height }}" />
+            {{ else }}
+            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" />
+            {{ end }}
           </picture>
         </div>
       </div>

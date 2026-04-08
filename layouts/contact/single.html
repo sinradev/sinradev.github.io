@@ -24,21 +24,21 @@
 
           <div class="form-control">
             <label class="label" for="name">
-              <span class="label-text">{{ i18n "contact_full_name" }} <span aria-label="required">*</span></span>
+              <span class="label-text text-base-content/80">{{ i18n "contact_full_name" }} <span aria-label="required">*</span></span>
             </label>
             <input type="text" name="name" id="name" placeholder="{{ i18n "contact_placeholder_name" }}" required aria-required="true" class="input input-bordered w-full" />
           </div>
 
           <div class="form-control">
             <label class="label" for="email">
-              <span class="label-text">{{ i18n "contact_email_label" }} <span aria-label="required">*</span></span>
+              <span class="label-text text-base-content/80">{{ i18n "contact_email_label" }} <span aria-label="required">*</span></span>
             </label>
             <input type="email" name="email" id="email" placeholder="{{ i18n "contact_placeholder_email" }}" required aria-required="true" class="input input-bordered w-full" />
           </div>
 
           <div class="form-control">
             <label class="label" for="subject">
-              <span class="label-text">{{ i18n "contact_subject" }} <span aria-label="required">*</span></span>
+              <span class="label-text text-base-content/80">{{ i18n "contact_subject" }} <span aria-label="required">*</span></span>
             </label>
             <select name="subject" id="subject" required aria-required="true" class="select select-bordered w-full">
               <option value="">{{ i18n "contact_placeholder_subject" }}</option>
@@ -51,7 +51,7 @@
 
           <div class="form-control">
             <label class="label" for="message">
-              <span class="label-text">{{ i18n "contact_message" }} <span aria-label="required">*</span></span>
+              <span class="label-text text-base-content/80">{{ i18n "contact_message" }} <span aria-label="required">*</span></span>
             </label>
             <textarea name="message" id="message" placeholder="{{ i18n "contact_placeholder_message" }}" rows="6" required aria-required="true" class="textarea textarea-bordered w-full"></textarea>
           </div>
@@ -77,7 +77,7 @@
       <div class="space-y-4">
         {{ range $faq }}
         <div class="collapse collapse-plus bg-base-200 rounded-xl">
-          <input type="checkbox" />
+          <input type="checkbox" aria-hidden="true" tabindex="-1" />
           <div class="collapse-title text-lg font-semibold">{{ .question }}</div>
           <div class="collapse-content"><p class="text-base-content/80">{{ .answer }}</p></div>
         </div>
