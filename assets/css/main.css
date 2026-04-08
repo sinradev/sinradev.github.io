@@ -18,6 +18,22 @@
   }
 }
 
+/* Navbar - transparent by default, opaque on scroll */
+header.navbar {
+  background: transparent !important;
+  box-shadow: none;
+}
+
+header.navbar.scrolled {
+  background-color: var(--color-base-100) !important;
+  box-shadow: 0 1px 3px oklch(0% 0 0 / .3);
+}
+
+/* Offset page content for fixed navbar (not on homepage, hero goes under navbar) */
+main > *:first-child:not(.hero) {
+  margin-top: 4rem;
+}
+
 @layer components {
   /* Hero atmospheric gradients */
   .hero {
@@ -66,11 +82,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: perspective(800px) rotateY(-20deg);
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 20px 30px oklch(0% 0 0 / .5));
   }
 
   @media (min-width: 768px) {
     .index-section:nth-child(even) .image {
       order: -1;
+      transform: perspective(800px) rotateY(20deg);
     }
   }
 

@@ -1,6 +1,6 @@
 {{ $lang := .Language.Lang }}
 {{ $strings := index hugo.Data $lang "strings" }}
-<section class="hero py-20 bg-base-100">
+<section class="hero pt-40 pb-20">
   <div class="container mx-auto px-6 max-w-6xl">
     <div class="text-center">
       <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">{{ $strings.hero.title | safeHTML }}</h1>

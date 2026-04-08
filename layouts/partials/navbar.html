@@ -1,7 +1,7 @@
-<header class="navbar bg-base-100 shadow-sm">
+<header class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300">
   <div class="navbar-start">
-    {{/* Mobile Menu Dropdown */}}
-    <div class="dropdown" id="nav-dropdown">
+    {{/* Mobile Menu Dropdown - visible only on small screens */}}
+    <div class="dropdown lg:hidden" id="nav-dropdown">
       <button tabindex="0" role="button" class="btn btn-ghost navbar-toggle" aria-label="{{ i18n "nav_toggle_menu" | default "Toggle navigation menu" }}">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path>
@@ -22,12 +22,12 @@
 
     {{/* Logo/Brand */}}
     <a href="{{ relLangURL "/" }}" class="btn btn-ghost text-xl navbar-logo">
-      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" width="40" height="40" />
+      <img src="/assets/images/sinra-logo.svg" alt="Sinra Logo" class="brightness-0 invert" width="40" height="40" />
       <span>Sinra</span>
     </a>
   </div>
 
-  <div class="navbar-center hidden md:flex">
+  <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
       {{ range site.Menus.main }}
       <li>

@@ -8,13 +8,10 @@
       <p class="text-base-content/70 max-w-2xl mx-auto">{{ i18n "trusted_by_description" }}</p>
     </div>
 
-    <div class="flex flex-wrap justify-center items-center gap-8 mb-12">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
       {{ range $clients }}
-      <div class="client-logo-wrapper">
-        <picture>
-          <source srcset="{{ .logo | replaceRE `\.(png|jpg|svg)$` `.webp` }}" type="image/webp" />
-          <img src="{{ .logo }}" alt="{{ .name }}" class="h-12 opacity-60 hover:opacity-100 transition-opacity" loading="lazy" width="80" height="48" />
-        </picture>
+      <div class="flex items-center justify-center bg-base-300/50 rounded-xl p-8 hover:bg-base-300 transition-colors">
+        <img src="{{ .logo }}" alt="{{ .name }}" class="h-8 opacity-70 hover:opacity-100 transition-opacity" loading="lazy" />
       </div>
       {{ end }}
     </div>
