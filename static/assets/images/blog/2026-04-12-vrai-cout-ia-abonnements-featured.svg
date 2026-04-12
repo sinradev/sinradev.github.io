@@ -1,0 +1,142 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2235"/>
+      <stop offset="100%" stop-color="#141824"/>
+    </linearGradient>
+    <linearGradient id="lossBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b9d"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="paidBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a6f079"/>
+      <stop offset="100%" stop-color="#6ecf00"/>
+    </linearGradient>
+    <linearGradient id="futureBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c792e9"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- Watermark: big loss figure -->
+  <text x="600" y="340" font-size="320" fill="#ff6b9d" text-anchor="middle" opacity="0.025" font-family="Georgia, serif" font-weight="900">-5B</text>
+
+  <!-- ═══ LEFT PANEL : AUJOURD'HUI ═══ -->
+  <text x="300" y="58" font-size="12" fill="#a6f079" text-anchor="middle" font-weight="700" letter-spacing="3">AUJOURD&apos;HUI</text>
+  <line x1="55" y1="66" x2="545" y2="66" stroke="#a6f07940" stroke-width="1"/>
+
+  <!-- Paid vs real cost comparison — horizontal bar chart -->
+  <!-- ChatGPT Plus -->
+  <text x="55" y="98" font-size="12" fill="#8b9cbf">ChatGPT Plus</text>
+  <!-- Paid bar -->
+  <rect x="55" y="104" width="100" height="18" rx="4" fill="url(#paidBar)" opacity="0.85"/>
+  <text x="162" y="118" font-size="11" fill="#a6f079" font-weight="700">20 $/mois payés</text>
+  <!-- Real cost bar -->
+  <rect x="55" y="126" width="225" height="18" rx="4" fill="url(#lossBar)" opacity="0.7"/>
+  <text x="288" y="140" font-size="11" fill="#ff6b9d" font-weight="700">~45 $ de coût réel</text>
+
+  <!-- GitHub Copilot -->
+  <text x="55" y="168" font-size="12" fill="#8b9cbf">GitHub Copilot (WSJ, oct. 2023)</text>
+  <rect x="55" y="174" width="50" height="18" rx="4" fill="url(#paidBar)" opacity="0.85"/>
+  <text x="112" y="188" font-size="11" fill="#a6f079" font-weight="700">10 $</text>
+  <rect x="55" y="196" width="300" height="18" rx="4" fill="url(#lossBar)" opacity="0.7"/>
+  <text x="363" y="210" font-size="11" fill="#ff6b9d" font-weight="700">jusqu&apos;à 80 $ coût réel</text>
+
+  <!-- ChatGPT Pro -->
+  <text x="55" y="238" font-size="12" fill="#8b9cbf">ChatGPT Pro (Altman, jan. 2025)</text>
+  <rect x="55" y="244" width="200" height="18" rx="4" fill="url(#paidBar)" opacity="0.85"/>
+  <text x="262" y="258" font-size="11" fill="#a6f079" font-weight="700">200 $</text>
+  <rect x="55" y="266" width="490" height="18" rx="4" fill="url(#lossBar)" opacity="0.7"/>
+  <text x="55" y="300" font-size="11" fill="#ff6b9d" font-weight="600">« we are currently losing money » - Sam Altman</text>
+
+  <!-- OpenAI 2024 loss pill -->
+  <rect x="55" y="318" width="490" height="48" rx="8" fill="#ff6b9d10" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="75" y="338" font-size="12" fill="#8b9cbf">OpenAI 2024 (CNBC / NYT, sept. 2024)</text>
+  <text x="75" y="357" font-size="17" fill="#ff6b9d" font-weight="900">-5 Md$ de pertes · 3,7 Md$ de revenus</text>
+
+  <!-- Anthropic pill -->
+  <rect x="55" y="376" width="490" height="36" rx="8" fill="#c792e910" stroke="#c792e940" stroke-width="1"/>
+  <text x="75" y="392" font-size="12" fill="#8b9cbf">Anthropic 2024 (The Information)</text>
+  <text x="75" y="407" font-size="14" fill="#c792e9" font-weight="700">-5,3 Md$ de pertes</text>
+
+  <!-- Divider vertical -->
+  <line x1="610" y1="46" x2="610" y2="462" stroke="#2d3050" stroke-width="2"/>
+
+  <!-- ═══ RIGHT PANEL : DEMAIN ═══ -->
+  <text x="900" y="58" font-size="12" fill="#c792e9" text-anchor="middle" font-weight="700" letter-spacing="3">CE QUI VA CHANGER</text>
+  <line x1="630" y1="66" x2="1145" y2="66" stroke="#c792e940" stroke-width="1"/>
+
+  <!-- Price hike forecast -->
+  <rect x="630" y="78" width="505" height="62" rx="8" fill="#c792e912" stroke="#c792e940" stroke-width="1"/>
+  <text x="650" y="99" font-size="12" fill="#8b9cbf">ChatGPT Plus (NYT internal docs, sept. 2024)</text>
+  <text x="650" y="120" font-size="13" fill="#8b9cbf">20 $/mois</text>
+  <!-- Arrow -->
+  <text x="730" y="122" font-size="16" fill="#c792e9" font-weight="700">→</text>
+  <text x="760" y="120" font-size="18" fill="#c792e9" font-weight="900">22 $ fin 2025</text>
+  <text x="890" y="122" font-size="16" fill="#c792e9" font-weight="700">→</text>
+  <text x="912" y="120" font-size="18" fill="#c792e9" font-weight="900">44 $ en 2029</text>
+  <text x="650" y="135" font-size="11" fill="#8b9cbf" opacity="0.7">Deutsche Bank : 143 Md$ de pertes cumulées projetées</text>
+
+  <!-- Scenario 1: Enterprise pullback -->
+  <rect x="630" y="154" width="240" height="76" rx="8" fill="#ff6b9d0d" stroke="#ff6b9d30" stroke-width="1"/>
+  <text x="650" y="174" font-size="12" fill="#ff6b9d" font-weight="700">Retrait des entreprises</text>
+  <text x="650" y="192" font-size="11" fill="#8b9cbf">Les usages IA intégrés</text>
+  <text x="650" y="207" font-size="11" fill="#8b9cbf">sans ROI réel disparaissent</text>
+  <text x="650" y="222" font-size="11" fill="#8b9cbf">en premier</text>
+
+  <!-- Scenario 2: Open source -->
+  <rect x="882" y="154" width="253" height="76" rx="8" fill="#a6f07908" stroke="#a6f07930" stroke-width="1"/>
+  <text x="902" y="174" font-size="12" fill="#a6f079" font-weight="700">Open source en force</text>
+  <text x="902" y="192" font-size="11" fill="#8b9cbf">LLaMA, Mistral, DeepSeek :</text>
+  <text x="902" y="207" font-size="11" fill="#8b9cbf">l&apos;hébergement local</text>
+  <text x="902" y="222" font-size="11" fill="#8b9cbf">devient stratégique</text>
+
+  <!-- Scenario 3: Developer comeback -->
+  <rect x="630" y="244" width="240" height="76" rx="8" fill="#c792e90d" stroke="#c792e930" stroke-width="1"/>
+  <text x="650" y="264" font-size="12" fill="#c792e9" font-weight="700">Retour des développeurs ?</text>
+  <text x="650" y="282" font-size="11" fill="#8b9cbf">Si Copilot triple de prix,</text>
+  <text x="650" y="297" font-size="11" fill="#8b9cbf">certains postes gelés</text>
+  <text x="650" y="312" font-size="11" fill="#8b9cbf">seront reconsidérés</text>
+
+  <!-- Scenario 4: Two-speed market -->
+  <rect x="882" y="244" width="253" height="76" rx="8" fill="#8b9cbf0d" stroke="#8b9cbf30" stroke-width="1"/>
+  <text x="902" y="264" font-size="12" fill="#8b9cbf" font-weight="700">Marché à deux vitesses</text>
+  <text x="902" y="282" font-size="11" fill="#8b9cbf">Grandes entreprises</text>
+  <text x="902" y="297" font-size="11" fill="#8b9cbf">vs acteurs modestes,</text>
+  <text x="902" y="312" font-size="11" fill="#8b9cbf">sans levier de négo</text>
+
+  <!-- Hype cycle note -->
+  <rect x="630" y="334" width="505" height="44" rx="8" fill="#2d305060"/>
+  <text x="650" y="352" font-size="11" fill="#8b9cbf">Fin probable des abonnements « illimités » : passage à la facturation à l&apos;usage,</text>
+  <text x="650" y="370" font-size="11" fill="#8b9cbf">rendant visible le coût réel de chaque requête pour la première fois.</text>
+
+  <!-- Bottom title band -->
+  <rect x="0" y="480" width="1200" height="150" fill="#0d1018" opacity="0.6"/>
+  <text x="60" y="536" font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-1">Le vrai coût de l&apos;IA : qui paie la différence ?</text>
+  <text x="60" y="572" font-size="14" fill="#8b9cbf" letter-spacing="1">PERTES STRUCTURELLES · HAUSSES À VENIR · RÉÉQUILIBRAGE DU MARCHÉ</text>
+  <text x="1140" y="610" font-size="12" fill="#c792e9" text-anchor="end" opacity="0.6">sinra.app</text>
+</svg>
