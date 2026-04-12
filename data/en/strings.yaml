@@ -100,6 +100,23 @@ hero:
   body: The only project management tool built for teams combining V-Model and Agile. <strong>Complete visibility.</strong> Unified platform. Controlled quality. No more firefighting.
   button: Try for free
   alt_image: Sinra Overview
+vision:
+  tag: "Our philosophy"
+  title: "Project management that guides you, not the other way around"
+  body: "Sinra is an opinionated tool: it structures your workflow for you. No need to know Agile, V-Model, or Scrum. You simply follow Sinra's concepts: issues, capabilities, releases, and cycles. Names that mean exactly what they say. From the first login, every role in your team knows where to go and what to do."
+  personas:
+    - slug: "cto"
+      role: "CTO"
+      description: "Complete visibility on releases, capacity, and team performance. Decisions grounded in real data, not guesswork."
+    - slug: "pm"
+      role: "PM / PO"
+      description: "Plan, prioritize, and track delivery with clarity. Sinra's structure keeps every stakeholder aligned without extra overhead."
+    - slug: "developer"
+      role: "Developer"
+      description: "Know what to build, why it matters, and when to ship. Issues linked to specs, zero ambiguity, full focus on code."
+    - slug: "qa"
+      role: "QA"
+      description: "Testing built into the workflow from day one. Assign, track, and close test cases directly tied to releases."
 why_sinra_title: Why Teams Choose Sinra
 why_sinra_description: Modern teams need balance between structured planning and execution flexibility. Sinra unites these two worlds in a single platform.
 why_sinra_stats:

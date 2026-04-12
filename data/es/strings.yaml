@@ -98,6 +98,23 @@ hero:
   body: La única herramienta de gestión de proyectos construida para equipos que combinan V-Model y Agile. <strong>Visibilidad completa.</strong> Plataforma unificada. Calidad controlada. No más apagar incendios.
   button: Probar gratis
   alt_image: Vista General de Sinra
+vision:
+  tag: "Nuestra filosofía"
+  title: "Una herramienta que le guía, no al revés"
+  body: "Sinra es una herramienta opinionated: estructura el proyecto por usted. No necesita dominar V-Model, Agile ni Scrum. Simplemente sigue los conceptos de Sinra: issues, capabilities, releases y cycles. Nombres que significan exactamente lo que dicen. Desde el primer inicio de sesión, cada rol de su equipo sabe dónde ir y qué hacer."
+  personas:
+    - slug: "cto"
+      role: "CTO"
+      description: "Visibilidad total sobre releases, capacidad y rendimiento del equipo. Decisiones estratégicas basadas en datos reales, no en conjeturas."
+    - slug: "pm"
+      role: "PM / PO"
+      description: "Planifique, priorice y realice seguimiento de la entrega con claridad. La estructura de Sinra mantiene a todas las partes interesadas alineadas sin esfuerzo adicional."
+    - slug: "developer"
+      role: "Desarrollador"
+      description: "Sepa qué construir, por qué importa y cuándo entregar. Issues vinculados a especificaciones, sin ambiguedad, concentración total en el código."
+    - slug: "qa"
+      role: "QA"
+      description: "Pruebas integradas en el flujo de trabajo desde el primer día. Asigne, rastree y cierre casos de prueba directamente vinculados a releases."
 why_sinra_title: Por Qué los Equipos Eligen Sinra
 why_sinra_description: Los equipos modernos necesitan equilibrio entre planificación estructurada y flexibilidad de ejecución. Sinra une estos dos mundos en una sola plataforma.
 why_sinra_stats:
