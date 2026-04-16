@@ -5,7 +5,7 @@ subtitle: "A critique of the absurdity in tech hiring: would we really ask that 
 description: "Tech job listings demand mastery of 8 to 10 programming languages. Would we accept that in medicine, linguistics, or law? An analysis of the absurd hiring criteria in tech."
 date: 2026-04-16 10:00:00 +0100
 categories: ["Work Culture"]
-excerpt: "A job posting for a developer requires: PHP, Python, JavaScript, Java, C++, Go, Rust, SQL, HTML/CSS, and of course "a few years of experience with Kubernetes." We don't ask that in medicine. Why is it normal in tech?"
+excerpt: "A job posting for a developer requires: PHP, Python, JavaScript, Java, C++, Go, Rust, SQL, HTML/CSS, and of course \"a few years of experience with Kubernetes.\" We don't ask that in medicine. Why is it normal in tech?"
 featured_image: /assets/images/blog/2026-04-16-demandes-absurdes-featured.png
 ---
 

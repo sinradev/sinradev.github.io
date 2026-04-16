@@ -5,7 +5,7 @@ subtitle: "Una crítica de lo absurdo de los criterios de contratación en tech:
 description: "Las ofertas de empleo en tech exigen dominio de 8 a 10 lenguajes de programación. ¿Lo aceptaríamos en medicina, lingüística o derecho? Un análisis de lo absurdo en los criterios de contratación tecnológica."
 date: 2026-04-16 10:00:00 +0100
 categories: ["Work Culture"]
-excerpt: "Un anuncio de empleo para un desarrollador requiere: PHP, Python, JavaScript, Java, C++, Go, Rust, SQL, HTML/CSS, y por supuesto "varios años de experiencia con Kubernetes". No pedimos esto en medicina. ¿Por qué es normal en tech?"
+excerpt: "Un anuncio de empleo para un desarrollador requiere: PHP, Python, JavaScript, Java, C++, Go, Rust, SQL, HTML/CSS, y por supuesto \"varios años de experiencia con Kubernetes\". No pedimos esto en medicina. ¿Por qué es normal en tech?"
 featured_image: /assets/images/blog/2026-04-16-demandes-absurdes-featured.png
 ---
 
