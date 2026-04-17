@@ -43,7 +43,8 @@
       "Bash(gh pr create:*)",
       "WebFetch(domain:github.com)",
       "Bash(python3:*)",
-      "Bash(pip3 install:*)"
+      "Bash(pip3 install:*)",
+      "WebFetch(domain:api.github.com)"
     ],
     "deny": [],
     "ask": [],

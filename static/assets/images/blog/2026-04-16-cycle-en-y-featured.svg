@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/>
+      <stop offset="60%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="22%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#6ecf00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6ecf00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="80%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#c792e9" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#c792e9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- Y shape: trunk from bottom, fork up-left and up-right -->
+  <!-- Trunk -->
+  <line x1="215" y1="470" x2="215" y2="290" stroke="#6ecf00" stroke-width="3" stroke-opacity="0.8"/>
+  <!-- Left branch (functional) -->
+  <line x1="215" y1="290" x2="80" y2="130" stroke="#a6f079" stroke-width="2.5" stroke-opacity="0.8"/>
+  <!-- Right branch (architecture) -->
+  <line x1="215" y1="290" x2="360" y2="130" stroke="#c792e9" stroke-width="2.5" stroke-opacity="0.8"/>
+
+  <!-- Fork node -->
+  <circle cx="215" cy="290" r="10" fill="#6ecf00" fill-opacity="0.5" filter="url(#glow)"/>
+  <circle cx="215" cy="290" r="5" fill="#6ecf00" filter="url(#glow)"/>
+
+  <!-- Branch endpoints -->
+  <circle cx="80" cy="130" r="8" fill="#a6f079" fill-opacity="0.3" filter="url(#glow)"/>
+  <circle cx="80" cy="130" r="4" fill="#a6f079" filter="url(#glow)"/>
+  <circle cx="360" cy="130" r="8" fill="#c792e9" fill-opacity="0.3" filter="url(#glow)"/>
+  <circle cx="360" cy="130" r="4" fill="#c792e9" filter="url(#glow)"/>
+
+  <!-- Trunk base -->
+  <circle cx="215" cy="470" r="8" fill="#6ecf00" fill-opacity="0.2"/>
+  <circle cx="215" cy="470" r="4" fill="#6ecf00" fill-opacity="0.5"/>
+
+  <!-- Labels -->
+  <text x="55" y="108" text-anchor="middle" font-size="11" fill="#a6f079" font-weight="700">Fonctionnel</text>
+  <text x="385" y="108" text-anchor="middle" font-size="11" fill="#c792e9" font-weight="700">Architecture</text>
+  <text x="215" y="500" text-anchor="middle" font-size="11" fill="#6ecf00" font-weight="600" opacity="0.8">Besoins communs</text>
+
+  <!-- Convergence arrow at bottom -->
+  <text x="215" y="540" text-anchor="middle" font-size="10" fill="#8b9cbf" opacity="0.6">Intégration finale</text>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">MÉTHODE CLASSIQUE · PARALLÈLE</text>
+  <text x="500" y="262" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-3">Cycle</text>
+  <text x="500" y="352" font-size="72" font-weight="800" letter-spacing="-3">
+    <tspan fill="#6ecf00">en Y</tspan>
+  </text>
+  <text x="500" y="406" font-size="16" fill="#475569">Fonctionnel et architecture en branches parallèles</text>
+  <line x1="500" y1="432" x2="850" y2="432" stroke="#1e293b" stroke-width="1"/>
+  <g>
+    <rect x="500" y="450" width="96" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="548" y="469" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">Fonctionnel</text>
+  </g>
+  <g>
+    <rect x="608" y="450" width="96" height="28" rx="14" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="656" y="469" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">Architecture</text>
+  </g>
+  <g>
+    <rect x="716" y="450" width="90" height="28" rx="14" fill="#6ecf00" fill-opacity="0.08" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="761" y="469" text-anchor="middle" font-size="10" fill="#6ecf00" font-weight="600" letter-spacing="0.5">Parallèle</text>
+  </g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>
