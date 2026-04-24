@@ -1,5 +1,4 @@
 ---
-
 title: "Los desarrolladores se han convertido en candidatos de The Voice: por qué el reclutamiento tech ha perdido la cabeza"
 categories: ["Reclutamiento Cultura"]
 featured_image: /assets/images/blog/2026-03-23-developers-the-voice-featured.png

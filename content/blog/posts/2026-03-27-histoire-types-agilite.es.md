@@ -1,5 +1,4 @@
 ---
-
 title: "Historia y Tipos de Agilidad: Cómo Trabajar Realmente Mejor"
 subtitle: "Del Manifiesto Ágil de 2001 a los frameworks modernos: Scrum, Kanban, Shape Up, XP, Lean y más allá"
 description: "Descubre la historia de la agilidad, sus 4 principios fundamentales, y los diferentes tipos de agilidad (Scrum, Kanban, Shape Up, XP, Lean) con explicaciones claras, ejemplos concretos, y una comparación detallada para elegir el enfoque correcto."

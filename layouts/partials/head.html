@@ -16,7 +16,7 @@
 <meta name="description" content="{{ $desc }}" />
 
 {{/* Robots */}}
-<meta name="robots" content="index, follow" />
+<meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow{{ end }}" />
 
 {{/* Hreflang — all language versions + x-default pointing to EN root */}}
 {{ range .AllTranslations }}
@@ -27,7 +27,7 @@
 {{/* Open Graph */}}
 {{ $ogTitle := (.Params.ogTitle | default .Title | default site.Title) }}
 {{ $ogDesc  := (.Params.ogDescription | default $desc) }}
-{{ $ogImage := (absURL (.Params.featured_image | default (absURL site.Params.ogImage))) }}
+{{ $ogImage := (absURL (.Params.featured_image | default site.Params.ogImage)) }}
 {{ $ogType  := (cond (.IsPage) "article" "website") }}
 <meta property="og:type"        content="{{ $ogType }}" />
 <meta property="og:title"       content="{{ $ogTitle }}" />

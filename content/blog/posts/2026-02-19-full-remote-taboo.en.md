@@ -1,5 +1,6 @@
 ---
-
+aliases:
+  - /work/culture/remote/2026/02/19/full-remote-taboo.en.html
 title: "Why Full Remote Became Taboo? From COVID Revolution to Mandatory Office Returns"
 categories: ["Work Culture"]
 featured_image: /assets/images/blog/2026-02-19-full-remote-tabou-featured.png

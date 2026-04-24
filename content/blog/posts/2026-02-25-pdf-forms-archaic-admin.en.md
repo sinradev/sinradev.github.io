@@ -1,5 +1,6 @@
 ---
-
+aliases:
+  - /outils/2026/02/25/pdf-forms-archaic-admin.en.html
 title: "Why in 2026 are we still printing PDFs, filling them by hand, and scanning them back?"
 categories: ["Outils"]
 featured_image: /assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png

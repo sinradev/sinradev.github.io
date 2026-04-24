@@ -1,5 +1,6 @@
 ---
-
+aliases:
+  - /work/culture/recruitment/2026/02/19/recruitment-paradox-france.en.html
 title: "The French Recruitment Paradox: 4 Interviews, 1 Test, Zero Trust"
 categories: ["Work Culture"]
 featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png

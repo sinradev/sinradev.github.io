@@ -1,5 +1,6 @@
 ---
-
+aliases:
+  - "/recruitment culture/2026/03/23/developers-voice-recruitment.en.html"
 title: "Developers Have Become The Voice Contestants: Why Tech Recruiting Has Lost Its Mind"
 categories: ["Recruitment Culture"]
 featured_image: /assets/images/blog/2026-03-23-developers-the-voice-featured.png

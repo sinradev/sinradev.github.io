@@ -1,5 +1,6 @@
 ---
-
+aliases:
+  - "/development productivity/2026/02/26/ai-speed-mastery-loss.en.html"
 title: "AI in Development: The Speed Gain That Hides a Loss of Mastery"
 date: 2026-02-26T00:00:00+00:00
 categories: ["Development Productivity"]

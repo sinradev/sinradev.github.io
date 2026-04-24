@@ -1,5 +1,4 @@
 ---
-
 title: "De l'artisan au simple exécutant : comment le développeur a perdu son statut"
 subtitle: "Le déclin du statut du développeur et pourquoi le remplacement par l'IA est inévitable"
 description: "Comment l'industrie tech a transformé les développeurs d'artisans en exécutants interchangeables, et pourquoi l'IA est la conséquence logique de cette dévalorisation."

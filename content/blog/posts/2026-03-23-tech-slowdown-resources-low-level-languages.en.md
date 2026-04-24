@@ -1,5 +1,6 @@
 ---
-
+aliases:
+  - "/technology future/2026/03/23/tech-slowdown-resources-low-level-languages.en.html"
 title: "Tech Will Have to Slow Down: Depleted Resources, Bloated Software, and the Return of Low-Level Languages"
 categories: ["Technology Future"]
 featured_image: /assets/images/blog/2026-03-23-tech-slowdown-resources-featured.png

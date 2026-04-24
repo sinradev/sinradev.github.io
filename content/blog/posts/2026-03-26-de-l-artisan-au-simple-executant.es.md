@@ -1,5 +1,4 @@
 ---
-
 title: "Del artesano al simple ejecutor: cómo el desarrollador perdió su estatus"
 subtitle: "El declive del estatus del desarrollador y por qué el reemplazo por IA es inevitable"
 description: "Cómo la industria tech transformó a los desarrolladores de artesanos a ejecutores intercambiables, y por qué la IA es la consecuencia lógica de esta devaluación."
