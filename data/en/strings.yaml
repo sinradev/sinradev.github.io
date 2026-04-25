@@ -117,6 +117,20 @@ vision:
     - slug: "qa"
       role: "QA"
       description: "Testing built into the workflow from day one. Assign, track, and close test cases directly tied to releases."
+sovereignty:
+  tag: "Trust & Sovereignty"
+  title: "Built in France, compliant by design"
+  body: "Sinra is a French product, hosted on European servers in France. Data sovereignty and GDPR compliance are foundations, not afterthoughts."
+  badges:
+    - slug: "gdpr"
+      title: "GDPR Compliant"
+      description: "Sinra fully complies with the General Data Protection Regulation. Your data belongs to you, processed transparently under EU law."
+    - slug: "france"
+      title: "Hosted in France"
+      description: "All data is stored on European servers located in France. No transatlantic data transfer, ever."
+    - slug: "sovereign"
+      title: "Sovereign Software"
+      description: "Designed and developed in France. No dependency on non-European cloud hyperscalers. Your data stays in the EU."
 why_sinra_title: Why Teams Choose Sinra
 why_sinra_description: Modern teams need balance between structured planning and execution flexibility. Sinra unites these two worlds in a single platform.
 why_sinra_stats:

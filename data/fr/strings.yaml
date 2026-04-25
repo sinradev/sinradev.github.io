@@ -58,6 +58,20 @@ vision:
     - slug: "qa"
       role: "QA"
       description: "Les tests intégrés dans le flux de travail dès le premier jour. Assignez, suivez et clôturez les cas de test directement liés aux releases."
+sovereignty:
+  tag: "Confiance & Souveraineté"
+  title: "Conçu en France, conforme par défaut"
+  body: "Sinra est un produit français, hébergé sur des serveurs européens en France. La souveraineté des données et la conformité RGPD sont des fondements, pas des options."
+  badges:
+    - slug: "gdpr"
+      title: "Conforme RGPD"
+      description: "Sinra est entièrement conforme au Règlement Général sur la Protection des Données. Vos données vous appartiennent, traitées de façon transparente selon le droit européen."
+    - slug: "france"
+      title: "Hébergé en France"
+      description: "Toutes les données sont stockées sur des serveurs européens situés en France. Aucun transfert transatlantique, jamais."
+    - slug: "sovereign"
+      title: "Logiciel Souverain"
+      description: "Conçu et développé en France. Aucune dépendance à des hyperscalers cloud non-européens. Vos données restent dans l'UE."
 why_sinra_title: Pourquoi les Équipes Choisissent Sinra
 why_sinra_description: Les équipes modernes ont besoin d'équilibre entre planification structurée et flexibilité d'exécution. Sinra unifie ces deux mondes en une seule plateforme.
 why_sinra_stats:

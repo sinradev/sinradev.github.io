@@ -115,6 +115,20 @@ vision:
     - slug: "qa"
       role: "QA"
       description: "Pruebas integradas en el flujo de trabajo desde el primer día. Asigne, rastree y cierre casos de prueba directamente vinculados a releases."
+sovereignty:
+  tag: "Confianza y Soberanía"
+  title: "Desarrollado en Francia, conforme por diseño"
+  body: "Sinra es un producto francés, alojado en servidores europeos en Francia. La soberanía de datos y el cumplimiento del RGPD son fundamentos, no complementos."
+  badges:
+    - slug: "gdpr"
+      title: "Conforme al RGPD"
+      description: "Sinra cumple plenamente con el Reglamento General de Protección de Datos. Sus datos le pertenecen, procesados de forma transparente bajo la ley europea."
+    - slug: "france"
+      title: "Alojado en Francia"
+      description: "Todos los datos se almacenan en servidores europeos ubicados en Francia. Sin transferencias transatlánticas, nunca."
+    - slug: "sovereign"
+      title: "Software Soberano"
+      description: "Diseñado y desarrollado en Francia. Sin dependencia de hiperescaladores cloud no europeos. Sus datos permanecen en la UE."
 why_sinra_title: Por Qué los Equipos Eligen Sinra
 why_sinra_description: Los equipos modernos necesitan equilibrio entre planificación estructurada y flexibilidad de ejecución. Sinra une estos dos mundos en una sola plataforma.
 why_sinra_stats:
