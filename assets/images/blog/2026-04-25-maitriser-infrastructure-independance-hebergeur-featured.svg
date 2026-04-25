@@ -1,124 +1,90 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
     </linearGradient>
-
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#a6f079;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6ecf00;stop-opacity:1" />
-    </linearGradient>
-
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
 
-  <!-- Subtle grid pattern -->
+  <!-- Grid texture (4% opacity) -->
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.5" opacity="0.04"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.4" opacity="0.04"/>
     </pattern>
   </defs>
   <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- Top accent bar -->
-  <rect y="0" width="1200" height="4" fill="url(#accentGradient)"/>
+  <!-- Decorative ambient circles -->
+  <circle cx="150" cy="160" r="120" fill="#a6f079" opacity="0.05"/>
+  <circle cx="1050" cy="470" r="160" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="600" cy="80"  r="80"  fill="#c792e9" opacity="0.04"/>
 
-  <!-- Left: Multiple hosting providers -->
-  <g id="providers">
-    <!-- AWS -->
-    <rect x="50" y="100" width="130" height="100" rx="8" fill="#232f3e" stroke="#a6f079" stroke-width="2"/>
-    <text x="115" y="145" font-size="18" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">AWS</text>
-    <text x="115" y="165" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">CloudFormation</text>
+  <!-- Lock icon (proprietary) - left side -->
+  <rect x="90" y="160" width="100" height="80" rx="10" fill="none" stroke="#ff6b9d" stroke-width="3" opacity="0.6"/>
+  <path d="M 115 160 Q 115 120 140 120 Q 165 120 165 160" fill="none" stroke="#ff6b9d" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="140" cy="198" r="10" fill="#ff6b9d" opacity="0.6"/>
+  <line x1="140" y1="198" x2="140" y2="218" stroke="#ff6b9d" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <text x="140" y="268" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ff6b9d" opacity="0.6">Lock-in</text>
 
-    <!-- Azure -->
-    <rect x="50" y="230" width="130" height="100" rx="8" fill="#0078d4" stroke="#c792e9" stroke-width="2" opacity="0.3"/>
-    <text x="115" y="275" font-size="18" fill="#c792e9" text-anchor="middle" font-family="Arial, sans-serif">Azure</text>
-    <text x="115" y="295" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">Proprietary</text>
+  <!-- Arrow (crossed) from lock to center -->
+  <line x1="220" y1="200" x2="380" y2="200" stroke="#ff6b9d" stroke-width="2" stroke-dasharray="6,4" opacity="0.35"/>
+  <line x1="360" y1="185" x2="380" y2="200" stroke="#ff6b9d" stroke-width="2" opacity="0.35"/>
+  <line x1="360" y1="215" x2="380" y2="200" stroke="#ff6b9d" stroke-width="2" opacity="0.35"/>
+  <!-- X mark (NO) -->
+  <line x1="285" y1="188" x2="305" y2="208" stroke="#ff6b9d" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="305" y1="188" x2="285" y2="208" stroke="#ff6b9d" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
 
-    <!-- GCP -->
-    <rect x="50" y="360" width="130" height="100" rx="8" fill="#4285f4" stroke="#ff6b9d" stroke-width="2" opacity="0.3"/>
-    <text x="115" y="405" font-size="18" fill="#ff6b9d" text-anchor="middle" font-family="Arial, sans-serif">Google Cloud</text>
-    <text x="115" y="425" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">Lock-in</text>
-  </g>
+  <!-- Docker box center-left -->
+  <rect x="400" y="150" width="130" height="100" rx="8" fill="none" stroke="#2496ed" stroke-width="2" opacity="0.8"/>
+  <text x="465" y="195" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#2496ed" opacity="0.9">Docker</text>
+  <text x="465" y="222" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf" opacity="0.8">Conteneurs portables</text>
 
-  <!-- Center: Docker/Kamal abstraction layer -->
-  <g id="abstraction">
-    <!-- Docker icon -->
-    <circle cx="600" cy="150" r="50" fill="none" stroke="#2496ed" stroke-width="3"/>
-    <text x="600" y="160" font-size="24" fill="#2496ed" text-anchor="middle" font-family="Arial, sans-serif">🐳</text>
-    <text x="600" y="220" font-size="16" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">Docker</text>
+  <!-- Kamal box center -->
+  <rect x="570" y="130" width="150" height="130" rx="8" fill="#1e2235" stroke="#a6f079" stroke-width="2.5"/>
+  <text x="645" y="185" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#a6f079">Kamal</text>
+  <text x="645" y="212" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf">Deploy partout</text>
+  <text x="645" y="230" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf">Simple SSH</text>
 
-    <!-- Kamal box -->
-    <rect x="500" y="280" width="200" height="80" rx="8" fill="none" stroke="url(#accentGradient)" stroke-width="2" filter="url(#glow)"/>
-    <text x="600" y="320" font-size="18" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">Kamal</text>
-    <text x="600" y="345" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">Portable Deployment</text>
+  <!-- K8s box center-right -->
+  <rect x="760" y="150" width="130" height="100" rx="8" fill="none" stroke="#326ce5" stroke-width="2" opacity="0.8"/>
+  <text x="825" y="195" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#326ce5" opacity="0.9">Kubernetes</text>
+  <text x="825" y="222" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf" opacity="0.8">Orchestration libre</text>
 
-    <!-- Kubernetes alternative -->
-    <circle cx="600" cy="450" r="35" fill="none" stroke="#326ce5" stroke-width="2"/>
-    <text x="600" y="460" font-size="18" fill="#326ce5" text-anchor="middle" font-family="Arial, sans-serif">K8s</text>
-    <text x="600" y="485" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">or Kubernetes</text>
-  </g>
+  <!-- Arrow right (green = freedom) -->
+  <line x1="910" y1="200" x2="1040" y2="200" stroke="#a6f079" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1020" y1="184" x2="1040" y2="200" stroke="#a6f079" stroke-width="2.5" opacity="0.7" stroke-linecap="round"/>
+  <line x1="1020" y1="216" x2="1040" y2="200" stroke="#a6f079" stroke-width="2.5" opacity="0.7" stroke-linecap="round"/>
 
-  <!-- Right: Freedom and flexibility -->
-  <g id="freedom">
-    <!-- Heroku (escape from) -->
-    <rect x="1020" y="100" width="130" height="100" rx="8" fill="#430098" stroke="#c792e9" stroke-width="2" opacity="0.3"/>
-    <text x="1085" y="145" font-size="16" fill="#c792e9" text-anchor="middle" font-family="Arial, sans-serif">Heroku</text>
-    <text x="1085" y="165" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">No Free Tier</text>
+  <!-- Freedom icon - right side -->
+  <circle cx="1080" cy="200" r="40" fill="none" stroke="#a6f079" stroke-width="2.5" opacity="0.7"/>
+  <text x="1080" y="196" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#a6f079" opacity="0.8">OVH, Hetzner</text>
+  <text x="1080" y="214" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#a6f079" opacity="0.8">n'importe ou</text>
 
-    <!-- Any Provider (freedom) -->
-    <rect x="1020" y="230" width="130" height="100" rx="8" fill="none" stroke="url(#accentGradient)" stroke-width="3" filter="url(#glow)"/>
-    <text x="1085" y="270" font-size="16" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">Any Provider</text>
-    <text x="1085" y="290" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">DigitalOcean, OVH</text>
-    <text x="1085" y="305" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">Hetzner, Your DC</text>
+  <!-- Provider logos (small labels) below center -->
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf" opacity="0.5">Heroku</text>
+  <text x="550" y="340" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf" opacity="0.5">AWS</text>
+  <text x="700" y="340" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf" opacity="0.5">Azure</text>
+  <text x="850" y="340" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#8b9cbf" opacity="0.5">GCP</text>
 
-    <!-- Your Infrastructure -->
-    <rect x="1020" y="360" width="130" height="100" rx="8" fill="none" stroke="#a6f079" stroke-width="3" filter="url(#glow)"/>
-    <text x="1085" y="400" font-size="16" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">Full Control</text>
-    <text x="1085" y="420" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">Resilience</text>
-    <text x="1085" y="435" font-size="12" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">Independence</text>
-  </g>
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="4" fill="#a6f079" opacity="0.9"/>
 
-  <!-- Arrows showing flow -->
-  <defs>
-    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#a6f079" />
-    </marker>
-    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#ff6b9d" opacity="0.3" />
-    </marker>
-  </defs>
+  <!-- Title band -->
+  <rect x="0" y="400" width="1200" height="230" fill="#0a0f1a" opacity="0.88"/>
+  <rect x="0" y="399" width="1200" height="2" fill="#a6f079" opacity="0.5"/>
 
-  <!-- Lock-in arrows (red, fading) -->
-  <path d="M 180 150 Q 350 150 500 150" fill="none" stroke="#ff6b9d" stroke-width="2" opacity="0.2" stroke-dasharray="5,5"/>
-  <path d="M 180 280 Q 350 280 500 300" fill="none" stroke="#ff6b9d" stroke-width="2" opacity="0.2" stroke-dasharray="5,5"/>
-  <path d="M 180 410 Q 350 410 500 450" fill="none" stroke="#ff6b9d" stroke-width="2" opacity="0.2" stroke-dasharray="5,5"/>
+  <!-- Main title -->
+  <text x="600" y="468" font-family="Arial, sans-serif" font-size="52" font-weight="bold" text-anchor="middle" fill="#a6f079">Maitrisez votre Infrastructure</text>
 
-  <!-- Freedom arrows (green, strong) -->
-  <path d="M 700 150 Q 850 150 1020 280" fill="none" stroke="#a6f079" stroke-width="3" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
-  <path d="M 700 320 Q 850 350 1020 410" fill="none" stroke="#a6f079" stroke-width="3" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+  <!-- Subtitle -->
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#c792e9">Independance et Resilience face aux Hebergeurs</text>
 
-  <!-- Title banner at bottom -->
-  <rect x="0" y="480" width="1200" height="150" fill="#141824"/>
+  <!-- Tagline -->
+  <text x="600" y="562" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#8b9cbf">Docker · Kamal · Kubernetes - changez de fournisseur en un instant</text>
 
-  <text x="600" y="535" font-size="28" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">
-    Maitriser votre Infrastructure
-  </text>
-
-  <text x="600" y="570" font-size="14" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif">
-    Evitez le lock-in : Docker + Kamal + Kubernetes
-  </text>
-
-  <!-- Branding: sinra.app -->
-  <text x="1150" y="605" font-size="11" fill="#8b9cbf" text-anchor="end" font-family="Arial, sans-serif">sinra.app</text>
+  <!-- Branding -->
+  <text x="1140" y="610" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#a6f079" opacity="0.6">sinra.app</text>
 </svg>
