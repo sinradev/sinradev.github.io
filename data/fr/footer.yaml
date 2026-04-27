@@ -5,12 +5,18 @@
   - name: Tarifs
     link: pricing/
     target: _top
+  - name: Politique de confidentialité
+    link: politique-de-confidentialite/
+    target: _top
 - links:
   - name: À propos
     link: about/
     target: _top
   - name: Contact
     link: contact/
+    target: _top
+  - name: Mentions legales
+    link: mentions-legales/
     target: _top
 - links:
   - name: Login

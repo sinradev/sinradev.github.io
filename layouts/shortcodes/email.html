@@ -1,0 +1,3 @@
+{{- $user := .Get 0 -}}
+{{- $host := .Get 1 -}}
+<span class="pml" data-u="{{ $user }}" data-h="{{ $host }}">{{ $user }}&#64;{{ $host }}</span>

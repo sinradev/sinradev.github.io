@@ -116,3 +116,9 @@ testimonial: "Témoignage"
 
 # Compare
 compare_title: "Comparer Sinra"
+
+# RGPD / Mentions legales
+contact_consent_label: "J'accepte que mes donnees soient traitees pour repondre a ma demande. Voir notre <a href=\"/fr/politique-de-confidentialite/\" class=\"link link-primary\">Politique de confidentialite</a>."
+contact_consent_required: "Veuillez accepter la politique de confidentialite pour soumettre ce formulaire."
+footer_privacy: "Politique de confidentialite"
+footer_legal: "Mentions legales"

@@ -116,3 +116,9 @@ testimonial: "Testimonial"
 
 # Compare
 compare_title: "Compare Sinra"
+
+# GDPR / Legal
+contact_consent_label: "I agree that my data will be processed to respond to my inquiry. See our <a href=\"/privacy/\" class=\"link link-primary\">Privacy Policy</a>."
+contact_consent_required: "Please accept the privacy policy to submit this form."
+footer_privacy: "Privacy Policy"
+footer_legal: "Legal Notices"
