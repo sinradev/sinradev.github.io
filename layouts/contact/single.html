@@ -58,11 +58,9 @@
 
           <input type="hidden" name="return_url" value="{{ absURL (relLangURL "contact/success/") }}" />
 
-          <div class="form-control">
-            <label class="label cursor-pointer gap-3 items-start justify-start">
-              <input type="checkbox" name="gdpr_consent" required aria-required="true" class="checkbox checkbox-primary mt-0.5 shrink-0" />
-              <span class="label-text text-base-content/80 flex-1">{{ i18n "contact_consent_label" | safeHTML }}</span>
-            </label>
+          <div class="flex gap-3 items-start">
+            <input type="checkbox" name="gdpr_consent" required aria-required="true" class="checkbox checkbox-primary mt-0.5 shrink-0" />
+            <span class="text-sm text-base-content/80">{{ i18n "contact_consent_label" | safeHTML }}</span>
           </div>
 
           <button type="submit" class="btn btn-primary w-full gap-2">

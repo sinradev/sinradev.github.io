@@ -2,7 +2,7 @@
 title: "Aviso legal"
 description: "Informacion legal sobre Sinra."
 layout: "single"
-slug: "aviso-legal"
+url: "/es/aviso-legal/"
 ---
 
 ## Editor

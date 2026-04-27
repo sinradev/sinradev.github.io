@@ -2,7 +2,7 @@
 title: "Mentions legales"
 description: "Informations legales sur Sinra."
 layout: "single"
-slug: "mentions-legales"
+url: "/fr/mentions-legales/"
 ---
 
 ## Editeur

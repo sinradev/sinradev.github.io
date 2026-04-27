@@ -2,7 +2,7 @@
 title: "Politica de privacidad"
 description: "Como Sinra recopila y trata sus datos personales."
 layout: "single"
-slug: "politica-de-privacidad"
+url: "/es/politica-de-privacidad/"
 ---
 
 *Ultima actualizacion : 27 de abril de 2026*

@@ -2,7 +2,7 @@
 title: "Politique de confidentialite"
 description: "Comment Sinra collecte et traite vos donnees personnelles."
 layout: "single"
-slug: "politique-de-confidentialite"
+url: "/fr/politique-de-confidentialite/"
 ---
 
 *Derniere mise a jour : 27 avril 2026*
