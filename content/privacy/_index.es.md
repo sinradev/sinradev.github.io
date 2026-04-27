@@ -11,7 +11,7 @@ slug: "politica-de-privacidad"
 
 El responsable del tratamiento de datos para sinra.dev es :
 
-**Sinra SAS**  
+**THEL**  
 13 Rue des Tournelles  
 75004 Paris, Francia  
 Email : {{< email "support" "sinra.dev" >}}

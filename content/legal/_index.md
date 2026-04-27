@@ -6,10 +6,10 @@ layout: "single"
 
 ## Publisher
 
-**Company Name**: Sinra SAS  
+**Company Name**: THEL  
 **Legal Form**: Societe par Actions Simplifiee (SAS)  
 **Registered Address**: 13 Rue des Tournelles, 75004 Paris, France  
-**Share Capital**: 1 000 EUR  
+**Share Capital**: 10 000 EUR  
 **RCS Registration**: RCS Paris 764 031 528  
 **Publication Director**: Thomas HUMMEL  
 **Contact**: {{< email "support" "sinra.dev" >}}
@@ -28,4 +28,4 @@ This site uses **no analytics tools, no tracking scripts, and no cookies**. No p
 
 ## Intellectual Property
 
-All content on this site (text, images, graphics, logo) is the exclusive property of Sinra SAS and is protected by French and international intellectual property law. Any reproduction without prior written consent is prohibited.
+All content on this site (text, images, graphics, logo) is the exclusive property of THEL and is protected by French and international intellectual property law. Any reproduction without prior written consent is prohibited.

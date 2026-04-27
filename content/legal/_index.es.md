@@ -7,10 +7,10 @@ slug: "aviso-legal"
 
 ## Editor
 
-**Razon social** : Sinra SAS  
+**Razon social** : THEL  
 **Forma juridica** : Societe par Actions Simplifiee (SAS)  
 **Domicilio social** : 13 Rue des Tournelles, 75004 Paris, Francia  
-**Capital social** : 1 000 EUR  
+**Capital social** : 10 000 EUR  
 **Registro mercantil** : RCS Paris 764 031 528  
 **Director de publicacion** : Thomas HUMMEL  
 **Contacto** : {{< email "support" "sinra.dev" >}}
@@ -29,4 +29,4 @@ Este sitio no utiliza **ningun sistema de analitica, ningun script de seguimient
 
 ## Propiedad intelectual
 
-Todo el contenido de este sitio (textos, imagenes, graficos, logotipo) es propiedad exclusiva de Sinra SAS y esta protegido por la legislacion francesa e internacional de propiedad intelectual. Queda prohibida cualquier reproduccion sin consentimiento previo por escrito.
+Todo el contenido de este sitio (textos, imagenes, graficos, logotipo) es propiedad exclusiva de THEL y esta protegido por la legislacion francesa e internacional de propiedad intelectual. Queda prohibida cualquier reproduccion sin consentimiento previo por escrito.

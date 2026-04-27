@@ -7,10 +7,10 @@ slug: "mentions-legales"
 
 ## Editeur
 
-**Denomination sociale** : Sinra SAS  
+**Denomination sociale** : THEL  
 **Forme juridique** : Societe par Actions Simplifiee (SAS)  
 **Siege social** : 13 Rue des Tournelles, 75004 Paris, France  
-**Capital social** : 1 000 EUR  
+**Capital social** : 10 000 EUR  
 **Numero RCS** : RCS Paris 764 031 528  
 **Directeur de la publication** : Thomas HUMMEL  
 **Contact** : {{< email "support" "sinra.dev" >}}
@@ -29,4 +29,4 @@ Ce site n'utilise **aucun outil d'analyse, aucun script de suivi et aucun cookie
 
 ## Propriete intellectuelle
 
-L'ensemble du contenu de ce site (textes, images, graphiques, logo) est la propriete exclusive de Sinra SAS et est protege par le droit francais et international de la propriete intellectuelle. Toute reproduction sans autorisation ecrite prealable est interdite.
+L'ensemble du contenu de ce site (textes, images, graphiques, logo) est la propriete exclusive de THEL et est protege par le droit francais et international de la propriete intellectuelle. Toute reproduction sans autorisation ecrite prealable est interdite.

@@ -10,7 +10,7 @@ layout: "single"
 
 The data controller for sinra.dev is:
 
-**Sinra SAS**  
+**THEL**  
 13 Rue des Tournelles  
 75004 Paris, France  
 Email: {{< email "support" "sinra.dev" >}}
