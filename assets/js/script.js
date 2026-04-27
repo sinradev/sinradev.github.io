@@ -437,6 +437,18 @@ const fixBlogDates = () => {
   });
 };
 
+// Email spam protection - decode protected mailto links
+const decodeEmails = () => {
+  document.querySelectorAll('.pml').forEach(el => {
+    const email = el.dataset.u + '@' + el.dataset.h;
+    const a = document.createElement('a');
+    a.href = 'mailto:' + email;
+    a.textContent = email;
+    a.className = 'link link-primary';
+    el.replaceWith(a);
+  });
+};
+
 // Initialize all effects when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   createScrollIndicator();
@@ -453,6 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFloatingElements();
   initPerformanceMonitoring();
   fixBlogDates();
+  decodeEmails();
 });
 
 // Handle window resize

@@ -14,6 +14,6 @@
   {{ end }}
   {{ $js := resources.Get "js/script.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "93cfe335c28c46afb48329f25fc52d54"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

@@ -58,6 +58,13 @@
 
           <input type="hidden" name="return_url" value="{{ absURL (relLangURL "contact/success/") }}" />
 
+          <div class="form-control">
+            <label class="label cursor-pointer gap-3 justify-start">
+              <input type="checkbox" name="gdpr_consent" required aria-required="true" class="checkbox checkbox-primary" />
+              <span class="label-text text-base-content/80">{{ i18n "contact_consent_label" | safeHTML }}</span>
+            </label>
+          </div>
+
           <button type="submit" class="btn btn-primary w-full gap-2">
             <span>{{ i18n "contact_send_button" }}</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">

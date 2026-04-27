@@ -116,3 +116,9 @@ testimonial: "Testimonio"
 
 # Compare
 compare_title: "Comparar Sinra"
+
+# RGPD / Aviso legal
+contact_consent_label: "Acepto que mis datos sean tratados para responder a mi consulta. Ver nuestra <a href=\"/es/politica-de-privacidad/\" class=\"link link-primary\">Politica de privacidad</a>."
+contact_consent_required: "Por favor, acepte la politica de privacidad para enviar este formulario."
+footer_privacy: "Politica de privacidad"
+footer_legal: "Aviso legal"

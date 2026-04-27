@@ -5,12 +5,18 @@
   - name: Pricing
     link: pricing/
     target: _top
+  - name: Privacy Policy
+    link: privacy/
+    target: _top
 - links:
   - name: About
     link: about/
     target: _top
   - name: Contact
     link: contact/
+    target: _top
+  - name: Legal Notices
+    link: legal/
     target: _top
 - links:
   - name: Login
