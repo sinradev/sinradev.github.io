@@ -240,7 +240,7 @@ ESTIMATED ROI:
                         FILES READY IN PROJECT
 ================================================================================
 
-Location: /Users/thomas/Apps/sinra-website/
+Location: /Users/thomas/Projects/sinra-website/
 
 Files created:
   ✓ BLOG_STRATEGY.md (27 KB)

@@ -109,7 +109,7 @@ def main():
         sys.exit(1)
 
     pattern = sys.argv[1]
-    base_dir = Path('/Users/thomas/Apps/sinra-website')
+    base_dir = Path('/Users/thomas/Projects/sinra-website')
 
     files = sorted(base_dir.glob(pattern))
 

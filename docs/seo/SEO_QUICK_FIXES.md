@@ -31,7 +31,7 @@ end
 
 Puis:
 ```bash
-cd /Users/thomas/Apps/sinra-website
+cd /Users/thomas/Projects/sinra-website
 bundle install
 bundle exec jekyll build
 ```
@@ -57,7 +57,7 @@ permalink: /
 
 ## FIX #4: Fixer la description de pricing (2 min)
 
-Modifier `/Users/thomas/Apps/sinra-website/_pages/pricing.en.html`:
+Modifier `/Users/thomas/Projects/sinra-website/_pages/pricing.en.html`:
 
 Remplacer:
 ```yaml
@@ -73,7 +73,7 @@ description: "Sinra pricing plans for all team sizes. From flexible seat-based p
 
 ## FIX #5: Corriger le bug Content-Language (1 min)
 
-Modifier ligne 6 de `/Users/thomas/Apps/sinra-website/_layouts/default.html`:
+Modifier ligne 6 de `/Users/thomas/Projects/sinra-website/_layouts/default.html`:
 
 De:
 ```html
@@ -89,7 +89,7 @@ De:
 
 ## FIX #6: Ajouter les Canonical URLs (5 min)
 
-Dans `/Users/thomas/Apps/sinra-website/_layouts/default.html`, ajouter après le `<title>`:
+Dans `/Users/thomas/Projects/sinra-website/_layouts/default.html`, ajouter après le `<title>`:
 
 ```html
 <title>{{ page.title }}</title>
@@ -100,7 +100,7 @@ Dans `/Users/thomas/Apps/sinra-website/_layouts/default.html`, ajouter après le
 
 ## FIX #7: Ajouter Open Graph + Twitter Tags (10 min)
 
-Ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` après les favicon (avant `</head>`):
+Ajouter dans `/Users/thomas/Projects/sinra-website/_layouts/default.html` après les favicon (avant `</head>`):
 
 ```html
 <!-- Open Graph Tags -->
@@ -124,7 +124,7 @@ Ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` après les
 
 ## FIX #8: Ajouter JSON-LD Organization Schema (15 min)
 
-Créer `/Users/thomas/Apps/sinra-website/_includes/seo-schema.html`:
+Créer `/Users/thomas/Projects/sinra-website/_includes/seo-schema.html`:
 
 ```liquid
 {% raw %}<script type="application/ld+json">
@@ -149,7 +149,7 @@ Créer `/Users/thomas/Apps/sinra-website/_includes/seo-schema.html`:
 </script>{% endraw %}
 ```
 
-Puis ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` après `</head>`:
+Puis ajouter dans `/Users/thomas/Projects/sinra-website/_layouts/default.html` après `</head>`:
 
 ```html
 {% raw %}  {% include seo-schema.html %}{% endraw %}
@@ -159,7 +159,7 @@ Puis ajouter dans `/Users/thomas/Apps/sinra-website/_layouts/default.html` aprè
 
 ## FIX #9: Ajouter JSON-LD Breadcrumbs (optionnel, 10 min)
 
-Créer `/Users/thomas/Apps/sinra-website/_includes/breadcrumb-schema.html`:
+Créer `/Users/thomas/Projects/sinra-website/_includes/breadcrumb-schema.html`:
 
 ```liquid
 {% raw %}{% if page.url != "/" %}
@@ -216,7 +216,7 @@ Le CSS sera automatiquement minifié dans `_site/assets/css/`
 
 ## FIX #11: Ajouter lien RSS au Footer (5 min)
 
-Modifier `/Users/thomas/Apps/sinra-website/_includes/footer.html`, ajouter avant `</footer>`:
+Modifier `/Users/thomas/Projects/sinra-website/_includes/footer.html`, ajouter avant `</footer>`:
 
 ```html
 <div class="rss-link">
@@ -253,7 +253,7 @@ Modifier `/Users/thomas/Apps/sinra-website/_includes/footer.html`, ajouter avant
 
 ```bash
 # Test build local
-cd /Users/thomas/Apps/sinra-website
+cd /Users/thomas/Projects/sinra-website
 bundle exec jekyll serve
 
 # Vérifier le sitemap généré

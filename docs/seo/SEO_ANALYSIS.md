@@ -463,14 +463,14 @@ Priorité: MOYENNE
 
 ## FICHIERS CLÉS À MODIFIER
 
-1. `/Users/thomas/Apps/sinra-website/robots.txt` - CRÉER
-2. `/Users/thomas/Apps/sinra-website/sitemap.xml` - CRÉER ou ajouter gem
-3. `/Users/thomas/Apps/sinra-website/_layouts/default.html` - MODIFIER
-4. `/Users/thomas/Apps/sinra-website/index.html` - MODIFIER
-5. `/Users/thomas/Apps/sinra-website/_pages/pricing.en.html` - MODIFIER
-6. `/Users/thomas/Apps/sinra-website/_includes/seo-head.html` - CRÉER (JSON-LD, OG)
-7. `/Users/thomas/Apps/sinra-website/assets/css/theme.css` - MINIFIER
-8. `/Users/thomas/Apps/sinra-website/Gemfile` - AJOUTER jekyll-sitemap
+1. `/Users/thomas/Projects/sinra-website/robots.txt` - CRÉER
+2. `/Users/thomas/Projects/sinra-website/sitemap.xml` - CRÉER ou ajouter gem
+3. `/Users/thomas/Projects/sinra-website/_layouts/default.html` - MODIFIER
+4. `/Users/thomas/Projects/sinra-website/index.html` - MODIFIER
+5. `/Users/thomas/Projects/sinra-website/_pages/pricing.en.html` - MODIFIER
+6. `/Users/thomas/Projects/sinra-website/_includes/seo-head.html` - CRÉER (JSON-LD, OG)
+7. `/Users/thomas/Projects/sinra-website/assets/css/theme.css` - MINIFIER
+8. `/Users/thomas/Projects/sinra-website/Gemfile` - AJOUTER jekyll-sitemap
 
 ---
 

@@ -141,7 +141,7 @@ Inclut aussi une checklist et des commandes utiles
 ## Structure du site analysé
 
 ```
-/Users/thomas/Apps/sinra-website/
+/Users/thomas/Projects/sinra-website/
 ├── _config.yml                          [Analysé]
 ├── index.html                           [À corriger]
 ├── _layouts/

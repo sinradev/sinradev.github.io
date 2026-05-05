@@ -226,7 +226,7 @@ La meta description de pricing est incomplète:
 C'est clairement tronqué au niveau de l'éditeur YAML.
 
 **Solution**:  
-Modifier `/Users/thomas/Apps/sinra-website/_pages/pricing.en.html`:
+Modifier `/Users/thomas/Projects/sinra-website/_pages/pricing.en.html`:
 
 ```yaml
 description: "Sinra pricing plans for teams of all sizes. From Pro to Enterprise, get real-time capacity planning, integrated QA, and release management with flexible team sizing."

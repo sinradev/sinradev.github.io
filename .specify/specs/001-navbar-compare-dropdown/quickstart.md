@@ -30,7 +30,7 @@ git checkout 001-navbar-compare-dropdown
 bundle exec jekyll serve
 
 # In another terminal, navigate to repo root
-cd /Users/thomas/Apps/sinra-website
+cd /Users/thomas/Projects/sinra-website
 ```
 
 ---

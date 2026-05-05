@@ -4,7 +4,7 @@
 # Scans all HTML files in the project for component classes
 # Generates a report of current component usage
 
-REPO_ROOT="/Users/thomas/Apps/sinra-website"
+REPO_ROOT="/Users/thomas/Projects/sinra-website"
 OUTPUT_FILE="$REPO_ROOT/specs/005-simplify-theme-css/audit/html-usage.txt"
 
 echo "=== HTML Component Class Usage Report ===" > "$OUTPUT_FILE"

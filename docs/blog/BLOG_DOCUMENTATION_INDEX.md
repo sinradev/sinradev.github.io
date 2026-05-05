@@ -170,7 +170,7 @@ Create diagrams for:
 ## File Locations Reference
 
 ```
-Project Root: /Users/thomas/Apps/sinra-website/
+Project Root: /Users/thomas/Projects/sinra-website/
 
 Created Files:
   - BLOG_STRATEGY.md
