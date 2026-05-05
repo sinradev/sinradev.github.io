@@ -11,7 +11,7 @@ Créer et poster des posts LinkedIn pour chaque article français publié le jou
 ## Processus
 
 ### 1. Trouver les articles français du jour
-- Chercher tous les fichiers `.fr.md` dans `/Users/thomas/Apps/sinra-website/content/blog/posts/`
+- Chercher tous les fichiers `.fr.md` dans `/Users/thomas/Projects/sinra-website/content/blog/posts/`
 - Vérifier la date de publication dans le frontmatter YAML (champ `date`)
 - Filtrer ceux publiés aujourd'hui (date: YYYY-MM-JJ)
 
