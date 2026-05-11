@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/work/culture/remote/2026/02/19/full-remote-tabu.es.html"
 title: "¿Por qué el full remote se convirtió en tabú ? Del COVID a la obligación del retorno a la oficina"
 categories: ["Work Culture"]
 featured_image: /assets/images/blog/2026-02-19-full-remote-tabou-featured.png

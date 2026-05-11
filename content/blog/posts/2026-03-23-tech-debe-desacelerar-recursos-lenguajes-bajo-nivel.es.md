@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/tecnología futuro/2026/03/23/tech-debe-desacelerar-recursos-lenguajes-bajo-nivel.es.html"
 title: "La tech tendrá que desacelerar: recursos agotados, aplicaciones obesas y el regreso del bajo nivel"
 categories: ["Tecnología Futuro"]
 featured_image: /assets/images/blog/2026-03-23-tech-slowdown-resources-featured.png

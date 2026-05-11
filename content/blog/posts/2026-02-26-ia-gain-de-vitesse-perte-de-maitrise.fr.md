@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/développement productivité/2026/02/26/ia-gain-de-vitesse-perte-de-maitrise.fr.html"
 
 title: "L'IA dans le développement : Un gain de vitesse qui cache une perte de maîtrise"
 date: 2026-02-26T00:00:00+00:00

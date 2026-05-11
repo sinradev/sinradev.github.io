@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/recrutement culture/2026/03/23/developpeurs-voice-recrutement.fr.html"
 title: "Les développeurs sont devenus des candidats de The Voice : pourquoi le recrutement tech a perdu la tête"
 categories: ["Recrutement Culture"]
 featured_image: /assets/images/blog/2026-03-23-developers-the-voice-featured.png

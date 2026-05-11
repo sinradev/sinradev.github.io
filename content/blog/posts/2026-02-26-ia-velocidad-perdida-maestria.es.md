@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/desarrollo productividad/2026/02/26/ia-velocidad-perdida-maestria.es.html"
 title: "La IA en el desarrollo: La ganancia de velocidad que oculta una pérdida de maestría"
 date: 2026-02-26T00:00:00+00:00
 categories: ["Desarrollo Productividad"]

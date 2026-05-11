@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/technologie avenir/2026/03/23/tech-doit-ralentir-ressources-langages-bas-niveau.fr.html"
 title: "La tech va devoir ralentir : ressources épuisées, applications obèses, et le retour du bas niveau"
 categories: ["Technologie Avenir"]
 featured_image: /assets/images/blog/2026-03-23-tech-slowdown-resources-featured.png

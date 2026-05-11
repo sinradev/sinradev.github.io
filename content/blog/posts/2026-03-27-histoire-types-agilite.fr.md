@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/méthodologie/2026/03/27/histoire-types-agilite.html"
 title: "Histoire et Types d'Agilité : Comment Travailler Vraiment Mieux"
 subtitle: "Du Manifeste Agile de 2001 aux frameworks modernes : Scrum, Kanban, Shape Up, XP, Lean et au-delà"
 description: "Découvrez l'histoire de l'agilité, ses 4 principes fondamentaux, et les différents types d'agilité (Scrum, Kanban, Shape Up, XP, Lean) avec des explications claires, des exemples concrets, et une comparaison détaillée pour choisir la bonne approche."

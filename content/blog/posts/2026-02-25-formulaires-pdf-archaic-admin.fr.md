@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/outils/2026/02/25/formulaires-pdf-archaic-admin.fr.html"
 title: "Pourquoi en 2026 on demande encore d'imprimer un PDF, le remplir à la main et le rescanner ?"
 categories: ["Outils"]
 featured_image: /assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png

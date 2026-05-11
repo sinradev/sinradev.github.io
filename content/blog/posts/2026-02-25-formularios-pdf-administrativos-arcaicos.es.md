@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/outils/2026/02/25/formularios-pdf-administrativos-arcaicos.es.html"
 title: "¿Por qué en 2026 todavía imprimimos PDFs, los llenamos a mano y los escaneamos de vuelta?"
 categories: ["Outils"]
 featured_image: /assets/images/blog/2026-02-25-formulaires-pdf-archaic-admin-featured.png

@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/work/culture/recruitment/2026/02/19/paradoja-reclutamiento-francia.es.html"
 title: "La paradoja del reclutamiento francés : 4 entrevistas, 1 test, cero confianza"
 categories: ["Work Culture"]
 featured_image: /assets/images/blog/2026-02-19-paradoxe-recrutement-france-featured.png
