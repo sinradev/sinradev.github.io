@@ -33,30 +33,31 @@
 
 {{/* Index Sections */}}
 <div class="index-sections">
-  {{ range $sections }}
+  {{ range $i, $section := $sections }}
   <section class="index-section py-16 odd:bg-base-100 even:bg-base-200">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="text md:w-1/2">
-          <div class="text-sm font-semibold text-primary uppercase tracking-wider mb-2">{{ .category }}</div>
-          <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ .title | safeHTML }}</h2>
-          <div class="text-base-content/80 prose">{{ .body | safeHTML }}</div>
+          <div class="text-sm font-semibold text-primary uppercase tracking-wider mb-2">{{ $section.category }}</div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ $section.title | safeHTML }}</h2>
+          <div class="text-base-content/80 prose">{{ $section.body | safeHTML }}</div>
         </div>
         <div class="image md:w-1/2">
           <picture>
-            {{ $webpPath := .image | replaceRE `^/assets/` "" | replaceRE `\.(png|jpg)$` ".webp" }}
+            {{ $webpPath := $section.image | replaceRE `^/assets/` "" | replaceRE `\.(png|jpg)$` ".webp" }}
             {{ $webpRes := resources.Get $webpPath }}
-            <source srcset="{{ .image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
+            <source srcset="{{ $section.image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
             {{ if $webpRes }}
-            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $webpRes.Width }}" height="{{ $webpRes.Height }}" />
+            <img src="{{ $section.image }}" alt="{{ $section.alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $webpRes.Width }}" height="{{ $webpRes.Height }}" />
             {{ else }}
-            <img src="{{ .image }}" alt="{{ .alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" />
+            <img src="{{ $section.image }}" alt="{{ $section.alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" />
             {{ end }}
           </picture>
         </div>
       </div>
     </div>
   </section>
+  {{ if eq $i 1 }}{{ partial "sections/filters-spotlight.html" $ }}{{ end }}
   {{ end }}
 </div>
 
