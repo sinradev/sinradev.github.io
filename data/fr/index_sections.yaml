@@ -5,7 +5,7 @@
         <li>Visualisation des charges par cycle : Voyez exactement ce que chaque développeur/équipe peut gérer.</li>
         <li>Planification automatique des capacités : Prévenez la surcharge avec le suivi temps réel.</li>
       </ul>"
-  image: /assets/images/methodology-hybrid.png
+  image: /assets/images/screenshots/08-issue-detail.png
   alt: Méthodologie Dual Workflow
   category: "Flux Parallèles"
 - title: <strong>Planification de la Charge de Travail Intégrée</strong> - Plus de Ralentissements
@@ -15,7 +15,7 @@
         <li>Pourcentages de capacité : Définissez la disponibilité (50%, 75%, 100%) de chaque personne par équipe.</li>
         <li>Alertes automatiques : Le système avertit si les tâches dépassent la capacité.</li>
       </ul>"
-  image: /assets/images/sinra-overview.png
+  image: /assets/images/screenshots/05-cycle-workload.png
   alt: Planification de la Charge de Travail Avancée
   category: "Allocation Intelligente"
 - title: <strong>Gestion des Tests Intégrée</strong> - QA Inclus
@@ -26,7 +26,7 @@
         <li>Suivi d'acceptation : Marquez accepté/rejeté; liez au statut dev.</li>
       </ul>"
   category: "Assurance Qualité"
-  image: /assets/images/sinra-overview.png
+  image: /assets/images/screenshots/20-testing-detail.png
   alt: Gestion des Tests Intégrée
 - title: <strong>Tout est Personnalisable</strong> - Sans Code
   body: "D'autres logiciels de gestion de projet nécessitent des plugins ou règles d'automatisation. Sinra permet de personnaliser les statuts, rôles, labels, et plateformes directement dans les paramètres.
@@ -35,7 +35,7 @@
         <li>Rôles flexibles : Définissez Product Owner, Développeur, Testeur, QA Lead, ou rôles custom.</li>
         <li>Filtrage intelligent : Filtrez les issues par 40+ critères (complexité, temps passé, plateforme, etc.).</li>
       </ul>"
-  image: /assets/images/customization.png
+  image: /assets/images/screenshots/29-statuses.png
   alt: Personnalisation Complète
   category: "Flexibilité"
 - title: <strong>Intelligence Multi-Vue</strong> - Kanban, Liste, et Planification Release
@@ -45,7 +45,7 @@
         <li>Filtrage avancé : Appliquez des filtres complexes sans rechargement.</li>
         <li>Feuille de route release : Voyez votre timeline complète avec cycles et fonctionnalités.</li>
       </ul>"
-  image: /assets/images/kanban-list-view.png
+  image: /assets/images/screenshots/07-issues-kanban.png
   alt: Interface Multi-Vue
   category: "Visualisation Intelligente"
 - title: <strong>Rétrospectives Intégrées</strong> - Amélioration Continue
@@ -55,6 +55,6 @@
         <li>Catégories de feedback : Structurez le feedback (Ce qui a bien marché, À améliorer, Actions).</li>
         <li>Comparaison historique : Suivez le sentiment de l'équipe et les améliorations dans le temps.</li>
       </ul>"
-  image: /assets/images/collaboration.png
+  image: /assets/images/screenshots/22-retro-detail.png
   alt: Rétrospectives Intégrées
   category: "Croissance d'Équipe"

@@ -1,3 +1,11 @@
+- title: Recherche Universelle - Tout en Un Raccourci
+  body: "Appuyez sur Shift+F n'importe où dans Sinra pour ouvrir la recherche globale. Issues, fonctionnalités, projets et releases recherchés simultanément. Navigation clavier, fallback récents consultés, et résultats groupés instantanés."
+  image: /assets/images/screenshots/18-global-search.png
+  alt: Modal de recherche globale avec résultats groupés
+- title: Opérations en Masse - Mettre à Jour 50 Issues en Une Fois
+  body: "Sélectionnez plusieurs issues et mettez à jour en masse le statut, l'assignataire, la release, le cycle, les labels, ou la plateforme en une seule action. Plus de clics sur chaque issue individuellement."
+  image: /assets/images/screenshots/10-bulk-operations.png
+  alt: Panneau d'opérations en masse pour mise à jour multi-issues
 - title: Éditeur Texte Riche avec Contexte
   body: Les corps de spécification et issues supportent le formatage riche comme Notion. Écrivez des requirements détaillés une fois, réutilisez-les dans les releases. Plus de docs éparpillées.
   image: /assets/images/rich-text-editor.png

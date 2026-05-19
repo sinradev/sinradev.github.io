@@ -1,3 +1,11 @@
+- title: Búsqueda Universal - Todo en Un Acceso Directo
+  body: "Presione Shift+F en cualquier lugar de Sinra para abrir la búsqueda global. Issues, capabilities, proyectos y releases buscados simultáneamente. Navegación con teclado, fallback de vistos recientemente, y resultados agrupados instantáneos."
+  image: /assets/images/screenshots/18-global-search.png
+  alt: Modal de búsqueda global con resultados agrupados
+- title: Operaciones Masivas - Actualizar 50 Issues a la Vez
+  body: "Seleccione múltiples issues y actualice en lote el status, asignado, release, cycle, labels o plataforma en una sola acción. Sin más clics en cada issue individualmente."
+  image: /assets/images/screenshots/10-bulk-operations.png
+  alt: Panel de operaciones masivas para actualización multi-issues
 - title: Editor de Texto Enriquecido con Contexto
   body: Los cuerpos de especificaciones e issues admiten formato enriquecido como Notion. Escriba requisitos detallados una vez, reutilícelos en diferentes releases. No más documentación dispersa.
   image: /assets/images/rich-text-editor.png

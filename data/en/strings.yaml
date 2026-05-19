@@ -181,3 +181,43 @@ trusted_by:
   stat_users_label: users shipping faster every month
   stat_satisfaction: "98%"
   stat_satisfaction_label: customer satisfaction score
+product_tour:
+  tag: "Product Tour"
+  title: "See Sinra in Action"
+  body: "Real screenshots from the app. No mockups, no marketing fluff."
+  tabs:
+    - label: "Sprint Dashboard"
+      image: /assets/images/screenshots/02-cycle-current.png
+      alt: Current sprint cycle dashboard with workload and progress
+      caption: "Active cycle dashboard - progress, assignees, and status at a glance"
+    - label: "Issues List"
+      image: /assets/images/screenshots/06-issues-list.png
+      alt: Issues list table view with filters and sorting
+      caption: "Table view with sortable columns, 40+ filterable attributes"
+    - label: "Kanban Board"
+      image: /assets/images/screenshots/07-issues-kanban.png
+      alt: Kanban board grouped by development status
+      caption: "Kanban view with drag-and-drop status transitions"
+    - label: "Release Planning"
+      image: /assets/images/screenshots/12-release-detail.png
+      alt: Release detail with capabilities, issues and capacity
+      caption: "Full release visibility - capabilities, issues, capacity, and readiness"
+    - label: "Backlog"
+      image: /assets/images/screenshots/17-backlog.png
+      alt: Backlog drag-and-drop interface for assigning to releases
+      caption: "Drag capabilities into releases with live capacity warnings"
+    - label: "QA & Testing"
+      image: /assets/images/screenshots/19-testings-list.png
+      alt: QA test cases list with acceptance status
+      caption: "Test cases linked to capabilities with acceptance tracking"
+filters_spotlight:
+  tag: "Advanced Filtering"
+  title: "<strong>40+ Filters.</strong> Any combination. Saved automatically."
+  body: "No other project management tool gives you this level of query power. Build complex AND/OR rule groups across 40+ attributes. Filter state persists in your session - pick up exactly where you left off."
+  image_alt: Advanced filters with AND/OR rule groups
+  points:
+    - "<strong>40+ filterable attributes</strong> - status, assignee, labels, platform, time spent, complexity, and more"
+    - "<strong>AND/OR rule groups</strong> - nest conditions for precise results"
+    - "<strong>8 operators</strong> - equals, contains, greater than, is empty, and more"
+    - "<strong>Session-persisted</strong> - your filters survive page refreshes"
+    - "<strong>SQL injection safe</strong> - whitelist-validated attribute and operator names"
