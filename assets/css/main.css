@@ -178,12 +178,7 @@ main > *:first-child:not(.hero) {
   }
 
   .feature img {
-    border-radius: var(--radius-field);
-    transition: transform 0.3s ease;
-  }
-
-  .feature:hover img {
-    transform: scale(1.1) rotate(5deg);
+    display: block;
   }
 
   .feature h3 {
