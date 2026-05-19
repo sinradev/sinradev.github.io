@@ -1,11 +1,3 @@
-- title: Universal Search - Everything in One Shortcut
-  body: "Press Shift+F anywhere in Sinra to open global search. Issues, capabilities, projects, and releases searched simultaneously. Arrow-key navigation, recently-viewed fallback, and instant grouped results."
-  image: /assets/images/screenshots/18-global-search.png
-  alt: Global search modal with grouped results
-- title: Bulk Operations - Update 50 Issues at Once
-  body: "Multi-select issues and batch-update status, assignee, release, cycle, labels, or platform in a single action. No more clicking through each issue individually."
-  image: /assets/images/screenshots/10-bulk-operations.png
-  alt: Bulk operations panel for multi-issue updates
 - title: Rich Text Editor with Context
   body: Specification and issue bodies support rich formatting like Notion. Write detailed requirements once, reuse them across releases. No more scattered documentation.
   image: /assets/images/rich-text-editor.png
