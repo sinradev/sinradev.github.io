@@ -2,29 +2,14 @@
 {{ $strings := index hugo.Data $lang "strings" }}
 {{ $s := $strings.filters_spotlight }}
 
-<section class="filters-spotlight py-20 bg-base-100">
+<section class="filters-spotlight index-section py-16 bg-base-100">
   <div class="container mx-auto px-6 max-w-6xl">
-    <div class="flex flex-col lg:flex-row items-center gap-12">
+    <div class="flex flex-col md:flex-row items-center gap-12">
 
-      <!-- Screenshot -->
-      <div class="lg:w-3/5">
-        <picture>
-          <source srcset="/assets/images/screenshots/09-issue-filters.webp" type="image/webp" />
-          <img
-            src="/assets/images/screenshots/09-issue-filters.png"
-            alt="{{ $s.image_alt }}"
-            class="w-full rounded-xl"
-            loading="lazy"
-          />
-        </picture>
-      </div>
-
-      <!-- Text -->
-      <div class="lg:w-2/5">
-        <div class="text-sm font-semibold text-primary uppercase tracking-wider mb-3">{{ $s.tag }}</div>
+      <div class="text md:w-1/2">
+        <div class="text-sm font-semibold text-primary uppercase tracking-wider mb-2">{{ $s.tag }}</div>
         <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ $s.title | safeHTML }}</h2>
         <p class="text-base-content/80 mb-6">{{ $s.body }}</p>
-
         <ul class="space-y-3">
           {{ range $s.points }}
           <li class="flex items-start gap-3">
@@ -37,6 +22,13 @@
           </li>
           {{ end }}
         </ul>
+      </div>
+
+      <div class="image md:w-1/2">
+        <picture>
+          <source srcset="/assets/images/screenshots/09-issue-filters.webp" type="image/webp" />
+          <img src="/assets/images/screenshots/09-issue-filters.png" alt="{{ $s.image_alt }}" class="w-full" loading="lazy" />
+        </picture>
       </div>
 
     </div>
