@@ -5,7 +5,7 @@
         <li>Workload visualization by cycle: See exactly what each developer/team can handle.</li>
         <li>Automatic capacity planning: Prevent overallocation with real-time workload tracking.</li>
       </ul>"
-  image: /assets/images/methodology-hybrid.png
+  image: /assets/images/screenshots/08-issue-detail.png
   alt: Dual Workflow Methodology
   category: "Dual Workflows"
 - title: <strong>Integrated Workload Planning</strong> - No More Bottlenecks
@@ -15,7 +15,7 @@
         <li>Team capacity percentages: Set individual availability (50%, 75%, 100%) per team.</li>
         <li>Automatic warnings: System alerts when tasks exceed capacity.</li>
       </ul>"
-  image: /assets/images/sinra-overview.png
+  image: /assets/images/screenshots/05-cycle-workload.png
   alt: Advanced Workload Planning
   category: "Smart Allocation"
 - title: <strong>Integrated Testing Management</strong> - QA Built-in
@@ -26,7 +26,7 @@
         <li>Acceptance tracking: Mark tests as accepted/rejected; link to development status.</li>
       </ul>"
   category: "Quality Assurance"
-  image: /assets/images/sinra-overview.png
+  image: /assets/images/screenshots/20-testing-detail.png
   alt: Integrated Testing Management
 - title: <strong>Everything is Customizable</strong> - Without Code
   body: "Other project management tools require plugins or Automation rules. Sinra lets teams customize statuses, roles, labels, and platforms directly in settings.
@@ -35,7 +35,7 @@
         <li>Flexible roles: Define Product Owner, Developer, Tester, QA Lead, or custom roles.</li>
         <li>Smart filtering: Filter issues by 40+ attributes (complexity, time spent, platform, etc.).</li>
       </ul>"
-  image: /assets/images/customization.png
+  image: /assets/images/screenshots/29-statuses.png
   alt: Complete Customization
   category: "Flexibility"
 - title: <strong>Multi-View Intelligence</strong> - Kanban, List, and Release Planning
@@ -45,7 +45,7 @@
         <li>Advanced filtering: Apply complex filters across views without reloading.</li>
         <li>Release roadmap: See your entire release timeline with all cycles and capabilities.</li>
       </ul>"
-  image: /assets/images/kanban-list-view.png
+  image: /assets/images/screenshots/07-issues-kanban.png
   alt: Multi-View Interface
   category: "Smart Visualization"
 - title: <strong>Retrospectives Built-In</strong> - Continuous Improvement
@@ -55,6 +55,6 @@
         <li>Feedback categories: Structure feedback (What went well, What to improve, Action items).</li>
         <li>Historical comparison: Track team sentiment and improvements over time.</li>
       </ul>"
-  image: /assets/images/collaboration.png
+  image: /assets/images/screenshots/22-retro-detail.png
   alt: Built-in Retrospectives
   category: "Team Growth"

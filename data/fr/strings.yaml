@@ -72,6 +72,39 @@ sovereignty:
     - slug: "sovereign"
       title: "Logiciel Souverain"
       description: "Conçu et développé en France. Aucune dépendance à des hyperscalers cloud non-européens. Vos données restent dans l'UE."
+tools_replaced:
+  tag: "Plateforme Tout-en-Un"
+  title: "Remplacez toute votre stack d'outils par <span class=\"text-primary\">une seule</span> plateforme"
+  subtitle: "La plupart des équipes jonglent avec 6 outils déconnectés ou plus. Sinra les unifie tous en une seule source de vérité."
+  before_label: "Avant : des outils éparpillés"
+  after_label: "Avec Sinra : une seule plateforme"
+  tools:
+    - slug: "communication"
+      category: "Communication"
+      examples: "Slack, Discord, Microsoft Teams"
+    - slug: "documentation"
+      category: "Documentation"
+      examples: "Notion, Confluence, Google Docs"
+    - slug: "project"
+      category: "Gestion de Projet"
+      examples: "Jira, Asana, Monday.com"
+    - slug: "qa"
+      category: "QA & Tests"
+      examples: "TestRail, Zephyr, qTest"
+    - slug: "time"
+      category: "Suivi du Temps"
+      examples: "Toggl, Harvest, Clockify"
+    - slug: "retro"
+      category: "Rétrospectives"
+      examples: "TeamRetro, Parabol, Miro, Neatro"
+  capabilities:
+    - "Issues, specs & planification des releases"
+    - "Discussions d'équipe & commentaires en ligne"
+    - "Documentation & wikis intégrés"
+    - "QA & tests intégrés dès le premier jour"
+    - "Planification des cycles avec données de capacité réelles"
+    - "Rétrospectives intégrées à votre workflow"
+  cta_label: "Essayer Sinra gratuitement"
 why_sinra_title: Pourquoi les Équipes Choisissent Sinra
 why_sinra_description: Les équipes modernes ont besoin d'équilibre entre planification structurée et flexibilité d'exécution. Sinra unifie ces deux mondes en une seule plateforme.
 why_sinra_stats:
@@ -180,3 +213,43 @@ trusted_by:
   stat_users_label: utilisateurs livrant plus vite chaque mois
   stat_satisfaction: "98%"
   stat_satisfaction_label: score de satisfaction client
+product_tour:
+  tag: "Tour du Produit"
+  title: "Voyez Sinra en Action"
+  body: "Vrais screenshots de l'application. Zéro mockup, zéro marketing."
+  tabs:
+    - label: "Sprint Dashboard"
+      image: /assets/images/screenshots/02-cycle-current.png
+      alt: Dashboard du cycle sprint actif avec charge et progression
+      caption: "Dashboard cycle actif - progression, assignataires et statuts en un coup d'oeil"
+    - label: "Liste des Issues"
+      image: /assets/images/screenshots/06-issues-list.png
+      alt: Liste des issues en vue tableau avec filtres et tri
+      caption: "Vue tableau avec colonnes triables, 40+ attributs filtrables"
+    - label: "Tableau Kanban"
+      image: /assets/images/screenshots/07-issues-kanban.png
+      alt: Tableau Kanban groupé par statut de développement
+      caption: "Vue Kanban avec transitions de statut par glisser-déposer"
+    - label: "Planification Release"
+      image: /assets/images/screenshots/12-release-detail.png
+      alt: Détail d'une release avec capacités, issues et capacité
+      caption: "Visibilité complète de la release - fonctionnalités, issues, capacité et préparation"
+    - label: "Backlog"
+      image: /assets/images/screenshots/17-backlog.png
+      alt: Interface glisser-déposer du backlog pour assigner aux releases
+      caption: "Glissez les capacités dans les releases avec alertes de capacité en temps réel"
+    - label: "QA & Tests"
+      image: /assets/images/screenshots/19-testings-list.png
+      alt: Liste des cas de test QA avec statut d'acceptation
+      caption: "Cas de test liés aux capacités avec suivi d'acceptation"
+filters_spotlight:
+  tag: "Filtrage Avancé"
+  title: "<strong>40+ Filtres.</strong> Toute combinaison. Sauvegardée automatiquement."
+  body: "Aucun autre outil de gestion de projet ne vous offre ce niveau de puissance de requête. Construisez des groupes de règles AND/OR complexes sur 40+ attributs. L'état des filtres persiste dans votre session."
+  image_alt: Filtres avancés avec groupes de règles AND/OR
+  points:
+    - "<strong>40+ attributs filtrables</strong> - statut, assignataire, labels, plateforme, temps passé, complexité, et plus"
+    - "<strong>Groupes de règles AND/OR</strong> - imbriqués pour des résultats précis"
+    - "<strong>8 opérateurs</strong> - égal, contient, supérieur à, est vide, et plus"
+    - "<strong>Persistance session</strong> - vos filtres survivent aux rechargements de page"
+    - "<strong>Protection injection SQL</strong> - attributs et opérateurs validés par liste blanche"
