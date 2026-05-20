@@ -12,8 +12,11 @@
       </div>
       <div class="mt-12">
         <picture class="z-10 relative">
-          <source srcset="/assets/images/screenshots/02-cycle-current.webp" type="image/webp" />
-          <img src="/assets/images/screenshots/02-cycle-current.png" alt="{{ $strings.hero.alt_image }}" class="rounded-xl shadow-2xl mx-auto" width="2880" height="1800" />
+          <source
+            srcset="/assets/images/screenshots/02-cycle-current-768.webp 768w, /assets/images/screenshots/02-cycle-current.webp 1440w"
+            sizes="(max-width: 768px) 100vw, 1440px"
+            type="image/webp" />
+          <img src="/assets/images/screenshots/02-cycle-current.png" alt="{{ $strings.hero.alt_image }}" class="rounded-xl shadow-2xl mx-auto" width="1440" height="900" fetchpriority="high" loading="eager" />
         </picture>
       </div>
     </div>

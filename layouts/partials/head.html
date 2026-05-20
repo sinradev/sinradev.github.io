@@ -76,6 +76,11 @@
 }}
 {{- $org | jsonify | printf "<script type=\"application/ld+json\">%s</script>" | safeHTML -}}
 
+{{/* Preload LCP hero image on homepage */}}
+{{ if .IsHome }}
+<link rel="preload" as="image" href="/assets/images/screenshots/02-cycle-current-768.webp" type="image/webp" fetchpriority="high" imagesrcset="/assets/images/screenshots/02-cycle-current-768.webp 768w, /assets/images/screenshots/02-cycle-current.webp 1440w" imagesizes="(max-width: 768px) 100vw, 1440px" />
+{{ end }}
+
 {{/* CSS — Hugo Pipes (PostCSS + Tailwind v4 + DaisyUI v5) */}}
 {{ $css := resources.Get "css/main.css" | css.PostCSS | resources.Minify | resources.Fingerprint }}
 <link rel="preload" href="{{ $css.Permalink }}" as="style" />
