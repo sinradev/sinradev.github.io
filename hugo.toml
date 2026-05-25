@@ -55,6 +55,10 @@ enableRobotsTXT = true
     url    = '/contact/'
     weight = 40
   [[languages.en.menus.main]]
+    name   = 'Brand Book'
+    url    = '/brand-book/'
+    weight = 45
+  [[languages.en.menus.main]]
     name   = 'Login'
     url    = 'https://app.sinra.dev/users/sign_in'
     weight = 50
@@ -96,6 +100,10 @@ enableRobotsTXT = true
     url    = '/fr/contact/'
     weight = 40
   [[languages.fr.menus.main]]
+    name   = 'Brand Book'
+    url    = '/brand-book/'
+    weight = 45
+  [[languages.fr.menus.main]]
     name   = 'Se connecter'
     url    = 'https://app.sinra.dev/users/sign_in'
     weight = 50
@@ -136,6 +144,10 @@ enableRobotsTXT = true
     name   = 'Contacto'
     url    = '/es/contact/'
     weight = 40
+  [[languages.es.menus.main]]
+    name   = 'Brand Book'
+    url    = '/brand-book/'
+    weight = 45
   [[languages.es.menus.main]]
     name   = 'Iniciar sesión'
     url    = 'https://app.sinra.dev/users/sign_in'
