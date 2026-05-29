@@ -20,7 +20,7 @@
 
         <form action="https://app.sinra.dev/contact/form" method="post" class="contact-form space-y-6" aria-label="{{ i18n "contact_title" }}">
           <input type="hidden" name="_to" value="support@sinra.dev" />
-          <input type="text" name="_gotcha" style="display: none;" />
+          <input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="form-control">
             <label class="label" for="name">
