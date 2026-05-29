@@ -47,6 +47,10 @@ enableRobotsTXT = true
     url    = '/pricing/'
     weight = 20
   [[languages.en.menus.main]]
+    name   = 'Docs'
+    url    = '/docs/'
+    weight = 25
+  [[languages.en.menus.main]]
     name   = 'Blog'
     url    = '/blog/'
     weight = 30
@@ -92,6 +96,10 @@ enableRobotsTXT = true
     url    = '/fr/pricing/'
     weight = 20
   [[languages.fr.menus.main]]
+    name   = 'Documentation'
+    url    = '/fr/docs/'
+    weight = 25
+  [[languages.fr.menus.main]]
     name   = 'Blog'
     url    = '/fr/blog/'
     weight = 30
@@ -136,6 +144,10 @@ enableRobotsTXT = true
     name   = 'Precios'
     url    = '/es/pricing/'
     weight = 20
+  [[languages.es.menus.main]]
+    name   = 'Documentación'
+    url    = '/es/docs/'
+    weight = 25
   [[languages.es.menus.main]]
     name   = 'Blog'
     url    = '/es/blog/'
