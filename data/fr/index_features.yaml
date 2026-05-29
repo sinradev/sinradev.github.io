@@ -29,3 +29,7 @@
   body: Documentez et standardisez vos termes métier directement dans Sinra. Créez un glossaire unique qui définit les concepts clés de votre produit. Réutilisez ces termes automatiquement dans les spécifications, les issues, et la documentation. Élimine les ambiguïtés, garantit la cohérence terminologique entre les équipes.
   image: /assets/images/glossary-terminology.png
   alt: Glossaire des termes métier et réutilisation dans les specs
+- title: <strong>Import & Export</strong> - Vos Données, Votre Liberté
+  body: Importez des issues en masse depuis un CSV ou directement depuis GitHub via OAuth. Exportez l'intégralité de votre backlog à tout moment en CSV. Vos données ne sont jamais verrouillées. Changez d'outil sans perdre votre élan, migrez sans douleur, et gardez le contrôle de vos informations quel que soit l'outil que vous utiliserez demain.
+  image: /assets/images/import-export.png
+  alt: Import et export CSV, migration des issues depuis GitHub

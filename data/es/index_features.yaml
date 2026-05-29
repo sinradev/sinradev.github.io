@@ -29,3 +29,7 @@
   body: Documente y estandarice su terminología empresarial directamente en Sinra. Cree un glosario único que defina los conceptos clave de su producto. Reutilice estos términos automáticamente en especificaciones, issues y documentación. Elimina ambigüedades, asegura terminología consistente en todos los equipos.
   image: /assets/images/glossary-terminology.png
   alt: Glosario empresarial y reutilización de términos en especificaciones
+- title: <strong>Importación y Exportación</strong> - Sus Datos, Su Libertad
+  body: Importe issues de forma masiva desde CSV o directamente desde GitHub via OAuth. Exporte su backlog completo en cualquier momento en CSV. Sus datos nunca quedan bloqueados. Cambie de herramienta sin perder impulso, migre sin dolor y mantenga el control de su información independientemente de qué herramienta use mañana.
+  image: /assets/images/import-export.png
+  alt: Importación y exportación CSV, migración de issues desde GitHub
