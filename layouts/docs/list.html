@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-6 py-12">
+
+  {{/* Breadcrumb */}}
+  {{ if not .IsSection }}{{ else }}
+  {{ if ne .Section "docs" }}
+  <nav class="text-sm breadcrumbs mb-6">
+    <ul>
+      <li><a href="/docs/">Docs</a></li>
+      <li class="text-base-content/60">{{ .Title }}</li>
+    </ul>
+  </nav>
+  {{ end }}
+  {{ end }}
+
+  <h1 class="text-3xl font-bold mb-3 text-base-content">{{ .Title }}</h1>
+  {{ with .Description }}
+  <p class="text-base-content/60 text-lg mb-10">{{ . }}</p>
+  {{ end }}
+
+  {{ if .Pages }}
+  <div class="grid gap-4 sm:grid-cols-2">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="group block bg-base-200 hover:bg-base-300 border border-base-300 hover:border-primary/30 rounded-xl p-5 transition-all">
+      <div class="font-semibold text-base-content group-hover:text-primary transition-colors mb-1">{{ .Title }}</div>
+      {{ with .Description }}
+      <div class="text-sm text-base-content/60">{{ . }}</div>
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ else if .Sections }}
+  {{/* Root /docs/ page - show sections */}}
+  <div class="grid gap-6 sm:grid-cols-3">
+    {{ range .Sections }}
+    <a href="{{ .Permalink }}" class="group block bg-base-200 hover:bg-base-300 border border-base-300 hover:border-primary/30 rounded-xl p-6 transition-all">
+      <div class="font-bold text-lg text-base-content group-hover:text-primary transition-colors mb-2">{{ .Title }}</div>
+      {{ with .Description }}
+      <div class="text-sm text-base-content/60">{{ . }}</div>
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Content }}
+  <div class="prose prose-sm max-w-none mt-8 text-base-content/70">{{ . }}</div>
+  {{ end }}
+
+</div>
+{{ end }}

@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-6 py-12">
+
+  {{/* Breadcrumb */}}
+  <nav class="text-sm breadcrumbs mb-6">
+    <ul>
+      <li><a href="/docs/">Docs</a></li>
+      {{ with .Parent }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+      <li class="text-base-content/60">{{ .Title }}</li>
+    </ul>
+  </nav>
+
+  <h1 class="text-3xl font-bold mb-3 text-base-content">{{ .Title }}</h1>
+  {{ with .Description }}
+  <p class="text-base-content/60 text-lg mb-8 border-b border-base-300 pb-8">{{ . }}</p>
+  {{ end }}
+
+  <article class="prose prose-lg max-w-none
+    prose-headings:text-base-content
+    prose-p:text-base-content/80
+    prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+    prose-strong:text-base-content
+    prose-code:text-primary prose-code:bg-base-200 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+    prose-pre:bg-base-200 prose-pre:border prose-pre:border-base-300
+    prose-blockquote:border-primary prose-blockquote:text-base-content/60
+    prose-li:text-base-content/80
+    prose-hr:border-base-300">
+    {{ .Content }}
+  </article>
+
+  {{/* Prev/Next navigation */}}
+  {{ $pages := .Parent.Pages }}
+  {{ $currentIdx := -1 }}
+  {{ range $i, $p := $pages }}{{ if eq $p.Permalink $.Page.Permalink }}{{ $currentIdx = $i }}{{ end }}{{ end }}
+
+  <div class="flex justify-between items-center mt-12 pt-8 border-t border-base-300 gap-4">
+    {{ if gt $currentIdx 0 }}
+    {{ $prev := index $pages (sub $currentIdx 1) }}
+    <a href="{{ $prev.Permalink }}" class="group flex items-center gap-2 text-sm text-base-content/60 hover:text-primary transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      <span>{{ $prev.Title }}</span>
+    </a>
+    {{ else }}<div></div>{{ end }}
+
+    {{ $lastIdx := sub (len $pages) 1 }}
+    {{ if lt $currentIdx $lastIdx }}
+    {{ $next := index $pages (add $currentIdx 1) }}
+    <a href="{{ $next.Permalink }}" class="group flex items-center gap-2 text-sm text-base-content/60 hover:text-primary transition-colors ml-auto">
+      <span>{{ $next.Title }}</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}
