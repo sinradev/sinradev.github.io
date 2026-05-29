@@ -6,6 +6,10 @@
   link: pricing/
   target: _top
   klass:
+- name: Documentation
+  link: docs/
+  target: _top
+  klass:
 - name: Blog
   link: blog/
   target: _top
