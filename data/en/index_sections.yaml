@@ -48,13 +48,14 @@
   image: /assets/images/screenshots/07-issues-kanban.png
   alt: Multi-View Interface
   category: "Smart Visualization"
-- title: <strong>Retrospectives Built-In</strong> - Continuous Improvement
-  body: "After each release, automatically create a retrospective to collect team feedback (Good, Bad, Improvements). Compare with previous retros to track progress.
+- title: <strong>Sync Ceremonies</strong> - Planning, Retros, Phase Gates &amp; Postmortems
+  body: "Sinra centralizes the four synchronization moments that structure a hybrid V-model + Agile project: planning meetings, retrospectives, phase gate reviews, and postmortems.
       <ul>
-        <li>Automated retro creation: Every release gets a retro ceremony attached.</li>
-        <li>Feedback categories: Structure feedback (What went well, What to improve, Action items).</li>
-        <li>Historical comparison: Track team sentiment and improvements over time.</li>
+        <li>Planning meetings: agenda, participants, decisions — linked to the cycle or release being planned.</li>
+        <li>Retrospectives: automatically created when a release closes, structured into four columns (Went well, Went badly, Improvements, General).</li>
+        <li>Phase gate reviews: evaluation criteria, go/no-go verdict, traceable audit trail for each phase transition.</li>
+        <li>Blameless postmortems: incident timeline, systemic factors, remediation actions with automatic MTTR.</li>
       </ul>"
   image: /assets/images/screenshots/22-retro-detail.png
-  alt: Built-in Retrospectives
-  category: "Team Growth"
+  alt: Integrated Sync Ceremonies
+  category: "Team Synchronization"

@@ -48,13 +48,14 @@
   image: /assets/images/screenshots/07-issues-kanban.png
   alt: Interfaz Multi-Vista
   category: "Visualización Inteligente"
-- title: <strong>Retrospectivas Integradas</strong> - Mejora Continua
-  body: "Después de cada release, cree automáticamente una retrospectiva para recopilar comentarios del equipo (Bueno, Malo, Mejoras). Compare con retros anteriores para rastrear el progreso.
+- title: <strong>Ceremonias de Sincronización</strong> - Planning, Retros, Hitos &amp; Post-mortems
+  body: "Sinra centraliza los cuatro momentos de sincronización que estructuran un proyecto híbrido V-model + Agile: reuniones de planning, retrospectivas, revisiones de hito y post-mortems.
       <ul>
-        <li>Creación automática de retro: Cada release obtiene una ceremonia de retro adjunta.</li>
-        <li>Categorías de comentarios: Estructura de comentarios (Qué salió bien, Qué mejorar, Elementos de acción).</li>
-        <li>Comparación histórica: Rastree el sentimiento del equipo y las mejoras a lo largo del tiempo.</li>
+        <li>Reuniones de planning: orden del día, participantes, decisiones — vinculadas al ciclo o release planificada.</li>
+        <li>Retrospectivas: creadas automáticamente al cierre de una release, estructuradas en cuatro columnas (Bien, Mal, Mejoras, General).</li>
+        <li>Revisiones de hito: criterios de evaluación, veredicto go/no-go, pista de auditoría trazable para cada transición de fase.</li>
+        <li>Post-mortems blameless: timeline del incidente, factores sistémicos, acciones de remediación con MTTR automático.</li>
       </ul>"
   image: /assets/images/screenshots/22-retro-detail.png
-  alt: Retrospectivas Integradas
-  category: "Crecimiento del Equipo"
+  alt: Ceremonias de Sincronización Integradas
+  category: "Sincronización del Equipo"
