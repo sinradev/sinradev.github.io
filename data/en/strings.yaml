@@ -163,6 +163,9 @@ tools_replaced:
     - "QA & testing integrated from day one"
     - "Cycle planning with real capacity data"
     - "Retrospectives built into your workflow"
+    - "Planning meetings with participants and minutes"
+    - "V-model phase gate reviews with go/no-go verdict"
+    - "Blameless postmortems with MTTR and remediation actions"
   cta_label: "Try Sinra for free"
 why_sinra_title: Why Teams Choose Sinra
 why_sinra_description: Modern teams need balance between structured planning and execution flexibility. Sinra unites these two worlds in a single platform.

@@ -104,6 +104,9 @@ tools_replaced:
     - "QA & tests intégrés dès le premier jour"
     - "Planification des cycles avec données de capacité réelles"
     - "Rétrospectives intégrées à votre workflow"
+    - "Réunions de planning avec participants et compte-rendus"
+    - "Revues de jalon V-model avec verdict go/no-go"
+    - "Post-mortems blameless avec MTTR et actions de remédiation"
   cta_label: "Essayer Sinra gratuitement"
 why_sinra_title: Pourquoi les Équipes Choisissent Sinra
 why_sinra_description: Les équipes modernes ont besoin d'équilibre entre planification structurée et flexibilité d'exécution. Sinra unifie ces deux mondes en une seule plateforme.
