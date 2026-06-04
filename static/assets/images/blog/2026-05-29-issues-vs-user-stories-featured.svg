@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a3050;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e2440;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3040;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#152535;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.06"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left card: User Story (crossed) -->
+  <rect x="80" y="140" width="440" height="350" rx="12" fill="url(#cardA)" stroke="#c792e9" stroke-width="1" opacity="0.7"/>
+  <text x="300" y="195" font-family="monospace" font-size="13" fill="#c792e9" opacity="0.8" text-anchor="middle">USER STORY</text>
+  <text x="300" y="230" font-family="Georgia, serif" font-size="16" fill="#8b9cbf" text-anchor="middle">« En tant qu'utilisateur,</text>
+  <text x="300" y="255" font-family="Georgia, serif" font-size="16" fill="#8b9cbf" text-anchor="middle">je veux me connecter</text>
+  <text x="300" y="280" font-family="Georgia, serif" font-size="16" fill="#8b9cbf" text-anchor="middle">afin de pouvoir accéder</text>
+  <text x="300" y="305" font-family="Georgia, serif" font-size="16" fill="#8b9cbf" text-anchor="middle">à mon compte. »</text>
+  <!-- Red cross -->
+  <line x1="130" y1="380" x2="470" y2="420" stroke="#ff6b6b" stroke-width="3" opacity="0.7"/>
+  <line x1="470" y1="380" x2="130" y2="420" stroke="#ff6b6b" stroke-width="3" opacity="0.7"/>
+  <text x="300" y="460" font-family="monospace" font-size="12" fill="#ff6b6b" opacity="0.7" text-anchor="middle">conversation tool, not a ticket</text>
+
+  <!-- Arrow -->
+  <line x1="560" y1="315" x2="640" y2="315" stroke="#a6f079" stroke-width="2.5" opacity="0.8"/>
+  <polygon points="640,308 656,315 640,322" fill="#a6f079" opacity="0.8"/>
+
+  <!-- Right card: Issue (checkmark) -->
+  <rect x="680" y="140" width="440" height="350" rx="12" fill="url(#cardB)" stroke="#a6f079" stroke-width="1" opacity="0.7"/>
+  <text x="900" y="195" font-family="monospace" font-size="13" fill="#a6f079" opacity="0.8" text-anchor="middle">ISSUE</text>
+  <text x="900" y="255" font-family="Georgia, serif" font-size="22" fill="#e0e8ff" text-anchor="middle">Système d'authentification</text>
+  <text x="900" y="285" font-family="Georgia, serif" font-size="22" fill="#e0e8ff" text-anchor="middle">SSO avec Google</text>
+  <rect x="740" y="315" width="320" height="1" fill="#a6f079" opacity="0.2"/>
+  <text x="900" y="345" font-family="monospace" font-size="13" fill="#8b9cbf" text-anchor="middle">Contexte : connexion compte pro</text>
+  <text x="900" y="368" font-family="monospace" font-size="13" fill="#8b9cbf" text-anchor="middle">Critères : token OAuth valide,</text>
+  <text x="900" y="388" font-family="monospace" font-size="13" fill="#8b9cbf" text-anchor="middle">session 24h, logout explicite</text>
+  <!-- Check -->
+  <circle cx="900" cy="440" r="18" fill="#a6f079" opacity="0.15" stroke="#a6f079" stroke-width="1.5"/>
+  <polyline points="890,440 898,450 912,430" fill="none" stroke="#a6f079" stroke-width="2.5" opacity="0.9"/>
+
+  <!-- Title -->
+  <text x="600" y="560" font-family="Georgia, serif" font-size="28" fill="#e0e8ff" text-anchor="middle" opacity="0.9">Le mot que vous choisissez structure votre travail</text>
+</svg>
