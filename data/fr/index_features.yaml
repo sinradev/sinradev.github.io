@@ -35,13 +35,7 @@
   alt: Import et export CSV, migration des issues depuis GitHub
 - title: <strong>Réunions de Planning</strong> - Décisions Traçables
   body: Chaque réunion de planning est un enregistrement permanent lié au cycle ou à la release qu'elle planifie. Ordre du jour, participants, compte-rendu en texte riche. Plus de décisions perdues dans Notion ou Slack.
-  image: /assets/images/import-export.png
-  alt: Réunions de planning avec participants et compte-rendus
 - title: <strong>Revues de Jalon V-Model</strong> - Go / No-Go Formel
   body: Structurez vos points de contrôle V-model avec des critères d'évaluation explicites et un verdict formel (go, no-go, conditionnel). Piste d'audit complète pour chaque transition de phase. Idéal pour les environnements réglementés.
-  image: /assets/images/custom-workflows.png
-  alt: Revues de jalon V-model avec verdict go/no-go
 - title: <strong>Post-mortems Blameless</strong> - Apprendre de Chaque Incident
   body: "Analysez les incidents avec une structure blameless éprouvée : timeline, facteurs systémiques, impact, actions de remédiation. MTTR calculé automatiquement. Construisez une mémoire institutionnelle des incidents, pas une liste de coupables."
-  image: /assets/images/collaboration-sync.png
-  alt: Post-mortems blameless avec MTTR et actions de remédiation
