@@ -48,6 +48,17 @@
   image: /assets/images/screenshots/07-issues-kanban.png
   alt: Interfaz Multi-Vista
   category: "Visualización Inteligente"
+- title: <strong>Spec Pipeline</strong> - Visibilidad Total sobre la Redacción de Specs para PO/PM
+  body: "Un tablero Kanban dedicado a product owners y jefes de proyecto para seguir el avance de la redacción de specs en todas las capabilities. Deja de navegar issue por issue - ve el panorama completo de un vistazo.
+      <ul>
+        <li>Columnas por estado de redacción: identifica inmediatamente qué está bloqueado en revisión o sin iniciar.</li>
+        <li>Agrupadas por capability: detecta qué funcionalidades se retrasan antes de que bloqueen el desarrollo.</li>
+        <li>Arrastrar y soltar: mueve una tarjeta entre columnas para actualizar el estado de redacción al instante, sin recargar.</li>
+        <li>Filtros por release y proyecto: céntrate en lo que importa para el sprint actual.</li>
+      </ul>"
+  image: /assets/images/screenshots/43-spec-pipeline.png
+  alt: Tablero Kanban Spec Pipeline para PO/PM
+  category: "Herramientas PO/PM"
 - title: <strong>Ceremonias de Sincronización</strong> - Planning, Retros, Hitos &amp; Post-mortems
   body: "Sinra centraliza los cuatro momentos de sincronización que estructuran un proyecto híbrido V-model + Agile: reuniones de planning, retrospectivas, revisiones de hito y post-mortems.
       <ul>

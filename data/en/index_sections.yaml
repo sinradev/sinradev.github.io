@@ -48,6 +48,17 @@
   image: /assets/images/screenshots/07-issues-kanban.png
   alt: Multi-View Interface
   category: "Smart Visualization"
+- title: <strong>Spec Pipeline</strong> - Full Spec Writing Visibility for PO/PM
+  body: "A dedicated Kanban board for product owners and project managers to track spec writing progress across all capabilities. Stop navigating issue by issue - see the full picture at a glance.
+      <ul>
+        <li>Columns by writing status: instantly see what is blocked in review or not yet started.</li>
+        <li>Grouped by capability: identify which features are lagging behind before they block development.</li>
+        <li>Drag and drop: move a card between columns to update writing status instantly, without reloading.</li>
+        <li>Filters by release and project: focus on what matters for the current sprint.</li>
+      </ul>"
+  image: /assets/images/screenshots/43-spec-pipeline.png
+  alt: Spec Pipeline Kanban board for PO/PM
+  category: "PO/PM Tooling"
 - title: <strong>Sync Ceremonies</strong> - Planning, Retros, Phase Gates &amp; Postmortems
   body: "Sinra centralizes the four synchronization moments that structure a hybrid V-model + Agile project: planning meetings, retrospectives, phase gate reviews, and postmortems.
       <ul>
