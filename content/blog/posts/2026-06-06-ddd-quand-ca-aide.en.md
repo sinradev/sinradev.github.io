@@ -6,7 +6,7 @@ description: "Domain-Driven Design delivers real value in certain contexts. In o
 categories: ["Development Productivity"]
 excerpt: "The team spent three weeks modeling the bounded contexts, aggregates, and domain events of their content management application. The application does CRUD on five tables. That is the sign that DDD is being used as an end in itself, not as a tool."
 date: 2026-06-06 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-06-ddd-quand-ca-aide-featured.svg
+featured_image: /assets/images/blog/2026-06-06-ddd-quand-ca-aide-featured.png
 
 ---
 

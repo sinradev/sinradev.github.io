@@ -6,7 +6,7 @@ description: "La deuda técnica se trata a menudo como una masa indistinta que h
 categories: ["Productividad en Desarrollo", "Gestión de Proyectos"]
 excerpt: "\"Necesitamos un sprint de deuda técnica.\" Esta frase se pronuncia en cientos de equipos cada trimestre. Lo que ocurre a continuación: dos semanas de refactorización sin dirección clara, cuyo valor es imposible de comunicar a la dirección, y que no cambia fundamentalmente los problemas más dolorosos."
 date: 2026-06-05 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-05-dette-technique-nommer-featured.svg
+featured_image: /assets/images/blog/2026-06-05-dette-technique-nommer-featured.png
 
 ---
 

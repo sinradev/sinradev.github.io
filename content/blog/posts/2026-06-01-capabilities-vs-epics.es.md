@@ -6,7 +6,7 @@ description: "Una epic de Agile es un concepto difuso que agrupa user stories si
 categories: ["Gestión de Proyectos"]
 excerpt: "¿Cuándo está terminada una epic? La pregunta debería tener una respuesta simple. En la práctica, en la mayoría de los equipos, es el inicio de una larga conversación. La epic crece, se divide, se reabre, migra de un sprint a otro. No es un problema de implementación de Scrum. Es un problema de definición."
 date: 2026-06-01 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-01-capabilities-vs-epics-featured.svg
+featured_image: /assets/images/blog/2026-06-01-capabilities-vs-epics-featured.png
 
 ---
 

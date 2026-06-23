@@ -6,7 +6,7 @@ description: "Le mouvement #NoEstimates conteste la valeur des estimations dans 
 categories: ["Gestion de Projet", "Work Culture"]
 excerpt: "L'estimation est souvent une fiction partagée : les développeurs donnent des chiffres qu'ils savent imprécis, le management les prend comme des engagements, et quand les estimations sont dépassées, tout le monde est surpris d'être surpris. #NoEstimates dit : arrêtons la fiction. La question est : par quoi on la remplace ?"
 date: 2026-06-10 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-10-no-estimates-featured.svg
+featured_image: /assets/images/blog/2026-06-10-no-estimates-featured.png
 
 ---
 

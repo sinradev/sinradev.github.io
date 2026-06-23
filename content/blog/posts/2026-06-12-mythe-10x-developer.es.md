@@ -6,7 +6,7 @@ description: "El concepto de 'desarrollador 10x' está basado en un estudio de 1
 categories: ["Cultura Laboral"]
 excerpt: "Existe en la industria tecnológica un arquetipo admirado: el desarrollador brillante y solitario que produce más código que diez desarrolladores ordinarios. Este arquetipo influye en las contrataciones, justifica paquetes salariales desiguales y crea culturas de equipo disfuncionales. También es, en gran medida, un mito."
 date: 2026-06-12 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-12-mythe-10x-developer-featured.svg
+featured_image: /assets/images/blog/2026-06-12-mythe-10x-developer-featured.png
 
 ---
 

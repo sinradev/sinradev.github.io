@@ -6,7 +6,7 @@ description: "Le Domain-Driven Design apporte une valeur réelle dans certains c
 categories: ["Développement Productivité"]
 excerpt: "L'équipe a passé trois semaines à modéliser les bounded contexts, les aggregates et les domain events de son application de gestion de contenu. L'application fait du CRUD sur cinq tables. C'est le signe que DDD est utilisé comme fin en soi, pas comme outil."
 date: 2026-06-06 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-06-ddd-quand-ca-aide-featured.svg
+featured_image: /assets/images/blog/2026-06-06-ddd-quand-ca-aide-featured.png
 
 ---
 

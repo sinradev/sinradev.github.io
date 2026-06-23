@@ -6,7 +6,7 @@ description: "The #NoEstimates movement challenges the value of estimation in so
 categories: ["Project Management", "Work Culture"]
 excerpt: "Estimation is often a shared fiction: developers give numbers they know are imprecise, management treats them as commitments, and when estimates are exceeded, everyone is surprised to be surprised. #NoEstimates says: let's stop the fiction. The question is: what do we replace it with?"
 date: 2026-06-10 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-10-no-estimates-featured.svg
+featured_image: /assets/images/blog/2026-06-10-no-estimates-featured.png
 
 ---
 

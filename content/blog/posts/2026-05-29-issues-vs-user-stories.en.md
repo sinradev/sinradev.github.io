@@ -6,7 +6,7 @@ description: "The user story is a conversation tool, not a work ticket. Conflati
 categories: ["Project Management", "Work Culture"]
 excerpt: "\"As a user, I want to be able to log in so that I can access my account.\" This ticket has been written millions of times. It describes nothing useful about what the developer needs to do. That is the central problem with the user story as a unit of work."
 date: 2026-05-29 00:00:00 +0100
-featured_image: /assets/images/blog/2026-05-29-issues-vs-user-stories-featured.svg
+featured_image: /assets/images/blog/2026-05-29-issues-vs-user-stories-featured.png
 
 ---
 

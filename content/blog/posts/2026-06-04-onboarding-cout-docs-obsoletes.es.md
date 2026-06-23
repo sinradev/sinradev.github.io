@@ -6,7 +6,7 @@ description: "La documentación obsoleta tiene un coste directo en el tiempo de 
 categories: ["Cultura Laboral", "Productividad en Desarrollo"]
 excerpt: "¿Cuántos días pasa un nuevo desarrollador intentando poner en marcha el proyecto en local antes de poder contribuir realmente? En la mayoría de los equipos, la respuesta está entre dos y diez días. La documentación de onboarding existe, solo que es incorrecta."
 date: 2026-06-04 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-04-onboarding-cout-docs-obsoletes-featured.svg
+featured_image: /assets/images/blog/2026-06-04-onboarding-cout-docs-obsoletes-featured.png
 
 ---
 

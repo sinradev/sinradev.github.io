@@ -6,7 +6,7 @@ description: "Le choix entre monorepo et polyrepo est souvent présenté comme u
 categories: ["Développement Productivité"]
 excerpt: "Si votre équipe passe plus de temps à débattre de monorepo vs polyrepo qu'à écrire du code, c'est le signe que le débat est mal posé. Les deux approches fonctionnent. La vraie question est : quelle structure correspond à votre organisation et à votre cycle de livraison ?"
 date: 2026-06-08 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-08-monorepo-vs-polyrepo-featured.svg
+featured_image: /assets/images/blog/2026-06-08-monorepo-vs-polyrepo-featured.png
 
 ---
 

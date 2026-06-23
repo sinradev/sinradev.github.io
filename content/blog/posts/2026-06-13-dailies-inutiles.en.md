@@ -6,7 +6,7 @@ description: "The Scrum daily standup has a precise goal: synchronize the team a
 categories: ["Project Management", "Work Culture"]
 excerpt: "It is 9:30. The team is gathered. Each person in turn answers the three questions: 'What did I do yesterday, what am I doing today, what are my blockers.' Fifteen minutes later, everyone goes back to their screen without anything having changed. This daily accomplished nothing."
 date: 2026-06-13 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-13-dailies-inutiles-featured.svg
+featured_image: /assets/images/blog/2026-06-13-dailies-inutiles-featured.png
 
 ---
 

@@ -6,7 +6,7 @@ description: "L'async est précieux pour certains types de travail. Mais la plan
 categories: ["Work Culture", "Gestion de Projet"]
 excerpt: "Votre équipe a une page Notion avec le plan du prochain trimestre. Elle a été rédigée la semaine dernière. Trois personnes ont ajouté des commentaires. Deux ont mis un emoji. Le plan n'a pas changé. Personne n'a pris de décision. C'est l'async sans contrôle : beaucoup d'activité, peu de résolution."
 date: 2026-06-02 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-02-reunion-planning-remplace-notion-featured.svg
+featured_image: /assets/images/blog/2026-06-02-reunion-planning-remplace-notion-featured.png
 
 ---
 

@@ -6,7 +6,7 @@ description: "SAFe (Scaled Agile Framework) est adopté par des milliers d'entre
 categories: ["Gestion de Projet", "Work Culture"]
 excerpt: "Votre organisation a implémenté SAFe. Vous avez maintenant des ARTs, des PI Plannings, des System Demos et des Inspect & Adapt workshops. Votre organisation est également plus lente, plus réunionnée et plus frustrante pour les ingénieurs qu'avant. Ce n'est pas un bug de votre implémentation SAFe. C'est souvent une caractéristique."
 date: 2026-06-11 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-11-safe-bureaucratie-agilite-featured.svg
+featured_image: /assets/images/blog/2026-06-11-safe-bureaucratie-agilite-featured.png
 
 ---
 

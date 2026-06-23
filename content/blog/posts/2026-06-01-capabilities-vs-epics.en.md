@@ -6,7 +6,7 @@ description: "An Agile epic is a vague concept that groups user stories without 
 categories: ["Project Management"]
 excerpt: "When is an epic done? The question should have a simple answer. In practice, in most teams, it triggers a long conversation. The epic grows, splits, reopens, migrates from sprint to sprint. That is not a Scrum implementation problem. It is a definition problem."
 date: 2026-06-01 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-01-capabilities-vs-epics-featured.svg
+featured_image: /assets/images/blog/2026-06-01-capabilities-vs-epics-featured.png
 
 ---
 

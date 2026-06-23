@@ -6,7 +6,7 @@ description: "Les feature flags sont un outil puissant pour le déploiement prog
 categories: ["Développement Productivité"]
 excerpt: "Votre codebase a 47 feature flags actifs. Cinq sont documentés. Trois sont liés à des fonctionnalités livrées il y a neuf mois et personne n'a pensé à les supprimer. Deux sont conflictuels : activer les deux en même temps produit un comportement indéfini. Vous venez de découvrir pourquoi les feature flags ne sont pas gratuits."
 date: 2026-06-07 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-07-feature-flags-puissance-complexite-featured.svg
+featured_image: /assets/images/blog/2026-06-07-feature-flags-puissance-complexite-featured.png
 
 ---
 

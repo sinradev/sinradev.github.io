@@ -6,7 +6,7 @@ description: "Les 1-on-1 manager-développeur sont souvent réduits à des réun
 categories: ["Work Culture", "Gestion de Projet"]
 excerpt: "Combien de fois avez-vous eu un 1-on-1 où votre manager a ouvert Jira pour passer en revue vos tickets en cours ? Cette réunion aurait pu être un email, ou une consultation de tableau Kanban. Le 1-on-1 qui ressemble à un rapport de statut est un 1-on-1 gâché."
 date: 2026-06-03 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-03-one-on-one-managers-featured.svg
+featured_image: /assets/images/blog/2026-06-03-one-on-one-managers-featured.png
 
 ---
 

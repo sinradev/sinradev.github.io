@@ -6,7 +6,7 @@ description: "La velocity de Scrum es una métrica proxy que con frecuencia se h
 categories: ["Gestión de Proyectos", "Cultura Laboral"]
 excerpt: "\"Nuestra velocity es de 42 puntos por sprint.\" Esta frase se pronuncia con orgullo en cientos de reuniones de planificación cada semana. ¿Qué dice exactamente? Que el equipo cierra tickets a un ritmo constante. Lo que no dice: si esos tickets crean valor, si las estimaciones son realistas, si el equipo está bien."
 date: 2026-05-31 00:00:00 +0100
-featured_image: /assets/images/blog/2026-05-31-cycles-sans-velocity-game-featured.svg
+featured_image: /assets/images/blog/2026-05-31-cycles-sans-velocity-game-featured.png
 
 ---
 

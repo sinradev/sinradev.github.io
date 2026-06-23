@@ -6,7 +6,7 @@ description: "La dette technique est souvent traitée comme une masse indistinct
 categories: ["Développement Productivité", "Gestion de Projet"]
 excerpt: "« On a besoin d'un sprint de dette technique. » Cette phrase est prononcée dans des centaines d'équipes chaque trimestre. Ce qui se passe ensuite : deux semaines de refactorisation sans direction claire, dont la valeur est impossible à communiquer au management, et qui ne change pas fondamentalement les problèmes les plus douloureux."
 date: 2026-06-05 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-05-dette-technique-nommer-featured.svg
+featured_image: /assets/images/blog/2026-06-05-dette-technique-nommer-featured.png
 
 ---
 

@@ -6,7 +6,7 @@ description: "Los 1-on-1s entre manager y desarrollador se reducen a menudo a re
 categories: ["Cultura Laboral", "Gestión de Proyectos"]
 excerpt: "¿Cuántas veces has tenido un 1-on-1 donde tu manager abrió Jira para revisar tus tickets en curso? Esa reunión podría haber sido un correo o una consulta al tablero Kanban. Un 1-on-1 que parece un reporte de estado es un 1-on-1 desperdiciado."
 date: 2026-06-03 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-03-one-on-one-managers-featured.svg
+featured_image: /assets/images/blog/2026-06-03-one-on-one-managers-featured.png
 
 ---
 

@@ -6,7 +6,7 @@ description: "El daily standup de Scrum tiene un objetivo preciso: sincronizar a
 categories: ["Gestión de Proyectos", "Cultura Laboral"]
 excerpt: "Son las 9:30. El equipo está reunido. Cada persona responde por turno a las tres preguntas: 'Qué hice ayer, qué hago hoy, cuáles son mis bloqueos.' Quince minutos después, todos regresan a sus pantallas sin que nada haya cambiado. Este daily no sirvió para nada."
 date: 2026-06-13 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-13-dailies-inutiles-featured.svg
+featured_image: /assets/images/blog/2026-06-13-dailies-inutiles-featured.png
 
 ---
 

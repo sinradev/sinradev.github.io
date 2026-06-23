@@ -6,7 +6,7 @@ description: "Los Product Owners crean specs ambiciosas sin conocer las restricc
 date: 2026-01-23 09:00:00 +0100
 categories: ["Specifications"]
 excerpt: "El PM escribe: « Añadir autenticación multi-factor ». El equipo dev descubre que la arquitectura actual solo soporta un método de autenticación. Refactorización completa necesaria. 3 semanas perdidas. La IA podría haber analizado el código antes de la spec."
-featured_image: /assets/images/blog/2026-01-23-specs-ia-featured.svg
+featured_image: /assets/images/blog/2026-01-23-specs-ia-featured.png
 ---
 
 ## "Añadan Autenticación Multi-Factor"

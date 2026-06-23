@@ -6,7 +6,7 @@ description: "La user story es una herramienta de conversación, no un ticket de
 categories: ["Gestión de Proyectos", "Cultura Laboral"]
 excerpt: "\"Como usuario, quiero poder iniciar sesión para poder acceder a mi cuenta.\" Este ticket se ha escrito millones de veces. No describe nada útil sobre lo que el desarrollador debe hacer. Ese es el problema central de la user story como unidad de trabajo."
 date: 2026-05-29 00:00:00 +0100
-featured_image: /assets/images/blog/2026-05-29-issues-vs-user-stories-featured.svg
+featured_image: /assets/images/blog/2026-05-29-issues-vs-user-stories-featured.png
 
 ---
 

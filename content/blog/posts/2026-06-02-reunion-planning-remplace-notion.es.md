@@ -6,7 +6,7 @@ description: "El async es valioso para ciertos tipos de trabajo. Pero la planifi
 categories: ["Cultura Laboral", "Gestión de Proyectos"]
 excerpt: "Tu equipo tiene una página de Notion con el plan del próximo trimestre. Fue redactada la semana pasada. Tres personas añadieron comentarios. Dos pusieron un emoji. El plan no ha cambiado. Nadie ha tomado una decisión. Eso es el async sin control: mucha actividad, poca resolución."
 date: 2026-06-02 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-02-reunion-planning-remplace-notion-featured.svg
+featured_image: /assets/images/blog/2026-06-02-reunion-planning-remplace-notion-featured.png
 
 ---
 

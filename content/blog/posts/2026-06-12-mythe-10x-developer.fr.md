@@ -6,7 +6,7 @@ description: "Le concept de '10x developer' est basé sur une étude de 1968 qui
 categories: ["Work Culture"]
 excerpt: "Il existe dans l'industrie tech un archétype admiré : le développeur brillant et solitaire qui produit plus de code que dix développeurs ordinaires. Cet archétype influence les recrutements, justifie des packages salariaux inégaux et crée des cultures d'équipe dysfonctionnelles. Il est aussi en grande partie un mythe."
 date: 2026-06-12 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-12-mythe-10x-developer-featured.svg
+featured_image: /assets/images/blog/2026-06-12-mythe-10x-developer-featured.png
 
 ---
 

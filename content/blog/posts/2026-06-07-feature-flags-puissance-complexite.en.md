@@ -6,7 +6,7 @@ description: "Feature flags are a powerful tool for progressive deployment and s
 categories: ["Development Productivity"]
 excerpt: "Your codebase has 47 active feature flags. Five are documented. Three are tied to features shipped nine months ago and no one thought to remove them. Two conflict with each other: enabling both at the same time produces undefined behavior. You have just discovered why feature flags are not free."
 date: 2026-06-07 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-07-feature-flags-puissance-complexite-featured.svg
+featured_image: /assets/images/blog/2026-06-07-feature-flags-puissance-complexite-featured.png
 
 ---
 

@@ -7,7 +7,7 @@ description: "Product Owners create ambitious specs without knowing technical co
 date: 2026-01-23 09:00:00 +0100
 categories: ["Specifications"]
 excerpt: "The PM writes: 'Add multi-factor authentication'. The dev team discovers the current architecture only supports one authentication method. Complete refactoring required. 3 weeks wasted. AI could have analyzed the code before writing the spec."
-featured_image: /assets/images/blog/2026-01-23-specs-ia-featured.svg
+featured_image: /assets/images/blog/2026-01-23-specs-ia-featured.png
 ---
 url: /specifications/2026/01/23/ai-specs-generation-source-code.html
 

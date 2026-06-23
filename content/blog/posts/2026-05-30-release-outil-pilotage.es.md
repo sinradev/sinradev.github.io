@@ -6,7 +6,7 @@ description: "Una release bien diseñada no es solo un empaquetado de funcionali
 categories: ["Gestión de Proyectos", "Productividad de Desarrollo"]
 excerpt: "¿Cuántas veces has visto una release convertirse en un cajón de sastre de funcionalidades a medio terminar, correcciones de última hora y tickets migrados desde tres sprints anteriores? La release ha perdido su sentido porque solo se usa como contenedor de entrega, no como herramienta de gestión."
 date: 2026-05-30 00:00:00 +0100
-featured_image: /assets/images/blog/2026-05-30-release-outil-pilotage-featured.svg
+featured_image: /assets/images/blog/2026-05-30-release-outil-pilotage-featured.png
 
 ---
 

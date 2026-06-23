@@ -6,7 +6,7 @@ description: "The choice between monorepo and polyrepo is often framed as a fund
 categories: ["Development Productivity"]
 excerpt: "If your team spends more time debating monorepo vs polyrepo than writing code, that is a sign the debate is framed wrong. Both approaches work. The real question is: which structure fits your organization and your delivery cycle?"
 date: 2026-06-08 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-08-monorepo-vs-polyrepo-featured.svg
+featured_image: /assets/images/blog/2026-06-08-monorepo-vs-polyrepo-featured.png
 
 ---
 

@@ -6,7 +6,7 @@ description: "Technical debt is often treated as an undifferentiated mass to red
 categories: ["Development Productivity", "Project Management"]
 excerpt: "\"We need a technical debt sprint.\" This phrase is spoken in hundreds of teams every quarter. What happens next: two weeks of refactoring without clear direction, whose value is impossible to communicate to management, and which doesn't fundamentally change the most painful problems."
 date: 2026-06-05 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-05-dette-technique-nommer-featured.svg
+featured_image: /assets/images/blog/2026-06-05-dette-technique-nommer-featured.png
 
 ---
 

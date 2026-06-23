@@ -6,7 +6,7 @@ description: "Manager-developer 1-on-1s are often reduced to status update meeti
 categories: ["Work Culture", "Project Management"]
 excerpt: "How many times have you had a 1-on-1 where your manager opened Jira to review your current tickets? That meeting could have been an email, or a glance at the Kanban board. A 1-on-1 that looks like a status report is a wasted 1-on-1."
 date: 2026-06-03 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-03-one-on-one-managers-featured.svg
+featured_image: /assets/images/blog/2026-06-03-one-on-one-managers-featured.png
 
 ---
 

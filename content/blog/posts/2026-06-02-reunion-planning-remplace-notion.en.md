@@ -6,7 +6,7 @@ description: "Async is valuable for certain types of work. But collective planni
 categories: ["Work Culture", "Project Management"]
 excerpt: "Your team has a Notion page with next quarter's plan. It was written last week. Three people added comments. Two reacted with an emoji. The plan hasn't changed. No decision has been made. That's async without guardrails: lots of activity, little resolution."
 date: 2026-06-02 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-02-reunion-planning-remplace-notion-featured.svg
+featured_image: /assets/images/blog/2026-06-02-reunion-planning-remplace-notion-featured.png
 
 ---
 

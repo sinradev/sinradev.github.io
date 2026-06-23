@@ -6,7 +6,7 @@ description: "A well-designed release is not just a packaging of delivered featu
 categories: ["Project Management", "Development Productivity"]
 excerpt: "How many times have you seen a release turn into a catch-all of half-finished features, last-minute fixes, and tickets migrated from three previous sprints? The release has lost its meaning because it is only used as a delivery container, not as a management tool."
 date: 2026-05-30 00:00:00 +0100
-featured_image: /assets/images/blog/2026-05-30-release-outil-pilotage-featured.svg
+featured_image: /assets/images/blog/2026-05-30-release-outil-pilotage-featured.png
 
 ---
 

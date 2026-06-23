@@ -6,7 +6,7 @@ description: "Outdated documentation has a direct cost on developer onboarding t
 categories: ["Work Culture", "Development Productivity"]
 excerpt: "How many days does a new developer spend trying to get the project running locally before they can actually contribute? In most teams, the answer is somewhere between two and ten days. The onboarding documentation exists - it's just wrong."
 date: 2026-06-04 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-04-onboarding-cout-docs-obsoletes-featured.svg
+featured_image: /assets/images/blog/2026-06-04-onboarding-cout-docs-obsoletes-featured.png
 
 ---
 

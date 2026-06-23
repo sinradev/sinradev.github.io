@@ -6,7 +6,7 @@ description: "Le post-mortem blameless repose sur un principe simple : les incid
 categories: ["Work Culture", "Développement Productivité"]
 excerpt: "La base de données de production est tombée vendredi à 18h. Le post-mortem a eu lieu lundi. Dans le compte-rendu : cinq points d'amélioration des processus, trois actions de remédiation technique, et une mention discrète que 'l'incident a été causé par une erreur humaine lors de la migration'. Cette phrase est l'opposé d'un blameless post-mortem."
 date: 2026-06-09 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-09-post-mortem-blameless-featured.svg
+featured_image: /assets/images/blog/2026-06-09-post-mortem-blameless-featured.png
 
 ---
 

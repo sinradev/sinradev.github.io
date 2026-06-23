@@ -6,7 +6,7 @@ description: "La documentation obsolète a un coût direct sur le temps d'onboar
 categories: ["Work Culture", "Développement Productivité"]
 excerpt: "Combien de jours un nouveau développeur passe-t-il à essayer de faire tourner le projet en local avant de pouvoir contribuer réellement ? Dans la plupart des équipes, la réponse est entre deux et dix jours. La documentation d'onboarding existe, elle est juste fausse."
 date: 2026-06-04 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-04-onboarding-cout-docs-obsoletes-featured.svg
+featured_image: /assets/images/blog/2026-06-04-onboarding-cout-docs-obsoletes-featured.png
 
 ---
 

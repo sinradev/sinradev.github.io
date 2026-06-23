@@ -6,7 +6,7 @@ description: "Les Product Owners créent des specs ambitieuses sans connaître l
 date: 2026-01-23 09:00:00 +0100
 categories: ["Specifications"]
 excerpt: "Le PM écrit : « Ajouter l'authentification multi-facteur ». L'équipe dev découvre que l'architecture actuelle ne supporte qu'une seule méthode d'authentification. Refonte complète nécessaire. 3 semaines perdues. L'IA aurait pu analyser le code avant la spec."
-featured_image: /assets/images/blog/2026-01-23-specs-ia-featured.svg
+featured_image: /assets/images/blog/2026-01-23-specs-ia-featured.png
 ---
 
 ## « Ajoutez L'Authentification Multi-Facteur »

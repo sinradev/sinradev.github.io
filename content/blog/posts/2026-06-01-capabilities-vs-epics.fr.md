@@ -6,7 +6,7 @@ description: "L'epic Agile est un concept flou qui regroupe des user stories san
 categories: ["Gestion de Projet"]
 excerpt: "Quand est-ce qu'une epic est terminée ? La question devrait avoir une réponse simple. En pratique, dans la plupart des équipes, c'est une longue conversation. L'epic grandit, se divise, se réouvre, migre d'un sprint à l'autre. Ce n'est pas un problème d'implémentation Scrum. C'est un problème de définition."
 date: 2026-06-01 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-01-capabilities-vs-epics-featured.svg
+featured_image: /assets/images/blog/2026-06-01-capabilities-vs-epics-featured.png
 
 ---
 

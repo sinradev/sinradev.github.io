@@ -6,7 +6,7 @@ description: "La user story est un outil de conversation, pas un ticket de trava
 categories: ["Gestion de Projet", "Work Culture"]
 excerpt: "« En tant qu'utilisateur, je veux pouvoir me connecter afin de pouvoir accéder à mon compte. » Ce ticket a été écrit des millions de fois. Il ne décrit rien d'utile sur ce que le développeur doit faire. C'est le problème central de la user story comme unité de travail."
 date: 2026-05-29 00:00:00 +0100
-featured_image: /assets/images/blog/2026-05-29-issues-vs-user-stories-featured.svg
+featured_image: /assets/images/blog/2026-05-29-issues-vs-user-stories-featured.png
 
 ---
 

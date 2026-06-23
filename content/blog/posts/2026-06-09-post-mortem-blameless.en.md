@@ -6,7 +6,7 @@ description: "The blameless post-mortem rests on a simple principle: incidents a
 categories: ["Work Culture", "Development Productivity"]
 excerpt: "The production database went down on Friday at 6pm. The post-mortem was held on Monday. In the write-up: five process improvement points, three technical remediation actions, and a discreet mention that 'the incident was caused by human error during migration.' That sentence is the opposite of a blameless post-mortem."
 date: 2026-06-09 00:00:00 +0100
-featured_image: /assets/images/blog/2026-06-09-post-mortem-blameless-featured.svg
+featured_image: /assets/images/blog/2026-06-09-post-mortem-blameless-featured.png
 
 ---
 
