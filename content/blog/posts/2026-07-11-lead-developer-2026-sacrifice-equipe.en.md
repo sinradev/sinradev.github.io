@@ -14,7 +14,7 @@ Becoming a Lead Developer is often framed as a promotion. More responsibility, m
 
 In 2026, with distributed teams, stacks evolving faster than ever, and constant product pressure, the Lead Developer role has grown more complex. It's no longer just "the senior developer who reviews everyone else's code." It's a hinge function between product, technology, and people, where most of the work can't be measured in lines of code written.
 
-## What this role actually represents in a company
+## A role at the crossing of three contradictory demands
 
 A Lead Developer occupies a peculiar position: not quite a manager, not quite an individual contributor. This hybrid position is often misunderstood, both by the organization and by the lead themselves at first.
 
@@ -26,7 +26,7 @@ Within an organization, the Lead Developer is the convergence point of three nee
 
 A good Lead Developer doesn't favor one of these needs at the expense of the other two. They constantly search for the balance point, knowing that balance shifts every week depending on context. It's a role of permanent tension, not comfort.
 
-## The 80% sacrifice: giving away the best problems, not keeping them
+## Why you give away the best problems, never keep them
 
 Here's the most counterintuitive part of the role, and probably the hardest to accept for someone who got promoted because they were an excellent developer: **as a lead, you have to give the most interesting problems to your team, not keep them for yourself.**
 
@@ -43,7 +43,7 @@ Concretely, this means the lead spends a large part of their time:
 
 This isn't disinterested altruism. It's a deliberate calculation: the lead's role is no longer to produce the best solution individually, but to maximize the team's collective capacity to produce good solutions, again and again, with or without them.
 
-## Owning failures, erasing your name from victories
+## Fail alone, win as a group
 
 A simple principle, rarely upheld over time: **failures are personal, victories are collective.**
 
@@ -53,7 +53,7 @@ Conversely, when a success arrives, the reflex should be to highlight the people
 
 This deliberate asymmetry - absorbing the negative, redirecting the positive - is what builds long-term trust. A team that knows its lead has their back in failure and highlights them in success takes more risks, innovates more, and communicates more honestly about its struggles.
 
-## Supporting without imposing, guiding without forcing
+## Convincing without ever deciding in the team's place
 
 The Lead Developer has disproportionate influence over technical decisions, almost by definition: more experience, more overview, often more tenure in the product's context. This influence is a powerful tool, and just as powerful a trap.
 
@@ -65,7 +65,7 @@ This principle extends to day-to-day mentoring. When a developer is stuck on a p
 
 That invested time is never wasted. A developer who finds their own solution retains the problem-solving process, not just the result. Next time, they'll need less help.
 
-## Shielding the team from stress, no matter the subject
+## Standing between the pressure and the team
 
 Another often-underestimated aspect of the role: the lead acts as a buffer between external pressures (tight deadlines, last-minute priority changes, unhappy clients, an impatient leadership team) and a team that needs to keep producing quality work.
 
@@ -73,7 +73,7 @@ This doesn't mean hiding reality or lying about difficulties. It means filtering
 
 This protection applies **no matter the subject**, including ones the lead doesn't particularly enjoy handling: interpersonal conflicts, friction with other teams, or unpopular decisions from above. Supporting the team isn't just about the pleasant technical topics, but also the uncomfortable organizational ones.
 
-## Closeness with product: anticipating instead of reacting
+## Talking to product before the spec exists
 
 Finally, an effective Lead Developer doesn't work in reaction to specs that arrive. They collaborate closely with product, upstream of spec writing, to anticipate upcoming development and provide technical guidelines before the writing work even begins.
 

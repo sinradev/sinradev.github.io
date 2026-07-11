@@ -14,7 +14,7 @@ Devenir Lead Developer est souvent présenté comme une promotion. Plus de respo
 
 En 2026, avec des équipes distribuées, des stacks qui évoluent plus vite que jamais, et une pression produit constante, le rôle de Lead Developer s'est complexifié. Ce n'est plus seulement "le développeur senior qui review le code des autres". C'est une fonction charnière entre le produit, la technique et l'humain, où la majorité du travail ne se mesure pas en lignes de code écrites.
 
-## Ce que représente vraiment ce poste dans une entreprise
+## Un poste à la croisée de trois exigences contradictoires
 
 Un Lead Developer occupe une position particulière : ni tout à fait manager, ni tout à fait développeur individuel contributeur. Cette position hybride est souvent mal comprise, aussi bien par l'entreprise que par le lead lui-même au début.
 
@@ -26,7 +26,7 @@ Dans une organisation, le Lead Developer est le point de convergence entre trois
 
 Un bon Lead Developer ne privilégie pas l'un de ces besoins au détriment des deux autres. Il cherche en permanence le point d'équilibre, sachant que cet équilibre bouge chaque semaine selon le contexte. C'est un poste de tension permanente, pas de confort.
 
-## Le sacrifice des 80% : donner les meilleurs sujets, pas les garder
+## Pourquoi il faut donner les meilleurs sujets, jamais les garder
 
 Voici le point le plus contre-intuitif du rôle, et probablement le plus difficile à accepter pour quelqu'un qui a été promu parce qu'il était un excellent développeur : **en tant que lead, on doit donner les sujets les plus intéressants à son équipe, pas se les garder.**
 
@@ -43,7 +43,7 @@ Concrètement, ça veut dire que le lead passe une grande partie de son temps à
 
 Ce n'est pas de l'altruisme désintéressé. C'est un calcul délibéré : le rôle du lead n'est plus de produire la meilleure solution individuellement, mais de maximiser la capacité collective de l'équipe à produire de bonnes solutions, encore et encore, avec ou sans lui.
 
-## Assumer les échecs, effacer son nom des victoires
+## Échouer seul, réussir à plusieurs
 
 Un principe simple mais rarement tenu dans la durée : **les échecs sont personnels, les victoires sont collectives.**
 
@@ -53,7 +53,7 @@ Quand un projet dérape, un incident survient en production, ou un choix techniq
 
 Cette asymétrie volontaire - absorber le négatif, rediriger le positif - est ce qui construit la confiance à long terme. Une équipe qui sait que son lead la couvre en cas d'échec et la valorise en cas de succès prend plus de risques, innove davantage, et communique plus honnêtement sur ses difficultés.
 
-## Soutenir sans imposer, guider sans forcer
+## Convaincre sans jamais trancher à la place de l'équipe
 
 Le Lead Developer a une influence disproportionnée sur les choix techniques, presque par définition : plus d'expérience, plus de vue d'ensemble, souvent plus d'ancienneté dans le contexte du produit. Cette influence est un outil puissant, et un piège tout aussi puissant.
 
@@ -65,7 +65,7 @@ Ce principe s'étend au quotidien du mentorat. Quand un développeur bloque sur 
 
 Ce temps investi n'est jamais perdu. Un développeur qui trouve sa propre solution retient la démarche de résolution, pas seulement le résultat. La prochaine fois, il aura besoin de moins d'aide.
 
-## Protéger l'équipe du stress, quel que soit le sujet
+## Faire écran entre la pression et l'équipe
 
 Un autre aspect souvent sous-estimé du rôle : le lead sert de tampon entre les pressions externes (délais serrés, changements de priorité de dernière minute, clients mécontents, direction impatiente) et l'équipe qui doit continuer à produire un travail de qualité.
 
@@ -73,7 +73,7 @@ Un autre aspect souvent sous-estimé du rôle : le lead sert de tampon entre les
 
 Cette protection s'applique **quel que soit le sujet**, y compris ceux qu'on n'aime pas particulièrement gérer, y compris les conflits interpersonnels, les frictions avec d'autres équipes, ou les décisions impopulaires venues d'en haut. Soutenir son équipe ne se fait pas seulement sur les sujets techniques agréables, mais aussi sur les sujets organisationnels inconfortables.
 
-## La proximité avec le produit : anticiper au lieu de subir
+## Parler au produit avant que la spec n'existe
 
 Enfin, un Lead Developer efficace ne travaille pas en réaction aux specs qui arrivent. Il est en collaboration étroite avec le produit, en amont de l'écriture des spécifications, pour anticiper les prochains développements et donner des lignes directrices techniques avant que le travail de rédaction ne commence.
 
