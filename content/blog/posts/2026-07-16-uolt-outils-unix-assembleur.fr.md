@@ -2,7 +2,7 @@
 
 title: "Réécrire les outils Unix en assembleur : la démarche derrière UOLT"
 subtitle: "Pourquoi reconstruire cat, ls et sort à la main en assembleur x86_64, comment on garde ça propre, et ce que cette discipline nous apprend sur l'efficacité logicielle"
-description: "UOLT (Ultra Optimised Lightweight Toolset) réécrit les utilitaires Unix en assembleur pur : zéro dépendance, syscalls directs, pas de tas mémoire, des binaires statiques sous le kilo-octet. La démarche, le pourquoi, le comment, et le lancement de la collection extras avec uolt-table."
+description: "UOLT (Ultra Optimised Lightweight Toolset) réécrit les utilitaires Unix en assembleur pur : zéro dépendance, syscalls directs, pas de tas mémoire, des binaires statiques sous le kilo-octet. La démarche, le pourquoi, le comment, et le lancement de la collection extras avec uolt-column."
 categories: ["Ingénierie"]
 excerpt: "Un cat moderne pèse plusieurs dizaines de kilo-octets et tire derrière lui la libc entière. Est-ce que ça doit être le cas ? UOLT répond non : chaque outil est réécrit à la main en assembleur x86_64, sans libc, sans tas mémoire, en syscalls directs. La suite complète tient dans ce qu'un seul binaire coreutils occupe. Voici la démarche."
 date: 2026-07-16 09:00:00 +0200
@@ -76,40 +76,28 @@ Et il y a un plancher de performance : chaque outil doit être au moins aussi ra
 
 ## Le nouveau chapitre : la collection extras
 
-Le cœur d'UOLT est volontairement strict : que du POSIX, rien de plus. Mais certains outils sont réellement utiles sans être POSIX du tout - il n'existe même pas d'utilitaire standard pour eux. Plutôt que de polluer le cœur ou de forcer la constitution, ces outils vivent dans une collection séparée : **extras**.
+Le cœur d'UOLT est volontairement strict : que du POSIX, rien de plus. Mais certains outils vraiment utiles ne font pas partie du cœur POSIX. Plutôt que de polluer le cœur ou de forcer la constitution, ces outils vivent dans une collection séparée : **extras**.
 
 Les extras réutilisent exactement la même infrastructure assembleur - la couche syscall, la bibliothèque interne partagée, le script de lien statique - et obéissent à tous les principes du projet, **sauf** la contrainte POSIX. Chacun reste de l'assembleur x86_64 écrit à la main, en syscalls directs, sans dépendance, sans tas, avec une cible de taille et une batterie de tests complète.
 
-Le premier membre de cette collection est **`uolt-table`**.
+Le premier membre de cette collection est **`uolt-column`**.
 
-### uolt-table : vos pipes en tableaux
+### uolt-column : vos pipes alignés en colonnes
 
-L'idée est simple. Beaucoup de commandes Unix produisent des colonnes séparées par des espaces, difficiles à lire quand les largeurs varient. `uolt-table` lit l'entrée standard et la rend sous forme de tableau dessiné avec les caractères de filet Unicode :
-
-```console
-$ printf 'nom taille date\nfoo 1024 juil16\nbar 42 juil15\n' | uolt-table
-┌─────┬────────┬────────┐
-│ nom │ taille │ date   │
-│ foo │ 1024   │ juil16 │
-│ bar │ 42     │ juil15 │
-└─────┴────────┴────────┘
-```
-
-Les champs sont découpés sur les suites d'espaces, et les largeurs de colonnes sont calculées en **points de code UTF-8** - donc le texte accentué reste aligné, un « café » de quatre octets comptant bien pour quatre colonnes d'affichage. L'entrée est chargée dans une région `mmap` qui grandit à la demande : n'importe quelle taille d'entrée est rendue sans troncature silencieuse.
-
-Avec l'option `-H`, la première ligne devient un en-tête, séparé du corps par un filet :
+L'idée est simple. Beaucoup de commandes Unix produisent des colonnes séparées par des espaces, illisibles quand les largeurs varient. L'outil `column -t` d'util-linux/BSD sert justement à les aligner - mais il tire la libc et pèse plusieurs dizaines de kilo-octets. `uolt-column` fait la même chose en **1552 octets** :
 
 ```console
-$ printf 'nom taille\nfoo 1024\nbar 42\n' | uolt-table -H
-┌─────┬────────┐
-│ nom │ taille │
-├─────┼────────┤
-│ foo │ 1024   │
-│ bar │ 42     │
-└─────┴────────┘
+$ printf 'nom taille date\nfoo 1024 juil16\nbar 42 juil15\n' | uolt-column -t
+nom  taille  date
+foo  1024    juil16
+bar  42      juil15
 ```
 
-Le tout dans un binaire statique de **1952 octets** sur Linux. Pour comparaison, l'outil standard le plus proche, `column`, tire la libc et pèse plusieurs dizaines de kilo-octets.
+Les champs sont découpés sur les suites d'espaces, chacun est complété par des espaces jusqu'à la largeur maximale de sa colonne, les colonnes sont séparées par deux espaces, et le dernier champ de chaque ligne n'est pas complété. C'est **exactement** la sortie de `column -t` sur une entrée rectangulaire - vérifié par un test différentiel qui compare octet pour octet avec le `column` du système, sur Linux (util-linux) comme sur macOS (BSD). Les largeurs sont mesurées en **points de code UTF-8**, donc le texte accentué reste aligné.
+
+C'est là que le choix de `column` plutôt qu'un objet décoratif prend son sens. Un outil UOLT se définit par ce test différentiel au bit près contre une référence : `column` a deux implémentations de référence, donc `uolt-column` rentre dans le moule exactement comme les 34 autres. Et sa sortie reste **composable** - du texte aligné qu'on peut encore passer à `grep`, `cut` ou `awk` en aval, contrairement à un rendu encadré qui serait un cul-de-sac dans un pipe.
+
+Seul le mode `-t` (tableau) est implémenté : c'est le mode déterministe et utile. Le mode « colonnes » par défaut de `column` dépend de la largeur du terminal et n'est pas reproductible, donc hors périmètre. L'argument `-t` est accepté pour que les invocations `column -t` existantes fonctionnent sans changement. L'entrée est chargée dans une région `mmap` qui grandit à la demande : n'importe quelle taille est alignée sans troncature silencieuse.
 
 ## Ce que cette démarche nous apprend
 

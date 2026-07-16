@@ -53,26 +53,21 @@
     <circle cx="404" cy="163" r="6" fill="#ff5f56"/>
     <circle cx="424" cy="163" r="6" fill="#ffbd2e"/>
     <circle cx="444" cy="163" r="6" fill="#27c93f"/>
-    <text x="800" y="168" font-family="'Courier New', monospace" font-size="14" text-anchor="end" fill="#5a6790">ls | uolt-table</text>
+    <text x="800" y="168" font-family="'Courier New', monospace" font-size="14" text-anchor="end" fill="#5a6790">ls | uolt-column -t</text>
 
-    <!-- table grid -->
-    <g stroke="#2f3a58" stroke-width="1.5">
-      <line x1="410" y1="238" x2="790" y2="238"/>
-      <line x1="600" y1="206" x2="600" y2="378"/>
-    </g>
-
+    <!-- aligned columns (uolt-column output), no borders -->
     <g font-family="'Courier New', monospace" font-size="22">
-      <text x="430" y="230" fill="#c792e9">outil</text>
-      <text x="770" y="230" text-anchor="end" fill="#c792e9">taille</text>
+      <text x="422" y="230" fill="#c792e9">outil</text>
+      <text x="612" y="230" fill="#c792e9">taille</text>
 
-      <text x="430" y="272" fill="#8b9cbf">true</text>
-      <text x="770" y="272" text-anchor="end" fill="#a6f079">384 B</text>
+      <text x="422" y="272" fill="#8b9cbf">true</text>
+      <text x="612" y="272" fill="#a6f079">384 B</text>
 
-      <text x="430" y="312" fill="#8b9cbf">echo</text>
-      <text x="770" y="312" text-anchor="end" fill="#a6f079">608 B</text>
+      <text x="422" y="312" fill="#8b9cbf">echo</text>
+      <text x="612" y="312" fill="#a6f079">608 B</text>
 
-      <text x="430" y="352" fill="#8b9cbf">table</text>
-      <text x="770" y="352" text-anchor="end" fill="#a6f079">1952 B</text>
+      <text x="422" y="352" fill="#8b9cbf">column</text>
+      <text x="612" y="352" fill="#a6f079">1552 B</text>
     </g>
   </g>
 
