@@ -1,8 +1,8 @@
 ---
 
-title: "Crystal Methods: Agility That Adapts to Your Project's Size and Risk"
+title: "Crystal Methodology: Agility That Adapts to Your Project's Size and Risk"
 subtitle: "Crystal Clear, Crystal Yellow, Crystal Orange... The family of methods by Alistair Cockburn that calibrates agility to context"
-description: "Crystal Methods is a family of agile methods created by Alistair Cockburn that adapts the process according to team size and project criticality. Discover Crystal Clear, Yellow, Orange, and Red."
+description: "Crystal methodology is a family of agile methods created by Alistair Cockburn that adapts the process according to team size and project criticality. Discover Crystal Clear, Yellow, Orange, and Red."
 categories: ["Methodology"]
 excerpt: "Alistair Cockburn had a simple and powerful idea: there is no single optimal agile method. The right method depends on team size and project risk. Crystal Methods is a family of methods calibrated on these two parameters."
 date: 2026-05-09 09:00:00 +0100
