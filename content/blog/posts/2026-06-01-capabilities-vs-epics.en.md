@@ -1,8 +1,8 @@
 ---
 
-title: "Capabilities vs epics: when word precision changes work precision"
+title: "Capabilities vs Epics in Project Management: What's the Real Difference?"
 subtitle: "An epic is supposed to group the user stories that contribute to a shared high-level objective. In practice, it is often a catch-all that nobody really knows how to close."
-description: "An Agile epic is a vague concept that groups user stories without a clear completion criterion. A capability is a concrete feature with a defined state. The difference is not semantic: it changes how you plan and how you know when you are done."
+description: "Capabilities vs epics in project management: an epic is a vague bucket with no clear finish line. A capability is a concrete feature with a defined state. See why this distinction changes how you plan work and know when it's done."
 categories: ["Project Management"]
 excerpt: "When is an epic done? The question should have a simple answer. In practice, in most teams, it triggers a long conversation. The epic grows, splits, reopens, migrates from sprint to sprint. That is not a Scrum implementation problem. It is a definition problem."
 date: 2026-06-01 00:00:00 +0100
