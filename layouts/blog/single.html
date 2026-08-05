@@ -38,9 +38,7 @@
     <div class="mt-16 bg-base-200 rounded-2xl p-8 text-center">
       <h2 class="text-2xl font-bold mb-4">{{ i18n "blog_ready_to_transform" }}</h2>
       <p class="text-base-content/70 mb-6">{{ i18n "blog_cta_description" }}</p>
-      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
-        {{ i18n "blog_start_free_trial" }}
-      </a>
+      {{ partial "cta-signup.html" (dict "text" (i18n "blog_start_free_trial")) }}
     </div>
 
     {{/* Prev/Next navigation */}}

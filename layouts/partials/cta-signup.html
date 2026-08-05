@@ -1,0 +1,3 @@
+{{- /* Sign-up CTA. Params: text (label), class (optional, default "btn btn-primary btn-lg"). */ -}}
+{{- $class := .class | default "btn btn-primary btn-lg" -}}
+<a href="https://app.sinra.dev/users/sign_up" class="{{ $class }}" target="_blank" rel="noopener noreferrer">{{ .text }}</a>

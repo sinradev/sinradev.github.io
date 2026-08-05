@@ -9,3 +9,6 @@ node_modules/
 # Local configuration
 CLAUDE.md
 .DS_Store
+
+# Source design artifacts (not part of the Hugo build)
+sources/

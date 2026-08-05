@@ -123,9 +123,7 @@
     <div class="container mx-auto px-6 max-w-3xl">
       <h2 class="text-3xl font-bold mb-4">{{ $about.ready_to_transform }}</h2>
       <p class="text-base-content/70 mb-8">{{ $about.ready_to_transform_desc }}</p>
-      <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
-        {{ $about.learn_more }}
-      </a>
+      {{ partial "cta-signup.html" (dict "text" $about.learn_more) }}
     </div>
   </section>
 </div>

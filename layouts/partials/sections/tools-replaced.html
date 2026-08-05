@@ -89,9 +89,7 @@
             </li>
             {{ end }}
           </ul>
-          <a href="https://app.sinra.dev/users/sign_up" class="btn btn-primary btn-sm mt-8" target="_blank" rel="noopener noreferrer">
-            {{ $section.cta_label }}
-          </a>
+          {{ partial "cta-signup.html" (dict "text" $section.cta_label "class" "btn btn-primary btn-sm mt-8") }}
         </div>
       </div>
 

@@ -4,9 +4,6 @@
 User-agent: *
 Allow: /
 Disallow: /assets/
-Disallow: /_site/
-Disallow: /.jekyll-cache/
-Disallow: /search
 
 # Sitemap locations
 Sitemap: https://sinra.dev/sitemap.xml
