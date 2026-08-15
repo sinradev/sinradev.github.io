@@ -1,7 +1,7 @@
 ---
 title: "VCS Integration"
-description: "Link your GitHub repositories to SINRA to automatically advance the development status of issues and capabilities from git events: PR opened, review approved, merged, pushed."
-date: 2026-08-14
+description: "Link your GitHub, GitLab or Bitbucket repositories to SINRA to automatically advance the development status of issues and capabilities from git events: PR opened, review approved, merged, pushed."
+date: 2026-08-16
 weight: 100
 ---
 
@@ -9,7 +9,7 @@ weight: 100
 
 VCS integration connects your organization's code repositories to SINRA. When a significant event happens on the repository side (PR opened, review approved, merge, push), the development status of the affected issue advances automatically, without any manual update. Capabilities, whose progress is derived from their issues, mechanically reflect the real state of development.
 
-In V1, only **GitHub** is supported, through a CI job that notifies SINRA (no webhook/GitHub App). Synchronization is one-directional: **git → SINRA**. SINRA never writes back to the hosting provider (no remote branch or PR creation).
+**GitHub, GitLab and Bitbucket** are all supported (cloud only - gitlab.com and bitbucket.org, no self-hosted instances), through a CI job that notifies SINRA (no webhook/App). Synchronization is one-directional: **git → SINRA**. SINRA never writes back to the hosting provider (no remote branch or PR creation). The routing and status-transition logic is fully host-agnostic: all three providers behave identically once a repository is linked.
 
 ## Routing principle: the number in the branch name
 
@@ -33,12 +33,14 @@ Routing applies **strict precedence**:
 An organization admin links a repository from a **platform**:
 
 1. **Others → Platforms** menu → edit the platform → **Linked repositories** section → **New repository**.
-2. Connect your GitHub account to pick the repository and its branch from a list (or enter them manually).
+2. Pick a provider (**GitHub**, **GitLab** or **Bitbucket**), connect the corresponding account from the **Connections** panel to pick the repository and its branch from a list (or enter them manually).
 3. The repository shows up as **connected**.
 
-A repository belongs to exactly one platform; a platform can link several repositories. Events from a repository can only affect issues/capabilities of **the same platform**: an event targeting an entity outside this platform is ignored without error.
+Each provider is connected independently - an organization can link repositories from all three at once, and each connection can be revoked individually without affecting the others. A repository belongs to exactly one platform; a platform can link several repositories, from any mix of providers. Events from a repository can only affect issues/capabilities of **the same platform**: an event targeting an entity outside this platform is ignored without error.
 
 A repository's connection state is always visible: **Connected**, **Disconnected**, or **Revoked** (authorization removed on the host side). A non-connected repository stops applying any status change until it is re-linked.
+
+**Bitbucket specifics**: Bitbucket Cloud has no API to list every workspace a user belongs to, so linking a Bitbucket repository requires typing the workspace slug (e.g. `acme-corp`) once the account is connected - the repository list for that workspace then loads automatically.
 
 ## Copying the branch name
 
@@ -79,9 +81,13 @@ The `git_branch` carried by issues (a metadata field inherited from the spec-kit
 - **Visible provenance**: when a status change comes from a git event, the issue shows a "Changed by git" badge naming the triggering event, to distinguish it from a manual update.
 - **`pull_request`**: this field points to the entity's **latest** known PR (renamed from `github_pr`). The full history of events (branches, PRs seen, actions applied) lives in the VCS event log, not in this field.
 
-## Setting up GitHub CI
+## Setting up CI
 
-SINRA does not receive GitHub webhooks directly in V1: a CI job in the repository notifies SINRA instead. Add `.github/workflows/sinra-vcs.yml`:
+SINRA does not receive webhooks directly: a CI job in the repository notifies SINRA instead, whatever the provider. The payload posted to `POST /api/v1/vcs/events` is the same for all three providers - only `provider` and how you compute each field from your CI's variables changes. Adapt the event-detection logic below to your CI's exact triggers/variables; the fields SINRA expects never change.
+
+### GitHub Actions
+
+Add `.github/workflows/sinra-vcs.yml`:
 
 ```yaml
 name: SINRA VCS sync
@@ -140,12 +146,81 @@ jobs:
 
 Add `SINRA_API_TOKEN` (an organization token, created from the profile menu → **API Tokens**) to the repository's **Secrets**, and `SINRA_URL` to its **Variables**.
 
+### GitLab CI/CD
+
+Add a job to `.gitlab-ci.yml`:
+
+```yaml
+notify-sinra:
+  stage: .post
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" || $CI_PIPELINE_SOURCE == "push"'
+  script:
+    - |
+      if [ "$CI_PIPELINE_SOURCE" = "push" ]; then
+        EVENT_TYPE="pushed"
+      elif [ "$CI_MERGE_REQUEST_EVENT_TYPE" = "merged" ] || [ "$CI_MERGE_REQUEST_MERGE_STATUS" = "merged" ]; then
+        EVENT_TYPE="merged"
+      else
+        EVENT_TYPE="pr_opened"
+      fi
+      curl -sS -X POST "$SINRA_URL/api/v1/vcs/events" \
+        -H "Authorization: Bearer $SINRA_API_TOKEN" \
+        -H "Content-Type: application/json" \
+        -d "{
+          \"event\": {
+            \"provider\": \"gitlab\",
+            \"repository_external_id\": \"$CI_PROJECT_PATH\",
+            \"event_type\": \"$EVENT_TYPE\",
+            \"source_branch\": \"${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME:-$CI_COMMIT_REF_NAME}\",
+            \"target_branch\": \"$CI_MERGE_REQUEST_TARGET_BRANCH_NAME\",
+            \"pull_request_url\": \"$CI_MERGE_REQUEST_PROJECT_URL/-/merge_requests/$CI_MERGE_REQUEST_IID\",
+            \"delivery_id\": \"$CI_PIPELINE_ID-$CI_JOB_ID\"
+          }
+        }"
+```
+
+Add `SINRA_API_TOKEN` and `SINRA_URL` as masked CI/CD variables in **Settings → CI/CD → Variables**. Review approval requires a separate job triggered on the merge request's approval webhook, or a scheduled check against the [merge request approvals API](https://docs.gitlab.com/ee/api/merge_request_approvals.html).
+
+### Bitbucket Pipelines
+
+Add a step to `bitbucket-pipelines.yml`:
+
+```yaml
+pipelines:
+  default:
+    - step:
+        name: Notify SINRA
+        script:
+          - |
+            if [ -n "$BITBUCKET_PR_ID" ]; then
+              EVENT_TYPE="pr_opened"
+            else
+              EVENT_TYPE="pushed"
+            fi
+            curl -sS -X POST "$SINRA_URL/api/v1/vcs/events" \
+              -H "Authorization: Bearer $SINRA_API_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"event\": {
+                  \"provider\": \"bitbucket\",
+                  \"repository_external_id\": \"$BITBUCKET_REPO_FULL_NAME\",
+                  \"event_type\": \"$EVENT_TYPE\",
+                  \"source_branch\": \"$BITBUCKET_BRANCH\",
+                  \"target_branch\": \"$BITBUCKET_PR_DESTINATION_BRANCH\",
+                  \"delivery_id\": \"$BITBUCKET_BUILD_NUMBER-$BITBUCKET_PIPELINE_UUID\"
+                }
+              }"
+```
+
+Add `SINRA_API_TOKEN` and `SINRA_URL` as repository variables in **Repository settings → Pipelines → Repository variables** (mark the token as *Secured*). Detecting the merged/approved states precisely requires the [Bitbucket Pull Requests API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/), since Pipelines alone doesn't expose a merge event distinct from a push to the default branch.
+
 ## Getting started in 10 minutes
 
 1. [Link the repository to a platform](#linking-a-repository) (**connected** state).
-2. [Create an organization token](#setting-up-github-ci).
+2. [Create an organization token](#setting-up-ci).
 3. [Check or adjust the event → status mapping](#recognized-events-and-status-mapping) (the defaults already work).
-4. Add the [CI workflow](#setting-up-github-ci) above to the repository.
+4. Add the [CI workflow](#setting-up-ci) matching your provider to the repository.
 5. Create a `feature/<number>-test` branch from an issue, open a PR → the issue moves to **in progress**.
 6. Merge the PR into the default branch → the issue moves to **done**, the parent capability reflects the derived progress.
 
@@ -157,6 +232,6 @@ Linking/unlinking a repository and configuring the event → status mapping are 
 
 - SINRA → host writes (remote branch/PR creation, automatic comments): planned for V2.
 - **Monorepo**: a repository stays linked to a single platform; no path-based routing to multiple platforms.
-- **Webhook**/GitHub App delivery: V1 relies solely on the CI → API source; the core system is designed to accommodate this later without rework.
-- **GitLab / Bitbucket**: the routing and status transition mechanism is host-agnostic; adding a new host is limited to providing a new normalization source.
+- **Webhook**/App delivery: V1 relies solely on the CI → API source; the core system is designed to accommodate this later without rework.
+- **Self-hosted GitLab/Bitbucket Server**: only the cloud offerings (gitlab.com, bitbucket.org) are supported; self-hosted instances would need a configurable instance URL, not currently exposed.
 - Automatic git actor → SINRA user mapping (auto-assignment): planned for V2.

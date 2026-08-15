@@ -1,7 +1,7 @@
 ---
 title: "Intégration VCS"
-description: "Liez vos dépôts GitHub à SINRA pour faire avancer automatiquement le statut de développement des issues et capabilities à partir des évènements git : PR ouverte, review approuvée, merge, push."
-date: 2026-08-14
+description: "Liez vos dépôts GitHub, GitLab ou Bitbucket à SINRA pour faire avancer automatiquement le statut de développement des issues et capabilities à partir des évènements git : PR ouverte, review approuvée, merge, push."
+date: 2026-08-16
 weight: 100
 ---
 
@@ -9,7 +9,7 @@ weight: 100
 
 L'intégration VCS connecte les dépôts de code de votre organisation à SINRA. Quand un évènement significatif survient côté dépôt (ouverture de PR, review approuvée, merge, push), le statut de développement de l'issue concernée avance automatiquement, sans mise à jour manuelle. Les capabilities, dont l'avancement est dérivé de leurs issues, reflètent alors mécaniquement l'état réel du développement.
 
-En V1, seul **GitHub** est supporté, via un job de CI qui notifie SINRA (pas de webhook/GitHub App). Le sens de synchronisation est unidirectionnel : **git → SINRA**. SINRA n'écrit jamais côté hébergeur (aucune création de branche ou de PR à distance).
+**GitHub, GitLab et Bitbucket** sont tous supportés (cloud uniquement - gitlab.com et bitbucket.org, pas d'instance auto-hébergée), via un job de CI qui notifie SINRA (pas de webhook/App). Le sens de synchronisation est unidirectionnel : **git → SINRA**. SINRA n'écrit jamais côté hébergeur (aucune création de branche ou de PR à distance). La logique de routage et de transition de statut est entièrement agnostique de l'hébergeur : les trois providers se comportent de façon identique une fois le dépôt lié.
 
 ## Principe de routage : le numéro dans le nom de branche
 
@@ -33,12 +33,14 @@ Le routage applique une **précédence stricte** :
 Un administrateur d'organisation lie un dépôt depuis une **platform** :
 
 1. Menu **Autres → Platforms** → éditer la platform → section **Dépôts liés** → **Nouveau dépôt**.
-2. Connecter son compte GitHub pour choisir le dépôt et sa branche dans une liste (ou les saisir manuellement).
+2. Choisir un provider (**GitHub**, **GitLab** ou **Bitbucket**), connecter le compte correspondant depuis le panneau **Connexions** pour choisir le dépôt et sa branche dans une liste (ou les saisir manuellement).
 3. Le dépôt apparaît **connecté**.
 
-Un dépôt appartient à une seule platform ; une platform peut lier plusieurs dépôts. Les évènements d'un dépôt ne peuvent affecter que des issues/capabilities de **la même platform** : un évènement ciblant une entité hors de cette platform est ignoré sans erreur.
+Chaque provider se connecte indépendamment - une organisation peut lier des dépôts des trois à la fois, et chaque connexion peut être révoquée individuellement sans affecter les autres. Un dépôt appartient à une seule platform ; une platform peut lier plusieurs dépôts, de n'importe quel mélange de providers. Les évènements d'un dépôt ne peuvent affecter que des issues/capabilities de **la même platform** : un évènement ciblant une entité hors de cette platform est ignoré sans erreur.
 
 L'état de connexion d'un dépôt est visible à tout moment : **Connecté**, **Déconnecté** ou **Révoqué** (autorisation retirée côté hébergeur). Un dépôt non connecté n'applique plus aucun changement de statut tant qu'il n'est pas re-lié.
+
+**Spécificité Bitbucket** : Bitbucket Cloud n'expose aucune API pour lister tous les workspaces d'un utilisateur, donc lier un dépôt Bitbucket nécessite de saisir le nom du workspace (ex : `acme-corp`) une fois le compte connecté - la liste des dépôts de ce workspace se charge alors automatiquement.
 
 ## Copier le nom de branche
 
@@ -79,9 +81,13 @@ Le `git_branch` porté par les issues (métadonnée héritée du workflow spec-k
 - **Provenance visible** : quand un changement de statut provient d'un évènement git, l'issue affiche un badge « Changé par git » précisant l'évènement à l'origine, pour le distinguer d'une mise à jour manuelle.
 - **`pull_request`** : le champ pointe vers la **dernière** PR connue de l'entité (renommé depuis `github_pr`). L'historique complet des évènements (branches, PR vues, actions appliquées) vit dans le journal des évènements VCS, pas dans ce champ.
 
-## Configurer la CI GitHub
+## Configurer la CI
 
-SINRA ne reçoit pas directement les webhooks GitHub en V1 : c'est un job de CI dans le dépôt qui notifie SINRA. Ajoutez `.github/workflows/sinra-vcs.yml` :
+SINRA ne reçoit pas directement les webhooks : c'est un job de CI dans le dépôt qui notifie SINRA, quel que soit le provider. Le payload posté vers `POST /api/v1/vcs/events` est le même pour les trois providers - seuls `provider` et la façon de calculer chaque champ depuis les variables de votre CI changent. Adaptez la logique de détection d'évènement ci-dessous à vos déclencheurs/variables CI exacts ; les champs attendus par SINRA ne changent jamais.
+
+### GitHub Actions
+
+Ajoutez `.github/workflows/sinra-vcs.yml` :
 
 ```yaml
 name: SINRA VCS sync
@@ -140,12 +146,81 @@ jobs:
 
 Ajoutez `SINRA_API_TOKEN` (jeton d'organisation, créé depuis le menu du profil → **API Tokens**) dans les **Secrets** du dépôt, et `SINRA_URL` dans ses **Variables**.
 
+### GitLab CI/CD
+
+Ajoutez un job à `.gitlab-ci.yml` :
+
+```yaml
+notify-sinra:
+  stage: .post
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" || $CI_PIPELINE_SOURCE == "push"'
+  script:
+    - |
+      if [ "$CI_PIPELINE_SOURCE" = "push" ]; then
+        EVENT_TYPE="pushed"
+      elif [ "$CI_MERGE_REQUEST_EVENT_TYPE" = "merged" ] || [ "$CI_MERGE_REQUEST_MERGE_STATUS" = "merged" ]; then
+        EVENT_TYPE="merged"
+      else
+        EVENT_TYPE="pr_opened"
+      fi
+      curl -sS -X POST "$SINRA_URL/api/v1/vcs/events" \
+        -H "Authorization: Bearer $SINRA_API_TOKEN" \
+        -H "Content-Type: application/json" \
+        -d "{
+          \"event\": {
+            \"provider\": \"gitlab\",
+            \"repository_external_id\": \"$CI_PROJECT_PATH\",
+            \"event_type\": \"$EVENT_TYPE\",
+            \"source_branch\": \"${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME:-$CI_COMMIT_REF_NAME}\",
+            \"target_branch\": \"$CI_MERGE_REQUEST_TARGET_BRANCH_NAME\",
+            \"pull_request_url\": \"$CI_MERGE_REQUEST_PROJECT_URL/-/merge_requests/$CI_MERGE_REQUEST_IID\",
+            \"delivery_id\": \"$CI_PIPELINE_ID-$CI_JOB_ID\"
+          }
+        }"
+```
+
+Ajoutez `SINRA_API_TOKEN` et `SINRA_URL` en variables CI/CD masquées dans **Settings → CI/CD → Variables**. La détection de la review approuvée nécessite un job séparé déclenché sur le webhook d'approbation de la merge request, ou une vérification planifiée via l'[API des approbations de merge request](https://docs.gitlab.com/ee/api/merge_request_approvals.html).
+
+### Bitbucket Pipelines
+
+Ajoutez une étape à `bitbucket-pipelines.yml` :
+
+```yaml
+pipelines:
+  default:
+    - step:
+        name: Notify SINRA
+        script:
+          - |
+            if [ -n "$BITBUCKET_PR_ID" ]; then
+              EVENT_TYPE="pr_opened"
+            else
+              EVENT_TYPE="pushed"
+            fi
+            curl -sS -X POST "$SINRA_URL/api/v1/vcs/events" \
+              -H "Authorization: Bearer $SINRA_API_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"event\": {
+                  \"provider\": \"bitbucket\",
+                  \"repository_external_id\": \"$BITBUCKET_REPO_FULL_NAME\",
+                  \"event_type\": \"$EVENT_TYPE\",
+                  \"source_branch\": \"$BITBUCKET_BRANCH\",
+                  \"target_branch\": \"$BITBUCKET_PR_DESTINATION_BRANCH\",
+                  \"delivery_id\": \"$BITBUCKET_BUILD_NUMBER-$BITBUCKET_PIPELINE_UUID\"
+                }
+              }"
+```
+
+Ajoutez `SINRA_API_TOKEN` et `SINRA_URL` en variables de dépôt dans **Repository settings → Pipelines → Repository variables** (cochez le jeton en *Secured*). Détecter précisément les états mergé/approuvé nécessite l'[API Pull Requests de Bitbucket](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/), Pipelines seul n'exposant pas d'évènement de merge distinct d'un push vers la branche par défaut.
+
 ## Mettre en route en 10 minutes
 
 1. [Lier le dépôt à une platform](#lier-un-dépôt) (état **connecté**).
-2. [Créer un jeton d'organisation](#configurer-la-ci-github).
+2. [Créer un jeton d'organisation](#configurer-la-ci).
 3. [Vérifier ou ajuster le mapping évènement → statut](#évènements-reconnus-et-mapping-des-statuts) (les défauts fonctionnent déjà).
-4. Ajouter le [workflow CI](#configurer-la-ci-github) ci-dessus dans le dépôt.
+4. Ajouter le [workflow CI](#configurer-la-ci) correspondant à votre provider dans le dépôt.
 5. Créer une branche `feature/<numéro>-test` depuis une issue, ouvrir une PR → l'issue passe **en cours**.
 6. Merger la PR dans la branche par défaut → l'issue passe **terminé**, la capability parente reflète l'avancement dérivé.
 
@@ -157,6 +232,6 @@ Lier/délier un dépôt et configurer le mapping évènement → statut sont ré
 
 - Écriture SINRA → hébergeur (création de branche/PR, commentaires automatiques) : prévu en V2.
 - **Monorepo** : un dépôt reste rattaché à une seule platform ; pas de routage par chemin vers plusieurs platforms.
-- Réception par **webhook**/GitHub App : la V1 s'appuie uniquement sur la source CI → API ; le cœur du système est conçu pour l'accueillir sans refonte.
-- **GitLab / Bitbucket** : le mécanisme de routage et de transition de statut est agnostique de l'hébergeur ; l'ajout d'un nouvel hébergeur se limite à fournir une nouvelle source de normalisation.
+- Réception par **webhook**/App : la V1 s'appuie uniquement sur la source CI → API ; le cœur du système est conçu pour l'accueillir sans refonte.
+- **GitLab/Bitbucket auto-hébergés** : seules les offres cloud (gitlab.com, bitbucket.org) sont supportées ; une instance auto-hébergée nécessiterait une URL d'instance configurable, non exposée actuellement.
 - Mapping automatique acteur git → utilisateur SINRA (auto-assignation) : prévu en V2.
