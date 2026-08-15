@@ -32,8 +32,8 @@ Le routage applique une **précédence stricte** :
 
 Un administrateur d'organisation lie un dépôt depuis une **platform** :
 
-1. Aller sur la platform → onglet **Dépôts** → **Lier un dépôt**.
-2. Renseigner l'identité du dépôt côté GitHub (`owner/repo`) et sa **branche par défaut** (ex : `main`).
+1. Menu **Autres → Platforms** → éditer la platform → section **Dépôts liés** → **Nouveau dépôt**.
+2. Connecter son compte GitHub pour choisir le dépôt et sa branche dans une liste (ou les saisir manuellement).
 3. Le dépôt apparaît **connecté**.
 
 Un dépôt appartient à une seule platform ; une platform peut lier plusieurs dépôts. Les évènements d'un dépôt ne peuvent affecter que des issues/capabilities de **la même platform** : un évènement ciblant une entité hors de cette platform est ignoré sans erreur.
@@ -48,7 +48,7 @@ Le **numéro** (`123`) reste identique même si le titre de l'issue change plus 
 
 ## Évènements reconnus et mapping des statuts
 
-Un administrateur d'organisation configure, depuis **Réglages organisation → Intégration VCS**, quel statut de développement correspond à chaque évènement git. Des valeurs par défaut sont pré-remplies à la première visite :
+Un administrateur d'organisation configure, depuis le menu **Autres → Mapping évènements → statuts** de la sidebar, quel statut de développement correspond à chaque évènement git. Des valeurs par défaut sont pré-remplies à la première visite :
 
 | Évènement | Déclencheur | Statut par défaut |
 |---|---|---|
@@ -138,14 +138,14 @@ jobs:
           JSON
 ```
 
-Ajoutez `SINRA_API_TOKEN` (jeton d'organisation, créé depuis **Réglages organisation → API Tokens**) dans les **Secrets** du dépôt, et `SINRA_URL` dans ses **Variables**.
+Ajoutez `SINRA_API_TOKEN` (jeton d'organisation, créé depuis le menu du profil → **API Tokens**) dans les **Secrets** du dépôt, et `SINRA_URL` dans ses **Variables**.
 
 ## Mettre en route en 10 minutes
 
-1. Lier le dépôt à une platform (état **connecté**).
-2. Créer un jeton d'organisation.
-3. Vérifier ou ajuster le mapping évènement → statut (les défauts fonctionnent déjà).
-4. Ajouter le workflow CI ci-dessus dans le dépôt.
+1. [Lier le dépôt à une platform](#lier-un-dépôt) (état **connecté**).
+2. [Créer un jeton d'organisation](#configurer-la-ci-github).
+3. [Vérifier ou ajuster le mapping évènement → statut](#évènements-reconnus-et-mapping-des-statuts) (les défauts fonctionnent déjà).
+4. Ajouter le [workflow CI](#configurer-la-ci-github) ci-dessus dans le dépôt.
 5. Créer une branche `feature/<numéro>-test` depuis une issue, ouvrir une PR → l'issue passe **en cours**.
 6. Merger la PR dans la branche par défaut → l'issue passe **terminé**, la capability parente reflète l'avancement dérivé.
 

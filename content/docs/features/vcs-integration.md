@@ -32,8 +32,8 @@ Routing applies **strict precedence**:
 
 An organization admin links a repository from a **platform**:
 
-1. Go to the platform → **Repositories** tab → **Link a repository**.
-2. Enter the repository's GitHub identity (`owner/repo`) and its **default branch** (e.g. `main`).
+1. **Others → Platforms** menu → edit the platform → **Linked repositories** section → **New repository**.
+2. Connect your GitHub account to pick the repository and its branch from a list (or enter them manually).
 3. The repository shows up as **connected**.
 
 A repository belongs to exactly one platform; a platform can link several repositories. Events from a repository can only affect issues/capabilities of **the same platform**: an event targeting an entity outside this platform is ignored without error.
@@ -48,7 +48,7 @@ The **number** (`123`) stays the same even if the issue's title changes later an
 
 ## Recognized events and status mapping
 
-An organization admin configures, from **Organization settings → VCS Integration**, which development status corresponds to each git event. Default values are pre-filled on first visit:
+An organization admin configures, from the sidebar's **Others → Event → status mapping** menu, which development status corresponds to each git event. Default values are pre-filled on first visit:
 
 | Event | Trigger | Default status |
 |---|---|---|
@@ -138,14 +138,14 @@ jobs:
           JSON
 ```
 
-Add `SINRA_API_TOKEN` (an organization token, created from **Organization settings → API Tokens**) to the repository's **Secrets**, and `SINRA_URL` to its **Variables**.
+Add `SINRA_API_TOKEN` (an organization token, created from the profile menu → **API Tokens**) to the repository's **Secrets**, and `SINRA_URL` to its **Variables**.
 
 ## Getting started in 10 minutes
 
-1. Link the repository to a platform (**connected** state).
-2. Create an organization token.
-3. Check or adjust the event → status mapping (the defaults already work).
-4. Add the CI workflow above to the repository.
+1. [Link the repository to a platform](#linking-a-repository) (**connected** state).
+2. [Create an organization token](#setting-up-github-ci).
+3. [Check or adjust the event → status mapping](#recognized-events-and-status-mapping) (the defaults already work).
+4. Add the [CI workflow](#setting-up-github-ci) above to the repository.
 5. Create a `feature/<number>-test` branch from an issue, open a PR → the issue moves to **in progress**.
 6. Merge the PR into the default branch → the issue moves to **done**, the parent capability reflects the derived progress.
 
