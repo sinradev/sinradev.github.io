@@ -122,3 +122,155 @@ contact_consent_label: "I agree that my data will be processed to respond to my 
 contact_consent_required: "Please accept the privacy policy to submit this form."
 footer_privacy: "Privacy Policy"
 footer_legal: "Legal Notices"
+
+# Home 2026 redesign (_design/sinra-home-2026.html) — nav additions
+nav_method: "Method"
+nav_regulated: "Regulated teams"
+nav_docs: "Docs"
+
+# Home — hero
+home_hero_title_line1: "Your startup is growing."
+home_hero_title_line2: "Your process isn't."
+home_hero_lead: "sinra gives your team a ready-made way of working. Specs, development, tests and releases are connected from day one, without consultants or three months of setup."
+home_hero_cta_secondary: "Book 20 minutes with Thomas"
+home_hero_reassure_trial: "14 days, no credit card"
+home_hero_reassure_hosting: "Hosted in France"
+
+# Home — demo widget: trace (hero)
+demo_trace_head_title: "Patient data export"
+demo_trace_label: "traced end to end"
+demo_trace_cap_kind: "Capability"
+demo_trace_cap_title: "Patients can export their records as PDF"
+demo_trace_chip_spec_validated: "spec validated"
+demo_trace_chip_criteria: "%d acceptance criteria"
+demo_trace_issues_kind: "Issues"
+demo_trace_issues_title: "%d issues, %d merged"
+demo_trace_cycle_kind: "Cycle"
+demo_trace_cycle_dates: "Sep 8–19"
+demo_trace_cycle_title: "Team load at %d%% of real capacity"
+demo_trace_chip_over: "%s over by %dh"
+demo_trace_release_kind: "Release"
+demo_trace_release_ships: "Ships Sep 23"
+demo_trace_chip_tests_passed: "%d tests passed"
+demo_trace_chip_awaiting: "%d awaiting acceptance"
+demo_trace_gate_label: "Go / no-go"
+demo_trace_gate_checks_left: "%d check left"
+
+# Home — symptoms
+home_symptoms_title: "Does your team look like this?"
+home_symptoms_intro: "These aren't talent problems. They show up in every team that grew faster than its way of working."
+home_symptoms_pain_1: "Deadlines slip every sprint, and nobody knows why."
+home_symptoms_fix_1: "<b>Cycles</b> are sized to each person's real availability, so overload shows before the cycle starts."
+home_symptoms_pain_2: "A feature is \"done\" but nobody tested it before production."
+home_symptoms_fix_2: "<b>Releases</b> can't close until every linked test is accepted or explicitly waived."
+home_symptoms_pain_3: "A week before release, nobody can say what's shipping."
+home_symptoms_fix_3: "<b>Every issue</b> is tied to a capability and a release, so the answer is one screen away."
+home_symptoms_verdict: "It's a method problem. sinra ships the method."
+
+# Home — method
+home_method_title: "Four concepts. Nothing to learn beforehand."
+home_method_intro: "No Scrum certification, no agile coach. Everyone knows where to go from their first login."
+home_method_step1_phase: "Plan"
+home_method_step1_title: "Capability"
+home_method_step1_text: "What the product must do, written and validated before it's built."
+home_method_step2_phase: "Execute"
+home_method_step2_title: "Issue"
+home_method_step2_text: "The concrete work, always attached to its spec."
+home_method_step3_phase: "Execute"
+home_method_step3_title: "Cycle"
+home_method_step3_text: "A work period sized to the team you actually have."
+home_method_step4_phase: "Verify"
+home_method_step4_title: "Release"
+home_method_step4_text: "What reaches production, tested and accepted."
+
+# Home — feature rows (copy)
+home_feature_spec_label: "Plan"
+home_feature_spec_title: "Every issue carries its spec"
+home_feature_spec_text: "The product owner writes acceptance criteria next to the work, not in a separate doc nobody opens. Developers see exactly what \"done\" means."
+home_feature_workload_label: "Execute"
+home_feature_workload_title: "Overload shows before the cycle starts"
+home_feature_workload_text: "sinra counts holidays, part-time and meetings. You rebalance on Monday, not two days before the deadline."
+home_feature_release_label: "Verify"
+home_feature_release_title: "Nothing ships untested"
+home_feature_release_text: "Tests belong to the release. Before deploying, you see what passed, what failed, and who still has to accept."
+
+# Home — demo widget: spec (feature 1)
+demo_spec_meta: "%s · validated by %s, PO"
+demo_spec_title: "Patients can export their records as PDF"
+demo_spec_criterion_1: "Export includes consultations from the last 24 months"
+demo_spec_criterion_2: "File is generated in under 5 seconds for 200 entries"
+demo_spec_criterion_3: "Download link expires after 15 minutes"
+demo_spec_criterion_4: "Export is logged in the patient's access history"
+demo_spec_state_merged: "merged"
+demo_spec_state_in_review: "in review"
+demo_spec_state_pending: "pending"
+
+# Home — demo widget: workload (feature 2)
+demo_workload_aria: "Workload per person for cycle 14; Léa is 6 hours over capacity"
+demo_workload_foot_cycle: "Cycle 14, Sep 8–19. Line = available hours."
+demo_workload_foot_suggestion: "<b>Suggestion:</b> move %s from %s to %s"
+
+# Home — demo widget: release (feature 3)
+demo_release_test_1: "PDF export, 200 entries"
+demo_release_test_2: "Expired link returns 410"
+demo_release_test_3: "Export on Safari iOS 17"
+demo_release_test_4: "Access history entry"
+demo_release_test_5: "PO acceptance on staging"
+demo_release_state_passed: "passed"
+demo_release_state_passed_after_fix: "passed after fix"
+demo_release_state_waiting: "waiting"
+demo_release_label: "Release %s"
+demo_release_score: "%d<small> / %d done</small>"
+demo_release_nogo: "Not ready: %d acceptance left"
+
+# Home — regulated teams
+home_regulated_title: "Building in health or finance?"
+home_regulated_text: "Auditors and certification bodies will ask you to prove what was specified, built, tested and accepted. sinra keeps that trail as a side effect of normal work, not as a spreadsheet you maintain by hand."
+home_regulated_link_medtech: "sinra for medtech"
+home_regulated_link_fintech: "sinra for fintech"
+
+# Home — demo widget: audit log (regulated)
+demo_audit_cap_validated: "spec validated by %s (PO)"
+demo_audit_issue_merged: "merged, linked to %s"
+demo_audit_test_failed: "failed on Safari iOS 17"
+demo_audit_test_fixed: "passed after fix %s"
+demo_audit_release_requested: "acceptance requested from %s (PO)"
+demo_audit_foot: "Exportable history for every capability, in CSV or PDF."
+
+# Home — sovereignty
+home_sovereignty_fact1_title: "Hosted in France"
+home_sovereignty_fact1_text: "Data stored with OVH, on servers in France. No transfer outside the EU."
+home_sovereignty_fact2_title: "GDPR by design"
+home_sovereignty_fact2_text: "Your data belongs to you, processed under EU law. Full CSV export anytime."
+home_sovereignty_fact3_title: "No US hyperscaler"
+home_sovereignty_fact3_text: "Designed, built and run in France."
+
+# Home — founder
+home_founder_quote: "For 20 years I've watched teams lose the same fights: fuzzy specs, forgotten tests, releases nobody controlled. sinra is the structure I wish we'd had from the start."
+home_founder_name: "Thomas, founder"
+home_founder_role: "Tech lead for 20 years · LinkedIn"
+
+# Home — founders' program
+home_program_title: "Join the first sinra teams"
+home_program_text: "A limited number of teams will shape the product with us."
+home_program_item1: "Onboarding with the founder"
+home_program_item2: "Early pricing, locked for life"
+home_program_item3: "Direct say on the roadmap"
+home_program_cta: "Apply to the program"
+home_program_seats: "We reply within 48 hours."
+
+# Home — FAQ
+home_faq_title: "Questions teams ask first"
+home_faq_q1: "My team doesn't know any agile method. Is that a problem?"
+home_faq_a1: "No, that's the expected case. You follow sinra's four concepts and the method follows."
+home_faq_q2: "How long does it take to get started?"
+home_faq_a2: "A few minutes. Create an account and set up your first project, with nothing to install."
+home_faq_q3: "Can we import our existing backlog?"
+home_faq_a3: "Yes, from CSV with automatic mapping for Jira, Asana, Azure DevOps and Linear, or directly from GitHub."
+home_faq_q4: "Is the trial limited?"
+home_faq_a4: "14 days, every feature, no credit card."
+home_faq_q5: "Is sinra suited to regulated companies?"
+home_faq_a5: "It keeps the trail between specs, development, tests and releases. See the medtech and fintech pages for details."
+
+# Home — final CTA
+home_final_title: "Give your team a method this sprint."

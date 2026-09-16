@@ -122,3 +122,155 @@ contact_consent_label: "Acepto que mis datos sean tratados para responder a mi c
 contact_consent_required: "Por favor, acepte la politica de privacidad para enviar este formulario."
 footer_privacy: "Politica de privacidad"
 footer_legal: "Aviso legal"
+
+# Home 2026 redesign (_design/sinra-home-2026.html) — nav adicional
+nav_method: "Método"
+nav_regulated: "Equipos regulados"
+nav_docs: "Documentación"
+
+# Home — hero
+home_hero_title_line1: "Tu startup está creciendo."
+home_hero_title_line2: "Tu forma de trabajar, todavía no."
+home_hero_lead: "sinra le da a tu equipo una forma de trabajar lista para usar. Specs, desarrollo, tests y releases conectados desde el primer día, sin consultores ni tres meses de configuración."
+home_hero_cta_secondary: "Reserva 20 minutos con Thomas"
+home_hero_reassure_trial: "14 días, sin tarjeta de crédito"
+home_hero_reassure_hosting: "Alojado en Francia"
+
+# Home — widget demo: trace (hero)
+demo_trace_head_title: "Exportación de historiales de pacientes"
+demo_trace_label: "trazado de extremo a extremo"
+demo_trace_cap_kind: "Capability"
+demo_trace_cap_title: "Los pacientes pueden exportar su historial en PDF"
+demo_trace_chip_spec_validated: "spec validada"
+demo_trace_chip_criteria: "%d criterios de aceptación"
+demo_trace_issues_kind: "Issues"
+demo_trace_issues_title: "%d issues, %d mergeadas"
+demo_trace_cycle_kind: "Cycle"
+demo_trace_cycle_dates: "8–19 sept."
+demo_trace_cycle_title: "Carga del equipo al %d %% de la capacidad real"
+demo_trace_chip_over: "%s excede en %dh"
+demo_trace_release_kind: "Release"
+demo_trace_release_ships: "Se entrega el 23 sept."
+demo_trace_chip_tests_passed: "%d tests superados"
+demo_trace_chip_awaiting: "%d pendiente de aceptación"
+demo_trace_gate_label: "Go / no-go"
+demo_trace_gate_checks_left: "%d verificación pendiente"
+
+# Home — síntomas
+home_symptoms_title: "¿Tu equipo se parece a esto?"
+home_symptoms_intro: "No son problemas de talento. Aparecen en todo equipo que creció más rápido que su forma de trabajar."
+home_symptoms_pain_1: "Los plazos se retrasan en cada ciclo, y nadie sabe realmente por qué."
+home_symptoms_fix_1: "Los <b>cycles</b> se dimensionan según la disponibilidad real de cada persona: la sobrecarga se ve antes de que el ciclo empiece."
+home_symptoms_pain_2: "Una funcionalidad está «terminada» en desarrollo, pero nadie la probó antes de producción."
+home_symptoms_fix_2: "Una <b>release</b> no puede cerrarse hasta que cada test vinculado esté aceptado o descartado explícitamente."
+home_symptoms_pain_3: "A una semana de la release, nadie puede decir qué se entrega realmente."
+home_symptoms_fix_3: "<b>Cada issue</b> está vinculada a una capability y a una release: la respuesta está a una pantalla de distancia."
+home_symptoms_verdict: "Es un problema de método. sinra entrega el método."
+
+# Home — método
+home_method_title: "Cuatro conceptos. Nada que aprender antes de empezar."
+home_method_intro: "Sin certificación Scrum, sin coach agile. Cada persona sabe adónde ir desde su primer inicio de sesión."
+home_method_step1_phase: "Plan"
+home_method_step1_title: "Capability"
+home_method_step1_text: "Lo que el producto debe permitir, escrito y validado antes de construirse."
+home_method_step2_phase: "Execute"
+home_method_step2_title: "Issue"
+home_method_step2_text: "El trabajo concreto, siempre vinculado a su spec."
+home_method_step3_phase: "Execute"
+home_method_step3_title: "Cycle"
+home_method_step3_text: "Un período de trabajo dimensionado según el equipo que realmente tienes."
+home_method_step4_phase: "Verify"
+home_method_step4_title: "Release"
+home_method_step4_text: "Lo que llega a producción, probado y aceptado."
+
+# Home — filas de beneficios (texto)
+home_feature_spec_label: "Plan"
+home_feature_spec_title: "Cada issue lleva su spec"
+home_feature_spec_text: "El product owner escribe los criterios de aceptación junto al trabajo, no en un documento aparte que nadie abre. Los desarrolladores ven exactamente qué significa «terminado»."
+home_feature_workload_label: "Execute"
+home_feature_workload_title: "La sobrecarga se ve antes de que el ciclo empiece"
+home_feature_workload_text: "sinra cuenta vacaciones, jornada parcial y reuniones. Reequilibras el lunes, no dos días antes de la fecha límite."
+home_feature_release_label: "Verify"
+home_feature_release_title: "Nada se entrega sin probarse"
+home_feature_release_text: "Los tests pertenecen a la release. Antes de cada despliegue, sabes qué se probó, qué falló y quién falta por aceptar."
+
+# Home — widget demo: spec (beneficio 1)
+demo_spec_meta: "%s · validada por %s, PO"
+demo_spec_title: "Los pacientes pueden exportar su historial en PDF"
+demo_spec_criterion_1: "El export incluye las consultas de los últimos 24 meses"
+demo_spec_criterion_2: "El archivo se genera en menos de 5 segundos para 200 entradas"
+demo_spec_criterion_3: "El enlace de descarga expira a los 15 minutos"
+demo_spec_criterion_4: "El export queda registrado en el historial de acceso del paciente"
+demo_spec_state_merged: "mergeada"
+demo_spec_state_in_review: "en revisión"
+demo_spec_state_pending: "pendiente"
+
+# Home — widget demo: carga (beneficio 2)
+demo_workload_aria: "Carga por persona para el ciclo 14; Léa excede su capacidad en 6 horas"
+demo_workload_foot_cycle: "Ciclo 14, 8–19 sept. La línea = horas disponibles."
+demo_workload_foot_suggestion: "<b>Sugerencia:</b> mover %s de %s a %s"
+
+# Home — widget demo: release (beneficio 3)
+demo_release_test_1: "Export PDF, 200 entradas"
+demo_release_test_2: "Enlace expirado devuelve 410"
+demo_release_test_3: "Export en Safari iOS 17"
+demo_release_test_4: "Entrada en historial de acceso"
+demo_release_test_5: "Aceptación PO en staging"
+demo_release_state_passed: "superado"
+demo_release_state_passed_after_fix: "superado tras corrección"
+demo_release_state_waiting: "pendiente"
+demo_release_label: "Release %s"
+demo_release_score: "%d<small> / %d hechos</small>"
+demo_release_nogo: "No listo: %d aceptación pendiente"
+
+# Home — sectores exigentes
+home_regulated_title: "¿Desarrollas en salud o finanzas?"
+home_regulated_text: "Tus auditores o futuros organismos de certificación te pedirán demostrar qué se especificó, desarrolló, probó y aceptó. sinra mantiene ese rastro como efecto natural del trabajo, sin una hoja de cálculo de trazabilidad que mantener a mano."
+home_regulated_link_medtech: "sinra para medtech"
+home_regulated_link_fintech: "sinra para fintech"
+
+# Home — widget demo: registro de auditoría (sectores exigentes)
+demo_audit_cap_validated: "spec validada por %s (PO)"
+demo_audit_issue_merged: "mergeada, vinculada a %s"
+demo_audit_test_failed: "falló en Safari iOS 17"
+demo_audit_test_fixed: "superado tras corrección %s"
+demo_audit_release_requested: "aceptación solicitada a %s (PO)"
+demo_audit_foot: "Historial exportable para cada capability, en CSV o PDF."
+
+# Home — soberanía
+home_sovereignty_fact1_title: "Alojado en Francia"
+home_sovereignty_fact1_text: "Datos almacenados en OVH, en servidores en Francia. Sin transferencia fuera de la UE."
+home_sovereignty_fact2_title: "RGPD por diseño"
+home_sovereignty_fact2_text: "Tus datos te pertenecen, procesados bajo la ley europea. Exportación CSV completa en cualquier momento."
+home_sovereignty_fact3_title: "Sin hyperscaler estadounidense"
+home_sovereignty_fact3_text: "Diseñado, desarrollado y operado en Francia."
+
+# Home — fundador
+home_founder_quote: "Desde hace 20 años veo a los equipos perder las mismas batallas: specs confusas, tests olvidados, releases sufridas. sinra es la estructura que me habría gustado encontrar ya hecha."
+home_founder_name: "Thomas, fundador"
+home_founder_role: "Tech lead desde hace 20 años · LinkedIn"
+
+# Home — programa de socios fundadores
+home_program_title: "Únete a los primeros equipos sinra"
+home_program_text: "Abrimos un número limitado de plazas a equipos que quieran dar forma al producto con nosotros."
+home_program_item1: "Onboarding con el fundador"
+home_program_item2: "Precio de lanzamiento fijo de por vida"
+home_program_item3: "Voz directa en la roadmap"
+home_program_cta: "Postular al programa"
+home_program_seats: "Respondemos en menos de 48h."
+
+# Home — FAQ
+home_faq_title: "Las preguntas que los equipos hacen primero"
+home_faq_q1: "Mi equipo no conoce ningún método agile, ¿es un problema?"
+home_faq_a1: "No, es justamente el caso previsto. Sigues los cuatro conceptos de sinra, el método sigue."
+home_faq_q2: "¿Cuánto tiempo se tarda en empezar?"
+home_faq_a2: "Unos minutos. Crea una cuenta y configura tu primer proyecto, sin instalar nada."
+home_faq_q3: "¿Podemos importar nuestro backlog existente?"
+home_faq_a3: "Sí, desde CSV con mapeo automático para Jira, Asana, Azure DevOps y Linear, o directamente desde GitHub."
+home_faq_q4: "¿La prueba gratuita es limitada?"
+home_faq_a4: "14 días, todas las funciones, sin tarjeta de crédito."
+home_faq_q5: "¿sinra es adecuado para empresas reguladas?"
+home_faq_a5: "Mantiene el rastro entre specs, desarrollo, tests y releases. Consulta nuestras páginas dedicadas a medtech y fintech."
+
+# Home — CTA final
+home_final_title: "Dale un método a tu equipo desde este ciclo."

@@ -1,0 +1,26 @@
+{{/* Feature 1 demo widget: spec + acceptance criteria + linked issues. Data: data/home_demo.yaml#spec */}}
+{{ $s := hugo.Data.home_demo.spec }}
+<div class="surface">
+  <div class="spec">
+    <div>
+      <div class="meta mono">{{ printf (i18n "demo_spec_meta") $s.cap_id $s.po_name }}</div>
+      <h4>{{ i18n "demo_spec_title" }}</h4>
+      <ul class="criteria">
+        {{ range $i, $c := $s.criteria }}
+        <li>
+          <span class="box{{ if $c.done }} on{{ end }}"></span>
+          {{ i18n (printf "demo_spec_criterion_%d" (add $i 1)) }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="linked">
+      {{ range $s.linked }}
+      <div class="row">
+        <span>{{ .id }}</span>
+        <span class="chip{{ if eq .state "merged" }} ok{{ else if eq .state "pending" }} test{{ end }}">{{ i18n (printf "demo_spec_state_%s" .state) }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

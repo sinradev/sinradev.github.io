@@ -1,0 +1,23 @@
+{{/* Regulated section demo widget: append-only audit trail. Data: data/home_demo.yaml#audit_log */}}
+{{ $entries := hugo.Data.home_demo.audit_log }}
+<div class="log">
+  <ol>
+    {{ range $entries }}
+    <li>
+      <time>{{ .time }}</time>
+      <span class="ref{{ if eq .ref_type "test" }} t{{ end }}">{{ .ref }}</span>
+      <span>
+        {{ if eq .ref_type "capability" }}{{ printf (i18n "demo_audit_cap_validated") .person }}
+        {{ else if eq .ref_type "issue" }}{{ printf (i18n "demo_audit_issue_merged") .linked_to }}
+        {{ else if eq .ref_type "release" }}{{ printf (i18n "demo_audit_release_requested") .person }}
+        {{ else if eq .ref_type "test" }}
+          {{ if eq .outcome "failed" }}{{ i18n "demo_audit_test_failed" }}
+          {{ else if eq .outcome "fixed_by" }}{{ printf (i18n "demo_audit_test_fixed") .fix_ref }}
+          {{ end }}
+        {{ end }}
+      </span>
+    </li>
+    {{ end }}
+  </ol>
+  <p class="foot">{{ i18n "demo_audit_foot" }}</p>
+</div>

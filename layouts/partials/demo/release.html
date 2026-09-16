@@ -1,0 +1,20 @@
+{{/* Feature 3 demo widget: release test checklist + go/no-go verdict. Data: data/home_demo.yaml#release */}}
+{{ $r := hugo.Data.home_demo.release }}
+<div class="surface">
+  <div class="release">
+    <ul class="tests">
+      {{ range $i, $t := $r.tests }}
+      <li>
+        <span class="state{{ if eq $t.state "waiting" }} p{{ else if eq $t.state "failed" }} f{{ end }}"></span>
+        <span>{{ i18n (printf "demo_release_test_%d" (add $i 1)) }}</span>
+        <span class="mono">{{ i18n (printf "demo_release_state_%s" $t.state) }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="verdict-box">
+      <span class="mono">{{ printf (i18n "demo_release_label") $r.version }}</span>
+      <div class="big">{{ printf (i18n "demo_release_score") $r.tests_done $r.tests_total | safeHTML }}</div>
+      <div class="nogo">{{ printf (i18n "demo_release_nogo") (sub $r.tests_total $r.tests_done) }}</div>
+    </div>
+  </div>
+</div>

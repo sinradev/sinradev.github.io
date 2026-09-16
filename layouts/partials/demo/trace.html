@@ -1,0 +1,48 @@
+{{/* Hero demo widget: capability traced through issues, cycle, release. Data: data/home_demo.yaml#trace */}}
+{{ $t := hugo.Data.home_demo.trace }}
+{{ $issueParts := split $t.issue_end "-" }}
+{{ $issueEndNum := index $issueParts (sub (len $issueParts) 1) }}
+<div class="trace" aria-label="{{ i18n "demo_trace_head_title" }}">
+  <div class="trace-head">
+    <strong>{{ i18n "demo_trace_head_title" }}</strong>
+    <span class="mono">{{ i18n "demo_trace_label" }}</span>
+  </div>
+  <div class="thread" aria-hidden="true"></div>
+
+  <div class="node">
+    <div class="kind"><span>{{ i18n "demo_trace_cap_kind" }}</span><span class="mono">{{ $t.cap_id }}</span></div>
+    <div class="title">{{ i18n "demo_trace_cap_title" }}</div>
+    <div class="chips">
+      <span class="chip ok">{{ i18n "demo_trace_chip_spec_validated" }}</span>
+      <span class="chip">{{ printf (i18n "demo_trace_chip_criteria") 4 }}</span>
+    </div>
+  </div>
+
+  <div class="node">
+    <div class="kind"><span>{{ i18n "demo_trace_issues_kind" }}</span><span class="mono">{{ $t.issue_start }} → {{ $issueEndNum }}</span></div>
+    <div class="title">{{ printf (i18n "demo_trace_issues_title") $t.issues_total $t.issues_merged }}</div>
+    <div class="bar"><i style="width:{{ $t.progress_percent }}%"></i></div>
+  </div>
+
+  <div class="node">
+    <div class="kind"><span>{{ i18n "demo_trace_cycle_kind" }}</span><span class="mono">{{ $t.cycle_id }} · {{ i18n "demo_trace_cycle_dates" }}</span></div>
+    <div class="title">{{ printf (i18n "demo_trace_cycle_title") $t.capacity_percent }}</div>
+    <div class="chips">
+      <span class="chip warn">{{ printf (i18n "demo_trace_chip_over") $t.person_over_name $t.person_over_hours }}</span>
+    </div>
+  </div>
+
+  <div class="node pending">
+    <div class="kind"><span>{{ i18n "demo_trace_release_kind" }}</span><span class="mono">{{ $t.release_version }}</span></div>
+    <div class="title">{{ i18n "demo_trace_release_ships" }}</div>
+    <div class="chips">
+      <span class="chip ok">{{ printf (i18n "demo_trace_chip_tests_passed") $t.tests_passed }}</span>
+      <span class="chip test">{{ printf (i18n "demo_trace_chip_awaiting") $t.awaiting }}</span>
+    </div>
+  </div>
+
+  <div class="gate">
+    <span>{{ i18n "demo_trace_gate_label" }}</span>
+    <span class="mono">{{ printf (i18n "demo_trace_gate_checks_left") $t.gate_checks_left }}</span>
+  </div>
+</div>

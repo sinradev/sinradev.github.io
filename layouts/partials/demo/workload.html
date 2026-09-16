@@ -1,0 +1,21 @@
+{{/* Feature 2 demo widget: per-person workload for one cycle. Data: data/home_demo.yaml#workload */}}
+{{ $w := hugo.Data.home_demo.workload }}
+<div class="surface">
+  <div class="load" role="img" aria-label="{{ i18n "demo_workload_aria" }}">
+    {{ range $w.people }}
+    <div class="person">
+      <span class="who"><span class="avatar">{{ .initials }}</span>{{ .name }}</span>
+      <div class="track">
+        <div class="fill" style="width:{{ .fill_percent }}%"></div>
+        {{ if .over }}<div class="over" style="left:{{ .fill_percent }}%;width:{{ .over_percent }}%"></div>{{ end }}
+        <div class="cap"></div>
+      </div>
+      <span class="pct mono{{ if .over }} hot{{ end }}">{{ .percent }}%</span>
+    </div>
+    {{ end }}
+  </div>
+  <div class="load-foot">
+    <span>{{ i18n "demo_workload_foot_cycle" }}</span>
+    <span>{{ printf (i18n "demo_workload_foot_suggestion") $w.suggestion_issue $w.suggestion_from $w.suggestion_to | safeHTML }}</span>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+# Structure et valeurs non traduisibles pour les widgets démo de la home
+# (maquette _design/sinra-home-2026.html). Les libellés associés vivent
+# dans i18n/{en,fr,es}.yaml sous le préfixe demo_*.
+# Les dates/pourcentages affichés dans i18n sont pré-formatés par langue :
+# ce fichier ne porte que les ids et nombres bruts.
+
+trace:
+  cap_id: "CAP-12"
+  issue_start: "SIN-141"
+  issue_end: "SIN-143"
+  issues_total: 3
+  issues_merged: 2
+  progress_percent: 67
+  cycle_id: "C14"
+  capacity_percent: 83
+  person_over_name: "Léa"
+  person_over_hours: 6
+  release_version: "v2.4"
+  tests_passed: 18
+  tests_total: 19
+  awaiting: 1
+  gate_checks_left: 1
+
+spec:
+  cap_id: "CAP-12"
+  po_name: "Léa"
+  criteria:
+    - done: true
+    - done: true
+    - done: true
+    - done: false
+  linked:
+    - id: "SIN-141"
+      state: "merged"
+    - id: "SIN-142"
+      state: "merged"
+    - id: "SIN-143"
+      state: "in_review"
+    - id: "TEST-88"
+      state: "pending"
+
+workload:
+  cycle_id: "C14"
+  people:
+    - initials: "LM"
+      name: "Léa"
+      percent: 115
+      fill_percent: 80
+      over_percent: 12
+      over: true
+    - initials: "KB"
+      name: "Karim"
+      percent: 92
+      fill_percent: 74
+      over: false
+    - initials: "JD"
+      name: "Julie"
+      percent: 75
+      fill_percent: 60
+      over: false
+    - initials: "TR"
+      name: "Tom"
+      percent: 50
+      fill_percent: 40
+      over: false
+  suggestion_issue: "SIN-143"
+  suggestion_from: "Léa"
+  suggestion_to: "Tom"
+
+release:
+  version: "v2.4"
+  tests_done: 18
+  tests_total: 19
+  tests:
+    - state: "passed"
+    - state: "passed"
+    - state: "passed_after_fix"
+    - state: "passed"
+    - state: "waiting"
+
+audit_log:
+  - time: "2026-09-02 09:14"
+    ref: "CAP-12"
+    ref_type: "capability"
+    person: "Léa"
+  - time: "2026-09-09 16:40"
+    ref: "SIN-141"
+    ref_type: "issue"
+    linked_to: "CAP-12"
+  - time: "2026-09-15 11:02"
+    ref: "TEST-88"
+    ref_type: "test"
+    outcome: "failed"
+  - time: "2026-09-16 10:27"
+    ref: "TEST-88"
+    ref_type: "test"
+    outcome: "fixed_by"
+    fix_ref: "SIN-144"
+  - time: "2026-09-16 16:10"
+    ref: "v2.4"
+    ref_type: "release"
+    person: "Léa"
