@@ -1,5 +1,5 @@
 ---
-title: "Sinra - Organize. Prioritize. Deliver."
-description: "The only project management tool built for teams combining V-Model and Agile. Complete visibility. Unified platform. Controlled quality."
+title: "Sinra, the built-in way of working for growing startups"
+description: "Specs, development, tests, and releases structured from day one. Project management for growing startups, hosted in France."
 layout: "home"
 ---

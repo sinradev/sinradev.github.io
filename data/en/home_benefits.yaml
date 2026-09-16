@@ -1,0 +1,18 @@
+- title: "Every issue holds its spec"
+  body: "Every issue is linked to its specification. Specs are written alongside development, with a dedicated view for the product owner. No more one-line tickets everyone interprets differently."
+  image: /assets/images/screenshots/43-spec-pipeline.png
+  alt: "Spec Pipeline: tracking spec writing by capability"
+  width: 1440
+  height: 900
+- title: "Workload shows before it overflows"
+  body: "Sinra calculates each person's load per cycle, accounting for their real availability. You see overloads before the cycle starts, not two days before the deadline. Unfinished tasks automatically carry over to the next cycle."
+  image: /assets/images/screenshots/05-cycle-workload.png
+  alt: "Cycle workload view"
+  width: 1440
+  height: 783
+- title: "Nothing ships without being tested"
+  body: "Tests are part of the workflow, tied directly to releases. Before every deployment, you know what's been tested, accepted, or rejected."
+  image: /assets/images/screenshots/20-testing-detail.png
+  alt: "Test case detail linked to a release"
+  width: 1440
+  height: 900

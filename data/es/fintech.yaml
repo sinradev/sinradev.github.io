@@ -1,0 +1,34 @@
+hero:
+  title: "Entrega rápido, y demuestra que cada puesta en producción estuvo controlada."
+  subtitle: "Las fintech necesitan tranquilizar a sus socios bancarios, sus clientes y sus reguladores. Sinra hace que tu proceso de entrega sea trazable: qué se especificó, probó, validó y puso en producción, y por quién."
+  cta_primary: "Reservar 20 min con el fundador"
+  cta_secondary: "Probar gratis"
+
+problem:
+  title: "Tus socios piden pruebas, no promesas"
+  body: "Due diligence de un banco socio, cuestionario de seguridad de un gran cliente, exigencias de gestión de incidentes: tarde o temprano, hay que mostrar cómo gestionas tus cambios e incidentes. Sin la herramienta adecuada, estas pruebas están dispersas entre tickets, mensajes y documentos."
+
+solution:
+  blocks:
+    - title: "Releases controlados."
+      body: "Cada release agrupa sus funcionalidades, sus tests y su checklist de puesta en producción."
+    - title: "Decisiones go / no-go trazables."
+      body: "Criterios, veredicto e historial para cada etapa de validación."
+    - title: "Gestión de incidentes estructurada."
+      body: "Postmortems sin culpables, acciones correctivas con seguimiento y tiempo de resolución calculado automáticamente."
+    - title: "Un historial explotable."
+      # TODO: verificar si existe un audit trail / historial de cambios consultable.
+      body: "Decisiones de planning, validaciones e incidentes quedan vinculados a sus cycles y releases."
+
+regulatory:
+  body: "Con marcos como DORA, las entidades financieras esperan más rigor de sus proveedores tecnológicos en la gestión de cambios e incidentes."
+
+data_section:
+  title: "Alojamiento en Francia, RGPD"
+  body: "Todos los datos se almacenan en servidores europeos en Francia, cumpliendo el RGPD. Sin dependencia de hyperscalers cloud no europeos."
+
+mandatory_mention: "Sinra no constituye una certificación ni garantiza por sí solo el cumplimiento de una normativa (por ejemplo DORA o PCI DSS). Te ayuda a estructurar y documentar tus procesos de desarrollo y gestión de incidentes."
+
+final_cta:
+  cta_primary: "Reservar 20 min con el fundador"
+  cta_secondary: "Probar gratis"

@@ -1,0 +1,8 @@
+# TODO THOMAS: validate the offer (perks) and provide the booking link.
+title: "Join the first Sinra teams"
+body: "We're opening a limited number of spots for teams who want to structure how they work and help us shape the product."
+perks:
+  - "Personalized onboarding with the founder."
+  - "Preferential pricing, locked in for life."
+  - "Direct access to the roadmap and regular exchanges."
+cta_text: "Apply to the program"

@@ -1,0 +1,7 @@
+title: "Building in healthcare or finance?"
+body: "Your clients, your auditors, or your future certification bodies will ask you to prove what was specified, built, tested, and validated. Sinra connects all of it natively, no traceability spreadsheet to maintain by hand."
+links:
+  - text: "Sinra for medtech and healthtech"
+    slug: "medtech/"
+  - text: "Sinra for fintech"
+    slug: "fintech/"

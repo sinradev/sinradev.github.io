@@ -1,0 +1,34 @@
+hero:
+  title: "Ship fast, and prove every release was under control."
+  subtitle: "Fintechs need to reassure banking partners, clients, and regulators. Sinra makes your delivery process traceable: what was specified, tested, validated, and deployed, and by whom."
+  cta_primary: "Book 20 min with the founder"
+  cta_secondary: "Try for free"
+
+problem:
+  title: "Your partners ask for proof, not promises"
+  body: "A banking partner's due diligence, a large client's security questionnaire, incident management requirements: sooner or later, you have to show how you handle changes and incidents. Without the right tool, that evidence is scattered across tickets, messages, and documents."
+
+solution:
+  blocks:
+    - title: "Controlled releases."
+      body: "Every release groups its features, tests, and go-live checklist."
+    - title: "Traceable go / no-go decisions."
+      body: "Criteria, verdict, and history for every validation step."
+    - title: "Structured incident management."
+      body: "Blameless postmortems, tracked remediation actions, and automatically calculated resolution time."
+    - title: "A usable history."
+      # TODO: verify whether an audit trail / reviewable change history exists.
+      body: "Planning decisions, validations, and incidents stay linked to their cycles and releases."
+
+regulatory:
+  body: "With frameworks like DORA, financial institutions expect more rigor from their technology providers around change and incident management."
+
+data_section:
+  title: "Hosted in France, GDPR"
+  body: "All data is stored on European servers in France, in compliance with GDPR. No dependency on non-European cloud hyperscalers."
+
+mandatory_mention: "Sinra is not a certification and does not by itself guarantee compliance with a regulation (for example DORA or PCI DSS). It helps you structure and document your development and incident management processes."
+
+final_cta:
+  cta_primary: "Book 20 min with the founder"
+  cta_secondary: "Try for free"

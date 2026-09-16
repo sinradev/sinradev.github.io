@@ -94,10 +94,13 @@ contact_success:
 features: Funcionalidades
 got_to_blog: Ir al Blog
 hero:
-  title: <strong>Organice.</strong> Priorice. Entregue.
-  body: La única herramienta de gestión de proyectos construida para equipos que combinan V-Model y Agile. <strong>Visibilidad completa.</strong> Plataforma unificada. Calidad controlada. No más apagar incendios.
-  button: Probar gratis
-  alt_image: Vista General de Sinra
+  title: "Tu startup está creciendo. Tu organización, todavía no."
+  body: "Sinra le da a tu equipo un método de trabajo listo para usar. Specs, desarrollo, tests y releases quedan estructurados desde el primer día, sin consultores ni tres meses de configuración."
+  button: "Prueba gratis 14 días"
+  # TODO THOMAS: enlace de reserva (Cal.com, Calendly...) en vez de /contact/.
+  secondary_button: "Reserva 20 min con el fundador"
+  mention: "Sin tarjeta de crédito. Alojado en Francia."
+  alt_image: "Vista del ciclo actual en Sinra"
 vision:
   tag: "Nuestra filosofía"
   title: "Una herramienta que le guía, no al revés"
@@ -116,6 +119,7 @@ vision:
       role: "QA"
       description: "Pruebas integradas en el flujo de trabajo desde el primer día. Asigne, rastree y cierre casos de prueba directamente vinculados a releases."
 sovereignty:
+  # TODO THOMAS: confirmar el nombre del proveedor de hosting si quieres citarlo (argumento fuerte para salud y finanzas).
   tag: "Confianza y Soberanía"
   title: "Desarrollado en Francia, conforme por diseño"
   body: "Sinra es un producto francés, alojado en servidores europeos en Francia. La soberanía de datos y el cumplimiento del RGPD son fundamentos, no complementos."
@@ -186,7 +190,7 @@ pricing:
   ready_to_start_desc: "Elija el plan que mejor se adapte a sus necesidades y comience a gestionar sus proyectos de manera más eficiente hoy."
   start_free_trial: "Iniciar Prueba Gratuita"
   contact_sales: "Contáctenos"
-reduce_complexity: <strong>Organice.</strong> <strong>Priorice.</strong> <strong>Entregue.</strong>
+reduce_complexity: "Dale a tu equipo un método desde este sprint."
 testimonial: Testimonio
 try_sinra: Pruebe Sinra gratis
 case_studies:

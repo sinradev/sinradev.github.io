@@ -19,31 +19,55 @@
       promo_code: "BLACKFRIDAY2025"
       recommended: true
   features:
-    - text: Pay per seat (flexible team sizing)
+    - text: Pay per seat, flexible team sizing
       highlight: true
     - text: Unlimited projects and releases
       highlight: true
-    - text: Rich text editor & specifications
+    - text: Rich text editor for specs
       highlight: true
-    - text: Advanced real-time capacity planning
+    - text: Real-time workload planning
       highlight: true
     - text: Integrated QA management
       highlight: true
-    - text: Advanced templates & customization
+    - text: Advanced templates and customization
       highlight: true
-    - text: Multi-view intelligence (Kanban, List, Release)
+    - text: Kanban, List, and Release views
       highlight: true
-    - text: Release management & go-live checklists
+    - text: Release management with go-live checklists
       highlight: true
-    - text: Priority email & chat support
+    - text: Priority email and chat support
       highlight: true
-    - text: Custom workflows & roles
+    - text: Custom workflows and roles
       highlight: false
     - text: Advanced security features
       highlight: false
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Start Free Trial
+
+- name: Medtech, healthtech & fintech teams
+  color: "#2196F3"
+  description: "Sinra Pro with hands-on support for regulated-sector teams"
+  pricing_tiers:
+    # TODO THOMAS: price (quote-based or fixed).
+    - period: Quote-based
+      price: null
+      billing: null
+      plan_type: "on_quote"
+  features:
+    - text: Everything in Sinra Pro
+      highlight: true
+    - text: Guided onboarding
+      highlight: true
+    - text: Help setting up traceability
+      highlight: true
+    - text: Priority exchanges with the founder
+      highlight: true
+  # TODO THOMAS: validate this content; don't promise what you can't deliver alone (SSO, SLA...).
+  call_to_action:
+    link: contact/
+    text: Book 20 min
+    internal: true
 
 # "Sinra Specif-AI" card removed (plan phase 1): unsustainable "Coming Soon"
 # promise for a pre-revenue product. Re-enable only once Thomas validates the feature.

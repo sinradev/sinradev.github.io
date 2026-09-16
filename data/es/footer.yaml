@@ -5,6 +5,12 @@
   - name: Precios
     link: pricing/
     target: _top
+  - name: Sinra para medtech
+    link: medtech/
+    target: _top
+  - name: Sinra para fintech
+    link: fintech/
+    target: _top
   - name: Politica de privacidad
     link: politica-de-privacidad/
     target: _top

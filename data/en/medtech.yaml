@@ -1,0 +1,36 @@
+hero:
+  title: "Structure your software development before your first audit."
+  subtitle: "For medtech and healthtech startups, Sinra connects requirements, development, tests, and release validations in a single tool. Your traceability builds up as you develop, not the night before the audit."
+  cta_primary: "Book 20 min with the founder"
+  cta_secondary: "Try for free"
+
+problem:
+  title: "Jira for devs, Excel for traceability, Word for validations"
+  body: "In healthcare, software isn't enough: you need to prove how it was specified, built, verified, and validated. Most young teams piece this evidence together by hand, with spreadsheets that are never up to date."
+
+solution:
+  blocks:
+    - title: "Requirements linked to code and tests."
+      # TODO: verify whether a traceability view or export exists; if not, don't promise a "matrix".
+      body: "Every specification is linked to the issues that implement it and the tests that verify it."
+    - title: "Formal, logged validations."
+      body: "Phase reviews with evaluation criteria, a go / no-go / conditional verdict, and a history of every decision."
+    - title: "Documented incidents."
+      body: "Structured postmortems: timeline, systemic factors, remediation actions, resolution time."
+    - title: "A shared vocabulary."
+      body: "A business glossary shared and reused across specifications, to avoid ambiguity."
+
+vmodel:
+  title: "The rigor of the V-model, the pace of agile"
+  body: "Specs follow their own writing and validation flow, while developers move in short cycles. Tests and phase reviews ensure nothing ships without being verified."
+
+data_section:
+  title: "Hosted in France, GDPR, encrypted data"
+  body: "Sinra is built for your development data, not patient data. As in your test environments, use fictional or anonymized data in your issues and attachments."
+  # TODO THOMAS: align with the terms of service and DPA once drafted.
+
+mandatory_mention: "Sinra is a development organization tool. It is not a certification and does not by itself guarantee compliance with a standard (for example IEC 62304 or ISO 13485). It helps you structure and retrieve the documentation your quality process expects."
+
+final_cta:
+  title: "Let's talk about your quality process."
+  button: "Book 20 min"

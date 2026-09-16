@@ -19,21 +19,21 @@
       promo_code: "BLACKFRIDAY2025"
       recommended: true
   features:
-    - text: Pago por puesto (tamaño de equipo flexible)
+    - text: Pago por puesto, tamaño de equipo flexible
       highlight: true
     - text: Projects y releases ilimitados
       highlight: true
-    - text: Editor de texto enriquecido y especificaciones
+    - text: Editor de texto enriquecido para specs
       highlight: true
-    - text: Planificación de capacidad avanzada en tiempo real
+    - text: Planificación de la carga en tiempo real
       highlight: true
     - text: Gestión de QA integrada
       highlight: true
     - text: Templates y personalización avanzados
       highlight: true
-    - text: Inteligencia multi-vista (Kanban, Lista, Release)
+    - text: Vistas Kanban, Lista y Release
       highlight: true
-    - text: Gestión de releases y checklists de puesta en producción
+    - text: Gestión de releases con checklists de puesta en producción
       highlight: true
     - text: Soporte prioritario por email y chat
       highlight: true
@@ -44,6 +44,30 @@
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Iniciar Prueba Gratuita
+
+- name: Equipos medtech, healthtech y fintech
+  color: "#2196F3"
+  description: "Sinra Pro con acompañamiento para equipos en sector regulado"
+  pricing_tiers:
+    # TODO THOMAS: precio (a medida o tarifa fija).
+    - period: A medida
+      price: null
+      billing: null
+      plan_type: "on_quote"
+  features:
+    - text: Todo Sinra Pro
+      highlight: true
+    - text: Onboarding acompañado
+      highlight: true
+    - text: Ayuda para implementar la trazabilidad
+      highlight: true
+    - text: Intercambios prioritarios con el fundador
+      highlight: true
+  # TODO THOMAS: validar este contenido; no prometer lo que no puedas cumplir solo (SSO, SLA...).
+  call_to_action:
+    link: contact/
+    text: Reservar 20 min
+    internal: true
 
 # Tarjeta "Sinra Specif-AI" retirada (fase 1 del plan): promesa "Próximamente"
 # insostenible para un producto sin clientes. Reactivar solo si Thomas valida la feature.
