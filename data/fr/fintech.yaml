@@ -17,7 +17,6 @@ solution:
     - title: "Une gestion d'incident structurée."
       body: "Postmortems sans blâme, actions correctives suivies et temps de résolution calculé automatiquement."
     - title: "Un historique exploitable."
-      # TODO: vérifier l'existence d'un audit trail / historique des modifications consultable.
       body: "Décisions de planning, validations et incidents restent reliés aux cycles et releases concernés."
 
 regulatory:

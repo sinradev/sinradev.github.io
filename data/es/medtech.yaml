@@ -11,7 +11,6 @@ problem:
 solution:
   blocks:
     - title: "Requisitos vinculados al código y a los tests."
-      # TODO: verificar si existe una vista o export de trazabilidad; si no, no prometer una "matriz".
       body: "Cada especificación está vinculada a las issues que la implementan y a los tests que la verifican."
     - title: "Validaciones formales e historizadas."
       body: "Revisiones de fase con criterios de evaluación, veredicto go / no-go / condicional e historial de cada decisión."

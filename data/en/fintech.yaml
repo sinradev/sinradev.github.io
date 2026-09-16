@@ -17,7 +17,6 @@ solution:
     - title: "Structured incident management."
       body: "Blameless postmortems, tracked remediation actions, and automatically calculated resolution time."
     - title: "A usable history."
-      # TODO: verify whether an audit trail / reviewable change history exists.
       body: "Planning decisions, validations, and incidents stay linked to their cycles and releases."
 
 regulatory:

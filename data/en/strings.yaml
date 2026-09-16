@@ -99,7 +99,6 @@ hero:
   title: "Your startup is growing. Your process isn't."
   body: "Sinra gives your team a ready-to-use way of working. Specs, development, tests, and releases are structured from day one, no consultants, no three months of setup."
   button: "Try free for 14 days"
-  # TODO THOMAS: booking link (Cal.com, Calendly...) instead of /contact/.
   secondary_button: "Book 20 min with the founder"
   mention: "No credit card. Hosted in France."
   alt_image: "Current cycle view in Sinra"
@@ -121,17 +120,16 @@ vision:
       role: "QA"
       description: "Testing built into the workflow from day one. Assign, track, and close test cases directly tied to releases."
 sovereignty:
-  # TODO THOMAS: confirm the hosting provider's name if you want to name it (strong argument for health and finance).
   tag: "Trust & Sovereignty"
   title: "Built in France, compliant by design"
-  body: "Sinra is a French product, hosted on European servers in France. Data sovereignty and GDPR compliance are foundations, not afterthoughts."
+  body: "Sinra is a French product, hosted with OVH on European servers in France. Data sovereignty and GDPR compliance are foundations, not afterthoughts."
   badges:
     - slug: "gdpr"
       title: "GDPR Compliant"
       description: "Sinra fully complies with the General Data Protection Regulation. Your data belongs to you, processed transparently under EU law."
     - slug: "france"
-      title: "Hosted in France"
-      description: "All data is stored on European servers located in France. No transatlantic data transfer, ever."
+      title: "Hosted in France with OVH"
+      description: "All data is stored with OVH, on servers located in France. No transatlantic data transfer, ever."
     - slug: "sovereign"
       title: "Sovereign Software"
       description: "Designed and developed in France. No dependency on non-European cloud hyperscalers. Your data stays in the EU."

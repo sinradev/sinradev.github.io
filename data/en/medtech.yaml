@@ -11,7 +11,6 @@ problem:
 solution:
   blocks:
     - title: "Requirements linked to code and tests."
-      # TODO: verify whether a traceability view or export exists; if not, don't promise a "matrix".
       body: "Every specification is linked to the issues that implement it and the tests that verify it."
     - title: "Formal, logged validations."
       body: "Phase reviews with evaluation criteria, a go / no-go / conditional verdict, and a history of every decision."

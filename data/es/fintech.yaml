@@ -17,7 +17,6 @@ solution:
     - title: "Gestión de incidentes estructurada."
       body: "Postmortems sin culpables, acciones correctivas con seguimiento y tiempo de resolución calculado automáticamente."
     - title: "Un historial explotable."
-      # TODO: verificar si existe un audit trail / historial de cambios consultable.
       body: "Decisiones de planning, validaciones e incidentes quedan vinculados a sus cycles y releases."
 
 regulatory:

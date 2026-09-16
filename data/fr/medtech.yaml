@@ -11,7 +11,6 @@ problem:
 solution:
   blocks:
     - title: "Des exigences reliées au code et aux tests."
-      # TODO: vérifier l'existence d'une vue ou d'un export de traçabilité ; sinon ne pas promettre de "matrice".
       body: "Chaque spécification est liée aux issues qui l'implémentent et aux tests qui la vérifient."
     - title: "Des validations formelles et historisées."
       body: "Revues de phase avec critères d'évaluation, verdict go / no-go / conditionnel et historique de chaque décision."

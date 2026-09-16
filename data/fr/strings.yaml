@@ -40,7 +40,6 @@ hero:
   title: "Votre startup grandit. Votre organisation, pas encore."
   body: "Sinra vous donne une méthode de travail prête à l'emploi. Specs, développement, tests et releases sont structurés dès le premier jour, sans consultant ni trois mois de configuration."
   button: "Essayer gratuitement 14 jours"
-  # TODO THOMAS: lien de prise de rendez-vous (Cal.com, Calendly...) à la place de /fr/contact/.
   secondary_button: "Réserver 20 min avec le fondateur"
   mention: "Sans carte bancaire. Hébergé en France."
   alt_image: "Vue du cycle en cours dans Sinra"
@@ -62,17 +61,16 @@ vision:
       role: "QA"
       description: "Les tests intégrés dans le flux de travail dès le premier jour. Assignez, suivez et clôturez les cas de test directement liés aux releases."
 sovereignty:
-  # TODO THOMAS: confirmer le nom de l'hébergeur si tu veux le citer (argument fort pour la santé et la finance).
   tag: "Confiance & Souveraineté"
   title: "Conçu en France, conforme par défaut"
-  body: "Sinra est un produit français, hébergé sur des serveurs européens en France. La souveraineté des données et la conformité RGPD sont des fondements, pas des options."
+  body: "Sinra est un produit français, hébergé chez OVH sur des serveurs européens en France. La souveraineté des données et la conformité RGPD sont des fondements, pas des options."
   badges:
     - slug: "gdpr"
       title: "Conforme RGPD"
       description: "Sinra est entièrement conforme au Règlement Général sur la Protection des Données. Vos données vous appartiennent, traitées de façon transparente selon le droit européen."
     - slug: "france"
-      title: "Hébergé en France"
-      description: "Toutes les données sont stockées sur des serveurs européens situés en France. Aucun transfert transatlantique, jamais."
+      title: "Hébergé en France chez OVH"
+      description: "Toutes les données sont stockées chez OVH, sur des serveurs situés en France. Aucun transfert transatlantique, jamais."
     - slug: "sovereign"
       title: "Logiciel Souverain"
       description: "Conçu et développé en France. Aucune dépendance à des hyperscalers cloud non-européens. Vos données restent dans l'UE."
