@@ -1,5 +1,5 @@
 ---
-title: "Sinra - Organiser. Prioriser. Livrer."
-description: "Le seul outil de gestion de projet conçu pour les équipes combinant V-Model et Agile. Visibilité complète. Plateforme unifiée. Qualité maîtrisée."
+title: "Sinra, la méthode de travail intégrée pour les startups tech"
+description: "Specs, développement, tests et releases structurés dès le premier jour. Outil de gestion de projet pour startups en croissance, hébergé en France."
 layout: "home"
 ---

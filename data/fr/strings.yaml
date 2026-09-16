@@ -37,10 +37,13 @@ about:
   ready_to_transform_desc: "Essayez Sinra sans risque. Les équipes rapportent une réduction de 40%+ des frais généraux de planification, des dates de release prévisibles, et une meilleure qualité de code. Tout sans la prolifération de plugins des outils traditionnels."
   learn_more: "Essayez gratuitement"
 hero:
-  title: <strong>Organisez.</strong> Priorisez. Livrez.
-  body: Le seul outil de gestion de projet conçu pour les équipes combinant V-Model et Agile. <strong>Une visibilité totale.</strong> Une plateforme unifiée. Une qualité maîtrisée. Fini les urgences.
-  button: Essayez gratuitement
-  alt_image: Présentation de Sinra
+  title: "Votre startup grandit. Votre organisation, pas encore."
+  body: "Sinra vous donne une méthode de travail prête à l'emploi. Specs, développement, tests et releases sont structurés dès le premier jour, sans consultant ni trois mois de configuration."
+  button: "Essayer gratuitement 14 jours"
+  # TODO THOMAS: lien de prise de rendez-vous (Cal.com, Calendly...) à la place de /fr/contact/.
+  secondary_button: "Réserver 20 min avec le fondateur"
+  mention: "Sans carte bancaire. Hébergé en France."
+  alt_image: "Vue du cycle en cours dans Sinra"
 vision:
   tag: "Notre philosophie"
   title: "Un outil qui vous guide, pas l'inverse"
@@ -59,6 +62,7 @@ vision:
       role: "QA"
       description: "Les tests intégrés dans le flux de travail dès le premier jour. Assignez, suivez et clôturez les cas de test directement liés aux releases."
 sovereignty:
+  # TODO THOMAS: confirmer le nom de l'hébergeur si tu veux le citer (argument fort pour la santé et la finance).
   tag: "Confiance & Souveraineté"
   title: "Conçu en France, conforme par défaut"
   body: "Sinra est un produit français, hébergé sur des serveurs européens en France. La souveraineté des données et la conformité RGPD sont des fondements, pas des options."
@@ -118,7 +122,7 @@ why_sinra_benefits:
   - title: "Livraison de Qualité Maîtrisée"
     description: "QA intégré au processus, pas appliqué a posteriori. Détectez les bugs dès la conception, livrez sans appréhension."
 features: Fonctionnalités
-reduce_complexity: <strong>Organisez.</strong> <strong>Priorisez.</strong> <strong>Livrez.</strong>
+reduce_complexity: "Donnez une méthode à votre équipe dès ce sprint."
 try_sinra: Essayer Sinra gratuitement
 got_to_blog: Aller au blog
 pricing:

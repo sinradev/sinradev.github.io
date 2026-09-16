@@ -1,0 +1,22 @@
+{{ $lang := .Language.Lang }}
+{{ $benefits := index hugo.Data $lang "home_benefits" }}
+{{ if $benefits }}
+<section class="benefits py-20 bg-base-200">
+  <div class="container mx-auto px-6 max-w-6xl space-y-20">
+    {{ range $i, $b := $benefits }}
+    <div class="flex flex-col {{ if eq (mod $i 2) 1 }}md:flex-row-reverse{{ else }}md:flex-row{{ end }} items-center gap-12">
+      <div class="text md:w-1/2">
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">{{ $b.title }}</h3>
+        <p class="text-base-content/80 leading-relaxed">{{ $b.body }}</p>
+      </div>
+      <div class="image md:w-1/2">
+        <picture>
+          <source srcset="{{ $b.image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
+          <img src="{{ $b.image }}" alt="{{ $b.alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $b.width }}" height="{{ $b.height }}" />
+        </picture>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

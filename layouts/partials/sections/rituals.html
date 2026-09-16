@@ -1,0 +1,29 @@
+{{ $lang := .Language.Lang }}
+{{ $r := index hugo.Data $lang "home_rituals" }}
+{{ with $r }}
+<section class="rituals py-20 bg-base-100">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="text md:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .title }}</h2>
+        <p class="text-lg text-base-content/80 leading-relaxed mb-8">{{ .body }}</p>
+        <ul class="space-y-4">
+          {{ range .items }}
+          <li>
+            <span class="font-semibold">{{ .title }}</span> : <span class="text-base-content/70">{{ .description }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ with .image }}
+      <div class="image md:w-1/2">
+        <picture>
+          <source srcset="{{ . | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
+          <img src="{{ . }}" alt="{{ $r.alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $r.width }}" height="{{ $r.height }}" />
+        </picture>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

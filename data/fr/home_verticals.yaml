@@ -1,0 +1,7 @@
+title: "Vous développez dans la santé ou la finance ?"
+body: "Vos clients, vos auditeurs ou vos futurs organismes de certification vous demanderont de prouver ce qui a été spécifié, développé, testé et validé. Sinra relie tout cela nativement, sans tableur de traçabilité à maintenir à la main."
+links:
+  - text: "Sinra pour les medtech et healthtech"
+    slug: "medtech/"
+  - text: "Sinra pour les fintech"
+    slug: "fintech/"

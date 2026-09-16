@@ -1,0 +1,13 @@
+- question: "Mon équipe ne connaît aucune méthode agile, est-ce un problème ?"
+  answer: "Non, c'est justement le cas prévu. Sinra structure le travail pour vous : vous suivez ses concepts, la méthode suit."
+- question: "Combien de temps faut-il pour démarrer ?"
+  # TODO THOMAS: donner une estimation réaliste.
+  answer: "TODO THOMAS: estimation réaliste."
+- question: "Peut-on importer notre backlog existant ?"
+  answer: "Oui, depuis un fichier CSV ou directement depuis GitHub. L'export CSV est disponible à tout moment."
+- question: "Où sont hébergées nos données ?"
+  answer: "En France, sur des serveurs européens, dans le respect du RGPD."
+- question: "L'essai gratuit est-il limité ?"
+  answer: "14 jours, toutes les fonctionnalités, sans carte bancaire."
+- question: "Sinra est-il adapté aux entreprises réglementées ?"
+  answer: "Sinra aide à organiser la traçabilité entre specs, développement, tests et releases. Voir nos pages dédiées medtech et fintech."

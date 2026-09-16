@@ -1,0 +1,16 @@
+{{ $lang := .Language.Lang }}
+{{ $f := index hugo.Data $lang "home_founder" }}
+{{ with $f }}
+<section class="founder py-20 bg-base-100">
+  <div class="container mx-auto px-6 max-w-3xl text-center">
+    {{ with .photo }}
+    <img src="{{ . }}" alt="" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover" loading="lazy" />
+    {{ end }}
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .title }}</h2>
+    <p class="text-lg text-base-content/80 leading-relaxed">{{ .body }}</p>
+    {{ with .linkedin_url }}
+    <a href="{{ . }}" class="btn btn-outline btn-sm mt-6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
