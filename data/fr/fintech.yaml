@@ -1,0 +1,34 @@
+hero:
+  title: "Livrez vite, et prouvez que chaque mise en production était maîtrisée."
+  subtitle: "Les fintech doivent rassurer leurs partenaires bancaires, leurs clients et leurs régulateurs. Sinra rend votre processus de livraison traçable : ce qui a été spécifié, testé, validé et mis en production, et par qui."
+  cta_primary: "Réserver 20 min avec le fondateur"
+  cta_secondary: "Essayer gratuitement"
+
+problem:
+  title: "Vos partenaires vous demandent des preuves, pas des promesses"
+  body: "Due diligence d'une banque partenaire, questionnaire de sécurité d'un grand client, exigences de gestion des incidents : tôt ou tard, il faut montrer comment vous gérez vos changements et vos incidents. Sans outil adapté, ces preuves sont éparpillées entre tickets, messages et documents."
+
+solution:
+  blocks:
+    - title: "Des releases contrôlées."
+      body: "Chaque release regroupe ses fonctionnalités, ses tests et sa checklist de mise en production."
+    - title: "Des décisions go / no-go traçables."
+      body: "Critères, verdict et historique pour chaque étape de validation."
+    - title: "Une gestion d'incident structurée."
+      body: "Postmortems sans blâme, actions correctives suivies et temps de résolution calculé automatiquement."
+    - title: "Un historique exploitable."
+      # TODO: vérifier l'existence d'un audit trail / historique des modifications consultable.
+      body: "Décisions de planning, validations et incidents restent reliés aux cycles et releases concernés."
+
+regulatory:
+  body: "Avec des cadres comme DORA, les établissements financiers attendent davantage de rigueur de leurs prestataires technologiques sur la gestion des changements et des incidents."
+
+data_section:
+  title: "Hébergement en France, RGPD"
+  body: "Toutes les données sont stockées sur des serveurs européens en France, dans le respect du RGPD. Aucune dépendance à des hyperscalers cloud non-européens."
+
+mandatory_mention: "Sinra ne constitue pas une certification et ne garantit pas à lui seul la conformité à une réglementation (par exemple DORA ou PCI DSS). Il vous aide à structurer et à documenter vos processus de développement et de gestion des incidents."
+
+final_cta:
+  cta_primary: "Réserver 20 min avec le fondateur"
+  cta_secondary: "Essayer gratuitement"
