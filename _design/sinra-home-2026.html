@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sinra · proposition home 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Nunito:wght@900&family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ---------- Tokens (light = bone, dark = brand dim) ---------- */
+:root{
+  --font:"Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif; --w-body:400; --w-display:800; --w-strong:700; --track:-.028em; --track-xl:-.038em;
+  --canvas:#EEF3F5; --panel:#FFFFFF; --recess:#E2E9ED; --line:#D3DDE2;
+  --ink:#1C212B; --muted:#56657A; --faint:#8593A3;
+  --brand:#9FE88D; --brand-ink:#1B2D1A; --brand-text:#2E7A22;
+  --coral:#E0583A; --coral-soft:#FFE3DB; --lilac:#8A4FB8; --lilac-soft:#EEDFF8;
+  --shadow:0 1px 0 rgba(28,33,43,.04), 0 12px 32px -18px rgba(28,33,43,.25);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --canvas:#242933; --panel:#2A303C; --recess:#20252E; --line:#343B49;
+    --ink:#E5EEF2; --muted:#B2CCD6; --faint:#7F8FA0;
+    --brand:#9FE88D; --brand-ink:#1B2D1A; --brand-text:#9FE88D;
+    --coral:#FF7D5C; --coral-soft:rgba(255,125,92,.14); --lilac:#C792E9; --lilac-soft:rgba(199,146,233,.14);
+    --shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 24px 48px -28px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --canvas:#242933; --panel:#2A303C; --recess:#20252E; --line:#343B49;
+  --ink:#E5EEF2; --muted:#B2CCD6; --faint:#7F8FA0;
+  --brand:#9FE88D; --brand-ink:#1B2D1A; --brand-text:#9FE88D;
+  --coral:#FF7D5C; --coral-soft:rgba(255,125,92,.14); --lilac:#C792E9; --lilac-soft:rgba(199,146,233,.14);
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 24px 48px -28px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--canvas);color:var(--muted);font:var(--w-body) 1.0625rem/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brand-text);outline-offset:3px;border-radius:6px}
+.mono{font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace;font-size:.8125rem;letter-spacing:0}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+h1,h2,h3{color:var(--ink);font-weight:var(--w-display);letter-spacing:var(--track);line-height:1.02}
+h2{font-size:clamp(2.1rem,4.4vw,3.6rem);max-width:16ch}
+h3{font-size:1.65rem;letter-spacing:-.025em;line-height:1.15}
+p{max-width:62ch}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:12px;font-weight:800;font-size:1rem;text-decoration:none;border:1px solid transparent;transition:transform .15s ease, background .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-brand{background:var(--brand);color:var(--brand-ink)}
+.btn-brand:hover{background:#b3f0a4}
+.btn-quiet{border-color:var(--line);color:var(--ink)}
+.btn-quiet:hover{background:var(--panel)}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in oklab, var(--canvas) 82%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:2rem;height:64px}
+.logo{display:flex;align-items:center;gap:.55rem;text-decoration:none;color:var(--ink);font-family:Nunito,ui-rounded,sans-serif;font-weight:900;font-size:1.35rem;letter-spacing:-.07em}
+.logo svg{width:24px;height:24px}
+.nav ul{display:flex;gap:1.6rem;list-style:none;padding:0;margin-left:auto}
+.nav ul a{text-decoration:none;font-weight:600;font-size:.95rem}
+.nav ul a:hover{color:var(--ink)}
+.nav .btn{padding:.5rem .9rem;font-size:.9rem}
+.nav .login{text-decoration:none;font-weight:700;color:var(--ink);font-size:.95rem}
+.nav .btn,.nav .login{white-space:nowrap}
+@media (max-width:420px){.nav .login{display:none}.nav .btn{margin-left:auto}}
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(3.5rem,8vw,6.5rem) 0 5rem}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
+.hero h1{font-size:clamp(2.8rem,5.8vw,5rem);letter-spacing:var(--track-xl);line-height:.96}
+.hero h1 span{display:block;color:var(--faint)}
+.hero .lead{font-size:1.25rem;margin-top:1.6rem;max-width:44ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.2rem}
+.reassure{display:flex;gap:1.25rem;margin-top:1.1rem;font-size:.9rem;color:var(--faint)}
+.reassure span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--brand-text);margin-right:.5rem;vertical-align:middle}
+
+/* The thread: capability → issue → cycle → release */
+.trace{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:1.4rem 1.4rem 1.4rem 3.4rem;box-shadow:var(--shadow)}
+.trace-head{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 1rem -2rem;color:var(--faint)}
+.trace-head strong{color:var(--ink);font-family:var(--font);font-size:1rem;font-weight:800}
+.thread{position:absolute;left:1.55rem;top:4.4rem;bottom:2.3rem;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.thread::after{content:"";position:absolute;inset:0;background:var(--brand);transform-origin:top;transform:scaleY(.78);animation:draw 1.6s cubic-bezier(.6,.1,.2,1) .2s both}
+@keyframes draw{from{transform:scaleY(0)}}
+.node{position:relative;padding:.85rem 1rem;border-radius:14px;background:var(--recess);margin-bottom:.6rem}
+.node::before{content:"";position:absolute;left:-2.15rem;top:1.05rem;width:12px;height:12px;border-radius:50%;background:var(--panel);border:2px solid var(--brand)}
+.node.pending::before{border-color:var(--lilac)}
+.node .kind{display:flex;justify-content:space-between;gap:1rem;color:var(--faint)}
+.node .title{color:var(--ink);font-weight:800;margin-top:.15rem;line-height:1.3}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.55rem}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:.75rem;padding:.15rem .5rem;border-radius:6px;background:var(--panel);border:1px solid var(--line);color:var(--muted)}
+.chip.ok{color:var(--brand-text);border-color:color-mix(in oklab,var(--brand-text) 35%, transparent)}
+.chip.warn{color:var(--coral);background:var(--coral-soft);border-color:transparent}
+.chip.test{color:var(--lilac);background:var(--lilac-soft);border-color:transparent}
+.bar{height:6px;border-radius:6px;background:var(--line);margin-top:.6rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--brand);border-radius:6px}
+.gate{display:flex;align-items:center;justify-content:space-between;margin-top:.9rem;padding:.7rem 1rem;border-radius:12px;border:1px dashed var(--lilac);color:var(--ink);font-weight:800}
+.gate .mono{color:var(--lilac)}
+
+/* ---------- Symptoms ---------- */
+section{padding:clamp(4rem,9vw,7rem) 0}
+.divider{border-top:1px solid var(--line)}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:4rem}
+.split .intro p{margin-top:1.2rem}
+.symptoms{list-style:none;padding:0;border-top:1px solid var(--line)}
+.symptoms li{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.symptoms .pain{color:var(--ink);font-weight:700;font-size:1.1rem;line-height:1.4}
+.symptoms .fix{font-size:.98rem}
+.symptoms .fix b{color:var(--brand-text);font-weight:800}
+.verdict{margin-top:2rem;font-size:1.5rem;font-weight:var(--w-display);letter-spacing:var(--track);color:var(--ink);line-height:1.2}
+
+/* ---------- Method ---------- */
+.method-head{display:flex;justify-content:space-between;align-items:end;gap:3rem;flex-wrap:wrap}
+.method-head p{max-width:42ch}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:3.5rem;position:relative;list-style:none;padding:0}
+.steps::before{content:"";position:absolute;left:0;right:0;top:21px;height:2px;background:linear-gradient(90deg,var(--brand) 0 25%,var(--line) 25% 100%)}
+.steps li{position:relative;padding-right:1.5rem}
+.steps .dot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--canvas);border:2px solid var(--line);color:var(--ink);font-weight:900;position:relative}
+.steps li:first-child .dot{border-color:var(--brand);background:var(--brand);color:var(--brand-ink)}
+.steps .phase{margin-top:1.4rem;color:var(--faint)}
+.steps h3{margin-top:.2rem}
+.steps p{margin-top:.5rem;font-size:.98rem}
+
+/* ---------- Feature rows ---------- */
+.feature{display:grid;grid-template-columns:4fr 8fr;gap:4rem;align-items:start;padding:4rem 0;border-top:1px solid var(--line)}
+.feature:first-of-type{border-top:0;padding-top:0}
+.feature .copy{position:sticky;top:96px}
+.feature .copy p{margin-top:1rem}
+.feature .copy .mono{display:block;color:var(--brand-text);margin-bottom:.9rem}
+.surface{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:1.6rem;box-shadow:var(--shadow);overflow-x:auto}
+
+/* spec */
+.spec{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem}
+.spec h4{color:var(--ink);font-size:1.2rem;font-weight:800;letter-spacing:-.015em;line-height:1.3;margin-top:.3rem}
+.spec .meta{color:var(--faint)}
+.criteria{list-style:none;padding:0;margin-top:1rem;display:grid;gap:.55rem}
+.criteria li{display:flex;gap:.65rem;align-items:flex-start;font-size:.95rem;line-height:1.45}
+.box{flex:none;width:18px;height:18px;border-radius:5px;border:2px solid var(--line);margin-top:.15rem}
+.box.on{background:var(--brand);border-color:var(--brand)}
+.box.on::after{content:"";display:block;width:5px;height:9px;border:solid var(--brand-ink);border-width:0 2px 2px 0;transform:translate(4px,1px) rotate(45deg)}
+.linked{background:var(--recess);border-radius:14px;padding:1rem}
+.linked .row{display:flex;justify-content:space-between;gap:.8rem;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.linked .row:last-child{border-bottom:0}
+.linked .row span:first-child{color:var(--ink);font-weight:700}
+
+/* workload */
+.load{display:grid;gap:1rem;min-width:520px}
+.person{display:grid;grid-template-columns:150px 1fr 70px;gap:1rem;align-items:center}
+.who{display:flex;align-items:center;gap:.6rem;color:var(--ink);font-weight:700}
+.avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;font-weight:900;background:var(--recess);color:var(--muted)}
+.track{position:relative;height:28px;border-radius:8px;background:var(--recess)}
+.track .fill{position:absolute;inset:0 auto 0 0;border-radius:8px;background:color-mix(in oklab,var(--brand) 75%, transparent)}
+.track .over{position:absolute;top:0;bottom:0;border-radius:0 8px 8px 0;background:var(--coral)}
+.track .cap{position:absolute;top:-6px;bottom:-6px;left:80%;width:2px;background:var(--ink);opacity:.55}
+.pct{text-align:right;color:var(--ink)}
+.pct.hot{color:var(--coral)}
+.load-foot{display:flex;justify-content:space-between;margin-top:1.3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--faint);font-size:.9rem;flex-wrap:wrap;gap:.5rem}
+.load-foot b{color:var(--coral)}
+
+/* release gate */
+.release{display:grid;grid-template-columns:1fr 240px;gap:1.5rem}
+.tests{list-style:none;padding:0}
+.tests li{display:grid;grid-template-columns:auto 1fr auto;gap:.8rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.tests li span:nth-child(2){color:var(--ink);font-weight:600}
+.state{width:10px;height:10px;border-radius:50%;background:var(--brand)}
+.state.p{background:var(--lilac)}
+.state.f{background:var(--coral)}
+.verdict-box{background:var(--recess);border-radius:16px;padding:1.2rem;display:flex;flex-direction:column;gap:.9rem}
+.verdict-box .big{font-size:2.6rem;font-weight:var(--w-display);color:var(--ink);letter-spacing:-.04em;line-height:1}
+.verdict-box .big small{font-size:1rem;color:var(--faint);letter-spacing:0;font-weight:700}
+.nogo{padding:.6rem .8rem;border-radius:10px;background:var(--lilac-soft);color:var(--lilac);font-weight:800;font-size:.92rem}
+
+/* ---------- Regulated / audit trail ---------- */
+.regulated .wrap{display:grid;grid-template-columns:5fr 7fr;gap:4rem;align-items:center}
+.regulated .links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.log{background:var(--recess);border:1px solid var(--line);border-radius:22px;padding:1.4rem 1.6rem;overflow-x:auto}
+.log ol{list-style:none;padding:0;min-width:480px}
+.log li{display:grid;grid-template-columns:140px 70px 1fr;gap:1rem;padding:.6rem 0;border-bottom:1px dashed var(--line);font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:var(--muted)}
+.log li:last-child{border-bottom:0}
+.log time{color:var(--faint)}
+.log .ref{color:var(--brand-text)}
+.log .ref.t{color:var(--lilac)}
+.log .foot{margin-top:1rem;color:var(--faint);font-family:var(--font);font-size:.9rem}
+
+/* ---------- Sovereignty strip ---------- */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:2rem 2rem 2rem 0}
+.facts div+div{padding-left:2rem;border-left:1px solid var(--line)}
+.facts strong{display:block;color:var(--ink);font-size:1.25rem;font-weight:var(--w-display);letter-spacing:var(--track)}
+.facts p{margin-top:.4rem;font-size:.95rem}
+
+/* ---------- Founder + program ---------- */
+.people{display:grid;grid-template-columns:7fr 5fr;gap:1.5rem}
+.founder{padding:2.4rem;border-radius:24px;border:1px solid var(--line)}
+.founder blockquote{color:var(--ink);font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:var(--w-strong);letter-spacing:var(--track);line-height:1.3}
+.sig{display:flex;align-items:center;gap:.9rem;margin-top:2rem}
+.sig .avatar{width:48px;height:48px;font-size:1rem;background:var(--brand);color:var(--brand-ink)}
+.sig strong{color:var(--ink);display:block}
+.sig a{font-size:.9rem;color:var(--faint)}
+.program{padding:2.4rem;border-radius:24px;background:var(--brand);color:var(--brand-ink)}
+.program h3{color:var(--brand-ink);font-size:1.9rem}
+.program p{margin-top:.8rem}
+.program ul{margin:1.2rem 0 1.8rem;padding-left:1.1rem;display:grid;gap:.35rem;font-weight:700}
+.program .btn{background:var(--brand-ink);color:#E5EEF2}
+.program .seats{margin-top:.9rem;font-size:.85rem;opacity:.75}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;grid-template-columns:4fr 8fr;gap:4rem}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:1.2rem 2.5rem 1.2rem 0;color:var(--ink);font-weight:800;font-size:1.1rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:.2rem;top:.95rem;font-size:1.5rem;font-weight:600;color:var(--faint);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 1.3rem}
+
+/* ---------- Final CTA + footer ---------- */
+.final{text-align:left}
+.final h2{font-size:clamp(2.6rem,7vw,6rem);max-width:13ch;letter-spacing:var(--track-xl);line-height:.95}
+footer{border-top:1px solid var(--line);padding:3rem 0;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+footer nav{display:flex;gap:3rem;flex-wrap:wrap}
+footer nav div{display:grid;gap:.4rem}
+footer a{text-decoration:none;color:var(--faint)}
+footer a:hover{color:var(--ink)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .nav ul{display:none}
+  .nav .login{margin-left:auto}
+  .hero .wrap,.split,.regulated .wrap,.people,.faq,.feature{grid-template-columns:1fr;gap:2.5rem}
+  .feature .copy{position:static}
+  .steps{grid-template-columns:1fr 1fr;row-gap:2.5rem}
+  .steps::before{display:none}
+  .spec,.release{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .symptoms li{grid-template-columns:1fr;gap:.5rem}
+  .steps{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  .facts div,.facts div+div{padding:1.5rem 0;border-left:0}
+  .facts div+div{border-top:1px solid var(--line)}
+  .trace{padding-left:3rem}
+  .founder,.program{padding:1.7rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+
+/* ---------- Hero glow (brand diagonal, bottom-left to top-right) ---------- */
+:root{--glow:46,122,34; --glow-a:.12; --glow-b:.05}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--glow:159,232,141; --glow-a:.15; --glow-b:.06}}
+:root[data-theme="dark"]{--glow:159,232,141; --glow-a:.15; --glow-b:.06}
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-64px 0 0 0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(38rem 26rem at 74% 42%, rgba(var(--glow),var(--glow-a)), transparent 70%),
+    linear-gradient(45deg, transparent 35%, rgba(var(--glow),var(--glow-b)) 70%, transparent 100%);
+  -webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent);
+          mask-image:linear-gradient(to bottom,#000 55%,transparent);
+  transition:opacity .3s ease}
+@media (max-width:760px){.hero::before{background:radial-gradient(26rem 30rem at 60% 70%, rgba(var(--glow),var(--glow-a)), transparent 70%)}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="sinra home">
+      <svg viewBox="195 124 679 721" aria-hidden="true"><path fill="currentColor" d="M 195,845 C 355,675 521,512 689,350 614,433 535,514 461,599 c -40,45 -83,89 -124,133 25,29 69,22 101,38 117,35 253,-12 324,-112 52,-68 77,-158 61,-243 13,35 13,75 11,113 -11,129 -111,244 -237,273 -94,24 -198,-2 -272,-65 -26,9 -50,39 -74,58 -19,16 -37,36 -56,50 z M 276,687 C 200,598 183,463 238,359 292,248 415,178 538,186 c 63,3 125,27 175,66 -143,145 -290,287 -432,434 0,1 -3,5 -5,2 z M 677,322 C 740,253 805,186 873,124 811,193 745,259 677,322 Z"/></svg>
+      sinra
+    </a>
+    <ul>
+      <li><a href="#method">Method</a></li>
+      <li><a href="#regulated">Regulated teams</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#docs">Docs</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <a class="login" href="#login">Log in</a>
+    <a class="btn btn-brand" href="#trial">Start free trial</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Your startup is growing. <span>Your process isn't.</span></h1>
+      <p class="lead">sinra gives your team a ready-made way of working. Specs, development, tests and releases are connected from day one, without consultants or three months of setup.</p>
+      <div class="cta-row">
+        <a class="btn btn-brand" href="#trial">Start free trial</a>
+        <a class="btn btn-quiet" href="#call">Book 20 minutes with Thomas</a>
+      </div>
+      <div class="reassure"><span>14 days, no credit card</span><span>Hosted in France</span></div>
+    </div>
+
+    <div class="trace" aria-label="Example: one capability traced to its release">
+      <div class="trace-head"><strong>Patient data export</strong><span class="mono">traced end to end</span></div>
+      <div class="thread" aria-hidden="true"></div>
+
+      <div class="node">
+        <div class="kind"><span>Capability</span><span class="mono">CAP-12</span></div>
+        <div class="title">Patients can export their records as PDF</div>
+        <div class="chips"><span class="chip ok">spec validated</span><span class="chip">4 acceptance criteria</span></div>
+      </div>
+
+      <div class="node">
+        <div class="kind"><span>Issues</span><span class="mono">SIN-141 → 143</span></div>
+        <div class="title">3 issues, 2 merged</div>
+        <div class="bar"><i style="width:67%"></i></div>
+      </div>
+
+      <div class="node">
+        <div class="kind"><span>Cycle</span><span class="mono">C14 · Sep 8–19</span></div>
+        <div class="title">Team load at 83% of real capacity</div>
+        <div class="chips"><span class="chip warn">Léa over by 6h</span></div>
+      </div>
+
+      <div class="node pending">
+        <div class="kind"><span>Release</span><span class="mono">v2.4</span></div>
+        <div class="title">Ships Sep 23</div>
+        <div class="chips"><span class="chip ok">18 tests passed</span><span class="chip test">1 awaiting acceptance</span></div>
+      </div>
+
+      <div class="gate"><span>Go / no-go</span><span class="mono">1 check left</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section class="divider">
+  <div class="wrap split">
+    <div class="intro">
+      <h2>Does your team look like this?</h2>
+      <p>These aren't talent problems. They show up in every team that grew faster than its way of working.</p>
+    </div>
+    <div>
+      <ul class="symptoms">
+        <li><span class="pain">Deadlines slip every sprint, and nobody knows why.</span><span class="fix"><b>Cycles</b> are sized to each person's real availability, so overload shows before the cycle starts.</span></li>
+        <li><span class="pain">A feature is “done” but nobody tested it before production.</span><span class="fix"><b>Releases</b> can't close until every linked test is accepted or explicitly waived.</span></li>
+        <li><span class="pain">A week before release, nobody can say what's shipping.</span><span class="fix"><b>Every issue</b> is tied to a capability and a release, so the answer is one screen away.</span></li>
+      </ul>
+      <p class="verdict">It's a method problem. sinra ships the method.</p>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section id="method" class="divider">
+  <div class="wrap">
+    <div class="method-head">
+      <h2>Four concepts. Nothing to learn beforehand.</h2>
+      <p>No Scrum certification, no agile coach. Everyone knows where to go from their first login.</p>
+    </div>
+    <ol class="steps">
+      <li><div class="dot">1</div><div class="phase">Plan</div><h3>Capability</h3><p>What the product must do, written and validated before it's built.</p></li>
+      <li><div class="dot">2</div><div class="phase">Execute</div><h3>Issue</h3><p>The concrete work, always attached to its spec.</p></li>
+      <li><div class="dot">3</div><div class="phase">Execute</div><h3>Cycle</h3><p>A work period sized to the team you actually have.</p></li>
+      <li><div class="dot">4</div><div class="phase">Verify</div><h3>Release</h3><p>What reaches production, tested and accepted.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="divider">
+  <div class="wrap">
+
+    <article class="feature">
+      <div class="copy">
+        <span class="mono">Plan</span>
+        <h3>Every issue carries its spec</h3>
+        <p>The product owner writes acceptance criteria next to the work, not in a separate doc nobody opens. Developers see exactly what “done” means.</p>
+      </div>
+      <div class="surface">
+        <div class="spec">
+          <div>
+            <div class="meta mono">CAP-12 · validated by Léa, PO</div>
+            <h4>Patients can export their records as PDF</h4>
+            <ul class="criteria">
+              <li><span class="box on"></span>Export includes consultations from the last 24 months</li>
+              <li><span class="box on"></span>File is generated in under 5 seconds for 200 entries</li>
+              <li><span class="box on"></span>Download link expires after 15 minutes</li>
+              <li><span class="box"></span>Export is logged in the patient's access history</li>
+            </ul>
+          </div>
+          <div class="linked">
+            <div class="row"><span>SIN-141</span><span class="chip ok">merged</span></div>
+            <div class="row"><span>SIN-142</span><span class="chip ok">merged</span></div>
+            <div class="row"><span>SIN-143</span><span class="chip">in review</span></div>
+            <div class="row"><span>TEST-88</span><span class="chip test">pending</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div class="copy">
+        <span class="mono">Execute</span>
+        <h3>Overload shows before the cycle starts</h3>
+        <p>sinra counts holidays, part-time and meetings. You rebalance on Monday, not two days before the deadline.</p>
+      </div>
+      <div class="surface">
+        <div class="load" role="img" aria-label="Workload per person for cycle 14; Léa is 6 hours over capacity">
+          <div class="person"><span class="who"><span class="avatar">LM</span>Léa</span><div class="track"><div class="fill" style="width:80%"></div><div class="over" style="left:80%;width:12%"></div><div class="cap"></div></div><span class="pct mono hot">115%</span></div>
+          <div class="person"><span class="who"><span class="avatar">KB</span>Karim</span><div class="track"><div class="fill" style="width:74%"></div><div class="cap"></div></div><span class="pct mono">92%</span></div>
+          <div class="person"><span class="who"><span class="avatar">JD</span>Julie</span><div class="track"><div class="fill" style="width:60%"></div><div class="cap"></div></div><span class="pct mono">75%</span></div>
+          <div class="person"><span class="who"><span class="avatar">TR</span>Tom</span><div class="track"><div class="fill" style="width:40%"></div><div class="cap"></div></div><span class="pct mono">50%</span></div>
+        </div>
+        <div class="load-foot"><span>Cycle 14, Sep 8–19. Line = available hours.</span><span><b>Suggestion:</b> move SIN-143 from Léa to Tom</span></div>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div class="copy">
+        <span class="mono">Verify</span>
+        <h3>Nothing ships untested</h3>
+        <p>Tests belong to the release. Before deploying, you see what passed, what failed, and who still has to accept.</p>
+      </div>
+      <div class="surface">
+        <div class="release">
+          <ul class="tests">
+            <li><span class="state"></span><span>PDF export, 200 entries</span><span class="mono">passed</span></li>
+            <li><span class="state"></span><span>Expired link returns 410</span><span class="mono">passed</span></li>
+            <li><span class="state"></span><span>Export on Safari iOS 17</span><span class="mono">passed after fix</span></li>
+            <li><span class="state"></span><span>Access history entry</span><span class="mono">passed</span></li>
+            <li><span class="state p"></span><span>PO acceptance on staging</span><span class="mono">waiting</span></li>
+          </ul>
+          <div class="verdict-box">
+            <span class="mono">Release v2.4</span>
+            <div class="big">18<small> / 19 done</small></div>
+            <div class="nogo">Not ready: 1 acceptance left</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- REGULATED -->
+<section id="regulated" class="regulated divider">
+  <div class="wrap">
+    <div>
+      <h2>Building in health or finance?</h2>
+      <p style="margin-top:1.2rem">Auditors and certification bodies will ask you to prove what was specified, built, tested and accepted. sinra keeps that trail as a side effect of normal work, not as a spreadsheet you maintain by hand.</p>
+      <div class="links">
+        <a class="btn btn-quiet" href="#medtech">sinra for medtech</a>
+        <a class="btn btn-quiet" href="#fintech">sinra for fintech</a>
+      </div>
+    </div>
+    <div class="log">
+      <ol>
+        <li><time>2026-09-02 09:14</time><span class="ref">CAP-12</span><span>spec validated by Léa (PO)</span></li>
+        <li><time>2026-09-09 16:40</time><span class="ref">SIN-141</span><span>merged, linked to CAP-12</span></li>
+        <li><time>2026-09-15 11:02</time><span class="ref t">TEST-88</span><span>failed on Safari iOS 17</span></li>
+        <li><time>2026-09-16 10:27</time><span class="ref t">TEST-88</span><span>passed after fix SIN-144</span></li>
+        <li><time>2026-09-16 16:10</time><span class="ref">v2.4</span><span>acceptance requested from Léa (PO)</span></li>
+      </ol>
+      <p class="foot">Exportable history for every capability, in CSV or PDF.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOVEREIGNTY -->
+<section style="padding-top:0">
+  <div class="wrap facts">
+    <div><strong>Hosted in France</strong><p>Data stored with OVH, on servers in France. No transfer outside the EU.</p></div>
+    <div><strong>GDPR by design</strong><p>Your data belongs to you, processed under EU law. Full CSV export anytime.</p></div>
+    <div><strong>No US hyperscaler</strong><p>Designed, built and run in France.</p></div>
+  </div>
+</section>
+
+<!-- FOUNDER + PROGRAM -->
+<section class="divider">
+  <div class="wrap people">
+    <div class="founder">
+      <blockquote>“For 20 years I've watched teams lose the same fights: fuzzy specs, forgotten tests, releases nobody controlled. sinra is the structure I wish we'd had from the start.”</blockquote>
+      <div class="sig"><span class="avatar">T</span><div><strong>Thomas, founder</strong><a href="#linkedin">Tech lead for 20 years · LinkedIn</a></div></div>
+    </div>
+    <div class="program">
+      <h3>Join the first sinra teams</h3>
+      <p>A limited number of teams will shape the product with us.</p>
+      <ul>
+        <li>Onboarding with the founder</li>
+        <li>Early pricing, locked for life</li>
+        <li>Direct say on the roadmap</li>
+      </ul>
+      <a class="btn" href="#apply">Apply to the program</a>
+      <p class="seats">We reply within 48 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="divider">
+  <div class="wrap faq">
+    <h2>Questions teams ask first</h2>
+    <div>
+      <details><summary>My team doesn't know any agile method. Is that a problem?</summary><p>No, that's the expected case. You follow sinra's four concepts and the method follows.</p></details>
+      <details><summary>How long does it take to get started?</summary><p>A few minutes. Create an account and set up your first project, with nothing to install.</p></details>
+      <details><summary>Can we import our existing backlog?</summary><p>Yes, from CSV with automatic mapping for Jira, Asana, Azure DevOps and Linear, or directly from GitHub.</p></details>
+      <details><summary>Is the trial limited?</summary><p>14 days, every feature, no credit card.</p></details>
+      <details><summary>Is sinra suited to regulated companies?</summary><p>It keeps the trail between specs, development, tests and releases. See the medtech and fintech pages for details.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final divider">
+  <div class="wrap">
+    <h2>Give your team a method this sprint.</h2>
+    <div class="cta-row">
+      <a class="btn btn-brand" href="#trial">Start free trial</a>
+      <a class="btn btn-quiet" href="#call">Book 20 minutes with Thomas</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top">sinra</a>
+    <nav aria-label="Footer">
+      <div><a href="#pricing">Pricing</a><a href="#docs">Docs</a><a href="#blog">Blog</a></div>
+      <div><a href="#medtech">sinra for medtech</a><a href="#fintech">sinra for fintech</a></div>
+      <div><a href="#about">About</a><a href="#contact">Contact</a><a href="#brand">Brand book</a></div>
+      <div><a href="#privacy">Privacy</a><a href="#legal">Legal notices</a></div>
+    </nav>
+  </div>
+</footer>
+
+
+</body>
+</html>
