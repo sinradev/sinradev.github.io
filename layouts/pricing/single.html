@@ -46,8 +46,14 @@
           <div class="pricing-tiers flex gap-4 mb-6">
             {{ range .pricing_tiers }}
             <div class="pricing-frame flex-1 bg-base-200 rounded-xl p-4 text-center {{ if .recommended }}ring-2 ring-primary{{ end }}">
+              {{ if eq .plan_type "on_quote" }}
+              <div class="text-lg font-semibold text-primary">{{ .period }}</div>
+              {{ else }}
               <div class="text-sm text-base-content/70 mb-1">{{ .period }}</div>
-              {{ if eq .plan_type "coming_soon" }}
+              {{ end }}
+              {{ if eq .plan_type "on_quote" }}
+              {{/* period already shown above, no price block */}}
+              {{ else if eq .plan_type "coming_soon" }}
               <div class="text-lg font-semibold text-base-content/70">{{ i18n "pricing_contact_sales" }}</div>
               {{ else if and .has_black_friday $promoActive }}
               <div>
@@ -78,7 +84,9 @@
 
           {{/* CTA */}}
           {{ with .call_to_action }}
-          {{ if .link }}
+          {{ if .internal }}
+          <a href="{{ relLangURL .link }}" class="btn btn-primary w-full">{{ .text }}</a>
+          {{ else if .link }}
           <a href="{{ .link }}" class="btn btn-primary w-full" target="_blank" rel="noopener noreferrer">{{ .text }}</a>
           {{ else }}
           <button class="btn btn-disabled w-full" disabled>{{ .text }}</button>
@@ -87,6 +95,12 @@
         </div>
         {{ end }}
       </div>
+      {{ with (index hugo.Data $lang "home_partners") }}
+      <p class="text-center text-base-content/70 mt-10">
+        {{ .title }} : {{ .body }}
+        <a href="{{ relLangURL "contact/" }}" class="link link-primary">{{ .cta_text }}</a>
+      </p>
+      {{ end }}
     </div>
   </section>
 

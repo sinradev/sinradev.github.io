@@ -19,21 +19,21 @@
       promo_code: "BLACKFRIDAY2025"
       recommended: true
   features:
-    - text: Facturation à l'utilisateur (flexibilité d'équipe)
+    - text: Facturation à l'utilisateur, taille d'équipe flexible
       highlight: true
     - text: Projets et releases illimités
       highlight: true
-    - text: Éditeur rich text et spécifications
+    - text: Éditeur de texte enrichi pour les specs
       highlight: true
-    - text: Planification de capacité temps réel avancée
+    - text: Planification de la charge en temps réel
       highlight: true
     - text: Gestion QA intégrée
       highlight: true
-    - text: Modèles avancés et personnalisation
+    - text: Modèles et personnalisation avancés
       highlight: true
-    - text: Multi-vues intelligentes (Kanban, Liste, Release)
+    - text: Vues Kanban, Liste et Release
       highlight: true
-    - text: Gestion des releases et listes de vérification
+    - text: Gestion des releases avec checklists de mise en production
       highlight: true
     - text: Support email et chat prioritaire
       highlight: true
@@ -44,6 +44,30 @@
   call_to_action:
     link: https://app.sinra.dev/users/sign_up
     text: Démarrer l'essai gratuit
+
+- name: Équipes medtech, healthtech & fintech
+  color: "#2196F3"
+  description: "Sinra Pro accompagné pour les équipes en secteur réglementé"
+  pricing_tiers:
+    # TODO THOMAS: prix (sur devis ou tarif fixe).
+    - period: Sur devis
+      price: null
+      billing: null
+      plan_type: "on_quote"
+  features:
+    - text: Tout Sinra Pro
+      highlight: true
+    - text: Onboarding accompagné
+      highlight: true
+    - text: Aide à la mise en place de la traçabilité
+      highlight: true
+    - text: Échanges prioritaires avec le fondateur
+      highlight: true
+  # TODO THOMAS: valider ce contenu ; ne rien promettre que tu ne peux pas tenir seul (SSO, SLA...).
+  call_to_action:
+    link: contact/
+    text: Réserver 20 min
+    internal: true
 
 # Carte "Sinra Specif-AI" retirée (phase 1 du plan de refonte) : promesse "Coming Soon"
 # non tenable pour un produit sans client. Réactiver si Thomas valide la feature.
