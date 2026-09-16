@@ -1,8 +1,7 @@
 - question: "My team doesn't know any agile method, is that a problem?"
   answer: "No, that's actually the expected case. Sinra structures the work for you: you follow its concepts, the method follows."
 - question: "How long does it take to get started?"
-  # TODO THOMAS: give a realistic estimate.
-  answer: "TODO THOMAS: realistic estimate."
+  answer: "A few minutes. Create your account and set up your first project with no install and no complex configuration."
 - question: "Can we import our existing backlog?"
   answer: "Yes, from a CSV file or directly from GitHub. CSV export is available at any time."
 - question: "Where is our data hosted?"
