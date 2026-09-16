@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{ $lang := .Language.Lang }}
+{{ $m := index hugo.Data $lang "medtech" }}
+{{ with $m }}
+<div class="medtech-page">
+
+  {{/* Hero */}}
+  <section class="hero pt-40 pb-20 bg-base-100 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">{{ .hero.title }}</h1>
+      <p class="text-xl text-base-content/80 mb-8 max-w-3xl mx-auto">{{ .hero.subtitle }}</p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="{{ relLangURL "contact/" }}" class="btn btn-primary btn-lg">{{ .hero.cta_primary }}</a>
+        {{ partial "cta-signup.html" (dict "text" .hero.cta_secondary "class" "btn btn-outline btn-lg") }}
+      </div>
+    </div>
+  </section>
+
+  {{/* Problem */}}
+  <section class="problem py-20 bg-base-200">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .problem.title }}</h2>
+      <p class="text-lg text-base-content/80 leading-relaxed">{{ .problem.body }}</p>
+    </div>
+  </section>
+
+  {{/* Solution */}}
+  <section class="solution py-20 bg-base-100">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range .solution.blocks }}
+        <div class="bg-base-200 rounded-xl p-6">
+          <h3 class="text-xl font-bold mb-3">{{ .title }}</h3>
+          <p class="text-base-content/70 leading-relaxed">{{ .body }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{/* V-Model + Agile */}}
+  <section class="vmodel py-20 bg-base-200">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .vmodel.title }}</h2>
+      <p class="text-lg text-base-content/80 leading-relaxed">{{ .vmodel.body }}</p>
+    </div>
+  </section>
+
+  {{/* Data / hosting */}}
+  <section class="data-section py-20 bg-base-100">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .data_section.title }}</h2>
+      <p class="text-lg text-base-content/80 leading-relaxed">{{ .data_section.body }}</p>
+    </div>
+  </section>
+
+  {{/* Mandatory compliance mention */}}
+  <section class="mandatory-mention py-10 bg-base-200">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <p class="text-sm text-base-content/70 text-center leading-relaxed">{{ .mandatory_mention }}</p>
+    </div>
+  </section>
+
+  {{/* Final CTA */}}
+  <section class="py-16 bg-base-300 text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-8">{{ .final_cta.title }}</h2>
+      <a href="{{ relLangURL "contact/" }}" class="btn btn-primary btn-lg">{{ .final_cta.button }}</a>
+    </div>
+  </section>
+
+</div>
+{{ end }}
+{{ end }}

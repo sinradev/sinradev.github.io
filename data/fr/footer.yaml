@@ -5,6 +5,9 @@
   - name: Tarifs
     link: pricing/
     target: _top
+  - name: Sinra pour les medtech
+    link: medtech/
+    target: _top
   - name: Politique de confidentialité
     link: politique-de-confidentialite/
     target: _top

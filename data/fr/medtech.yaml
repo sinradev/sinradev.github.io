@@ -1,0 +1,36 @@
+hero:
+  title: "Structurez votre développement logiciel avant votre premier audit."
+  subtitle: "Pour les startups medtech et healthtech, Sinra relie exigences, développement, tests et validations de release dans un seul outil. Votre traçabilité se construit pendant que vous développez, pas la veille de l'audit."
+  cta_primary: "Réserver 20 min avec le fondateur"
+  cta_secondary: "Essayer gratuitement"
+
+problem:
+  title: "Jira pour les devs, Excel pour la traçabilité, Word pour les validations"
+  body: "Dans la santé, un logiciel ne suffit pas : il faut pouvoir démontrer comment il a été spécifié, développé, vérifié et validé. La plupart des jeunes équipes reconstituent ces preuves à la main, avec des tableurs qui ne sont jamais à jour."
+
+solution:
+  blocks:
+    - title: "Des exigences reliées au code et aux tests."
+      # TODO: vérifier l'existence d'une vue ou d'un export de traçabilité ; sinon ne pas promettre de "matrice".
+      body: "Chaque spécification est liée aux issues qui l'implémentent et aux tests qui la vérifient."
+    - title: "Des validations formelles et historisées."
+      body: "Revues de phase avec critères d'évaluation, verdict go / no-go / conditionnel et historique de chaque décision."
+    - title: "Des incidents documentés."
+      body: "Postmortems structurés : chronologie, facteurs systémiques, actions correctives, temps de résolution."
+    - title: "Un vocabulaire maîtrisé."
+      body: "Glossaire métier partagé et réutilisé dans les spécifications, pour éviter les ambiguïtés."
+
+vmodel:
+  title: "La rigueur du cycle en V, le rythme de l'agile"
+  body: "Les specs suivent leur propre flux de rédaction et de validation, pendant que les développeurs avancent en cycles courts. Les tests et les revues de phase garantissent que rien ne part en production sans avoir été vérifié."
+
+data_section:
+  title: "Hébergement en France, RGPD, données chiffrées"
+  body: "Sinra est conçu pour vos données de développement, pas pour des données patients. Comme dans vos environnements de test, utilisez des données fictives ou anonymisées dans vos issues et pièces jointes."
+  # TODO THOMAS: aligner avec les CGU et le DPA une fois rédigés.
+
+mandatory_mention: "Sinra est un outil d'organisation du développement. Il ne constitue pas une certification et ne garantit pas à lui seul la conformité à une norme (par exemple IEC 62304 ou ISO 13485). Il vous aide à structurer et à retrouver la documentation attendue par vos démarches qualité."
+
+final_cta:
+  title: "Parlons de votre démarche qualité."
+  button: "Réserver 20 min"
