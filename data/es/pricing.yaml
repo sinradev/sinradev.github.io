@@ -62,7 +62,6 @@
       highlight: true
     - text: Intercambios prioritarios con el fundador
       highlight: true
-  # TODO THOMAS: validar este contenido; no prometer lo que no puedas cumplir solo (SSO, SLA...).
   call_to_action:
     link: contact/
     text: Reservar 20 min
