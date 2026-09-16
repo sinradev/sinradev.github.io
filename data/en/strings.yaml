@@ -169,13 +169,6 @@ tools_replaced:
   cta_label: "Try Sinra for free"
 why_sinra_title: Why Teams Choose Sinra
 why_sinra_description: Modern teams need balance between structured planning and execution flexibility. Sinra unites these two worlds in a single platform.
-why_sinra_stats:
-  - stat: "4"
-    label: "tools on average can be replaced with Sinra"
-  - stat: "40%"
-    label: "of time saved on team coordination"
-  - stat: "100%"
-    label: "visibility on release status and capacity"
 why_sinra_benefits:
   - title: "Complete, Centralized Visibility"
     description: "Specs, development, testing, and releases converge in a single source of truth. Eliminates information fragmentation."
@@ -254,6 +247,3 @@ filters_spotlight:
   points:
     - "<strong>40+ filterable attributes</strong> - status, assignee, labels, platform, time spent, complexity, and more"
     - "<strong>AND/OR rule groups</strong> - nest conditions for precise results"
-    - "<strong>8 operators</strong> - equals, contains, greater than, is empty, and more"
-    - "<strong>Session-persisted</strong> - your filters survive page refreshes"
-    - "<strong>SQL injection safe</strong> - whitelist-validated attribute and operator names"

@@ -6,7 +6,7 @@
   body: Realice seguimiento del progreso por % de fecha, finalización de status, tiempo invertido vs. estimado, y carga de trabajo del equipo por Issues, Cycles, Releases y Capabilities. Visibilidad real.
   image: /assets/images/progress-tracking.png
   alt: Seguimiento de progreso multinivel
-- title: Comentarios Polimórficos y Colaboración en Tiempo Real
+- title: Comentarios y Colaboración en Tiempo Real
   body: Discuta y sincronice directamente en issues y capabilities. Hilos de comentarios con @menciones, notificaciones instantáneas y formato enriquecido mantienen a los equipos alineados sin reuniones de status interminables. Todo el contexto vive en un solo lugar.
   image: /assets/images/collaboration-sync.png
 - title: Planificación de Despliegue Dirigida por Releases
@@ -17,8 +17,8 @@
   body: Gestione múltiples aplicaciones y plataformas en un solo lugar. Los equipos de front-end y back-end trabajan juntos sin problemas mientras usted ve la carga de trabajo en tiempo real en todos los equipos. No más silos entre departamentos. Inteligencia de capacidad completa en todo su stack tecnológico.
   image: /assets/images/multi-app-workload.png
   alt: Gestión de carga de trabajo multi-aplicación y entre equipos
-- title: <strong>Flujos de Trabajo Completamente Personalizables</strong> - Su Proceso, No el Nuestro
-  body: Construya flujos de trabajo que coincidan con su proceso exacto sin tocar código. Status personalizados, puertas de aprobación, acceso basado en roles y reglas de validación automatizadas. Ya sea que siga V-Model, Agile o un enfoque híbrido, Sinra se adapta a usted, no al revés. ¿Requisitos de cumplimiento? Pistas de auditoría integradas y aplicación de flujos de trabajo.
+- title: <strong>Flujos de Trabajo Completamente Personalizables</strong>
+  body: Construya flujos de trabajo que coincidan con su proceso exacto sin tocar código. Status personalizados, puertas de aprobación, acceso basado en roles y reglas de validación automatizadas. ¿Requisitos de cumplimiento? Pistas de auditoría integradas y aplicación de flujos de trabajo.
   image: /assets/images/custom-workflows.png
   alt: Flujos de trabajo personalizables y aplicación de cumplimiento
 - title: Traspaso Inteligente de Issues

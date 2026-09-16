@@ -164,13 +164,6 @@ tools_replaced:
   cta_label: "Probar Sinra gratis"
 why_sinra_title: Por Qué los Equipos Eligen Sinra
 why_sinra_description: Los equipos modernos necesitan equilibrio entre planificación estructurada y flexibilidad de ejecución. Sinra une estos dos mundos en una sola plataforma.
-why_sinra_stats:
-  - stat: "4"
-    label: "herramientas en promedio pueden ser reemplazadas con Sinra"
-  - stat: "40%"
-    label: "de tiempo ahorrado en coordinación de equipo"
-  - stat: "100%"
-    label: "visibilidad del status de release y capacidad"
 why_sinra_benefits:
   - title: "Visibilidad Completa y Centralizada"
     description: "Specs, desarrollo, pruebas y releases convergen en una única fuente de verdad. Elimina la fragmentación de información."
@@ -249,6 +242,3 @@ filters_spotlight:
   points:
     - "<strong>40+ atributos filtrables</strong> - estado, asignado, labels, plataforma, tiempo invertido, complejidad, y más"
     - "<strong>Grupos de reglas AND/OR</strong> - anidados para resultados precisos"
-    - "<strong>8 operadores</strong> - igual, contiene, mayor que, está vacío, y más"
-    - "<strong>Persistencia de sesión</strong> - sus filtros sobreviven a las recargas de página"
-    - "<strong>Protección SQL injection</strong> - atributos y operadores validados por lista blanca"

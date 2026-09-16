@@ -9,15 +9,7 @@
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">{{ $strings.why_sinra_title }}</h2>
     <p class="text-lg text-base-content/80 text-center mb-12 max-w-3xl mx-auto">{{ $strings.why_sinra_description }}</p>
 
-    {{/* Stats */}}
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-      {{ range $strings.why_sinra_stats }}
-      <div class="stat-card text-center bg-base-100 rounded-xl p-6 shadow">
-        <div class="stat-number text-4xl font-bold text-primary mb-2" data-target="{{ .stat }}">{{ .stat }}</div>
-        <div class="stat-label text-base-content/70">{{ .label }}</div>
-      </div>
-      {{ end }}
-    </div>
+    {{/* Stats section removed: unsourced numbers ("4 tools", "40%", "100%"), see PLAN-refonte-site-sinra.md phase 1 */}}
 
     {{/* Benefits */}}
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
