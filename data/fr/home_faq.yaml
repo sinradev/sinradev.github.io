@@ -3,7 +3,7 @@
 - question: "Combien de temps faut-il pour démarrer ?"
   answer: "Quelques minutes. Créez votre compte et configurez votre premier projet sans installation ni configuration complexe."
 - question: "Peut-on importer notre backlog existant ?"
-  answer: "Oui, depuis un fichier CSV ou directement depuis GitHub. L'export CSV est disponible à tout moment."
+  answer: "Oui, depuis un fichier CSV (mapping automatique pour Jira, Asana, Azure DevOps et Linear) ou directement depuis GitHub. L'export CSV est disponible à tout moment."
 - question: "Où sont hébergées nos données ?"
   answer: "En France, sur des serveurs européens, dans le respect du RGPD."
 - question: "L'essai gratuit est-il limité ?"
