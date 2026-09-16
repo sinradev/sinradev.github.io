@@ -129,7 +129,7 @@
       <p class="text-base-content/70 mb-8">{{ i18n "pricing_ready_desc" }}</p>
       <div class="flex justify-center gap-4">
         {{ partial "cta-signup.html" (dict "text" (i18n "pricing_start_trial")) }}
-        <a href="/{{ .Language.Lang }}/contact/" class="btn btn-default btn-outline btn-lg">
+        <a href="{{ relLangURL "contact/" }}" class="btn btn-default btn-outline btn-lg">
           {{ i18n "pricing_contact_sales" }}
         </a>
       </div>

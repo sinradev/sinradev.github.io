@@ -32,4 +32,4 @@ Inicia una importación desde **Connect GitHub** en la sección Issues.
 
 ## Diferencia con la integración VCS
 
-Esta importación es una transferencia puntual de issues existentes. Es distinta de la [integración VCS](/es/docs/features/vcs-integration/), que sincroniza continuamente el estado de desarrollo a partir de eventos git (PR abierta, fusionada, etc.) una vez que las issues ya existen en Sinra.
+Esta importación es una transferencia puntual de issues existentes. Es distinta de la [integración VCS](/docs/features/vcs-integration/), que sincroniza continuamente el estado de desarrollo a partir de eventos git (PR abierta, fusionada, etc.) una vez que las issues ya existen en Sinra.
