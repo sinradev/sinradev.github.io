@@ -1,21 +1,18 @@
-{{ $lang := .Language.Lang }}
-{{ $m := index hugo.Data $lang "home_method" }}
-{{ with $m }}
-<section class="method py-20 bg-base-100">
+<section id="method" class="py-20 border-t border-line">
   <div class="container mx-auto px-6 max-w-6xl">
-    <div class="text-center mb-16 max-w-3xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .title }}</h2>
-      <p class="text-lg text-base-content/80 leading-relaxed">{{ .intro }}</p>
+    <div class="flex flex-wrap justify-between items-end gap-12">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight max-w-[16ch]">{{ i18n "home_method_title" }}</h2>
+      <p class="max-w-[42ch] text-base-content/80">{{ i18n "home_method_intro" }}</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {{ range .steps }}
-      <div class="method-step bg-base-200 rounded-xl p-6 text-center">
-        <div class="text-3xl font-bold text-primary mb-3">{{ .number }}</div>
-        <h3 class="text-lg font-bold mb-2">{{ .title }}</h3>
-        <p class="text-base-content/70 text-sm leading-relaxed">{{ .description }}</p>
-      </div>
+    <ol class="steps grid sm:grid-cols-2 lg:grid-cols-4 mt-14 gap-y-10 list-none p-0">
+      {{ range $i := (seq 4) }}
+      <li class="relative pr-6">
+        <div class="dot">{{ $i }}</div>
+        <div class="mt-6 text-faint">{{ i18n (printf "home_method_step%d_phase" $i) }}</div>
+        <h3 class="mt-1 text-2xl font-bold">{{ i18n (printf "home_method_step%d_title" $i) }}</h3>
+        <p class="mt-2 text-base-content/80">{{ i18n (printf "home_method_step%d_text" $i) }}</p>
+      </li>
       {{ end }}
-    </div>
+    </ol>
   </div>
 </section>
-{{ end }}

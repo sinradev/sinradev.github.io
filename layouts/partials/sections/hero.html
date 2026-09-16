@@ -1,28 +1,21 @@
-{{ $lang := .Language.Lang }}
-{{ $strings := index hugo.Data $lang "strings" }}
 <section class="hero pt-40 pb-20">
-  <div class="container mx-auto px-6 max-w-6xl">
-    <div class="text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">{{ $strings.hero.title | safeHTML }}</h1>
-      <p class="text-xl text-base-content/80 mb-8 max-w-3xl mx-auto">{{ $strings.hero.body | safeHTML }}</p>
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-        {{ partial "cta-signup.html" (dict "text" $strings.hero.button) }}
-        {{ with $strings.hero.secondary_button }}
-        <a href="{{ relLangURL "contact/" }}" class="btn btn-outline btn-lg">{{ . }}</a>
-        {{ end }}
+  <div class="container mx-auto px-6 max-w-6xl grid lg:grid-cols-[1.15fr_.85fr] gap-14 items-center">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold leading-[0.96] tracking-tight">
+        {{ i18n "home_hero_title_line1" }}
+        <span class="block text-faint">{{ i18n "home_hero_title_line2" }}</span>
+      </h1>
+      <p class="text-xl text-base-content/80 mt-6 max-w-[44ch]">{{ i18n "home_hero_lead" }}</p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        {{ partial "cta-signup.html" (dict "text" (i18n "try_sinra")) }}
+        {{/* TODO THOMAS: lien de prise de rendez-vous (Cal.com / Calendly) */}}
+        <a href="#call" class="btn btn-outline btn-lg">{{ i18n "home_hero_cta_secondary" }}</a>
       </div>
-      {{ with $strings.hero.mention }}
-      <p class="text-sm text-base-content/60 mt-4">{{ . }}</p>
-      {{ end }}
-      <div class="mt-12">
-        <picture class="z-10 relative">
-          <source
-            srcset="/assets/images/screenshots/02-cycle-current-768.webp 768w, /assets/images/screenshots/02-cycle-current.webp 1440w"
-            sizes="(max-width: 768px) 100vw, 1440px"
-            type="image/webp" />
-          <img src="/assets/images/screenshots/02-cycle-current.png" alt="{{ $strings.hero.alt_image }}" class="rounded-xl shadow-2xl mx-auto" width="1440" height="900" fetchpriority="high" loading="eager" />
-        </picture>
+      <div class="flex flex-wrap gap-5 mt-4 text-sm text-faint">
+        <span>{{ i18n "home_hero_reassure_trial" }}</span>
+        <span>{{ i18n "home_hero_reassure_hosting" }}</span>
       </div>
     </div>
+    {{ partial "demo/trace.html" . }}
   </div>
 </section>

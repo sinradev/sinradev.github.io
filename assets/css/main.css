@@ -153,6 +153,19 @@
   --font-sans: 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
   --font-display: 'Nunito', ui-rounded, sans-serif;
+
+  /* Extra tokens from the sinra-dark/sinra-light theme blocks below,
+     registered here so Tailwind emits utilities (text-faint, border-line…).
+     Actual per-theme values come from the @plugin "daisyui/theme" base-layer
+     rules, which win the cascade over this theme-layer fallback. */
+  --color-line: #343B49;
+  --color-faint: #7F8FA0;
+  --color-muted: #B2CCD6;
+  --color-coral: #FF7D5C;
+  --color-coral-soft: rgba(255, 125, 92, .14);
+  --color-lilac: #C792E9;
+  --color-lilac-soft: rgba(199, 146, 233, .14);
+  --color-brand-text: #9FE88D;
 }
 
 /* Blog prose overrides */
@@ -851,5 +864,55 @@ main > *:first-child:not(.hero) {
 
   @media (prefers-reduced-motion: reduce) {
     .thread::after { animation: none; }
+  }
+
+  /* symptoms list */
+  .symptoms .fix b {
+    color: var(--color-brand-text);
+    font-weight: 800;
+  }
+
+  /* method steps connector */
+  .steps {
+    position: relative;
+  }
+  .steps::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary) 0 25%, var(--color-line) 25% 100%);
+  }
+  .steps .dot {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--color-base-100);
+    border: 2px solid var(--color-line);
+    color: var(--color-base-content);
+    font-weight: 900;
+    position: relative;
+  }
+  .steps li:first-child .dot {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-primary-content);
+  }
+  @media (max-width: 960px) {
+    .steps::before { display: none; }
+  }
+
+  /* founder + program */
+  .program {
+    background: var(--color-primary);
+    color: var(--color-primary-content);
+  }
+  .program .btn {
+    background: var(--color-primary-content);
+    color: var(--color-base-100);
   }
 }

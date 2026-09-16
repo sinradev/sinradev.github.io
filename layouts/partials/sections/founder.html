@@ -1,20 +1,31 @@
-{{ $lang := .Language.Lang }}
-{{ $f := index hugo.Data $lang "home_founder" }}
-{{ with $f }}
-<section class="founder py-20 bg-base-100">
-  <div class="container mx-auto px-6 max-w-3xl text-center">
-    {{ $founder := . }}
-    {{ with .photo }}
-    <picture>
-      <source srcset="{{ . | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
-      <img src="{{ . }}" alt="{{ $founder.photo_alt }}" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover" loading="lazy" width="96" height="96" />
-    </picture>
-    {{ end }}
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .title }}</h2>
-    <p class="text-lg text-base-content/80 leading-relaxed">{{ .body }}</p>
-    {{ with .linkedin_url }}
-    <a href="{{ . }}" class="btn btn-outline btn-sm mt-6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    {{ end }}
+<section class="py-20 border-t border-line">
+  <div class="container mx-auto px-6 max-w-6xl grid lg:grid-cols-[7fr_5fr] gap-6">
+
+    <div class="founder p-10 rounded-3xl border border-line">
+      <blockquote class="text-2xl md:text-3xl font-bold leading-snug">{{ i18n "home_founder_quote" }}</blockquote>
+      <div class="flex items-center gap-4 mt-8">
+        <picture>
+          <source srcset="/assets/images/founder-thomas.webp" type="image/webp" />
+          <img src="/assets/images/founder-thomas.jpg" alt="{{ i18n "home_founder_name" }}" class="w-12 h-12 rounded-full object-cover" loading="lazy" width="48" height="48" />
+        </picture>
+        <div>
+          <strong class="block">{{ i18n "home_founder_name" }}</strong>
+          <span class="text-sm text-faint">{{ i18n "home_founder_role" }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="program p-10 rounded-3xl">
+      <h3 class="text-2xl md:text-3xl font-bold">{{ i18n "home_program_title" }}</h3>
+      <p class="mt-3">{{ i18n "home_program_text" }}</p>
+      <ul class="mt-5 mb-7 space-y-2 font-bold list-disc pl-5">
+        <li>{{ i18n "home_program_item1" }}</li>
+        <li>{{ i18n "home_program_item2" }}</li>
+        <li>{{ i18n "home_program_item3" }}</li>
+      </ul>
+      <a href="{{ relLangURL "contact/" }}" class="btn">{{ i18n "home_program_cta" }}</a>
+      <p class="mt-3 text-sm opacity-75">{{ i18n "home_program_seats" }}</p>
+    </div>
+
   </div>
 </section>
-{{ end }}

@@ -1,15 +1,13 @@
-{{ $lang := .Language.Lang }}
-{{ $v := index hugo.Data $lang "home_verticals" }}
-{{ with $v }}
-<section class="verticals py-20 bg-base-200">
-  <div class="container mx-auto px-6 max-w-3xl text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ .title }}</h2>
-    <p class="text-lg text-base-content/80 leading-relaxed mb-8">{{ .body }}</p>
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      {{ range .links }}
-      <a href="{{ relLangURL .slug }}" class="btn btn-outline">{{ .text }} →</a>
-      {{ end }}
+<section id="regulated" class="py-20 border-t border-line">
+  <div class="container mx-auto px-6 max-w-6xl grid lg:grid-cols-[5fr_7fr] gap-14 items-center">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight max-w-[16ch]">{{ i18n "home_regulated_title" }}</h2>
+      <p class="mt-5 text-base-content/80">{{ i18n "home_regulated_text" }}</p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a href="{{ relLangURL "medtech/" }}" class="btn btn-outline">{{ i18n "home_regulated_link_medtech" }}</a>
+        <a href="{{ relLangURL "fintech/" }}" class="btn btn-outline">{{ i18n "home_regulated_link_fintech" }}</a>
+      </div>
     </div>
+    {{ partial "demo/audit-log.html" . }}
   </div>
 </section>
-{{ end }}

@@ -1,22 +1,32 @@
-{{ $lang := .Language.Lang }}
-{{ $benefits := index hugo.Data $lang "home_benefits" }}
-{{ if $benefits }}
-<section class="benefits py-20 bg-base-200">
-  <div class="container mx-auto px-6 max-w-6xl space-y-20">
-    {{ range $i, $b := $benefits }}
-    <div class="flex flex-col {{ if eq (mod $i 2) 1 }}md:flex-row-reverse{{ else }}md:flex-row{{ end }} items-center gap-12">
-      <div class="text md:w-1/2">
-        <h3 class="text-2xl md:text-3xl font-bold mb-4">{{ $b.title }}</h3>
-        <p class="text-base-content/80 leading-relaxed">{{ $b.body }}</p>
+<section class="border-t border-line">
+  <div class="container mx-auto px-6 max-w-6xl">
+
+    <article class="feature-row grid lg:grid-cols-[4fr_8fr] gap-14 items-start py-16 border-t-0">
+      <div class="lg:sticky lg:top-24">
+        <span class="mono block text-brand-text mb-3">{{ i18n "home_feature_spec_label" }}</span>
+        <h3 class="text-2xl font-bold">{{ i18n "home_feature_spec_title" }}</h3>
+        <p class="mt-4 text-base-content/80">{{ i18n "home_feature_spec_text" }}</p>
       </div>
-      <div class="image md:w-1/2">
-        <picture>
-          <source srcset="{{ $b.image | replaceRE `\.(png|jpg)$` `.webp` }}" type="image/webp" />
-          <img src="{{ $b.image }}" alt="{{ $b.alt }}" class="rounded-xl shadow-xl w-full" loading="lazy" width="{{ $b.width }}" height="{{ $b.height }}" />
-        </picture>
+      {{ partial "demo/spec.html" . }}
+    </article>
+
+    <article class="feature-row grid lg:grid-cols-[4fr_8fr] gap-14 items-start py-16 border-t border-line">
+      <div class="lg:sticky lg:top-24">
+        <span class="mono block text-brand-text mb-3">{{ i18n "home_feature_workload_label" }}</span>
+        <h3 class="text-2xl font-bold">{{ i18n "home_feature_workload_title" }}</h3>
+        <p class="mt-4 text-base-content/80">{{ i18n "home_feature_workload_text" }}</p>
       </div>
-    </div>
-    {{ end }}
+      {{ partial "demo/workload.html" . }}
+    </article>
+
+    <article class="feature-row grid lg:grid-cols-[4fr_8fr] gap-14 items-start py-16 border-t border-line">
+      <div class="lg:sticky lg:top-24">
+        <span class="mono block text-brand-text mb-3">{{ i18n "home_feature_release_label" }}</span>
+        <h3 class="text-2xl font-bold">{{ i18n "home_feature_release_title" }}</h3>
+        <p class="mt-4 text-base-content/80">{{ i18n "home_feature_release_text" }}</p>
+      </div>
+      {{ partial "demo/release.html" . }}
+    </article>
+
   </div>
 </section>
-{{ end }}
