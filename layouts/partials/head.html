@@ -70,6 +70,17 @@
   "applicationCategory" site.Params.jsonld.applicationCategory
   "url"                 site.BaseURL
 }}
+{{ if .IsHome }}
+  {{ $plans := index hugo.Data .Language.Lang "pricing" }}
+  {{ with $plans }}
+    {{ $pro := index . 0 }}
+    {{ range $pro.pricing_tiers }}
+      {{ if eq .plan_type "monthly" }}
+        {{ $ld = merge $ld (dict "offers" (dict "@type" "Offer" "price" .price "priceCurrency" "EUR" "url" (absURL (relLangURL "pricing/")))) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{- $ld | jsonify | printf "<script type=\"application/ld+json\">%s</script>" | safeHTML -}}
 
 {{/* JSON-LD Organization */}}
