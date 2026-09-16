@@ -75,24 +75,6 @@ const initParallax = () => {
   window.addEventListener('scroll', throttle(handleParallax, 16));
 };
 
-// Header scroll effect (toggles .scrolled -> header.navbar.scrolled in CSS)
-const initHeaderEffects = () => {
-  const header = document.querySelector('header');
-  if (!header) return;
-
-  const handleScroll = () => {
-    if (window.pageYOffset > 0) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  };
-
-  header.classList.remove('scrolled');
-  window.addEventListener('scroll', throttle(handleScroll, 16));
-  handleScroll();
-};
-
 // Navigation: DaisyUI dropdown close, active-link highlighting, smooth anchor scroll
 const initNavigation = () => {
   // Close DaisyUI dropdown when a navigation item is clicked
@@ -148,7 +130,6 @@ const decodeEmails = () => {
 // Initialize all effects when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   initParallax();
-  initHeaderEffects();
   initNavigation();
   animateStats();
   decodeEmails();

@@ -1,23 +1,27 @@
 {{ $footerData := index hugo.Data .Language.Lang "footer" }}
-<footer class="bg-base-200 text-base-content border-neutral py-16">
-  {{ if $footerData }}
-  <div class="container mx-auto px-6 max-w-6xl">
-    <div class="grid grid-cols-3 gap-10 mb-10 justify-items-center">
+<footer class="border-t border-line py-12">
+  <div class="container mx-auto px-6 max-w-6xl flex flex-wrap justify-between gap-8">
+    <a href="{{ relLangURL "/" }}" class="flex items-center gap-2 text-xl font-display font-black tracking-tight">
+      <img src="/assets/images/sinra-logo.svg" alt="" width="24" height="24" />
+      sinra
+    </a>
+    {{ if $footerData }}
+    <nav aria-label="Footer" class="flex flex-wrap gap-12">
       {{ range $footerData }}
-      <nav class="flex flex-col gap-2 items-center">
+      <div class="flex flex-col gap-2">
         {{ range .links }}
         <a href="{{ if (hasPrefix .link "http") }}{{ .link }}{{ else }}{{ relLangURL .link }}{{ end }}"
            {{ if eq .target "_blank" }}target="_blank" rel="noopener noreferrer"{{ end }}
-           class="link link-hover">
+           class="text-faint hover:text-base-content no-underline text-sm">
           {{ .name }}
         </a>
         {{ end }}
-      </nav>
+      </div>
       {{ end }}
-    </div>
+    </nav>
+    {{ end }}
   </div>
-  {{ end }}
-  <div class="text-center text-base-content/70 text-sm border-neutral pt-6">
-    <p>&copy; {{ now.Year }} Sinra</p>
+  <div class="container mx-auto px-6 max-w-6xl text-faint text-sm mt-10">
+    <p>&copy; {{ now.Year }} sinra</p>
   </div>
 </footer>

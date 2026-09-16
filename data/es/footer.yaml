@@ -1,18 +1,19 @@
 - links:
-  - name: Blog
-    link: blog/
-    target: _top
   - name: Precios
     link: pricing/
     target: _top
+  - name: Documentación
+    link: docs/
+    target: _top
+  - name: Blog
+    link: blog/
+    target: _top
+- links:
   - name: Sinra para medtech
     link: medtech/
     target: _top
   - name: Sinra para fintech
     link: fintech/
-    target: _top
-  - name: Politica de privacidad
-    link: politica-de-privacidad/
     target: _top
 - links:
   - name: Acerca de
@@ -21,12 +22,13 @@
   - name: Contacto
     link: contact/
     target: _top
+  - name: Brand Book
+    link: brand-book/
+    target: _top
+- links:
+  - name: Politica de privacidad
+    link: politica-de-privacidad/
+    target: _top
   - name: Aviso legal
     link: aviso-legal/
     target: _top
-- links:
-  - name: Iniciar sesión
-    link: https://app.sinra.dev/users/sign_in
-    target: _blank
-  - name: Registrarse
-    link: https://app.sinra.dev/users/sign_up
