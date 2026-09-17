@@ -29,6 +29,12 @@
   - name: Politique de confidentialité
     link: politique-de-confidentialite/
     target: _top
+  - name: Conditions générales d'utilisation
+    link: conditions-generales-utilisation/
+    target: _top
+  - name: Accord de traitement des données
+    link: accord-traitement-donnees/
+    target: _top
   - name: Mentions legales
     link: mentions-legales/
     target: _top

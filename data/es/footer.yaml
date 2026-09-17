@@ -29,6 +29,12 @@
   - name: Politica de privacidad
     link: politica-de-privacidad/
     target: _top
+  - name: Términos de Servicio
+    link: terminos-de-servicio/
+    target: _top
+  - name: Acuerdo de Tratamiento de Datos
+    link: acuerdo-tratamiento-datos/
+    target: _top
   - name: Aviso legal
     link: aviso-legal/
     target: _top

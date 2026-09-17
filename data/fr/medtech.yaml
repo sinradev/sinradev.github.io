@@ -26,7 +26,7 @@ vmodel:
 data_section:
   title: "Hébergement en France, RGPD, données chiffrées"
   body: "Sinra est conçu pour vos données de développement, pas pour des données patients. Comme dans vos environnements de test, utilisez des données fictives ou anonymisées dans vos issues et pièces jointes."
-  # TODO THOMAS: aligner avec les CGU et le DPA une fois rédigés.
+  # Aligné avec /fr/terms/ et /fr/dpa/ (rédigés ; relecture juridique à faire avant publication).
 
 mandatory_mention: "Sinra est un outil d'organisation du développement. Il ne constitue pas une certification et ne garantit pas à lui seul la conformité à une norme (par exemple IEC 62304 ou ISO 13485). Il vous aide à structurer et à retrouver la documentation attendue par vos démarches qualité."
 

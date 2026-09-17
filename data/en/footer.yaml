@@ -29,6 +29,12 @@
   - name: Privacy Policy
     link: privacy/
     target: _top
+  - name: Terms of Service
+    link: terms/
+    target: _top
+  - name: Data Processing Agreement
+    link: dpa/
+    target: _top
   - name: Legal Notices
     link: legal/
     target: _top

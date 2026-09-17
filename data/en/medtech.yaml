@@ -26,7 +26,7 @@ vmodel:
 data_section:
   title: "Hosted in France, GDPR, encrypted data"
   body: "Sinra is built for your development data, not patient data. As in your test environments, use fictional or anonymized data in your issues and attachments."
-  # TODO THOMAS: align with the terms of service and DPA once drafted.
+  # Aligned with /terms/ and /dpa/ (drafted; pending legal review before publishing).
 
 mandatory_mention: "Sinra is a development organization tool. It is not a certification and does not by itself guarantee compliance with a standard (for example IEC 62304 or ISO 13485). It helps you structure and retrieve the documentation your quality process expects."
 

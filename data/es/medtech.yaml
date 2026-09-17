@@ -26,7 +26,7 @@ vmodel:
 data_section:
   title: "Alojamiento en Francia, RGPD, datos cifrados"
   body: "Sinra está diseñado para tus datos de desarrollo, no para datos de pacientes. Como en tus entornos de test, usa datos ficticios o anonimizados en tus issues y archivos adjuntos."
-  # TODO THOMAS: alinear con los términos de servicio y el DPA una vez redactados.
+  # Alineado con /es/terms/ y /es/dpa/ (redactados; falta revisión legal antes de publicar).
 
 mandatory_mention: "Sinra es una herramienta de organización del desarrollo. No constituye una certificación ni garantiza por sí sola el cumplimiento de una norma (por ejemplo IEC 62304 o ISO 13485). Te ayuda a estructurar y a recuperar la documentación que exige tu proceso de calidad."
 
