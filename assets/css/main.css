@@ -705,18 +705,6 @@
     color: var(--color-base-content);
     font-weight: 700;
   }
-  .avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: .75rem;
-    line-height: 1;
-    font-weight: 900;
-    background: var(--color-base-300);
-    color: var(--color-muted);
-  }
   .track {
     position: relative;
     height: 28px;
@@ -728,6 +716,9 @@
     inset: 0 auto 0 0;
     border-radius: 8px;
     background: color-mix(in oklab, var(--color-primary) 75%, transparent);
+  }
+  .track .fill.flush {
+    border-radius: 8px 0 0 8px;
   }
   .track .over {
     position: absolute;
@@ -874,9 +865,6 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: grid;
-    place-items: center;
-    line-height: 1;
     background: var(--color-base-100);
     border: 2px solid var(--color-line);
     color: var(--color-base-content);
@@ -901,4 +889,25 @@
     background: var(--color-primary-content);
     color: var(--color-base-100);
   }
+}
+
+/* Unlayered on purpose: DaisyUI's own .avatar component (from its base
+   layer) otherwise wins the display/line-height cascade over anything
+   declared inside @layer components, leaving the initials off-center. */
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: .75rem;
+  line-height: 1;
+  font-weight: 900;
+  background: var(--color-base-300);
+  color: var(--color-muted);
+}
+.steps .dot {
+  display: grid;
+  place-items: center;
+  line-height: 1;
 }
