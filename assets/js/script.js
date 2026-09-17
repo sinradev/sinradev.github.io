@@ -75,6 +75,33 @@ const initParallax = () => {
   window.addEventListener('scroll', throttle(handleParallax, 16));
 };
 
+// Method section: advance the 4-step indicator as the section scrolls through view
+const initMethodSteps = () => {
+  const steps = document.querySelector('[data-steps]');
+  if (!steps) return;
+
+  const items = steps.querySelectorAll('li');
+  const total = items.length;
+  const topOffset = 80; // roughly the sticky nav height: step 4 completes here
+
+  const update = () => {
+    const rect = steps.getBoundingClientRect();
+    const start = window.innerHeight; // step 1 activates as soon as steps enter viewport
+    const end = topOffset; // step total completes once steps near top of viewport
+    const progress = Math.min(1, Math.max(0, (start - rect.top) / (start - end)));
+    const active = Math.min(total, Math.max(1, Math.ceil(progress * total)));
+
+    steps.style.setProperty('--step-progress', `${(active / total) * 100}%`);
+    items.forEach((item, index) => {
+      item.classList.toggle('active', index < active);
+    });
+  };
+
+  update();
+  window.addEventListener('scroll', throttle(update, 16));
+  window.addEventListener('resize', throttle(update, 16));
+};
+
 // Navigation: DaisyUI dropdown close, active-link highlighting, smooth anchor scroll
 const initNavigation = () => {
   // Close DaisyUI dropdown when a navigation item is clicked
@@ -130,6 +157,7 @@ const decodeEmails = () => {
 // Initialize all effects when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   initParallax();
+  initMethodSteps();
   initNavigation();
   animateStats();
   decodeEmails();

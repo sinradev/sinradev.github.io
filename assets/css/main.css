@@ -851,6 +851,7 @@
   /* method steps connector */
   .steps {
     position: relative;
+    --step-progress: 25%;
   }
   .steps::before {
     content: "";
@@ -859,7 +860,8 @@
     right: 0;
     top: 21px;
     height: 2px;
-    background: linear-gradient(90deg, var(--color-primary) 0 25%, var(--color-line) 25% 100%);
+    background: linear-gradient(90deg, var(--color-primary) 0 var(--step-progress), var(--color-line) var(--step-progress) 100%);
+    transition: background .2s linear;
   }
   .steps .dot {
     width: 44px;
@@ -870,8 +872,9 @@
     color: var(--color-base-content);
     font-weight: 900;
     position: relative;
+    transition: background .2s linear, border-color .2s linear, color .2s linear;
   }
-  .steps li:first-child .dot {
+  .steps li.active .dot {
     border-color: var(--color-primary);
     background: var(--color-primary);
     color: var(--color-primary-content);

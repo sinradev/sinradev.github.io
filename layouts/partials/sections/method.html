@@ -4,9 +4,9 @@
       <h2 class="text-3xl md:text-4xl font-bold leading-tight max-w-[16ch]">{{ i18n "home_method_title" }}</h2>
       <p class="max-w-[42ch] text-base-content/80">{{ i18n "home_method_intro" }}</p>
     </div>
-    <ol class="steps grid sm:grid-cols-2 lg:grid-cols-4 mt-14 gap-y-10 list-none p-0">
+    <ol class="steps grid sm:grid-cols-2 lg:grid-cols-4 mt-14 gap-y-10 list-none p-0" data-steps>
       {{ range $i := (seq 4) }}
-      <li class="relative pr-6">
+      <li class="relative pr-6{{ if eq $i 1 }} active{{ end }}">
         <div class="dot">{{ $i }}</div>
         <div class="mt-6 text-faint">{{ i18n (printf "home_method_step%d_phase" $i) }}</div>
         <h3 class="mt-1 text-2xl font-bold">{{ i18n (printf "home_method_step%d_title" $i) }}</h3>
