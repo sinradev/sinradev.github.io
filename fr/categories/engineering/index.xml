@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering on Sinra</title><link>https://sinra.dev/fr/categories/engineering/</link><description>Recent content in Engineering on Sinra</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Tue, 26 May 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://sinra.dev/fr/categories/engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>Faut-il Suivre les Frameworks JavaScript à la Mode ?</title><link>https://sinra.dev/fr/blog/posts/2026-05-26-frameworks-javascript-mode-rails-2026/</link><pubDate>Tue, 26 May 2026 09:00:00 +0100</pubDate><guid>https://sinra.dev/fr/blog/posts/2026-05-26-frameworks-javascript-mode-rails-2026/</guid><description>&lt;h2 id="la-roue-qui-tourne-sans-jamais-arriver"&gt;La Roue qui Tourne Sans Jamais Arriver&lt;/h2&gt;
+&lt;p&gt;2010 : Backbone.js est le futur du web.
+2013 : Angular 1 prend le relais. Backbone est has-been.
+2014 : React arrive. Angular 1 est déjà « legacy ».
+2016 : Vue.js devient l&amp;rsquo;alternative « sérieuse ». Angular 2 est une réécriture complète incompatible avec Angular 1.
+2018 : Next.js s&amp;rsquo;impose pour le rendu serveur. Vue 3 casse la compatibilité avec Vue 2.
+2020 : Svelte « révolutionne » l&amp;rsquo;approche. NuxtJS, SvelteKit s&amp;rsquo;ajoutent à la liste.
+2021 : Remix entre en scène comme « la vraie réponse » aux problèmes de React.
+2022 : SolidJS, Qwik. L&amp;rsquo;hydratation partielle est le nouveau Graal.
+2023 : Astro pour les sites statiques. Bun comme runtime alternatif à Node.
+2024 : Htmx revient à la mode comme réaction contre la complexité de tout ce qui précède.&lt;/p&gt;</description></item><item><title>Modular Monolith : L'Architecture Que Tout le Monde Redécouvre</title><link>https://sinra.dev/fr/blog/posts/2026-05-16-modular-monolith-vertical-slice/</link><pubDate>Sat, 16 May 2026 10:00:00 +0100</pubDate><guid>https://sinra.dev/fr/blog/posts/2026-05-16-modular-monolith-vertical-slice/</guid><description>&lt;h2 id="le-retour-du-monolithe-intentionnel"&gt;Le Retour du Monolithe Intentionnel&lt;/h2&gt;
+&lt;p&gt;Il y a quelques années, dire « on construit un monolithe » dans une conférence technique revenait à admettre une défaite. Le monolithe était synonyme de code legacy, de dette technique accumulée, de systèmes impossibles à maintenir.&lt;/p&gt;
+&lt;p&gt;Aujourd&amp;rsquo;hui, quelque chose a changé.&lt;/p&gt;
+&lt;p&gt;Des équipes chez Shopify, Stack Overflow, Basecamp et GitHub parlent ouvertement de leurs monolithes bien construits. Des ingénieurs reconnus publient des articles sur les limites des microservices. Et une architecture particulière émerge comme alternative sérieuse :&lt;/p&gt;</description></item><item><title>Microservices : Vous N'Êtes Pas Netflix</title><link>https://sinra.dev/fr/blog/posts/2026-05-06-microservices-monolithe-hype/</link><pubDate>Wed, 06 May 2026 10:00:00 +0100</pubDate><guid>https://sinra.dev/fr/blog/posts/2026-05-06-microservices-monolithe-hype/</guid><description>&lt;h2 id="le-fantasme-de-larchitecture-distribuée"&gt;Le Fantasme de l&amp;rsquo;Architecture Distribuée&lt;/h2&gt;
+&lt;p&gt;Ouvrez une conversation technique dans n&amp;rsquo;importe quelle startup. Au bout de cinq minutes, quelqu&amp;rsquo;un dit :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;« On devrait migrer vers les microservices. »&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Et là, la salle opine. Les CTO hochen la tête. Les développeurs seniors pensent à leur prochain CV. Les slides PowerPoint mentionnent Netflix. GitHub. Airbnb. Spotify.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Personne ne pose la vraie question : est-ce qu&amp;rsquo;on a les mêmes problèmes qu&amp;rsquo;eux ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;La réponse, dans 90% des cas, est non.&lt;/p&gt;</description></item></channel></rss>

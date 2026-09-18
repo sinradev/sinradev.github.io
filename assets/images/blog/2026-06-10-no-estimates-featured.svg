@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Estimation cards flying (story points) -->
+  <!-- Planning poker cards -->
+  <rect x="120" y="150" width="70" height="100" rx="8" fill="#1e2540" stroke="#c792e9" stroke-width="2" transform="rotate(-12,155,200)"/>
+  <text x="155" y="210" font-family="Georgia, serif" font-size="36" fill="#c792e9" text-anchor="middle" transform="rotate(-12,155,200)">3</text>
+
+  <rect x="220" y="130" width="70" height="100" rx="8" fill="#1e2540" stroke="#64b5f6" stroke-width="2" transform="rotate(5,255,180)"/>
+  <text x="255" y="190" font-family="Georgia, serif" font-size="36" fill="#64b5f6" text-anchor="middle" transform="rotate(5,255,180)">5</text>
+
+  <rect x="320" y="160" width="70" height="100" rx="8" fill="#1e2540" stroke="#ffd54f" stroke-width="2" transform="rotate(-8,355,210)"/>
+  <text x="355" y="220" font-family="Georgia, serif" font-size="36" fill="#ffd54f" text-anchor="middle" transform="rotate(-8,355,210)">8</text>
+
+  <rect x="420" y="140" width="70" height="100" rx="8" fill="#1e2540" stroke="#a6f079" stroke-width="2" transform="rotate(15,455,190)"/>
+  <text x="455" y="200" font-family="Georgia, serif" font-size="36" fill="#a6f079" text-anchor="middle" transform="rotate(15,455,190)">5</text>
+
+  <rect x="520" y="155" width="70" height="100" rx="8" fill="#1e2540" stroke="#ff6b6b" stroke-width="2" transform="rotate(-5,555,205)"/>
+  <text x="555" y="215" font-family="Georgia, serif" font-size="36" fill="#ff6b6b" text-anchor="middle" transform="rotate(-5,555,205)">13</text>
+
+  <!-- Big X over the cards -->
+  <line x1="80" y1="110" x2="640" y2="310" stroke="#ff6b6b" stroke-width="3" opacity="0.4"/>
+  <line x1="640" y1="110" x2="80" y2="310" stroke="#ff6b6b" stroke-width="3" opacity="0.4"/>
+
+  <!-- vs -->
+  <text x="680" y="230" font-family="Georgia, serif" font-size="28" fill="#3a4570" text-anchor="middle">→</text>
+
+  <!-- Throughput graph -->
+  <rect x="720" y="100" width="420" height="280" rx="10" fill="#181e30" stroke="#a6f079" stroke-width="1.5" opacity="0.7"/>
+  <text x="930" y="133" font-family="monospace" font-size="12" fill="#a6f079" text-anchor="middle">Throughput · items/semaine</text>
+  <line x1="750" y1="340" x2="1110" y2="340" stroke="#2a3560" stroke-width="1.5"/>
+  <line x1="750" y1="340" x2="750" y2="145" stroke="#2a3560" stroke-width="1.5"/>
+
+  <!-- Bar chart: throughput stable -->
+  <rect x="775" y="265" width="40" height="75" fill="#a6f079" opacity="0.4"/>
+  <rect x="830" y="248" width="40" height="92" fill="#a6f079" opacity="0.4"/>
+  <rect x="885" y="253" width="40" height="87" fill="#a6f079" opacity="0.4"/>
+  <rect x="940" y="258" width="40" height="82" fill="#a6f079" opacity="0.4"/>
+  <rect x="995" y="250" width="40" height="90" fill="#a6f079" opacity="0.4"/>
+  <rect x="1050" y="255" width="40" height="85" fill="#a6f079" opacity="0.4"/>
+
+  <!-- Average line -->
+  <line x1="750" y1="258" x2="1110" y2="258" stroke="#a6f079" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.7"/>
+  <text x="1115" y="262" font-family="monospace" font-size="10" fill="#a6f079">~12/sem</text>
+
+  <!-- Condition chips -->
+  <rect x="720" y="405" width="420" height="95" rx="8" fill="#1a2030" stroke="#2a3560" stroke-width="1"/>
+  <text x="930" y="430" font-family="monospace" font-size="11" fill="#8b9cbf" text-anchor="middle">Fonctionne quand :</text>
+  <text x="730" y="455" font-family="monospace" font-size="10" fill="#a6f079">✓ Items taille homogène</text>
+  <text x="730" y="475" font-family="monospace" font-size="10" fill="#a6f079">✓ Équipe stable</text>
+  <text x="920" y="455" font-family="monospace" font-size="10" fill="#ff6b6b">✗ Forfait à prix fixe</text>
+  <text x="920" y="475" font-family="monospace" font-size="10" fill="#ff6b6b">✗ Priorisation valeur/effort</text>
+
+  <text x="600" y="560" font-family="Georgia, serif" font-size="25" fill="#e0e8ff" text-anchor="middle" opacity="0.9">Pas d'estimation, ou meilleure estimation ?</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Code blocks (left side) -->
+  <rect x="80" y="150" width="400" height="300" rx="8" fill="#2d3748" opacity="0.8"/>
+  <line x1="100" y1="180" x2="300" y2="180" stroke="#a0aec0" stroke-width="3"/>
+  <line x1="100" y1="210" x2="350" y2="210" stroke="#a0aec0" stroke-width="3"/>
+  <line x1="100" y1="240" x2="250" y2="240" stroke="#a0aec0" stroke-width="3"/>
+  <line x1="100" y1="290" x2="320" y2="290" stroke="#48bb78" stroke-width="3"/>
+  <line x1="100" y1="320" x2="280" y2="320" stroke="#48bb78" stroke-width="3"/>
+  <line x1="100" y1="380" x2="300" y2="380" stroke="#f56565" stroke-width="3"/>
+  <line x1="100" y1="410" x2="350" y2="410" stroke="#f56565" stroke-width="3"/>
+
+  <!-- AI Brain -->
+  <circle cx="600" cy="315" r="80" fill="#ffffff" opacity="0.2"/>
+  <circle cx="600" cy="315" r="60" fill="#ffffff" opacity="0.3"/>
+  <circle cx="600" cy="315" r="40" fill="#ffffff" opacity="0.5"/>
+  <text x="600" y="335" font-family="Arial, sans-serif" font-size="50" fill="#ffffff" text-anchor="middle" font-weight="bold">AI</text>
+
+  <!-- Document (right side) -->
+  <rect x="720" y="150" width="400" height="300" rx="8" fill="#ffffff" opacity="0.9"/>
+  <rect x="750" y="190" width="340" height="20" rx="4" fill="#667eea"/>
+  <line x1="750" y1="240" x2="1060" y2="240" stroke="#2d3748" stroke-width="2"/>
+  <line x1="750" y1="270" x2="1020" y2="270" stroke="#2d3748" stroke-width="2"/>
+  <line x1="750" y1="300" x2="1050" y2="300" stroke="#2d3748" stroke-width="2"/>
+  <line x1="750" y1="330" x2="980" y2="330" stroke="#2d3748" stroke-width="2"/>
+  <circle cx="920" cy="390" r="15" fill="#48bb78"/>
+  <path d="M 912 390 L 918 396 L 932 382" stroke="#ffffff" stroke-width="3" fill="none"/>
+
+  <!-- Arrow from code to AI -->
+  <path d="M 490 300 L 530 308" stroke="#ffffff" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from AI to document -->
+  <path d="M 670 308 L 710 300" stroke="#ffffff" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ffffff" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="70" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">Génération de Specs via IA</text>
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle">Code Source → IA → Spécifications Réalistes</text>
+</svg>

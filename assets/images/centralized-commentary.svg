@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #1a1a1a; }
+      .section-title { font: bold 16px sans-serif; fill: #1a1a1a; }
+      .label { font: 12px sans-serif; fill: #4a5568; }
+      .benefit { font: 13px sans-serif; fill: #10b981; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Le Commentary : Discussions Attachées au Travail</text>
+
+  <!-- Feature/Issue Box (central) -->
+  <g>
+    <rect x="250" y="80" width="300" height="120" rx="8" fill="#e6f4ff" stroke="#2196F3" stroke-width="3"/>
+    <text x="400" y="110" text-anchor="middle" class="section-title">Fonctionnalité : API Rate Limiting</text>
+    <rect x="270" y="125" width="260" height="60" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="280" y="145" class="label">📋 12 issues assignées</text>
+    <text x="280" y="165" class="label">⏱️ Release 2.3</text>
+    <text x="280" y="185" class="label">👥 3 développeurs + QA</text>
+  </g>
+
+  <!-- Commentary attached below -->
+  <g>
+    <!-- Connection line -->
+    <line x1="400" y1="200" x2="400" y2="240" stroke="#9C27B0" stroke-width="3"/>
+    <polygon points="400,240 395,232 405,232" fill="#9C27B0"/>
+
+    <!-- Commentary box -->
+    <rect x="150" y="240" width="500" height="200" rx="8" fill="#f3e5ff" stroke="#9C27B0" stroke-width="3"/>
+    <text x="400" y="270" text-anchor="middle" class="section-title">💬 Commentary (Discussions)</text>
+
+    <!-- Chat messages -->
+    <rect x="170" y="285" width="460" height="30" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="180" y="303" style="font: 12px sans-serif; fill: #9C27B0; font-weight: bold;">@alex:</text>
+    <text x="220" y="303" class="label">On devrait rate limit par user ou endpoint ?</text>
+
+    <rect x="170" y="320" width="460" height="30" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="180" y="338" style="font: 12px sans-serif; fill: #2196F3; font-weight: bold;">@marie:</text>
+    <text x="230" y="338" class="label">Par user. Sinon un seul user peut DDoS...</text>
+
+    <rect x="170" y="355" width="460" height="30" rx="4" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="180" y="373" style="font: 12px sans-serif; fill: #f59e0b; font-weight: bold;">@thomas:</text>
+    <text x="240" y="373" class="label">Et pour les webhooks ? On rate limit comment ?</text>
+
+    <text x="400" y="410" text-anchor="middle" class="label" style="fill: #9C27B0; font-style: italic;">
+      + Historique complet préservé, recherchable, avec mentions
+    </text>
+  </g>
+
+  <!-- Benefits at bottom -->
+  <g>
+    <text x="100" y="470" class="benefit">✅ Discussions liées au travail</text>
+    <text x="320" y="470" class="benefit">✅ Contexte préservé</text>
+    <text x="520" y="470" class="benefit">✅ Zéro synchronisation</text>
+  </g>
+</svg>

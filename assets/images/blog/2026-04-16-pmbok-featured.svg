@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/><stop offset="60%" stop-color="#0a0f1a"/><stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="20%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#6ecf00" stop-opacity="0.15"/><stop offset="100%" stop-color="#6ecf00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.10"/><stop offset="100%" stop-color="#a6f079" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- 8 domains as a wheel -->
+  <circle cx="215" cy="290" r="115" fill="none" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.15"/>
+  <circle cx="215" cy="290" r="30" fill="#6ecf00" fill-opacity="0.1" stroke="#6ecf00" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="215" y="285" text-anchor="middle" font-size="8" fill="#6ecf00" font-weight="700">PMBOK</text>
+  <text x="215" y="298" text-anchor="middle" font-size="7" fill="#6ecf00" opacity="0.8">v7</text>
+
+  <!-- 8 segments around circle -->
+  <g font-size="9" font-weight="600">
+    <text x="215" y="158" text-anchor="middle" fill="#a6f079" opacity="0.9">Parties prenantes</text>
+    <text x="312" y="200" text-anchor="middle" fill="#c792e9" opacity="0.9">Équipe</text>
+    <text x="345" y="295" text-anchor="middle" fill="#6ecf00" opacity="0.9">Dev/Cycle</text>
+    <text x="308" y="388" text-anchor="middle" fill="#ff6b9d" opacity="0.9">Planification</text>
+    <text x="215" y="422" text-anchor="middle" fill="#a6f079" opacity="0.8">Travail</text>
+    <text x="122" y="388" text-anchor="middle" fill="#c792e9" opacity="0.8">Livraison</text>
+    <text x="88" y="295" text-anchor="middle" fill="#6ecf00" opacity="0.8">Mesure</text>
+    <text x="122" y="200" text-anchor="middle" fill="#ff6b9d" opacity="0.8">Incertitude</text>
+  </g>
+
+  <!-- Spokes -->
+  <g stroke="#6ecf00" stroke-opacity="0.2" stroke-width="1">
+    <line x1="215" y1="260" x2="215" y2="175"/>
+    <line x1="215" y1="260" x2="293" y2="208"/>
+    <line x1="215" y1="260" x2="318" y2="290"/>
+    <line x1="215" y1="260" x2="293" y2="372"/>
+    <line x1="215" y1="260" x2="215" y2="405"/>
+    <line x1="215" y1="260" x2="137" y2="372"/>
+    <line x1="215" y1="260" x2="112" y2="290"/>
+    <line x1="215" y1="260" x2="137" y2="208"/>
+  </g>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">RÉFÉRENTIEL · PMI</text>
+  <text x="500" y="270" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-2">PMBOK</text>
+  <text x="500" y="340" font-size="22" font-weight="600" fill="#8b9cbf">Project Management</text>
+  <text x="500" y="368" font-size="22" font-weight="600" fill="#8b9cbf">Body of Knowledge</text>
+  <text x="500" y="405" font-size="16" fill="#475569">8 domaines · 12 principes · certification PMP</text>
+  <line x1="500" y1="428" x2="850" y2="428" stroke="#1e293b" stroke-width="1"/>
+  <g><rect x="500" y="443" width="60" height="28" rx="14" fill="#6ecf00" fill-opacity="0.08" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="530" y="462" text-anchor="middle" font-size="10" fill="#6ecf00" font-weight="600" letter-spacing="0.5">PMI</text></g>
+  <g><rect x="572" y="443" width="64" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="604" y="462" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">PMP</text></g>
+  <g><rect x="648" y="443" width="80" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="688" y="462" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Valeur</text></g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

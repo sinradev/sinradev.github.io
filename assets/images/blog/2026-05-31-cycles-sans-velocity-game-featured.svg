@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left: Velocity chart (artificial, gamified) -->
+  <text x="270" y="120" font-family="monospace" font-size="13" fill="#ff6b6b" opacity="0.7" text-anchor="middle">Velocity game</text>
+  <!-- Axis -->
+  <line x1="100" y1="450" x2="440" y2="450" stroke="#3a4570" stroke-width="1.5"/>
+  <line x1="100" y1="450" x2="100" y2="160" stroke="#3a4570" stroke-width="1.5"/>
+  <!-- Bars (too flat/artificial) -->
+  <rect x="120" y="370" width="40" height="80" fill="#ff6b6b" opacity="0.3"/>
+  <rect x="175" y="368" width="40" height="82" fill="#ff6b6b" opacity="0.3"/>
+  <rect x="230" y="370" width="40" height="80" fill="#ff6b6b" opacity="0.3"/>
+  <rect x="285" y="369" width="40" height="81" fill="#ff6b6b" opacity="0.3"/>
+  <rect x="340" y="370" width="40" height="80" fill="#ff6b6b" opacity="0.3"/>
+  <rect x="395" y="368" width="40" height="82" fill="#ff6b6b" opacity="0.3"/>
+  <!-- Target line -->
+  <line x1="100" y1="370" x2="440" y2="370" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.6"/>
+  <text x="450" y="374" font-family="monospace" font-size="10" fill="#ff6b6b" opacity="0.6">42 pts</text>
+  <text x="270" y="490" font-family="monospace" font-size="11" fill="#ff6b6b" opacity="0.6" text-anchor="middle">optimisé pour le chiffre</text>
+
+  <!-- VS -->
+  <text x="600" y="330" font-family="Georgia, serif" font-size="32" fill="#4a5580" text-anchor="middle">vs</text>
+
+  <!-- Right: Cycle with objective (organic, real) -->
+  <text x="900" y="120" font-family="monospace" font-size="13" fill="#a6f079" opacity="0.7" text-anchor="middle">Objectif de cycle</text>
+  <!-- Circle representing cycle -->
+  <circle cx="900" cy="310" r="120" fill="none" stroke="#a6f079" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="900" cy="310" r="120" fill="none" stroke="#a6f079" stroke-width="3" opacity="0.15" stroke-dasharray="12,5"/>
+  <!-- Filled arc representing progress ~65% -->
+  <path d="M 900 190 A 120 120 0 1 1 793 387" fill="none" stroke="#a6f079" stroke-width="3" opacity="0.7"/>
+  <!-- Center text -->
+  <text x="900" y="295" font-family="monospace" font-size="12" fill="#a6f079" text-anchor="middle">Objectif</text>
+  <text x="900" y="315" font-family="Georgia, serif" font-size="14" fill="#e0e8ff" text-anchor="middle">Performance</text>
+  <text x="900" y="333" font-family="Georgia, serif" font-size="14" fill="#e0e8ff" text-anchor="middle">page d'accueil</text>
+  <text x="900" y="360" font-family="monospace" font-size="11" fill="#8b9cbf" text-anchor="middle">&lt; 2s load time</text>
+  <!-- Progress label -->
+  <text x="900" y="490" font-family="monospace" font-size="11" fill="#a6f079" opacity="0.6" text-anchor="middle">piloté par le résultat</text>
+
+  <!-- Title -->
+  <text x="600" y="570" font-family="Georgia, serif" font-size="26" fill="#e0e8ff" text-anchor="middle" opacity="0.9">Sortir du Scrum théâtre</text>
+</svg>

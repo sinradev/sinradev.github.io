@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Specifications on Sinra</title><link>https://sinra.dev/categories/specifications/</link><description>Recent content in Specifications on Sinra</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 23 Jan 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://sinra.dev/categories/specifications/index.xml" rel="self" type="application/rss+xml"/><item><title>Generating Specs via AI from Source Code: When AI Analyzes Your Codebase to Create Realistic Specifications</title><link>https://sinra.dev/specifications/2026/01/23/ai-specs-generation-source-code.html</link><pubDate>Fri, 23 Jan 2026 09:00:00 +0100</pubDate><guid>https://sinra.dev/specifications/2026/01/23/ai-specs-generation-source-code.html</guid><description>&lt;p&gt;url: /specifications/2026/01/23/ai-specs-generation-source-code.html&lt;/p&gt;
+&lt;h2 id="add-multi-factor-authentication"&gt;&amp;ldquo;Add Multi-Factor Authentication&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Monday morning. Release planning meeting.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Product Manager: &amp;ldquo;For the next release, we&amp;rsquo;re adding multi-factor authentication. It&amp;rsquo;s a priority customer request.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The PM opens Notion and starts writing the spec:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Capability: Multi-Factor Authentication (MFA)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**Objective:**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Allow users to secure their accounts with multiple authentication methods.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**Supported methods:**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; SMS with 6-digit code
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; Authenticator app (TOTP)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; Hardware security key (FIDO2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; Email with confirmation link
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;**User Stories:**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; As a user, I want to enable MFA in my settings
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; As a user, I want to choose my preferred method
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;-&lt;/span&gt; As a user, I want to configure multiple backup methods
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PM: &amp;ldquo;Spec done. Estimate?&amp;rdquo;&lt;/p&gt;</description></item></channel></rss>

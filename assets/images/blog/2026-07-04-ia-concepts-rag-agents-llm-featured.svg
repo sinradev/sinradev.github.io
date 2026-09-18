@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="llm-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a4a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1d38;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="rag-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2d2d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a1f1f;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="agent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1a3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a0f28;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="600" y="58" font-family="monospace" font-size="22" fill="#e0e8ff" text-anchor="middle" opacity="0.95" font-weight="bold">LLM · RAG · Agents · MCP</text>
+  <text x="600" y="84" font-family="monospace" font-size="13" fill="#6a7aaa" text-anchor="middle">Le pipeline IA de bout en bout</text>
+
+  <!-- ===== USER block ===== -->
+  <rect x="40" y="200" width="130" height="70" rx="8" fill="#1a1f35" stroke="#4a5a8a" stroke-width="1.5"/>
+  <text x="105" y="231" font-family="monospace" font-size="13" fill="#8899cc" text-anchor="middle">USER</text>
+  <text x="105" y="252" font-family="monospace" font-size="10" fill="#4a5a7a" text-anchor="middle">« Résume ce ticket »</text>
+
+  <!-- Arrow USER -> EMBED -->
+  <line x1="170" y1="235" x2="218" y2="235" stroke="#4a5a8a" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+
+  <!-- ===== EMBEDDINGS / RAG block ===== -->
+  <rect x="220" y="160" width="190" height="150" rx="8" fill="url(#rag-grad)" stroke="#00c8a0" stroke-width="1.5" opacity="0.9"/>
+  <text x="315" y="188" font-family="monospace" font-size="12" fill="#00c8a0" text-anchor="middle" font-weight="bold">EMBEDDINGS</text>
+  <text x="315" y="206" font-family="monospace" font-size="10" fill="#00906a" text-anchor="middle">+ RAG</text>
+  <line x1="240" y1="215" x2="390" y2="215" stroke="#00c8a0" stroke-width="0.5" opacity="0.3"/>
+  <!-- Vector lines simulating embeddings -->
+  <text x="240" y="234" font-family="monospace" font-size="9" fill="#007a58">[0.82, 0.14, 0.67...]</text>
+  <text x="240" y="252" font-family="monospace" font-size="9" fill="#007a58">[0.21, 0.93, 0.05...]</text>
+  <text x="240" y="270" font-family="monospace" font-size="9" fill="#007a58">[0.55, 0.38, 0.79...]</text>
+  <!-- Doc icons -->
+  <rect x="240" y="282" width="14" height="18" rx="1" fill="none" stroke="#00c8a0" stroke-width="1" opacity="0.5"/>
+  <rect x="260" y="282" width="14" height="18" rx="1" fill="none" stroke="#00c8a0" stroke-width="1" opacity="0.5"/>
+  <rect x="280" y="282" width="14" height="18" rx="1" fill="none" stroke="#00c8a0" stroke-width="1" opacity="0.5"/>
+  <text x="315" y="298" font-family="monospace" font-size="8" fill="#007a58" text-anchor="middle">docs indexés</text>
+
+  <!-- Label RAG -->
+  <rect x="226" y="396" width="180" height="24" rx="4" fill="#052520" stroke="#00c8a0" stroke-width="1" opacity="0.7"/>
+  <text x="316" y="413" font-family="monospace" font-size="11" fill="#00c8a0" text-anchor="middle">RAG : retrieval + inject</text>
+
+  <!-- Arrow EMBED -> LLM -->
+  <line x1="410" y1="235" x2="458" y2="235" stroke="#4a5a8a" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+
+  <!-- ===== LLM block ===== -->
+  <rect x="460" y="150" width="200" height="170" rx="8" fill="url(#llm-grad)" stroke="#4a8fff" stroke-width="1.5" opacity="0.9"/>
+  <text x="560" y="178" font-family="monospace" font-size="13" fill="#4a8fff" text-anchor="middle" font-weight="bold">LLM</text>
+  <line x1="480" y1="188" x2="640" y2="188" stroke="#4a8fff" stroke-width="0.5" opacity="0.3"/>
+  <!-- Neural network dots -->
+  <circle cx="510" cy="215" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="510" cy="240" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="510" cy="265" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="560" cy="205" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="560" cy="228" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="560" cy="252" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="610" cy="220" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <circle cx="610" cy="248" r="5" fill="#1a3a6a" stroke="#4a8fff" stroke-width="1" opacity="0.8"/>
+  <!-- Connections -->
+  <line x1="515" y1="215" x2="555" y2="228" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <line x1="515" y1="240" x2="555" y2="228" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <line x1="515" y1="240" x2="555" y2="252" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <line x1="515" y1="265" x2="555" y2="252" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <line x1="565" y1="205" x2="605" y2="220" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <line x1="565" y1="228" x2="605" y2="220" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <line x1="565" y1="252" x2="605" y2="248" stroke="#2a5aaa" stroke-width="0.8" opacity="0.5"/>
+  <!-- Token output -->
+  <text x="480" y="295" font-family="monospace" font-size="9" fill="#2a5aaa">token → token → token...</text>
+  <text x="560" y="315" font-family="monospace" font-size="10" fill="#3a6acc" text-anchor="middle">GPT · Claude · Llama</text>
+
+  <!-- Label LLM -->
+  <rect x="466" y="396" width="188" height="24" rx="4" fill="#0a1530" stroke="#4a8fff" stroke-width="1" opacity="0.7"/>
+  <text x="560" y="413" font-family="monospace" font-size="11" fill="#4a8fff" text-anchor="middle">context window · hallucination</text>
+
+  <!-- Arrow LLM -> AGENT -->
+  <line x1="660" y1="235" x2="708" y2="235" stroke="#4a5a8a" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+
+  <!-- ===== AGENT block ===== -->
+  <rect x="710" y="150" width="200" height="170" rx="8" fill="url(#agent-grad)" stroke="#c070ff" stroke-width="1.5" opacity="0.9"/>
+  <text x="810" y="178" font-family="monospace" font-size="13" fill="#c070ff" text-anchor="middle" font-weight="bold">AGENT</text>
+  <line x1="730" y1="188" x2="890" y2="188" stroke="#c070ff" stroke-width="0.5" opacity="0.3"/>
+  <!-- Loop icon -->
+  <path d="M 790 230 A 30 30 0 1 1 830 260" fill="none" stroke="#8040cc" stroke-width="2" opacity="0.8"/>
+  <polygon points="830,255 835,268 820,265" fill="#8040cc" opacity="0.8"/>
+  <text x="810" y="248" font-family="monospace" font-size="10" fill="#8040cc" text-anchor="middle">décide</text>
+  <text x="810" y="263" font-family="monospace" font-size="10" fill="#8040cc" text-anchor="middle">agit</text>
+  <text x="810" y="278" font-family="monospace" font-size="10" fill="#8040cc" text-anchor="middle">observe</text>
+  <text x="810" y="315" font-family="monospace" font-size="10" fill="#7030bb" text-anchor="middle">boucle autonome</text>
+
+  <!-- Label AGENT -->
+  <rect x="716" y="396" width="188" height="24" rx="4" fill="#1a0a28" stroke="#c070ff" stroke-width="1" opacity="0.7"/>
+  <text x="810" y="413" font-family="monospace" font-size="11" fill="#c070ff" text-anchor="middle">tools · MCP · guardrails</text>
+
+  <!-- Arrow AGENT -> TOOLS -->
+  <line x1="910" y1="235" x2="958" y2="235" stroke="#4a5a8a" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+
+  <!-- ===== TOOLS / MCP block ===== -->
+  <rect x="960" y="160" width="190" height="150" rx="8" fill="#1a2010" stroke="#a0cc40" stroke-width="1.5" opacity="0.9"/>
+  <text x="1055" y="188" font-family="monospace" font-size="12" fill="#a0cc40" text-anchor="middle" font-weight="bold">OUTILS</text>
+  <text x="1055" y="206" font-family="monospace" font-size="10" fill="#708a20" text-anchor="middle">via MCP</text>
+  <line x1="980" y1="215" x2="1130" y2="215" stroke="#a0cc40" stroke-width="0.5" opacity="0.3"/>
+  <!-- Tool items -->
+  <rect x="980" y="225" width="68" height="22" rx="3" fill="#152010" stroke="#a0cc40" stroke-width="1" opacity="0.7"/>
+  <text x="1014" y="240" font-family="monospace" font-size="9" fill="#80aa30" text-anchor="middle">API</text>
+  <rect x="1056" y="225" width="68" height="22" rx="3" fill="#152010" stroke="#a0cc40" stroke-width="1" opacity="0.7"/>
+  <text x="1090" y="240" font-family="monospace" font-size="9" fill="#80aa30" text-anchor="middle">Fichiers</text>
+  <rect x="980" y="256" width="68" height="22" rx="3" fill="#152010" stroke="#a0cc40" stroke-width="1" opacity="0.7"/>
+  <text x="1014" y="271" font-family="monospace" font-size="9" fill="#80aa30" text-anchor="middle">DB</text>
+  <rect x="1056" y="256" width="68" height="22" rx="3" fill="#152010" stroke="#a0cc40" stroke-width="1" opacity="0.7"/>
+  <text x="1090" y="271" font-family="monospace" font-size="9" fill="#80aa30" text-anchor="middle">Sinra</text>
+  <rect x="980" y="287" width="144" height="22" rx="3" fill="#152010" stroke="#a0cc40" stroke-width="1" opacity="0.7"/>
+  <text x="1052" y="302" font-family="monospace" font-size="9" fill="#80aa30" text-anchor="middle">Navigateur · Code · PR</text>
+
+  <!-- Label MCP -->
+  <rect x="966" y="396" width="178" height="24" rx="4" fill="#101a08" stroke="#a0cc40" stroke-width="1" opacity="0.7"/>
+  <text x="1055" y="413" font-family="monospace" font-size="11" fill="#a0cc40" text-anchor="middle">Model Context Protocol</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4a5a8a"/>
+    </marker>
+  </defs>
+
+  <!-- Bottom caption -->
+  <text x="600" y="490" font-family="Georgia, serif" font-size="18" fill="#c0cadf" text-anchor="middle" opacity="0.85">Prompt d'abord · RAG si besoin · Agent avec précaution</text>
+
+  <!-- Escalation bar -->
+  <rect x="200" y="515" width="800" height="6" rx="3" fill="url(#escal-grad)"/>
+  <defs>
+    <linearGradient id="escal-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a5a3a;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#4a8fff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c070ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <text x="230" y="540" font-family="monospace" font-size="10" fill="#4a6a4a">simple</text>
+  <text x="1140" y="540" font-family="monospace" font-size="10" fill="#8040bb" text-anchor="end">complexe</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Registry table -->
+  <rect x="80" y="100" width="1040" height="400" rx="12" fill="#181c30" stroke="#2a3050" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="80" y="100" width="1040" height="48" rx="12" fill="#1e2545"/>
+  <text x="160" y="131" font-family="monospace" font-size="13" fill="#64b5f6">Registre de dette technique</text>
+  <rect x="80" y="144" width="1040" height="1" fill="#2a3560" opacity="0.8"/>
+
+  <!-- Column headers -->
+  <text x="110" y="170" font-family="monospace" font-size="11" fill="#4a5580">DETTE</text>
+  <text x="380" y="170" font-family="monospace" font-size="11" fill="#4a5580">TYPE</text>
+  <text x="510" y="170" font-family="monospace" font-size="11" fill="#4a5580">IMPACT</text>
+  <text x="680" y="170" font-family="monospace" font-size="11" fill="#4a5580">ORIGINE</text>
+  <text x="900" y="170" font-family="monospace" font-size="11" fill="#4a5580">EFFORT</text>
+  <rect x="80" y="178" width="1040" height="1" fill="#2a3560" opacity="0.4"/>
+
+  <!-- Row 1 -->
+  <rect x="80" y="179" width="1040" height="52" fill="#1a2040" opacity="0.4"/>
+  <text x="110" y="202" font-family="monospace" font-size="11" fill="#e0e8ff">Session stateful → scaling impossible</text>
+  <text x="110" y="220" font-family="monospace" font-size="9" fill="#5a6590">Module auth · PostgreSQL sessions</text>
+  <rect x="375" y="192" width="80" height="20" rx="4" fill="#2a1545" stroke="#c792e9" stroke-width="1"/>
+  <text x="415" y="206" font-family="monospace" font-size="9" fill="#c792e9" text-anchor="middle">délibérée</text>
+  <text x="510" y="202" font-family="monospace" font-size="10" fill="#ffd54f">Horizontal scaling bloqué</text>
+  <text x="680" y="202" font-family="monospace" font-size="10" fill="#8b9cbf">Deadline Q4 2024</text>
+  <rect x="895" y="190" width="60" height="22" rx="4" fill="#2a3050"/>
+  <text x="925" y="205" font-family="monospace" font-size="10" fill="#ffd54f" text-anchor="middle">2 sem.</text>
+
+  <!-- Row 2 -->
+  <rect x="80" y="231" width="1040" height="52" fill="#1a2040" opacity="0.2"/>
+  <text x="110" y="254" font-family="monospace" font-size="11" fill="#e0e8ff">Requêtes N+1 sur listing projets</text>
+  <text x="110" y="272" font-family="monospace" font-size="9" fill="#5a6590">ProjectController · findAll()</text>
+  <rect x="375" y="244" width="80" height="20" rx="4" fill="#1a2545" stroke="#64b5f6" stroke-width="1"/>
+  <text x="415" y="258" font-family="monospace" font-size="9" fill="#64b5f6" text-anchor="middle">accidentelle</text>
+  <text x="510" y="254" font-family="monospace" font-size="10" fill="#ff6b6b">45s loading · 15 tickets/sem</text>
+  <text x="680" y="254" font-family="monospace" font-size="10" fill="#8b9cbf">ORM mal configuré</text>
+  <rect x="895" y="242" width="60" height="22" rx="4" fill="#2a3050"/>
+  <text x="925" y="257" font-family="monospace" font-size="10" fill="#a6f079" text-anchor="middle">5 j.</text>
+
+  <!-- Row 3 -->
+  <rect x="80" y="283" width="1040" height="52" fill="#1a2040" opacity="0.4"/>
+  <text x="110" y="306" font-family="monospace" font-size="11" fill="#e0e8ff">Node.js 16 EOL · vulnérabilités</text>
+  <text x="110" y="324" font-family="monospace" font-size="9" fill="#5a6590">Toute l'application · package.json</text>
+  <rect x="375" y="296" width="80" height="20" rx="4" fill="#2a1520" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="415" y="310" font-family="monospace" font-size="9" fill="#ff6b6b" text-anchor="middle">obsolescence</text>
+  <text x="510" y="306" font-family="monospace" font-size="10" fill="#ff6b6b">Risque sécurité CVEs actives</text>
+  <text x="680" y="306" font-family="monospace" font-size="10" fill="#8b9cbf">Fin de support Oct 2023</text>
+  <rect x="895" y="294" width="60" height="22" rx="4" fill="#2a2020"/>
+  <text x="925" y="309" font-family="monospace" font-size="10" fill="#ff6b6b" text-anchor="middle">3 j.</text>
+
+  <!-- Row 4 -->
+  <rect x="80" y="335" width="1040" height="52" fill="#1a2040" opacity="0.2"/>
+  <text x="110" y="358" font-family="monospace" font-size="11" fill="#e0e8ff">PaymentModule compris par 1 personne</text>
+  <text x="110" y="376" font-family="monospace" font-size="9" fill="#5a6590">src/payment/ · code sans tests</text>
+  <rect x="375" y="348" width="80" height="20" rx="4" fill="#251f10" stroke="#ffd54f" stroke-width="1"/>
+  <text x="415" y="362" font-family="monospace" font-size="9" fill="#ffd54f" text-anchor="middle">compréh.</text>
+  <text x="510" y="358" font-family="monospace" font-size="10" fill="#ffd54f">Maintenance risquée</text>
+  <text x="680" y="358" font-family="monospace" font-size="10" fill="#8b9cbf">Dev parti juin 2024</text>
+  <rect x="895" y="346" width="60" height="22" rx="4" fill="#2a3050"/>
+  <text x="925" y="361" font-family="monospace" font-size="10" fill="#ffd54f" text-anchor="middle">3 sem.</text>
+
+  <!-- Bottom bar -->
+  <rect x="80" y="445" width="1040" height="55" rx="0" fill="#1e2540" opacity="0.5"/>
+  <rect x="80" y="445" width="1040" height="55" rx="0"/>
+  <rect x="80" y="493" width="1040" height="7" rx="0"/>
+  <!-- Rounding corners bottom -->
+  <rect x="80" y="445" width="1040" height="55" rx="12" fill="#1e2540" opacity="0.8"/>
+  <text x="600" y="477" font-family="monospace" font-size="12" fill="#64b5f6" text-anchor="middle">Nommer précisément · Mesurer l'impact · Planifier le remboursement</text>
+
+  <text x="600" y="570" font-family="Georgia, serif" font-size="26" fill="#e0e8ff" text-anchor="middle" opacity="0.9">Une dette nommée est une dette gérable</text>
+</svg>

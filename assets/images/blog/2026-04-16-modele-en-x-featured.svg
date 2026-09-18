@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/>
+      <stop offset="60%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="22%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="80%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#a6f079" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- X crossing lines - development down-right, validation up-right -->
+  <line x1="50" y1="130" x2="390" y2="450" stroke="#8b5cf6" stroke-width="3" stroke-opacity="0.7"/>
+  <line x1="50" y1="450" x2="390" y2="130" stroke="#a6f079" stroke-width="3" stroke-opacity="0.7"/>
+
+  <!-- Crossing point glow -->
+  <circle cx="220" cy="290" r="18" fill="#8b5cf6" fill-opacity="0.15" filter="url(#glow)"/>
+  <circle cx="220" cy="290" r="8" fill="#8b5cf6" fill-opacity="0.5" filter="url(#glow)"/>
+
+  <!-- Corner labels -->
+  <rect x="20" y="100" width="100" height="26" rx="5" fill="#8b5cf6" fill-opacity="0.1" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="70" y="118" text-anchor="middle" font-size="11" fill="#8b5cf6" font-weight="600">Exigences</text>
+
+  <rect x="310" y="460" width="100" height="26" rx="5" fill="#8b5cf6" fill-opacity="0.1" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="360" y="478" text-anchor="middle" font-size="11" fill="#8b5cf6" font-weight="600">Validation</text>
+
+  <rect x="20" y="460" width="100" height="26" rx="5" fill="#a6f079" fill-opacity="0.1" stroke="#a6f079" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="70" y="478" text-anchor="middle" font-size="11" fill="#a6f079" font-weight="600">Tests Acc.</text>
+
+  <rect x="310" y="100" width="100" height="26" rx="5" fill="#a6f079" fill-opacity="0.1" stroke="#a6f079" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="360" y="118" text-anchor="middle" font-size="11" fill="#a6f079" font-weight="600">Intégration</text>
+
+  <text x="220" y="278" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="700" opacity="0.7">CODE</text>
+
+  <!-- Multi-level label -->
+  <text x="215" y="530" text-anchor="middle" font-size="10" fill="#8b9cbf" opacity="0.6">Multi-niveaux d'intégration</text>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">MÉTHODE CLASSIQUE · SYSTÈMES</text>
+  <text x="500" y="262" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-3">Modèle</text>
+  <text x="500" y="352" font-size="72" font-weight="800" letter-spacing="-3">
+    <tspan fill="#8b5cf6">en X</tspan>
+  </text>
+  <text x="500" y="406" font-size="16" fill="#475569">Intégration multi-couches pour systèmes complexes</text>
+  <line x1="500" y1="432" x2="850" y2="432" stroke="#1e293b" stroke-width="1"/>
+  <g>
+    <rect x="500" y="450" width="100" height="28" rx="14" fill="#8b5cf6" fill-opacity="0.08" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="550" y="469" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">Multi-couche</text>
+  </g>
+  <g>
+    <rect x="612" y="450" width="96" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="660" y="469" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">Traçabilité</text>
+  </g>
+  <g>
+    <rect x="720" y="450" width="100" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="770" y="469" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Embarqué</text>
+  </g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

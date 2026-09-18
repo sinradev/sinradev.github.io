@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#171b2b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="band" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0a0f1a;stop-opacity:0.92" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g stroke="#2a3350" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <circle cx="120" cy="120" r="130" fill="#a6f079" opacity="0.05"/>
+  <circle cx="1080" cy="150" r="120" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="1050" cy="380" r="90" fill="#c792e9" opacity="0.05"/>
+
+  <rect x="0" y="70" width="1200" height="3" fill="#a6f079" opacity="0.55"/>
+  <rect x="0" y="70" width="340" height="3" fill="#a6f079"/>
+
+  <!-- Two comparison panels: heavy vs light -->
+  <g>
+    <rect x="220" y="150" width="330" height="250" rx="10" fill="#241a1a" stroke="#e06c75" stroke-width="1.5" opacity="0.7"/>
+    <text x="385" y="190" font-family="monospace" font-size="14" fill="#e06c75" text-anchor="middle" opacity="0.85">CONFIGURATION</text>
+    <rect x="250" y="210" width="270" height="18" rx="3" fill="#3a2222" opacity="0.9"/>
+    <rect x="250" y="238" width="230" height="18" rx="3" fill="#3a2222" opacity="0.8"/>
+    <rect x="250" y="266" width="250" height="18" rx="3" fill="#3a2222" opacity="0.7"/>
+    <rect x="250" y="294" width="200" height="18" rx="3" fill="#3a2222" opacity="0.6"/>
+    <rect x="250" y="322" width="240" height="18" rx="3" fill="#3a2222" opacity="0.5"/>
+    <text x="385" y="372" font-family="Arial, sans-serif" font-size="15" fill="#e06c75" text-anchor="middle" opacity="0.8">avant le premier ticket</text>
+  </g>
+
+  <g>
+    <rect x="650" y="150" width="330" height="250" rx="10" fill="#1a2a1a" stroke="#a6f079" stroke-width="1.5" opacity="0.85"/>
+    <text x="815" y="190" font-family="monospace" font-size="14" fill="#a6f079" text-anchor="middle" opacity="0.9">SINRA</text>
+    <text x="815" y="240" font-family="monospace" font-size="15" fill="#e0e8ff" text-anchor="middle">releases + cycles</text>
+    <text x="815" y="268" font-family="monospace" font-size="15" fill="#e0e8ff" text-anchor="middle">par défaut</text>
+    <rect x="700" y="300" width="230" height="44" rx="8" fill="#1f3020" stroke="#a6f079" stroke-width="1" opacity="0.8"/>
+    <text x="815" y="327" font-family="monospace" font-size="13" fill="#a6f079" text-anchor="middle">premier cycle en moins d'1h</text>
+  </g>
+
+  <text x="600" y="130" font-family="monospace" font-size="16" font-weight="bold" letter-spacing="3" text-anchor="middle" fill="#8b9cbf">GESTION DE PROJET</text>
+
+  <rect x="0" y="446" width="1200" height="184" fill="url(#band)"/>
+  <rect x="0" y="446" width="1200" height="2" fill="#a6f079" opacity="0.55"/>
+
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#e0e8ff">Alternative à Jira pour Petites Équipes</text>
+  <text x="600" y="548" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#c792e9">Comparatif 2026 : ce qu'il faut chercher, pas ce qu'on vous vend</text>
+
+  <text x="1150" y="614" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#a6f079" opacity="0.7">sinra.app</text>
+</svg>

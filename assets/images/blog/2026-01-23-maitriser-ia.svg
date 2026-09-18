@@ -1,0 +1,34 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f7fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="24" fill="#2d3748" text-anchor="middle" font-weight="bold">Maîtriser l'IA, Ne Pas Être Passif</text>
+
+  <!-- WRONG approach (top) -->
+  <rect x="50" y="70" width="700" height="100" rx="8" fill="#fed7d7" stroke="#e53e3e" stroke-width="2"/>
+  <text x="70" y="95" font-family="Arial, sans-serif" font-size="16" fill="#742a2a" font-weight="bold">❌ PASSIF (Mauvais)</text>
+  <text x="70" y="120" font-family="Arial, sans-serif" font-size="14" fill="#742a2a">"L'IA a dit qu'il faut refactoriser. Donc on refactorise."</text>
+  <text x="70" y="145" font-family="Arial, sans-serif" font-size="14" fill="#742a2a">"L'IA a généré ce code. On le met en prod."</text>
+
+  <!-- Arrow down -->
+  <path d="M 400 180 L 400 210" stroke="#2d3748" stroke-width="3" fill="none" marker-end="url(#arrowdown)"/>
+
+  <!-- RIGHT approach (bottom) -->
+  <rect x="50" y="220" width="700" height="140" rx="8" fill="#c6f6d5" stroke="#48bb78" stroke-width="3"/>
+  <text x="70" y="245" font-family="Arial, sans-serif" font-size="16" fill="#22543d" font-weight="bold">✓ ACTIF (Correct)</text>
+  <text x="70" y="270" font-family="Arial, sans-serif" font-size="14" fill="#22543d">"L'IA identifie qu'une refactorisation serait nécessaire."</text>
+  <text x="70" y="290" font-family="Arial, sans-serif" font-size="14" fill="#22543d">"→ J'analyse si c'est prioritaire. Peut-être qu'un MVP suffit."</text>
+  <text x="70" y="310" font-family="Arial, sans-serif" font-size="14" fill="#22543d">"L'IA a généré du code."</text>
+  <text x="70" y="330" font-family="Arial, sans-serif" font-size="14" fill="#22543d">"→ Je le révise, teste, et valide avant production."</text>
+
+  <defs>
+    <marker id="arrowdown" markerWidth="10" markerHeight="10" refX="3" refY="9" orient="auto">
+      <polygon points="0 0, 6 0, 3 10" fill="#2d3748" />
+    </marker>
+  </defs>
+
+  <!-- Bottom emphasis -->
+  <rect x="150" y="370" width="500" height="25" rx="6" fill="#667eea"/>
+  <text x="400" y="389" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Vous maîtrisez l'IA. L'IA ne vous maîtrise pas.</text>
+</svg>

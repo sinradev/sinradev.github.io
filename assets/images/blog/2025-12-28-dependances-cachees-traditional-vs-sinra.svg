@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Gestion Des Dépendances : Traditionnelle vs Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- TRADITIONAL (Jira) -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ Approche Traditionnelle
+    </text>
+
+    <!-- Issue without dependencies -->
+    <rect x="50" y="90" width="300" height="80" fill="white" stroke="#bdc3c7" stroke-width="2" rx="6"/>
+    <text x="70" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Issue: Export PDF
+    </text>
+    <text x="70" y="130" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#7f8c8d">
+      Status: In Progress
+    </text>
+    <text x="70" y="148" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#7f8c8d">
+      Assignee: Dev 1
+    </text>
+    <text x="70" y="165" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#e74c3c">
+      Dependencies: ❌ Non documentées
+    </text>
+
+    <!-- Hidden dependencies discovered late -->
+    <rect x="50" y="190" width="300" height="180" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="6"/>
+    <text x="200" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Dépendances (découvertes tard) :
+    </text>
+    <text x="60" y="235" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#e74c3c">
+      📅 Jour 3 : Besoin API backend
+    </text>
+    <text x="60" y="255" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#e74c3c">
+      📅 Jour 5 : Backend attend accès S3
+    </text>
+    <text x="60" y="275" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#e74c3c">
+      📅 Jour 10 : S3 attend approval CTO
+    </text>
+    <text x="60" y="295" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#e74c3c">
+      📅 Jour 17 : Approval reçu, déblocage
+    </text>
+
+    <text x="200" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      Résultat :
+    </text>
+    <text x="60" y="345" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#2c3e50">
+      • 17 jours total (dont 13j bloqués)
+    </text>
+    <text x="60" y="362" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#2c3e50">
+      • Frustration équipe
+    </text>
+
+    <!-- Problems -->
+    <rect x="50" y="385" width="300" height="30" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="4"/>
+    <text x="200" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ Dépendances invisibles • Découverte tard
+    </text>
+  </g>
+
+  <!-- SINRA APPROACH -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ Approche Sinra
+    </text>
+
+    <!-- Issue with explicit dependencies -->
+    <rect x="450" y="90" width="300" height="120" fill="white" stroke="#27ae60" stroke-width="3" rx="6"/>
+    <text x="470" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Issue: Export PDF
+    </text>
+    <text x="470" y="130" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#7f8c8d">
+      Status: To Do
+    </text>
+    <text x="470" y="148" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#27ae60">
+      Dependencies: ✅ Documentées
+    </text>
+    <text x="475" y="168" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      • Bloquée par [BACKEND-234] API
+    </text>
+    <text x="475" y="183" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      • Bloquée par [INFRA-567] S3
+    </text>
+    <text x="475" y="198" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      • Bloquée par [CTO] Approval
+    </text>
+
+    <!-- Dependency graph visible -->
+    <rect x="450" y="230" width="300" height="90" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="6"/>
+    <text x="600" y="250" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Vue graphique :
+    </text>
+    <text x="460" y="272" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#2c3e50">
+      [CTO] → [S3] → [API] → [Export PDF]
+    </text>
+    <text x="460" y="292" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="start" fill="#27ae60">
+      Chaîne complète visible dès le début
+    </text>
+    <text x="460" y="310" font-family="Arial, sans-serif" font-size="9" text-anchor="start" fill="#7f8c8d">
+      → Déblocage proactif possible
+    </text>
+
+    <!-- Proactive unblocking -->
+    <rect x="450" y="335" width="300" height="50" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="6"/>
+    <text x="600" y="355" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      Résultat :
+    </text>
+    <text x="460" y="372" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#2c3e50">
+      • 6 jours total (déblocage anticipé)
+    </text>
+
+    <!-- Benefits -->
+    <rect x="450" y="395" width="300" height="20" fill="#27ae60" opacity="0.9" stroke="#229954" stroke-width="2" rx="4"/>
+    <text x="600" y="409" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">
+      ✅ 11 jours économisés • Pas de blocage surprise
+    </text>
+  </g>
+</svg>

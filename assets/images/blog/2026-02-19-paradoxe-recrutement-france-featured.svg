@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2235"/>
+      <stop offset="100%" stop-color="#141824"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c792e9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6ecf00" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- ============ LEFT: Barrier funnel ============ -->
+
+  <!-- Funnel steps (left to right, narrowing) -->
+  <!-- Step 1 -->
+  <rect x="60" y="80" width="130" height="64" rx="6" fill="url(#barGrad)" opacity="0.95" filter="url(#glow)"/>
+  <text x="125" y="106" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="1" font-family="Arial, sans-serif" font-weight="700">INTERVIEW</text>
+  <text x="125" y="127" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="Arial, sans-serif">1</text>
+
+  <!-- Arrow -->
+  <polygon points="200,112 215,104 215,120" fill="#c792e9" opacity="0.6"/>
+
+  <!-- Step 2 -->
+  <rect x="220" y="95" width="130" height="58" rx="6" fill="url(#barGrad)" opacity="0.85"/>
+  <text x="285" y="119" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="1" font-family="Arial, sans-serif" font-weight="700">INTERVIEW</text>
+  <text x="285" y="140" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="Arial, sans-serif">2</text>
+
+  <!-- Arrow -->
+  <polygon points="358,124 373,116 373,132" fill="#c792e9" opacity="0.6"/>
+
+  <!-- Step 3 -->
+  <rect x="378" y="108" width="130" height="52" rx="6" fill="url(#barGrad)" opacity="0.75"/>
+  <text x="443" y="130" font-size="10" fill="#ffffff" text-anchor="middle" letter-spacing="1" font-family="Arial, sans-serif" font-weight="700">TECHNICAL</text>
+  <text x="443" y="149" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="Arial, sans-serif">TEST</text>
+
+  <!-- Arrow -->
+  <polygon points="516,134 531,126 531,142" fill="#c792e9" opacity="0.6"/>
+
+  <!-- Step 4 -->
+  <rect x="536" y="119" width="130" height="46" rx="6" fill="url(#barGrad)" opacity="0.65"/>
+  <text x="601" y="141" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="1" font-family="Arial, sans-serif" font-weight="700">INTERVIEW</text>
+  <text x="601" y="157" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="Arial, sans-serif">3 + 4</text>
+
+  <!-- Arrow -->
+  <polygon points="674,142 689,134 689,150" fill="#c792e9" opacity="0.6"/>
+
+  <!-- Step 5 -->
+  <rect x="694" y="128" width="130" height="40" rx="6" fill="url(#barGrad)" opacity="0.55"/>
+  <text x="759" y="148" font-size="10" fill="#ffffff" text-anchor="middle" letter-spacing="1" font-family="Arial, sans-serif" font-weight="700">REFERENCES</text>
+  <text x="759" y="162" font-size="12" fill="#e0c9ff" text-anchor="middle" font-family="Arial, sans-serif">CHECK</text>
+
+  <!-- Funnel outline -->
+  <path d="M 60 80 L 190 80 L 190 144 L 60 144 Z" fill="none" stroke="#c792e9" stroke-width="1" opacity="0.2"/>
+
+  <!-- Narrowing cone -->
+  <path d="M 60 155 Q 430 190 824 175" fill="none" stroke="#c792e9" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.3"/>
+  <path d="M 60 80 Q 430 100 824 128" fill="none" stroke="#c792e9" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.3"/>
+
+  <!-- ============ Divider ============ -->
+  <line x1="870" y1="50" x2="870" y2="560" stroke="#2d3050" stroke-width="2"/>
+
+  <!-- ============ RIGHT: Trial period safe zone ============ -->
+  <rect x="900" y="70" width="260" height="320" rx="16" fill="#a6f079" fill-opacity="0.05" stroke="#a6f079" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="8,5"/>
+
+  <!-- Shield icon -->
+  <path d="M 1030 110 L 1070 128 L 1070 168 Q 1070 196 1030 210 Q 990 196 990 168 L 990 128 Z" fill="#a6f079" fill-opacity="0.15" stroke="#a6f079" stroke-width="2" filter="url(#softglow)"/>
+  <path d="M 1010 162 L 1025 177 L 1055 147" stroke="#a6f079" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="1030" y="248" font-size="15" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" letter-spacing="2">TRIAL PERIOD</text>
+  <text x="1030" y="278" font-size="38" fill="#a6f079" text-anchor="middle" font-weight="900" font-family="Arial, sans-serif" filter="url(#glow)">8</text>
+  <text x="1030" y="302" font-size="14" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">MONTHS</text>
+  <text x="1030" y="322" font-size="11" fill="#6ecf00" text-anchor="middle" font-family="Arial, sans-serif" opacity="0.7">(4 + 4 renewable)</text>
+  <text x="1030" y="348" font-size="10" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif" opacity="0.6">No justification required</text>
+  <text x="1030" y="366" font-size="10" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif" opacity="0.6">Employer can stop anytime</text>
+
+  <!-- ============ Central question mark ============ -->
+  <text x="860" y="340" font-size="180" fill="#c792e9" text-anchor="middle" opacity="0.06" font-family="Georgia, serif" font-weight="900">?</text>
+
+  <!-- Big question -->
+  <text x="440" y="290" font-size="16" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">Why build so many barriers...</text>
+  <text x="440" y="318" font-size="16" fill="#8b9cbf" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">...when a safety net already exists?</text>
+
+  <!-- Rejected people (dots being filtered) -->
+  <g opacity="0.5">
+    <circle cx="140" cy="230" r="6" fill="#c792e9"/>
+    <circle cx="200" cy="250" r="6" fill="#c792e9"/>
+    <circle cx="270" cy="240" r="6" fill="#c792e9" opacity="0.7"/>
+    <circle cx="340" cy="255" r="6" fill="#c792e9" opacity="0.5"/>
+    <!-- X marks (rejected) -->
+    <line x1="155" y1="280" x2="167" y2="292" stroke="#ff6b9d" stroke-width="2"/>
+    <line x1="167" y1="280" x2="155" y2="292" stroke="#ff6b9d" stroke-width="2"/>
+    <line x1="215" y1="290" x2="227" y2="302" stroke="#ff6b9d" stroke-width="2"/>
+    <line x1="227" y1="290" x2="215" y2="302" stroke="#ff6b9d" stroke-width="2"/>
+    <line x1="285" y1="278" x2="297" y2="290" stroke="#ff6b9d" stroke-width="2" opacity="0.7"/>
+    <line x1="297" y1="278" x2="285" y2="290" stroke="#ff6b9d" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- One person making it through (green) -->
+  <circle cx="810" cy="240" r="8" fill="#a6f079" filter="url(#glow)"/>
+  <text x="810" y="268" font-size="10" fill="#a6f079" text-anchor="middle" font-family="Arial, sans-serif">1/50</text>
+
+  <!-- ============ Bottom title ============ -->
+  <rect x="0" y="480" width="1200" height="150" fill="#0d1018" opacity="0.5"/>
+  <text x="100" y="538" font-size="38" font-weight="900" fill="#ffffff" font-family="Arial, sans-serif" letter-spacing="-1">The Recruitment Paradox</text>
+  <text x="100" y="574" font-size="16" fill="#8b9cbf" font-family="Arial, sans-serif" letter-spacing="1">4 INTERVIEWS · 1 TEST · REFERENCES · ZERO TRUST</text>
+
+  <!-- Sinra brand line -->
+  <text x="1100" y="610" font-size="12" fill="#c792e9" text-anchor="end" font-family="Arial, sans-serif" opacity="0.6">sinra.app</text>
+</svg>

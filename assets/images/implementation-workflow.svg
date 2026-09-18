@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="600" y="40" font-size="24" font-weight="700" text-anchor="middle" fill="#1a1a1a">
+    Implementing Hybrid Methodology
+  </text>
+
+  <!-- Step 1: Define Boundaries -->
+  <g>
+    <rect x="50" y="80" width="280" height="200" rx="8" fill="rgba(33, 150, 243, 0.1)" stroke="#2196F3" stroke-width="2"/>
+
+    <!-- Step number -->
+    <circle cx="100" cy="110" r="25" fill="#2196F3"/>
+    <text x="100" y="120" font-size="16" font-weight="700" text-anchor="middle" fill="white">1</text>
+
+    <!-- Title -->
+    <text x="200" y="115" font-size="14" font-weight="700" fill="#1a1a1a">Define Boundaries</text>
+
+    <!-- Content -->
+    <text x="70" y="150" font-size="11" font-weight="600" fill="#1a1a1a">Heavy V-Model:</text>
+    <text x="75" y="168" font-size="10" fill="#555">• Security features</text>
+    <text x="75" y="183" font-size="10" fill="#555">• Compliance</text>
+
+    <text x="70" y="205" font-size="11" font-weight="600" fill="#1a1a1a">Heavy Agile:</text>
+    <text x="75" y="223" font-size="10" fill="#555">• UI/UX refinements</text>
+    <text x="75" y="238" font-size="10" fill="#555">• Experiments</text>
+
+    <text x="70" y="260" font-size="11" font-weight="600" fill="#1a1a1a">Hybrid Balance:</text>
+    <text x="75" y="278" font-size="10" fill="#555">• Feature development</text>
+  </g>
+
+  <!-- Step 2: Create Parallel Workflows -->
+  <g>
+    <rect x="460" y="80" width="280" height="200" rx="8" fill="rgba(255, 152, 0, 0.1)" stroke="#FF9800" stroke-width="2"/>
+
+    <!-- Step number -->
+    <circle cx="510" cy="110" r="25" fill="#FF9800"/>
+    <text x="510" y="120" font-size="16" font-weight="700" text-anchor="middle" fill="white">2</text>
+
+    <!-- Title -->
+    <text x="610" y="115" font-size="14" font-weight="700" fill="#1a1a1a">Create Workflows</text>
+
+    <!-- Content -->
+    <text x="480" y="150" font-size="11" font-weight="600" fill="#1a1a1a">Specification Track:</text>
+    <text x="485" y="168" font-size="10" fill="#555">• Write requirements</text>
+    <text x="485" y="183" font-size="10" fill="#555">• Plan dependencies</text>
+
+    <text x="480" y="205" font-size="11" font-weight="600" fill="#1a1a1a">Development Track:</text>
+    <text x="485" y="223" font-size="10" fill="#555">• Sprint-based</text>
+    <text x="485" y="238" font-size="10" fill="#555">• Continuous testing</text>
+
+    <text x="480" y="260" font-size="11" font-weight="600" fill="#1a1a1a">Merge Point:</text>
+    <text x="485" y="278" font-size="10" fill="#555">• Stage gates</text>
+  </g>
+
+  <!-- Step 3: Use Real-Time Visibility -->
+  <g>
+    <rect x="870" y="80" width="280" height="200" rx="8" fill="rgba(76, 175, 80, 0.1)" stroke="#4CAF50" stroke-width="2"/>
+
+    <!-- Step number -->
+    <circle cx="920" cy="110" r="25" fill="#4CAF50"/>
+    <text x="920" y="120" font-size="16" font-weight="700" text-anchor="middle" fill="white">3</text>
+
+    <!-- Title -->
+    <text x="1020" y="115" font-size="14" font-weight="700" fill="#1a1a1a">Real-Time Visibility</text>
+
+    <!-- Content -->
+    <text x="890" y="150" font-size="11" font-weight="600" fill="#1a1a1a">Monitor:</text>
+    <text x="895" y="168" font-size="10" fill="#555">• Specified vs. Building</text>
+    <text x="895" y="183" font-size="10" fill="#555">• Tested vs. Untested</text>
+
+    <text x="890" y="205" font-size="11" font-weight="600" fill="#1a1a1a">Track:</text>
+    <text x="895" y="223" font-size="10" fill="#555">• Capacity constraints</text>
+    <text x="895" y="238" font-size="10" fill="#555">• Dependency risks</text>
+
+    <text x="890" y="260" font-size="11" font-weight="600" fill="#1a1a1a">Measure:</text>
+    <text x="895" y="278" font-size="10" fill="#555">• Release readiness</text>
+  </g>
+
+  <!-- Key Metrics Section -->
+  <g>
+    <rect x="50" y="320" width="1100" height="240" rx="8" fill="rgba(33, 150, 243, 0.05)" stroke="#2196F3" stroke-width="2" stroke-dasharray="5,5"/>
+
+    <!-- Title -->
+    <text x="600" y="350" font-size="16" font-weight="700" text-anchor="middle" fill="#2196F3">
+      Key Metrics to Track
+    </text>
+
+    <!-- Metric 1: Quality -->
+    <g>
+      <rect x="70" y="370" width="140" height="80" rx="6" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+      <text x="140" y="390" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">Quality</text>
+
+      <text x="75" y="410" font-size="10" fill="#555">Test Coverage</text>
+      <text x="75" y="425" font-size="14" font-weight="700" fill="#2196F3">95%+</text>
+
+      <text x="75" y="440" font-size="10" fill="#555">vs. Pure Agile</text>
+      <text x="75" y="453" font-size="11" fill="#d32f2f">40%</text>
+    </g>
+
+    <!-- Metric 2: Speed -->
+    <g>
+      <rect x="280" y="370" width="140" height="80" rx="6" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+      <text x="350" y="390" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">Speed</text>
+
+      <text x="285" y="410" font-size="10" fill="#555">Feature Cycle</text>
+      <text x="285" y="425" font-size="14" font-weight="700" fill="#FF9800">3 months</text>
+
+      <text x="285" y="440" font-size="10" fill="#555">vs. Pure V-Model</text>
+      <text x="285" y="453" font-size="11" fill="#d32f2f">8+ months</text>
+    </g>
+
+    <!-- Metric 3: Reliability -->
+    <g>
+      <rect x="490" y="370" width="140" height="80" rx="6" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+      <text x="560" y="390" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">Reliability</text>
+
+      <text x="495" y="410" font-size="10" fill="#555">On-Time Delivery</text>
+      <text x="495" y="425" font-size="14" font-weight="700" fill="#4CAF50">100%</text>
+
+      <text x="495" y="440" font-size="10" fill="#555">Every Release</text>
+      <text x="495" y="453" font-size="11" fill="#555">Predictable</text>
+    </g>
+
+    <!-- Metric 4: Compliance -->
+    <g>
+      <rect x="700" y="370" width="140" height="80" rx="6" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+      <text x="770" y="390" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">Compliance</text>
+
+      <text x="705" y="410" font-size="10" fill="#555">Incidents</text>
+      <text x="705" y="425" font-size="14" font-weight="700" fill="#4CAF50">Zero</text>
+
+      <text x="705" y="440" font-size="10" fill="#555">Documentation</text>
+      <text x="705" y="453" font-size="11" fill="#4CAF50">100% Complete</text>
+    </g>
+
+    <!-- Metric 5: Flexibility -->
+    <g>
+      <rect x="910" y="370" width="140" height="80" rx="6" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+      <text x="980" y="390" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">Flexibility</text>
+
+      <text x="915" y="410" font-size="10" fill="#555">Change Absorption</text>
+      <text x="915" y="425" font-size="14" font-weight="700" fill="#2196F3">Adaptive</text>
+
+      <text x="915" y="440" font-size="10" fill="#555">Without Breaking</text>
+      <text x="915" y="453" font-size="11" fill="#555">Timeline</text>
+    </g>
+  </g>
+
+  <!-- Bottom message -->
+  <text x="600" y="580" font-size="13" text-anchor="middle" fill="#555" font-style="italic">
+    Hybrid methodology gives you the best of both worlds: Structure for certainty + Flexibility for adaptation
+  </text>
+</svg>

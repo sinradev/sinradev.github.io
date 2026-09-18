@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .workflow-title { font: bold 16px sans-serif; fill: #1a1a1a; }
+      .workflow-label { font: 13px sans-serif; fill: #4a5568; }
+      .workflow-arrow { stroke: #4299e1; stroke-width: 3; fill: none; marker-end: url(#arrow-blue); }
+    </style>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4299e1" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" style="font: bold 20px sans-serif; fill: #1a1a1a;">Complete Journey: Issue → Capability → Release</text>
+
+  <!-- Issues Level -->
+  <g>
+    <text x="150" y="80" text-anchor="middle" class="workflow-title">Individual Issues</text>
+
+    <rect x="50" y="95" width="200" height="100" rx="8" fill="#e6fffa" stroke="#38b2ac" stroke-width="2"/>
+    <text x="150" y="120" text-anchor="middle" style="font: bold 14px sans-serif; fill: #234e52;">12 Issues Created</text>
+    <text x="70" y="145" class="workflow-label">• 4 Backend issues</text>
+    <text x="70" y="165" class="workflow-label">• 4 Frontend issues</text>
+    <text x="70" y="185" class="workflow-label">• 4 Testing issues</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 150 205 L 150 240" class="workflow-arrow"/>
+  <text x="170" y="230" style="font: 12px sans-serif; fill: #4299e1;">Group into</text>
+
+  <!-- Capability Level -->
+  <g>
+    <text x="150" y="270" text-anchor="middle" class="workflow-title">Capability</text>
+
+    <rect x="50" y="285" width="200" height="100" rx="8" fill="#fef5e7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="150" y="310" text-anchor="middle" style="font: bold 14px sans-serif; fill: #744210;">2FA Capability</text>
+    <text x="70" y="335" class="workflow-label">Progress: 50%</text>
+    <text x="70" y="355" class="workflow-label">6 of 12 complete</text>
+    <text x="70" y="375" class="workflow-label">Test coverage: 65%</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 250 335 L 340 335" class="workflow-arrow"/>
+  <text x="280" y="325" style="font: 12px sans-serif; fill: #4299e1;">Assign to</text>
+
+  <!-- Release Level -->
+  <g>
+    <text x="550" y="270" text-anchor="middle" class="workflow-title">Release</text>
+
+    <rect x="350" y="285" width="400" height="100" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+    <text x="550" y="310" text-anchor="middle" style="font: bold 16px sans-serif; fill: #166534;">Release 2.3 (March 15, 2025)</text>
+    <text x="370" y="335" class="workflow-label">• Two-Factor Authentication (50%)</text>
+    <text x="370" y="355" class="workflow-label">• Password Reset Improvements (100%)</text>
+    <text x="370" y="375" class="workflow-label">• Login Page Bug Fixes (80%)</text>
+  </g>
+
+  <!-- Timeline -->
+  <g>
+    <text x="450" y="430" text-anchor="middle" class="workflow-title">Development Timeline</text>
+
+    <!-- Timeline bar -->
+    <line x1="100" y1="460" x2="800" y2="460" stroke="#cbd5e0" stroke-width="2"/>
+
+    <!-- Week 1-2 -->
+    <circle cx="150" cy="460" r="6" fill="#4299e1"/>
+    <text x="150" y="485" text-anchor="middle" style="font: 11px sans-serif; fill: #4a5568;">Week 1-2</text>
+    <text x="150" y="500" text-anchor="middle" style="font: 11px sans-serif; fill: #718096;">Planning</text>
+
+    <!-- Week 3-4 -->
+    <circle cx="350" cy="460" r="6" fill="#4299e1"/>
+    <text x="350" y="485" text-anchor="middle" style="font: 11px sans-serif; fill: #4a5568;">Week 3-4</text>
+    <text x="350" y="500" text-anchor="middle" style="font: 11px sans-serif; fill: #718096;">Development</text>
+
+    <!-- Week 5 -->
+    <circle cx="550" cy="460" r="6" fill="#4299e1"/>
+    <text x="550" y="485" text-anchor="middle" style="font: 11px sans-serif; fill: #4a5568;">Week 5</text>
+    <text x="550" y="500" text-anchor="middle" style="font: 11px sans-serif; fill: #718096;">Testing</text>
+
+    <!-- Week 6 -->
+    <circle cx="750" cy="460" r="6" fill="#22c55e"/>
+    <text x="750" y="485" text-anchor="middle" style="font: 11px sans-serif; fill: #4a5568;">Week 6</text>
+    <text x="750" y="500" text-anchor="middle" style="font: bold 11px sans-serif; fill: #22c55e;">Deploy</text>
+  </g>
+</svg>

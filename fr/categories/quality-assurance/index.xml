@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quality Assurance on Sinra</title><link>https://sinra.dev/fr/categories/quality-assurance/</link><description>Recent content in Quality Assurance on Sinra</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Tue, 14 Jul 2026 09:00:00 +0200</lastBuildDate><atom:link href="https://sinra.dev/fr/categories/quality-assurance/index.xml" rel="self" type="application/rss+xml"/><item><title>Être QA en 2026 : le poste qui consiste à porter la responsabilité de ce qui a échappé à tout le monde</title><link>https://sinra.dev/fr/blog/posts/2026-07-14-qa-2026-sacrifice-equipe/</link><pubDate>Tue, 14 Jul 2026 09:00:00 +0200</pubDate><guid>https://sinra.dev/fr/blog/posts/2026-07-14-qa-2026-sacrifice-equipe/</guid><description>&lt;p&gt;La qualité est souvent perçue comme la dernière étape avant la mise en production : on développe, puis on teste, puis on livre. Cette vision linéaire est dépassée, et elle explique en grande partie pourquoi tant d&amp;rsquo;organisations continuent de livrer des régressions évitables. En 2026, avec des cycles de livraison de plus en plus courts, le rôle de QA s&amp;rsquo;est déplacé vers l&amp;rsquo;amont : moins de validation en bout de chaîne, plus d&amp;rsquo;influence sur la façon dont le produit est conçu et développé.&lt;/p&gt;</description></item><item><title>QA en Temps Réel : Tester Chaque Feature Dès Qu'Elle Est Développée</title><link>https://sinra.dev/fr/blog/posts/2026-05-12-qa-real-time-feature-par-feature/</link><pubDate>Tue, 12 May 2026 09:00:00 +0100</pubDate><guid>https://sinra.dev/fr/blog/posts/2026-05-12-qa-real-time-feature-par-feature/</guid><description>&lt;h2 id="quest-ce-que-la-qa-et-pourquoi-ça-existe-"&gt;Qu&amp;rsquo;est-ce que la QA, et Pourquoi Ça Existe ?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;QA&lt;/strong&gt; signifie Quality Assurance : assurance qualité. C&amp;rsquo;est le processus qui vérifie qu&amp;rsquo;un logiciel fait ce qu&amp;rsquo;il est censé faire, sans planter, sans produire de résultats incorrects, et sans comportements inattendus.&lt;/p&gt;
+&lt;p&gt;En pratique, la QA est exercée par une personne (ou une équipe) dont le rôle est de &lt;strong&gt;tester le logiciel du point de vue de l&amp;rsquo;utilisateur&lt;/strong&gt;. Elle ne lit pas le code : elle utilise l&amp;rsquo;application. Elle clique, remplit des formulaires, déclenche des actions, provoque des cas limites, et observe si le résultat correspond à ce qui était attendu.&lt;/p&gt;</description></item><item><title>Le QA Invisible : Quand Les Tests Sont Dispersés Entre Jira, Excel Et La Mémoire de QA</title><link>https://sinra.dev/fr/blog/posts/2025-12-22-qa-invisible-tests-disperses/</link><pubDate>Mon, 22 Dec 2025 09:00:00 +0100</pubDate><guid>https://sinra.dev/fr/blog/posts/2025-12-22-qa-invisible-tests-disperses/</guid><description>&lt;h2 id="le-vendredi-avant-la-release"&gt;Le Vendredi Avant La Release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Vendredi 15h00. Release prévue lundi matin.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Le CTO entre dans le bureau QA :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;« Marie, on est bons pour livrer lundi ? Tous les tests sont passés ? »&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Marie (QA Lead) ouvre son laptop :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Étape 1 :&lt;/strong&gt; Ouvrir Excel&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fichier : &lt;code&gt;Test_Cases_Release_v2.3_FINAL_v4.xlsx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;87 test cases listés&lt;/li&gt;
+&lt;li&gt;Colonnes : ID, Description, Priorité, Statut (Passed/Failed/Not Run)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Étape 2 :&lt;/strong&gt; Compter manuellement&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;62 tests marqués « Passed »&lt;/li&gt;
+&lt;li&gt;18 tests marqués « Not Run »&lt;/li&gt;
+&lt;li&gt;7 tests marqués « Failed »&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Étape 3 :&lt;/strong&gt; Vérifier Jira&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,186 @@
+<!doctype html><html lang=es><head><meta name=x-deploy-check content="sinra-2026-09-17-a4f7c2"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=theme-color content="#1a1a2e"><meta http-equiv=Content-Security-Policy content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'self'; form-action 'self' https://app.sinra.dev; base-uri 'self'; object-src 'none'"><meta name=referrer content="strict-origin-when-cross-origin"><link rel=icon type=image/svg+xml href="/assets/images/favicon/favicon.svg?v=3"><link rel=icon type=image/png href="/assets/images/favicon/favicon-96x96.png?v=3" sizes=96x96><link rel=apple-touch-icon href="/assets/images/favicon/apple-touch-icon.png?v=3"><link rel=manifest href=/assets/images/favicon/site.webmanifest><title>Monolito Modular: La Arquitectura Que Todo el Mundo Redescubre | Sinra</title><link rel=canonical href=https://sinra.dev/es/blog/posts/2026-05-16-modular-monolith-vertical-slice/><meta name=description content="El monolito modular con Vertical Slice Architecture no es una novedad - es un redescubrimiento. Historia, principios, ejemplos de estructura y por qué Sinra eligió este enfoque para construir un producto mantenible."><meta name=robots content="index, follow"><link rel=alternate hreflang=en href=https://sinra.dev/blog/posts/2026-05-16-modular-monolith-vertical-slice/><link rel=alternate hreflang=x-default href=https://sinra.dev/blog/posts/2026-05-16-modular-monolith-vertical-slice/><link rel=alternate hreflang=fr href=https://sinra.dev/fr/blog/posts/2026-05-16-modular-monolith-vertical-slice/><link rel=alternate hreflang=es href=https://sinra.dev/es/blog/posts/2026-05-16-modular-monolith-vertical-slice/><meta property="og:type" content="article"><meta property="og:title" content="Monolito Modular: La Arquitectura Que Todo el Mundo Redescubre"><meta property="og:description" content="El monolito modular con Vertical Slice Architecture no es una novedad - es un redescubrimiento. Historia, principios, ejemplos de estructura y por qué Sinra eligió este enfoque para construir un producto mantenible."><meta property="og:url" content="https://sinra.dev/es/blog/posts/2026-05-16-modular-monolith-vertical-slice/"><meta property="og:site_name" content="Sinra"><meta property="og:locale" content="es_ES"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:image" content="https://sinra.dev/assets/images/blog/2026-05-16-modular-monolith-featured.png"><meta property="article:published_time" content="2026-05-16T10:00:00+01:00"><meta property="article:author" content="Sinra"><meta property="article:section" content="Engineering"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Monolito Modular: La Arquitectura Que Todo el Mundo Redescubre"><meta name=twitter:description content="El monolito modular con Vertical Slice Architecture no es una novedad - es un redescubrimiento. Historia, principios, ejemplos de estructura y por qué Sinra eligió este enfoque para construir un producto mantenible."><meta name=twitter:image content="https://sinra.dev/assets/images/blog/2026-05-16-modular-monolith-featured.png"><meta name=twitter:site content="@sinra_app"><script type=application/ld+json>{"@context":"https://schema.org","@type":"SoftwareApplication","applicationCategory":"BusinessApplication","name":"Sinra","operatingSystem":"Web","url":"https://sinra.dev/"}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","logo":"https://sinra.dev/assets/images/sinra-logo.svg","name":"Sinra","sameAs":["https://github.com/sinra-app"],"url":"https://sinra.dev/"}</script><link rel=preload href=https://sinra.dev/css/main.min.cb7a715134ac1663f2cc232613ca13988eeeef792897f97e9f856b6fe3140840.css as=style><link rel=stylesheet href=https://sinra.dev/css/main.min.cb7a715134ac1663f2cc232613ca13988eeeef792897f97e9f856b6fe3140840.css integrity="sha256-y3pxUTSsFmPyzCMmE8oTmI7u73kol/l+n4Vrb+MUCEA=" crossorigin=anonymous></head><body class="min-h-screen flex flex-col bg-base-100"><header class="sticky top-0 z-20 border-b border-line" style="background:color-mix(in oklab,var(--color-base-100) 82%,transparent);backdrop-filter:blur(12px)"><div class="container mx-auto px-6 max-w-6xl flex items-center gap-8 h-16"><div class="dropdown lg:hidden" id=nav-dropdown><button tabindex=0 role=button class="btn btn-ghost btn-sm" aria-label="Alternar menú de navegación">
+<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"/></svg></button><ul tabindex=0 class="dropdown-content menu bg-base-100 rounded-box z-[1] w-56 p-2 shadow border border-line"><li><a href=/es/#method>Método</a></li><li><a href=/es/#regulated>Equipos regulados</a></li><li><a href=/es/pricing/>Precios</a></li><li><a href=/es/docs/>Documentación</a></li><li><a href=/es/blog/>Blog</a></li><li><a href=https://app.sinra.dev/users/sign_in target=_blank rel="noopener noreferrer">Iniciar sesión</a></li><li><a href=https://app.sinra.dev/users/sign_up class="btn btn-primary btn-sm" target=_blank rel="noopener noreferrer">Registrarse</a></li></ul></div><a href=/es/ class="flex items-center gap-2 text-xl font-display font-black tracking-tight" aria-label="sinra home"><img src=/assets/images/sinra-logo.svg alt width=24 height=24>
+sinra</a><ul class="hidden lg:flex items-center gap-6 ml-auto text-sm font-semibold list-none p-0"><li><a href=/es/#method class="no-underline text-base-content/80 hover:text-base-content">Método</a></li><li><a href=/es/#regulated class="no-underline text-base-content/80 hover:text-base-content">Equipos regulados</a></li><li><a href=/es/pricing/ class="no-underline text-base-content/80 hover:text-base-content">Precios</a></li><li><a href=/es/docs/ class="no-underline text-base-content/80 hover:text-base-content">Documentación</a></li><li><a href=/es/blog/ class="no-underline text-base-content/80 hover:text-base-content">Blog</a></li><li><a href=https://app.sinra.dev/users/sign_in class="no-underline font-bold" target=_blank rel="noopener noreferrer">Iniciar sesión</a></li></ul><div class="hidden lg:flex items-center gap-3"><a href=https://app.sinra.dev/users/sign_up class="btn btn-primary btn-sm" target=_blank rel="noopener noreferrer">Registrarse</a></div><div class="dropdown dropdown-end"><button tabindex=0 role=button class="btn btn-ghost btn-sm">
+ES
+<svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button><ul tabindex=0 class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow border border-line"><li><a href=https://sinra.dev/blog/posts/2026-05-16-modular-monolith-vertical-slice/>EN</a></li><li><a href=https://sinra.dev/fr/blog/posts/2026-05-16-modular-monolith-vertical-slice/>FR</a></li><li><a href=https://sinra.dev/es/blog/posts/2026-05-16-modular-monolith-vertical-slice/ class=active>ES</a></li></ul></div></div></header><main class=flex-1><article class=blog-post><div class="featured-image w-full max-h-96 overflow-hidden"><img src=/assets/images/blog/2026-05-16-modular-monolith-featured.png alt="Monolito Modular: La Arquitectura Que Todo el Mundo Redescubre" class="w-full object-cover max-h-96" width=1200 height=630></div><div class="container mx-auto px-6 max-w-4xl py-12"><div class=mb-4><a href=/es/categories/engineering/ class="badge badge-primary badge-outline">Engineering</a></div><h1 class="text-4xl md:text-5xl font-bold mb-4">Monolito Modular: La Arquitectura Que Todo el Mundo Redescubre</h1><p class="text-xl text-base-content/80 mb-6">Vertical Slice, domain-first, package by feature - cómo una idea antigua se convirtió en la respuesta moderna a la complejidad de los microservicios.</p><div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60 mb-10 pb-8 border-b border-base-300"><time datetime=2026-05-16>May 16, 2026</time>
+<span>Por el Equipo de Sinra</span></div><div class="prose prose-invert prose-lg max-w-none text-base-content"><h2 id=el-regreso-del-monolito-intencional>El Regreso del Monolito Intencional</h2><p>Hace algunos años, decir «construimos un monolito» en una conferencia técnica equivalía a admitir una derrota. El monolito era sinónimo de código legacy, deuda técnica acumulada, sistemas imposibles de mantener.</p><p>Hoy, algo ha cambiado.</p><p>Equipos en Shopify, Stack Overflow, Basecamp y GitHub hablan abiertamente de sus monolitos bien construidos. Ingenieros reconocidos publican artículos sobre los límites de los microservicios. Y una arquitectura particular emerge como alternativa seria:</p><p><strong>El Monolito Modular con Vertical Slice Architecture.</strong></p><p>Esto no es una regresión. Es una evolución.</p><hr><h2 id=historia-una-idea-con-varias-vidas>Historia: Una Idea Con Varias Vidas</h2><h3 id=los-años-2000-el-monolito-sin-estructura>Los Años 2000: El Monolito Sin Estructura</h3><p>Los primeros frameworks web - Rails, Django, Spring MVC - impusieron una organización <strong>horizontal</strong>: todas las vistas juntas, todos los modelos juntos, todos los controladores juntos.</p><pre tabindex=0><code>app/
+  controllers/   &lt;- toutes les routes
+  models/        &lt;- tous les modèles
+  views/         &lt;- tous les templates
+  services/      &lt;- toute la logique
+</code></pre><p>Esto funciona bien hasta unos 20-30 modelos. A partir de ahí, la navegación se convierte en una pesadilla. Un cambio en <code>UserService</code> rompe <code>OrderService</code>. Las dependencias circulares proliferan. Los nuevos desarrolladores no saben por dónde empezar.</p><h3 id=2010-2018-la-huida-hacia-los-microservicios>2010-2018: La Huida Hacia los Microservicios</h3><p>Ante esta complejidad, la industria tomó una decisión radical: <strong>distribuir el problema</strong>.</p><p>Si un monolito se vuelve inmanejable, dividámoslo en servicios independientes. Cada servicio gestiona su propio dominio, su propia base de datos, su propio despliegue.</p><p>¿El problema? La complejidad no desaparece - se desplaza hacia la infraestructura.</p><ul><li>¿Cómo se comunican los servicios? (¿REST? ¿gRPC? ¿eventos?)</li><li>¿Cómo gestionar las transacciones distribuidas?</li><li>¿Cómo depurar una solicitud que atraviesa 12 servicios?</li><li>¿Cómo mantener la coherencia de los datos entre servicios?</li></ul><p>Para los equipos de Netflix, Uber o Amazon, este coste está justificado. Para el resto, suele ser un sobrecoste injustificado.</p><h3 id=2014-jimmy-bogard-y-la-vertical-slice-architecture>2014: Jimmy Bogard y la Vertical Slice Architecture</h3><p>En 2014, <strong>Jimmy Bogard</strong> - creador de AutoMapper y MediatR - formuló lo que observaba en las bases de código que auditaba:</p><blockquote><p>«La organización habitual por capas (Controller → Service → Repository) crea acoplamientos artificiales entre features que no tienen nada que ver entre sí.»</p></blockquote><p>Su propuesta: organizar el código <strong>verticalmente por feature</strong>, no horizontalmente por capa técnica.</p><p>Cada feature contiene todo lo que necesita: su solicitud, su validación, su handler, su acceso a los datos, su respuesta.</p><pre tabindex=0><code>features/
+  CreateOrder/
+    CreateOrderCommand.cs
+    CreateOrderValidator.cs
+    CreateOrderHandler.cs
+    CreateOrderResponse.cs
+  CancelOrder/
+    CancelOrderCommand.cs
+    CancelOrderHandler.cs
+</code></pre><p>Esta es la <strong>Vertical Slice Architecture</strong> - o VSA. Una feature = una rebanada vertical a través de todas las capas.</p><h3 id=2015-2020-domain-driven-design-se-vuelve-mainstream>2015-2020: Domain-Driven Design Se Vuelve Mainstream</h3><p>En paralelo, <strong>Domain-Driven Design</strong> (DDD) de Eric Evans - publicado en 2003 pero durante mucho tiempo reservado a la élite - se volvió más accesible gracias a los trabajos de Vaughn Vernon, Greg Young y Scott Millet.</p><p>El concepto central: organizar el código alrededor de los <strong>Bounded Contexts</strong> - fronteras explícitas entre dominios de negocio.</p><p>Un sistema de e-commerce no piensa en «usuario» de la misma forma en el contexto de los pedidos, la facturación y el soporte. Son tres contextos distintos, con sus propias reglas, sus propios vocabularios, sus propios modelos.</p><p>La idea <strong>domain-first</strong> (o <strong>package by feature</strong>) se desprende de forma natural:</p><pre tabindex=0><code>src/
+  ordering/      &lt;- tout ce qui concerne les commandes
+  billing/       &lt;- tout ce qui concerne la facturation
+  inventory/     &lt;- tout ce qui concerne le stock
+  users/         &lt;- tout ce qui concerne les utilisateurs
+</code></pre><h3 id=2020-2025-la-síntesis---monolito-modular>2020-2025: La Síntesis - Monolito Modular</h3><p>La síntesis de estas ideas da lugar al <strong>Monolito Modular</strong>:</p><ul><li>Un único despliegue (monolito)</li><li>Módulos altamente cohesivos y débilmente acoplados (como microservicios, pero en el mismo proceso)</li><li>Fronteras explícitas entre dominios (DDD Bounded Contexts)</li><li>Organización por feature o slice (Vertical Slice Architecture)</li></ul><p>Kijana Woodard, Sam Newman, Mauro Servienti y numerosos arquitectos comenzaron a documentar y popularizar este patrón bajo este nombre.</p><hr><h2 id=quién-usa-esta-arquitectura>¿Quién Usa Esta Arquitectura?</h2><h3 id=shopify>Shopify</h3><p>Shopify es el ejemplo canónico. Su monolito Rails gestiona miles de millones de transacciones. En lugar de migrar hacia microservicios, invirtieron en la <strong>modularización</strong> de su monolito: módulos con interfaces explícitas, dependencias declaradas, fronteras respetadas.</p><p>Su herramienta interna <strong>Packwerk</strong> impone estas fronteras en la compilación - un módulo no puede llamar directamente a las clases de otro sin pasar por su API pública.</p><h3 id=stack-overflow>Stack Overflow</h3><p>Uno de los sitios más consultados del mundo funciona con unos pocos servidores y un monolito .NET. Su enfoque es explícitamente <strong>modular</strong>: proyectos .NET separados por dominio, interfaces claras, disciplina interna estricta.</p><h3 id=basecamp--hey>Basecamp / Hey</h3><p>DHH (David Heinemeier Hansson) y el equipo de Basecamp defienden activamente el monolito modular desde hace años. Basecamp y Hey, dos productos distintos, funcionan sobre monolitos Rails organizados por dominio de negocio.</p><h3 id=github-antes-de-la-migración-parcial>GitHub (antes de la migración parcial)</h3><p>GitHub funcionó durante mucho tiempo sobre un monolito Rails. Cuando migraron ciertas partes hacia servicios, fueron explícitos sobre las razones: problemas de escalabilidad muy específicos, no una decisión ideológica.</p><h3 id=equipos-net-y-java-enterprise>Equipos .NET y Java Enterprise</h3><p>En el ecosistema .NET, el patrón está muy extendido gracias a frameworks como <strong>MediatR</strong> (CQRS + VSA), <strong>Ardalis.Modulith</strong> y los componentes <strong>Aspire</strong> de Microsoft.</p><p>En Java, <strong>Spring Modulith</strong> (oficialmente soportado por Spring desde 2023) proporciona las herramientas para construir y verificar la modularidad de una aplicación Spring Boot.</p><hr><h2 id=estructura-concreta-cómo-se-ve>Estructura Concreta: Cómo Se Ve</h2><h3 id=enfoque-1-package-by-feature-la-base>Enfoque 1: Package by Feature (la base)</h3><p>El mínimo viable del monolito modular: organizar por dominio, no por capa técnica.</p><p><strong>Antes (organización horizontal):</strong></p><pre tabindex=0><code>src/
+  controllers/
+    UserController.ts
+    OrderController.ts
+    ProductController.ts
+  services/
+    UserService.ts
+    OrderService.ts
+    ProductService.ts
+  repositories/
+    UserRepository.ts
+    OrderRepository.ts
+    ProductRepository.ts
+  models/
+    User.ts
+    Order.ts
+    Product.ts
+</code></pre><p><strong>Después (organización vertical):</strong></p><pre tabindex=0><code>src/
+  users/
+    UserController.ts
+    UserService.ts
+    UserRepository.ts
+    User.ts
+    index.ts          &lt;- API publique du module
+  orders/
+    OrderController.ts
+    OrderService.ts
+    OrderRepository.ts
+    Order.ts
+    index.ts
+  products/
+    ProductController.ts
+    ProductService.ts
+    ProductRepository.ts
+    Product.ts
+    index.ts
+</code></pre><h3 id=enfoque-2-vertical-slice-architecture-vsa>Enfoque 2: Vertical Slice Architecture (VSA)</h3><p>Llevado más lejos, cada <strong>feature</strong> es una unidad autónoma.</p><pre tabindex=0><code>src/
+  orders/
+    create-order/
+      CreateOrderRequest.ts
+      CreateOrderValidator.ts
+      CreateOrderHandler.ts
+      CreateOrderResponse.ts
+    cancel-order/
+      CancelOrderRequest.ts
+      CancelOrderHandler.ts
+    get-order/
+      GetOrderQuery.ts
+      GetOrderHandler.ts
+      GetOrderResponse.ts
+    shared/
+      Order.ts              &lt;- modèle partagé dans le module
+      OrderRepository.ts
+</code></pre><p>Cada slice es independiente. Modificar «cancelar un pedido» no puede romper «crear un pedido» - solo comparten el modelo de dominio.</p><h3 id=enfoque-3-monolito-modular-con-fronteras-explícitas>Enfoque 3: Monolito Modular con Fronteras Explícitas</h3><p>El siguiente nivel: módulos como «mini-aplicaciones» con sus propias interfaces.</p><pre tabindex=0><code>src/
+  modules/
+    ordering/
+      api/              &lt;- ce que les autres modules peuvent utiliser
+        IOrderingModule.ts
+        OrderDto.ts
+      internal/         &lt;- implémentation privée
+        domain/
+          Order.ts
+          OrderItem.ts
+        application/
+          CreateOrderUseCase.ts
+          CancelOrderUseCase.ts
+        infrastructure/
+          OrderRepository.ts
+          OrderMapper.ts
+      OrderingModule.ts  &lt;- registre et bootstrap du module
+    billing/
+      api/
+        IBillingModule.ts
+        InvoiceDto.ts
+      internal/
+        ...
+      BillingModule.ts
+    inventory/
+      api/
+        IInventoryModule.ts
+      internal/
+        ...
+      InventoryModule.ts
+  app.ts                &lt;- assemble les modules
+</code></pre><p><strong>La regla fundamental:</strong> un módulo nunca puede importar directamente desde <code>internal/</code> de otro módulo. Solo accede a través de <code>api/</code>.</p><h3 id=ejemplo-en-python-django-modular>Ejemplo en Python (Django Modular)</h3><pre tabindex=0><code>myapp/
+  core/             &lt;- infrastructure partagée
+  ordering/
+    __init__.py     &lt;- expose l&#39;API publique
+    models.py
+    views.py
+    urls.py
+    services.py
+    tests.py
+  billing/
+    __init__.py
+    models.py
+    views.py
+    urls.py
+    services.py
+    tests.py
+  inventory/
+    __init__.py
+    models.py
+    views.py
+    urls.py
+    services.py
+    tests.py
+</code></pre><h3 id=ejemplo-en-java-spring-modulith>Ejemplo en Java (Spring Modulith)</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>// Spring Modulith impose la structure de packages</span>
+</span></span><span style=display:flex><span>com.<span style=color:#a6e22e>example</span>.<span style=color:#a6e22e>shop</span><span style=color:#f92672>/</span>
+</span></span><span style=display:flex><span>  ordering<span style=color:#f92672>/</span>          <span style=color:#f92672>&lt;-</span> module Ordering
+</span></span><span style=display:flex><span>    OrderingModule.<span style=color:#a6e22e>java</span>
+</span></span><span style=display:flex><span>    Order.<span style=color:#a6e22e>java</span>
+</span></span><span style=display:flex><span>    OrderService.<span style=color:#a6e22e>java</span>
+</span></span><span style=display:flex><span>    internal<span style=color:#f92672>/</span>
+</span></span><span style=display:flex><span>      OrderRepository.<span style=color:#a6e22e>java</span>   <span style=color:#f92672>&lt;-</span> inaccessible aux autres modules
+</span></span><span style=display:flex><span>  billing<span style=color:#f92672>/</span>           <span style=color:#f92672>&lt;-</span> module Billing
+</span></span><span style=display:flex><span>    BillingModule.<span style=color:#a6e22e>java</span>
+</span></span><span style=display:flex><span>    Invoice.<span style=color:#a6e22e>java</span>
+</span></span><span style=display:flex><span>    BillingService.<span style=color:#a6e22e>java</span>
+</span></span><span style=display:flex><span>    internal<span style=color:#f92672>/</span>
+</span></span><span style=display:flex><span>      InvoiceRepository.<span style=color:#a6e22e>java</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>// Spring Modulith vérifie les dépendances à la compilation</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@ApplicationModuleTest</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>OrderingModuleTests</span> {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Si Billing accède à OrderRepository (internal), le test échoue</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><hr><h2 id=los-principios-clave>Los Principios Clave</h2><h3 id=1-alta-cohesión-bajo-acoplamiento>1. Alta Cohesión, Bajo Acoplamiento</h3><p>Lo que cambia junto debe estar junto. La página de creación de un pedido, la lógica de validación, el acceso a los datos y la respuesta HTTP forman una unidad cohesiva. Separarlos en distintas capas crea un acoplamiento artificial.</p><h3 id=2-fronteras-explícitas>2. Fronteras Explícitas</h3><p>Cada módulo expone una <strong>API pública</strong> y oculta su implementación. Los demás módulos solo acceden a esta API. Es la misma regla que entre microservicios - pero sin la red.</p><h3 id=3-autonomía-de-las-features>3. Autonomía de las Features</h3><p>Una feature debe poder entenderse, modificarse y probarse sin tocar otras features. Si cambiar «cancelar un pedido» requiere entender «crear un pedido», la separación es incorrecta.</p><h3 id=4-comunicación-por-eventos-entre-módulos>4. Comunicación por Eventos Entre Módulos</h3><p>Cuando un módulo necesita informar a otro de un evento, publica un evento de dominio - no lo llama directamente.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#75715e>// Ordering publie un événement
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>eventBus</span>.<span style=color:#a6e22e>publish</span>(<span style=color:#66d9ef>new</span> <span style=color:#a6e22e>OrderCreatedEvent</span>(<span style=color:#a6e22e>orderId</span>, <span style=color:#a6e22e>customerId</span>, <span style=color:#a6e22e>total</span>));
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Billing s&#39;abonne à cet événement
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>eventBus</span>.<span style=color:#a6e22e>subscribe</span>(<span style=color:#a6e22e>OrderCreatedEvent</span>, (<span style=color:#a6e22e>event</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>billingService</span>.<span style=color:#a6e22e>createInvoice</span>(<span style=color:#a6e22e>event</span>.<span style=color:#a6e22e>orderId</span>, <span style=color:#a6e22e>event</span>.<span style=color:#a6e22e>total</span>);
+</span></span><span style=display:flex><span>});
+</span></span></code></pre></div><p>Los módulos permanecen desacoplados. Si Billing no existe, Ordering funciona igualmente.</p><hr><h2 id=monolito-modular-vs-microservicios-la-comparación-real>Monolito Modular vs Microservicios: La Comparación Real</h2><table><thead><tr><th>Aspecto</th><th>Monolito tradicional</th><th>Monolito Modular</th><th>Microservicios</th></tr></thead><tbody><tr><td>Despliegue</td><td>1 unidad</td><td>1 unidad</td><td>N unidades</td></tr><tr><td>Complejidad operacional</td><td>Baja</td><td>Baja</td><td>Alta</td></tr><tr><td>Fronteras de módulos</td><td>Informales</td><td>Explícitas y verificadas</td><td>Red + API</td></tr><tr><td>Transacción ACID</td><td>Nativa</td><td>Nativa</td><td>Patrón Saga requerido</td></tr><tr><td>Depuración</td><td>Simple</td><td>Simple</td><td>Distribuida, compleja</td></tr><tr><td>Escalabilidad</td><td>Todo o nada</td><td>Todo o nada</td><td>Independiente por servicio</td></tr><tr><td>Migración a microservicios</td><td>Difícil</td><td>Natural</td><td>Ya distribuido</td></tr></tbody></table><p>El monolito modular ocupa una posición estratégica: ofrece los beneficios de separación de los microservicios (aislamiento, cohesión, fronteras) sin el coste operacional.</p><p>¿Y si mañana un módulo necesita extraerse como servicio independiente? Las fronteras ya están definidas. La migración es una operación quirúrgica, no una reescritura.</p><hr><h2 id=sinra-y-el-monolito-modular>Sinra y el Monolito Modular</h2><p>En Sinra, esta arquitectura no es teórica - es el fundamento de nuestra base de código.</p><p>Sinra es una herramienta de gestión de proyectos. Gestiona <strong>issues</strong>, <strong>capabilities</strong>, <strong>releases</strong>, <strong>cycles</strong>, <strong>projects</strong>, <strong>teams</strong>, <strong>testings</strong>, <strong>pages</strong>. Cada uno de estos es un dominio distinto, con sus propias reglas de negocio, sus propios flujos de trabajo, sus propias representaciones.</p><h3 id=por-qué-el-monolito-modular-era-la-elección-correcta>Por Qué el Monolito Modular Era la Elección Correcta</h3><p><strong>Nuestros dominios tienen ciclos de vida diferentes.</strong> La lógica de creación de una release es independiente de la lógica de gestión de los cycles. Un cambio en los testings no debería impactar los issues.</p><p><strong>Nuestro equipo tiene un tamaño razonable.</strong> Los microservicios optimizan para equipos de 50+ desarrolladores que necesitan desplegar de forma independiente. A nuestro tamaño, esa complejidad sería un overhead puro.</p><p><strong>Nuestras transacciones son frecuentemente cross-dominio.</strong> Cerrar un cycle implica actualizar los issues no terminados, notificar las capabilities impactadas y actualizar la release asociada. Con microservicios, cada operación de este tipo se convertiría en un Saga distribuido. Con un monolito modular, es una simple transacción ACID.</p><p><strong>La trazabilidad está en el núcleo del producto.</strong> Sinra permite ver el estado exacto de un proyecto en cualquier momento. La depuración de un estado inconsistente es incomparablemente más simple cuando todo ocurre en el mismo proceso.</p><h3 id=nuestra-organización>Nuestra Organización</h3><pre tabindex=0><code>app/
+  domains/
+    project_management/   &lt;- issues, capabilities, cycles, releases
+      issues/             &lt;- décorateurs, extensions de collection
+      capabilities/       &lt;- services d&#39;assignation, queries
+      cycles/             &lt;- value objects, queries
+      releases/           &lt;- calculateurs de capacité, value objects
+    table_filtering/      &lt;- commandes, queries, stratégies, opérateurs
+    tenancy/              &lt;- lifecycle organisation (setup, destroy)
+  shared/
+    sorting/              &lt;- services et stratégies de tri
+    mentions/             &lt;- extraction et traitement des mentions
+  models/                 &lt;- modèles Rails (issues, teams, testings, pages...)
+  controllers/            &lt;- controllers minces, logique dans les domaines
+</code></pre><p>Los dominios de negocio agrupan la lógica compleja por contexto: <code>project_management</code> concentra todo lo relacionado con el trabajo planificado, <code>table_filtering</code> aísla el motor de filtrado avanzado, <code>tenancy</code> gestiona el ciclo de vida de las organizaciones. Los modelos Rails siguen siendo el núcleo del acceso a los datos - los dominios se añaden encima para encapsular la lógica que va más allá del modelo solo.</p><h3 id=lo-que-esto-cambia-concretamente-para-nuestros-usuarios>Lo Que Esto Cambia Concretamente Para Nuestros Usuarios</h3><p><strong>La coherencia de los datos está garantizada.</strong> Cuando asignas una capability a una release, el vínculo entre los issues subyacentes y esa release es siempre coherente - sin sincronización asíncrona, sin estado intermedio.</p><p><strong>El rendimiento es predecible.</strong> Sin latencia de red entre módulos, sin timeouts entre servicios, sin retry storms que gestionar.</p><p><strong>El desarrollo es rápido.</strong> Añadir una feature en el módulo <code>testings</code> no implica desplegar un nuevo servicio, configurar un contrato de API ni gestionar la compatibilidad entre versiones.</p><hr><h2 id=cuándo-usar-el-monolito-modular>Cuándo Usar el Monolito Modular</h2><p>Esta arquitectura es la elección correcta cuando:</p><ul><li><strong>Tu dominio es complejo</strong> pero tu equipo no es todavía una organización de 200 desarrolladores</li><li><strong>Necesitas coherencia transaccional</strong> entre varios dominios</li><li><strong>Tu superficie de despliegue debe permanecer simple</strong>: un equipo DevOps limitado, un presupuesto de infraestructura ajustado</li><li><strong>Estás construyendo un producto en fase de exploración</strong>: las fronteras de dominio evolucionan rápido al inicio del proyecto</li><li><strong>Quieres la posibilidad de migrar a microservicios más adelante</strong> sin reescribir</li></ul><p>No es la elección correcta si:</p><ul><li>Tienes partes del sistema con necesidades de escalabilidad radicalmente diferentes (el procesamiento de vídeo de Netflix no tiene las mismas necesidades que la API de recomendaciones)</li><li>Tus equipos deben desplegar de forma independiente a alta frecuencia</li><li>Ya tienes restricciones técnicas que imponen tecnologías diferentes por dominio</li></ul><hr><h2 id=conclusión>Conclusión</h2><p>El monolito modular no es una arquitectura de compromiso. Es una arquitectura adaptada a un contexto preciso: dominios complejos, equipos de tamaño razonable, necesidades de coherencia transaccional, voluntad de permanecer operacionalmente simples.</p><p>La industria pasó diez años creyendo que la complejidad del sistema debía gestionarse mediante la distribución. Redescubrimos progresivamente que puede gestionarse mediante la estructura interna.</p><p>Vertical Slice Architecture, domain-first, package by feature: estos términos diferentes describen la misma idea fundamental. <strong>El código debe organizarse en torno a lo que hace, no a cómo está estructurado técnicamente.</strong></p><p>En Sinra, esta elección no es nostálgica. Es deliberada, justificada y asumida. Y nos permite entregar features coherentes, fiables y trazables - que es precisamente lo que Sinra promete a sus usuarios para gestionar sus propios proyectos.</p><hr><p><em>Sinra organiza el trabajo en equipo alrededor de issues, capabilities, releases y cycles - conceptos concretos en lugar de jerga abstracta. La arquitectura de Sinra sigue el mismo principio: módulos concretos, fronteras explícitas, una organización que refleja el negocio.</em></p></div><div class="mt-16 bg-base-200 rounded-2xl p-8 text-center"><h2 class="text-2xl font-bold mb-4">¿Listo para Transformar su Gestión de Proyectos?</h2><p class="text-base-content/70 mb-6">Aplique estos insights con Sinra, la plataforma unificada para equipos modernos.</p><a href=https://app.sinra.dev/users/sign_up class="btn btn-primary btn-lg" target=_blank rel="noopener noreferrer">Iniciar Prueba Gratuita</a></div><nav class="flex justify-between mt-12 pt-8 border-t border-base-300"><a href=https://sinra.dev/es/blog/posts/2026-05-12-qa-real-time-feature-par-feature/ class="btn btn-ghost gap-2"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+<span class="hidden md:inline">QA en Tiempo Real: Testear Cada Feature …</span>
+<span class=md:hidden>← Anterior</span>
+</a><a href=https://sinra.dev/es/blog/posts/2026-05-26-entrevistas-tech-irrealistas/ class="btn btn-ghost gap-2"><span class="hidden md:inline">El gran teatro de las entrevistas …</span>
+<span class=md:hidden>Siguiente →</span>
+<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a></nav></div></article></main><footer class="border-t border-line py-12"><div class="container mx-auto px-6 max-w-6xl flex flex-wrap justify-between gap-8"><a href=/es/ class="flex items-center gap-2 text-xl font-display font-black tracking-tight"><img src=/assets/images/sinra-logo.svg alt width=24 height=24>
+sinra</a><nav aria-label=Footer class="flex flex-wrap gap-12"><div class="flex flex-col gap-2"><a href=/es/pricing/ class="text-faint hover:text-base-content no-underline text-sm">Precios
+</a><a href=/es/docs/ class="text-faint hover:text-base-content no-underline text-sm">Documentación
+</a><a href=/es/blog/ class="text-faint hover:text-base-content no-underline text-sm">Blog</a></div><div class="flex flex-col gap-2"><a href=/es/medtech/ class="text-faint hover:text-base-content no-underline text-sm">Sinra para medtech
+</a><a href=/es/fintech/ class="text-faint hover:text-base-content no-underline text-sm">Sinra para fintech</a></div><div class="flex flex-col gap-2"><a href=/es/about/ class="text-faint hover:text-base-content no-underline text-sm">Acerca de
+</a><a href=/es/contact/ class="text-faint hover:text-base-content no-underline text-sm">Contacto
+</a><a href=/es/brand-book/ class="text-faint hover:text-base-content no-underline text-sm">Brand Book</a></div><div class="flex flex-col gap-2"><a href=/es/politica-de-privacidad/ class="text-faint hover:text-base-content no-underline text-sm">Politica de privacidad
+</a><a href=/es/terminos-de-servicio/ class="text-faint hover:text-base-content no-underline text-sm">Términos de Servicio
+</a><a href=/es/acuerdo-tratamiento-datos/ class="text-faint hover:text-base-content no-underline text-sm">Acuerdo de Tratamiento de Datos
+</a><a href=/es/aviso-legal/ class="text-faint hover:text-base-content no-underline text-sm">Aviso legal</a></div></nav></div><div class="container mx-auto px-6 max-w-6xl text-faint text-sm mt-10"><p>&copy; 2026 sinra</p></div></footer><script src=https://sinra.dev/js/script.min.e8d1c4881714f36e8e840bdd725af471177469f74d09f6e1ab10341c9a1b30ef.js integrity="sha256-6NHEiBcU826OhAvdclr0cRd0afdNCfbhqxA0HJobMO8=" crossorigin=anonymous defer></script></body></html>

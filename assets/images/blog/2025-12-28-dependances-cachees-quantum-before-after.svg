@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Quantum : Avant vs Après Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- AVANT Section -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ AVANT Sinra
+    </text>
+    <text x="200" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Dépendances cachées (Jira)
+    </text>
+
+    <!-- Metric 1: Features blocked -->
+    <rect x="50" y="110" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Features bloquées
+    </text>
+    <text x="330" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      47%
+    </text>
+    <text x="200" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Dépendances découvertes trop tard
+    </text>
+
+    <!-- Metric 2: Delay per feature -->
+    <rect x="50" y="170" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Délai par feature
+    </text>
+    <text x="330" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      9 jours
+    </text>
+    <text x="200" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Temps perdu en attente
+    </text>
+
+    <!-- Metric 3: Dependency chains -->
+    <rect x="50" y="230" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Visibilité chaînes
+    </text>
+    <text x="330" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Nulle
+    </text>
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Découverte progressive sur 4 sem
+    </text>
+
+    <!-- Metric 4: Releases slippage -->
+    <rect x="50" y="290" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Releases qui glissent
+    </text>
+    <text x="330" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      40%
+    </text>
+    <text x="200" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Dépendances critiques pas prêtes
+    </text>
+
+    <!-- Metric 5: External dependencies -->
+    <rect x="50" y="350" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Dépendances externes
+    </text>
+    <text x="330" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Oubliées
+    </text>
+    <text x="200" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Bloquées 5+ semaines
+    </text>
+  </g>
+
+  <!-- APRÈS Section -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ APRÈS Sinra
+    </text>
+    <text x="600" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Dépendances visibles (6 mois après)
+    </text>
+
+    <!-- Metric 1: Features blocked -->
+    <rect x="450" y="110" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Features bloquées
+    </text>
+    <text x="730" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      8%
+    </text>
+    <text x="600" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Dépendances anticipées et débloquées
+    </text>
+
+    <!-- Metric 2: Delay per feature -->
+    <rect x="450" y="170" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Délai par feature
+    </text>
+    <text x="730" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      2 jours
+    </text>
+    <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Déblocage proactif
+    </text>
+
+    <!-- Metric 3: Dependency chains -->
+    <rect x="450" y="230" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Visibilité chaînes
+    </text>
+    <text x="730" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      100%
+    </text>
+    <text x="600" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Vue graphique complète dès J1
+    </text>
+
+    <!-- Metric 4: Releases slippage -->
+    <rect x="450" y="290" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Releases qui glissent
+    </text>
+    <text x="730" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      5%
+    </text>
+    <text x="600" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Dépendances débloquées avant J-30
+    </text>
+
+    <!-- Metric 5: External dependencies -->
+    <rect x="450" y="350" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Dépendances externes
+    </text>
+    <text x="730" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      Suivies
+    </text>
+    <text x="600" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Relances automatiques
+    </text>
+  </g>
+
+  <!-- Bottom impact -->
+  <rect x="100" y="415" width="600" height="25" fill="#27ae60" rx="4"/>
+  <text x="400" y="432" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    📈 Features bloquées ÷6 • Délai ÷4.5 • Releases à temps • Dépendances trackées
+  </text>
+</svg>

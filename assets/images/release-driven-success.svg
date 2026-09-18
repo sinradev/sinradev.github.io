@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .success-title { font: bold 16px sans-serif; fill: #1a1a1a; }
+      .success-label { font: 13px sans-serif; fill: #4a5568; }
+      .success-check { font: 12px sans-serif; fill: #22c55e; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" style="font: bold 20px sans-serif; fill: #1a1a1a;">Release-Driven Success</text>
+
+  <!-- Day 1: Define Release -->
+  <g>
+    <rect x="50" y="60" width="320" height="100" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="210" y="85" text-anchor="middle" class="success-title">Day 1: Define Release 2.3</text>
+    <text x="70" y="105" class="success-check">✓ Target: March 15</text>
+    <text x="70" y="125" class="success-check">✓ 3 Capabilities planned</text>
+    <text x="70" y="145" class="success-check">✓ Team capacity: 6 devs, 2 QA</text>
+  </g>
+
+  <!-- Week 1-6: Build -->
+  <g>
+    <rect x="430" y="60" width="320" height="100" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="590" y="85" text-anchor="middle" class="success-title">Week 1-6: Build Toward Release</text>
+    <text x="450" y="105" class="success-check">✓ All issues assigned to Release 2.3</text>
+    <text x="450" y="125" class="success-check">✓ Progress visible in real-time</text>
+    <text x="450" y="145" class="success-check">✓ Blockers identified early</text>
+  </g>
+
+  <!-- Week 7: Review -->
+  <g>
+    <rect x="50" y="190" width="320" height="100" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="210" y="215" text-anchor="middle" class="success-title">Week 7: Release Readiness</text>
+    <text x="70" y="235" class="success-check">✓ All capabilities complete</text>
+    <text x="70" y="255" class="success-check">✓ 96% test coverage</text>
+    <text x="70" y="275" class="success-check">✓ Documentation ready</text>
+  </g>
+
+  <!-- Week 8: Deploy -->
+  <g>
+    <rect x="430" y="190" width="320" height="100" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+    <text x="590" y="215" text-anchor="middle" class="success-title">Week 8: Deploy March 15</text>
+    <text x="450" y="235" style="font: bold 14px sans-serif; fill: #16a34a;">✓ Smooth deployment</text>
+    <text x="450" y="255" class="success-check">✓ Zero surprises</text>
+    <text x="450" y="275" class="success-check">✓ Team confident</text>
+  </g>
+
+  <!-- Results -->
+  <g>
+    <rect x="50" y="320" width="700" height="140" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="400" y="350" text-anchor="middle" style="font: bold 18px sans-serif; fill: #16a34a;">The Result: Predictable Delivery</text>
+
+    <g transform="translate(100, 370)">
+      <text x="0" y="20" class="success-label">✓ Deployed on planned date (no delays)</text>
+      <text x="0" y="45" class="success-label">✓ All planned features shipped</text>
+      <text x="0" y="70" class="success-label">✓ Team worked within capacity (no burnout)</text>
+      <text x="350" y="20" class="success-label">✓ Stakeholders informed and prepared</text>
+      <text x="350" y="45" class="success-label">✓ Zero post-deployment hotfixes</text>
+      <text x="350" y="70" class="success-label">✓ Clear communication to customers</text>
+    </g>
+  </g>
+</svg>
