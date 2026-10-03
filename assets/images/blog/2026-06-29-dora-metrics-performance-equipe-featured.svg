@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2535;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1a28;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#4a9eff;stop-opacity:0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="600" y="58" font-family="monospace" font-size="22" fill="#e0e8ff" text-anchor="middle" opacity="0.95" font-weight="bold">DORA metrics</text>
+  <text x="600" y="82" font-family="monospace" font-size="13" fill="#6a7aaa" text-anchor="middle">4 métriques. Corrélées aux résultats business. Prouvées.</text>
+  <line x1="200" y1="96" x2="1000" y2="96" stroke="#2a3560" stroke-width="1"/>
+
+  <!-- Card 1: Deployment Frequency -->
+  <rect x="40" y="112" width="265" height="390" rx="10" fill="#1a2535" stroke="#4a9eff" stroke-width="1.5" opacity="0.85"/>
+  <text x="172" y="140" font-family="monospace" font-size="11" fill="#4a9eff" text-anchor="middle">DEPLOYMENT FREQUENCY</text>
+  <line x1="55" y1="150" x2="290" y2="150" stroke="#4a9eff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Bar chart for frequency -->
+  <rect x="65" y="290" width="22" height="40" fill="url(#barGrad)" rx="2" opacity="0.4"/>
+  <rect x="95" y="270" width="22" height="60" fill="url(#barGrad)" rx="2" opacity="0.5"/>
+  <rect x="125" y="250" width="22" height="80" fill="url(#barGrad)" rx="2" opacity="0.6"/>
+  <rect x="155" y="220" width="22" height="110" fill="url(#barGrad)" rx="2" opacity="0.75"/>
+  <rect x="185" y="190" width="22" height="140" fill="url(#barGrad)" rx="2" opacity="0.85"/>
+  <rect x="215" y="165" width="22" height="165" fill="url(#barGrad)" rx="2" opacity="0.95"/>
+  <rect x="245" y="155" width="22" height="175" fill="url(#barGrad)" rx="2"/>
+  <line x1="55" y1="334" x2="290" y2="334" stroke="#2a3560" stroke-width="1"/>
+  <text x="65" y="352" font-family="monospace" font-size="9" fill="#3a4570">semaine 1</text>
+  <text x="245" y="352" font-family="monospace" font-size="9" fill="#3a4570">sem. 7</text>
+
+  <text x="172" y="390" font-family="monospace" font-size="10" fill="#6a8aaa" text-anchor="middle">Elite : plusieurs fois/jour</text>
+  <rect x="60" y="402" width="245" height="32" rx="5" fill="#0f1a28" stroke="#4a9eff" stroke-width="0.8" opacity="0.6"/>
+  <text x="182" y="423" font-family="monospace" font-size="12" fill="#4a9eff" text-anchor="middle">+ déploiements = - risques</text>
+  <text x="172" y="478" font-family="monospace" font-size="9" fill="#3a4570" text-anchor="middle">Combien de fois par</text>
+  <text x="172" y="492" font-family="monospace" font-size="9" fill="#3a4570" text-anchor="middle">jour/semaine ?</text>
+
+  <!-- Card 2: Lead Time -->
+  <rect x="320" y="112" width="265" height="390" rx="10" fill="#1a2830" stroke="#a6f079" stroke-width="1.5" opacity="0.85"/>
+  <text x="452" y="140" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">LEAD TIME FOR CHANGES</text>
+  <line x1="335" y1="150" x2="570" y2="150" stroke="#a6f079" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Clock icon -->
+  <circle cx="452" cy="240" r="65" fill="#111e1a" stroke="#2a4530" stroke-width="1.5"/>
+  <circle cx="452" cy="240" r="4" fill="#a6f079"/>
+  <!-- Clock hands: ~1h -->
+  <line x1="452" y1="240" x2="452" y2="185" stroke="#a6f079" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="452" y1="240" x2="487" y2="240" stroke="#6a9060" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tick marks -->
+  <line x1="452" y1="180" x2="452" y2="192" stroke="#3a6040" stroke-width="1.5"/>
+  <line x1="512" y1="240" x2="500" y2="240" stroke="#3a6040" stroke-width="1.5"/>
+  <line x1="452" y1="300" x2="452" y2="288" stroke="#3a6040" stroke-width="1.5"/>
+  <line x1="392" y1="240" x2="404" y2="240" stroke="#3a6040" stroke-width="1.5"/>
+  <text x="452" y="325" font-family="monospace" font-size="12" fill="#a6f079" text-anchor="middle">&lt; 1 heure</text>
+  <text x="452" y="342" font-family="monospace" font-size="10" fill="#4a7050" text-anchor="middle">objectif Elite</text>
+
+  <text x="452" y="390" font-family="monospace" font-size="10" fill="#6a8a7a" text-anchor="middle">commit → production</text>
+  <rect x="340" y="402" width="245" height="32" rx="5" fill="#0f1a14" stroke="#a6f079" stroke-width="0.8" opacity="0.6"/>
+  <text x="462" y="423" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">friction = lead time long</text>
+  <text x="452" y="478" font-family="monospace" font-size="9" fill="#3a5040" text-anchor="middle">Temps entre 1er commit</text>
+  <text x="452" y="492" font-family="monospace" font-size="9" fill="#3a5040" text-anchor="middle">et mise en production</text>
+
+  <!-- Card 3: Change Failure Rate -->
+  <rect x="600" y="112" width="265" height="390" rx="10" fill="#28201a" stroke="#f0a060" stroke-width="1.5" opacity="0.85"/>
+  <text x="732" y="135" font-family="monospace" font-size="10" fill="#f0a060" text-anchor="middle">CHANGE FAILURE RATE</text>
+  <line x1="615" y1="150" x2="850" y2="150" stroke="#f0a060" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Percentage donut/gauge -->
+  <circle cx="732" cy="245" r="70" fill="none" stroke="#2a1a10" stroke-width="14"/>
+  <!-- Full circle = 439.6 circumference. 15% = 65.9 -->
+  <circle cx="732" cy="245" r="70" fill="none" stroke="#a03020" stroke-width="14" stroke-dasharray="198 241" stroke-dashoffset="109" opacity="0.5"/>
+  <circle cx="732" cy="245" r="70" fill="none" stroke="#f0a060" stroke-width="14" stroke-dasharray="65 375" stroke-dashoffset="109"/>
+  <text x="732" y="239" font-family="monospace" font-size="22" fill="#f0a060" text-anchor="middle" font-weight="bold">15%</text>
+  <text x="732" y="258" font-family="monospace" font-size="10" fill="#8a6040" text-anchor="middle">Elite max</text>
+
+  <text x="732" y="346" font-family="monospace" font-size="10" fill="#8a7060" text-anchor="middle">mauvais : &gt; 45%</text>
+  <text x="732" y="363" font-family="monospace" font-size="9" fill="#5a4030" text-anchor="middle">bon : 0–15%</text>
+
+  <text x="732" y="390" font-family="monospace" font-size="10" fill="#8a6a50" text-anchor="middle">déploiements qui causent incident</text>
+  <rect x="620" y="402" width="245" height="32" rx="5" fill="#1a1008" stroke="#f0a060" stroke-width="0.8" opacity="0.6"/>
+  <text x="742" y="420" font-family="monospace" font-size="10" fill="#f0a060" text-anchor="middle">petits déploiements = moins</text>
+  <text x="742" y="433" font-family="monospace" font-size="10" fill="#f0a060" text-anchor="middle">d'échecs, pas l'inverse</text>
+  <text x="732" y="478" font-family="monospace" font-size="9" fill="#5a4030" text-anchor="middle">% de déploiements</text>
+  <text x="732" y="492" font-family="monospace" font-size="9" fill="#5a4030" text-anchor="middle">nécessitant rollback/fix</text>
+
+  <!-- Card 4: Time to Restore -->
+  <rect x="880" y="112" width="280" height="390" rx="10" fill="#281a28" stroke="#c060f0" stroke-width="1.5" opacity="0.85"/>
+  <text x="1020" y="135" font-family="monospace" font-size="10" fill="#c060f0" text-anchor="middle">TIME TO RESTORE SERVICE</text>
+  <line x1="895" y1="150" x2="1145" y2="150" stroke="#c060f0" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Lightning bolt + timeline -->
+  <!-- Lightning bolt icon -->
+  <polygon points="1020,175 1005,220 1018,220 1003,265 1035,210 1022,210 1038,175" fill="#c060f0" opacity="0.8"/>
+
+  <!-- Recovery timeline -->
+  <line x1="910" y1="295" x2="1145" y2="295" stroke="#3a2040" stroke-width="2"/>
+  <circle cx="910" cy="295" r="5" fill="#c060f0"/>
+  <circle cx="1145" cy="295" r="5" fill="#c060f0" opacity="0.4"/>
+  <!-- Elite zone -->
+  <rect x="910" y="282" width="60" height="26" rx="3" fill="#c060f0" opacity="0.25"/>
+  <text x="940" y="296" font-family="monospace" font-size="9" fill="#c060f0" text-anchor="middle">&lt;1h</text>
+  <!-- Bad zone -->
+  <text x="1090" y="280" font-family="monospace" font-size="9" fill="#6a3070">semaines</text>
+  <line x1="1060" y1="285" x2="1060" y2="308" stroke="#4a2050" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <text x="1020" y="340" font-family="monospace" font-size="10" fill="#8a60a0" text-anchor="middle">Elite : &lt; 1 heure</text>
+  <text x="1020" y="357" font-family="monospace" font-size="9" fill="#5a3070" text-anchor="middle">Low : 1 semaine à 1 mois</text>
+
+  <text x="1020" y="390" font-family="monospace" font-size="10" fill="#7a5090" text-anchor="middle">détection → résolution incident</text>
+  <rect x="900" y="402" width="245" height="32" rx="5" fill="#180f20" stroke="#c060f0" stroke-width="0.8" opacity="0.6"/>
+  <text x="1022" y="420" font-family="monospace" font-size="10" fill="#c060f0" text-anchor="middle">observabilité + docs =</text>
+  <text x="1022" y="433" font-family="monospace" font-size="10" fill="#c060f0" text-anchor="middle">restauration rapide</text>
+  <text x="1020" y="478" font-family="monospace" font-size="9" fill="#5a3070" text-anchor="middle">Temps entre début incident</text>
+  <text x="1020" y="492" font-family="monospace" font-size="9" fill="#5a3070" text-anchor="middle">et restauration complète</text>
+
+  <!-- Footer -->
+  <line x1="40" y1="524" x2="1160" y2="524" stroke="#2a3560" stroke-width="1"/>
+  <text x="600" y="555" font-family="Georgia, serif" font-size="21" fill="#e0e8ff" text-anchor="middle" opacity="0.85">Mesurez ce qui livre - pas ce qui occupe</text>
+  <text x="600" y="580" font-family="monospace" font-size="11" fill="#3a4570" text-anchor="middle">DORA Research · Google · corrélé aux résultats business</text>
+</svg>

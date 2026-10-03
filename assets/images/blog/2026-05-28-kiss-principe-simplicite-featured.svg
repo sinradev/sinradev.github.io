@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0e17;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="chaosGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="simpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#475569;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#475569;stop-opacity:0.6"/>
+      <stop offset="70%" style="stop-color:#475569;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow-blue">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-chaos">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="subtle-glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.2" opacity="0.035"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Ambient glow left (chaos/purple) -->
+  <circle cx="250" cy="220" r="280" fill="#7c3aed" opacity="0.04"/>
+  <circle cx="120" cy="300" r="180" fill="#dc2626" opacity="0.03"/>
+
+  <!-- Ambient glow right (simple/cyan) -->
+  <circle cx="950" cy="220" r="260" fill="#0ea5e9" opacity="0.05"/>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- LEFT PANEL: COMPLEXITY (before KISS) -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- Section label -->
+  <text x="55" y="50" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" letter-spacing="3">SANS KISS</text>
+  <rect x="55" y="55" width="50" height="2" rx="1" fill="#7c3aed" opacity="0.6"/>
+
+  <!-- Tangled dependency web - nodes -->
+  <!-- Central hub node -->
+  <circle cx="270" cy="220" r="16" fill="#1a0a2e" stroke="#7c3aed" stroke-width="2" filter="url(#glow-chaos)"/>
+  <text x="270" y="225" font-family="'Courier New', monospace" font-size="8" text-anchor="middle" fill="#a78bfa">app</text>
+
+  <!-- Surrounding nodes - complex ecosystem -->
+  <circle cx="155" cy="145" r="12" fill="#1a0a2e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="155" y="149" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#a78bfa">K8s</text>
+
+  <circle cx="340" cy="115" r="12" fill="#1a0a2e" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="340" y="119" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#f87171">LangChain</text>
+
+  <circle cx="420" cy="200" r="11" fill="#1a0a2e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="420" y="204" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#a78bfa">MCP</text>
+
+  <circle cx="390" cy="305" r="11" fill="#1a0a2e" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="390" y="309" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#f87171">RAG</text>
+
+  <circle cx="200" cy="330" r="11" fill="#1a0a2e" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="200" y="334" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#c084fc">agents</text>
+
+  <circle cx="100" cy="250" r="11" fill="#1a0a2e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="100" y="254" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#a78bfa">Redis</text>
+
+  <circle cx="130" cy="340" r="10" fill="#1a0a2e" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="130" y="344" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#f87171">Kafka</text>
+
+  <circle cx="300" cy="360" r="10" fill="#1a0a2e" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="300" y="364" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#c084fc">plugins</text>
+
+  <circle cx="450" cy="130" r="10" fill="#1a0a2e" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="450" y="134" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#f87171">CQRS</text>
+
+  <circle cx="75" cy="155" r="10" fill="#1a0a2e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="75" y="159" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#a78bfa">gRPC</text>
+
+  <circle cx="460" cy="270" r="10" fill="#1a0a2e" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="460" y="274" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#c084fc">skills</text>
+
+  <circle cx="165" cy="400" r="9" fill="#1a0a2e" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="165" y="404" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#f87171">vector DB</text>
+
+  <circle cx="360" cy="400" r="9" fill="#1a0a2e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="360" y="404" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#a78bfa">CrewAI</text>
+
+  <!-- Connections - tangled, crossing, messy -->
+  <line x1="270" y1="220" x2="155" y2="145" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <line x1="270" y1="220" x2="340" y2="115" stroke="#dc2626" stroke-width="1" opacity="0.35"/>
+  <line x1="270" y1="220" x2="420" y2="200" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <line x1="270" y1="220" x2="390" y2="305" stroke="#9333ea" stroke-width="1" opacity="0.35"/>
+  <line x1="270" y1="220" x2="200" y2="330" stroke="#dc2626" stroke-width="1" opacity="0.4"/>
+  <line x1="270" y1="220" x2="100" y2="250" stroke="#7c3aed" stroke-width="1" opacity="0.35"/>
+  <line x1="270" y1="220" x2="130" y2="340" stroke="#9333ea" stroke-width="1" opacity="0.3"/>
+  <line x1="270" y1="220" x2="300" y2="360" stroke="#dc2626" stroke-width="1" opacity="0.3"/>
+
+  <!-- Cross connections (the mess) -->
+  <line x1="155" y1="145" x2="340" y2="115" stroke="#7c3aed" stroke-width="0.8" opacity="0.25"/>
+  <line x1="155" y1="145" x2="100" y2="250" stroke="#dc2626" stroke-width="0.8" opacity="0.25"/>
+  <line x1="155" y1="145" x2="75" y2="155" stroke="#7c3aed" stroke-width="0.8" opacity="0.3"/>
+  <line x1="340" y1="115" x2="450" y2="130" stroke="#dc2626" stroke-width="0.8" opacity="0.25"/>
+  <line x1="340" y1="115" x2="420" y2="200" stroke="#9333ea" stroke-width="0.8" opacity="0.25"/>
+  <line x1="420" y1="200" x2="460" y2="270" stroke="#7c3aed" stroke-width="0.8" opacity="0.3"/>
+  <line x1="420" y1="200" x2="450" y2="130" stroke="#dc2626" stroke-width="0.8" opacity="0.2"/>
+  <line x1="390" y1="305" x2="460" y2="270" stroke="#9333ea" stroke-width="0.8" opacity="0.25"/>
+  <line x1="390" y1="305" x2="300" y2="360" stroke="#dc2626" stroke-width="0.8" opacity="0.25"/>
+  <line x1="200" y1="330" x2="130" y2="340" stroke="#7c3aed" stroke-width="0.8" opacity="0.25"/>
+  <line x1="200" y1="330" x2="165" y2="400" stroke="#9333ea" stroke-width="0.8" opacity="0.25"/>
+  <line x1="100" y1="250" x2="75" y2="155" stroke="#dc2626" stroke-width="0.8" opacity="0.3"/>
+  <line x1="300" y1="360" x2="360" y2="400" stroke="#7c3aed" stroke-width="0.8" opacity="0.25"/>
+  <line x1="165" y1="400" x2="360" y2="400" stroke="#9333ea" stroke-width="0.8" opacity="0.2"/>
+  <line x1="130" y1="340" x2="165" y2="400" stroke="#dc2626" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Diagonal crossing (chaos indicator) -->
+  <line x1="75" y1="155" x2="390" y2="305" stroke="#7c3aed" stroke-width="0.6" opacity="0.15"/>
+  <line x1="450" y1="130" x2="130" y2="340" stroke="#dc2626" stroke-width="0.6" opacity="0.15"/>
+  <line x1="155" y1="145" x2="460" y2="270" stroke="#9333ea" stroke-width="0.6" opacity="0.15"/>
+
+  <!-- Complexity score badge -->
+  <rect x="55" y="418" width="460" height="44" rx="8" fill="#120820" stroke="#7c3aed" stroke-width="1" opacity="0.8"/>
+  <text x="75" y="437" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Dépendances :</text>
+  <text x="170" y="437" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#f87171">14 services</text>
+  <text x="260" y="437" font-family="Arial, sans-serif" font-size="11" fill="#64748b">·</text>
+  <text x="275" y="437" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Onboarding :</text>
+  <text x="370" y="437" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#f87171">3 semaines</text>
+  <text x="75" y="454" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Personne ne comprend entièrement le système. Personne n'ose toucher.</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- DIVIDER -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="585" y="30" width="1" height="440" fill="url(#divider)"/>
+
+  <!-- Arrow right -->
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#475569" opacity="0.5">→</text>
+  <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#475569" letter-spacing="1" opacity="0.5">KISS</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- RIGHT PANEL: SIMPLICITY (with KISS) -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- Section label -->
+  <text x="630" y="50" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" letter-spacing="3">AVEC KISS</text>
+  <rect x="630" y="55" width="50" height="2" rx="1" fill="#0ea5e9" opacity="0.6"/>
+
+  <!-- Single clean node -->
+  <circle cx="880" cy="220" r="22" fill="#0c1f35" stroke="#0ea5e9" stroke-width="2.5" filter="url(#subtle-glow)"/>
+  <text x="880" y="225" font-family="'Courier New', monospace" font-size="9" text-anchor="middle" fill="#7dd3fc">app</text>
+
+  <!-- 3 clean dependencies only -->
+  <circle cx="750" cy="155" r="14" fill="#0c1f35" stroke="#0ea5e9" stroke-width="1.8"/>
+  <text x="750" y="160" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#7dd3fc">DB</text>
+
+  <circle cx="1010" cy="155" r="14" fill="#0c1f35" stroke="#0ea5e9" stroke-width="1.8"/>
+  <text x="1010" y="160" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#7dd3fc">API</text>
+
+  <circle cx="880" cy="330" r="14" fill="#0c1f35" stroke="#22d3ee" stroke-width="1.8"/>
+  <text x="880" y="334" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#67e8f9">cache</text>
+
+  <!-- 3 clean connections only -->
+  <line x1="880" y1="198" x2="750" y2="169" stroke="#0ea5e9" stroke-width="1.8" opacity="0.6"/>
+  <line x1="880" y1="198" x2="1010" y2="169" stroke="#0ea5e9" stroke-width="1.8" opacity="0.6"/>
+  <line x1="880" y1="242" x2="880" y2="316" stroke="#22d3ee" stroke-width="1.8" opacity="0.5"/>
+
+  <!-- Generous negative space - intentional emptiness -->
+  <!-- Subtle breathing room indicators (dotted boundary) -->
+  <circle cx="880" cy="235" r="130" fill="none" stroke="#0ea5e9" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.12"/>
+
+  <!-- Question marks for "do I need this?" rejected tools -->
+  <text x="660" y="170" font-family="Arial, sans-serif" font-size="9" fill="#334155">K8s ?</text>
+  <line x1="700" y1="166" x2="720" y2="166" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <text x="725" y="170" font-family="Arial, sans-serif" font-size="9" fill="#dc2626" opacity="0.5">✗</text>
+
+  <text x="660" y="260" font-family="Arial, sans-serif" font-size="9" fill="#334155">LangChain ?</text>
+  <line x1="720" y1="256" x2="740" y2="256" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <text x="745" y="260" font-family="Arial, sans-serif" font-size="9" fill="#dc2626" opacity="0.5">✗</text>
+
+  <text x="660" y="300" font-family="Arial, sans-serif" font-size="9" fill="#334155">Kafka ?</text>
+  <line x1="700" y1="296" x2="720" y2="296" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <text x="725" y="300" font-family="Arial, sans-serif" font-size="9" fill="#dc2626" opacity="0.5">✗</text>
+
+  <text x="1035" y="220" font-family="Arial, sans-serif" font-size="9" fill="#334155">agents ?</text>
+  <line x1="1075" y1="216" x2="1095" y2="216" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <text x="1100" y="220" font-family="Arial, sans-serif" font-size="9" fill="#dc2626" opacity="0.5">✗</text>
+
+  <text x="1035" y="260" font-family="Arial, sans-serif" font-size="9" fill="#334155">RAG ?</text>
+  <line x1="1067" y1="256" x2="1087" y2="256" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <text x="1092" y="260" font-family="Arial, sans-serif" font-size="9" fill="#dc2626" opacity="0.5">✗</text>
+
+  <text x="1035" y="300" font-family="Arial, sans-serif" font-size="9" fill="#334155">MCP ?</text>
+  <line x1="1068" y1="296" x2="1088" y2="296" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <text x="1093" y="300" font-family="Arial, sans-serif" font-size="9" fill="#dc2626" opacity="0.5">✗</text>
+
+  <!-- Simplicity score badge -->
+  <rect x="630" y="418" width="515" height="44" rx="8" fill="#061525" stroke="#0ea5e9" stroke-width="1" opacity="0.8"/>
+  <text x="650" y="437" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Dépendances :</text>
+  <text x="745" y="437" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#22d3ee">3 services</text>
+  <text x="815" y="437" font-family="Arial, sans-serif" font-size="11" fill="#64748b">·</text>
+  <text x="830" y="437" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Onboarding :</text>
+  <text x="925" y="437" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#22d3ee">30 minutes</text>
+  <text x="650" y="454" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Chaque développeur comprend l'ensemble. Déploiement en une commande.</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- TITLE BAND -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="0" y="490" width="1200" height="140" fill="#060a10" opacity="0.97"/>
+  <rect x="0" y="489" width="1200" height="1.5" fill="#0ea5e9" opacity="0.35"/>
+
+  <!-- KISS acronym pill -->
+  <rect x="55" y="506" width="90" height="28" rx="6" fill="#0c1f35" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="100" y="525" font-family="Arial, sans-serif" font-size="14" font-weight="900" text-anchor="middle" fill="#7dd3fc" letter-spacing="4">KISS</text>
+
+  <!-- Main title -->
+  <text x="600" y="545" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#ffffff" letter-spacing="-1">L'art de ne pas compliquer ce qui n'en a pas besoin</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="582" font-family="Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#94a3b8">MCP, agents, plugins, orchestrateurs : KISS comme boussole</text>
+
+  <!-- Tags -->
+  <rect x="410" y="599" width="155" height="22" rx="11" fill="#0ea5e9" opacity="0.1"/>
+  <text x="487" y="615" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7dd3fc">Développement</text>
+
+  <rect x="577" y="599" width="125" height="22" rx="11" fill="#7c3aed" opacity="0.1"/>
+  <text x="639" y="615" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#a78bfa">Architecture</text>
+
+  <rect x="714" y="599" width="80" height="22" rx="11" fill="#0ea5e9" opacity="0.08"/>
+  <text x="754" y="615" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#67e8f9">Productivité</text>
+
+  <!-- Branding -->
+  <text x="1155" y="617" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="end" fill="#0ea5e9" opacity="0.4">sinra.app</text>
+</svg>

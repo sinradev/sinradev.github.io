@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#E8F5E9" stroke-width="2"/>
+
+  <!-- Progress bars -->
+  <g transform="translate(100, 100)">
+    <!-- Bar 1 -->
+    <rect x="-35" y="-30" width="70" height="8" fill="#E0E0E0" rx="4"/>
+    <rect x="-35" y="-30" width="42" height="8" fill="#4CAF50" rx="4"/>
+
+    <!-- Bar 2 -->
+    <rect x="-35" y="-10" width="70" height="8" fill="#E0E0E0" rx="4"/>
+    <rect x="-35" y="-10" width="56" height="8" fill="#4CAF50" rx="4"/>
+
+    <!-- Bar 3 -->
+    <rect x="-35" y="10" width="70" height="8" fill="#E0E0E0" rx="4"/>
+    <rect x="-35" y="10" width="28" height="8" fill="#2196F3" rx="4"/>
+
+    <!-- Checkmark -->
+    <circle cx="45" cy="0" r="12" fill="#4CAF50" opacity="0.9"/>
+    <path d="M 40 2 L 43 5 L 48 -2" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

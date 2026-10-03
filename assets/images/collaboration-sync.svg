@@ -1,0 +1,21 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#F3E5F5" stroke-width="2"/>
+
+  <!-- Chat bubbles -->
+  <g transform="translate(100, 100)">
+    <!-- Bubble 1 (left) -->
+    <path d="M -40 -25 Q -45 -25 -45 -15 L -45 5 Q -45 15 -35 15 L -10 15 L -15 25 L -25 15 L -35 15 Q -45 15 -45 5 L -45 -15 Q -45 -25 -40 -25" fill="none" stroke="#9C27B0" stroke-width="2"/>
+    <line x1="-40" y1="-10" x2="-20" y2="-10" stroke="#9C27B0" stroke-width="1.5"/>
+    <line x1="-40" y1="0" x2="-20" y2="0" stroke="#9C27B0" stroke-width="1.5"/>
+
+    <!-- Bubble 2 (right) -->
+    <path d="M 40 0 Q 45 0 45 10 L 45 30 Q 45 40 35 40 L 10 40 L 5 50 L 15 40 L 35 40 Q 45 40 45 30 L 45 10 Q 45 0 40 0" fill="none" stroke="#2196F3" stroke-width="2"/>
+    <line x1="15" y1="15" x2="35" y2="15" stroke="#2196F3" stroke-width="1.5"/>
+    <line x1="15" y1="25" x2="35" y2="25" stroke="#2196F3" stroke-width="1.5"/>
+
+    <!-- @ mention indicator -->
+    <circle cx="0" cy="-35" r="8" fill="#FF9800"/>
+    <text x="-2.5" y="-30" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">@</text>
+  </g>
+</svg>
