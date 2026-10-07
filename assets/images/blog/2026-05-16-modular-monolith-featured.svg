@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141824;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="moduleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="150" cy="200" r="180" fill="#6366f1" opacity="0.05"/>
+  <circle cx="1050" cy="180" r="150" fill="#22c55e" opacity="0.05"/>
+  <circle cx="600" cy="350" r="250" fill="#f97316" opacity="0.03"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="72" width="1200" height="3" fill="#f97316" opacity="0.5"/>
+
+  <!-- ====== MAIN ILLUSTRATION: Modular Monolith ====== -->
+
+  <!-- Outer monolith shell -->
+  <rect x="120" y="120" width="540" height="270" rx="12" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.5"/>
+  <rect x="120" y="120" width="540" height="270" rx="12" fill="#6366f1" opacity="0.04"/>
+
+  <!-- Label: MONOLITH -->
+  <text x="390" y="112" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#6366f1" opacity="0.7" letter-spacing="4">MODULAR MONOLITH</text>
+
+  <!-- Module 1: issues -->
+  <rect x="136" y="136" width="96" height="238" rx="7" fill="#6366f1" opacity="0.15"/>
+  <rect x="136" y="136" width="96" height="238" rx="7" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <!-- Module label -->
+  <text x="184" y="264" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6366f1" opacity="0.9" transform="rotate(-90, 184, 264)">issues</text>
+  <!-- Slice bars inside module -->
+  <rect x="144" y="144" width="80" height="22" rx="3" fill="#6366f1" opacity="0.3"/>
+  <rect x="144" y="172" width="80" height="22" rx="3" fill="#6366f1" opacity="0.2"/>
+  <rect x="144" y="200" width="80" height="22" rx="3" fill="#6366f1" opacity="0.15"/>
+  <rect x="144" y="228" width="80" height="22" rx="3" fill="#6366f1" opacity="0.1"/>
+  <rect x="144" y="256" width="80" height="22" rx="3" fill="#6366f1" opacity="0.08"/>
+  <rect x="144" y="284" width="80" height="22" rx="3" fill="#6366f1" opacity="0.06"/>
+  <rect x="144" y="312" width="80" height="34" rx="3" fill="#6366f1" opacity="0.18"/>
+  <text x="184" y="333" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#6366f1" opacity="0.7">API</text>
+
+  <!-- Module 2: releases -->
+  <rect x="240" y="136" width="96" height="238" rx="7" fill="#f97316" opacity="0.15"/>
+  <rect x="240" y="136" width="96" height="238" rx="7" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
+  <text x="288" y="264" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#f97316" opacity="0.9" transform="rotate(-90, 288, 264)">releases</text>
+  <rect x="248" y="144" width="80" height="22" rx="3" fill="#f97316" opacity="0.3"/>
+  <rect x="248" y="172" width="80" height="22" rx="3" fill="#f97316" opacity="0.2"/>
+  <rect x="248" y="200" width="80" height="22" rx="3" fill="#f97316" opacity="0.15"/>
+  <rect x="248" y="228" width="80" height="22" rx="3" fill="#f97316" opacity="0.1"/>
+  <rect x="248" y="256" width="80" height="22" rx="3" fill="#f97316" opacity="0.08"/>
+  <rect x="248" y="284" width="80" height="22" rx="3" fill="#f97316" opacity="0.06"/>
+  <rect x="248" y="312" width="80" height="34" rx="3" fill="#f97316" opacity="0.18"/>
+  <text x="288" y="333" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#f97316" opacity="0.7">API</text>
+
+  <!-- Module 3: cycles -->
+  <rect x="344" y="136" width="96" height="238" rx="7" fill="#22c55e" opacity="0.15"/>
+  <rect x="344" y="136" width="96" height="238" rx="7" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+  <text x="392" y="264" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#22c55e" opacity="0.9" transform="rotate(-90, 392, 264)">cycles</text>
+  <rect x="352" y="144" width="80" height="22" rx="3" fill="#22c55e" opacity="0.3"/>
+  <rect x="352" y="172" width="80" height="22" rx="3" fill="#22c55e" opacity="0.2"/>
+  <rect x="352" y="200" width="80" height="22" rx="3" fill="#22c55e" opacity="0.15"/>
+  <rect x="352" y="228" width="80" height="22" rx="3" fill="#22c55e" opacity="0.1"/>
+  <rect x="352" y="256" width="80" height="22" rx="3" fill="#22c55e" opacity="0.08"/>
+  <rect x="352" y="284" width="80" height="22" rx="3" fill="#22c55e" opacity="0.06"/>
+  <rect x="352" y="312" width="80" height="34" rx="3" fill="#22c55e" opacity="0.18"/>
+  <text x="392" y="333" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#22c55e" opacity="0.7">API</text>
+
+  <!-- Module 4: capabilities -->
+  <rect x="448" y="136" width="96" height="238" rx="7" fill="#ec4899" opacity="0.15"/>
+  <rect x="448" y="136" width="96" height="238" rx="7" fill="none" stroke="#ec4899" stroke-width="1.5" opacity="0.5"/>
+  <text x="496" y="264" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ec4899" opacity="0.9" transform="rotate(-90, 496, 264)">capabilities</text>
+  <rect x="456" y="144" width="80" height="22" rx="3" fill="#ec4899" opacity="0.3"/>
+  <rect x="456" y="172" width="80" height="22" rx="3" fill="#ec4899" opacity="0.2"/>
+  <rect x="456" y="200" width="80" height="22" rx="3" fill="#ec4899" opacity="0.15"/>
+  <rect x="456" y="228" width="80" height="22" rx="3" fill="#ec4899" opacity="0.1"/>
+  <rect x="456" y="256" width="80" height="22" rx="3" fill="#ec4899" opacity="0.08"/>
+  <rect x="456" y="284" width="80" height="22" rx="3" fill="#ec4899" opacity="0.06"/>
+  <rect x="456" y="312" width="80" height="34" rx="3" fill="#ec4899" opacity="0.18"/>
+  <text x="496" y="333" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#ec4899" opacity="0.7">API</text>
+
+  <!-- Vertical slice labels (right side of modules) -->
+  <text x="136" y="156" font-family="Arial, sans-serif" font-size="9" fill="#8b9cbf" opacity="0.6">Command</text>
+  <text x="136" y="184" font-family="Arial, sans-serif" font-size="9" fill="#8b9cbf" opacity="0.6">Validator</text>
+  <text x="136" y="212" font-family="Arial, sans-serif" font-size="9" fill="#8b9cbf" opacity="0.6">Handler</text>
+  <text x="136" y="240" font-family="Arial, sans-serif" font-size="9" fill="#8b9cbf" opacity="0.6">Query</text>
+  <text x="136" y="268" font-family="Arial, sans-serif" font-size="9" fill="#8b9cbf" opacity="0.6">Repo</text>
+  <text x="136" y="296" font-family="Arial, sans-serif" font-size="9" fill="#8b9cbf" opacity="0.6">Events</text>
+
+  <!-- Horizontal dashed lines (slices) -->
+  <line x1="136" y1="166" x2="544" y2="166" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="4,6" opacity="0.2"/>
+  <line x1="136" y1="194" x2="544" y2="194" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="4,6" opacity="0.2"/>
+  <line x1="136" y1="222" x2="544" y2="222" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="4,6" opacity="0.2"/>
+  <line x1="136" y1="250" x2="544" y2="250" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="4,6" opacity="0.2"/>
+  <line x1="136" y1="278" x2="544" y2="278" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="4,6" opacity="0.2"/>
+  <line x1="136" y1="306" x2="544" y2="306" stroke="#8b9cbf" stroke-width="1" stroke-dasharray="4,6" opacity="0.2"/>
+
+  <!-- Event bus below monolith -->
+  <rect x="136" y="368" width="408" height="26" rx="5" fill="#f59e0b" opacity="0.12"/>
+  <rect x="136" y="368" width="408" height="26" rx="5" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+  <text x="340" y="385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#f59e0b" opacity="0.8" letter-spacing="2">EVENT BUS</text>
+
+  <!-- Arrows from modules to event bus -->
+  <line x1="184" y1="374" x2="184" y2="368" stroke="#6366f1" stroke-width="1.5" opacity="0.5" marker-end="url(#arr)"/>
+  <line x1="288" y1="374" x2="288" y2="368" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
+  <line x1="392" y1="374" x2="392" y2="368" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+  <line x1="496" y1="374" x2="496" y2="368" stroke="#ec4899" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Dots on arrows -->
+  <circle cx="184" cy="374" r="3" fill="#6366f1" opacity="0.7"/>
+  <circle cx="288" cy="374" r="3" fill="#f97316" opacity="0.7"/>
+  <circle cx="392" cy="374" r="3" fill="#22c55e" opacity="0.7"/>
+  <circle cx="496" cy="374" r="3" fill="#ec4899" opacity="0.7"/>
+
+  <!-- Right side: watermark text -->
+  <text x="900" y="290" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#6366f1" opacity="0.04">VSA</text>
+
+  <!-- Right side: concept tags -->
+  <rect x="700" y="140" width="180" height="34" rx="17" fill="#6366f1" opacity="0.12"/>
+  <rect x="700" y="140" width="180" height="34" rx="17" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <text x="790" y="162" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6366f1" opacity="0.9">domain-first</text>
+
+  <rect x="700" y="190" width="210" height="34" rx="17" fill="#f97316" opacity="0.12"/>
+  <rect x="700" y="190" width="210" height="34" rx="17" fill="none" stroke="#f97316" stroke-width="1" opacity="0.4"/>
+  <text x="805" y="212" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f97316" opacity="0.9">vertical slice</text>
+
+  <rect x="700" y="240" width="195" height="34" rx="17" fill="#22c55e" opacity="0.12"/>
+  <rect x="700" y="240" width="195" height="34" rx="17" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.4"/>
+  <text x="797" y="262" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#22c55e" opacity="0.9">package by feature</text>
+
+  <rect x="700" y="290" width="175" height="34" rx="17" fill="#ec4899" opacity="0.12"/>
+  <rect x="700" y="290" width="175" height="34" rx="17" fill="none" stroke="#ec4899" stroke-width="1" opacity="0.4"/>
+  <text x="787" y="312" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ec4899" opacity="0.9">bounded context</text>
+
+  <rect x="700" y="340" width="165" height="34" rx="17" fill="#f59e0b" opacity="0.12"/>
+  <rect x="700" y="340" width="165" height="34" rx="17" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <text x="782" y="362" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f59e0b" opacity="0.9">1 seul déploiement</text>
+
+  <!-- Title band -->
+  <rect x="0" y="415" width="1200" height="215" fill="#0a0f1a" opacity="0.88"/>
+  <rect x="0" y="414" width="1200" height="2" fill="#f97316" opacity="0.6"/>
+
+  <!-- Main title -->
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="54" font-weight="bold" text-anchor="middle" fill="#f8f8f2">Modular Monolith</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="535" font-family="Arial, sans-serif" font-size="26" font-weight="normal" text-anchor="middle" fill="#c792e9">Vertical Slice Architecture</text>
+
+  <!-- Tagline -->
+  <text x="600" y="578" font-family="Arial, sans-serif" font-size="19" font-weight="normal" text-anchor="middle" fill="#8b9cbf">L'architecture que tout le monde redécouvre</text>
+
+  <!-- Branding -->
+  <text x="1150" y="610" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#f97316" opacity="0.6">sinra.app</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="180" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="white" text-anchor="middle">
+    Glossaire Vivant
+  </text>
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="36" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+    avec @Mentions de Pages
+  </text>
+
+  <!-- Visual elements -->
+  <!-- Page icon with @ symbol -->
+  <g transform="translate(300, 350)">
+    <rect x="0" y="0" width="140" height="160" rx="8" fill="white" opacity="0.15"/>
+    <text x="70" y="90" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">@</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 470 430 L 530 430" stroke="white" stroke-width="4" fill="none" opacity="0.7"/>
+  <polygon points="530,430 520,425 520,435" fill="white" opacity="0.7"/>
+
+  <!-- Connected page -->
+  <g transform="translate(560, 350)">
+    <rect x="0" y="0" width="140" height="160" rx="8" fill="white" opacity="0.15"/>
+    <rect x="20" y="30" width="100" height="8" rx="4" fill="white" opacity="0.5"/>
+    <rect x="20" y="50" width="80" height="8" rx="4" fill="white" opacity="0.5"/>
+    <rect x="20" y="70" width="90" height="8" rx="4" fill="white" opacity="0.5"/>
+    <rect x="20" y="100" width="100" height="8" rx="4" fill="white" opacity="0.3"/>
+    <rect x="20" y="120" width="70" height="8" rx="4" fill="white" opacity="0.3"/>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 730 430 L 790 430" stroke="white" stroke-width="4" fill="none" opacity="0.7"/>
+  <polygon points="790,430 780,425 780,435" fill="white" opacity="0.7"/>
+
+  <!-- Work/Issue icon -->
+  <g transform="translate(820, 350)">
+    <rect x="0" y="0" width="140" height="160" rx="8" fill="white" opacity="0.15"/>
+    <circle cx="30" cy="40" r="8" fill="#4ade80" opacity="0.8"/>
+    <rect x="50" y="35" width="70" height="10" rx="5" fill="white" opacity="0.6"/>
+    <circle cx="30" cy="80" r="8" fill="#60a5fa" opacity="0.8"/>
+    <rect x="50" y="75" width="70" height="10" rx="5" fill="white" opacity="0.6"/>
+    <circle cx="30" cy="120" r="8" fill="#f472b6" opacity="0.8"/>
+    <rect x="50" y="115" width="70" height="10" rx="5" fill="white" opacity="0.6"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.9">
+    De Notion à Sinra : Documentation intégrée au travail
+  </text>
+</svg>

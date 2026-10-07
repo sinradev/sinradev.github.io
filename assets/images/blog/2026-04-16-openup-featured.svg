@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/><stop offset="60%" stop-color="#0a0f1a"/><stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="20%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.10"/><stop offset="100%" stop-color="#a6f079" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- OpenUP: 4 phases as horizontal lifecycle + micro iterations -->
+  <!-- Lifecycle bar -->
+  <rect x="30" y="230" width="80" height="50" rx="5" fill="#8b5cf6" fill-opacity="0.12" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="70" y="260" text-anchor="middle" font-size="9" fill="#8b5cf6" font-weight="700">Début</text>
+
+  <rect x="118" y="230" width="80" height="50" rx="5" fill="#c792e9" fill-opacity="0.10" stroke="#c792e9" stroke-width="1.2" stroke-opacity="0.6"/>
+  <text x="158" y="260" text-anchor="middle" font-size="9" fill="#c792e9" font-weight="700">Elabora-</text>
+  <text x="158" y="273" text-anchor="middle" font-size="9" fill="#c792e9" font-weight="700">tion</text>
+
+  <rect x="206" y="230" width="80" height="50" rx="5" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="246" y="260" text-anchor="middle" font-size="9" fill="#a6f079" font-weight="700">Construc-</text>
+  <text x="246" y="273" text-anchor="middle" font-size="9" fill="#a6f079" font-weight="700">tion</text>
+
+  <rect x="294" y="230" width="80" height="50" rx="5" fill="#ff6b9d" fill-opacity="0.07" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="334" y="260" text-anchor="middle" font-size="9" fill="#ff6b9d" font-weight="700">Transition</text>
+
+  <!-- Arrows between phases -->
+  <line x1="110" y1="255" x2="118" y2="255" stroke="#8b9cbf" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="198" y1="255" x2="206" y2="255" stroke="#8b9cbf" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="286" y1="255" x2="294" y2="255" stroke="#8b9cbf" stroke-opacity="0.4" stroke-width="1"/>
+
+  <!-- Micro-iterations arc under construction phase -->
+  <path d="M206,295 Q246,350 286,295" fill="none" stroke="#a6f079" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="5,3"/>
+  <text x="246" y="365" text-anchor="middle" font-size="9" fill="#a6f079" opacity="0.7">itérations courtes</text>
+
+  <!-- Eclipse foundation label -->
+  <text x="215" y="420" text-anchor="middle" font-size="10" fill="#8b9cbf" opacity="0.65">Eclipse Foundation · Open Source · léger</text>
+
+  <!-- Center dot -->
+  <circle cx="215" cy="255" r="4" fill="#8b5cf6" fill-opacity="0.6" filter="url(#glow)"/>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">PROCESSUS · OPEN SOURCE</text>
+  <text x="500" y="268" font-size="60" font-weight="800" fill="#f8fafc" letter-spacing="-2">OpenUP</text>
+  <text x="500" y="330" font-size="18" font-weight="600" fill="#8b9cbf">Open Unified Process</text>
+  <text x="500" y="358" font-size="18" font-weight="600" fill="#8b9cbf">Eclipse Foundation</text>
+  <text x="500" y="395" font-size="15" fill="#475569">Processus unifié léger · 4 phases · itératif</text>
+  <line x1="500" y1="418" x2="850" y2="418" stroke="#1e293b" stroke-width="1"/>
+  <g><rect x="500" y="433" width="48" height="28" rx="14" fill="#8b5cf6" fill-opacity="0.08" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="524" y="452" text-anchor="middle" font-size="10" fill="#8b5cf6" font-weight="600" letter-spacing="0.5">UP</text></g>
+  <g><rect x="560" y="433" width="64" height="28" rx="14" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="592" y="452" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">Agile</text></g>
+  <g><rect x="636" y="433" width="72" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="672" y="452" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">Eclipse</text></g>
+  <g><rect x="720" y="433" width="64" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="752" y="452" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Léger</text></g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

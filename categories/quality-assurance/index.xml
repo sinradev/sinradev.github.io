@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quality Assurance on Sinra</title><link>https://sinra.dev/categories/quality-assurance/</link><description>Recent content in Quality Assurance on Sinra</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 14 Jul 2026 09:00:00 +0200</lastBuildDate><atom:link href="https://sinra.dev/categories/quality-assurance/index.xml" rel="self" type="application/rss+xml"/><item><title>Being in QA in 2026: the role that consists of carrying the blame for what everyone else missed</title><link>https://sinra.dev/blog/posts/2026-07-14-qa-2026-sacrifice-equipe/</link><pubDate>Tue, 14 Jul 2026 09:00:00 +0200</pubDate><guid>https://sinra.dev/blog/posts/2026-07-14-qa-2026-sacrifice-equipe/</guid><description>&lt;p&gt;Quality is often seen as the last step before release: build, then test, then ship. This linear view is outdated, and it explains in large part why so many organizations keep shipping avoidable regressions. In 2026, with ever-shorter release cycles, the QA role has moved upstream: less end-of-chain validation, more influence over how the product is designed and built.&lt;/p&gt;
+&lt;h2 id="seeing-the-product-before-the-user-discovers-it"&gt;Seeing the product before the user discovers it&lt;/h2&gt;
+&lt;p&gt;The person in charge of quality occupies a singular position: often the only one who sees the product from the end user&amp;rsquo;s point of view before the user discovers it. This position gives them a responsibility that goes far beyond bug detection: anticipating real usage, edge cases, unforeseen combinations that neither product nor development had considered.&lt;/p&gt;</description></item><item><title>Real-Time QA: Testing Every Feature As Soon As It's Built</title><link>https://sinra.dev/blog/posts/2026-05-12-qa-real-time-feature-par-feature/</link><pubDate>Tue, 12 May 2026 09:00:00 +0100</pubDate><guid>https://sinra.dev/blog/posts/2026-05-12-qa-real-time-feature-par-feature/</guid><description>&lt;h2 id="what-is-qa-and-why-does-it-exist"&gt;What Is QA, and Why Does It Exist?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;QA&lt;/strong&gt; stands for Quality Assurance. It&amp;rsquo;s the process that verifies a piece of software does what it&amp;rsquo;s supposed to do — without crashing, without producing incorrect results, and without unexpected behaviors.&lt;/p&gt;
+&lt;p&gt;In practice, QA is performed by a person (or a team) whose role is to &lt;strong&gt;test the software from the user&amp;rsquo;s perspective&lt;/strong&gt;. They don&amp;rsquo;t read the code: they use the application. They click, fill in forms, trigger actions, provoke edge cases, and observe whether the result matches expectations.&lt;/p&gt;</description></item><item><title>Invisible QA: When Tests Are Scattered Between Jira, Excel And QA's Memory</title><link>https://sinra.dev/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</link><pubDate>Mon, 22 Dec 2025 09:00:00 +0100</pubDate><guid>https://sinra.dev/quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html</guid><description>&lt;p&gt;url: /quality-assurance/2025/12/22/qa-invisible-tests-dispersed.html&lt;/p&gt;
+&lt;h2 id="the-friday-before-release"&gt;The Friday Before Release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Friday 3:00 PM. Release scheduled for Monday morning.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The CTO enters the QA office:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Marie, are we good to ship Monday? All tests passed?&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Marie (QA Lead) opens her laptop:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open Excel&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File: &lt;code&gt;Test_Cases_Release_v2.3_FINAL_v4.xlsx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;87 test cases listed&lt;/li&gt;
+&lt;li&gt;Columns: ID, Description, Priority, Status (Passed/Failed/Not Run)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Count manually&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;62 tests marked &amp;ldquo;Passed&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;18 tests marked &amp;ldquo;Not Run&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;7 tests marked &amp;ldquo;Failed&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Check Jira&lt;/p&gt;</description></item></channel></rss>

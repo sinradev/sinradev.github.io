@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1a2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a1220;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7f1d1d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#14532d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="200" cy="160" r="200" fill="#dc2626" opacity="0.04"/>
+  <circle cx="1000" cy="200" r="200" fill="#16a34a" opacity="0.05"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TOP SECTION LABEL -->
+  <!-- ═══════════════════════════════════════ -->
+  <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ef4444" opacity="0.9" letter-spacing="2">SANS QA EN TEMPS RÉEL</text>
+
+  <!-- ── BAD TIMELINE (top) ── -->
+  <!-- Node 1: Dev fini -->
+  <rect x="80" y="70" width="130" height="52" rx="8" fill="#1e2d45" stroke="#3b5278" stroke-width="1.5"/>
+  <text x="145" y="91" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#7dd3fc">DEV</text>
+  <text x="145" y="108" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">feature terminée</text>
+
+  <!-- Long wait arrow -->
+  <line x1="212" y1="96" x2="395" y2="96" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowRed)" opacity="0.8"/>
+  <text x="302" y="88" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444" opacity="0.9">2-3 semaines</text>
+  <text x="302" y="115" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">contexte oublié...</text>
+
+  <!-- Node 2: QA teste -->
+  <rect x="397" y="70" width="130" height="52" rx="8" fill="#1e2d45" stroke="#3b5278" stroke-width="1.5"/>
+  <text x="462" y="91" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#c4b5fd">QA</text>
+  <text x="462" y="108" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">teste en urgence</text>
+
+  <!-- Bug found arrow -->
+  <line x1="529" y1="96" x2="632" y2="96" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowRed)" opacity="0.8"/>
+
+  <!-- Node 3: Bug trouvé -->
+  <rect x="634" y="70" width="130" height="52" rx="8" fill="#2d1515" stroke="#7f1d1d" stroke-width="1.5"/>
+  <text x="699" y="91" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#ef4444">BUG</text>
+  <text x="699" y="108" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">remonté au dev</text>
+
+  <!-- Long fix arrow -->
+  <line x1="766" y1="96" x2="949" y2="96" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowRed)" opacity="0.8"/>
+  <text x="856" y="88" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444" opacity="0.9">2-4 heures</text>
+  <text x="856" y="115" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">retrouver le contexte</text>
+
+  <!-- Node 4: Fix long -->
+  <rect x="951" y="70" width="140" height="52" rx="8" fill="#2d1515" stroke="#7f1d1d" stroke-width="1.5"/>
+  <text x="1021" y="91" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#ef4444">FIX</text>
+  <text x="1021" y="108" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">contexte perdu</text>
+
+  <!-- Cost badge -->
+  <rect x="951" y="134" width="140" height="24" rx="4" fill="#7f1d1d" opacity="0.6"/>
+  <text x="1021" y="151" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#fca5a5">⏱ 2-4h de débogage</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- DIVIDER -->
+  <!-- ═══════════════════════════════════════ -->
+  <line x1="60" y1="178" x2="1140" y2="178" stroke="#1e3a5f" stroke-width="1" opacity="0.8"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- BOTTOM SECTION LABEL -->
+  <!-- ═══════════════════════════════════════ -->
+  <text x="80" y="210" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#22c55e" opacity="0.9" letter-spacing="2">AVEC QA EN TEMPS RÉEL</text>
+
+  <!-- ── GOOD TIMELINE (bottom) ── -->
+  <!-- Node 1: Dev fini -->
+  <rect x="80" y="222" width="130" height="52" rx="8" fill="#1e2d45" stroke="#3b5278" stroke-width="1.5"/>
+  <text x="145" y="243" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#7dd3fc">DEV</text>
+  <text x="145" y="260" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">feature terminée</text>
+
+  <!-- Signal auto arrow -->
+  <line x1="212" y1="248" x2="290" y2="248" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)" opacity="0.9"/>
+  <text x="250" y="240" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#22c55e" opacity="0.9">signal auto</text>
+
+  <!-- Node 2: QA notifiée -->
+  <rect x="292" y="222" width="130" height="52" rx="8" fill="#0f2e1a" stroke="#15803d" stroke-width="1.5"/>
+  <text x="357" y="243" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#22c55e">QA</text>
+  <text x="357" y="260" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">teste immédiatement</text>
+
+  <!-- Bug found arrow -->
+  <line x1="424" y1="248" x2="502" y2="248" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)" opacity="0.9"/>
+  <text x="462" y="240" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#22c55e" opacity="0.9">même jour</text>
+
+  <!-- Node 3: Bug trouvé -->
+  <rect x="504" y="222" width="130" height="52" rx="8" fill="#1e2d45" stroke="#3b5278" stroke-width="1.5"/>
+  <text x="569" y="243" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#fb923c">BUG</text>
+  <text x="569" y="260" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">notif immédiate</text>
+
+  <!-- Fast fix arrow -->
+  <line x1="636" y1="248" x2="714" y2="248" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)" opacity="0.9"/>
+  <text x="674" y="240" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#22c55e" opacity="0.9">code frais</text>
+
+  <!-- Node 4: Fix rapide -->
+  <rect x="716" y="222" width="130" height="52" rx="8" fill="#0f2e1a" stroke="#15803d" stroke-width="1.5"/>
+  <text x="781" y="243" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#22c55e">FIX</text>
+  <text x="781" y="260" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">contexte encore frais</text>
+
+  <!-- Cost badge good -->
+  <rect x="716" y="286" width="130" height="24" rx="4" fill="#14532d" opacity="0.7"/>
+  <text x="781" y="303" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#86efac">⚡ 10-15 min</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MIDDLE VISUAL: Brain / Context metaphor -->
+  <!-- ═══════════════════════════════════════ -->
+
+  <!-- Brain context panel -->
+  <rect x="890" y="195" width="280" height="140" rx="12" fill="#111c30" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="1030" y="220" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#7dd3fc" letter-spacing="1">CONTEXTE DU DEV</text>
+
+  <!-- Fresh context -->
+  <rect x="905" y="230" width="115" height="90" rx="8" fill="#0f2e1a" stroke="#15803d" stroke-width="1"/>
+  <text x="962" y="252" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#22c55e">Frais</text>
+  <text x="962" y="268" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#86efac">✓ Architecture</text>
+  <text x="962" y="282" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#86efac">✓ Décisions</text>
+  <text x="962" y="296" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#86efac">✓ Edge cases</text>
+  <text x="962" y="310" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#86efac">✓ Dépendances</text>
+
+  <!-- Stale context -->
+  <rect x="1030" y="230" width="125" height="90" rx="8" fill="#2d1515" stroke="#7f1d1d" stroke-width="1"/>
+  <text x="1092" y="252" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ef4444">Perdu</text>
+  <text x="1092" y="268" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fca5a5">✗ Architecture</text>
+  <text x="1092" y="282" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fca5a5">✗ Décisions</text>
+  <text x="1092" y="296" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fca5a5">✗ Edge cases</text>
+  <text x="1092" y="310" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#fca5a5">✗ Dépendances</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SINRA SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+
+  <!-- Sinra capability card -->
+  <rect x="60" y="355" width="510" height="120" rx="12" fill="#111c30" stroke="#1e3a8a" stroke-width="1.5"/>
+
+  <rect x="75" y="370" width="180" height="22" rx="4" fill="#1e3a8a" opacity="0.8"/>
+  <text x="165" y="386" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#93c5fd">CAPABILITY : Export PDF</text>
+
+  <!-- Issues -->
+  <text x="80" y="410" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Issues :</text>
+  <rect x="80" y="416" width="12" height="12" rx="2" fill="#22c55e" opacity="0.8"/>
+  <text x="97" y="426" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Générer PDF côté serveur</text>
+  <rect x="200" y="416" width="12" height="12" rx="2" fill="#22c55e" opacity="0.8"/>
+  <text x="217" y="426" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Pagination</text>
+  <rect x="295" y="416" width="12" height="12" rx="2" fill="#fb923c" opacity="0.8"/>
+  <text x="312" y="426" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Export images</text>
+
+  <!-- Testings -->
+  <text x="80" y="448" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Testings :</text>
+  <text x="80" y="462" font-family="Arial, sans-serif" font-size="10" fill="#22c55e">✓ Rapport 5p</text>
+  <text x="165" y="462" font-family="Arial, sans-serif" font-size="10" fill="#22c55e">✓ Rapport 50p</text>
+  <text x="260" y="462" font-family="Arial, sans-serif" font-size="10" fill="#fb923c">⚠ Rapport 200p</text>
+  <text x="368" y="462" font-family="Arial, sans-serif" font-size="10" fill="#64748b">○ Images</text>
+
+  <!-- Stats row -->
+  <rect x="600" y="355" width="270" height="120" rx="12" fill="#111c30" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="735" y="380" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#7dd3fc">Progression QA</text>
+
+  <text x="620" y="410" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Tests passés</text>
+  <text x="820" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end" fill="#22c55e">8 / 12</text>
+
+  <rect x="620" y="418" width="185" height="8" rx="4" fill="#1e2d45"/>
+  <rect x="620" y="418" width="123" height="8" rx="4" fill="#22c55e" opacity="0.8"/>
+
+  <text x="620" y="445" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Bugs ouverts</text>
+  <text x="820" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end" fill="#fb923c">2</text>
+
+  <text x="620" y="468" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Statut release</text>
+  <rect x="715" y="456" width="90" height="18" rx="4" fill="#14532d" opacity="0.8"/>
+  <text x="760" y="469" font-family="Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#86efac">En cours</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TITLE BAND -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="0" y="492" width="1200" height="138" fill="#060d1a" opacity="0.95"/>
+  <rect x="0" y="491" width="1200" height="2" fill="#22c55e" opacity="0.5"/>
+
+  <!-- Main title -->
+  <text x="600" y="547" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#ffffff" letter-spacing="-1">QA en Temps Réel</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="584" font-family="Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" fill="#7dd3fc">Tester chaque feature dès qu'elle est développée</text>
+
+  <!-- Tags -->
+  <rect x="388" y="600" width="150" height="22" rx="11" fill="#22c55e" opacity="0.15"/>
+  <text x="463" y="616" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#22c55e">Quality Assurance</text>
+
+  <rect x="552" y="600" width="100" height="22" rx="11" fill="#7dd3fc" opacity="0.12"/>
+  <text x="602" y="616" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#7dd3fc">Sinra</text>
+
+  <rect x="666" y="600" width="140" height="22" rx="11" fill="#c4b5fd" opacity="0.12"/>
+  <text x="736" y="616" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#c4b5fd">Methodologie</text>
+
+  <!-- Sinra branding -->
+  <text x="1155" y="623" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#22c55e" opacity="0.5">sinra.app</text>
+</svg>

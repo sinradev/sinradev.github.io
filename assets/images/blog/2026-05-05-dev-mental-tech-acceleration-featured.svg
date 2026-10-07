@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.4" opacity="0.05"/>
+    </pattern>
+    <linearGradient id="speedline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a6f079;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#a6f079;stop-opacity:0.7"/>
+    </linearGradient>
+    <linearGradient id="speedline2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c792e9;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#c792e9;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="speedline3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#ff6b9d;stop-opacity:0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="200" cy="200" r="180" fill="#c792e9" opacity="0.05"/>
+  <circle cx="950" cy="400" r="200" fill="#a6f079" opacity="0.05"/>
+  <circle cx="600" cy="300" r="250" fill="#ff6b9d" opacity="0.03"/>
+
+  <!-- Speed lines (left side - coming from behind) -->
+  <rect x="0" y="120" width="320" height="2" fill="url(#speedline)" opacity="0.8"/>
+  <rect x="0" y="145" width="280" height="1.5" fill="url(#speedline)" opacity="0.6"/>
+  <rect x="0" y="165" width="350" height="2" fill="url(#speedline2)" opacity="0.7"/>
+  <rect x="0" y="185" width="260" height="1" fill="url(#speedline)" opacity="0.5"/>
+  <rect x="0" y="210" width="310" height="2" fill="url(#speedline3)" opacity="0.7"/>
+  <rect x="0" y="230" width="240" height="1.5" fill="url(#speedline2)" opacity="0.5"/>
+  <rect x="0" y="255" width="380" height="2" fill="url(#speedline)" opacity="0.6"/>
+  <rect x="0" y="275" width="290" height="1" fill="url(#speedline3)" opacity="0.4"/>
+  <rect x="0" y="295" width="330" height="2" fill="url(#speedline2)" opacity="0.6"/>
+  <rect x="0" y="320" width="270" height="1.5" fill="url(#speedline)" opacity="0.5"/>
+  <rect x="0" y="340" width="360" height="2" fill="url(#speedline3)" opacity="0.7"/>
+  <rect x="0" y="360" width="250" height="1" fill="url(#speedline)" opacity="0.4"/>
+
+  <!-- Developer figure (center-left) -->
+  <g transform="translate(430, 185)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="28" fill="#8b9cbf" opacity="0.9"/>
+    <!-- Body -->
+    <rect x="-18" y="30" width="36" height="55" rx="6" fill="#8b9cbf" opacity="0.8"/>
+    <!-- Left arm (reaching forward) -->
+    <line x1="-18" y1="50" x2="-45" y2="80" stroke="#8b9cbf" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <!-- Right arm (reaching forward/up) -->
+    <line x1="18" y1="45" x2="55" y2="30" stroke="#8b9cbf" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <!-- Legs (running pose) -->
+    <line x1="-8" y1="85" x2="-25" y2="130" stroke="#8b9cbf" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <line x1="8" y1="85" x2="30" y2="125" stroke="#8b9cbf" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <!-- Sweat drop -->
+    <ellipse cx="30" cy="-15" rx="6" ry="9" fill="#4fc3f7" opacity="0.7"/>
+    <ellipse cx="42" cy="-5" rx="4" ry="7" fill="#4fc3f7" opacity="0.5"/>
+  </g>
+
+  <!-- Technology labels cascading to the right - like an avalanche -->
+  <!-- Row 1 - far right, fast approaching -->
+  <text x="560" y="120" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#a6f079" opacity="0.9">React 20</text>
+  <text x="700" y="108" font-family="'Courier New', monospace" font-size="16" font-weight="600" fill="#c792e9" opacity="0.8">Bun 2.0</text>
+  <text x="820" y="125" font-family="'Courier New', monospace" font-size="22" font-weight="700" fill="#ff6b9d" opacity="0.9">Rust</text>
+  <text x="920" y="110" font-family="'Courier New', monospace" font-size="18" font-weight="600" fill="#a6f079" opacity="0.8">Zig</text>
+  <text x="1010" y="130" font-family="'Courier New', monospace" font-size="14" font-weight="500" fill="#8b9cbf" opacity="0.7">WASM</text>
+
+  <!-- Row 2 -->
+  <text x="555" y="175" font-family="'Courier New', monospace" font-size="18" font-weight="600" fill="#c792e9" opacity="0.85">Next.js 17</text>
+  <text x="690" y="160" font-family="'Courier New', monospace" font-size="24" font-weight="700" fill="#a6f079" opacity="0.95">Go 2</text>
+  <text x="775" y="178" font-family="'Courier New', monospace" font-size="16" font-weight="600" fill="#ff6b9d" opacity="0.8">Svelte 6</text>
+  <text x="900" y="165" font-family="'Courier New', monospace" font-size="19" font-weight="700" fill="#c792e9" opacity="0.9">Deno 3</text>
+  <text x="1020" y="175" font-family="'Courier New', monospace" font-size="15" font-weight="500" fill="#a6f079" opacity="0.7">htmx</text>
+  <text x="1100" y="160" font-family="'Courier New', monospace" font-size="13" fill="#8b9cbf" opacity="0.6">Astro 5</text>
+
+  <!-- Row 3 -->
+  <text x="550" y="235" font-family="'Courier New', monospace" font-size="22" font-weight="700" fill="#ff6b9d" opacity="0.9">LLM Agents</text>
+  <text x="720" y="220" font-family="'Courier New', monospace" font-size="17" font-weight="600" fill="#a6f079" opacity="0.8">TypeScript 8</text>
+  <text x="880" y="238" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#c792e9" opacity="0.9">MCP</text>
+  <text x="975" y="222" font-family="'Courier New', monospace" font-size="14" fill="#ff6b9d" opacity="0.7">Turso</text>
+  <text x="1060" y="235" font-family="'Courier New', monospace" font-size="16" fill="#8b9cbf" opacity="0.6">Tauri 3</text>
+
+  <!-- Row 4 -->
+  <text x="545" y="290" font-family="'Courier New', monospace" font-size="17" font-weight="600" fill="#a6f079" opacity="0.8">Vue 5</text>
+  <text x="635" y="278" font-family="'Courier New', monospace" font-size="21" font-weight="700" fill="#c792e9" opacity="0.9">AI Coding</text>
+  <text x="790" y="292" font-family="'Courier New', monospace" font-size="16" fill="#ff6b9d" opacity="0.75">Vite 7</text>
+  <text x="890" y="280" font-family="'Courier New', monospace" font-size="18" font-weight="600" fill="#a6f079" opacity="0.85">SolidJS 2</text>
+  <text x="1020" y="290" font-family="'Courier New', monospace" font-size="13" fill="#8b9cbf" opacity="0.6">Oxc</text>
+  <text x="1080" y="278" font-family="'Courier New', monospace" font-size="15" fill="#c792e9" opacity="0.65">Biome</text>
+
+  <!-- Row 5 -->
+  <text x="540" y="345" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#c792e9" opacity="0.85">MicroFrontend</text>
+  <text x="730" y="332" font-family="'Courier New', monospace" font-size="16" fill="#a6f079" opacity="0.75">Gleam</text>
+  <text x="830" y="348" font-family="'Courier New', monospace" font-size="22" font-weight="700" fill="#ff6b9d" opacity="0.9">RAG</text>
+  <text x="930" y="335" font-family="'Courier New', monospace" font-size="14" fill="#8b9cbf" opacity="0.65">Hono</text>
+  <text x="1010" y="345" font-family="'Courier New', monospace" font-size="17" fill="#c792e9" opacity="0.7">ElixirLS</text>
+  <text x="1120" y="332" font-family="'Courier New', monospace" font-size="13" fill="#a6f079" opacity="0.55">Pkl</text>
+
+  <!-- Cascade speed indicators (arrows pointing right toward dev) -->
+  <path d="M 530 200 L 490 200" stroke="#ff6b9d" stroke-width="3" fill="none" opacity="0.8" marker-end="url(#arr)"/>
+  <path d="M 530 250 L 490 250" stroke="#a6f079" stroke-width="2.5" fill="none" opacity="0.7" marker-end="url(#arr2)"/>
+  <path d="M 530 300 L 490 300" stroke="#c792e9" stroke-width="2" fill="none" opacity="0.6" marker-end="url(#arr3)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff6b9d"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#a6f079"/>
+    </marker>
+    <marker id="arr3" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#c792e9"/>
+    </marker>
+  </defs>
+
+  <!-- Question marks above dev head -->
+  <text x="490" y="165" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ff6b9d" opacity="0.9">?</text>
+  <text x="510" y="148" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#c792e9" opacity="0.7">?</text>
+  <text x="473" y="148" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#a6f079" opacity="0.6">?</text>
+
+  <!-- Timeline on left: "1990" → "2026" showing acceleration -->
+  <line x1="60" y1="100" x2="60" y2="380" stroke="#8b9cbf" stroke-width="1.5" opacity="0.4"/>
+  <text x="30" y="110" font-family="Arial, sans-serif" font-size="13" fill="#8b9cbf" opacity="0.6">1990</text>
+  <circle cx="60" cy="108" r="4" fill="#8b9cbf" opacity="0.5"/>
+  <text x="30" y="175" font-family="Arial, sans-serif" font-size="13" fill="#8b9cbf" opacity="0.6">2000</text>
+  <circle cx="60" cy="172" r="4" fill="#8b9cbf" opacity="0.5"/>
+  <text x="30" y="230" font-family="Arial, sans-serif" font-size="13" fill="#8b9cbf" opacity="0.6">2010</text>
+  <circle cx="60" cy="228" r="5" fill="#a6f079" opacity="0.6"/>
+  <text x="30" y="270" font-family="Arial, sans-serif" font-size="13" fill="#8b9cbf" opacity="0.7">2020</text>
+  <circle cx="60" cy="268" r="6" fill="#c792e9" opacity="0.7"/>
+  <text x="20" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ff6b9d" opacity="0.9">2026</text>
+  <circle cx="60" cy="306" r="9" fill="#ff6b9d" opacity="0.8"/>
+  <!-- Acceleration arrow -->
+  <path d="M 60 108 Q 80 200 60 380" stroke="#8b9cbf" stroke-width="1" fill="none" stroke-dasharray="4,4" opacity="0.3"/>
+
+  <!-- Bottom title band -->
+  <rect x="0" y="410" width="1200" height="220" fill="#080c18" opacity="0.92"/>
+  <rect x="0" y="409" width="1200" height="2" fill="#a6f079" opacity="0.5"/>
+
+  <!-- Main title -->
+  <text x="600" y="475" font-family="Arial, sans-serif" font-size="52" font-weight="bold" text-anchor="middle" fill="#ffffff" letter-spacing="-1">L'impossible course en avant</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="522" font-family="Arial, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="#c792e9">Le mental du développeur face à l'accélération technologique</text>
+
+  <!-- Tags -->
+  <rect x="350" y="550" width="120" height="28" rx="14" fill="#a6f079" opacity="0.15"/>
+  <text x="410" y="569" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a6f079">Carrière</text>
+
+  <rect x="490" y="550" width="80" height="28" rx="14" fill="#c792e9" opacity="0.15"/>
+  <text x="530" y="569" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#c792e9">Mental</text>
+
+  <rect x="590" y="550" width="70" height="28" rx="14" fill="#ff6b9d" opacity="0.15"/>
+  <text x="625" y="569" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ff6b9d">FOMO</text>
+
+  <rect x="680" y="550" width="60" height="28" rx="14" fill="#a6f079" opacity="0.15"/>
+  <text x="710" y="569" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a6f079">Tech</text>
+
+  <!-- Sinra branding -->
+  <text x="1155" y="615" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="end" fill="#a6f079" opacity="0.5">sinra.app</text>
+</svg>

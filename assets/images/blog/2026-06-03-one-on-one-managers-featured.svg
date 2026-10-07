@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Two people facing each other -->
+  <!-- Person left (manager) -->
+  <circle cx="350" cy="200" r="40" fill="#1e2a40" stroke="#64b5f6" stroke-width="2"/>
+  <text x="350" y="207" font-family="monospace" font-size="14" fill="#64b5f6" text-anchor="middle">MGR</text>
+  <!-- Body -->
+  <rect x="310" y="245" width="80" height="100" rx="8" fill="#1e2a40" stroke="#64b5f6" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Person right (dev) -->
+  <circle cx="850" cy="200" r="40" fill="#1e3025" stroke="#a6f079" stroke-width="2"/>
+  <text x="850" y="207" font-family="monospace" font-size="14" fill="#a6f079" text-anchor="middle">DEV</text>
+  <rect x="810" y="245" width="80" height="100" rx="8" fill="#1e3025" stroke="#a6f079" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Speech bubbles - WRONG (Jira) -->
+  <rect x="100" y="120" width="200" height="55" rx="8" fill="#1e1a30" stroke="#ff6b6b" stroke-width="1.5"/>
+  <polygon points="200,175 215,195 185,175" fill="#1e1a30" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="200" y="143" font-family="monospace" font-size="11" fill="#ff6b6b" text-anchor="middle">« Ticket #847,</text>
+  <text x="200" y="160" font-family="monospace" font-size="11" fill="#ff6b6b" text-anchor="middle">où tu en es ? »</text>
+  <line x1="90" y1="108" x2="310" y2="108" stroke="#ff6b6b" stroke-width="0.5" opacity="0.3" stroke-dasharray="4,3"/>
+  <text x="200" y="105" font-family="monospace" font-size="9" fill="#ff6b6b" opacity="0.6" text-anchor="middle">✗ rapport de statut</text>
+
+  <!-- Speech bubbles - RIGHT -->
+  <rect x="700" y="70" width="340" height="75" rx="8" fill="#1a2a1a" stroke="#a6f079" stroke-width="1.5"/>
+  <polygon points="750,145 765,165 735,145" fill="#1a2a1a" stroke="#a6f079" stroke-width="1"/>
+  <text x="870" y="95" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">« Qu'est-ce qui te</text>
+  <text x="870" y="112" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">préoccupe en ce moment, </text>
+  <text x="870" y="129" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">technique ou autre ? »</text>
+  <text x="870" y="60" font-family="monospace" font-size="9" fill="#a6f079" opacity="0.6" text-anchor="middle">✓ conversation réelle</text>
+
+  <!-- Table between them -->
+  <rect x="430" y="280" width="340" height="20" rx="4" fill="#1e2540" stroke="#2a3560" stroke-width="1"/>
+
+  <!-- What flows in good 1on1 -->
+  <rect x="380" y="370" width="440" height="130" rx="10" fill="#181f35" stroke="#64b5f6" stroke-width="1" opacity="0.7"/>
+  <text x="600" y="400" font-family="monospace" font-size="12" fill="#64b5f6" text-anchor="middle">Ce que le 1-on-1 révèle</text>
+  <text x="420" y="425" font-family="monospace" font-size="11" fill="#8b9cbf">→ Signaux faibles de démotivation</text>
+  <text x="420" y="445" font-family="monospace" font-size="11" fill="#8b9cbf">→ Blocages systémiques invisibles</text>
+  <text x="420" y="465" font-family="monospace" font-size="11" fill="#8b9cbf">→ Tensions interpersonnelles latentes</text>
+  <text x="420" y="485" font-family="monospace" font-size="11" fill="#8b9cbf">→ Ambitions et besoins de croissance</text>
+
+  <text x="600" y="565" font-family="Georgia, serif" font-size="26" fill="#e0e8ff" text-anchor="middle" opacity="0.9">L'espace que les tickets ne remplissent jamais</text>
+</svg>

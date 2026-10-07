@@ -1,0 +1,204 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2235"/>
+      <stop offset="100%" stop-color="#0d1018"/>
+    </linearGradient>
+
+    <!-- Spotlight cone -->
+    <radialGradient id="spotlight" cx="50%" cy="0%" r="70%" fx="50%" fy="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Stage floor glow -->
+    <radialGradient id="stageGlow" cx="50%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Chair body gradient -->
+    <linearGradient id="chairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#252b42"/>
+      <stop offset="100%" stop-color="#161b2e"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="redglow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="480"/>
+    <line x1="480" y1="0" x2="480" y2="480"/>
+    <line x1="720" y1="0" x2="720" y2="480"/>
+    <line x1="960" y1="0" x2="960" y2="480"/>
+  </g>
+
+  <!-- Spotlight cone from top center -->
+  <polygon points="600,0 340,465 860,465" fill="url(#spotlight)"/>
+
+  <!-- Stage floor -->
+  <ellipse cx="600" cy="465" rx="280" ry="28" fill="url(#stageGlow)"/>
+  <line x1="320" y1="465" x2="880" y2="465" stroke="#ffffff" stroke-width="1" opacity="0.08"/>
+
+  <!-- =========================================== -->
+  <!-- CHAIRS (vue de dos, 4 juges The Voice)       -->
+  <!-- =========================================== -->
+
+  <!-- Chair 1 — far left -->
+  <g transform="translate(118, 280)">
+    <!-- seat -->
+    <rect x="-44" y="70" width="88" height="22" rx="4" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <!-- backrest -->
+    <rect x="-36" y="-10" width="72" height="82" rx="10" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <!-- headrest bump -->
+    <rect x="-20" y="-24" width="40" height="22" rx="8" fill="#252b42" stroke="#2d3450" stroke-width="1"/>
+    <!-- legs -->
+    <line x1="-28" y1="92" x2="-28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <line x1="28" y1="92" x2="28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <!-- BUZZ button — RED, lit up -->
+    <circle cx="52" cy="30" r="14" fill="#e63946" filter="url(#redglow)" opacity="0.9"/>
+    <circle cx="52" cy="30" r="9" fill="#ff4d5a"/>
+  </g>
+
+  <!-- Chair 2 — left of center -->
+  <g transform="translate(335, 285)">
+    <rect x="-44" y="70" width="88" height="22" rx="4" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <rect x="-36" y="-10" width="72" height="82" rx="10" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <rect x="-20" y="-24" width="40" height="22" rx="8" fill="#252b42" stroke="#2d3450" stroke-width="1"/>
+    <line x1="-28" y1="92" x2="-28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <line x1="28" y1="92" x2="28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <!-- Button NOT lit — dark -->
+    <circle cx="52" cy="30" r="14" fill="#3a1a1d" stroke="#5a2228" stroke-width="1"/>
+    <circle cx="52" cy="30" r="9" fill="#2a1216"/>
+  </g>
+
+  <!-- Chair 3 — right of center -->
+  <g transform="translate(865, 285)">
+    <rect x="-44" y="70" width="88" height="22" rx="4" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <rect x="-36" y="-10" width="72" height="82" rx="10" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <rect x="-20" y="-24" width="40" height="22" rx="8" fill="#252b42" stroke="#2d3450" stroke-width="1"/>
+    <line x1="-28" y1="92" x2="-28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <line x1="28" y1="92" x2="28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <!-- Button NOT lit -->
+    <circle cx="-52" cy="30" r="14" fill="#3a1a1d" stroke="#5a2228" stroke-width="1"/>
+    <circle cx="-52" cy="30" r="9" fill="#2a1216"/>
+  </g>
+
+  <!-- Chair 4 — far right -->
+  <g transform="translate(1082, 280)">
+    <rect x="-44" y="70" width="88" height="22" rx="4" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <rect x="-36" y="-10" width="72" height="82" rx="10" fill="url(#chairGrad)" stroke="#2d3450" stroke-width="1"/>
+    <rect x="-20" y="-24" width="40" height="22" rx="8" fill="#252b42" stroke="#2d3450" stroke-width="1"/>
+    <line x1="-28" y1="92" x2="-28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <line x1="28" y1="92" x2="28" y2="120" stroke="#1a1f35" stroke-width="4"/>
+    <!-- Button NOT lit -->
+    <circle cx="-52" cy="30" r="14" fill="#3a1a1d" stroke="#5a2228" stroke-width="1"/>
+    <circle cx="-52" cy="30" r="9" fill="#2a1216"/>
+  </g>
+
+  <!-- =========================================== -->
+  <!-- DEVELOPER on stage — in the spotlight        -->
+  <!-- =========================================== -->
+
+  <!-- Shadow on stage floor -->
+  <ellipse cx="600" cy="455" rx="40" ry="8" fill="#000000" opacity="0.4"/>
+
+  <!-- Body -->
+  <rect x="576" y="360" width="48" height="56" rx="6" fill="#1e2a4a" stroke="#3d5080" stroke-width="1.5"/>
+
+  <!-- Laptop on body -->
+  <rect x="583" y="370" width="34" height="22" rx="2" fill="#0d1018" stroke="#a6f079" stroke-width="1" opacity="0.9"/>
+  <!-- Screen content: code lines -->
+  <line x1="587" y1="376" x2="609" y2="376" stroke="#a6f079" stroke-width="1.5" opacity="0.8"/>
+  <line x1="587" y1="381" x2="604" y2="381" stroke="#a6f079" stroke-width="1" opacity="0.5"/>
+  <line x1="587" y1="386" x2="607" y2="386" stroke="#c792e9" stroke-width="1" opacity="0.6"/>
+
+  <!-- Head -->
+  <circle cx="600" cy="345" r="20" fill="#2a3558" stroke="#3d5080" stroke-width="1.5"/>
+  <!-- Face: simple dots for eyes -->
+  <circle cx="594" cy="343" r="2" fill="#8b9cbf"/>
+  <circle cx="606" cy="343" r="2" fill="#8b9cbf"/>
+  <!-- Headphones symbol -->
+  <path d="M 584 341 Q 584 325 600 325 Q 616 325 616 341" fill="none" stroke="#a6f079" stroke-width="2" opacity="0.6"/>
+  <rect x="582" y="339" width="5" height="8" rx="2" fill="#a6f079" opacity="0.6"/>
+  <rect x="613" y="339" width="5" height="8" rx="2" fill="#a6f079" opacity="0.6"/>
+
+  <!-- =========================================== -->
+  <!-- FLOATING CODE FRAGMENTS                      -->
+  <!-- =========================================== -->
+
+  <g font-family="'Courier New', monospace" fill="#a6f079" opacity="0.13" font-size="13">
+    <text x="60" y="90">function BFS(graph, start) {</text>
+    <text x="60" y="110">  const queue = [start];</text>
+    <text x="60" y="130">  while (queue.length) {</text>
+    <text x="60" y="150">    const node = queue.shift();</text>
+  </g>
+
+  <g font-family="'Courier New', monospace" fill="#c792e9" opacity="0.11" font-size="13">
+    <text x="840" y="90">class UnionFind {</text>
+    <text x="840" y="110">  find(x) { // path compression</text>
+    <text x="840" y="130">    if (this.parent[x] !== x)</text>
+    <text x="840" y="150">      this.parent[x] = this.find(...);</text>
+  </g>
+
+  <g font-family="'Courier New', monospace" fill="#ff6b9d" opacity="0.09" font-size="12">
+    <text x="70" y="220">// O(n log n) — Merge Sort</text>
+    <text x="70" y="240">function mergeSort(arr) {</text>
+    <text x="70" y="260">  if (arr.length ≤ 1) return arr;</text>
+  </g>
+
+  <g font-family="'Courier New', monospace" fill="#8b9cbf" opacity="0.10" font-size="12">
+    <text x="850" y="210">// Design a system for</text>
+    <text x="850" y="230">// 100M concurrent users.</text>
+    <text x="850" y="250">// Latency &lt; 100ms globally.</text>
+    <text x="850" y="270">// No hints. 30 minutes.</text>
+  </g>
+
+  <!-- Floating labels: what they ask vs reality -->
+  <!-- Asked: -->
+  <rect x="70" y="165" width="200" height="26" rx="4" fill="#e63946" opacity="0.15" stroke="#e63946" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="170" y="182" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#e63946" letter-spacing="1">CTO-LEVEL QUESTION</text>
+
+  <rect x="850" y="165" width="200" height="26" rx="4" fill="#ff6b9d" opacity="0.15" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="950" y="182" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#ff6b9d" letter-spacing="1">SENIOR DEV POSITION</text>
+
+  <!-- Round counter: "Round 3/5" above the dev -->
+  <rect x="556" y="264" width="88" height="26" rx="13" fill="#e63946" opacity="0.9" filter="url(#glow)"/>
+  <text x="600" y="281" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#ffffff" letter-spacing="1">ROUND 3 / 5</text>
+
+  <!-- "I WANT YOU" button label on lit chair -->
+  <text x="118" y="253" font-family="Arial, sans-serif" font-size="9" font-weight="700" text-anchor="middle" fill="#e63946" letter-spacing="0.5" opacity="0.7">TURNED</text>
+
+  <!-- =========================================== -->
+  <!-- BOTTOM TITLE BAND                            -->
+  <!-- =========================================== -->
+  <rect x="0" y="480" width="1200" height="150" fill="#0a0c14" opacity="0.92"/>
+  <rect x="0" y="480" width="1200" height="2" fill="#e63946" opacity="0.7"/>
+
+  <text x="80" y="535" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-0.5">Le dev est le nouveau candidat de</text>
+  <text x="80" y="535" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#e63946" letter-spacing="-0.5" dx="610">The Voice</text>
+  <text x="80" y="573" font-family="Arial, sans-serif" font-size="14" fill="#8b9cbf" letter-spacing="1">5 ENTRETIENS  ·  TESTS D'ALGO INUTILES  ·  QUESTIONS DE CTO  ·  ZÉRO CONFIANCE</text>
+
+  <!-- sinra.app -->
+  <text x="1120" y="612" font-family="Arial, sans-serif" font-size="12" fill="#c792e9" text-anchor="end" opacity="0.5">sinra.app</text>
+</svg>

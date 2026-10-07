@@ -1,0 +1,56 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f7fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="24" fill="#2d3748" text-anchor="middle" font-weight="bold">TechOps Platform: Avant vs Après IA</text>
+
+  <!-- BEFORE (left) -->
+  <rect x="50" y="70" width="330" height="330" rx="8" fill="#ffffff" stroke="#e53e3e" stroke-width="3"/>
+  <text x="215" y="100" font-family="Arial, sans-serif" font-size="20" fill="#e53e3e" text-anchor="middle" font-weight="bold">AVANT IA</text>
+
+  <!-- Before metrics -->
+  <g transform="translate(70, 130)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Analyse technique:</text>
+    <rect x="0" y="10" width="280" height="25" rx="4" fill="#fed7d7"/>
+    <text x="140" y="28" font-family="Arial, sans-serif" font-size="12" fill="#742a2a" text-anchor="middle">2 semaines allers-retours</text>
+
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Specs irréalistes:</text>
+    <rect x="0" y="70" width="280" height="25" rx="4" fill="#fed7d7"/>
+    <text x="140" y="88" font-family="Arial, sans-serif" font-size="12" fill="#742a2a" text-anchor="middle">40% nécessitent refactorisation</text>
+
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Satisfaction dev:</text>
+    <rect x="0" y="130" width="280" height="25" rx="4" fill="#fed7d7"/>
+    <text x="140" y="148" font-family="Arial, sans-serif" font-size="12" fill="#742a2a" text-anchor="middle">Frustration constante</text>
+
+    <text x="0" y="180" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Releases:</text>
+    <rect x="0" y="190" width="280" height="25" rx="4" fill="#fed7d7"/>
+    <text x="140" y="208" font-family="Arial, sans-serif" font-size="12" fill="#742a2a" text-anchor="middle">30% en retard</text>
+  </g>
+
+  <!-- AFTER (right) -->
+  <rect x="420" y="70" width="330" height="330" rx="8" fill="#ffffff" stroke="#48bb78" stroke-width="3"/>
+  <text x="585" y="100" font-family="Arial, sans-serif" font-size="20" fill="#48bb78" text-anchor="middle" font-weight="bold">APRÈS IA</text>
+
+  <!-- After metrics -->
+  <g transform="translate(440, 130)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Analyse technique:</text>
+    <rect x="0" y="10" width="280" height="25" rx="4" fill="#c6f6d5"/>
+    <text x="140" y="28" font-family="Arial, sans-serif" font-size="12" fill="#22543d" text-anchor="middle">30 minutes automatique</text>
+
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Specs irréalistes:</text>
+    <rect x="0" y="70" width="280" height="25" rx="4" fill="#c6f6d5"/>
+    <text x="140" y="88" font-family="Arial, sans-serif" font-size="12" fill="#22543d" text-anchor="middle">5% seulement</text>
+
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Satisfaction dev:</text>
+    <rect x="0" y="130" width="280" height="25" rx="4" fill="#c6f6d5"/>
+    <text x="140" y="148" font-family="Arial, sans-serif" font-size="12" fill="#22543d" text-anchor="middle">Collaboration fluide</text>
+
+    <text x="0" y="180" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" font-weight="bold">Releases:</text>
+    <rect x="0" y="190" width="280" height="25" rx="4" fill="#c6f6d5"/>
+    <text x="140" y="208" font-family="Arial, sans-serif" font-size="12" fill="#22543d" text-anchor="middle">95% à temps</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="14" fill="#718096" text-anchor="middle">IA analyse le code → Specs réalistes → Releases à temps</text>
+</svg>
