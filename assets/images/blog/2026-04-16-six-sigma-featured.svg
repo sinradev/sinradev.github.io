@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/><stop offset="60%" stop-color="#0a0f1a"/><stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="20%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#c792e9" stop-opacity="0.18"/><stop offset="100%" stop-color="#c792e9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.10"/><stop offset="100%" stop-color="#a6f079" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- Bell curve -->
+  <path d="M30,430 Q80,425 120,380 Q160,300 215,240 Q270,300 310,380 Q350,425 400,430" fill="none" stroke="#c792e9" stroke-width="2.5" stroke-opacity="0.8"/>
+  <!-- Fill under curve -->
+  <path d="M30,430 Q80,425 120,380 Q160,300 215,240 Q270,300 310,380 Q350,425 400,430 L400,450 L30,450 Z" fill="#c792e9" fill-opacity="0.05"/>
+
+  <!-- Mean line -->
+  <line x1="215" y1="240" x2="215" y2="450" stroke="#c792e9" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4,3"/>
+
+  <!-- 6 sigma boundaries -->
+  <line x1="55" y1="430" x2="55" y2="450" stroke="#a6f079" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="375" y1="430" x2="375" y2="450" stroke="#a6f079" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="55" y="465" text-anchor="middle" font-size="9" fill="#a6f079" opacity="0.8">-6σ</text>
+  <text x="375" y="465" text-anchor="middle" font-size="9" fill="#a6f079" opacity="0.8">+6σ</text>
+  <text x="215" y="465" text-anchor="middle" font-size="9" fill="#c792e9" opacity="0.8">μ</text>
+
+  <!-- Sigma symbol big -->
+  <text x="215" y="200" text-anchor="middle" font-size="100" fill="#c792e9" opacity="0.06" font-family="Georgia, serif" font-weight="900">σ</text>
+
+  <!-- DPMO label -->
+  <rect x="80" y="130" width="270" height="50" rx="8" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="215" y="152" text-anchor="middle" font-size="18" fill="#c792e9" font-weight="800">3,4 DPMO</text>
+  <text x="215" y="170" text-anchor="middle" font-size="10" fill="#8b9cbf" opacity="0.8">défauts par million d'opportunités</text>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">QUALITÉ · STATISTIQUE</text>
+  <text x="500" y="262" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-3">Six</text>
+  <text x="500" y="352" font-size="72" font-weight="800" letter-spacing="-3"><tspan fill="#c792e9">Sigma</tspan></text>
+  <text x="500" y="400" font-size="16" fill="#475569">DMAIC · réduire les défauts à 3,4/million</text>
+  <line x1="500" y1="425" x2="850" y2="425" stroke="#1e293b" stroke-width="1"/>
+  <g><rect x="500" y="440" width="80" height="28" rx="14" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="540" y="459" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">DMAIC</text></g>
+  <g><rect x="592" y="440" width="80" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="632" y="459" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">Qualité</text></g>
+  <g><rect x="684" y="440" width="96" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="732" y="459" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Black Belt</text></g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

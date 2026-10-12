@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font: bold 18px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .subtitle { font: 14px sans-serif; fill: oklch(82.901% 0.031 222.959); opacity: 0.8; }
+      .label { font: 12px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .small { font: 11px sans-serif; fill: oklch(82.901% 0.031 222.959); opacity: 0.7; }
+      .error-icon { fill: oklch(82.418% 0.099 33.756); }
+      .warning-icon { fill: oklch(86.163% 0.142 94.818); }
+      .success-icon { fill: oklch(86.171% 0.142 166.534); }
+      .primary { fill: oklch(86.133% 0.141 139.549); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="oklch(30.857% 0.023 264.149)"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Roadmap : Excel Obsolète vs Sinra Temps Réel</text>
+
+  <!-- Left Side - Excel (Obsolète) -->
+  <g transform="translate(40, 60)">
+    <text x="0" y="0" class="subtitle">❌ Excel / Notion</text>
+    <text x="0" y="20" class="small">(Mise à jour manuelle)</text>
+
+    <!-- Excel representation -->
+    <rect x="0" y="35" width="320" height="250" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(82.901% 0.031 222.959)" stroke-width="1" rx="4"/>
+
+    <!-- Gantt bars (obsolète) -->
+    <g transform="translate(10, 50)">
+      <text x="0" y="0" class="label">Feature SSO</text>
+      <rect x="0" y="10" width="180" height="20" fill="oklch(73.375% 0.165 35.353)" opacity="0.4"/>
+      <text x="190" y="24" class="small">15 Jan - 5 Fév</text>
+      <circle cx="270" cy="20" r="8" class="error-icon"/>
+
+      <text x="0" y="50" class="label">Analytics</text>
+      <rect x="60" y="60" width="150" height="20" fill="oklch(73.375% 0.165 35.353)" opacity="0.4"/>
+      <text x="220" y="74" class="small">1 Fév - 28 Fév</text>
+      <circle cx="270" cy="70" r="8" class="warning-icon"/>
+
+      <text x="0" y="100" class="label">API Publique</text>
+      <rect x="80" y="110" width="180" height="20" fill="oklch(73.375% 0.165 35.353)" opacity="0.4"/>
+      <text x="190" y="124" class="small">10 Fév - 25 Mar</text>
+      <circle cx="270" cy="120" r="8" class="warning-icon"/>
+    </g>
+
+    <!-- Problems list -->
+    <g transform="translate(10, 220)">
+      <text x="0" y="0" class="small" fill="oklch(82.418% 0.099 33.756)">⚠ Modifié il y a 3 semaines</text>
+      <text x="0" y="18" class="small" fill="oklch(82.418% 0.099 33.756)">⚠ Dates fictives</text>
+      <text x="0" y="36" class="small" fill="oklch(82.418% 0.099 33.756)">⚠ Pas de lien avec le travail réel</text>
+      <text x="0" y="54" class="small" fill="oklch(82.418% 0.099 33.756)">⚠ Charge invisible</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(390, 180)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="oklch(86.133% 0.141 139.549)" stroke-width="2"/>
+    <polygon points="30,0 22,-5 22,5" fill="oklch(86.133% 0.141 139.549)"/>
+  </g>
+
+  <!-- Right Side - Sinra (Temps Réel) -->
+  <g transform="translate(440, 60)">
+    <text x="0" y="0" class="subtitle">✅ Sinra</text>
+    <text x="0" y="20" class="small">(Synchronisation automatique)</text>
+
+    <!-- Sinra interface -->
+    <rect x="0" y="35" width="320" height="250" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(86.133% 0.141 139.549)" stroke-width="2" rx="4"/>
+
+    <!-- Gantt bars (temps réel) -->
+    <g transform="translate(10, 50)">
+      <text x="0" y="0" class="label">Feature SSO</text>
+      <rect x="0" y="10" width="180" height="20" fill="oklch(86.133% 0.141 139.549)"/>
+      <rect x="0" y="10" width="108" height="20" fill="oklch(86.133% 0.141 139.549)" opacity="0.8"/>
+      <text x="190" y="24" class="small" fill="oklch(86.133% 0.141 139.549)">60% ●</text>
+
+      <text x="0" y="50" class="label">Analytics</text>
+      <rect x="60" y="60" width="150" height="20" fill="oklch(86.133% 0.141 139.549)" opacity="0.3"/>
+      <text x="220" y="74" class="small">En attente</text>
+
+      <text x="0" y="100" class="label">API Publique</text>
+      <rect x="80" y="110" width="180" height="20" fill="oklch(86.133% 0.141 139.549)" opacity="0.3"/>
+      <text x="220" y="124" class="small">En attente</text>
+    </g>
+
+    <!-- Benefits list -->
+    <g transform="translate(10, 220)">
+      <text x="0" y="0" class="small" fill="oklch(86.171% 0.142 166.534)">✓ Mis à jour en temps réel</text>
+      <text x="0" y="18" class="small" fill="oklch(86.171% 0.142 166.534)">✓ Progression automatique</text>
+      <text x="0" y="36" class="small" fill="oklch(86.171% 0.142 166.534)">✓ Lié aux issues</text>
+      <text x="0" y="54" class="small" fill="oklch(86.171% 0.142 166.534)">✓ Charge visible par dev</text>
+    </g>
+  </g>
+</svg>

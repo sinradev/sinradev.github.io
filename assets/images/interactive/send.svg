@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Send: Refined paper plane with launch affordance -->
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Paper plane main body -->
+    <polygon points="12,32 50,14 50,34 34,42" stroke-width="2" fill="none"/>
+    <!-- Fold line showing depth -->
+    <line x1="50" y1="14" x2="34" y2="42" stroke-width="1.5"/>
+    <!-- Wing fold detail -->
+    <line x1="34" y1="32" x2="34" y2="42" stroke-width="1.5"/>
+    <!-- Flight indicator (motion line) -->
+    <path d="M 8 28 L 12 32" stroke-width="2"/>
+    <path d="M 8 32 L 12 32" stroke-width="2"/>
+    <path d="M 8 36 L 12 32" stroke-width="2"/>
+  </g>
+</svg>

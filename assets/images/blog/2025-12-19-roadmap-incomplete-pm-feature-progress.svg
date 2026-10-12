@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <defs>
+    <style>
+      .title { font: bold 18px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .subtitle { font: 14px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .label { font: 13px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .small { font: 11px sans-serif; fill: oklch(82.901% 0.031 222.959); opacity: 0.8; }
+      .number { font: bold 20px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+      .progress-text { font: bold 14px sans-serif; fill: oklch(82.901% 0.031 222.959); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="500" fill="oklch(30.857% 0.023 264.149)"/>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" class="title">Progression Feature : Authentification SSO</text>
+  <text x="350" y="58" text-anchor="middle" class="small">Visibilité complète avec alertes automatiques</text>
+
+  <!-- Main Card -->
+  <rect x="30" y="80" width="640" height="390" fill="oklch(26.346% 0.018 262.177)" stroke="oklch(86.133% 0.141 139.549)" stroke-width="2" rx="8"/>
+
+  <!-- Overall Progress -->
+  <g transform="translate(50, 110)">
+    <text x="0" y="0" class="subtitle">Progression Globale</text>
+    <text x="600" y="0" text-anchor="end" class="number" fill="oklch(86.133% 0.141 139.549)">58%</text>
+
+    <rect x="0" y="15" width="600" height="35" fill="oklch(24.731% 0.02 264.094)" rx="6"/>
+    <rect x="0" y="15" width="348" height="35" fill="oklch(86.133% 0.141 139.549)" rx="6"/>
+    <text x="300" y="37" text-anchor="middle" class="progress-text">7 issues complétées sur 12</text>
+
+    <g transform="translate(0, 60)">
+      <text x="0" y="0" class="small">Commencée : 15 Jan 2025</text>
+      <text x="600" y="0" text-anchor="end" class="small">Deadline : 5 Fév 2025 (10 jours restants)</text>
+    </g>
+  </g>
+
+  <!-- Component Breakdown -->
+  <g transform="translate(50, 235)">
+    <text x="0" y="0" class="subtitle">Détail Par Composant</text>
+
+    <!-- Frontend -->
+    <g transform="translate(0, 25)">
+      <circle cx="8" cy="8" r="6" fill="oklch(86.171% 0.142 166.534)"/>
+      <text x="20" y="13" class="label">Frontend</text>
+      <text x="580" y="13" text-anchor="end" class="label" fill="oklch(86.171% 0.142 166.534)">4/5 issues (80%)</text>
+
+      <rect x="20" y="20" width="560" height="18" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="20" y="20" width="448" height="18" fill="oklch(86.171% 0.142 166.534)" rx="4"/>
+      <text x="590" y="32" text-anchor="end" class="small" fill="oklch(86.171% 0.142 166.534)">✓ Presque fini</text>
+    </g>
+
+    <!-- Backend -->
+    <g transform="translate(0, 80)">
+      <circle cx="8" cy="8" r="6" fill="oklch(86.163% 0.142 94.818)"/>
+      <text x="20" y="13" class="label">Backend</text>
+      <text x="580" y="13" text-anchor="end" class="label" fill="oklch(86.163% 0.142 94.818)">3/6 issues (50%)</text>
+
+      <rect x="20" y="20" width="560" height="18" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="20" y="20" width="280" height="18" fill="oklch(86.163% 0.142 94.818)" rx="4"/>
+      <text x="590" y="32" text-anchor="end" class="small" fill="oklch(86.163% 0.142 94.818)">⚠️ En cours</text>
+    </g>
+
+    <!-- Tests -->
+    <g transform="translate(0, 135)">
+      <circle cx="8" cy="8" r="6" fill="oklch(82.418% 0.099 33.756)"/>
+      <text x="20" y="13" class="label">Tests</text>
+      <text x="580" y="13" text-anchor="end" class="label" fill="oklch(82.418% 0.099 33.756)">0/1 issue (0%)</text>
+
+      <rect x="20" y="20" width="560" height="18" fill="oklch(24.731% 0.02 264.094)" rx="4"/>
+      <rect x="20" y="20" width="0" height="18" fill="oklch(82.418% 0.099 33.756)" rx="4"/>
+      <text x="590" y="32" text-anchor="end" class="small" fill="oklch(82.418% 0.099 33.756)">🚨 Pas commencé</text>
+    </g>
+  </g>
+
+  <!-- Alerts -->
+  <g transform="translate(50, 415)">
+    <text x="0" y="0" class="subtitle">Alertes Automatiques</text>
+
+    <!-- Alert 1 -->
+    <g transform="translate(0, 18)">
+      <rect width="600" height="28" fill="oklch(82.418% 0.099 33.756)" opacity="0.15" rx="4"/>
+      <text x="10" y="18" class="small" fill="oklch(82.418% 0.099 33.756)">
+        🚨 CRITIQUE: Tests SSO pas commencés - Deadline dans 10 jours
+      </text>
+    </g>
+  </g>
+</svg>

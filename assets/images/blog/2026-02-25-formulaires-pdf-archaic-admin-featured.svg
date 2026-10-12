@@ -1,0 +1,204 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2235"/>
+      <stop offset="100%" stop-color="#141824"/>
+    </linearGradient>
+    <linearGradient id="leftPanel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1f2b"/>
+      <stop offset="100%" stop-color="#1e2235"/>
+    </linearGradient>
+    <linearGradient id="rightPanel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e2235"/>
+      <stop offset="100%" stop-color="#2b160d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="14" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrOrange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0,1 0,8 8,4.5" fill="#f97316"/>
+    </marker>
+    <marker id="arrBlue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0,1 0,8 8,4.5" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Panel tints -->
+  <rect x="0" y="0" width="560" height="630" fill="url(#leftPanel)"/>
+  <rect x="640" y="0" width="560" height="630" fill="url(#rightPanel)"/>
+
+  <!-- Subtle horizontal grid -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+  </g>
+
+  <!-- ══════════════════════════════════════════
+       LEFT PANEL — Digital / Ce qui devrait être
+       ══════════════════════════════════════════ -->
+
+  <!-- Tag badge -->
+  <rect x="60" y="60" width="190" height="30" rx="15" fill="#60a5fa" fill-opacity="0.15" stroke="#60a5fa" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="155" y="79.5" font-size="12" fill="#60a5fa" text-anchor="middle" font-weight="700" letter-spacing="1">CE QUI DEVRAIT ÊTRE</text>
+
+  <!-- Form card (digital) -->
+  <rect x="140" y="140" width="280" height="210" rx="12" fill="#60a5fa" fill-opacity="0.07" stroke="#60a5fa" stroke-width="1.5" stroke-opacity="0.35"/>
+  <!-- Form top bar -->
+  <rect x="140" y="140" width="280" height="36" rx="12" fill="#60a5fa" fill-opacity="0.15"/>
+  <rect x="140" y="162" width="280" height="14" fill="#60a5fa" fill-opacity="0.15"/>
+  <!-- Dots (browser-like) -->
+  <circle cx="163" cy="158" r="5" fill="#60a5fa" fill-opacity="0.5"/>
+  <circle cx="181" cy="158" r="5" fill="#60a5fa" fill-opacity="0.3"/>
+  <circle cx="199" cy="158" r="5" fill="#60a5fa" fill-opacity="0.2"/>
+  <!-- Field 1 -->
+  <rect x="162" y="195" width="90" height="8" rx="4" fill="#60a5fa" fill-opacity="0.25"/>
+  <rect x="162" y="208" width="236" height="22" rx="5" fill="#60a5fa" fill-opacity="0.12" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.25"/>
+  <!-- Field 2 -->
+  <rect x="162" y="240" width="70" height="8" rx="4" fill="#60a5fa" fill-opacity="0.25"/>
+  <rect x="162" y="253" width="236" height="22" rx="5" fill="#60a5fa" fill-opacity="0.12" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.25"/>
+  <!-- Submit button -->
+  <rect x="298" y="290" width="100" height="30" rx="8" fill="#60a5fa" fill-opacity="0.7"/>
+  <text x="348" y="310" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">Envoyer</text>
+
+  <!-- Flow: form → check (clean path) -->
+  <path d="M 280 360 L 280 395" stroke="#60a5fa" stroke-width="2" stroke-opacity="0.5" stroke-dasharray="4,3" marker-end="url(#arrBlue)"/>
+
+  <!-- Success check circle -->
+  <circle cx="280" cy="430" r="38" fill="#60a5fa" fill-opacity="0.1" stroke="#60a5fa" stroke-width="1.5" stroke-opacity="0.5"/>
+  <path d="M 259 430 L 272 443 L 301 414" stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+
+  <!-- Soft glow -->
+  <circle cx="280" cy="300" r="150" fill="#60a5fa" fill-opacity="0.04" filter="url(#softglow)"/>
+
+  <!-- Labels -->
+  <text x="280" y="500" font-size="21" fill="#60a5fa" text-anchor="middle" font-weight="900" letter-spacing="2" filter="url(#glow)">FORMULAIRE DIGITAL</text>
+  <text x="280" y="522" font-size="12" fill="#60a5fa" text-anchor="middle" opacity="0.55" letter-spacing="1">Un clic · Signé · Traité automatiquement</text>
+
+  <!-- ══════════════════════════════════════
+       CENTER DIVIDER
+       ══════════════════════════════════════ -->
+  <rect x="580" y="0" width="40" height="630" fill="url(#bg)"/>
+
+  <!-- VS badge -->
+  <rect x="582" y="272" width="36" height="86" rx="8" fill="#2d3250" stroke="#3d4270" stroke-width="1"/>
+  <text x="600" y="296" font-size="10" fill="#8b9cbf" text-anchor="middle" font-weight="700">VS</text>
+  <line x1="600" y1="308" x2="600" y2="348" stroke="#8b9cbf" stroke-width="1" opacity="0.35"/>
+  <text x="600" y="357" font-size="9" fill="#f97316" text-anchor="middle" opacity="0.7">2026</text>
+
+  <!-- Dashed timeline -->
+  <line x1="600" y1="60" x2="600" y2="272" stroke="#3d4270" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="600" y1="358" x2="600" y2="490" stroke="#3d4270" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- ══════════════════════════════════════════
+       RIGHT PANEL — Le cycle archaïque PDF
+       ══════════════════════════════════════════ -->
+
+  <!-- Tag badge -->
+  <rect x="950" y="60" width="196" height="30" rx="15" fill="#f97316" fill-opacity="0.15" stroke="#f97316" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="1048" y="79.5" font-size="12" fill="#f97316" text-anchor="middle" font-weight="700" letter-spacing="1">LA RÉALITÉ EN 2026</text>
+
+  <!-- ── 4-node diamond cycle ──
+       Top    (910, 180) — Screen/PDF
+       Right  (1058,315) — Printer
+       Bottom (910, 450) — Writing
+       Left   (762, 315) — Scanner
+  -->
+
+  <!-- Soft ambient glow in center -->
+  <circle cx="910" cy="315" r="140" fill="#f97316" fill-opacity="0.05" filter="url(#softglow)"/>
+
+  <!-- ── Arrows (diamond edges, clockwise) ── -->
+  <!-- Top → Right -->
+  <line x1="942" y1="205" x2="1024" y2="288" stroke="#f97316" stroke-width="2" stroke-opacity="0.75" marker-end="url(#arrOrange)"/>
+  <!-- Right → Bottom -->
+  <line x1="1026" y1="344" x2="944" y2="424" stroke="#f97316" stroke-width="2" stroke-opacity="0.75" marker-end="url(#arrOrange)"/>
+  <!-- Bottom → Left -->
+  <line x1="876" y1="424" x2="796" y2="344" stroke="#f97316" stroke-width="2" stroke-opacity="0.75" marker-end="url(#arrOrange)"/>
+  <!-- Left → Top (dashed: cycle restarts) -->
+  <line x1="794" y1="288" x2="876" y2="208" stroke="#f97316" stroke-width="2" stroke-opacity="0.75" marker-end="url(#arrOrange)" stroke-dasharray="5,3"/>
+
+  <!-- Arrow labels (along edges) -->
+  <text x="995" y="238" font-size="10" fill="#f97316" opacity="0.8" font-weight="700" text-anchor="middle">Imprimer</text>
+  <text x="998" y="398" font-size="10" fill="#f97316" opacity="0.8" font-weight="700" text-anchor="middle">Signer à la main</text>
+  <text x="826" y="398" font-size="10" fill="#f97316" opacity="0.8" font-weight="700" text-anchor="middle">Scanner</text>
+  <text x="822" y="238" font-size="10" fill="#f97316" opacity="0.8" font-weight="700" text-anchor="middle">Retaper</text>
+
+  <!-- ── NODE 1: Screen / PDF (top) cx=910, cy=180 ── -->
+  <circle cx="910" cy="180" r="46" fill="#f97316" fill-opacity="0.1" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Monitor frame -->
+  <rect x="887" y="161" width="46" height="32" rx="3" fill="none" stroke="#f97316" stroke-width="2" stroke-opacity="0.85"/>
+  <!-- Screen content -->
+  <rect x="891" y="165" width="38" height="24" rx="1" fill="#f97316" fill-opacity="0.18"/>
+  <!-- PDF label in screen -->
+  <text x="910" y="180" font-size="10" fill="#f97316" text-anchor="middle" font-weight="800">PDF</text>
+  <!-- Monitor stand -->
+  <line x1="910" y1="193" x2="910" y2="200" stroke="#f97316" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round"/>
+  <line x1="899" y1="200" x2="921" y2="200" stroke="#f97316" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round"/>
+  <!-- Node label -->
+  <text x="910" y="135" font-size="11" fill="#f97316" text-anchor="middle" opacity="0.75" font-weight="600">1. Reçu</text>
+
+  <!-- ── NODE 2: Printer (right) cx=1058, cy=315 ── -->
+  <circle cx="1058" cy="315" r="46" fill="#f97316" fill-opacity="0.1" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Printer body -->
+  <rect x="1034" y="299" width="48" height="30" rx="3" fill="none" stroke="#f97316" stroke-width="2" stroke-opacity="0.85"/>
+  <!-- Paper tray (top) -->
+  <rect x="1043" y="291" width="30" height="10" rx="2" fill="none" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.65"/>
+  <!-- Output paper -->
+  <rect x="1045" y="325" width="26" height="13" rx="1" fill="#f97316" fill-opacity="0.18" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Indicator dot -->
+  <circle cx="1074" cy="313" r="2.5" fill="#f97316" fill-opacity="0.7"/>
+  <!-- Node label -->
+  <text x="1112" y="320" font-size="11" fill="#f97316" opacity="0.75" font-weight="600">2. Imprimé</text>
+
+  <!-- ── NODE 3: Writing (bottom) cx=910, cy=450 ── -->
+  <circle cx="910" cy="450" r="46" fill="#f97316" fill-opacity="0.1" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Paper -->
+  <rect x="892" y="431" width="30" height="38" rx="2" fill="none" stroke="#f97316" stroke-width="2" stroke-opacity="0.85"/>
+  <!-- Handwriting lines -->
+  <line x1="898" y1="443" x2="916" y2="443" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5" stroke-linecap="round"/>
+  <line x1="898" y1="452" x2="916" y2="452" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5" stroke-linecap="round"/>
+  <line x1="898" y1="461" x2="910" y2="461" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5" stroke-linecap="round"/>
+  <!-- Pen -->
+  <line x1="920" y1="430" x2="940" y2="462" stroke="#f97316" stroke-width="2.5" stroke-opacity="0.9" stroke-linecap="round"/>
+  <path d="M 940,462 L 936,469 L 933,461 Z" fill="#f97316" fill-opacity="0.9"/>
+  <!-- Node label -->
+  <text x="910" y="510" font-size="11" fill="#f97316" text-anchor="middle" opacity="0.75" font-weight="600">3. Signé à la main</text>
+
+  <!-- ── NODE 4: Scanner (left) cx=762, cy=315 ── -->
+  <circle cx="762" cy="315" r="46" fill="#f97316" fill-opacity="0.1" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- Scanner flat body -->
+  <rect x="738" y="306" width="48" height="24" rx="3" fill="none" stroke="#f97316" stroke-width="2" stroke-opacity="0.85"/>
+  <!-- Paper being scanned (entering from top) -->
+  <rect x="748" y="295" width="28" height="13" rx="1" fill="none" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.65"/>
+  <!-- Scan light line -->
+  <line x1="743" y1="318" x2="781" y2="318" stroke="#f97316" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="3,2" stroke-linecap="round"/>
+  <!-- Node label -->
+  <text x="716" y="320" font-size="11" fill="#f97316" text-anchor="end" opacity="0.75" font-weight="600">4. Scanné</text>
+
+  <!-- Center infinity (subtle) -->
+  <text x="910" y="334" font-size="48" fill="#f97316" fill-opacity="0.1" text-anchor="middle" font-weight="900">∞</text>
+
+  <!-- Right panel labels -->
+  <text x="910" y="557" font-size="20" fill="#f97316" text-anchor="middle" font-weight="900" letter-spacing="2" filter="url(#glow)">PDF PAPIER</text>
+  <text x="910" y="576" font-size="12" fill="#f97316" text-anchor="middle" opacity="0.55" letter-spacing="1">Imprimer · Écrire · Scanner · Retaper · Recommencer</text>
+
+  <!-- ══════════════════════════
+       BOTTOM TITLE BAR
+       ══════════════════════════ -->
+  <rect x="0" y="592" width="1200" height="38" fill="#080c14" opacity="0.82"/>
+  <text x="600" y="617" font-size="25" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">Pourquoi en 2026 imprime-t-on encore des PDFs ?</text>
+
+  <!-- Brand -->
+  <text x="1170" y="580" font-size="12" fill="#c792e9" text-anchor="end" opacity="0.5">sinra.app</text>
+</svg>

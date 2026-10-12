@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Vertigo : Avant vs Après Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- AVANT Section -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ AVANT Sinra
+    </text>
+    <text x="200" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Backlog chaotique (Jira)
+    </text>
+
+    <!-- Metric 1: Backlog size -->
+    <rect x="50" y="110" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Taille backlog
+    </text>
+    <text x="330" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      487 issues
+    </text>
+    <text x="200" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Liste plate impossible à naviguer
+    </text>
+
+    <!-- Metric 2: Visibility -->
+    <rect x="50" y="170" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Visibilité Q2
+    </text>
+    <text x="330" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Nulle
+    </text>
+    <text x="200" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      « Je ne sais pas ce qu'on livre »
+    </text>
+
+    <!-- Metric 3: Promises kept -->
+    <rect x="50" y="230" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Promesses tenues
+    </text>
+    <text x="330" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      30%
+    </text>
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Crédibilité détruite
+    </text>
+
+    <!-- Metric 4: Focus -->
+    <rect x="50" y="290" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Features par semaine
+    </text>
+    <text x="330" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      3 / 0
+    </text>
+    <text x="200" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Démarrées / Terminées
+    </text>
+
+    <!-- Metric 5: Team morale -->
+    <rect x="50" y="350" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Moral équipe
+    </text>
+    <text x="330" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Épuisé
+    </text>
+    <text x="200" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      « On ne sait jamais où on va »
+    </text>
+  </g>
+
+  <!-- APRÈS Section -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ APRÈS Sinra
+    </text>
+    <text x="600" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Releases structurées (6 mois après)
+    </text>
+
+    <!-- Metric 1: Backlog size -->
+    <rect x="450" y="110" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Taille backlog
+    </text>
+    <text x="730" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      47 issues
+    </text>
+    <text x="600" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Seulement 6 prochains mois (reste archivé)
+    </text>
+
+    <!-- Metric 2: Visibility -->
+    <rect x="450" y="170" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Visibilité Q2
+    </text>
+    <text x="730" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      Totale
+    </text>
+    <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      6 capabilities précises le 28 juin
+    </text>
+
+    <!-- Metric 3: Promises kept -->
+    <rect x="450" y="230" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Promesses tenues
+    </text>
+    <text x="730" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      95%
+    </text>
+    <text x="600" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Crédibilité restaurée
+    </text>
+
+    <!-- Metric 4: Focus -->
+    <rect x="450" y="290" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Capabilities / semaine
+    </text>
+    <text x="730" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      1 / 1
+    </text>
+    <text x="600" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Finir avant de passer à la suivante
+    </text>
+
+    <!-- Metric 5: Team morale -->
+    <rect x="450" y="350" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Moral équipe
+    </text>
+    <text x="730" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      Motivé
+    </text>
+    <text x="600" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      « Enfin on sait où on va »
+    </text>
+  </g>
+
+  <!-- Bottom impact -->
+  <rect x="100" y="415" width="600" height="25" fill="#27ae60" rx="4"/>
+  <text x="400" y="432" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    📈 Backlog ÷10 • Visibilité totale • 95% promesses tenues • Focus retrouvé
+  </text>
+</svg>

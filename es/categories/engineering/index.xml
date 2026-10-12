@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering on Sinra</title><link>https://sinra.dev/es/categories/engineering/</link><description>Recent content in Engineering on Sinra</description><generator>Hugo</generator><language>es</language><lastBuildDate>Thu, 28 May 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://sinra.dev/es/categories/engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>KISS: El Arte de No Complicar lo que No Necesita Serlo</title><link>https://sinra.dev/es/blog/posts/2026-05-28-kiss-principe-simplicite/</link><pubDate>Thu, 28 May 2026 00:00:00 +0100</pubDate><guid>https://sinra.dev/es/blog/posts/2026-05-28-kiss-principe-simplicite/</guid><description>&lt;p&gt;Hay una escena que se repite en equipos técnicos de todo el mundo. Un desarrollador abre un proyecto que no ha tocado en seis meses. Intenta entender por qué hay doce microservicios para una aplicación que hace tres cosas. Por qué la configuración está distribuida entre cuatro herramientas distintas. Por qué necesita leer cinco READMEs solo para levantar el proyecto en local.&lt;/p&gt;
+&lt;p&gt;Alguien, en algún momento, creyó estar haciendo lo correcto. Cada capa de complejidad tenía una razón cuando fue añadida. Y sin embargo el resultado es un sistema que nadie entiende realmente de principio a fin.&lt;/p&gt;</description></item><item><title>¿Hay que Seguir los Frameworks JavaScript de Moda?</title><link>https://sinra.dev/es/blog/posts/2026-05-26-frameworks-javascript-mode-rails-2026/</link><pubDate>Tue, 26 May 2026 09:00:00 +0100</pubDate><guid>https://sinra.dev/es/blog/posts/2026-05-26-frameworks-javascript-mode-rails-2026/</guid><description>&lt;h2 id="la-rueda-que-gira-sin-llegar-a-ningún-sitio"&gt;La Rueda que Gira Sin Llegar a Ningún Sitio&lt;/h2&gt;
+&lt;p&gt;2010: Backbone.js es el futuro de la web.
+2013: Angular 1 toma el relevo. Backbone es has-been.
+2014: React llega. Angular 1 ya es «legacy».
+2016: Vue.js se convierte en la alternativa «seria». Angular 2 es una reescritura completa, incompatible con Angular 1.
+2018: Next.js se impone para el renderizado en servidor. Vue 3 rompe la compatibilidad con Vue 2.
+2020: Svelte «revoluciona» el enfoque. NuxtJS, SvelteKit se añaden a la lista.
+2021: Remix entra en escena como «la verdadera respuesta» a los problemas de React.
+2022: SolidJS, Qwik. La hidratación parcial es el nuevo Grial.
+2023: Astro para sitios estáticos. Bun como runtime alternativo a Node.
+2024: htmx vuelve a ponerse de moda como reacción contra la complejidad de todo lo anterior.&lt;/p&gt;</description></item><item><title>Monolito Modular: La Arquitectura Que Todo el Mundo Redescubre</title><link>https://sinra.dev/es/blog/posts/2026-05-16-modular-monolith-vertical-slice/</link><pubDate>Sat, 16 May 2026 10:00:00 +0100</pubDate><guid>https://sinra.dev/es/blog/posts/2026-05-16-modular-monolith-vertical-slice/</guid><description>&lt;h2 id="el-regreso-del-monolito-intencional"&gt;El Regreso del Monolito Intencional&lt;/h2&gt;
+&lt;p&gt;Hace algunos años, decir «construimos un monolito» en una conferencia técnica equivalía a admitir una derrota. El monolito era sinónimo de código legacy, deuda técnica acumulada, sistemas imposibles de mantener.&lt;/p&gt;
+&lt;p&gt;Hoy, algo ha cambiado.&lt;/p&gt;
+&lt;p&gt;Equipos en Shopify, Stack Overflow, Basecamp y GitHub hablan abiertamente de sus monolitos bien construidos. Ingenieros reconocidos publican artículos sobre los límites de los microservicios. Y una arquitectura particular emerge como alternativa seria:&lt;/p&gt;</description></item><item><title>Microservicios: No Eres Netflix</title><link>https://sinra.dev/es/blog/posts/2026-05-06-microservices-monolito-hype/</link><pubDate>Wed, 06 May 2026 10:00:00 +0100</pubDate><guid>https://sinra.dev/es/blog/posts/2026-05-06-microservices-monolito-hype/</guid><description>&lt;h2 id="la-fantasía-de-la-arquitectura-distribuida"&gt;La Fantasía de la Arquitectura Distribuida&lt;/h2&gt;
+&lt;p&gt;Abre cualquier conversación técnica en una startup. A los cinco minutos, alguien dice:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;«Deberíamos migrar a microservicios.»&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;La sala asiente. Los CTOs inclinan la cabeza. Los desarrolladores senior piensan en su próximo currículum. Las diapositivas de PowerPoint mencionan Netflix. GitHub. Airbnb. Spotify.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nadie hace la pregunta real: ¿tenemos los mismos problemas que ellos?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;La respuesta, en el 90% de los casos, es no.&lt;/p&gt;
+&lt;h2 id="por-qué-todo-el-mundo-quiere-microservicios"&gt;Por Qué Todo el Mundo Quiere Microservicios&lt;/h2&gt;
+&lt;p&gt;La razón es simple: &lt;strong&gt;imitación sin contexto&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>

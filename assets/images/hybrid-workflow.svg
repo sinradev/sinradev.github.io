@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="600" y="35" font-size="24" font-weight="700" text-anchor="middle" fill="#1a1a1a">
+    Hybrid Methodology Workflow
+  </text>
+
+  <!-- Phase 1: V-Model (Specification) -->
+  <g>
+    <!-- Box -->
+    <rect x="50" y="80" width="280" height="260" rx="8" fill="rgba(33, 150, 243, 0.08)" stroke="#2196F3" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect x="50" y="80" width="280" height="50" rx="8" fill="#2196F3"/>
+    <text x="190" y="115" font-size="16" font-weight="700" text-anchor="middle" fill="white">Phase 1: V-Model</text>
+
+    <!-- Content -->
+    <text x="70" y="155" font-size="12" font-weight="600" fill="#1a1a1a">✓ Write requirements</text>
+    <text x="70" y="180" font-size="12" font-weight="600" fill="#1a1a1a">✓ Plan dependencies</text>
+    <text x="70" y="205" font-size="12" font-weight="600" fill="#1a1a1a">✓ Stakeholder approval</text>
+    <text x="70" y="230" font-size="12" font-weight="600" fill="#1a1a1a">✓ Define test cases</text>
+    <text x="70" y="255" font-size="12" font-weight="600" fill="#1a1a1a">✓ Regulatory review</text>
+
+    <text x="70" y="290" font-size="11" fill="#666" font-style="italic">4-6 weeks</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+
+  <path d="M 330 210 L 410 210" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="370" y="205" font-size="11" fill="#666" font-weight="600" text-anchor="middle">Handoff</text>
+
+  <!-- Phase 2: Agile (Development) -->
+  <g>
+    <!-- Box -->
+    <rect x="410" y="80" width="280" height="260" rx="8" fill="rgba(255, 152, 0, 0.08)" stroke="#FF9800" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect x="410" y="80" width="280" height="50" rx="8" fill="#FF9800"/>
+    <text x="550" y="115" font-size="16" font-weight="700" text-anchor="middle" fill="white">Phase 2: Agile</text>
+
+    <!-- Content -->
+    <text x="430" y="155" font-size="12" font-weight="600" fill="#1a1a1a">✓ Sprint-based dev</text>
+    <text x="430" y="180" font-size="12" font-weight="600" fill="#1a1a1a">✓ Continuous testing</text>
+    <text x="430" y="205" font-size="12" font-weight="600" fill="#1a1a1a">✓ Code reviews</text>
+    <text x="430" y="230" font-size="12" font-weight="600" fill="#1a1a1a">✓ Daily feedback</text>
+    <text x="430" y="255" font-size="12" font-weight="600" fill="#1a1a1a">✓ Adapt as needed</text>
+
+    <text x="430" y="290" font-size="11" fill="#666" font-style="italic">2-12 weeks</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 690 210 L 770 210" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="730" y="205" font-size="11" fill="#666" font-weight="600" text-anchor="middle">Freeze</text>
+
+  <!-- Phase 3: V-Model (Release) -->
+  <g>
+    <!-- Box -->
+    <rect x="770" y="80" width="280" height="260" rx="8" fill="rgba(76, 175, 80, 0.08)" stroke="#4CAF50" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect x="770" y="80" width="280" height="50" rx="8" fill="#4CAF50"/>
+    <text x="910" y="115" font-size="16" font-weight="700" text-anchor="middle" fill="white">Phase 3: V-Model</text>
+
+    <!-- Content -->
+    <text x="790" y="155" font-size="12" font-weight="600" fill="#1a1a1a">✓ Release testing</text>
+    <text x="790" y="180" font-size="12" font-weight="600" fill="#1a1a1a">✓ Stage gate approval</text>
+    <text x="790" y="205" font-size="12" font-weight="600" fill="#1a1a1a">✓ QA verification</text>
+    <text x="790" y="230" font-size="12" font-weight="600" fill="#1a1a1a">✓ Compliance check</text>
+    <text x="790" y="255" font-size="12" font-weight="600" fill="#1a1a1a">✓ Go-live sign-off</text>
+
+    <text x="790" y="290" font-size="11" fill="#666" font-style="italic">1-2 weeks</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="600" y="380" font-size="12" fill="#666" text-anchor="middle" font-style="italic">
+    Best of both worlds: Discipline + Flexibility
+  </text>
+</svg>

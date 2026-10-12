@@ -1,0 +1,43 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f7fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="24" fill="#2d3748" text-anchor="middle" font-weight="bold">Supervision Humaine de l'IA</text>
+
+  <!-- AI generates (left) -->
+  <rect x="50" y="80" width="280" height="260" rx="8" fill="#667eea" opacity="0.1" stroke="#667eea" stroke-width="2"/>
+  <circle cx="190" cy="140" r="40" fill="#667eea"/>
+  <text x="190" y="155" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">AI</text>
+
+  <text x="190" y="210" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle" font-weight="bold">Génère:</text>
+  <text x="70" y="235" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Analyse du code</text>
+  <text x="70" y="255" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Spécifications réalistes</text>
+  <text x="70" y="275" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Options techniques</text>
+  <text x="70" y="295" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Estimations</text>
+
+  <!-- Arrow -->
+  <path d="M 340 210 L 450 210" stroke="#2d3748" stroke-width="3" fill="none" marker-end="url(#arrowblack)"/>
+  <text x="395" y="200" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle" font-weight="bold">Propose</text>
+
+  <!-- Human decides (right) -->
+  <rect x="470" y="80" width="280" height="260" rx="8" fill="#48bb78" opacity="0.1" stroke="#48bb78" stroke-width="2"/>
+  <circle cx="610" cy="140" r="40" fill="#48bb78"/>
+  <text x="610" y="160" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle">👤</text>
+
+  <text x="610" y="210" font-family="Arial, sans-serif" font-size="14" fill="#2d3748" text-anchor="middle" font-weight="bold">Décide:</text>
+  <text x="490" y="235" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Valide l'analyse</text>
+  <text x="490" y="255" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Choisit l'approche</text>
+  <text x="490" y="275" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Ajuste les priorités</text>
+  <text x="490" y="295" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">✓ Révise si nécessaire</text>
+
+  <defs>
+    <marker id="arrowblack" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2d3748" />
+    </marker>
+  </defs>
+
+  <!-- Bottom emphasis -->
+  <rect x="200" y="355" width="400" height="35" rx="6" fill="#ed8936"/>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">L'IA assiste. L'humain maîtrise.</text>
+</svg>

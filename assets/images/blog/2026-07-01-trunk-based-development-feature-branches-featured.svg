@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Divider -->
+  <line x1="600" y1="60" x2="600" y2="570" stroke="#2a3560" stroke-width="1" stroke-dasharray="6,4" opacity="0.5"/>
+
+  <!-- LEFT: Feature branches (bad) -->
+  <text x="270" y="95" font-family="monospace" font-size="13" fill="#ff6b6b" text-anchor="middle" opacity="0.9">Feature Branches</text>
+  <line x1="100" y1="118" x2="500" y2="118" stroke="#ff6b6b" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Main trunk left -->
+  <line x1="100" y1="200" x2="500" y2="200" stroke="#4a5580" stroke-width="2"/>
+  <text x="75" y="205" font-family="monospace" font-size="10" fill="#4a5580" text-anchor="end">main</text>
+
+  <!-- Commits on main left -->
+  <circle cx="140" cy="200" r="5" fill="#4a5580"/>
+  <circle cx="480" cy="200" r="5" fill="#ff6b6b"/>
+  <text x="480" y="185" font-family="monospace" font-size="9" fill="#ff6b6b" text-anchor="middle">CONFLICT</text>
+
+  <!-- Branch 1: diverges long -->
+  <path d="M 160 200 Q 160 160 200 155 L 430 155" stroke="#ff9966" stroke-width="1.5" fill="none"/>
+  <circle cx="200" cy="155" r="4" fill="#ff9966"/>
+  <circle cx="300" cy="155" r="4" fill="#ff9966"/>
+  <circle cx="400" cy="155" r="4" fill="#ff9966"/>
+  <path d="M 430 155 Q 460 155 470 175 L 478 196" stroke="#ff6b6b" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+  <text x="300" y="140" font-family="monospace" font-size="9" fill="#ff9966" text-anchor="middle">feature/auth — 12 jours</text>
+
+  <!-- Branch 2: diverges longer -->
+  <path d="M 170 200 Q 170 240 210 248 L 420 248" stroke="#ff7777" stroke-width="1.5" fill="none"/>
+  <circle cx="210" cy="248" r="4" fill="#ff7777"/>
+  <circle cx="310" cy="248" r="4" fill="#ff7777"/>
+  <circle cx="380" cy="248" r="4" fill="#ff7777"/>
+  <path d="M 420 248 Q 455 248 468 222 L 477 204" stroke="#ff6b6b" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+  <text x="310" y="270" font-family="monospace" font-size="9" fill="#ff7777" text-anchor="middle">feature/payments — 9 jours</text>
+
+  <!-- Branch 3 -->
+  <path d="M 180 200 Q 180 300 220 308 L 370 308" stroke="#cc5555" stroke-width="1.5" fill="none"/>
+  <circle cx="220" cy="308" r="4" fill="#cc5555"/>
+  <circle cx="330" cy="308" r="4" fill="#cc5555"/>
+  <text x="280" y="330" font-family="monospace" font-size="9" fill="#cc5555" text-anchor="middle">feature/dashboard — en attente</text>
+
+  <!-- Merge hell explosion -->
+  <circle cx="480" cy="200" r="22" fill="#2a1520" stroke="#ff6b6b" stroke-width="1.5" opacity="0.8"/>
+  <text x="480" y="196" font-family="monospace" font-size="9" fill="#ff6b6b" text-anchor="middle">merge</text>
+  <text x="480" y="210" font-family="monospace" font-size="9" fill="#ff6b6b" text-anchor="middle">hell</text>
+
+  <!-- Left bottom warning -->
+  <rect x="100" y="390" width="380" height="50" rx="6" fill="#2a1520" stroke="#ff6b6b" stroke-width="1" opacity="0.7"/>
+  <text x="290" y="412" font-family="monospace" font-size="11" fill="#ff6b6b" text-anchor="middle">Divergence silencieuse</text>
+  <text x="290" y="430" font-family="monospace" font-size="11" fill="#ff6b6b" text-anchor="middle">Conflits massifs au merge</text>
+
+  <!-- RIGHT: Trunk-based (good) -->
+  <text x="890" y="95" font-family="monospace" font-size="13" fill="#a6f079" text-anchor="middle" opacity="0.9">Trunk-based Development</text>
+  <line x1="620" y1="118" x2="1100" y2="118" stroke="#a6f079" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Main trunk right -->
+  <line x1="620" y1="200" x2="1100" y2="200" stroke="#a6f079" stroke-width="2.5"/>
+  <text x="612" y="205" font-family="monospace" font-size="10" fill="#a6f079" text-anchor="end">main</text>
+
+  <!-- Commits directly on trunk -->
+  <circle cx="660" cy="200" r="6" fill="#a6f079"/>
+  <circle cx="730" cy="200" r="6" fill="#a6f079"/>
+  <circle cx="800" cy="200" r="6" fill="#a6f079"/>
+  <circle cx="870" cy="200" r="6" fill="#a6f079"/>
+  <circle cx="940" cy="200" r="6" fill="#a6f079"/>
+  <circle cx="1010" cy="200" r="6" fill="#a6f079"/>
+  <circle cx="1080" cy="200" r="6" fill="#a6f079"/>
+
+  <!-- Short branch 1 -->
+  <path d="M 670 200 Q 670 158 700 153 L 790 153 Q 815 153 820 175 L 822 196" stroke="#6dd47e" stroke-width="1.5" fill="none"/>
+  <circle cx="720" cy="153" r="4" fill="#6dd47e"/>
+  <circle cx="760" cy="153" r="4" fill="#6dd47e"/>
+  <text x="730" y="138" font-family="monospace" font-size="9" fill="#6dd47e" text-anchor="middle">feature/X — 1 jour</text>
+
+  <!-- Short branch 2 -->
+  <path d="M 810 200 Q 810 245 840 250 L 910 250 Q 935 250 940 228 L 941 204" stroke="#5bc46e" stroke-width="1.5" fill="none"/>
+  <circle cx="860" cy="250" r="4" fill="#5bc46e"/>
+  <circle cx="895" cy="250" r="4" fill="#5bc46e"/>
+  <text x="875" y="270" font-family="monospace" font-size="9" fill="#5bc46e" text-anchor="middle">fix/Y — &lt;1 jour</text>
+
+  <!-- Short branch 3 -->
+  <path d="M 950 200 Q 950 155 980 150 L 1050 150 Q 1070 150 1075 172 L 1077 196" stroke="#7de88e" stroke-width="1.5" fill="none"/>
+  <circle cx="990" cy="150" r="4" fill="#7de88e"/>
+  <circle cx="1030" cy="150" r="4" fill="#7de88e"/>
+  <text x="1010" y="135" font-family="monospace" font-size="9" fill="#7de88e" text-anchor="middle">feature/Z — 2 jours</text>
+
+  <!-- Feature flag badge -->
+  <rect x="810" y="300" width="155" height="28" rx="6" fill="#1a3020" stroke="#a6f079" stroke-width="1" opacity="0.8"/>
+  <text x="887" y="319" font-family="monospace" font-size="10" fill="#a6f079" text-anchor="middle">feature flags actifs</text>
+
+  <!-- Right bottom success -->
+  <rect x="630" y="390" width="440" height="50" rx="6" fill="#1a3020" stroke="#a6f079" stroke-width="1" opacity="0.7"/>
+  <text x="850" y="412" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">Intégration continue réelle</text>
+  <text x="850" y="430" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">Trunk toujours déployable</text>
+
+  <!-- Center title -->
+  <text x="600" y="530" font-family="Georgia, serif" font-size="22" fill="#e0e8ff" text-anchor="middle" opacity="0.85">Intégrer tôt. Intégrer souvent. Ne jamais laisser dormir.</text>
+</svg>
