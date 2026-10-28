@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#171b2b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="band" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0a0f1a;stop-opacity:0.92" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#2a3350" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <circle cx="1080" cy="150" r="120" fill="#8b5cf6" opacity="0.06"/>
+  <rect x="0" y="70" width="1200" height="3" fill="#a6f079" opacity="0.55"/>
+  <rect x="0" y="70" width="340" height="3" fill="#a6f079"/>
+
+  <!-- 5 step path -->
+  <g font-family="monospace" font-size="14" fill="#e0e8ff">
+    <circle cx="220" cy="270" r="26" fill="#241a1a" stroke="#c792e9" stroke-width="2"/>
+    <text x="220" y="276" text-anchor="middle" fill="#c792e9" font-weight="bold">1</text>
+    <circle cx="410" cy="270" r="26" fill="#241a1a" stroke="#c792e9" stroke-width="2"/>
+    <text x="410" y="276" text-anchor="middle" fill="#c792e9" font-weight="bold">2</text>
+    <circle cx="600" cy="270" r="26" fill="#241a1a" stroke="#c792e9" stroke-width="2"/>
+    <text x="600" y="276" text-anchor="middle" fill="#c792e9" font-weight="bold">3</text>
+    <circle cx="790" cy="270" r="26" fill="#241a1a" stroke="#c792e9" stroke-width="2"/>
+    <text x="790" y="276" text-anchor="middle" fill="#c792e9" font-weight="bold">4</text>
+    <circle cx="980" cy="270" r="26" fill="#1a2a1a" stroke="#a6f079" stroke-width="2.5"/>
+    <text x="980" y="276" text-anchor="middle" fill="#a6f079" font-weight="bold">5</text>
+  </g>
+  <line x1="246" y1="270" x2="954" y2="270" stroke="#5a6790" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 6"/>
+  <text x="220" y="330" font-family="monospace" font-size="12" fill="#8b9cbf" text-anchor="middle">vocabulaire</text>
+  <text x="410" y="330" font-family="monospace" font-size="12" fill="#8b9cbf" text-anchor="middle">1 projet actif</text>
+  <text x="600" y="330" font-family="monospace" font-size="12" fill="#8b9cbf" text-anchor="middle">1er cycle</text>
+  <text x="790" y="330" font-family="monospace" font-size="12" fill="#8b9cbf" text-anchor="middle">documentation</text>
+  <text x="980" y="330" font-family="monospace" font-size="12" fill="#a6f079" text-anchor="middle">bascule</text>
+
+  <rect x="0" y="446" width="1200" height="184" fill="url(#band)"/>
+  <rect x="0" y="446" width="1200" height="2" fill="#a6f079" opacity="0.55"/>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#e0e8ff">Migrer de Jira à Sinra</text>
+  <text x="600" y="548" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#c792e9">Guide étape par étape</text>
+  <text x="1150" y="614" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#a6f079" opacity="0.7">sinra.app</text>
+</svg>

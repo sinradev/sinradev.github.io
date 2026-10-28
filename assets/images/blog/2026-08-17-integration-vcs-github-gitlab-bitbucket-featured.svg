@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#171b2b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="band" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0a0f1a;stop-opacity:0.92" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#2a3350" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <circle cx="1080" cy="150" r="120" fill="#8b5cf6" opacity="0.06"/>
+  <rect x="0" y="70" width="1200" height="3" fill="#a6f079" opacity="0.55"/>
+  <rect x="0" y="70" width="340" height="3" fill="#a6f079"/>
+
+  <!-- git branch, source event -->
+  <rect x="100" y="165" width="340" height="205" rx="10" fill="#171b2b" stroke="#5a6790" stroke-width="1.5" opacity="0.9"/>
+  <text x="120" y="195" font-family="monospace" font-size="12" fill="#8b93b8">GIT</text>
+
+  <circle cx="140" cy="220" r="5" fill="#a6f079"/>
+  <line x1="140" y1="225" x2="140" y2="255" stroke="#5a6790" stroke-width="2"/>
+  <circle cx="140" cy="260" r="5" fill="#a6f079"/>
+  <line x1="140" y1="265" x2="140" y2="295" stroke="#5a6790" stroke-width="2"/>
+  <circle cx="140" cy="300" r="5" fill="#c792e9"/>
+  <text x="160" y="224" font-family="monospace" font-size="10" fill="#c3cbe8">feature/123-fix-login</text>
+  <text x="160" y="264" font-family="monospace" font-size="10" fill="#c3cbe8">PR ouverte</text>
+  <text x="160" y="304" font-family="monospace" font-size="10" fill="#c792e9">merge -&gt; main</text>
+
+  <rect x="120" y="325" width="290" height="24" rx="4" fill="#241f3a" stroke="#c792e9" stroke-width="1"/>
+  <text x="135" y="341" font-family="monospace" font-size="10" fill="#c792e9">provider: github | gitlab | bitbucket</text>
+
+  <!-- arrow -->
+  <line x1="455" y1="270" x2="695" y2="270" stroke="#a6f079" stroke-width="2.5"/>
+  <polygon points="695,270 675,260 675,280" fill="#a6f079"/>
+  <text x="575" y="255" font-family="monospace" font-size="12" fill="#a6f079" text-anchor="middle">CI notify</text>
+
+  <!-- output: issue status -->
+  <rect x="710" y="170" width="330" height="200" rx="10" fill="#1a2a1a" stroke="#a6f079" stroke-width="2" opacity="0.95"/>
+  <text x="730" y="200" font-family="monospace" font-size="13" fill="#a6f079" font-weight="bold">Issue #123</text>
+  <line x1="730" y1="212" x2="1020" y2="212" stroke="#3a5a3a" stroke-width="1"/>
+
+  <rect x="730" y="228" width="90" height="20" rx="4" fill="#1f3020" stroke="#4a6a4a" stroke-width="1"/>
+  <text x="775" y="242" font-family="monospace" font-size="9" fill="#7a9a7a" text-anchor="middle">todo</text>
+  <text x="828" y="242" font-family="monospace" font-size="12" fill="#5a7a5a">-&gt;</text>
+  <rect x="845" y="228" width="110" height="20" rx="4" fill="#1f3020" stroke="#a6f079" stroke-width="1.5"/>
+  <text x="900" y="242" font-family="monospace" font-size="9" fill="#a6f079" text-anchor="middle">en cours</text>
+
+  <rect x="730" y="260" width="220" height="20" rx="4" fill="#1f3020" stroke="#a6f079" stroke-width="1.5"/>
+  <text x="840" y="274" font-family="monospace" font-size="9" fill="#a6f079" text-anchor="middle">terminé</text>
+
+  <rect x="730" y="300" width="220" height="26" rx="5" fill="#241f3a" stroke="#c792e9" stroke-width="1"/>
+  <text x="840" y="317" font-family="monospace" font-size="10" fill="#c792e9" text-anchor="middle">changé par git</text>
+
+  <rect x="0" y="446" width="1200" height="184" fill="url(#band)"/>
+  <rect x="0" y="446" width="1200" height="2" fill="#a6f079" opacity="0.55"/>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#e0e8ff">Intégration VCS</text>
+  <text x="600" y="548" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" fill="#c792e9">Le statut des issues suit le code, pas l'inverse</text>
+  <text x="1150" y="614" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#a6f079" opacity="0.7">sinra.app</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2235;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#171b2b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="band" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0a0f1a;stop-opacity:0.92" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#2a3350" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <circle cx="1080" cy="150" r="120" fill="#8b5cf6" opacity="0.06"/>
+  <rect x="0" y="70" width="1200" height="3" fill="#a6f079" opacity="0.55"/>
+  <rect x="0" y="70" width="340" height="3" fill="#a6f079"/>
+
+  <!-- Notion box and Jira box with broken sync link -->
+  <rect x="150" y="150" width="330" height="180" rx="10" fill="#1a1a24" stroke="#8b9cbf" stroke-width="1.5" opacity="0.7"/>
+  <text x="315" y="190" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#e0e8ff" text-anchor="middle">Notion</text>
+  <text x="315" y="220" font-family="monospace" font-size="12" fill="#8b9cbf" text-anchor="middle">spec v3 · mise à jour hier</text>
+
+  <rect x="720" y="150" width="330" height="180" rx="10" fill="#1a1a24" stroke="#8b9cbf" stroke-width="1.5" opacity="0.7"/>
+  <text x="885" y="190" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#e0e8ff" text-anchor="middle">Jira</text>
+  <text x="885" y="220" font-family="monospace" font-size="12" fill="#8b9cbf" text-anchor="middle">ticket · lié à spec v1</text>
+
+  <line x1="480" y1="240" x2="720" y2="240" stroke="#e06c75" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+  <text x="600" y="225" font-family="monospace" font-size="14" fill="#e06c75" text-anchor="middle">désynchro</text>
+
+  <rect x="0" y="446" width="1200" height="184" fill="url(#band)"/>
+  <rect x="0" y="446" width="1200" height="2" fill="#a6f079" opacity="0.55"/>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="38" font-weight="bold" text-anchor="middle" fill="#e0e8ff">Notion + Jira : Trop d'Outils</text>
+  <text x="600" y="548" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#c792e9">Comment migrer vers une seule plateforme</text>
+  <text x="1150" y="614" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#a6f079" opacity="0.7">sinra.app</text>
+</svg>

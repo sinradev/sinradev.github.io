@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/><stop offset="60%" stop-color="#0a0f1a"/><stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="20%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#ff6b9d" stop-opacity="0.15"/><stop offset="100%" stop-color="#ff6b9d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#c792e9" stop-opacity="0.10"/><stop offset="100%" stop-color="#c792e9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- 7 numbered principle blocks -->
+  <g>
+    <rect x="30" y="110" width="180" height="44" rx="5" fill="#ff6b9d" fill-opacity="0.10" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="50" y="137" font-size="11" fill="#ff6b9d" font-weight="600">1. Business case</text>
+
+    <rect x="30" y="164" width="180" height="44" rx="5" fill="#c792e9" fill-opacity="0.09" stroke="#c792e9" stroke-width="1" stroke-opacity="0.45"/>
+    <text x="50" y="191" font-size="11" fill="#c792e9" font-weight="600">2. Apprentissage</text>
+
+    <rect x="30" y="218" width="180" height="44" rx="5" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="50" y="245" font-size="11" fill="#a6f079" font-weight="600">3. Rôles définis</text>
+
+    <rect x="30" y="272" width="180" height="44" rx="5" fill="#6ecf00" fill-opacity="0.07" stroke="#6ecf00" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="50" y="299" font-size="11" fill="#6ecf00" font-weight="600">4. Séquences</text>
+
+    <rect x="30" y="326" width="180" height="44" rx="5" fill="#8b5cf6" fill-opacity="0.07" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="50" y="353" font-size="11" fill="#c792e9" font-weight="600">5. Par exception</text>
+
+    <rect x="30" y="380" width="180" height="44" rx="5" fill="#ff6b9d" fill-opacity="0.07" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="50" y="407" font-size="11" fill="#ff6b9d" font-weight="600">6. Focus produits</text>
+
+    <rect x="30" y="434" width="180" height="44" rx="5" fill="#a6f079" fill-opacity="0.07" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="50" y="461" font-size="11" fill="#a6f079" font-weight="600">7. Adapter</text>
+  </g>
+
+  <!-- Crown / P2 logo hint -->
+  <text x="340" y="320" text-anchor="middle" font-size="100" fill="#ff6b9d" opacity="0.04" font-weight="900">P2</text>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">STANDARD · GOUVERNANCE</text>
+  <text x="500" y="270" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-2">PRINCE2</text>
+  <text x="500" y="340" font-size="18" font-weight="600" fill="#8b9cbf">PRojects IN Controlled</text>
+  <text x="500" y="368" font-size="18" font-weight="600" fill="#8b9cbf">Environments</text>
+  <text x="500" y="405" font-size="16" fill="#475569">7 principes · 7 thèmes · 7 processus</text>
+  <line x1="500" y1="428" x2="850" y2="428" stroke="#1e293b" stroke-width="1"/>
+  <g><rect x="500" y="443" width="96" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="548" y="462" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Gouvernance</text></g>
+  <g><rect x="608" y="443" width="80" height="28" rx="14" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="648" y="462" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">Adaptatif</text></g>
+  <g><rect x="700" y="443" width="72" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="736" y="462" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">AXELOS</text></g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

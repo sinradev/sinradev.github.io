@@ -1,0 +1,45 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#F3E5F5" stroke-width="2"/>
+
+  <!-- Sprints/Iterations -->
+  <g transform="translate(100, 100)">
+    <!-- Sprint 1 -->
+    <rect x="-45" y="-35" width="25" height="25" fill="none" stroke="#9C27B0" stroke-width="2" rx="3"/>
+    <line x1="-40" y1="-25" x2="-35" y2="-25" stroke="#9C27B0" stroke-width="1"/>
+    <line x1="-40" y1="-18" x2="-35" y2="-18" stroke="#9C27B0" stroke-width="1"/>
+    <text x="-42" y="0" font-family="Arial" font-size="8" font-weight="bold" fill="#9C27B0">S1</text>
+
+    <!-- Arrow 1 -->
+    <path d="M -18 -22 L -10 -22" stroke="#9C27B0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Sprint 2 -->
+    <rect x="-8" y="-35" width="25" height="25" fill="none" stroke="#9C27B0" stroke-width="2" rx="3"/>
+    <line x1="-3" y1="-25" x2="2" y2="-25" stroke="#9C27B0" stroke-width="1"/>
+    <line x1="-3" y1="-18" x2="2" y2="-18" stroke="#9C27B0" stroke-width="1"/>
+    <text x="-10" y="0" font-family="Arial" font-size="8" font-weight="bold" fill="#9C27B0">S2</text>
+
+    <!-- Arrow 2 -->
+    <path d="M 20 -22 L 28 -22" stroke="#9C27B0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Sprint 3 -->
+    <rect x="30" y="-35" width="25" height="25" fill="none" stroke="#9C27B0" stroke-width="2" rx="3"/>
+    <line x1="35" y1="-25" x2="40" y2="-25" stroke="#9C27B0" stroke-width="1"/>
+    <line x1="35" y1="-18" x2="40" y2="-18" stroke="#9C27B0" stroke-width="1"/>
+    <text x="30" y="0" font-family="Arial" font-size="8" font-weight="bold" fill="#9C27B0">S3</text>
+
+    <!-- Feedback loop -->
+    <path d="M -22 -10 Q -22 15 22 15 Q 22 -10 22 -10" fill="none" stroke="#9C27B0" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="-30" y="25" font-family="Arial" font-size="7" fill="#9C27B0">Feedback</text>
+
+    <!-- Iteration symbol -->
+    <circle cx="-45" cy="25" r="6" fill="none" stroke="#9C27B0" stroke-width="1.5"/>
+    <path d="M -43 22 L -43 27 M -47 25 L -42 25" stroke="#9C27B0" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#9C27B0"/>
+    </marker>
+  </defs>
+</svg>
