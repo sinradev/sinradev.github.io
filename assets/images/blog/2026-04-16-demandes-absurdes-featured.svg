@@ -1,0 +1,150 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2235"/>
+      <stop offset="100%" stop-color="#141824"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b9d"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a6f079"/>
+      <stop offset="100%" stop-color="#6ecf00"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- Watermark background: question mark -->
+  <text x="600" y="400" font-size="500" fill="#c792e9" text-anchor="middle" opacity="0.018" font-family="Georgia, serif" font-weight="900">?</text>
+
+  <!-- CENTER DIVIDER -->
+  <line x1="600" y1="40" x2="600" y2="460" stroke="#2d3050" stroke-width="2"/>
+
+  <!-- ======= LEFT PANEL: L'ANNONCE ======= -->
+  <text x="300" y="72" font-size="13" fill="#ff6b9d" text-anchor="middle" font-weight="700" letter-spacing="3">L'ANNONCE</text>
+
+  <!-- Job posting card -->
+  <rect x="55" y="88" width="510" height="360" rx="10" fill="#0d1018" fill-opacity="0.5" stroke="#2d3050" stroke-width="1"/>
+
+  <!-- Card header -->
+  <rect x="55" y="88" width="510" height="42" rx="10" fill="#2d3050" fill-opacity="0.8"/>
+  <text x="80" y="115" font-size="14" fill="#ffffff" font-weight="700">Senior Developer — Offre d'emploi</text>
+
+  <!-- Requirements list -->
+  <text x="80" y="158" font-size="13" fill="#8b9cbf" font-weight="600" letter-spacing="1">COMPÉTENCES REQUISES :</text>
+
+  <!-- Tech items with bullet -->
+  <circle cx="92" cy="185" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="190" font-size="14" fill="#ffffff">Python</text>
+
+  <circle cx="92" cy="215" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="220" font-size="14" fill="#ffffff">JavaScript / TypeScript</text>
+
+  <circle cx="92" cy="245" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="250" font-size="14" fill="#ffffff">Go</text>
+
+  <circle cx="92" cy="275" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="280" font-size="14" fill="#ffffff">Rust</text>
+
+  <circle cx="92" cy="305" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="310" font-size="14" fill="#ffffff">Java / Spring Boot</text>
+
+  <circle cx="92" cy="335" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="340" font-size="14" fill="#ffffff">C++ / C#</text>
+
+  <circle cx="92" cy="365" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="370" font-size="14" fill="#ffffff">PHP + Ruby on Rails</text>
+
+  <circle cx="92" cy="395" r="4" fill="#ff6b9d" filter="url(#glow)"/>
+  <text x="108" y="400" font-size="14" fill="#ffffff">Kubernetes, AWS, GCP, Docker</text>
+
+  <!-- Count badge -->
+  <rect x="330" y="175" width="200" height="240" rx="8" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="430" y="270" font-size="64" fill="#ff6b9d" text-anchor="middle" font-weight="900" filter="url(#softglow)" opacity="0.9">10+</text>
+  <text x="430" y="300" font-size="11" fill="#ff6b9d" text-anchor="middle" letter-spacing="2" opacity="0.7">TECHNOLOGIES</text>
+  <text x="430" y="320" font-size="11" fill="#ff6b9d" text-anchor="middle" letter-spacing="2" opacity="0.7">REQUISES</text>
+
+  <!-- "Minimum 5 years" tag -->
+  <rect x="80" y="415" width="460" height="28" rx="5" fill="#ff6b9d" fill-opacity="0.15" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="310" y="434" font-size="12" fill="#ff6b9d" text-anchor="middle" font-weight="700" letter-spacing="1">5 ANS D'EXPÉRIENCE MINIMUM · SALAIRE JUNIOR</text>
+
+  <!-- ======= RIGHT PANEL: LE CV ======= -->
+  <text x="900" y="72" font-size="13" fill="#c792e9" text-anchor="middle" font-weight="700" letter-spacing="3">LE CV DU CANDIDAT</text>
+
+  <!-- CV card -->
+  <rect x="635" y="88" width="510" height="360" rx="10" fill="#0d1018" fill-opacity="0.5" stroke="#2d3050" stroke-width="1"/>
+
+  <!-- Card header -->
+  <rect x="635" y="88" width="510" height="42" rx="10" fill="#2d3050" fill-opacity="0.8"/>
+  <text x="660" y="115" font-size="14" fill="#ffffff" font-weight="700">Candidat — Compétences</text>
+
+  <!-- Matching requirements on CV -->
+  <text x="660" y="158" font-size="13" fill="#8b9cbf" font-weight="600" letter-spacing="1">LANGAGES MAÎTRISÉS :</text>
+
+  <circle cx="672" cy="185" r="4" fill="#a6f079"/>
+  <text x="688" y="190" font-size="14" fill="#ffffff">Python</text>
+  <circle cx="672" cy="215" r="4" fill="#a6f079"/>
+  <text x="688" y="220" font-size="14" fill="#ffffff">JavaScript / TypeScript</text>
+  <circle cx="672" cy="245" r="4" fill="#a6f079"/>
+  <text x="688" y="250" font-size="14" fill="#ffffff">Go</text>
+  <circle cx="672" cy="275" r="4" fill="#a6f079"/>
+  <text x="688" y="280" font-size="14" fill="#ffffff">Rust</text>
+  <circle cx="672" cy="305" r="4" fill="#a6f079"/>
+  <text x="688" y="310" font-size="14" fill="#ffffff">Java / Spring Boot</text>
+  <circle cx="672" cy="335" r="4" fill="#a6f079"/>
+  <text x="688" y="340" font-size="14" fill="#ffffff">C++ / C#</text>
+  <circle cx="672" cy="365" r="4" fill="#a6f079"/>
+  <text x="688" y="370" font-size="14" fill="#ffffff">PHP + Ruby on Rails</text>
+  <circle cx="672" cy="395" r="4" fill="#a6f079"/>
+  <text x="688" y="400" font-size="14" fill="#ffffff">Kubernetes, AWS, GCP, Docker</text>
+
+  <!-- Big red X / Suspect overlay -->
+  <rect x="810" y="165" width="295" height="255" rx="8" fill="#ff6b9d" fill-opacity="0.06" stroke="#ff6b9d" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="6,4"/>
+
+  <!-- Suspicious speech bubble -->
+  <text x="958" y="255" font-size="44" fill="#ff6b9d" text-anchor="middle" font-weight="900" filter="url(#softglow)" opacity="0.85">SUSPECT</text>
+  <!-- small lines below -->
+  <text x="958" y="278" font-size="10" fill="#ff6b9d" text-anchor="middle" letter-spacing="1" opacity="0.6">«Trop généraliste...»</text>
+  <text x="958" y="298" font-size="10" fill="#ff6b9d" text-anchor="middle" letter-spacing="1" opacity="0.6">«Vraiment maîtrisé ?»</text>
+  <text x="958" y="318" font-size="10" fill="#ff6b9d" text-anchor="middle" letter-spacing="1" opacity="0.6">«Manque de profondeur»</text>
+
+  <!-- Same "5 years min" rejected -->
+  <rect x="660" y="415" width="460" height="28" rx="5" fill="#ff6b9d" fill-opacity="0.15" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="890" y="434" font-size="12" fill="#ff6b9d" text-anchor="middle" font-weight="700" letter-spacing="1">CANDIDATURE REJETÉE · « PAS ASSEZ SPÉCIALISÉ »</text>
+
+  <!-- Arrow between panels (the paradox) -->
+  <line x1="565" y1="280" x2="635" y2="280" stroke="#c792e9" stroke-width="2" stroke-dasharray="4,3" opacity="0.6"/>
+  <polygon points="630,275 645,280 630,285" fill="#c792e9" opacity="0.6"/>
+
+  <!-- Paradox label -->
+  <text x="600" y="262" font-size="9" fill="#c792e9" text-anchor="middle" letter-spacing="1" opacity="0.7">PIÈGE</text>
+
+  <!-- Bottom title band -->
+  <rect x="0" y="476" width="1200" height="154" fill="#0d1018" fill-opacity="0.6"/>
+  <text x="100" y="532" font-size="33" font-weight="900" fill="#ffffff" letter-spacing="-1">Pourquoi demander 8 à 10 langages dans une annonce ?</text>
+  <text x="100" y="570" font-size="14" fill="#8b9cbf" letter-spacing="2">OFFRES D'EMPLOI · RECRUTEMENT TECH · DOUBLE STANDARD</text>
+  <text x="1100" y="614" font-size="12" fill="#c792e9" text-anchor="end" opacity="0.6">sinra.app</text>
+</svg>

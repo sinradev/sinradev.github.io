@@ -1,0 +1,32 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#FCE4EC" stroke-width="2"/>
+
+  <!-- Release box with content -->
+  <g transform="translate(100, 100)">
+    <!-- Main release container -->
+    <rect x="-35" y="-30" width="70" height="60" fill="none" stroke="#E91E63" stroke-width="2" rx="4"/>
+
+    <!-- Release header -->
+    <rect x="-35" y="-30" width="70" height="15" fill="#E91E63" opacity="0.1" rx="4 4 0 0"/>
+    <text x="-30" y="-18" font-family="Arial" font-size="9" font-weight="bold" fill="#E91E63">Release v1.0</text>
+
+    <!-- Features list -->
+    <circle cx="-28" cy="-5" r="2" fill="#E91E63"/>
+    <line x1="-23" y1="-5" x2="25" y2="-5" stroke="#E91E63" stroke-width="1" opacity="0.6"/>
+
+    <circle cx="-28" cy="5" r="2" fill="#E91E63"/>
+    <line x1="-23" y1="5" x2="25" y2="5" stroke="#E91E63" stroke-width="1" opacity="0.6"/>
+
+    <circle cx="-28" cy="15" r="2" fill="#E91E63"/>
+    <line x1="-23" y1="15" x2="25" y2="15" stroke="#E91E63" stroke-width="1" opacity="0.6"/>
+
+    <!-- Deploy button -->
+    <rect x="-20" y="28" width="40" height="10" fill="#E91E63" stroke="#E91E63" stroke-width="1" rx="3"/>
+    <text x="-10" y="35" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">Deploy</text>
+
+    <!-- Checkmark indicator -->
+    <circle cx="30" cy="-25" r="8" fill="#4CAF50"/>
+    <path d="M 26 -25 L 28 -22 L 32 -28" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">
+    Pages Sinra Organisées Par Catégories
+  </text>
+
+  <!-- Sinra Logo Area -->
+  <rect x="50" y="60" width="700" height="350" rx="12" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="50" y="60" width="700" height="50" rx="12" fill="#667eea"/>
+  <text x="400" y="92" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+    Sinra - Pages (Glossaire)
+  </text>
+
+  <!-- Category 1: Vocabulaire Release -->
+  <g transform="translate(80, 140)">
+    <rect x="0" y="0" width="300" height="220" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="150" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#5b21b6" text-anchor="middle">
+      📁 Vocabulaire Release
+    </text>
+
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="270" height="35" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+      <text x="15" y="14" font-family="Arial, sans-serif" font-size="12" fill="#5b21b6">📄 Staging Release</text>
+      <text x="15" y="28" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Version en staging pour tests QA</text>
+    </g>
+
+    <g transform="translate(15, 90)">
+      <rect x="0" y="0" width="270" height="35" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+      <text x="15" y="14" font-family="Arial, sans-serif" font-size="12" fill="#5b21b6">📄 Production Release</text>
+      <text x="15" y="28" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Version déployée en production</text>
+    </g>
+
+    <g transform="translate(15, 135)">
+      <rect x="0" y="0" width="270" height="35" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+      <text x="15" y="14" font-family="Arial, sans-serif" font-size="12" fill="#5b21b6">📄 Hotfix</text>
+      <text x="15" y="28" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Correctif urgent en production</text>
+    </g>
+
+    <text x="150" y="200" font-family="Arial, sans-serif" font-size="10" fill="#7c3aed" text-anchor="middle">
+      3 pages
+    </text>
+  </g>
+
+  <!-- Category 2: Vocabulaire Technique -->
+  <g transform="translate(420, 140)">
+    <rect x="0" y="0" width="300" height="220" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="150" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">
+      📁 Vocabulaire Technique
+    </text>
+
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="270" height="35" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+      <text x="15" y="14" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">📄 Pipeline</text>
+      <text x="15" y="28" font-family="Arial, sans-serif" font-size="9" fill="#2563eb">Séquence de stages CI/CD</text>
+    </g>
+
+    <g transform="translate(15, 90)">
+      <rect x="0" y="0" width="270" height="35" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+      <text x="15" y="14" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">📄 Stage</text>
+      <text x="15" y="28" font-family="Arial, sans-serif" font-size="9" fill="#2563eb">Étape dans un pipeline</text>
+    </g>
+
+    <g transform="translate(15, 135)">
+      <rect x="0" y="0" width="270" height="35" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+      <text x="15" y="14" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">📄 Jobs</text>
+      <text x="15" y="28" font-family="Arial, sans-serif" font-size="9" fill="#2563eb">Tâches exécutées dans un stage</text>
+    </g>
+
+    <text x="150" y="200" font-family="Arial, sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">
+      3 pages
+    </text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    Glossaire structuré et organisé par catégories dans Sinra
+  </text>
+</svg>

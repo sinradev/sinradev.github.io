@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Vue Graphique Des Dépendances (Sinra)
+  </text>
+
+  <!-- Legend -->
+  <g>
+    <rect x="50" y="50" width="15" height="15" fill="#27ae60" opacity="0.5"/>
+    <text x="75" y="62" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#7f8c8d">
+      Ready
+    </text>
+
+    <rect x="150" y="50" width="15" height="15" fill="#e74c3c" opacity="0.5"/>
+    <text x="175" y="62" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#7f8c8d">
+      Bloquée
+    </text>
+
+    <rect x="250" y="50" width="15" height="15" fill="#f39c12" opacity="0.5"/>
+    <text x="275" y="62" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#7f8c8d">
+      En cours
+    </text>
+  </g>
+
+  <!-- Release Q2 container -->
+  <rect x="50" y="80" width="700" height="330" fill="#ecf0f1" opacity="0.3" stroke="#95a5a6" stroke-width="2" stroke-dasharray="5,3" rx="8"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#2c3e50">
+    Release Q2 2025
+  </text>
+
+  <!-- Feature A (ready) -->
+  <g>
+    <rect x="80" y="120" width="150" height="60" fill="#27ae60" opacity="0.3" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="155" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Feature A
+    </text>
+    <text x="155" y="163" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#27ae60">
+      ✅ Ready
+    </text>
+  </g>
+
+  <!-- Feature C (ready) -->
+  <g>
+    <rect x="80" y="200" width="150" height="60" fill="#27ae60" opacity="0.3" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="155" y="225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Feature C
+    </text>
+    <text x="155" y="243" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#27ae60">
+      ✅ Ready
+    </text>
+  </g>
+
+  <!-- Feature B (blocked) and its dependency chain -->
+  <g>
+    <!-- Feature B -->
+    <rect x="280" y="120" width="150" height="60" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="3" rx="6"/>
+    <text x="355" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Feature B
+    </text>
+    <text x="355" y="163" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#e74c3c">
+      🚫 Bloquée
+    </text>
+
+    <!-- API-123 (in progress) -->
+    <rect x="480" y="100" width="130" height="50" fill="#f39c12" opacity="0.3" stroke="#f39c12" stroke-width="2" rx="6"/>
+    <text x="545" y="120" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      [API-123]
+    </text>
+    <text x="545" y="138" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#f39c12">
+      ⚙️ En cours
+    </text>
+
+    <!-- INFRA-456 (blocked) -->
+    <rect x="480" y="160" width="130" height="50" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="545" y="180" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      [INFRA-456]
+    </text>
+    <text x="545" y="198" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#e74c3c">
+      🚫 Bloquée
+    </text>
+
+    <!-- CTO Approval (blocked) -->
+    <rect x="640" y="160" width="100" height="50" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="690" y="180" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      [CTO]
+    </text>
+    <text x="690" y="198" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#e74c3c">
+      ⏳ Pending
+    </text>
+
+    <!-- Arrows showing dependencies -->
+    <defs>
+      <marker id="arrow-dep" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#e74c3c"/>
+      </marker>
+    </defs>
+
+    <path d="M 430 150 L 480 125" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrow-dep)"/>
+    <text x="455" y="135" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#e74c3c">blocked by</text>
+
+    <path d="M 545 150 L 545 160" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrow-dep)"/>
+
+    <path d="M 610 185 L 640 185" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrow-dep)"/>
+    <text x="625" y="180" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#e74c3c">needs</text>
+  </g>
+
+  <!-- Feature D (blocked) -->
+  <g>
+    <rect x="280" y="200" width="150" height="60" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="3" rx="6"/>
+    <text x="355" y="225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      Feature D
+    </text>
+    <text x="355" y="243" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#e74c3c">
+      🚫 Bloquée
+    </text>
+
+    <!-- DESIGN-789 -->
+    <rect x="480" y="200" width="130" height="60" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="545" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      [DESIGN-789]
+    </text>
+    <text x="545" y="248" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#e74c3c">
+      ⏳ Mockups pending
+    </text>
+
+    <!-- Arrow -->
+    <path d="M 430 230 L 480 230" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrow-dep)"/>
+    <text x="455" y="225" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#e74c3c">blocked by</text>
+  </g>
+
+  <!-- Summary -->
+  <rect x="80" y="290" width="640" height="100" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="6"/>
+  <text x="400" y="315" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Vue d'ensemble : 4 features, 2 chaînes de dépendances visibles
+  </text>
+  <text x="90" y="340" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#27ae60">
+    ✅ Features A & C : Ready (peuvent démarrer)
+  </text>
+  <text x="90" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#e74c3c">
+    🚫 Feature B : Bloquée par chaîne CTO → INFRA → API
+  </text>
+  <text x="90" y="380" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#e74c3c">
+    🚫 Feature D : Bloquée par DESIGN (mockups)
+  </text>
+
+  <!-- Action box -->
+  <rect x="80" y="410" width="640" height="25" fill="#27ae60" rx="4"/>
+  <text x="400" y="428" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    Actions immédiates : Pinger CTO (Feature B) • Relancer Design (Feature D)
+  </text>
+</svg>

@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    DataFlow : Avant vs Après Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- AVANT Section -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ AVANT Sinra
+    </text>
+    <text x="200" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Doc dispersée (Notion+Confluence+Wiki)
+    </text>
+
+    <!-- Metric 1: Obsolescence -->
+    <rect x="50" y="110" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Docs obsolètes
+    </text>
+    <text x="330" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      73%
+    </text>
+    <text x="200" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      (audit interne révélé)
+    </text>
+
+    <!-- Metric 2: Onboarding -->
+    <rect x="50" y="170" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Onboarding nouveau dev
+    </text>
+    <text x="330" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      2 sem
+    </text>
+    <text x="200" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      10 jours à lire docs obsolètes
+    </text>
+
+    <!-- Metric 3: Multiple versions -->
+    <rect x="50" y="230" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Versions par feature
+    </text>
+    <text x="330" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      3-5
+    </text>
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Contradictoires et confuses
+    </text>
+
+    <!-- Metric 4: Updates -->
+    <rect x="50" y="290" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Mise à jour doc
+    </text>
+    <text x="330" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Jamais
+    </text>
+    <text x="200" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      "On le fera après" = oublié
+    </text>
+
+    <!-- Metric 5: Trust -->
+    <rect x="50" y="350" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Confiance équipe
+    </text>
+    <text x="330" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      Zéro
+    </text>
+    <text x="200" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      "Oublie la doc, lis le code"
+    </text>
+  </g>
+
+  <!-- APRÈS Section -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ APRÈS Sinra
+    </text>
+    <text x="600" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Doc unifiée (5 mois après)
+    </text>
+
+    <!-- Metric 1: Obsolescence -->
+    <rect x="450" y="110" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Docs obsolètes
+    </text>
+    <text x="730" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      0%
+    </text>
+    <text x="600" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Impossible (intégré au travail)
+    </text>
+
+    <!-- Metric 2: Onboarding -->
+    <rect x="450" y="170" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Onboarding nouveau dev
+    </text>
+    <text x="730" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      3 jours
+    </text>
+    <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Lectures ciblées capabilities
+    </text>
+
+    <!-- Metric 3: Multiple versions -->
+    <rect x="450" y="230" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Versions par feature
+    </text>
+    <text x="730" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      1
+    </text>
+    <text x="600" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Capability = source unique vérité
+    </text>
+
+    <!-- Metric 4: Updates -->
+    <rect x="450" y="290" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Mise à jour doc
+    </text>
+    <text x="730" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      Auto
+    </text>
+    <text x="600" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Capturé pendant le travail
+    </text>
+
+    <!-- Metric 5: Trust -->
+    <rect x="450" y="350" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Confiance équipe
+    </text>
+    <text x="730" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      100%
+    </text>
+    <text x="600" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      "Enfin de la doc fiable !"
+    </text>
+  </g>
+
+  <!-- Bottom impact -->
+  <rect x="100" y="415" width="600" height="25" fill="#27ae60" rx="4"/>
+  <text x="400" y="432" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    📈 Onboarding ÷3 • 0% obsolètes • Source unique vérité
+  </text>
+</svg>

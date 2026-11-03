@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/><stop offset="60%" stop-color="#0a0f1a"/><stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="20%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.18"/><stop offset="100%" stop-color="#a6f079" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#ff6b9d" stop-opacity="0.10"/><stop offset="100%" stop-color="#ff6b9d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- Clock / speed dial -->
+  <circle cx="215" cy="270" r="150" fill="none" stroke="#a6f079" stroke-width="1" stroke-opacity="0.1"/>
+  <circle cx="215" cy="270" r="120" fill="none" stroke="#a6f079" stroke-width="1.5" stroke-opacity="0.2"/>
+  <circle cx="215" cy="270" r="90" fill="none" stroke="#a6f079" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- Clock ticks -->
+  <g stroke="#a6f079" stroke-opacity="0.5" stroke-width="2">
+    <line x1="215" y1="182" x2="215" y2="195"/>
+    <line x1="305" y1="270" x2="292" y2="270"/>
+    <line x1="215" y1="358" x2="215" y2="345"/>
+    <line x1="125" y1="270" x2="138" y2="270"/>
+    <line x1="279" y1="206" x2="270" y2="215"/>
+    <line x1="279" y1="334" x2="270" y2="325"/>
+    <line x1="151" y1="206" x2="160" y2="215"/>
+  </g>
+
+  <!-- Speed needle pointing to ~2 o'clock (fast!) -->
+  <line x1="215" y1="270" x2="285" y2="195" stroke="#a6f079" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="215" cy="270" r="8" fill="#a6f079" filter="url(#glow)"/>
+
+  <!-- "60-90 jours" label -->
+  <text x="215" y="310" text-anchor="middle" font-size="13" fill="#a6f079" font-weight="700">60–90 jours</text>
+  <text x="215" y="328" text-anchor="middle" font-size="10" fill="#8b9cbf" opacity="0.7">livraison cible</text>
+
+  <!-- Lightning bolt - speed -->
+  <polygon points="240,170 225,210 235,210 220,250 245,205 232,205" fill="#ff6b9d" fill-opacity="0.7" filter="url(#glow)"/>
+
+  <!-- JAD workshop dots -->
+  <circle cx="110" cy="390" r="6" fill="#a6f079" fill-opacity="0.5"/>
+  <circle cx="135" cy="380" r="6" fill="#c792e9" fill-opacity="0.5"/>
+  <circle cx="160" cy="390" r="6" fill="#ff6b9d" fill-opacity="0.5"/>
+  <text x="135" y="415" text-anchor="middle" font-size="10" fill="#8b9cbf" opacity="0.7">Atelier JAD</text>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">MÉTHODE ITÉRATIVE · VITESSE</text>
+  <text x="500" y="262" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-3">RAD</text>
+  <text x="500" y="352" font-size="30" font-weight="700" letter-spacing="-1" fill="#8b9cbf">Rapid Application</text>
+  <text x="500" y="392" font-size="30" font-weight="700" letter-spacing="-1"><tspan fill="#a6f079">Development</tspan></text>
+  <text x="500" y="430" font-size="16" fill="#475569">Prototypage accéléré et ateliers utilisateurs</text>
+  <line x1="500" y1="448" x2="850" y2="448" stroke="#1e293b" stroke-width="1"/>
+  <g><rect x="500" y="462" width="80" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="540" y="481" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">Rapide</text></g>
+  <g><rect x="592" y="462" width="100" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="642" y="481" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Prototype</text></g>
+  <g><rect x="704" y="462" width="80" height="28" rx="14" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="744" y="481" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">JAD</text></g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

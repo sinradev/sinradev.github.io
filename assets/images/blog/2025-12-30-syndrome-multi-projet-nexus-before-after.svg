@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Nexus : Avant vs Après Sinra
+  </text>
+
+  <!-- Divider -->
+  <line x1="400" y1="50" x2="400" y2="420" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- AVANT Section -->
+  <g>
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ AVANT Sinra
+    </text>
+    <text x="200" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Multi-projet invisible
+    </text>
+
+    <!-- Metric 1: Projects per dev -->
+    <rect x="50" y="110" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projets par dev
+    </text>
+    <text x="330" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      3
+    </text>
+    <text x="200" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Context switching permanent
+    </text>
+
+    <!-- Metric 2: Completion rate -->
+    <rect x="50" y="170" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projets à temps
+    </text>
+    <text x="330" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      23%
+    </text>
+    <text x="200" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Rien ne se termine
+    </text>
+
+    <!-- Metric 3: Context switching -->
+    <rect x="50" y="230" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Temps perdu switching
+    </text>
+    <text x="330" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      60%
+    </text>
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Productivité catastrophique
+    </text>
+
+    <!-- Metric 4: Burnout -->
+    <rect x="50" y="290" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Devs en burnout
+    </text>
+    <text x="330" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      58%
+    </text>
+    <text x="200" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Trop de projets simultanés
+    </text>
+
+    <!-- Metric 5: Delays -->
+    <rect x="50" y="350" width="300" height="50" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="2" rx="6"/>
+    <text x="70" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Retard moyen
+    </text>
+    <text x="330" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#e74c3c">
+      +5 sem
+    </text>
+    <text x="200" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Tous les projets en retard
+    </text>
+  </g>
+
+  <!-- APRÈS Section -->
+  <g>
+    <text x="600" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ APRÈS Sinra
+    </text>
+    <text x="600" y="90" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#7f8c8d">
+      Projets limités (4 mois après)
+    </text>
+
+    <!-- Metric 1: Projects per dev -->
+    <rect x="450" y="110" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="132" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projets par dev
+    </text>
+    <text x="730" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      1.2
+    </text>
+    <text x="600" y="150" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Focus restauré
+    </text>
+
+    <!-- Metric 2: Completion rate -->
+    <rect x="450" y="170" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Projets à temps
+    </text>
+    <text x="730" y="192" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      87%
+    </text>
+    <text x="600" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Projets terminés
+    </text>
+
+    <!-- Metric 3: Context switching -->
+    <rect x="450" y="230" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="252" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Temps perdu switching
+    </text>
+    <text x="730" y="252" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      12%
+    </text>
+    <text x="600" y="270" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Productivité ×5
+    </text>
+
+    <!-- Metric 4: Burnout -->
+    <rect x="450" y="290" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Devs en burnout
+    </text>
+    <text x="730" y="312" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      19%
+    </text>
+    <text x="600" y="330" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Burnout ÷3
+    </text>
+
+    <!-- Metric 5: Delays -->
+    <rect x="450" y="350" width="300" height="50" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="470" y="372" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#2c3e50">
+      Retard moyen
+    </text>
+    <text x="730" y="372" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="end" fill="#27ae60">
+      -1 sem
+    </text>
+    <text x="600" y="390" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7f8c8d">
+      Livrés en avance
+    </text>
+  </g>
+
+  <!-- Bottom impact -->
+  <rect x="100" y="415" width="600" height="25" fill="#27ae60" rx="4"/>
+  <text x="400" y="432" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    📈 Projets par dev ÷2.5 • Completion ×3.8 • Switching ÷5 • Burnout ÷3
+  </text>
+</svg>

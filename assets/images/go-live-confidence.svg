@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#E0F2F1" stroke-width="2"/>
+
+  <!-- Rocket with success -->
+  <g transform="translate(100, 100)">
+    <!-- Rocket body -->
+    <rect x="-8" y="-32" width="16" height="35" fill="none" stroke="#00BCD4" stroke-width="2" rx="4"/>
+
+    <!-- Rocket nose cone -->
+    <path d="M -8 -32 L 0 -42 L 8 -32" fill="#00BCD4" stroke="#00BCD4" stroke-width="1.5"/>
+
+    <!-- Rocket window -->
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="#00BCD4" stroke-width="1.5"/>
+
+    <!-- Rocket fins -->
+    <polygon points="-8,-5 -15,-2 -10,2" fill="#00BCD4" opacity="0.7"/>
+    <polygon points="8,-5 15,-2 10,2" fill="#00BCD4" opacity="0.7"/>
+
+    <!-- Flame/Engine -->
+    <path d="M -4 3 L -6 12 L -2 8 L 0 15 L 2 8 L 6 12 L 4 3" fill="#FF9800" opacity="0.9"/>
+
+    <!-- Success indicator - Large checkmark -->
+    <circle cx="25" cy="-15" r="18" fill="#4CAF50"/>
+    <path d="M 15 -15 L 22 -8 L 33 -22" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Stars (success/celebration) -->
+    <polygon points="30,30 32,35 37,35 33,39 35,44 30,40 25,44 27,39 23,35 28,35" fill="#FFD700"/>
+    <polygon points="0,35 1,37 3,37 1.5,38 2,40 0,38.5 -2,40 -1,38 -2.5,37 0,37" fill="#FFD700" opacity="0.7"/>
+  </g>
+</svg>

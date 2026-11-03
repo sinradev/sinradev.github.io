@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#E3F2FD" stroke-width="2"/>
+
+  <!-- Main content group -->
+  <g transform="translate(100, 100)">
+    <!-- Cycle 1 box -->
+    <g>
+      <rect x="-55" y="-35" width="40" height="50" rx="4" fill="none" stroke="#2196F3" stroke-width="2"/>
+      <text x="-35" y="-18" font-family="Arial" font-size="9" font-weight="600" text-anchor="middle" fill="#2196F3">Cycle</text>
+      <text x="-35" y="-8" font-family="Arial" font-size="9" font-weight="600" text-anchor="middle" fill="#2196F3">1</text>
+
+      <!-- Issues in Cycle 1 -->
+      <circle cx="-50" cy="5" r="4" fill="#4CAF50"/>
+      <circle cx="-40" cy="10" r="4" fill="#4CAF50"/>
+      <circle cx="-30" cy="5" r="4" fill="#FF9800"/>
+    </g>
+
+    <!-- Cycle 2 box -->
+    <g>
+      <rect x="15" y="-35" width="40" height="50" rx="4" fill="none" stroke="#2196F3" stroke-width="2"/>
+      <text x="35" y="-18" font-family="Arial" font-size="9" font-weight="600" text-anchor="middle" fill="#2196F3">Cycle</text>
+      <text x="35" y="-8" font-family="Arial" font-size="9" font-weight="600" text-anchor="middle" fill="#2196F3">2</text>
+
+      <!-- Issues in Cycle 2 -->
+      <circle cx="20" cy="5" r="4" fill="#4CAF50"/>
+      <circle cx="30" cy="10" r="4" fill="#4CAF50"/>
+      <circle cx="40" cy="5" r="4" fill="#FF9800"/>
+    </g>
+
+    <!-- Carry-over arrow (curved) -->
+    <g>
+      <!-- Arrow line -->
+      <path d="M -25 15 Q 0 25 20 15" stroke="#FF9800" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- Arrow head -->
+      <path d="M 16 12 L 23 16 L 18 21" stroke="#FF9800" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Carry-over label -->
+    <text x="0" y="40" font-family="Arial" font-size="8" font-weight="600" text-anchor="middle" fill="#FF9800">Carry-over</text>
+  </g>
+</svg>

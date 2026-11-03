@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, sans-serif;" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060810"/>
+      <stop offset="60%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#060d18"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="20%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#a6f079" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a6f079" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#ff6b9d" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ff6b9d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+  </g>
+
+  <!-- W shape - two V's -->
+  <!-- Dev V (going down then up) - green -->
+  <polyline points="40,120 130,380 220,200 310,380 400,120" fill="none" stroke="#a6f079" stroke-width="2.5" stroke-opacity="0.7" stroke-linejoin="round"/>
+  <!-- Test V (mirrored, offset) - pink, underneath -->
+  <polyline points="40,420 130,160 220,340 310,160 400,420" fill="none" stroke="#ff6b9d" stroke-width="2" stroke-opacity="0.45" stroke-linejoin="round" stroke-dasharray="6,4"/>
+
+  <!-- Labels -->
+  <text x="85" y="112" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" opacity="0.9">Besoins</text>
+  <text x="130" y="400" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" opacity="0.8">Archi</text>
+  <text x="220" y="192" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" opacity="0.9">Code</text>
+  <text x="310" y="400" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" opacity="0.8">Intégr.</text>
+  <text x="400" y="112" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" opacity="0.9">Valid.</text>
+
+  <!-- Test branch labels -->
+  <text x="85" y="440" text-anchor="middle" font-size="9" fill="#ff6b9d" font-weight="600" opacity="0.7">Plan Accept.</text>
+  <text x="310" y="152" text-anchor="middle" font-size="9" fill="#ff6b9d" font-weight="600" opacity="0.7">Tests unit.</text>
+
+  <!-- Nodes -->
+  <circle cx="40" cy="120" r="5" fill="#a6f079" filter="url(#glow)"/>
+  <circle cx="130" cy="380" r="5" fill="#a6f079" filter="url(#glow)"/>
+  <circle cx="220" cy="200" r="5" fill="#a6f079" filter="url(#glow)"/>
+  <circle cx="310" cy="380" r="5" fill="#a6f079" filter="url(#glow)"/>
+  <circle cx="400" cy="120" r="5" fill="#a6f079" filter="url(#glow)"/>
+
+  <line x1="430" y1="60" x2="430" y2="570" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="500" y="168" font-size="11" fill="#475569" letter-spacing="4" font-weight="500">MÉTHODE CLASSIQUE · QUALITÉ</text>
+  <text x="500" y="262" font-size="72" font-weight="800" fill="#f8fafc" letter-spacing="-3">Modèle</text>
+  <text x="500" y="352" font-size="72" font-weight="800" letter-spacing="-3">
+    <tspan fill="#a6f079">en W</tspan>
+  </text>
+  <text x="500" y="406" font-size="16" fill="#475569">Tests parallèles au développement dès le jour 1</text>
+  <line x1="500" y1="432" x2="850" y2="432" stroke="#1e293b" stroke-width="1"/>
+  <g>
+    <rect x="500" y="450" width="96" height="28" rx="14" fill="#a6f079" fill-opacity="0.08" stroke="#a6f079" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="548" y="469" text-anchor="middle" font-size="10" fill="#a6f079" font-weight="600" letter-spacing="0.5">V-Model +</text>
+  </g>
+  <g>
+    <rect x="608" y="450" width="82" height="28" rx="14" fill="#ff6b9d" fill-opacity="0.08" stroke="#ff6b9d" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="649" y="469" text-anchor="middle" font-size="10" fill="#ff6b9d" font-weight="600" letter-spacing="0.5">Test QA</text>
+  </g>
+  <g>
+    <rect x="702" y="450" width="88" height="28" rx="14" fill="#c792e9" fill-opacity="0.08" stroke="#c792e9" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="746" y="469" text-anchor="middle" font-size="10" fill="#c792e9" font-weight="600" letter-spacing="0.5">Critique</text>
+  </g>
+  <text x="1160" y="600" text-anchor="end" font-size="11" fill="#1e293b" letter-spacing="1">sinra.app</text>
+</svg>

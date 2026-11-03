@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    QA Dispersé Entre Outils Déconnectés
+  </text>
+
+  <!-- Excel Box -->
+  <g>
+    <rect x="50" y="80" width="200" height="250" fill="#217346" stroke="#1e6f42" stroke-width="2" rx="8"/>
+    <text x="150" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      📊 Excel
+    </text>
+    <rect x="70" y="130" width="160" height="30" fill="white" opacity="0.9" rx="4"/>
+    <text x="150" y="151" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#217346">
+      Test_Cases_v2.3_FINAL_v4.xlsx
+    </text>
+
+    <!-- Test cases list -->
+    <text x="70" y="180" font-family="monospace" font-size="10" fill="white">TC-001: Login test</text>
+    <text x="70" y="200" font-family="monospace" font-size="10" fill="white">TC-002: SSO Google</text>
+    <text x="70" y="220" font-family="monospace" font-size="10" fill="white">TC-003: Password reset</text>
+    <text x="70" y="240" font-family="monospace" font-size="10" fill="white">...</text>
+
+    <text x="150" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.8">
+      ❌ Déconnecté
+    </text>
+    <text x="150" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.8">
+      ❌ Pas de lien features
+    </text>
+  </g>
+
+  <!-- Jira Box -->
+  <g>
+    <rect x="300" y="80" width="200" height="250" fill="#0052CC" stroke="#0747a6" stroke-width="2" rx="8"/>
+    <text x="400" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      🐛 Jira
+    </text>
+    <rect x="320" y="130" width="160" height="30" fill="white" opacity="0.9" rx="4"/>
+    <text x="400" y="151" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0052CC">
+      Bugs tracking
+    </text>
+
+    <!-- Bug list -->
+    <text x="320" y="180" font-family="monospace" font-size="10" fill="white">BUG-423: Pagination broken</text>
+    <text x="320" y="200" font-family="monospace" font-size="10" fill="white">BUG-424: SSO fails 500</text>
+    <text x="320" y="220" font-family="monospace" font-size="10" fill="white">BUG-425: Export crashes</text>
+    <text x="320" y="240" font-family="monospace" font-size="10" fill="white">...</text>
+
+    <text x="400" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.8">
+      ❌ Aucun lien tests
+    </text>
+    <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.8">
+      ❌ Pas de retest
+    </text>
+  </g>
+
+  <!-- Notes Box -->
+  <g>
+    <rect x="550" y="80" width="200" height="250" fill="#ffd966" stroke="#f1c232" stroke-width="2" rx="8"/>
+    <text x="650" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+      📝 Notes
+    </text>
+    <rect x="570" y="130" width="160" height="30" fill="white" opacity="0.9" rx="4"/>
+    <text x="650" y="151" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">
+      Post-it &amp; Mémoire
+    </text>
+
+    <!-- Notes -->
+    <text x="570" y="180" font-family="Arial, sans-serif" font-size="10" fill="#333">• Tester SSO Microsoft</text>
+    <text x="570" y="200" font-family="Arial, sans-serif" font-size="10" fill="#333">• Retester AUTH-247</text>
+    <text x="570" y="220" font-family="Arial, sans-serif" font-size="10" fill="#333">• Bug pagination ?</text>
+    <text x="570" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">...</text>
+
+    <text x="650" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" opacity="0.8">
+      ❌ Perdu facilement
+    </text>
+    <text x="650" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333" opacity="0.8">
+      ❌ Pas d'historique
+    </text>
+  </g>
+
+  <!-- Disconnection lines -->
+  <line x1="250" y1="200" x2="300" y2="200" stroke="#e74c3c" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="500" y1="200" x2="550" y2="200" stroke="#e74c3c" stroke-width="3" stroke-dasharray="5,5"/>
+
+  <!-- Bottom warning -->
+  <rect x="200" y="350" width="400" height="35" fill="#e74c3c" rx="4"/>
+  <text x="400" y="372" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    ⚠️ Aucune synchronisation • Contexte fragmenté
+  </text>
+</svg>

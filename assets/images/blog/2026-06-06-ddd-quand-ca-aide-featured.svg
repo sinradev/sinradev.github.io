@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1320;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9cbf" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Spectrum: Simple CRUD to Complex Domain -->
+  <text x="600" y="100" font-family="Georgia, serif" font-size="22" fill="#8b9cbf" text-anchor="middle" opacity="0.8">Complexité du domaine métier</text>
+  <line x1="100" y1="125" x2="1100" y2="125" stroke="#2a3560" stroke-width="2"/>
+  <polygon points="1100,118 1116,125 1100,132" fill="#2a3560"/>
+  <text x="100" y="115" font-family="monospace" font-size="11" fill="#4a5580">Simple</text>
+  <text x="1050" y="115" font-family="monospace" font-size="11" fill="#4a5580">Complexe</text>
+
+  <!-- Zone 1: CRUD - DDD overkill -->
+  <rect x="80" y="150" width="300" height="320" rx="10" fill="#2a1520" stroke="#ff6b6b" stroke-width="1.5" opacity="0.5"/>
+  <text x="230" y="185" font-family="monospace" font-size="11" fill="#ff6b6b" text-anchor="middle">DDD = overkill</text>
+  <text x="230" y="215" font-family="Georgia, serif" font-size="16" fill="#8b7070" text-anchor="middle">Blog</text>
+  <text x="230" y="238" font-family="Georgia, serif" font-size="16" fill="#8b7070" text-anchor="middle">App de contacts</text>
+  <text x="230" y="261" font-family="Georgia, serif" font-size="16" fill="#8b7070" text-anchor="middle">CRUD basique</text>
+  <text x="230" y="284" font-family="Georgia, serif" font-size="16" fill="#8b7070" text-anchor="middle">Startups early</text>
+  <rect x="110" y="320" width="240" height="60" rx="6" fill="#2a1a1a" stroke="#ff6b6b" stroke-width="1" opacity="0.5"/>
+  <text x="230" y="346" font-family="monospace" font-size="10" fill="#ff6b6b" text-anchor="middle">Aggregates + repositories</text>
+  <text x="230" y="365" font-family="monospace" font-size="10" fill="#ff6b6b" text-anchor="middle">= ceremony sans bénéfice</text>
+  <text x="230" y="435" font-family="Georgia, serif" font-size="28" fill="#ff6b6b" opacity="0.2" text-anchor="middle">✗</text>
+
+  <!-- Zone 2: Middle - DDD strategic -->
+  <rect x="420" y="150" width="360" height="320" rx="10" fill="#1e2535" stroke="#ffd54f" stroke-width="1.5" opacity="0.5"/>
+  <text x="600" y="185" font-family="monospace" font-size="11" fill="#ffd54f" text-anchor="middle">DDD stratégique</text>
+  <text x="600" y="215" font-family="Georgia, serif" font-size="16" fill="#a0906a" text-anchor="middle">SaaS multi-équipes</text>
+  <text x="600" y="238" font-family="Georgia, serif" font-size="16" fill="#a0906a" text-anchor="middle">Plateformes e-commerce</text>
+  <text x="600" y="261" font-family="Georgia, serif" font-size="16" fill="#a0906a" text-anchor="middle">Apps B2B moyennes</text>
+  <rect x="450" y="300" width="300" height="80" rx="6" fill="#2a2510" stroke="#ffd54f" stroke-width="1" opacity="0.5"/>
+  <text x="600" y="326" font-family="monospace" font-size="10" fill="#ffd54f" text-anchor="middle">Bounded contexts ✓</text>
+  <text x="600" y="344" font-family="monospace" font-size="10" fill="#ffd54f" text-anchor="middle">Ubiquitous language ✓</text>
+  <text x="600" y="362" font-family="monospace" font-size="10" fill="#8b7040" text-anchor="middle">Tactique : selon zones</text>
+  <text x="600" y="430" font-family="Georgia, serif" font-size="28" fill="#ffd54f" opacity="0.3" text-anchor="middle">~</text>
+
+  <!-- Zone 3: Complex - DDD full value -->
+  <rect x="820" y="150" width="300" height="320" rx="10" fill="#1a2a1a" stroke="#a6f079" stroke-width="1.5" opacity="0.6"/>
+  <text x="970" y="185" font-family="monospace" font-size="11" fill="#a6f079" text-anchor="middle">DDD pleine valeur</text>
+  <text x="970" y="215" font-family="Georgia, serif" font-size="16" fill="#70a070" text-anchor="middle">Finance / Assurance</text>
+  <text x="970" y="238" font-family="Georgia, serif" font-size="16" fill="#70a070" text-anchor="middle">Santé réglementée</text>
+  <text x="970" y="261" font-family="Georgia, serif" font-size="16" fill="#70a070" text-anchor="middle">ERP complexes</text>
+  <rect x="850" y="300" width="240" height="80" rx="6" fill="#1a3020" stroke="#a6f079" stroke-width="1" opacity="0.6"/>
+  <text x="970" y="326" font-family="monospace" font-size="10" fill="#a6f079" text-anchor="middle">Aggregates ✓</text>
+  <text x="970" y="344" font-family="monospace" font-size="10" fill="#a6f079" text-anchor="middle">Domain events ✓</text>
+  <text x="970" y="362" font-family="monospace" font-size="10" fill="#a6f079" text-anchor="middle">Value objects ✓</text>
+  <text x="970" y="430" font-family="Georgia, serif" font-size="28" fill="#a6f079" opacity="0.4" text-anchor="middle">✓</text>
+
+  <text x="600" y="565" font-family="Georgia, serif" font-size="26" fill="#e0e8ff" text-anchor="middle" opacity="0.9">Le bon outil pour le bon niveau de complexité</text>
+</svg>
